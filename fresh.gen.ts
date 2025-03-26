@@ -3,14 +3,152 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
-
-import { type Manifest } from "$fresh/server.ts";
+import * as $About_AboutPageBannerIsland from "./islands/About/AboutPageBannerIsland.tsx";
+import * as $About_BrasasHistoryIsland from "./islands/About/BrasasHistoryIsland.tsx";
+import * as $About_StatisticsIsland from "./islands/About/StatisticsIsland.tsx";
+import * as $Adults_AdultsCardsIsland from "./islands/Adults/AdultsCardsIsland.tsx";
+import * as $Adults_SpecialCoursesIsland from "./islands/Adults/SpecialCoursesIsland.tsx";
+import * as $BannerCarrouselIsland from "./islands/BannerCarrouselIsland.tsx";
+import * as $BecomeAFranchisee_BecomeAFranchiseeFormIsland from "./islands/BecomeAFranchisee/BecomeAFranchiseeFormIsland.tsx";
+import * as $Branches_BranchProfilePageIsland from "./islands/Branches/BranchProfilePageIsland.tsx";
+import * as $Branches_BranchProfile_BranchProfileBannerIsland from "./islands/Branches/BranchProfile/BranchProfileBannerIsland.tsx";
+import * as $Branches_BranchesBannerIsland from "./islands/Branches/BranchesBannerIsland.tsx";
+import * as $Branches_BranchesIsland from "./islands/Branches/BranchesIsland.tsx";
+import * as $BrasasOnline_BrasasOnlineCardsIsland from "./islands/BrasasOnline/BrasasOnlineCardsIsland.tsx";
+import * as $BrasasOnline_InovationSectionIsland from "./islands/BrasasOnline/InovationSectionIsland.tsx";
+import * as $BrasasOnline_PaymentsSectionIsland from "./islands/BrasasOnline/PaymentsSectionIsland.tsx";
+import * as $BrasasOnline_VideosCarouselIsland from "./islands/BrasasOnline/VideosCarouselIsland.tsx";
+import * as $BreadcrumbsIsland from "./islands/BreadcrumbsIsland.tsx";
+import * as $Certifications_CertificationsBannerIsland from "./islands/Certifications/CertificationsBannerIsland.tsx";
+import * as $Certifications_ToeflITPCertificationIsland from "./islands/Certifications/ToeflITPCertificationIsland.tsx";
+import * as $Certifications_ToefljrCertificationIsland from "./islands/Certifications/ToefljrCertificationIsland.tsx";
+import * as $Certifications_ToiecCertificationIsland from "./islands/Certifications/ToiecCertificationIsland.tsx";
+import * as $Contact_FormSectionIsland from "./islands/Contact/FormSectionIsland.tsx";
+import * as $CookiesCardIsland from "./islands/CookiesCardIsland.tsx";
+import * as $CoursesCardsSectionIsland from "./islands/CoursesCardsSectionIsland.tsx";
+import * as $Courses_CoursesBannerIsland from "./islands/Courses/CoursesBannerIsland.tsx";
+import * as $Courses_CoursesCardsIsland from "./islands/Courses/CoursesCardsIsland.tsx";
+import * as $FooterIsland from "./islands/FooterIsland.tsx";
+import * as $HeaderIsland from "./islands/HeaderIsland.tsx";
+import * as $HomeForm from "./islands/HomeForm.tsx";
+import * as $Home_BeAFranchiseeIsland from "./islands/Home/BeAFranchiseeIsland.tsx";
+import * as $Home_BrasasCardsIsland from "./islands/Home/BrasasCardsIsland.tsx";
+import * as $Home_DiscoverOurCoursesIsland from "./islands/Home/DiscoverOurCoursesIsland.tsx";
+import * as $Home_TestimonialsIsland from "./islands/Home/TestimonialsIsland.tsx";
+import * as $IWantKnowMoreIsland from "./islands/IWantKnowMoreIsland.tsx";
+import * as $JuniorsAndTeens_JuniorsAndTeensIsland from "./islands/JuniorsAndTeens/JuniorsAndTeensIsland.tsx";
+import * as $Kids_KidsCardsIsland from "./islands/Kids/KidsCardsIsland.tsx";
+import * as $Method_ConnectedDifferencesIsland from "./islands/Method/ConnectedDifferencesIsland.tsx";
+import * as $Method_HighlightedDifferencesIsland from "./islands/Method/HighlightedDifferencesIsland.tsx";
+import * as $Method_MethodCardsIsland from "./islands/Method/MethodCardsIsland.tsx";
+import * as $Method_MethodPageBannerIsland from "./islands/Method/MethodPageBannerIsland.tsx";
+import * as $PFF_PFFBannerIsland from "./islands/PFF/PFFBannerIsland.tsx";
+import * as $PFF_PFFCardsIsland from "./islands/PFF/PFFCardsIsland.tsx";
+import * as $PageBannerIsland from "./islands/PageBannerIsland.tsx";
+import * as $Partnerships_BrasasCompaniesIsland from "./islands/Partnerships/BrasasCompaniesIsland.tsx";
+import * as $Partnerships_BrasasSchoolsIsland from "./islands/Partnerships/BrasasSchoolsIsland.tsx";
+import * as $Partnerships_BrasasUniversitiesIsland from "./islands/Partnerships/BrasasUniversitiesIsland.tsx";
+import * as $Partnerships_PartnersCarouselIsland from "./islands/Partnerships/PartnersCarouselIsland.tsx";
+import * as $Pre_K_NextStepsIsland from "./islands/Pre-K/NextStepsIsland.tsx";
+import * as $Pre_K_PreKBannerIsland from "./islands/Pre-K/PreKBannerIsland.tsx";
+import * as $Pre_K_PreKCardsIsland from "./islands/Pre-K/PreKCardsIsland.tsx";
+import * as $Pre_K_PreKCoursesCardsIsland from "./islands/Pre-K/PreKCoursesCardsIsland.tsx";
+import * as $ReferAndEarn_ReferAndEarnBannerIsland from "./islands/ReferAndEarn/ReferAndEarnBannerIsland.tsx";
+import * as $ReferAndEarn_ReferAndEarnFormIsland from "./islands/ReferAndEarn/ReferAndEarnFormIsland.tsx";
+import * as $WorkWithUs_WorkWithusFormIsland from "./islands/WorkWithUs/WorkWithusFormIsland.tsx";
+import * as $buttons_and_flags from "./islands/buttons-and-flags.tsx";
+import * as $header_menu from "./islands/header-menu.tsx";
+import * as $nav from "./islands/nav.tsx";
+import * as $sliderJS from "./islands/sliderJS.tsx";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
   },
-  islands: {},
+  islands: {
+    "./islands/About/AboutPageBannerIsland.tsx": $About_AboutPageBannerIsland,
+    "./islands/About/BrasasHistoryIsland.tsx": $About_BrasasHistoryIsland,
+    "./islands/About/StatisticsIsland.tsx": $About_StatisticsIsland,
+    "./islands/Adults/AdultsCardsIsland.tsx": $Adults_AdultsCardsIsland,
+    "./islands/Adults/SpecialCoursesIsland.tsx": $Adults_SpecialCoursesIsland,
+    "./islands/BannerCarrouselIsland.tsx": $BannerCarrouselIsland,
+    "./islands/BecomeAFranchisee/BecomeAFranchiseeFormIsland.tsx":
+      $BecomeAFranchisee_BecomeAFranchiseeFormIsland,
+    "./islands/Branches/BranchProfilePageIsland.tsx":
+      $Branches_BranchProfilePageIsland,
+    "./islands/Branches/BranchProfile/BranchProfileBannerIsland.tsx":
+      $Branches_BranchProfile_BranchProfileBannerIsland,
+    "./islands/Branches/BranchesBannerIsland.tsx":
+      $Branches_BranchesBannerIsland,
+    "./islands/Branches/BranchesIsland.tsx": $Branches_BranchesIsland,
+    "./islands/BrasasOnline/BrasasOnlineCardsIsland.tsx":
+      $BrasasOnline_BrasasOnlineCardsIsland,
+    "./islands/BrasasOnline/InovationSectionIsland.tsx":
+      $BrasasOnline_InovationSectionIsland,
+    "./islands/BrasasOnline/PaymentsSectionIsland.tsx":
+      $BrasasOnline_PaymentsSectionIsland,
+    "./islands/BrasasOnline/VideosCarouselIsland.tsx":
+      $BrasasOnline_VideosCarouselIsland,
+    "./islands/BreadcrumbsIsland.tsx": $BreadcrumbsIsland,
+    "./islands/Certifications/CertificationsBannerIsland.tsx":
+      $Certifications_CertificationsBannerIsland,
+    "./islands/Certifications/ToeflITPCertificationIsland.tsx":
+      $Certifications_ToeflITPCertificationIsland,
+    "./islands/Certifications/ToefljrCertificationIsland.tsx":
+      $Certifications_ToefljrCertificationIsland,
+    "./islands/Certifications/ToiecCertificationIsland.tsx":
+      $Certifications_ToiecCertificationIsland,
+    "./islands/Contact/FormSectionIsland.tsx": $Contact_FormSectionIsland,
+    "./islands/CookiesCardIsland.tsx": $CookiesCardIsland,
+    "./islands/CoursesCardsSectionIsland.tsx": $CoursesCardsSectionIsland,
+    "./islands/Courses/CoursesBannerIsland.tsx": $Courses_CoursesBannerIsland,
+    "./islands/Courses/CoursesCardsIsland.tsx": $Courses_CoursesCardsIsland,
+    "./islands/FooterIsland.tsx": $FooterIsland,
+    "./islands/HeaderIsland.tsx": $HeaderIsland,
+    "./islands/HomeForm.tsx": $HomeForm,
+    "./islands/Home/BeAFranchiseeIsland.tsx": $Home_BeAFranchiseeIsland,
+    "./islands/Home/BrasasCardsIsland.tsx": $Home_BrasasCardsIsland,
+    "./islands/Home/DiscoverOurCoursesIsland.tsx":
+      $Home_DiscoverOurCoursesIsland,
+    "./islands/Home/TestimonialsIsland.tsx": $Home_TestimonialsIsland,
+    "./islands/IWantKnowMoreIsland.tsx": $IWantKnowMoreIsland,
+    "./islands/JuniorsAndTeens/JuniorsAndTeensIsland.tsx":
+      $JuniorsAndTeens_JuniorsAndTeensIsland,
+    "./islands/Kids/KidsCardsIsland.tsx": $Kids_KidsCardsIsland,
+    "./islands/Method/ConnectedDifferencesIsland.tsx":
+      $Method_ConnectedDifferencesIsland,
+    "./islands/Method/HighlightedDifferencesIsland.tsx":
+      $Method_HighlightedDifferencesIsland,
+    "./islands/Method/MethodCardsIsland.tsx": $Method_MethodCardsIsland,
+    "./islands/Method/MethodPageBannerIsland.tsx":
+      $Method_MethodPageBannerIsland,
+    "./islands/PFF/PFFBannerIsland.tsx": $PFF_PFFBannerIsland,
+    "./islands/PFF/PFFCardsIsland.tsx": $PFF_PFFCardsIsland,
+    "./islands/PageBannerIsland.tsx": $PageBannerIsland,
+    "./islands/Partnerships/BrasasCompaniesIsland.tsx":
+      $Partnerships_BrasasCompaniesIsland,
+    "./islands/Partnerships/BrasasSchoolsIsland.tsx":
+      $Partnerships_BrasasSchoolsIsland,
+    "./islands/Partnerships/BrasasUniversitiesIsland.tsx":
+      $Partnerships_BrasasUniversitiesIsland,
+    "./islands/Partnerships/PartnersCarouselIsland.tsx":
+      $Partnerships_PartnersCarouselIsland,
+    "./islands/Pre-K/NextStepsIsland.tsx": $Pre_K_NextStepsIsland,
+    "./islands/Pre-K/PreKBannerIsland.tsx": $Pre_K_PreKBannerIsland,
+    "./islands/Pre-K/PreKCardsIsland.tsx": $Pre_K_PreKCardsIsland,
+    "./islands/Pre-K/PreKCoursesCardsIsland.tsx": $Pre_K_PreKCoursesCardsIsland,
+    "./islands/ReferAndEarn/ReferAndEarnBannerIsland.tsx":
+      $ReferAndEarn_ReferAndEarnBannerIsland,
+    "./islands/ReferAndEarn/ReferAndEarnFormIsland.tsx":
+      $ReferAndEarn_ReferAndEarnFormIsland,
+    "./islands/WorkWithUs/WorkWithusFormIsland.tsx":
+      $WorkWithUs_WorkWithusFormIsland,
+    "./islands/buttons-and-flags.tsx": $buttons_and_flags,
+    "./islands/header-menu.tsx": $header_menu,
+    "./islands/nav.tsx": $nav,
+    "./islands/sliderJS.tsx": $sliderJS,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 

@@ -1,0 +1,40 @@
+{
+  "HomeForm": {
+    "TextInputs": [
+      {
+        "label": "Nome Completo",
+        "placeholder": "Insira seu nome"
+      },
+      {
+        "label": "Celular/Whatsapp",
+        "placeholder": "(dd) xxxxx-xxxx"
+      },
+      {
+        "label": "E-mail",
+        "placeholder": "Insira seu e-mail"
+      }
+    ],
+    "SelectInputs": [
+      {
+        "label": "Estado",
+        "placeholder": "Selecione um estado",
+        "options": [
+          { "name": "Rio de Janeiro", "value": "rj" },
+          { "name": "Distrito Federal", "value": "df" },
+          { "name": "Espírito Santo", "value": "es" },
+          { "name": "Goiás", "value": "go" },
+          { "name": "Minas Gerais", "value": "mg" },
+          { "name": "São Paulo", "value": "sp" },
+          { "name": "Sou Estrangeiro", "value": "foreigner" }
+        ]
+      }
+    ],
+    "AcceptTerm": "CONCORDO EM RECEBER COMUNICAÇÕES DE OFERTAS DO BRASAS ATRAVÉS DE?",
+    "CommunicationOptions": [
+      { "name": "Whatsapp", "value": "whatsapp" },
+      { "name": "Telefone", "value": "telefone" },
+      { "name": "E-mail", "value": "email" }
+    ],
+    "SendButtonText": "Enviar"
+  }
+}

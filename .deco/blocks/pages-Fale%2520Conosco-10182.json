@@ -1,0 +1,28 @@
+{
+  "name": "Fale Conosco",
+  "path": "/contato",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/PageBanner.tsx",
+      "bgImage": "https://assets.decocache.com/brasas-site/85466733-33fa-4d8a-a568-5fa3c9c7f7bc/Group-155.png",
+      "bgColor": "blue-300",
+      "titleInPortuguese": "Fale conosco",
+      "descriptionInPortuguese": "A gente adoraria ouvir o que você tem a dizer. Mande uma mensagem abaixo.",
+      "titleInEnglish": "Contact Us",
+      "descriptionInEnglish": "We would love to hear what you have to say. Send a message below."
+    },
+    {
+      "__resolveType": "site/sections/Contact/FormSection.tsx"
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

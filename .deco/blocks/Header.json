@@ -1,0 +1,110 @@
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "NavItems": [
+    {
+      "name": "brasas",
+      "link": "/brasas",
+      "titleBy": {}
+    },
+    {
+      "name": "metodo",
+      "link": "/metodo",
+      "titleBy": {}
+    },
+    {
+      "name": "cursos",
+      "link": "/cursos",
+      "titleBy": {}
+    },
+    {
+      "name": "unidades",
+      "link": "/unidades",
+      "titleBy": {}
+    },
+    {
+      "name": "brasas feed",
+      "link": "/brasas-feed",
+      "titleBy": {}
+    },
+    {
+      "name": "contato",
+      "link": "/contato"
+    },
+    {
+      "name": "parcerias",
+      "link": "/parcerias"
+    },
+    {
+      "name": "indique e ganhe",
+      "link": "/indique-e-ganhe"
+    }
+  ],
+  "Logo": "https://data.decoassets.com/brasas-site/d1e98057-2823-4760-bacc-fe76eb89a02e/Logo.png",
+  "navItems": [
+    {
+      "name": "brasas",
+      "link": "/sobre",
+      "nameInEnglish": "brasas",
+      "nameInPortuguese": "brasas"
+    },
+    {
+      "name": "método",
+      "link": "/metodo",
+      "nameInEnglish": "method",
+      "nameInPortuguese": "método"
+    },
+    {
+      "name": "cursos",
+      "link": "/cursos",
+      "nameInEnglish": "courses",
+      "nameInPortuguese": "cursos"
+    },
+    {
+      "name": "unidades",
+      "link": "/unidades",
+      "nameInEnglish": "branches",
+      "nameInPortuguese": "unidades"
+    },
+    {
+      "name": "contato",
+      "link": "/contato",
+      "nameInEnglish": "contact",
+      "nameInPortuguese": "contato"
+    },
+    {
+      "name": "parcerias",
+      "link": "/parcerias",
+      "nameInEnglish": "partnerships",
+      "nameInPortuguese": "parcerias"
+    },
+    {
+      "name": "indique e ganhe",
+      "link": "/indique-e-ganhe",
+      "nameInEnglish": "refer and win",
+      "nameInPortuguese": "indique e ganhe"
+    },
+    {
+      "nameInEnglish": "work with us",
+      "nameInPortuguese": "trabalhe conosco",
+      "link": "/trabalhe-conosco"
+    }
+  ],
+  "logo": {
+    "src": "https://data.decoassets.com/brasas-site/cc181151-1cfe-455e-9bd5-dc38d1d0e950/logo_primary.png",
+    "alt": "Brasas Logo",
+    "width": 96,
+    "height": 64
+  },
+  "TestButton": {
+    "text": "teste seu ingles",
+    "link": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+    "textInEnglish": "test your english",
+    "textInPortuguese": "teste seu inglês"
+  },
+  "MyBrasasButton": {
+    "text": "my brasas",
+    "link": "https://id.layers.digital/sign-in/select-account?community=sophia-4375-25",
+    "textInEnglish": "my brasas",
+    "textInPortuguese": "my brasas"
+  }
+}

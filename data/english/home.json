@@ -1,0 +1,40 @@
+{
+  "HomeForm": {
+    "TextInputs": [
+      {
+        "label": "Full Name",
+        "placeholder": "Enter your name"
+      },
+      {
+        "label": "Celphone/Whatsapp",
+        "placeholder": "(dd) xxxxx-xxxx"
+      },
+      {
+        "label": "E-mail",
+        "placeholder": "Enter your email"
+      }
+    ],
+    "SelectInputs": [
+      {
+        "label": "State",
+        "placeholder": "Select a state",
+        "options": [
+          { "name": "Rio de Janeiro", "value": "rj" },
+          { "name": "Distrito Federal", "value": "df" },
+          { "name": "Espírito Santo", "value": "es" },
+          { "name": "Goiás", "value": "go" },
+          { "name": "Minas Gerais", "value": "mg" },
+          { "name": "São Paulo", "value": "sp" },
+          { "name": "I'm a foreigner", "value": "foreigner" }
+        ]
+      }
+    ],
+    "AcceptTerm": "I AGREE TO RECEIVE BRASAS OFFERS AND COMMUNICATIONS THROUGH?",
+    "CommunicationOptions": [
+      { "name": "Whatsapp", "value": "whatsapp" },
+      { "name": "Phone", "value": "telefone" },
+      { "name": "E-mail", "value": "email" }
+    ],
+    "SendButtonText": "Submit"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "name": "Portuguese for Foreigners",
+  "path": "/portuguese-for-foreigners",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/PFF/PFFBanner.tsx",
+      "bgImageDesktop": "https://assets.decocache.com/brasas-site/30a1c3a2-5838-478a-a986-edb692a708ed/pff-banner-bg.png",
+      "bgImageMobile": "https://assets.decocache.com/brasas-site/54f32abf-8bf0-4858-9551-ee4727438699/pff-banner-mobile-bg.png",
+      "imageInEnglish": "https://assets.decocache.com/brasas-site/47247e80-89a0-489b-ab07-da59a04e230d/logo-pff-banner-en.png",
+      "imageInPortuguese": "https://assets.decocache.com/brasas-site/d8f5326e-52f3-461d-b019-2eac4ef0a3c8/logo-pff-banner-ptbr.png"
+    },
+    {
+      "__resolveType": "site/sections/Breadcrumbs.tsx",
+      "pageNameInEnglish": "Portuguese For Foreigners",
+      "pageNameInPortuguese": "Português para Estrangeiros"
+    },
+    {
+      "__resolveType": "site/sections/PFF/PFFCards.tsx",
+      "textInEnglish": "<p><strong>Hello!</strong></p><p><strong>We are BRASAS, a leading English school in Brazil since 1966.</strong></p><p>&nbsp;</p><p>Here’s some exciting news! We also offer Portuguese lessons for foreigners who want to speak like a true Brazilian. Our mission is to boost your confidence and help you speak the language with ease. With personalized lessons and native instructors, you’ll immerse yourself in the culture and master the nuances of the language. ﻿ Start your journey with us today!</p>",
+      "textInPortuguese": "<p><strong>Olá!</strong></p><p><strong>Nós somos o BRASAS, uma das principais escolas de inglês no Brasil desde 1966.</strong></p><p>&nbsp;</p><p>Temos uma novidade empolgante! Também oferecemos aulas de português para estrangeiros que desejam falar como um verdadeiro brasileiro. Nossa missão é aumentar sua confiança e ajudá-lo a falar o idioma com facilidade. Com aulas personalizadas e instrutores nativos, você se envolverá na cultura e dominará as nuances do idioma. Comece sua jornada conosco hoje mesmo!</p>",
+      "image": "https://assets.decocache.com/brasas-site/e1e905a9-f9be-4626-99e5-d3665d46966a/image-125.png",
+      "items": [
+        {
+          "textInEnglish": "Twice a week, one hour per day or other formats according to your needs;",
+          "textInPortuguese": "Duas vezes por semana, uma hora por dia ou outros formatos conforme sua necessidade."
+        },
+        {
+          "textInEnglish": "Private classes or in groups;",
+          "textInPortuguese": "Aulas particulares ou em grupo."
+        },
+        {
+          "textInPortuguese": "Horários e frequências flexíveis.",
+          "textInEnglish": "Flexible schedules and frequencies."
+        },
+        {
+          "textInEnglish": "Our school offers both online and in-person classes.",
+          "textInPortuguese": "Nossa escola oferece aulas on-line e presenciais."
+        }
+      ],
+      "bottomTextInPortuguese": "<p>Embarque na sua jornada</p><p><strong><span style=\"color: rgb(187, 31, 52)\">para aprender português</span></strong> conosco hoje mesmo!</p>",
+      "bottomTextInEnglish": "<p>Embark on your journey</p><p><strong><span style=\"color: rgb(187, 31, 52)\">to learn Portuguese</span></strong> with us today!</p>"
+    },
+    {
+      "__resolveType": "site/sections/IWantKnowMore.tsx",
+      "titleInEnglish": "I want to know more",
+      "titleInPortuguese": "Quero saber mais"
+    },
+    {
+      "__resolveType": "site/sections/CoursesCardsSection.tsx",
+      "titleInPortuguese": "Conheça nossos cursos",
+      "titleInEnglish": "Discover our courses",
+      "cards": [
+        {
+          "englishTitle": "Pre-K",
+          "portugueseTitle": "Pre-K",
+          "englishDescription": "From Pre-2",
+          "portugueseDescription": "A partir do Pré-2",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png"
+        },
+        {
+          "englishTitle": "Kids",
+          "portugueseTitle": "Kids",
+          "englishDescription": "3rd year of Elementary School",
+          "portugueseDescription": "3º ano do Ensino Fundamental",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/3b108c24-ee92-49e0-97a8-2cd5bcabbdac/Frame-1105-1.png"
+        },
+        {
+          "englishTitle": "Juniors & Teens",
+          "portugueseTitle": "Juniors & Teens",
+          "englishDescription": "6th year of Elementary School",
+          "portugueseDescription": "6º ano do Ensino Fundamental",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png"
+        },
+        {
+          "englishTitle": "Adults",
+          "portugueseTitle": "Adults",
+          "englishDescription": "From 14 years old",
+          "portugueseDescription": "A partir de 14 anos",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png"
+        },
+        {
+          "englishTitle": "BRASAS Online",
+          "portugueseTitle": "BRASAS Online",
+          "englishDescription": "Learn with live online classes",
+          "portugueseDescription": "Aprenda com aulas online e ao vivo",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/b79677ef-d78f-48d3-b07a-a6a0a6099bcb/5_qd6zbf-removebg-preview_bl5s9t.png"
+        },
+        {
+          "englishTitle": "International Certification",
+          "portugueseTitle": "Certificação Internacional",
+          "englishDescription": "Preparatory Courses and Exam",
+          "portugueseDescription": "Cursos preparatórios e prova",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png"
+        },
+        {
+          "englishTitle": "Partnerships",
+          "portugueseTitle": "Parcerias",
+          "englishDescription": "Schools, Universities and Companies",
+          "portugueseDescription": "Escolas, Universidades e Empresas",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png"
+        },
+        {
+          "englishTitle": "Portuguese for Foreigners",
+          "portugueseTitle": "Português para estrangeiros",
+          "englishDescription": "Learn spoken Portuguese in Brazil",
+          "portugueseDescription": "Aprenda português falado no Brasil",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

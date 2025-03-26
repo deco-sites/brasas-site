@@ -1,1 +1,367 @@
-{"__resolveType":"site/sections/Footer.tsx"}
+{
+  "__resolveType": "site/sections/Footer.tsx",
+  "socialMediaIcons": [
+    {
+      "icon": "https://data.decoassets.com/brasas-site/aab5b033-3d65-4b21-aa11-b9a03c831269/facebook.svg",
+      "link": "#",
+      "altText": "Facebook"
+    },
+    {
+      "icon": "https://data.decoassets.com/brasas-site/08037ecf-61ee-4657-b825-c9155335b3b5/instagram.svg",
+      "altText": "Instagram",
+      "link": "#"
+    },
+    {
+      "icon": "https://data.decoassets.com/brasas-site/601a10e1-6f68-4921-a054-db872f16f566/tiktok.svg",
+      "altText": "TikTok",
+      "link": "#"
+    },
+    {
+      "icon": "https://assets.decocache.com/brasas-site/dfc06e14-3fb4-4cd0-b145-2061ac796de5/Youtube.svg",
+      "altText": "Youtube",
+      "link": "#"
+    },
+    {
+      "icon": "https://data.decoassets.com/brasas-site/b1afe8c8-f2d9-47da-8661-dcdfdbfca7a2/linkedin.svg",
+      "link": "#",
+      "altText": "Linkedin"
+    },
+    {
+      "altText": "Spotify",
+      "icon": "https://data.decoassets.com/brasas-site/8879421e-9c7b-43a1-ad1e-f95b6f51cab2/spotify.svg",
+      "link": "#"
+    }
+  ],
+  "footerNav": [
+    {
+      "textInEnglish": "o brasas",
+      "textInPortuguese": "o brasas",
+      "url": "#"
+    },
+    {
+      "textInEnglish": "method",
+      "textInPortuguese": "método",
+      "url": "#"
+    },
+    {
+      "textInEnglish": "branches",
+      "textInPortuguese": "unidades",
+      "url": "#"
+    },
+    {
+      "textInEnglish": "refer and win",
+      "textInPortuguese": "indique e ganhe",
+      "url": "#"
+    },
+    {
+      "textInEnglish": "partnerships",
+      "textInPortuguese": "parcerias",
+      "url": "#"
+    },
+    {
+      "textInEnglish": "contact us",
+      "textInPortuguese": "fale conosco",
+      "url": "#"
+    },
+    {
+      "textInEnglish": "work with us",
+      "textInPortuguese": "trabalhe conosco",
+      "url": "#"
+    },
+    {
+      "textInEnglish": "be a franchisee",
+      "textInPortuguese": "seja franqueado",
+      "url": "#"
+    },
+    {
+      "textInEnglish": "faq",
+      "textInPortuguese": "perguntas frequentes",
+      "url": "#"
+    }
+  ],
+  "coursesList": [
+    {
+      "nameInEnglish": "pre-k",
+      "nameInPortuguese": "pre-k",
+      "url": "#"
+    },
+    {
+      "nameInEnglish": "kids",
+      "nameInPortuguese": "kids",
+      "url": "#"
+    },
+    {
+      "nameInEnglish": "juniors & teens",
+      "nameInPortuguese": "juniors & teens",
+      "url": "#"
+    },
+    {
+      "nameInEnglish": "adults",
+      "nameInPortuguese": "adults",
+      "url": "#"
+    },
+    {
+      "nameInEnglish": "international certification",
+      "nameInPortuguese": "certificação internacional",
+      "url": "#"
+    },
+    {
+      "nameInEnglish": "brasas online english",
+      "nameInPortuguese": "brasas online english",
+      "url": "#"
+    },
+    {
+      "nameInEnglish": "immersion",
+      "nameInPortuguese": "imersão",
+      "url": "#"
+    },
+    {
+      "nameInEnglish": "conversation",
+      "nameInPortuguese": "conversation",
+      "url": "#"
+    },
+    {
+      "nameInEnglish": "Portuguese for Foreigners",
+      "nameInPortuguese": "Português para estrangeiros",
+      "url": "#"
+    }
+  ],
+  "testButton": {
+    "textInEnglish": "test your english",
+    "textInPortuguese": "teste seu inglês",
+    "url": "#"
+  },
+  "myBrasasButton": {
+    "textInEnglish": "my brasas",
+    "textInPortuguese": "my brasas",
+    "url": "#"
+  },
+  "seals": [
+    {
+      "textInEnglish": "verified by",
+      "textInPortuguese": "vericada por",
+      "link": "https://www.reclameaqui.com.br/empresa/brasas-english-course/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=vertical",
+      "image": {
+        "0": "h",
+        "1": "t",
+        "2": "t",
+        "3": "p",
+        "4": "s",
+        "5": ":",
+        "6": "/",
+        "7": "/",
+        "8": "d",
+        "9": "a",
+        "10": "t",
+        "11": "a",
+        "12": ".",
+        "13": "d",
+        "14": "e",
+        "15": "c",
+        "16": "o",
+        "17": "a",
+        "18": "s",
+        "19": "s",
+        "20": "e",
+        "21": "t",
+        "22": "s",
+        "23": ".",
+        "24": "c",
+        "25": "o",
+        "26": "m",
+        "27": "/",
+        "28": "b",
+        "29": "r",
+        "30": "a",
+        "31": "s",
+        "32": "a",
+        "33": "s",
+        "34": "-",
+        "35": "s",
+        "36": "i",
+        "37": "t",
+        "38": "e",
+        "39": "/",
+        "40": "c",
+        "41": "9",
+        "42": "9",
+        "43": "8",
+        "44": "7",
+        "45": "0",
+        "46": "a",
+        "47": "6",
+        "48": "-",
+        "49": "4",
+        "50": "1",
+        "51": "0",
+        "52": "6",
+        "53": "-",
+        "54": "4",
+        "55": "6",
+        "56": "5",
+        "57": "e",
+        "58": "-",
+        "59": "a",
+        "60": "c",
+        "61": "4",
+        "62": "f",
+        "63": "-",
+        "64": "0",
+        "65": "d",
+        "66": "f",
+        "67": "4",
+        "68": "7",
+        "69": "1",
+        "70": "d",
+        "71": "a",
+        "72": "2",
+        "73": "2",
+        "74": "9",
+        "75": "d",
+        "76": "/",
+        "77": "r",
+        "78": "e",
+        "79": "c",
+        "80": "l",
+        "81": "a",
+        "82": "m",
+        "83": "e",
+        "84": "-",
+        "85": "a",
+        "86": "q",
+        "87": "u",
+        "88": "i",
+        "89": "-",
+        "90": "l",
+        "91": "o",
+        "92": "g",
+        "93": "o",
+        "94": ".",
+        "95": "p",
+        "96": "n",
+        "97": "g",
+        "src": "https://data.decoassets.com/brasas-site/c99870a6-4106-465e-ac4f-0df471da229d/reclame-aqui-logo.png",
+        "alt": "RA Logo",
+        "width": 74,
+        "height": 13
+      },
+      "title": "Selo RA Verificada"
+    }
+  ],
+  "endPageNavItems": [
+    {
+      "textInEnglish": "Privacy Policy",
+      "textInPortuguese": "Política de Privacidade",
+      "url": "#"
+    },
+    {
+      "textInEnglish": "Terms of Use",
+      "textInPortuguese": "Termos de Uso",
+      "url": "#"
+    }
+  ],
+  "copyright": {
+    "textInEnglish": "All rights reserved",
+    "textInPortuguese": "Todos os direitos reservados"
+  },
+  "footerLogo": {
+    "0": "h",
+    "1": "t",
+    "2": "t",
+    "3": "p",
+    "4": "s",
+    "5": ":",
+    "6": "/",
+    "7": "/",
+    "8": "d",
+    "9": "a",
+    "10": "t",
+    "11": "a",
+    "12": ".",
+    "13": "d",
+    "14": "e",
+    "15": "c",
+    "16": "o",
+    "17": "a",
+    "18": "s",
+    "19": "s",
+    "20": "e",
+    "21": "t",
+    "22": "s",
+    "23": ".",
+    "24": "c",
+    "25": "o",
+    "26": "m",
+    "27": "/",
+    "28": "b",
+    "29": "r",
+    "30": "a",
+    "31": "s",
+    "32": "a",
+    "33": "s",
+    "34": "-",
+    "35": "s",
+    "36": "i",
+    "37": "t",
+    "38": "e",
+    "39": "/",
+    "40": "a",
+    "41": "1",
+    "42": "8",
+    "43": "2",
+    "44": "f",
+    "45": "6",
+    "46": "f",
+    "47": "1",
+    "48": "-",
+    "49": "4",
+    "50": "9",
+    "51": "a",
+    "52": "f",
+    "53": "-",
+    "54": "4",
+    "55": "c",
+    "56": "9",
+    "57": "c",
+    "58": "-",
+    "59": "a",
+    "60": "b",
+    "61": "8",
+    "62": "e",
+    "63": "-",
+    "64": "6",
+    "65": "9",
+    "66": "9",
+    "67": "f",
+    "68": "7",
+    "69": "1",
+    "70": "e",
+    "71": "d",
+    "72": "e",
+    "73": "c",
+    "74": "1",
+    "75": "7",
+    "76": "/",
+    "77": "3",
+    "78": "3",
+    "79": "_",
+    "80": "u",
+    "81": "n",
+    "82": "l",
+    "83": "d",
+    "84": "s",
+    "85": "q",
+    "86": ".",
+    "87": "p",
+    "88": "n",
+    "89": "g",
+    "src": "https://data.decoassets.com/brasas-site/a182f6f1-49af-4c9c-ab8e-699f71edec17/33_unldsq.png",
+    "alt": "Brasas Logo",
+    "width": 197.25,
+    "height": 140.36
+  },
+  "socialMediaTitleInEnglish": "follow on networks",
+  "socialMediaTitleInPortuguese": "siga nas redes",
+  "coursesTitleInEnglish": "courses",
+  "coursesTitleInPortuguese": "cursos"
+}

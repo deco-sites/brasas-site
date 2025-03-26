@@ -3,9 +3,233 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "site/sections/ItWorks.tsx",
-      "name": "<p>It Works!</p>",
-      "count": 1
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/BannerCarrousel.tsx",
+      "interval": 5,
+      "images": [
+        {
+          "desktop": {
+            "image": "https://data.decoassets.com/brasas-site/0b92c3d4-aaa0-482f-85fb-b4c4736bf9b0/BRASAS_campanha-imersao-2025_webdoor_desktop.png",
+            "width": 1923,
+            "height": 708
+          },
+          "mobile": {
+            "image": "https://data.decoassets.com/brasas-site/9d08767a-8675-43ae-8f5a-41a2a3834994/BRASAS_campanha-imersao-2025_webdoor_mobile.png",
+            "width": 384,
+            "height": 633
+          },
+          "alt": "Banner",
+          "link": "#"
+        },
+        {
+          "desktop": {
+            "image": "https://data.decoassets.com/brasas-site/75d137fb-93f0-4678-a85a-e0938d421bbc/BRASAS_campanha_promo-150_webdoors_desktop_v2.png",
+            "width": 1923,
+            "height": 708
+          },
+          "mobile": {
+            "image": "https://data.decoassets.com/brasas-site/f4da65d2-563a-40ea-9fcf-0a9f26196faa/BRASAS_campanha_promo-150_webdoors_mobile_v2.png",
+            "width": 384,
+            "height": 633
+          },
+          "alt": "Banner2",
+          "link": "#"
+        }
+      ],
+      "titleInPortuguese": " Descubra o nível <br />do seu inglês!",
+      "titleInEnglish": "Discover Your English<br /> Level!",
+      "descriptionInPortuguese": "O nosso teste de nivelamento te<br /> ajuda a descobrir em que módulo você deve<br /> ingressar. Comece o seu agora mesmo!",
+      "descriptionInEnglish": "Our placement test helps you find<br /> out which module you should start.<br /> Take your test now!",
+      "CTAtextInPortuguese": "Teste seu inglês",
+      "CTAtextInEnglish": "Test your English"
+    },
+    {
+      "__resolveType": "site/sections/Home/DiscoverOurCourses.tsx",
+      "englishTitle": "Discover our courses",
+      "portugueseTitle": "Conheça nossos cursos",
+      "englishformTitle": "Need help? Fill out the form below and speak with a BRASAS specialist",
+      "englishFormTitle": "Need help? Fill out the form below and speak with a BRASAS specialist",
+      "recipientsEmails": [
+        "erick.nascimento@simbioseventures.com"
+      ],
+      "copyEmails": [
+        "erick.nascim3nto@gmail.com"
+      ],
+      "cards": [
+        {
+          "englishTitle": "Pre-k",
+          "portugueseTitle": "Pre-k",
+          "englishDescription": "From Pre-2",
+          "portugueseDescription": "A partir do Pré-2",
+          "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
+          "link": "/pre-k"
+        },
+        {
+          "englishTitle": "Kids",
+          "portugueseTitle": "Kids",
+          "englishDescription": "3rd year of Elementary School",
+          "portugueseDescription": "3º ano do Ensino Fundamental",
+          "image": "https://data.decoassets.com/brasas-site/3b108c24-ee92-49e0-97a8-2cd5bcabbdac/Frame-1105-1.png",
+          "link": "/kids"
+        },
+        {
+          "englishTitle": "Juniors & Teens",
+          "portugueseTitle": "Juniors & Teens",
+          "englishDescription": "6th year of Elementary School",
+          "portugueseDescription": "6º ano do Ensino Fundamental",
+          "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png",
+          "link": "/juniors-e-teens"
+        },
+        {
+          "englishTitle": "Adults",
+          "portugueseTitle": "Adults",
+          "englishDescription": "From 14 years old",
+          "portugueseDescription": "A partir de 14 anos",
+          "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png",
+          "link": "/adults"
+        },
+        {
+          "englishTitle": "BRASAS Online",
+          "portugueseTitle": "BRASAS Online",
+          "englishDescription": "Learn with live online classes",
+          "portugueseDescription": "Aprenda com aulas online e ao vivo",
+          "image": "https://data.decoassets.com/brasas-site/ffa031fe-4307-4ced-8d35-d1bcce708761/BRASAS-online-1.png",
+          "link": "/brasas-online"
+        },
+        {
+          "englishTitle": "International Certification",
+          "portugueseTitle": "Certificação Internacional",
+          "englishDescription": "Preparatory Courses and Exam",
+          "portugueseDescription": "Cursos preparatórios e prova",
+          "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png",
+          "link": "/certificacoes"
+        },
+        {
+          "englishTitle": "Partnerships",
+          "portugueseTitle": "Parcerias",
+          "englishDescription": "Companies, Schools and Universities",
+          "portugueseDescription": "Empresas, Escolas e Universidades",
+          "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png",
+          "link": "/parcerias"
+        },
+        {
+          "englishTitle": "Portuguese for Foreigners",
+          "portugueseTitle": "Português para Estrangeiros",
+          "englishDescription": "Learn spoken Portuguese in Brazil",
+          "portugueseDescription": "Aprenda português falado no Brasil",
+          "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png",
+          "link": "/portuguese-for-foreigners"
+        }
+      ],
+      "portugueseFormTitle": "Precisa de ajuda? Preencha abaixo e fale com um especialista do BRASAS",
+      "subject": "Formulário Brasas",
+      "RecipientsEmailArr": [
+        {
+          "email": "erick.nascimento@simbioseventures.com"
+        }
+      ],
+      "CopyToArr": [
+        {
+          "email": "erick.nascim3nto@gmail.com"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Home/Testimonials.tsx",
+      "titleInPortuguese": "Quem faz o BRASAS, indica!",
+      "titleInEnglish": "BRASAS recommended!",
+      "testimonials": [
+        {
+          "textInEnglish": "I am Elke, I am from Belgium, and I am 27 years old. My native language is Dutch. I have been learning Portuguese since May 2024. I have two classes per week. The classes are a lot of fun, and my teacher is excellent. Come study at BRASAS, you too!",
+          "textInPortuguese": "Eu sou Elke, sou da Bélgica e tenho 27 anos. Minha língua nativa é o holandês. Estou aprendendo português desde maio de 2024. Tenho duas aulas por semana. As aulas são muito divertidas e meu professor é excelente. Venha estudar na BRASAS, você também!",
+          "userName": "Elke",
+          "userRoleInEnglish": "Portuguese for Foreigners Student (PFF)",
+          "userRoleInPortuguese": "Aluna Português para Estrangeiros (PFF)",
+          "userImage": "https://data.decoassets.com/brasas-site/9bdbebf5-7807-4f7d-bbc8-0b9cd34e3a4d/elke.jpg"
+        },
+        {
+          "textInEnglish": "Taking the English course at BRASAS is an amazing experience. The dynamic and fun teaching method makes all the difference, making learning light and very efficient. Besides improving my communication, I know that English will be essential for my career, opening doors and expanding my professional opportunities. BRASAS is changing my life now and will take me even further!",
+          "textInPortuguese": "Fazer o curso de inglês no BRASAS é uma experiência incrível. O método dinâmico e divertido de ensino faz toda a diferença, tornando o aprendizado leve e muito eficiente. Além de melhorar minha comunicação, sei que o inglês será essencial para minha carreira, abrindo portas e ampliando minhas oportunidades profissionais. O BRASAS está mudando minha vida agora e ainda vai me levar muito mais longe!",
+          "userName": "Clara Galinari",
+          "userRoleInEnglish": "BRASAS Student",
+          "userRoleInPortuguese": "Aluna BRASAS",
+          "userImage": "https://data.decoassets.com/brasas-site/b9afed74-5dd7-496f-af0e-a1acd5b65a30/clara-galinari.png"
+        },
+        {
+          "textInEnglish": "BRASAS online brought me several advantages and benefits. As I work and have a family routine with many commitments: the flexible schedule, time savings, and quick access gave me the opportunity to go back to studying.",
+          "textInPortuguese": "O BRASAS online me trouxe várias vantagens e benefícios. Como trabalho e tenho uma rotina familiar com muitos compromissos: a flexibilidade de horário, a economia de tempo, e o acesso rápido me trouxeram a oportunidade de poder voltar a estudar.",
+          "userName": "Regina Lemes",
+          "userRoleInEnglish": "Aluna BRASAS Online",
+          "userRoleInPortuguese": "BRASAS Online Student",
+          "userImage": "https://data.decoassets.com/brasas-site/148b7917-dc13-43b5-9716-ff37b43e7ba2/regina-lemes.jpeg"
+        },
+        {
+          "textInEnglish": "I remember that when I arrived at BRASAS I barely knew how to speak a sentence in English, six months later? It felt like I had been taking the course for years!! BRASAS is like that… he works inexplicable magic!! I just have to thank the entire staff team and teachers who guided me through this journey that transformed me in relation to English, and which opened many doors for me.",
+          "textInPortuguese": "Eu lembro de que quando eu cheguei no BRASAS mal sabia falar uma frase em inglês, seis meses depois? Parecia que eu já fazia o curso há anos!! O BRASAS é assim… ele faz uma mágica inexplicável!! Eu só tenho a agradecer a toda a equipe de funcionários e aos professores que me guiaram por essa jornada que me transformou em relação ao inglês, e que abriu muitas portas para mim.",
+          "userName": "Nathália Gonçalves Mariano Rodrigues",
+          "userRoleInPortuguese": "Aluna BRASAS",
+          "userRoleInEnglish": "BRASAS Student",
+          "userImage": "https://data.decoassets.com/brasas-site/edea3448-1744-4870-a090-9a7d91cb44d8/nathalia-goncalves.jpeg"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Home/BrasasCards.tsx",
+      "cards": [
+        {
+          "titleInEnglishh": "Who We Are",
+          "titleInPortuguese": "Quem somos",
+          "descriptionInEnglish": "A course with more than 55 years of tradition and experience in teaching the English language. Learn about our history and purpose.",
+          "descriptionInPortuguese": "Um curso com mais de 55 anos de tradição e experiência do ensino da língua inglesa. Conheça a nossa história e propósito.",
+          "buttonTextInEnglish": "Learn More",
+          "buttonTextInPortuguese": "Saiba mais",
+          "buttonBgColor": "blue-900",
+          "cardBgColor": "purple-300",
+          "cardImage": "https://assets.decocache.com/brasas-site/a67b6756-93bc-4c13-bf08-19ec4ca29edf/Group-157.png",
+          "titleInEnglish": "Who We Are",
+          "bgPosition": "left",
+          "link": "/sobre"
+        },
+        {
+          "titleInEnglish": "BRASAS Method",
+          "titleInPortuguese": "Método BRASAS",
+          "descriptionInEnglish": "BRASAS has a unique teaching method and its own teaching material, developed for each age group.",
+          "descriptionInPortuguese": "O BRASAS tem um método de ensino exclusivo e material didático próprio, desenvolvido para cada faixa etária.",
+          "buttonTextInEnglish": "Learn More",
+          "buttonTextInPortuguese": "Saiba mais",
+          "cardImage": "https://assets.decocache.com/brasas-site/e0bafa59-c71b-42d0-b09b-837debb4c745/Group-158.png",
+          "cardBgColor": "green-100",
+          "buttonBgColor": "orange-200",
+          "bgPosition": "right",
+          "link": "/metodo"
+        },
+        {
+          "titleInEnglish": "Branches",
+          "titleInPortuguese": "Unidades",
+          "descriptionInEnglish": "More than 20 branches in Rio de Janeiro, as well as others spread across Brazil. Find your branch and get in touch.",
+          "descriptionInPortuguese": "Mais de 20 unidades no Rio de Janeiro, além de outras espalhadas pelo Brasil. Encontre sua unidade e entre em contato.",
+          "buttonTextInEnglish": "Learn More",
+          "buttonTextInPortuguese": "Saiba mais",
+          "cardImage": "https://assets.decocache.com/brasas-site/cf774670-2138-4336-b9b4-219f2f4178d5/Group-55.png",
+          "cardBgColor": "blue-50",
+          "buttonBgColor": "blue-300",
+          "bgPosition": "center",
+          "link": "/unidades"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Home/BeAFranchisee.tsx",
+      "sectionImage": "https://data.decoassets.com/brasas-site/34abf2e4-5e44-4844-af44-01941a012144/brasas-sede.webp",
+      "titleInEnglish": "Be part of BRASAS<br /> history!",
+      "titleInPortuguese": "Faça parte da história<br /> do BRASAS!",
+      "descriptionInEnglish": "Join a company with over 55 years<br /> of experience in the English<br /> teaching market.",
+      "descriptionInPortuguese": "Junte-se a uma empresa que tem mais<br /> de 55 anos de experiência no mercado<br /> de ensino da língua inglesa.",
+      "buttonTextInEnglish": "Be a Franchisee",
+      "buttonTextInPortuguese": "Seja um franqueado",
+      "link": "/seja-um-franqueado"
     },
     {
       "__resolveType": "Footer"

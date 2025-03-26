@@ -1,0 +1,122 @@
+{
+  "name": "Unidades",
+  "path": "/unidades",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Branches/BranchesBanner.tsx",
+      "titleInPortuguese": "unidades",
+      "descriptionInPortuguese": "São mais de 40 unidades espalhadas pelo Brasil - todas com a mesma qualidade e metodologia. Encontre a unidade mais próxima e entre em contato.",
+      "titleInEnglish": "Branches",
+      "descriptionInEnglish": "There are more than 40 branches spread across Brazil - all with the same quality and methodology. Find the nearest branch and get in touch."
+    },
+    {
+      "__resolveType": "site/sections/Branches/Branches.tsx",
+      "branches": [
+        {
+          "tels": [
+            {
+              "number": "21970985768",
+              "isWhatsapp": true
+            }
+          ],
+          "image": "https://data.decoassets.com/brasas-site/76c07758-8a85-4be5-8375-6548cb080a98/slide_about.jpg",
+          "name": "Bangu - Polo Colégio Matriz",
+          "address": "R. Agrícola, 318",
+          "neighborhood": "Bangu",
+          "city": "Rio de Janeiro",
+          "state": "RJ",
+          "email": "bg@brasas.com",
+          "instagram": "https://www.instagram.com/dirbangu/",
+          "lon": "-43.458808",
+          "lat": "-22.878473",
+          "zip_code": "21810-090"
+        },
+        {
+          "tels": [
+            {
+              "number": "61995527511",
+              "isWhatsapp": true
+            }
+          ],
+          "name": "Brasília - Asa Norte",
+          "image": "https://data.decoassets.com/brasas-site/34abf2e4-5e44-4844-af44-01941a012144/brasas-sede.webp",
+          "address": "EQ/NORTE 102/103 LOTE A SALA 9B, ENTRADA A TÉRREO (MEZANINO)",
+          "neighborhood": "Centro Comercial Avenida 102",
+          "city": "Brasília",
+          "email": "an@brasas.com",
+          "state": "DF",
+          "instagram": "https://www.instagram.com/dirbangu/",
+          "lon": "-47.88303",
+          "lat": "-15.78045",
+          "zip_code": "70722-400"
+        },
+        {
+          "tels": [],
+          "image": "https://data.decoassets.com/brasas-site/76c07758-8a85-4be5-8375-6548cb080a98/slide_about.jpg",
+          "name": "Vitória",
+          "address": "R. Eugênio Neto, 456",
+          "neighborhood": "Praia de Canto",
+          "city": "Vitória",
+          "state": "ES",
+          "email": "vt@brasas.com",
+          "instagram": "https://www.instagram.com/dirbangu/",
+          "lon": "-40.408408",
+          "lat": "-20.007327",
+          "zip_code": "29055-275"
+        },
+        {
+          "tels": [
+            {
+              "number": "6232813113",
+              "isWhatsapp": true
+            }
+          ],
+          "image": "https://data.decoassets.com/brasas-site/34abf2e4-5e44-4844-af44-01941a012144/brasas-sede.webp",
+          "name": "Marista",
+          "address": "R. 32, 346",
+          "neighborhood": "Setor Marista",
+          "city": "Goiânia",
+          "state": "GO",
+          "email": "go@brasas.com",
+          "instagram": "https://www.instagram.com/dirbangu/",
+          "lon": "-49.23695",
+          "lat": "-16.68935",
+          "zip_code": "74150-210"
+        },
+        {
+          "tels": [
+            {
+              "number": "6236388212",
+              "isWhatsapp": false
+            },
+            {
+              "number": "62996261751",
+              "isWhatsapp": true
+            }
+          ],
+          "image": "https://data.decoassets.com/brasas-site/76c07758-8a85-4be5-8375-6548cb080a98/slide_about.jpg",
+          "name": "Jardim Goiás",
+          "address": "Av. R 54, nº 453 - QD B 19 - Lote 31",
+          "neighborhood": "Jardim Goiás",
+          "city": "Goiânia",
+          "state": "GO",
+          "email": "jg@brasas.com",
+          "instagram": "https://www.instagram.com/dirbangu/",
+          "lon": "-49.24092",
+          "lat": "-16.70058",
+          "zip_code": "74810-220"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

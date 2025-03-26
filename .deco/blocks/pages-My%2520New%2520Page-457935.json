@@ -1,0 +1,33 @@
+{
+  "name": "Indique e Ganhe",
+  "path": "/indique-e-ganhe",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnBanner.tsx",
+      "titleInPortuguese": "ReferAndEarnForm",
+      "titleInEnglish": "ReferAndEarnForm"
+    },
+    {
+      "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnForm.tsx",
+      "titleInEnglish": "Did your friend refer you to an English course at BRASAS?",
+      "subtitleInEnglish": "Fill out the form to the side to learn more and start right away!",
+      "titleInPortuguese": "O seu amigo(a) indicou você para um curso de inglês no BRASAS?",
+      "subtitleInPortuguese": "Preencha o formulário ao lado para saber mais e iniciar agora mesmo!",
+      "image": "https://assets.decocache.com/brasas-site/aa742bbc-e80e-4d96-9ada-c390ef94383d/Group-9.png",
+      "formTitleInPortuguese": "Vamos começar?",
+      "formSubtitleInPortuguese": "Deixe os seus dados abaixo e entraremos em contato para mais informações.",
+      "formTitleInEnglish": "Shall we begin?",
+      "formSubtitleInEnglish": "Leave your details below and we will get in touch for more information."
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

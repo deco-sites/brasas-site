@@ -1,0 +1,215 @@
+{
+  "name": "Parcerias",
+  "path": "/parcerias",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/PageBanner.tsx",
+      "bgImage": "https://assets.decocache.com/brasas-site/0c24790e-506b-4cf8-9ff8-908d94eb283e/Group-153.png",
+      "bgColor": "blue-300",
+      "titleInPortuguese": "Parcerias",
+      "titleInEnglish": "Partnerships",
+      "descriptionInEnglish": "Solutions for Companies, Schools and Universities",
+      "section": {
+        "__resolveType": "site/sections/PageBanner.tsx",
+        "bgImage": "https://assets.decocache.com/brasas-site/4049b25e-35a1-4368-b3f6-84b52aba5e01/Group-6-(1).png",
+        "bgColor": "blue-300",
+        "titleInPortuguese": "Parcerias",
+        "titleInEnglish": "Partnerships",
+        "descriptionInEnglish": "Solutions for Companies, Schools and Universities"
+      },
+      "descriptionInPortuguese": "Soluções para Escolas, Universidades e Empresas."
+    },
+    {
+      "__resolveType": "site/sections/Breadcrumbs.tsx",
+      "pageNameInPortuguese": "Parcerias",
+      "pageNameInEnglish": "Partnerships"
+    },
+    {
+      "__resolveType": "site/sections/Partnerships/BrasasCompanies.tsx",
+      "logo": "https://assets.decocache.com/brasas-site/99c71737-42a4-4b17-8404-0ad584f0f803/brasas-empresas-logo.png",
+      "titleInEnglish": "BRASAS trains your company's professionals with excellent English. We have the best solution and the best English for your business!",
+      "titleInPortuguese": "O BRASAS capacita os profissionais da sua empresa com um inglês de excelência. Temos a melhor solução e o melhor inglês para o seu negócio.",
+      "items": [
+        {
+          "textInPortuguese": "Aulas online, in-company ou nas unidades BRASAS",
+          "textInEnglish": "Online classes, in company, or at BRASAS branches.",
+          "icon": "https://assets.decocache.com/brasas-site/d7cb3c05-c6c4-44b9-ad14-be88580f8e51/teacher-(2).png"
+        },
+        {
+          "textInPortuguese": "Retorno de investimento: relatórios mensais de aproveitamento e frequência de cada aluno",
+          "textInEnglish": "Return on investment: monthly reports on the performance and attendance of each student.",
+          "icon": "https://assets.decocache.com/brasas-site/10c8e215-9a89-4997-b428-bd2bc22ac0c1/command-center.png"
+        },
+        {
+          "icon": "https://assets.decocache.com/brasas-site/a261775c-76f8-440d-8c6a-c7e8b4507b75/google-classroom.png",
+          "textInEnglish": "Class formation according to the level of knowledge.",
+          "textInPortuguese": "Formação de turmas de acordo com o grau de conhecimento."
+        },
+        {
+          "textInEnglish": "Leveling done online, in company, or at BRASAS branches.",
+          "textInPortuguese": "Nivelamento feito online, in-company ou nas unidades BRASAS",
+          "icon": "https://assets.decocache.com/brasas-site/40967cc6-21dc-467f-bc77-f87c0652d77d/nivelamento.png"
+        },
+        {
+          "textInEnglish": "Leveling for candidate selection or employee promotion.",
+          "textInPortuguese": "Nivelamento para seleção e promoção",
+          "icon": "https://assets.decocache.com/brasas-site/323ef6d8-a885-4cdf-97c5-d28da3144176/like.png"
+        },
+        {
+          "textInPortuguese": "Aulas em grupo ou individuais",
+          "textInEnglish": "Group or individual classes.",
+          "icon": "https://assets.decocache.com/brasas-site/913e49a8-7a59-488c-88a3-06e75af1fc02/user.png"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Partnerships/BrasasSchools.tsx",
+      "logo": "https://assets.decocache.com/brasas-site/7e7b0e5a-8135-4c35-9310-25db83f6933d/brasas-escolas-logo.png",
+      "titleInPortuguese": "Já pensou em levar o inglês do BRASAS para dentro da sua escola? ",
+      "titleInEnglish": "Have you thought about bringing BRASAS English to your school?",
+      "subtitleInPortuguese": "Ofereça o melhor inglês e também comodidade e segurança para pais e alunos, com aulas em carga horária estendida ou regular, no contraturno. Além da aprendizagem do idioma, as aulas visam ampliar a bagagem cultural do aluno com atividades lúdicas que envolvem arte, música e eventos. Saiba mais sobre as modalidades disponíveis.",
+      "subtitleInEnglish": "BRASAS, in addition to ensuring language learning, seeks to expand students' cultural background, with playful activities involving art, music and the promotion of themed events within the school. Bring an institution with over 55 years of success in teaching the English language into your school!",
+      "items": [
+        {
+          "titleInEnglish": "BRASAS Quality",
+          "titleInPortuguese": "Qualidade BRASAS",
+          "textInPortuguese": "Temos experiência há mais de 55 anos formando alunos fluentes em inglês.",
+          "textInEnglish": "For over 55 years, we have been training fluent English students with an exclusive teaching method. A partnership with a brand recognized for its excellence in English teaching.",
+          "icon": "https://assets.decocache.com/brasas-site/1897281d-2848-445c-92eb-eed05f1f8b3b/Group-138.png"
+        },
+        {
+          "icon": "https://assets.decocache.com/brasas-site/8f6c2f35-1338-430c-a088-98b26e5fa018/Vector-(2).png",
+          "titleInEnglish": "Direct Communication",
+          "textInEnglish": "The school has constant and direct contact with BRASAS, without bureaucracy.",
+          "titleInPortuguese": "Comunicação direta",
+          "textInPortuguese": "A escola tem contato constante com o BRASAS, sem burocracia."
+        },
+        {
+          "icon": "https://assets.decocache.com/brasas-site/3f9744dc-0503-4555-8ddc-e1fe0e5d2d50/Vector-(3).png",
+          "titleInPortuguese": "Comodidade e segurança",
+          "textInPortuguese": "As aulas acontecem dentro da escola, facilitando a logística e ampliando sua oferta de valor.",
+          "titleInEnglish": "Convenience and Safety",
+          "textInEnglish": "Classes take place within the school, eliminating the need for commuting, simplifying logistics, and enhancing your value proposition."
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Partnerships/BrasasUniversities.tsx",
+      "logo": "https://assets.decocache.com/brasas-site/678dd514-19af-4122-9b6e-648aee418b1b/brasas-universidades-logo.png",
+      "titleInEnglish": "Bring BRASAS' exclusive English teaching method to your university's students and staff!",
+      "titleInPortuguese": "Leve o método exclusivo de ensino de inglês do BRASAS para alunos e funcionários da sua universidade.",
+      "items": [
+        {
+          "icon": "https://assets.decocache.com/brasas-site/1897281d-2848-445c-92eb-eed05f1f8b3b/Group-138.png",
+          "titleInEnglish": "BRASAS Quality",
+          "textInEnglish": "For over 55 years, we have been training fluent English students with an exclusive teaching method. A partnership with a brand recognized for its excellence in English teaching.",
+          "titleInPortuguese": "Qualidade BRASAS",
+          "textInPortuguese": "Temos experiência há mais de 55 anos formando alunos fluentes em inglês."
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Partnerships/PartnersCarousel.tsx",
+      "titleInEnglish": "Partners and companies that already know our solutions",
+      "titleInPortuguese": "Parceiros e empresas que já conhecem nossas soluções",
+      "partnersLogos": [
+        {
+          "image": "https://assets.decocache.com/brasas-site/678dd514-19af-4122-9b6e-648aee418b1b/brasas-universidades-logo.png",
+          "alt": "Logo"
+        },
+        {
+          "image": "https://assets.decocache.com/brasas-site/dc298e05-e7ff-4c02-b61a-9013143ba5bb/FPM_RIO_2022_VERMELHO.png",
+          "alt": "Mackenzie Rio",
+          "width": 493,
+          "height": 142
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/IWantKnowMore.tsx",
+      "titleInPortuguese": "Quero saber mais",
+      "titleInEnglish": "I want to know more"
+    },
+    {
+      "__resolveType": "site/sections/CoursesCardsSection.tsx",
+      "titleInEnglish": "Discover our courses",
+      "titleInPortuguese": "Conheça nossos cursos",
+      "cards": [
+        {
+          "englishTitle": "Pre-K",
+          "portugueseTitle": "Pre-K",
+          "englishDescription": "From Pre-2",
+          "portugueseDescription": "A partir do Pré-2",
+          "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
+          "link": "#"
+        },
+        {
+          "englishTitle": "Kids",
+          "portugueseTitle": "Kids",
+          "englishDescription": "3rd year of Elementary School",
+          "portugueseDescription": "3º ano do Ensino Fundamental",
+          "image": "https://data.decoassets.com/brasas-site/3862a645-7c71-4bc0-a506-ea9d9cbef4cc/Frame-1105.png",
+          "link": "#"
+        },
+        {
+          "englishTitle": "Juniors & Teens",
+          "portugueseTitle": "Juniors & Teens",
+          "englishDescription": "6th year of Elementary School",
+          "portugueseDescription": "6º ano do Ensino Fundamental",
+          "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png",
+          "link": "#"
+        },
+        {
+          "englishTitle": "Adults",
+          "portugueseTitle": "Adults",
+          "englishDescription": "From 14 years old",
+          "portugueseDescription": "A partir de 14 anos",
+          "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png",
+          "link": "#"
+        },
+        {
+          "englishTitle": "BRASAS Online",
+          "portugueseTitle": "BRASAS Online",
+          "englishDescription": "Learn with live online classes",
+          "portugueseDescription": "Aprenda com aulas online e ao vivo",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/b79677ef-d78f-48d3-b07a-a6a0a6099bcb/5_qd6zbf-removebg-preview_bl5s9t.png"
+        },
+        {
+          "englishTitle": "International Certification",
+          "portugueseTitle": "Certificação Internacional",
+          "englishDescription": "Preparatory Courses and Exam",
+          "portugueseDescription": "Cursos preparatórios e prova",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png"
+        },
+        {
+          "englishTitle": "Partnerships",
+          "portugueseTitle": "Parcerias",
+          "englishDescription": "Schools, Universities and Companies",
+          "portugueseDescription": "Escolas, Universidades e Empresas",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png"
+        },
+        {
+          "englishTitle": "Portuguese for Foreigners",
+          "portugueseTitle": "Português para estrangeiros",
+          "englishDescription": "Learn spoken Portuguese in Brazil",
+          "portugueseDescription": "Aprenda português falado no Brasil",
+          "link": "#",
+          "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

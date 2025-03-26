@@ -13,6 +13,41 @@
   "global": [
     {
       "__resolveType": "htmx/sections/htmx.tsx"
+    },
+    {
+      "__resolveType": "site/sections/SocialMediasFloat.tsx",
+      "socialMedias": [
+        {
+          "link": "https://www.facebook.com/BRASASEnglishCourse/",
+          "text": "Facebook"
+        },
+        {
+          "text": "Instagram",
+          "link": "https://www.instagram.com/brasasenglishcourse/"
+        },
+        {
+          "text": "TikTok",
+          "link": "https://www.tiktok.com/@brasasenglishcourse"
+        },
+        {
+          "text": "Youtube",
+          "link": "https://www.youtube.com/channel/UCsmygXC8HjbbfcR2ehazymg"
+        },
+        {
+          "text": "Linkedin",
+          "link": "https://www.linkedin.com/company/brasas-english-course/?originalSubdomain=br"
+        },
+        {
+          "text": "Spotify",
+          "link": "https://open.spotify.com/show/7N2HDAPjUD9QjpQorg9Gq5"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/CookiesCard.tsx"
+    },
+    {
+      "__resolveType": "site/sections/WhatsappFloatingButton.tsx"
     }
   ],
   "routes": [
@@ -27,8 +62,30 @@
     "directives": []
   },
   "__resolveType": "site/apps/site.ts",
-  "firstByteThresholdMS": true,
+  "firstByteThresholdMS": false,
   "theme": {
     "__resolveType": "Neutral"
+  },
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    },
+    "includeScriptsToBody": {
+      "includes": []
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
+  },
+  "algolia": {},
+  "supabaseClient": {},
+  "sendgrid": {
+    "__resolveType": "site/loaders/sendgridConfig.ts",
+    "sendgridApiKey": {
+      "__resolveType": "website/loaders/secret.ts",
+      "encrypted": "2e36fd688189e74c73b85f09505b320230eeab8524b5a7f7be826a80b465fbe2d0203fa103297e34363b62c7475e0a70ebcab0be2b6413f077bcf4fe57ec4ffa151c7607deb7aaab746dfeeb542376f6",
+      "name": "SEND_GRID"
+    }
   }
 }

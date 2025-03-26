@@ -1,0 +1,112 @@
+{
+  "name": "Método",
+  "path": "/metodo",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Method/MethodPageBanner.tsx",
+      "principalWordInEnglish": "brasas",
+      "secondaryWordInEnglish": "method",
+      "principalWordInPortuguese": "método",
+      "secondaryWordInPortuguese": "brasas"
+    },
+    {
+      "__resolveType": "site/sections/Method/MethodCards.tsx",
+      "titleInPortuguese": "O Método BRASAS",
+      "titleInEnglish": "The BRASAS Method",
+      "methodCards": [
+        {
+          "titleInPortuguese": "Tradição, Eficiência e Fluência",
+          "descriptionInPortuguese": "Com mais de 55 anos de história e mais de 100.000 alunos formados, o BRASAS English Course se consolidou como referência no ensino de inglês no Brasil. Fundado por George Zinovetz, o método BRASAS foi desenvolvido com um foco essencial: garantir fluência real e comunicação eficiente, priorizando a oralidade desde o primeiro dia de aula.",
+          "titleInEnglish": "Tradition, Efficiency, and Fluency",
+          "descriptionInEnglish": "With over 55 years of history and more than 100,000 graduates, the BRASAS English Course has established itself as a benchmark in English teaching in Brazil. Founded by George Zinovetz, the BRASAS method was developed with one essential focus: ensuring real fluency and effective communication, prioritizing speaking from the very first day of class."
+        },
+        {
+          "titleInEnglish": "An Exclusive and Proven Methodology",
+          "descriptionInEnglish": "<p><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">The BRASAS method combines internationally recognized approaches, such as the </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Audiolingual Method</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> and the </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Communicative Approach</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">, creating a natural and progressive learning process. Our methodology:</span><br><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">✅ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">100% English learning</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – From the very first lesson, students are immersed in the language, stimulating direct thinking in English without translation.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">✅ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Focus on speaking</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Constant conversation practice is BRASAS’ key differentiator, ensuring confidence and fluency for real-world interactions.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">✅ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Structured repetition and intuitive learning</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Based on behavioral psychology, the method reinforces grammatical patterns and linguistic structures through guided listening and repetition, consolidating the language naturally.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">✅ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Exclusive teaching materials</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Developed by </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">BRASAS Publishing</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">, our content is fully adapted for the Brazilian audience, promoting an authentic immersion in the English language and culture.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">✅ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Highly qualified teachers</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Our rigorous selection process includes </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">110.5 hours of intensive training</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">, along with workshops and continuous mentoring to ensure high-quality teaching.</span></p>",
+          "titleInPortuguese": "Uma Metodologia Exclusiva e Comprovada",
+          "descriptionInPortuguese": "<p><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">O método BRASAS combina abordagens reconhecidas internacionalmente, como o </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Audiolingual Method</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> e o </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Communicative Approach</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">, criando um aprendizado natural e progressivo. Nossa metodologia:</span><br><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">✅ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Aprendizado 100% em inglês</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Desde a primeira aula, os alunos são imersos no idioma, estimulando o pensamento direto em inglês sem o uso da tradução.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">✅ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Foco na oralidade</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – A prática constante da conversação é o diferencial do BRASAS, garantindo confiança e fluência para interações no mundo real.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">✅ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Repetição estruturada e aprendizado intuitivo</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Baseado na psicologia comportamental, o método reforça padrões gramaticais e estruturas linguísticas através da escuta e repetição guiada, consolidando o idioma de forma natural.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">✅ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Material didático exclusivo</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Desenvolvido pelo </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">BRASAS Publishing</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">, nosso conteúdo é totalmente adaptado ao público brasileiro, promovendo uma imersão real na cultura da língua inglesa.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">✅ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Professores altamente capacitados</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Nosso rigoroso processo seletivo inclui </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">110,5 horas de treinamento intensivo</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">, além de workshops e acompanhamento contínuo para garantir a qualidade do ensino.</span></p>"
+        },
+        {
+          "descriptionInPortuguese": "<p><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">No BRASAS, os alunos participam de exercícios práticos diários, debates, discussões e role-plays, aplicando o idioma de forma ativa. Além disso, nossos métodos avançados incluem:</span><br><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">▪️ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Correção personalizada</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Professores acompanham individualmente o desempenho dos alunos, garantindo evolução contínua.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">▪️ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Uso de materiais autênticos</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Exposição ao inglês real, aproximando o aprendizado do cotidiano e do uso profissional do idioma.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">▪️ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Treinamento completo em todas as habilidades</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Além da fala, o BRASAS desenvolve a escrita, leitura e compreensão auditiva de forma equilibrada.</span></p>",
+          "titleInEnglish": "Practice and Immersion for Proven Results",
+          "descriptionInEnglish": "<p><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">At BRASAS, students engage in daily practical exercises, debates, discussions, and role-plays, actively applying the language. Additionally, our advanced methods include:</span><br><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">▪️ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Personalized correction</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Teachers closely monitor students’ performance, ensuring continuous progress.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">▪️ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Use of authentic materials</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Exposure to real English, bringing learning closer to everyday and professional use.</span><br><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">▪️ </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">Comprehensive training in all skills</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> – Besides speaking, BRASAS equally develops writing, reading, and listening comprehension.</span></p>",
+          "titleInPortuguese": "Prática e Imersão para Resultados Comprovados"
+        },
+        {
+          "titleInPortuguese": "Sucesso Comprovado: Fluência que Abre Portas",
+          "descriptionInEnglish": "<p><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">The BRASAS method has already prepared thousands of students for </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">international certifications such as TOEIC and TOEFL Jr.</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">, standing out for its </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">efficiency and consistent results.</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> Our greatest proof of success is the confidence of our students, who become fluent English speakers capable of communicating anywhere in the world.</span><br><br><strong><span style=\"color: rgb(200, 16, 46); font-size: 17.6px\">Join BRASAS and discover how learning English can be natural, engaging, and life-changing!</span></strong></p>",
+          "descriptionInPortuguese": "<p><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">O método BRASAS já preparou milhares de alunos para </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">certificações internacionais como TOEIC e TOEFL Jr.</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\">, destacando-se pela </span><strong><span style=\"color: rgb(30, 58, 138); font-size: 17.6px\">eficiência e resultados consistentes.</span></strong><span style=\"color: rgb(0, 30, 96); font-size: 17.6px\"> Nossa maior prova de sucesso é a confiança dos nossos alunos, que se tornam falantes do inglês capazes de se comunicar com fluidez em qualquer parte do mundo.</span><br><br><strong><span style=\"color: rgb(200, 16, 46); font-size: 17.6px\">Venha para o BRASAS e descubra como aprender inglês pode ser natural, envolvente e transformador!</span></strong></p>",
+          "titleInEnglish": "Proven Success: Fluency that Opens Doors"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Method/HighlightedDifferences.tsx",
+      "titleInEnglish": "Original and exclusive method that uses the same process as learning the native language: before reading or writing, the student speaks.",
+      "titleInPortuguese": "Método original e exclusivo que utiliza o mesmo processo do aprendizado da língua materna: antes de ler ou escrever, o aluno fala.",
+      "descriptionInPortuguese": "O aluno se comunica somente em inglês nas aulas, pois assim adquire o domínio das quatro habilidades linguísticas:",
+      "descriptionInEnglish": "The student communicates only in English in the classes, thus acquiring mastery of the four linguistic skills:",
+      "differenceCards": [
+        {
+          "icon": {
+            "src": "https://data.decoassets.com/brasas-site/454946b2-2857-4e38-85d2-267a7d640708/hear.svg",
+            "alt": "Listening Comprehension",
+            "width": 37,
+            "height": 43
+          },
+          "textInEnglish": "Listening Comprehension",
+          "textInPortuguese": "Compreensão oral"
+        },
+        {
+          "icon": {
+            "src": "https://data.decoassets.com/brasas-site/13da3e39-7176-418d-95cc-e0fbb96d0e57/speaking.svg",
+            "alt": "Speaking",
+            "width": 40,
+            "height": 33
+          },
+          "textInPortuguese": "Fala",
+          "textInEnglish": "Speaking"
+        },
+        {
+          "icon": {
+            "src": "https://data.decoassets.com/brasas-site/381b4153-32a8-4266-8452-9532d782d432/reading.svg",
+            "alt": "Reading",
+            "width": 48,
+            "height": 48
+          },
+          "textInEnglish": "Reading",
+          "textInPortuguese": "Leitura"
+        },
+        {
+          "icon": {
+            "src": "https://data.decoassets.com/brasas-site/6d9d9f7d-bf0a-4083-8eaa-f680a7b6d140/writing.svg",
+            "alt": "Writing",
+            "width": 48,
+            "height": 48
+          },
+          "textInPortuguese": "Escrita",
+          "textInEnglish": "Writing"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Method/ConnectedDifferences.tsx",
+      "titleInEnglish": "The big difference at BRASAS is that the student learns the structures in practice and not just by studying grammar rules, which greatly speeds up language development.",
+      "titleInPortuguese": "A grande diferença do BRASAS é que o aluno aprende as estruturas na prática e não estudando somente regras gramaticais, o que agiliza muito a evolução no idioma.",
+      "desktopImageEnglish": "https://data.decoassets.com/brasas-site/a024cbce-0c99-4ede-bfe4-40e7b496f044/desktop-enUs.png",
+      "mobileImageEnglish": "https://data.decoassets.com/brasas-site/3b2eea9e-9e07-46ca-9128-9cddcd6ca1aa/mobile-enUs.png",
+      "desktopImagePortuguese": "https://data.decoassets.com/brasas-site/0e8736fd-bd2a-42e1-8147-b09a76b49363/desktop-ptBr.png",
+      "mobileImagePortuguese": "https://data.decoassets.com/brasas-site/9771fa7c-e3e2-4dd8-b2a6-ab6f8c02fced/mobile-ptBr.png"
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Unidade",
+  "path": "/unidade",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Branches/BranchProfile/BranchProfileBanner.tsx",
+      "branchName": "Nome da unidade"
+    },
+    {
+      "__resolveType": "site/sections/Branches/BranchProfile/BranchProfilePage.tsx"
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

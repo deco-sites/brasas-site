@@ -1,0 +1,90 @@
+{
+  "name": "Sobre",
+  "path": "/sobre",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/About/aboutPageBanner.tsx",
+      "titleInEnglish": "BRASAS",
+      "titleInPortuguese": "O BRASAS",
+      "descriptionInEnglish": "A unique method and more than half a century of tradition and experience in teaching the English language. Learn more about our history and join BRASAS!",
+      "descriptionInPortuguese": "Um método exclusivo e mais de meio século de tradição e experiência no ensino da língua inglesa. Conheça mais sobre a nossa história e venha para o BRASAS!"
+    },
+    {
+      "__resolveType": "site/sections/About/brasasHistory.tsx",
+      "titleInEnglish": "The History of BRASAS and Its Founder,",
+      "foundersName": "George Peter Zinovetz.",
+      "titleInPortuguese": "A História do BRASAS e de seu Fundador,",
+      "historyCards": [
+        {
+          "titleInPortuguese": "A Origem e o Fundador",
+          "descriptionInPortuguese": "O BRASAS English Course tem sua origem na história de vida de George Peter Zinovetz. Filho de imigrantes russos, George nasceu em 1931 no norte da China, onde frequentou escolas inglesas e francesas. Essa formação multicultural lhe proporcionou fluência em várias línguas, incluindo russo, mandarim, francês e inglês. Contudo, a revolução comunista forçou sua saída do país, levando-o a buscar uma nova vida no Brasil. Ao chegar no Rio de Janeiro, enfrentou um novo desafio: aprender português rapidamente para se integrar à nova sociedade.  Com sua experiência pessoal de adaptação linguística, George percebeu que a chave para aprender um idioma era a comunicação eficaz e a prática intensiva.",
+          "titleInEnglish": "The Origin and the Founder",
+          "descriptionInEnglish": "The BRASAS English Course has its origins in the life story of George Peter Zinovetz. The son of Russian immigrants, George was born in 1931 in northern China, where he attended English and French schools. This multicultural education gave him fluency in several languages, including Russian, Mandarin, French, and English. However, the communist revolution forced him to leave the country, leading him to seek a new life in Brazil. Upon arriving in Rio de Janeiro, he faced a new challenge: learning Portuguese quickly to integrate into the new society.  With his personal experience of linguistic adaptation, George realized that the key to learning a language was effective communication and intensive practice."
+        },
+        {
+          "titleInEnglish": "The Emergence of BRASAS",
+          "descriptionInEnglish": "In the 1960s, Brazil was undergoing economic and institutional transformations, and there was a growing need for professionals capable of communicating in English. Many Brazilian technicians and specialists needed to learn the language to study abroad and take on prominent positions in institutions such as the IMF and WHO.  George identified this demand and created an intensive course aimed at these professionals. The proposal was to teach English in just six months, preparing them to face academic and professional challenges in English-speaking countries. The success was immediate: in less than a year, BRASAS grew from 36 to over 600 students and inaugurated the first language laboratory in South America. With increasing demand, the course expanded to serve not only professionals but also anyone interested in learning English quickly and effectively. Its goal became to create a method that enabled students to speak English naturally and confidently in a short period.",
+          "titleInPortuguese": "O Surgimento do BRASAS",
+          "descriptionInPortuguese": "Nos anos 60, o Brasil passava por transformações econômicas e institucionais, e havia uma necessidade crescente de profissionais capacitados a se comunicar em inglês. Muitos técnicos e especialistas brasileiros precisavam aprender o idioma para estudar no exterior e ocupar posições de destaque em instituições como o FMI e a OMS.  George identificou essa demanda e criou um curso intensivo voltado para esses profissionais. A proposta era ensinar inglês em apenas seis meses, preparando-os para enfrentar desafios acadêmicos e profissionais em países de língua inglesa. O sucesso foi imediato: em menos de um ano, o BRASAS passou de 36 para mais de 600 alunos e inaugurou o primeiro laboratório de línguas da América do Sul. Com o aumento da demanda, o curso expandiu-se para atender não apenas profissionais, mas também qualquer pessoa interessada em aprender inglês de forma rápida e eficaz. Seu objetivo passou a ser criar um método que capacitasse os alunos a falar inglês de maneira natural e confiante em um curto espaço de tempo."
+        },
+        {
+          "titleInPortuguese": "Metodologia e Ensino",
+          "descriptionInPortuguese": "Desde sua fundação, o BRASAS estabeleceu um padrão de qualidade no ensino do inglês. Seu método exclusivo se baseia em:  ▪️ Imersão total na língua inglesa, com aulas 100% no idioma desde o primeiro dia de curso. ▪️ Materiais próprios e exclusivos, elaborados especificamente para falantes de português, facilitando a aprendizagem. ▪️ Dinamismo e contextualização, garantindo que os alunos aprendam de forma interativa e baseada em situações reais do cotidiano. ▪️ Flexibilidade de formatos, permitindo que os alunos escolham entre cursos intensivos, nos formatos online ou presencial, de 18 meses ou um modelo regular de três anos e meio. ▪️ Treinamento rigoroso de professores, com uma seleção criteriosa e capacitação intensiva de 110 horas, garantindo a homogeneidade e qualidade das aulas. ▪️ Monitoramento contínuo da qualidade, através de workshops, seminários e visitas regulares da coordenação pedagógica a todas as unidades.  Essa metodologia inovadora permite que o BRASAS continue sendo referência na área, oferecendo aos alunos uma experiência de aprendizado diferenciada e altamente eficaz.",
+          "titleInEnglish": "Methodology and Teaching",
+          "descriptionInEnglish": "Since its founding, BRASAS has established a standard of excellence in English teaching. Its unique method is based on:  ▪️ Total immersion in the English language, with classes conducted 100% in English from the first day of the course. ▪️ Proprietary and exclusive materials, specifically designed for Portuguese speakers, facilitating learning. ▪️ Dynamism and contextualization, ensuring that students learn interactively and through real-life situations. ▪️ Flexible formats, allowing students to choose between intensive courses, available online or in-person, lasting 18 months, or a regular model of three and a half years. ▪️ Rigorous teacher training, with a selective recruitment process and intensive 110-hour training to ensure homogeneous and high-quality classes. ▪️ Continuous quality monitoring through workshops, seminars, and regular visits from the academic coordination team to all units.  This innovative methodology allows BRASAS to remain a benchmark in the field, offering students a unique and highly effective learning experience."
+        },
+        {
+          "titleInEnglish": "Expansion and National Presence",
+          "descriptionInEnglish": "With sustained growth over the decades, BRASAS adopted the franchise model to bring its teaching method to different regions of Brazil while ensuring the same educational quality across all units. Today, the network has more than 40 units across the country, including states such as Rio de Janeiro, the Federal District, Minas Gerais, Goiás, and Espírito Santo.  The expansion model has allowed BRASAS to maintain its high teaching standards while reaching a growing audience. The standardized methodology and continuous teacher training ensure that each unit provides the same learning experience, regardless of location.",
+          "titleInPortuguese": "Expansão e Presença Nacional",
+          "descriptionInPortuguese": "Com um crescimento sustentado ao longo das décadas, o BRASAS adotou o modelo de franquia para levar seu método de ensino para outras regiões do Brasil, garantindo que a qualidade pedagógica fosse mantida em todas as unidades. Atualmente, a rede conta com mais de 40 unidades espalhadas pelo país, incluindo estados como Rio de Janeiro, Distrito Federal, Minas Gerais, Goiás, e Espírito Santo.  O modelo de expansão permitiu que o BRASAS mantivesse seu alto padrão de ensino enquanto atendia a um público cada vez maior. A metodologia padronizada e a formação contínua dos professores garantem que cada unidade ofereça a mesma experiência de aprendizado, independente da localização."
+        },
+        {
+          "titleInPortuguese": "O Legado de George Zinovetz",
+          "descriptionInPortuguese": "George Peter Zinovetz deixou um legado no ensino de inglês no Brasil. Sua visão inovadora transformou a forma como o idioma é ensinado e ajudou milhares de brasileiros a alcançar seus objetivos acadêmicos e profissionais.  Mesmo após sua partida em 1984, sua filosofia continua sendo a base do BRASAS. A equipe pedagógica e os gestores da rede seguem comprometidos com a excelência no ensino, mantendo viva a essência do fundador. O BRASAS continua a evoluir, incorporando novas tecnologias e abordagens pedagógicas sem perder sua identidade e compromisso com a qualidade.  Hoje, o BRASAS já formou mais de 150.000 alunos fluentes e continua a ser uma referência no ensino da língua inglesa no Brasil. A missão de capacitar brasileiros para o mundo através do inglês segue firme, transformando vidas e conectando pessoas a oportunidades globais.  O BRASAS não é apenas um curso de inglês. É um caminho para a inserção de nossos alunos na comunidade global pelo domínio do inglês.",
+          "titleInEnglish": "The Legacy of George Zinovetz",
+          "descriptionInEnglish": "George Peter Zinovetz left a lasting legacy in English teaching in Brazil. His innovative vision transformed the way the language is taught and helped thousands of Brazilians achieve their academic and professional goals.  Even after his passing in 1984, his philosophy remains the foundation of BRASAS. The academic team and network managers remain committed to excellence in teaching, keeping the founder's essence alive. BRASAS continues to evolve, incorporating new technologies and pedagogical approaches without losing its identity and commitment to quality.  Today, BRASAS has trained over 150,000 fluent students and remains a reference in English teaching in Brazil. The mission of empowering Brazilians for the world through English remains strong, transforming lives and connecting people to global opportunities.  BRASAS is not just an English course. It is a path for our students to integrate into the global community through English proficiency."
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Statistics.tsx",
+      "textInEnglish": "BRASAS is present in several states in Brazil, including Rio de Janeiro, Distrito Federal, Espírito Santo, Goiás and Minas Gerais.",
+      "textInPortuguese": "O BRASAS está presente em diversos estados do Brasil, entre eles o Rio de Janeiro, Distrito Federal, Espírito Santo, Goiás e Minas Gerais.",
+      "items": [
+        {
+          "textInPortuguese": "+40 unidades",
+          "textInEnglish": "+40 branches",
+          "icon": "https://data.decoassets.com/brasas-site/ba3e98c0-dcfd-4f27-a911-ebff4ffcfc2f/home-icon.svg"
+        },
+        {
+          "textInEnglish": "+15 thousand students",
+          "icon": "https://data.decoassets.com/brasas-site/c988d190-9c5f-4ca2-a36f-cd36a0ed6af5/hand-icon.svg",
+          "textInPortuguese": "+15 mil alunos"
+        },
+        {
+          "textInEnglish": "+100 thousand graduates",
+          "textInPortuguese": "+100 mil formados",
+          "icon": "https://data.decoassets.com/brasas-site/5300e053-3681-4eba-bc6a-6a48775d78e0/heart-icon.svg"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/About/videoSection.tsx",
+      "video": "a",
+      "poster": "https://data.decoassets.com/brasas-site/431bcd63-3b8d-43e5-83f6-d03b4a0f38ad/video-poster.jpg",
+      "titleInEnglish": "BRASAS Manifest",
+      "titleInPortuguese": "Manifesto BRASAS"
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
