@@ -1,6 +1,9 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import PartnersCarouselIsland from "site/islands/Partnerships/PartnersCarouselIsland.tsx";
 
+/**
+ * @titleBy alt
+ */
 interface Logo {
   image: ImageWidget;
   alt: string;

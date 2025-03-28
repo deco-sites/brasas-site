@@ -8,7 +8,9 @@ interface SelectInputProps {
   placeholder: string;
   options: Option[];
   bgColor: "white" | "gray";
-  onChangeFunction: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  onChangeFunction: (value: string) => void;
+  required?: boolean;
+  value?: string;
 }
 
 const BG_COLORS = {
@@ -17,20 +19,26 @@ const BG_COLORS = {
 };
 
 export default function SelectInput(
-  { label, placeholder, options, bgColor, onChangeFunction }: SelectInputProps,
+  { label, placeholder, options, bgColor, onChangeFunction, required, value }:
+    SelectInputProps,
 ) {
   return (
     <div className="flex flex-col gap-2">
-      <label className="text-xs font-black text-black-500 uppercase leading-6">
+      <label className="text-sm font-semibold text-black-500 uppercase leading-6">
         {label}
       </label>
       <select
+        required={required}
+        value={value || ""} // Valor vazio por padrão
         className={`w-full ${
           BG_COLORS[bgColor]
-        } p-3 border border-gray-500 rounded-lg text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500`}
+        } p-3 h-full border border-gray-500 rounded-lg text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500`}
         onChange={(e) => onChangeFunction(e.target.value)}
       >
-        <option selected disabled value="default">{placeholder}</option>
+        <option value="" disabled hidden>
+          {/* Valor vazio para validação */}
+          {placeholder}
+        </option>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.name}

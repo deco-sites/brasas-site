@@ -43,6 +43,7 @@ export default {
       },
       purple: {
         300: "#DBD1E9",
+        500: "#9063CD",
       },
       green: {
         100: "#C5E86C",

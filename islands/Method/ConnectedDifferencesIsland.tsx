@@ -5,7 +5,7 @@ export default function ConnectedDifferencesIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
 
   return (
-    <section className="flex flex-col gap-6 xl:gap-9 items-center justify-center pb-24">
+    <section className="flex flex-col gap-6 xl:gap-9 items-center justify-center py-10 xl:pt-20 xl:pb-16">
       <h2 className="font-normal leading-8 text-2xl max-w-[45rem] text-center">
         {selectedLanguage.value === "ptBr"
           ? props.titleInPortuguese
