@@ -1,10 +1,11 @@
 interface TextInputdProps {
   label: string;
   placeholder: string;
+  required?: boolean;
 }
 
 export default function TextInput(
-  { label, placeholder, value, setValue }: TextInputdProps,
+  { label, placeholder, value, setValue, required }: TextInputdProps,
 ) {
   return (
     <div className="flex flex-col gap-2">
@@ -17,6 +18,7 @@ export default function TextInput(
         className="w-full bg-gray-300 p-3 border border-gray-500 rounded-lg text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500"
         value={value}
         onChange={(e) => setValue(e.target.value)}
+        required={required}
       />
     </div>
   );

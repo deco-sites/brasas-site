@@ -4,14 +4,14 @@ export default function HighlightedDifferencesIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
   return (
     <div className="flex justify-center w-full">
-      <div className="max-w-[88.5rem] px-9">
-        <h2>
+      <div className="max-w-[88.5rem] px-9 pt-20 pb-10 md:pb-32 xl:py-20">
+        <h2 className="text-center font-bold text-3xl text-black-500 xl:px-9">
           {selectedLanguage.value === "ptBr"
             ? props.titleInPortuguese
             : props.titleInEnglish}
         </h2>
 
-        <div className="relative mt-20 mb-48 flex flex-col gap-7">
+        <div className="relative mt-20 xl:mb-24 flex flex-col gap-7 pb-10">
           <div className="bg-green-100 rounded-3xl flex items-center lg:items-start justify-center h-60 px-6 lg:px-52">
             <h3 className="py-10 pb-8 text-blue-300 font-black text-2xl text-center">
               {selectedLanguage.value === "ptBr"

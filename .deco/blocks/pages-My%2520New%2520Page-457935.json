@@ -7,8 +7,10 @@
     },
     {
       "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnBanner.tsx",
-      "titleInPortuguese": "ReferAndEarnForm",
-      "titleInEnglish": "ReferAndEarnForm"
+      "titleInPortuguese": "<p>Você tem um </p><p>amigo de verdade!</p>",
+      "titleInEnglish": "<p>You have a </p><p>true friend!</p>",
+      "bgImage": "https://assets.decocache.com/brasas-site/1dbe4c42-e0dc-40cb-9e50-fdfe1484e805/Group-159.png",
+      "iconImage": "https://assets.decocache.com/brasas-site/a99c0352-62f5-432b-893b-9cd7d95a876d/student-vector.png"
     },
     {
       "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnForm.tsx",

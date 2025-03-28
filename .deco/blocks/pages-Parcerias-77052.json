@@ -117,14 +117,58 @@
       "titleInPortuguese": "Parceiros e empresas que já conhecem nossas soluções",
       "partnersLogos": [
         {
-          "image": "https://assets.decocache.com/brasas-site/678dd514-19af-4122-9b6e-648aee418b1b/brasas-universidades-logo.png",
-          "alt": "Logo"
+          "image": "https://assets.decocache.com/brasas-site/580142f5-d111-4313-9789-197ddaa8cbc8/Logo_Porta_Composite_Vertical_Black.png",
+          "alt": "Porta dos Fundos",
+          "width": 3494,
+          "height": 2776
         },
         {
           "image": "https://assets.decocache.com/brasas-site/dc298e05-e7ff-4c02-b61a-9013143ba5bb/FPM_RIO_2022_VERMELHO.png",
           "alt": "Mackenzie Rio",
           "width": 493,
           "height": 142
+        },
+        {
+          "image": "https://assets.decocache.com/brasas-site/070ccc48-d437-47b1-8257-53e43630584f/MARCA_CDMC_cor_1.png",
+          "alt": "FGV CDMC",
+          "width": 555,
+          "height": 103
+        },
+        {
+          "image": "https://assets.decocache.com/brasas-site/10079a22-81da-4e02-bfb2-0aba4d4a680e/Logo_-_matriz_ecucacao_1.png",
+          "alt": "Matriz Educação",
+          "width": 418,
+          "height": 226
+        },
+        {
+          "image": "https://assets.decocache.com/brasas-site/c94678f4-9dd1-4135-94ff-8a1a7681acd9/LOGO_PENSI_2021_Logo_PENSI_-_fundo_claro.png",
+          "alt": "Pensi",
+          "width": 5812,
+          "height": 3985
+        },
+        {
+          "image": "https://assets.decocache.com/brasas-site/011fe0b3-aefd-4834-a800-f1ff3e269774/Logo_Forca_Maxima_novo_verde.png",
+          "alt": "Força Máxima",
+          "width": 833,
+          "height": 303
+        },
+        {
+          "image": "https://assets.decocache.com/brasas-site/d17c6770-0ecd-4b21-b0bc-f6987a01f2bb/Logo-horizontal-colorida-slogan.png",
+          "alt": "Colégio Bilíngue",
+          "width": 1565,
+          "height": 837
+        },
+        {
+          "image": "https://assets.decocache.com/brasas-site/94790277-cc12-47b8-b6fa-1ccdbf8dfb76/LOGO_ARECO_PRETA_E_VERMELHA_1.png",
+          "alt": "ARCO",
+          "width": 1323,
+          "height": 265
+        },
+        {
+          "image": "https://assets.decocache.com/brasas-site/e6253ae1-4fc3-43aa-8c2f-0fdc3ed47e05/Sheraton_Hotels_and_Resorts-Logo.wine_1.png",
+          "alt": "Sheraton",
+          "width": 3000,
+          "height": 2000
         }
       ]
     },

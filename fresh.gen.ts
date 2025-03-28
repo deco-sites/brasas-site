@@ -6,12 +6,13 @@ import * as $_app from "./routes/_app.tsx";
 import * as $About_AboutPageBannerIsland from "./islands/About/AboutPageBannerIsland.tsx";
 import * as $About_BrasasHistoryIsland from "./islands/About/BrasasHistoryIsland.tsx";
 import * as $About_StatisticsIsland from "./islands/About/StatisticsIsland.tsx";
+import * as $About_VideoSectionIsland from "./islands/About/VideoSectionIsland.tsx";
 import * as $Adults_AdultsCardsIsland from "./islands/Adults/AdultsCardsIsland.tsx";
 import * as $Adults_SpecialCoursesIsland from "./islands/Adults/SpecialCoursesIsland.tsx";
 import * as $BannerCarrouselIsland from "./islands/BannerCarrouselIsland.tsx";
 import * as $BecomeAFranchisee_BecomeAFranchiseeFormIsland from "./islands/BecomeAFranchisee/BecomeAFranchiseeFormIsland.tsx";
-import * as $Branches_BranchProfile_BranchProfileBannerIsland from "./islands/Branches/BranchProfile/BranchProfileBannerIsland.tsx";
 import * as $Branches_BranchProfilePageIsland from "./islands/Branches/BranchProfilePageIsland.tsx";
+import * as $Branches_BranchProfile_BranchProfileBannerIsland from "./islands/Branches/BranchProfile/BranchProfileBannerIsland.tsx";
 import * as $Branches_BranchesBannerIsland from "./islands/Branches/BranchesBannerIsland.tsx";
 import * as $Branches_BranchesIsland from "./islands/Branches/BranchesIsland.tsx";
 import * as $BrasasOnline_BrasasOnlineCardsIsland from "./islands/BrasasOnline/BrasasOnlineCardsIsland.tsx";
@@ -25,16 +26,16 @@ import * as $Certifications_ToefljrCertificationIsland from "./islands/Certifica
 import * as $Certifications_ToiecCertificationIsland from "./islands/Certifications/ToiecCertificationIsland.tsx";
 import * as $Contact_FormSectionIsland from "./islands/Contact/FormSectionIsland.tsx";
 import * as $CookiesCardIsland from "./islands/CookiesCardIsland.tsx";
+import * as $CoursesCardsSectionIsland from "./islands/CoursesCardsSectionIsland.tsx";
 import * as $Courses_CoursesBannerIsland from "./islands/Courses/CoursesBannerIsland.tsx";
 import * as $Courses_CoursesCardsIsland from "./islands/Courses/CoursesCardsIsland.tsx";
-import * as $CoursesCardsSectionIsland from "./islands/CoursesCardsSectionIsland.tsx";
 import * as $FooterIsland from "./islands/FooterIsland.tsx";
 import * as $HeaderIsland from "./islands/HeaderIsland.tsx";
+import * as $HomeForm from "./islands/HomeForm.tsx";
 import * as $Home_BeAFranchiseeIsland from "./islands/Home/BeAFranchiseeIsland.tsx";
 import * as $Home_BrasasCardsIsland from "./islands/Home/BrasasCardsIsland.tsx";
 import * as $Home_DiscoverOurCoursesIsland from "./islands/Home/DiscoverOurCoursesIsland.tsx";
 import * as $Home_TestimonialsIsland from "./islands/Home/TestimonialsIsland.tsx";
-import * as $HomeForm from "./islands/HomeForm.tsx";
 import * as $IWantKnowMoreIsland from "./islands/IWantKnowMoreIsland.tsx";
 import * as $JuniorsAndTeens_JuniorsAndTeensIsland from "./islands/JuniorsAndTeens/JuniorsAndTeensIsland.tsx";
 import * as $Kids_KidsCardsIsland from "./islands/Kids/KidsCardsIsland.tsx";
@@ -53,8 +54,13 @@ import * as $Pre_K_NextStepsIsland from "./islands/Pre-K/NextStepsIsland.tsx";
 import * as $Pre_K_PreKBannerIsland from "./islands/Pre-K/PreKBannerIsland.tsx";
 import * as $Pre_K_PreKCardsIsland from "./islands/Pre-K/PreKCardsIsland.tsx";
 import * as $Pre_K_PreKCoursesCardsIsland from "./islands/Pre-K/PreKCoursesCardsIsland.tsx";
+import * as $ReferAndEarnPage_HaveQuestionsIsland from "./islands/ReferAndEarnPage/HaveQuestionsIsland.tsx";
+import * as $ReferAndEarnPage_ReferAndEarnPageBannerIsland from "./islands/ReferAndEarnPage/ReferAndEarnPageBannerIsland.tsx";
+import * as $ReferAndEarnPage_RegulationTextIsland from "./islands/ReferAndEarnPage/RegulationTextIsland.tsx";
+import * as $ReferAndEarnPage_WhoIndicatesIsland from "./islands/ReferAndEarnPage/WhoIndicatesIsland.tsx";
 import * as $ReferAndEarn_ReferAndEarnBannerIsland from "./islands/ReferAndEarn/ReferAndEarnBannerIsland.tsx";
 import * as $ReferAndEarn_ReferAndEarnFormIsland from "./islands/ReferAndEarn/ReferAndEarnFormIsland.tsx";
+import * as $TextCarouselIsland from "./islands/TextCarouselIsland.tsx";
 import * as $WorkWithUs_WorkWithusFormIsland from "./islands/WorkWithUs/WorkWithusFormIsland.tsx";
 import * as $buttons_and_flags from "./islands/buttons-and-flags.tsx";
 import * as $header_menu from "./islands/header-menu.tsx";
@@ -70,15 +76,16 @@ const manifest = {
     "./islands/About/AboutPageBannerIsland.tsx": $About_AboutPageBannerIsland,
     "./islands/About/BrasasHistoryIsland.tsx": $About_BrasasHistoryIsland,
     "./islands/About/StatisticsIsland.tsx": $About_StatisticsIsland,
+    "./islands/About/VideoSectionIsland.tsx": $About_VideoSectionIsland,
     "./islands/Adults/AdultsCardsIsland.tsx": $Adults_AdultsCardsIsland,
     "./islands/Adults/SpecialCoursesIsland.tsx": $Adults_SpecialCoursesIsland,
     "./islands/BannerCarrouselIsland.tsx": $BannerCarrouselIsland,
     "./islands/BecomeAFranchisee/BecomeAFranchiseeFormIsland.tsx":
       $BecomeAFranchisee_BecomeAFranchiseeFormIsland,
-    "./islands/Branches/BranchProfile/BranchProfileBannerIsland.tsx":
-      $Branches_BranchProfile_BranchProfileBannerIsland,
     "./islands/Branches/BranchProfilePageIsland.tsx":
       $Branches_BranchProfilePageIsland,
+    "./islands/Branches/BranchProfile/BranchProfileBannerIsland.tsx":
+      $Branches_BranchProfile_BranchProfileBannerIsland,
     "./islands/Branches/BranchesBannerIsland.tsx":
       $Branches_BranchesBannerIsland,
     "./islands/Branches/BranchesIsland.tsx": $Branches_BranchesIsland,
@@ -101,17 +108,17 @@ const manifest = {
       $Certifications_ToiecCertificationIsland,
     "./islands/Contact/FormSectionIsland.tsx": $Contact_FormSectionIsland,
     "./islands/CookiesCardIsland.tsx": $CookiesCardIsland,
+    "./islands/CoursesCardsSectionIsland.tsx": $CoursesCardsSectionIsland,
     "./islands/Courses/CoursesBannerIsland.tsx": $Courses_CoursesBannerIsland,
     "./islands/Courses/CoursesCardsIsland.tsx": $Courses_CoursesCardsIsland,
-    "./islands/CoursesCardsSectionIsland.tsx": $CoursesCardsSectionIsland,
     "./islands/FooterIsland.tsx": $FooterIsland,
     "./islands/HeaderIsland.tsx": $HeaderIsland,
+    "./islands/HomeForm.tsx": $HomeForm,
     "./islands/Home/BeAFranchiseeIsland.tsx": $Home_BeAFranchiseeIsland,
     "./islands/Home/BrasasCardsIsland.tsx": $Home_BrasasCardsIsland,
     "./islands/Home/DiscoverOurCoursesIsland.tsx":
       $Home_DiscoverOurCoursesIsland,
     "./islands/Home/TestimonialsIsland.tsx": $Home_TestimonialsIsland,
-    "./islands/HomeForm.tsx": $HomeForm,
     "./islands/IWantKnowMoreIsland.tsx": $IWantKnowMoreIsland,
     "./islands/JuniorsAndTeens/JuniorsAndTeensIsland.tsx":
       $JuniorsAndTeens_JuniorsAndTeensIsland,
@@ -138,10 +145,19 @@ const manifest = {
     "./islands/Pre-K/PreKBannerIsland.tsx": $Pre_K_PreKBannerIsland,
     "./islands/Pre-K/PreKCardsIsland.tsx": $Pre_K_PreKCardsIsland,
     "./islands/Pre-K/PreKCoursesCardsIsland.tsx": $Pre_K_PreKCoursesCardsIsland,
+    "./islands/ReferAndEarnPage/HaveQuestionsIsland.tsx":
+      $ReferAndEarnPage_HaveQuestionsIsland,
+    "./islands/ReferAndEarnPage/ReferAndEarnPageBannerIsland.tsx":
+      $ReferAndEarnPage_ReferAndEarnPageBannerIsland,
+    "./islands/ReferAndEarnPage/RegulationTextIsland.tsx":
+      $ReferAndEarnPage_RegulationTextIsland,
+    "./islands/ReferAndEarnPage/WhoIndicatesIsland.tsx":
+      $ReferAndEarnPage_WhoIndicatesIsland,
     "./islands/ReferAndEarn/ReferAndEarnBannerIsland.tsx":
       $ReferAndEarn_ReferAndEarnBannerIsland,
     "./islands/ReferAndEarn/ReferAndEarnFormIsland.tsx":
       $ReferAndEarn_ReferAndEarnFormIsland,
+    "./islands/TextCarouselIsland.tsx": $TextCarouselIsland,
     "./islands/WorkWithUs/WorkWithusFormIsland.tsx":
       $WorkWithUs_WorkWithusFormIsland,
     "./islands/buttons-and-flags.tsx": $buttons_and_flags,
