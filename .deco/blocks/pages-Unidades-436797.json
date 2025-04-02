@@ -14,455 +14,217 @@
     },
     {
       "__resolveType": "site/sections/Branches/Branches.tsx",
-      "branches": [
+      "states": [
         {
-          "tels": [
+          "branches": [
             {
-              "number": "21992717409",
-              "isWhatsapp": true
+              "tels": [
+                {
+                  "number": "21992717409",
+                  "isWhatsapp": true
+                },
+                {
+                  "number": "21998119825",
+                  "isWhatsapp": true
+                },
+                {
+                  "number": "21972964245",
+                  "isWhatsapp": true
+                }
+              ],
+              "name": "Brasas Online",
+              "instagram": "https://www.instagram.com/brasasenglishcourse/",
+              "image": "https://assets.decocache.com/brasas-site/ba93431d-0476-439c-a3f9-716b12b4df9c/BRASAS_ID_BOL_RGB_Positivo.png"
             },
             {
-              "number": "21998119825",
-              "isWhatsapp": true
+              "tels": [
+                {
+                  "number": "21970985768",
+                  "isWhatsapp": true
+                }
+              ],
+              "name": "Bangu - Polo Colégio Matriz",
+              "address": "R. Agrícola, 318",
+              "neighborhood": "Bangu",
+              "city": "Rio de Janeiro",
+              "state": "RJ",
+              "email": "bg@brasas.com",
+              "instagram": "https://www.instagram.com/dirbangu/",
+              "lon": "-43.458808",
+              "lat": "-22.878473",
+              "zip_code": "21810-090"
             },
             {
-              "number": "21972964245",
-              "isWhatsapp": true
+              "tels": [
+                {
+                  "number": "2134338688",
+                  "isWhatsapp": false
+                },
+                {
+                  "number": "2134338760",
+                  "isWhatsapp": false
+                },
+                {
+                  "number": "21992977284",
+                  "isWhatsapp": false
+                }
+              ],
+              "name": "Barra - Downtown",
+              "image": "https://assets.decocache.com/brasas-site/9fe29136-0651-4673-8f67-0e518ba588fd/brasas-barra-downtown.webp",
+              "address": "Av. das Américas, 500 - Bloco 10 - Loja 104,",
+              "neighborhood": "Barra da Tijuca",
+              "city": "Rio de Janeiro",
+              "state": "RJ",
+              "email": "dt@brasas.com",
+              "lon": "-43.318482",
+              "lat": "-23.004389",
+              "zip_code": "22640-100"
             }
           ],
-          "image": "https://assets.decocache.com/brasas-site/ba93431d-0476-439c-a3f9-716b12b4df9c/BRASAS_ID_BOL_RGB_Positivo.png",
-          "name": "Brasas Online",
-          "email": "online@brasas.com",
-          "instagram": "https://www.instagram.com/brasasenglishcourse/"
+          "name": "Rio de Janeiro"
         },
         {
-          "tels": [
+          "branches": [
             {
-              "number": "21970985768",
-              "isWhatsapp": true
+              "tels": [
+                {
+                  "number": "61995527511",
+                  "isWhatsapp": true
+                }
+              ],
+              "image": "https://assets.decocache.com/brasas-site/6c2977e9-9d5a-4a15-a5de-3c817b9ee20e/BRASILIA---ASA-NORTE.png",
+              "name": "Brasília - Asa Norte",
+              "address": "EQ/NORTE 102/103 LOTE A SALA 9B, ENTRADA A TÉRREO (MEZANINO),",
+              "neighborhood": "Centro Comercial Avenida 102",
+              "city": "Brasília",
+              "state": "DF",
+              "email": "an@brasas.com",
+              "lon": "-47.88303",
+              "lat": "-15.78045",
+              "zip_code": "70722-400"
             }
           ],
-          "name": "Bangu - Polo Colégio Matriz",
-          "address": "R. Agrícola, 318",
-          "neighborhood": "Bangu",
-          "city": "Rio de Janeiro",
-          "email": "bg@brasas.com",
-          "state": "RJ",
-          "instagram": "https://www.instagram.com/dirbangu/",
-          "lon": "-43.458808",
-          "lat": "-22.878473",
-          "zip_code": "21810-090"
+          "name": "Distrito Federal"
         },
         {
-          "tels": [
+          "branches": [
             {
-              "number": "2134338688",
-              "isWhatsapp": false
-            },
-            {
-              "number": "2134338760",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21992977284",
-              "isWhatsapp": true
+              "tels": [
+                {
+                  "number": "2730294720",
+                  "isWhatsapp": false
+                },
+                {
+                  "number": "27999099982",
+                  "isWhatsapp": true
+                }
+              ],
+              "image": "https://assets.decocache.com/brasas-site/fccbeedf-2041-4d02-bfce-fdfd67805bfa/vitoria.jpg",
+              "name": "Vitória",
+              "address": "R. Eugênio Neto, 456",
+              "neighborhood": "Praia de Canto",
+              "city": "Vitória",
+              "state": "ES",
+              "email": "vt@brasas.com",
+              "lon": "-40.408408",
+              "lat": "-20.007327",
+              "zip_code": "29055-275"
             }
           ],
-          "image": "https://assets.decocache.com/brasas-site/9fe29136-0651-4673-8f67-0e518ba588fd/brasas-barra-downtown.webp",
-          "name": "Barra - Downtown",
-          "address": "Av. das Américas, 500 - Bloco 10 - Loja 104",
-          "neighborhood": "Barra da Tijuca",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "dt@brasas.com",
-          "lon": "-43.318482",
-          "lat": "-23.004389",
-          "zip_code": "22640-100"
+          "name": "Espírito Santo"
         },
         {
-          "tels": [
+          "branches": [
             {
-              "number": "2124385043",
-              "isWhatsapp": false
+              "tels": [
+                {
+                  "number": "6232813113",
+                  "isWhatsapp": true
+                }
+              ],
+              "name": "Marista",
+              "address": "R. 32, 346",
+              "neighborhood": "Setor Marista",
+              "city": "Goiânia",
+              "state": "GO",
+              "email": "go@brasas.com",
+              "lon": "-49.23695",
+              "lat": "-16.68935",
+              "zip_code": "74150-210"
             },
             {
-              "number": "2131519410",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21992717543",
-              "isWhatsapp": true
+              "tels": [
+                {
+                  "number": "6236388212",
+                  "isWhatsapp": false
+                },
+                {
+                  "number": "62996261751",
+                  "isWhatsapp": true
+                }
+              ],
+              "name": "Jardim Goiás",
+              "address": "Av. R 54, nº 453 - QD B 19 - Lote 31",
+              "neighborhood": "Jardim Goiás",
+              "city": "Goiânia",
+              "state": "GO",
+              "email": "jg@brasas.com",
+              "lon": "-49.24092",
+              "lat": "-16.70058",
+              "zip_code": "74810-220",
+              "image": "https://assets.decocache.com/brasas-site/da943ae9-c452-4e56-83ab-da898ba23757/FACHADA-JARDIM-GOIAS.JPG"
             }
           ],
-          "name": "Barra - Novo Leblon",
-          "address": "Av. das Américas, 7607 - Sala 330",
-          "neighborhood": "Barra da Tijuca",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "nl@brasas.com",
-          "instagram": "https://www.instagram.com/director_novoleblon/",
-          "lon": "-43.38297",
-          "lat": "-23.00098",
-          "zip_code": "22793-081"
+          "name": "Goiás"
         },
         {
-          "tels": [
+          "branches": [
             {
-              "number": "2134117271",
-              "isWhatsapp": false
+              "tels": [
+                {
+                  "number": "3232141010",
+                  "isWhatsapp": false
+                },
+                {
+                  "number": "32988877387",
+                  "isWhatsapp": true
+                }
+              ],
+              "name": "Juiz de Fora",
+              "image": "https://assets.decocache.com/brasas-site/44f17b86-c2ef-4f87-a454-135085e86ad6/juiz-de-fora.png",
+              "address": "R. Belmiro Braga, 120,",
+              "neighborhood": "Alto dos Passos",
+              "city": "Juiz de Fora",
+              "state": "MG",
+              "email": "jf@brasas.com",
+              "lon": "-43.345599",
+              "lat": "-21.778694",
+              "zip_code": "36026-490"
             },
             {
-              "number": "21994999117",
-              "isWhatsapp": true
+              "tels": [
+                {
+                  "number": "3132927015",
+                  "isWhatsapp": false
+                },
+                {
+                  "number": "31986237739",
+                  "isWhatsapp": true
+                }
+              ],
+              "name": "Santo Agostinho",
+              "image": "https://assets.decocache.com/brasas-site/16f7d88b-78ef-4609-9bac-56df6b21406b/santo-agostinho.jpg",
+              "address": "R. Alvarenga Peixoto, 1440,",
+              "neighborhood": "Santo Agostinho",
+              "city": "Belo Horizonte",
+              "state": "MG",
+              "email": "sa@brasas.com",
+              "lon": "-43.769632",
+              "lat": "-21.226148",
+              "zip_code": "30180-121"
             }
           ],
-          "name": "Barra - Parque Olímpico",
-          "address": "Est. Cel. Pedro Correa, 1427 - Condomínio Rio 2,",
-          "neighborhood": "Barra Olímpica",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "po@brasas.com",
-          "lon": "-43.385978",
-          "lat": "-22.97246",
-          "zip_code": "22775-090"
-        },
-        {
-          "tels": [
-            {
-              "number": "2125278399",
-              "isWhatsapp": false
-            },
-            {
-              "number": "2122665026",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21992717526",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Botafogo",
-          "address": "R. Voluntários da Pátria, 190 - 3º andar,",
-          "neighborhood": "Botafogo",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "bf@brasas.com",
-          "lon": "-43.18828",
-          "lat": "-22.952635",
-          "zip_code": "22270-010"
-        },
-        {
-          "tels": [
-            {
-              "number": "2135291648",
-              "isWhatsapp": false
-            },
-            {
-              "number": "2122892934",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21976180373",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Cachambi",
-          "address": "Av. Dom Hélder Câmara, 5644 - Loja B e C",
-          "neighborhood": "Engenho de Dentro",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "ch@brasas.com",
-          "lon": "-43.285735",
-          "lat": "-22.887251",
-          "zip_code": "20771-004"
-        },
-        {
-          "tels": [
-            {
-              "number": "2133843089",
-              "isWhatsapp": false
-            },
-            {
-              "number": "2133949520",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21992715352",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Campo Grande",
-          "address": "Av. Cesário de Melo, 2400 - Sala 107,",
-          "neighborhood": "Campo Grande",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "cg@brasas.com",
-          "lon": "-43.555788",
-          "lat": "-22.904497",
-          "zip_code": "23052-100"
-        },
-        {
-          "tels": [
-            {
-              "number": "2122351183",
-              "isWhatsapp": false
-            },
-            {
-              "number": "2125498667",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21994991603",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Copacabana",
-          "address": "R. Pompeu Loureiro, 41,",
-          "neighborhood": "Copacabana",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "cp@brasas.com",
-          "lon": "-43.192272",
-          "lat": "-22.973409",
-          "zip_code": "22061-000"
-        },
-        {
-          "tels": [
-            {
-              "number": "2127710646",
-              "isWhatsapp": false
-            },
-            {
-              "number": "2126532446",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21992657873",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Duque de Caxias",
-          "address": "R. Prof. José de Souza Herdy, 1165,",
-          "neighborhood": "Jardim 25 de Agosto",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "cx@brasas.com",
-          "lon": "-43.305969",
-          "lat": "-22.789872",
-          "zip_code": "25071-200"
-        },
-        {
-          "tels": [
-            {
-              "number": "2124623575",
-              "isWhatsapp": false
-            },
-            {
-              "number": "2124639718",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21992715280",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Ilha",
-          "address": "R. Cambaúba, 205,",
-          "neighborhood": "Jardim Guanabara",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "ig@brasas.com",
-          "lon": "-43.207877",
-          "lat": "-22.806543",
-          "zip_code": "21940-000"
-        },
-        {
-          "tels": [
-            {
-              "number": "2125238000",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21989006835",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Ipanema",
-          "address": "R. Visconde de Pirajá, 330 - Sala 207 / 208 / 209,",
-          "neighborhood": "Ipanema",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "ip@brasas.com",
-          "lon": " -43.20454",
-          "lat": "-22.984091",
-          "zip_code": "22410-000"
-        },
-        {
-          "tels": [
-            {
-              "number": "2124438651",
-              "isWhatsapp": false
-            },
-            {
-              "number": "2124438652",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21994991912",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Jpa - Freguesia",
-          "address": "Est. dos Três Rios, 200 - 2º andar,",
-          "neighborhood": "Freguesia - Jacarepaguá",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "fg@brasas.com",
-          "lon": "-43.341825",
-          "lat": "-22.939528",
-          "zip_code": "22755-000"
-        },
-        {
-          "tels": [
-            {
-              "number": "2124438651",
-              "isWhatsapp": false
-            },
-            {
-              "number": "2124438652",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21994991912",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Jpa - Pechincha",
-          "address": "Rua Retiro dos Artistas, nº 855 - Lojas A, B, C - Bloco 1,",
-          "neighborhood": "Pechincha",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "pc@brasas.com",
-          "lon": "-43.35844803202265",
-          "lat": "-22.935223004473656",
-          "zip_code": "22770-102 "
-        },
-        {
-          "tels": [
-            {
-              "number": "2124352501",
-              "isWhatsapp": false
-            },
-            {
-              "number": "2124233899",
-              "isWhatsapp": false
-            },
-            {
-              "number": "21994991813",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Jpa - Taquara",
-          "address": "R. Apiacás, 23,",
-          "neighborhood": "Taquara",
-          "city": "Rio de Janeiro",
-          "state": "RJ",
-          "email": "tq@brasas.com",
-          "lon": "-43.369665",
-          "lat": "-22.920085",
-          "zip_code": "22730-190"
-        },
-        {
-          "tels": [
-            {
-              "number": "6232813113",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Marista",
-          "address": "R. 32, 346",
-          "neighborhood": "Setor Marista",
-          "city": "Goiânia",
-          "state": "GO",
-          "email": "go@brasas.com",
-          "lon": "-49.23695",
-          "lat": "-16.68935",
-          "zip_code": "74150-210",
-          "image": "https://data.decoassets.com/brasas-site/34abf2e4-5e44-4844-af44-01941a012144/brasas-sede.webp",
-          "instagram": "https://www.instagram.com/dirbangu/"
-        },
-        {
-          "tels": [
-            {
-              "number": "6236388212",
-              "isWhatsapp": false
-            },
-            {
-              "number": "62996261751",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Jardim Goiás",
-          "address": "Av. R 54, nº 453 - QD B 19 - Lote 31",
-          "neighborhood": "Jardim Goiás",
-          "city": "Goiânia",
-          "state": "GO",
-          "email": "jg@brasas.com",
-          "lon": "-49.24092",
-          "lat": "-16.70058",
-          "zip_code": "74810-220",
-          "image": "https://data.decoassets.com/brasas-site/76c07758-8a85-4be5-8375-6548cb080a98/slide_about.jpg",
-          "instagram": "https://www.instagram.com/dirbangu/"
-        },
-        {
-          "tels": [
-            {
-              "number": "61995527511",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Brasília - Asa Norte",
-          "address": "EQ/NORTE 102/103 LOTE A SALA 9B, ENTRADA A TÉRREO (MEZANINO)",
-          "neighborhood": "Centro Comercial Avenida 102",
-          "city": "Brasília",
-          "state": "DF",
-          "email": "an@brasas.com",
-          "lon": "-47.88303",
-          "lat": "-15.78045",
-          "zip_code": "70722-400",
-          "image": "https://data.decoassets.com/brasas-site/34abf2e4-5e44-4844-af44-01941a012144/brasas-sede.webp",
-          "instagram": "https://www.instagram.com/dirbangu/"
-        },
-        {
-          "tels": [],
-          "name": "Vitória",
-          "address": "R. Eugênio Neto, 456",
-          "neighborhood": "Praia de Canto",
-          "city": "Vitória",
-          "state": "ES",
-          "email": "vt@brasas.com",
-          "lon": "-40.408408",
-          "lat": "-20.007327",
-          "zip_code": "29055-275",
-          "image": "https://data.decoassets.com/brasas-site/76c07758-8a85-4be5-8375-6548cb080a98/slide_about.jpg",
-          "instagram": "https://www.instagram.com/dirbangu/"
-        },
-        {
-          "tels": [
-            {
-              "number": "21974803280",
-              "isWhatsapp": true
-            }
-          ],
-          "name": "Laranjeiras",
-          "address": "R. São Salvador, 49",
-          "neighborhood": "Laranjeiras",
-          "city": "Rio de Janeiro",
-          "email": "lj@brasas.com",
-          "state": "RJ",
-          "lon": "-43.179219",
-          "lat": "-22.933933",
-          "zip_code": "22231-130"
+          "name": "Minas Gerais"
         }
       ]
     },

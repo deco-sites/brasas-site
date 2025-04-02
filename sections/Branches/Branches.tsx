@@ -23,8 +23,14 @@ interface Branch {
   zip_code?: string;
 }
 
-interface BranchesProps {
+/** @titleBy name */
+interface State {
+  name: string;
   branches: Branch[];
+}
+
+interface BranchesProps {
+  states: State[];
 }
 
 export default function Branches(props: BranchesProps) {
