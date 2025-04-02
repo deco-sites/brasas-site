@@ -2704,6 +2704,9 @@ html {
 .min-h-20 {
   min-height: 5rem;
 }
+.min-h-60 {
+  min-height: 15rem;
+}
 .min-h-96 {
   min-height: 24rem;
 }

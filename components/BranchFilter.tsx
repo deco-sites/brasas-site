@@ -1,3 +1,4 @@
+import { useEffect } from "preact/hooks";
 import IconSearch from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/search.tsx";
 import SelectInput from "site/components/ui/SelectInput.tsx";
 import { useSelectLanguage } from "site/sdk/language.ts";
@@ -25,10 +26,14 @@ export default function BranchFilter(
     { name: "Goiás", value: "go" },
     { name: "Minas Gerais", value: "mg" },
     { name: "Rio de Janeiro", value: "rj" },
-    { name: "Rio Grande do Sul", value: "rs" },
   ];
 
   const { selectedLanguage } = useSelectLanguage();
+
+  useEffect(() => {
+    setSelectedCity(null);
+    setSelectedUnity(null);
+  }, [activeState]);
 
   return (
     <div className="w-full flex flex-col gap-6 border border-gray-100 rounded-2xl p-6">

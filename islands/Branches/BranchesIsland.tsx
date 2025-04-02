@@ -10,6 +10,32 @@ import IconHeartFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/hear
 import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function BranchesIsland(props) {
+  const STATE_NAMES = {
+    "DF": "Distrito Federal",
+    "ES": "Espírito Santo",
+    "GO": "Goiás",
+    "MG": "Minas Gerais",
+    "RJ": "Rio de Janeiro",
+  };
+  // Transforma a estrutura de props.states em uma lista plana de branches
+  const allBranches = props.states.flatMap((state) => state.branches);
+
+  // Agrupa as branches por estado para exibição (incluindo apenas estados com branches)
+  const groupedBranches = props.states.reduce((acc, state) => {
+    if (state.branches.length > 0) {
+      // Primeiro remove o primeiro item se for o Rio de Janeiro
+      const branchesToSort = state.name === "Rio de Janeiro"
+        ? state.branches.slice(1)
+        : [...state.branches];
+
+      // Depois ordena os branches restantes por nome
+      acc[state.name] = branchesToSort.sort((a, b) =>
+        a.name.localeCompare(b.name)
+      );
+    }
+    return acc;
+  }, {});
+
   const { selectedLanguage } = useSelectLanguage();
   const [view, setView] = useState("list");
   const [filteredBranches, setFilteredBranches] = useState([{
@@ -19,7 +45,7 @@ export default function BranchesIsland(props) {
     value: "",
   }]);
   const [finalFilteredBranches, setFinalFilteredBranches] = useState(
-    props.branches.slice(1),
+    Object.values(groupedBranches).flat(),
   );
   const [textInputed, setTextInputed] = useState("");
   const [activeState, setActiveState] = useState(null);
@@ -28,10 +54,13 @@ export default function BranchesIsland(props) {
   const [filteredCities, setFilteredCities] = useState<
     { name: string; value: string }[]
   >([]);
+  const [showAlert, setShowAlert] = useState(false);
+  const [isShowingFilters, setIsShowingFilters] = useState(false);
 
+  const slicedBranches = allBranches.slice(1);
   const cityOptions = Array.from(
     new Map(
-      props.branches.map((branch: { city: string; state: string }) => [
+      slicedBranches.map((branch: { city: string; state: string }) => [
         `${branch.city}-${branch.state?.toLowerCase()}`,
         {
           name: branch.city,
@@ -43,18 +72,21 @@ export default function BranchesIsland(props) {
   );
 
   const handleFilterBranch = (city: string) => {
-    console.log("Filter Branch", city);
-
-    const filtered = props.branches
+    const filtered = allBranches
       .filter((branch) => branch.city?.toLowerCase() === city?.toLowerCase())
       .map((branch) => ({ name: branch.name }));
 
     setFilteredBranches(filtered);
   };
 
+  // Nova função para verificar se há filtros ativos
+  const hasActiveFilters = () => {
+    return textInputed || activeState || selectedCity || selectedUnity;
+  };
+
+  const [searchActive, setSearchActive] = useState(false);
+
   useEffect(() => {
-    console.log("cityOptions", cityOptions);
-    console.log("Branches:", props.branches);
     if (activeState) {
       const cities = cityOptions.filter((city) =>
         city.state?.toLowerCase() === activeState
@@ -75,9 +107,9 @@ export default function BranchesIsland(props) {
     }]);
   }, [selectedLanguage.value]);
 
-  const handleSearch = () => {
-    const finalFilteredBranches = props.branches.filter((branch) => {
-      // Filtro por texto digitado
+  // Função para filtrar branches com base nos filtros ativos
+  const filterBranches = (branches) => {
+    return branches.filter((branch) => {
       const textFilter = textInputed !== ""
         ? (
           branch.name?.toLowerCase().includes(textInputed?.toLowerCase()) ||
@@ -91,17 +123,14 @@ export default function BranchesIsland(props) {
         )
         : true;
 
-      // Filtro por estado
       const stateFilter = activeState !== null
         ? branch.state?.toLowerCase() === activeState?.toLowerCase()
         : true;
 
-      // Filtro por cidade
       const cityFilter = selectedCity !== null
         ? branch.city?.toLowerCase() === selectedCity?.toLowerCase()
         : true;
 
-      // Filtro por unidade (nome ou bairro)
       const unityFilter = selectedUnity !== null
         ? (
           branch.name?.toLowerCase() === selectedUnity?.toLowerCase() ||
@@ -109,24 +138,31 @@ export default function BranchesIsland(props) {
         )
         : true;
 
-      // Aplica todos os filtros combinados
       return textFilter && stateFilter && cityFilter && unityFilter;
     });
+  };
 
-    setFinalFilteredBranches(finalFilteredBranches);
+  const handleSearch = () => {
+    const filtered = filterBranches(allBranches)
+      .sort((a, b) => a.name.localeCompare(b.name)); // Ordena os resultados
+    setFinalFilteredBranches(filtered);
+    setSearchActive(true);
   };
 
   const handleClear = () => {
-    console.log("Clear Filters");
     setTextInputed("");
     setActiveState(null);
     setSelectedCity(null);
     setSelectedUnity(null);
-    setFilteredBranches([]);
-    setFinalFilteredBranches(props.branches.slice(1)); // Reset para mostrar todas
+    setFilteredBranches([{
+      name: selectedLanguage.value === "ptBr"
+        ? "Selecione uma cidade"
+        : "Select a city",
+      value: "",
+    }]);
+    setFinalFilteredBranches(Object.values(groupedBranches).flat());
+    setSearchActive(false);
   };
-
-  const [showAlert, setShowAlert] = useState(false);
 
   {/*Implementação da Geolocalização*/}
   const checkLocationPermission = async () => {
@@ -177,7 +213,7 @@ export default function BranchesIsland(props) {
             };
 
             // Criar array com unidades e suas distâncias
-            const branchesWithDistance = props.branches
+            const branchesWithDistance = allBranches
               .filter((branch) => branch.lat && branch.lon) // Filtra unidades sem coordenadas
               .map((branch) => ({
                 ...branch,
@@ -226,7 +262,6 @@ export default function BranchesIsland(props) {
     }
   };
 
-  const [isShowingFilters, setIsShowingFilters] = useState(false);
   const showFilters = () => {
     setIsShowingFilters(!isShowingFilters);
   };
@@ -342,39 +377,99 @@ export default function BranchesIsland(props) {
           {/*Direita*/}
           {view === "list" && (
             <div className="flex flex-col gap-6 flex-1">
-              <BranchCard
-                name={props.branches[0].name}
-                image={props.branches[0].image}
-                address={props.branches[0].address}
-                neighborhood={props.branches[0].neighborhood}
-                city={props.branches[0].city}
-                state={props.branches[0].state}
-                email={props.branches[0].email}
-                tels={props.branches[0].tels}
-                instagram={props.branches[0].instagram}
-                lon={props.branches[0].lon}
-                lat={props.branches[0].lat}
-                zip_code={props.branches[0].zip_code}
-              />
-              {(finalFilteredBranches.length > 0
-                ? finalFilteredBranches
-                : props.branches.slice(1)).map((branch, index) => (
-                  <BranchCard
-                    name={branch.name}
-                    image={branch.image}
-                    address={branch.address}
-                    neighborhood={branch.neighborhood}
-                    city={branch.city}
-                    state={branch.state}
-                    email={branch.email}
-                    tels={branch.tels}
-                    instagram={branch.instagram}
-                    lon={branch.lon}
-                    lat={branch.lat}
-                    zip_code={branch.zip_code}
-                    index={index}
-                  />
-                ))}
+              {allBranches[0] && ( //Se quiser tirar o card do bol é só adicionar && !searchActive
+                <BranchCard
+                  name={allBranches[0].name}
+                  image={allBranches[0].image}
+                  address={allBranches[0].address}
+                  neighborhood={allBranches[0].neighborhood}
+                  city={allBranches[0].city}
+                  state={allBranches[0].state}
+                  email={allBranches[0].email}
+                  tels={allBranches[0].tels}
+                  instagram={allBranches[0].instagram}
+                  lon={allBranches[0].lon}
+                  lat={allBranches[0].lat}
+                  zip_code={allBranches[0].zip_code}
+                />
+              )}
+
+              {/* Lista de branches */}
+              {searchActive
+                ? (
+                  finalFilteredBranches.length > 0
+                    ? (
+                      // Agrupa os branches filtrados por estado
+                      Object.entries(
+                        finalFilteredBranches.reduce((acc, branch) => {
+                          const stateName = branch.state;
+                          if (!acc[stateName]) {
+                            acc[stateName] = [];
+                          }
+                          acc[stateName].push(branch);
+                          return acc;
+                        }, {}),
+                      )
+                        .map(([stateName, branches]) => (
+                          <div key={stateName} className="flex flex-col gap-4">
+                            <h3 className="text-xl font-bold text-gray-800">
+                              {STATE_NAMES[stateName] || stateName}
+                            </h3>
+                            {branches.map((branch, index) => (
+                              <BranchCard
+                                key={index}
+                                name={branch.name}
+                                image={branch.image}
+                                address={branch.address}
+                                neighborhood={branch.neighborhood}
+                                city={branch.city}
+                                state={branch.state}
+                                email={branch.email}
+                                tels={branch.tels}
+                                instagram={branch.instagram}
+                                lon={branch.lon}
+                                lat={branch.lat}
+                                zip_code={branch.zip_code}
+                              />
+                            ))}
+                          </div>
+                        ))
+                    )
+                    : (
+                      <div className="text-center py-8 text-gray-500">
+                        Nenhuma unidade encontrada com os filtros selecionados
+                      </div>
+                    )
+                )
+                : (
+                  // Sem filtros ativos - mostra agrupado por estado (já ordenado)
+                  Object.entries(groupedBranches).map((
+                    [stateName, branches],
+                  ) => (
+                    <div key={stateName} className="flex flex-col gap-4">
+                      <h3 className="text-xl font-bold text-gray-800">
+                        {STATE_NAMES[stateName] || stateName}
+                      </h3>
+                      {branches.map((branch, index) => (
+                        <BranchCard
+                          key={index}
+                          name={branch.name}
+                          image={branch.image}
+                          address={branch.address}
+                          neighborhood={branch.neighborhood}
+                          city={branch.city}
+                          state={branch.state}
+                          email={branch.email}
+                          tels={branch.tels}
+                          instagram={branch.instagram}
+                          lon={branch.lon}
+                          lat={branch.lat}
+                          zip_code={branch.zip_code}
+                        />
+                      ))}
+                    </div>
+                  ))
+                )}
             </div>
           )}
 

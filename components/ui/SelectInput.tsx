@@ -1,3 +1,5 @@
+import { useEffect } from "preact/hooks";
+
 interface Option {
   name: string;
   value: string;
@@ -38,6 +40,11 @@ export default function SelectInput(
       functionToExecute(target.value);
     }
   };
+
+  useEffect(() => {
+    console.log("Aqui", options);
+    console.log("Aqui", placeholder);
+  }, []);
 
   return (
     <div className="flex flex-col gap-2">
