@@ -16,7 +16,10 @@ export default function InovationSectionIsland(props) {
         <div className="bg-blue-300 rounded-[50px] grid gap-14 grid-cols-1 xl:grid-cols-3 grid-rows-1 xl:grid-rows-3 py-10 px-12">
           {props.items.map((item, index) => (
             <div className="flex justify-start gap-4" key={index}>
-              <Image src={item.icon} className="text-green-100 w-8 h-8" />
+              <Image
+                src={item.icon}
+                className="text-green-100 fill-current w-8 h-8"
+              />
               <span
                 className="text-white text-xl leading-8"
                 dangerouslySetInnerHTML={{

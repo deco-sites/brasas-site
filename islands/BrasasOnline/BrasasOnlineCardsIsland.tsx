@@ -17,7 +17,7 @@ export default function BrasasOnlineCardsIsland(props) {
             {props.classesCards.map((card, index) => (
               <div
                 key={index}
-                className="border border-blue-500 rounded-2xl p-6 w-60 flex flex-col gap-8"
+                className="border border-blue-500 rounded-2xl p-6 flex-1 basis-0 flex flex-col gap-8"
               >
                 <span className="text-blue-500 font-bold text-xl">
                   {card.title}

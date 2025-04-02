@@ -15,7 +15,7 @@ export default function TextInput(
       <input
         type="text"
         placeholder={placeholder}
-        className="w-full bg-gray-300 p-3 border border-gray-500 rounded-lg text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500"
+        className="w-full bg-gray-300 p-3 border border-gray-500 rounded-lg text-gray-700 placeholder-gray-500 focus:outline-none focus:ring transition duration-300 focus:border-blue-30 focus:ring-blue-30/25"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         required={required}

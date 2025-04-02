@@ -9,7 +9,7 @@
       "__resolveType": "site/sections/Pre-K/PreKBanner.tsx",
       "titleInEnglish": "Pre-K",
       "titleInPortuguese": "Pre-K",
-      "descriptionInPortuguese": "Crianças aprendem se divertindo! ",
+      "descriptionInPortuguese": "Crianças aprendem se divertindo",
       "descriptionInEnglish": "Children Learn While Having Fun"
     },
     {
@@ -29,85 +29,15 @@
     {
       "__resolveType": "site/sections/Pre-K/NextSteps.tsx",
       "nextStepTitleInPortuguese": "Próximos passos",
-      "nextStepTextInPortuguese": "Após sua passagem pelo Pre-k, a criança ingressa no curso Kids.",
+      "nextStepTextInPortuguese": "<p>Após sua passagem pelo Pre-k, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/kids\">Kids</a>.</p>",
       "nextStepTitleInEnglish": "Next Steps",
-      "nextStepTextInEnglish": "After completing Pre-k, the child progresses to the Kids course."
+      "nextStepTextInEnglish": "<p>After completing Pre-k, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/kids\">Kids</a> course.</p>"
     },
     {
-      "__resolveType": "site/sections/IWantKnowMore.tsx",
-      "titleInPortuguese": "Quero saber mais",
-      "titleInEnglish": "I want to know more"
+      "__resolveType": "IWantKnowMore"
     },
     {
-      "__resolveType": "site/sections/Pre-K/PreKCoursesCards.tsx",
-      "titleInPortuguese": "Conheça outros cursos",
-      "titleInEnglish": "Discover other courses",
-      "cards": [
-        {
-          "englishTitle": "Pre-K",
-          "portugueseTitle": "Pre-K",
-          "englishDescription": "From Pre-2",
-          "portugueseDescription": "A partir do Pré-2",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png"
-        },
-        {
-          "englishTitle": "Kids",
-          "portugueseTitle": "Kids",
-          "englishDescription": "3rd year of Elementary School",
-          "portugueseDescription": "3º ano do Ensino Fundamental",
-          "image": "https://data.decoassets.com/brasas-site/3862a645-7c71-4bc0-a506-ea9d9cbef4cc/Frame-1105.png",
-          "link": "#"
-        },
-        {
-          "englishTitle": "Juniors & Teens",
-          "portugueseTitle": "Juniors & Teens",
-          "englishDescription": "6th year of Elementary School",
-          "portugueseDescription": "6º ano do Ensino Fundamental",
-          "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png",
-          "link": "#"
-        },
-        {
-          "englishTitle": "Adults",
-          "portugueseTitle": "Adults",
-          "englishDescription": "From 14 years old",
-          "portugueseDescription": "A partir de 14 anos",
-          "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png",
-          "link": "#"
-        },
-        {
-          "englishTitle": "BRASAS Online",
-          "portugueseTitle": "BRASAS Online",
-          "englishDescription": "Learn with live online classes",
-          "portugueseDescription": "Aprenda com aulas online e ao vivo",
-          "image": "https://data.decoassets.com/brasas-site/11f2b643-0c09-4da2-9fe9-a19486eded2b/BRASAS-online.png",
-          "link": "#"
-        },
-        {
-          "englishTitle": "International Certification",
-          "portugueseTitle": "Certificação Internacional",
-          "englishDescription": "Preparatory Courses and Exam",
-          "portugueseDescription": "Cursos preparatórios e prova",
-          "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png",
-          "link": "#"
-        },
-        {
-          "portugueseTitle": "Parcerias",
-          "englishTitle": "Partnerships",
-          "englishDescription": "Schools, Universities and Companies",
-          "portugueseDescription": "Escolas, Universidades e Empresas",
-          "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png",
-          "link": "#"
-        },
-        {
-          "portugueseTitle": "Português para estrangeiros",
-          "englishTitle": "Portuguese for Foreigners",
-          "englishDescription": "Learn spoken Portuguese in Brazil",
-          "portugueseDescription": "Aprenda português falado no Brasil",
-          "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png",
-          "link": "#"
-        }
-      ]
+      "__resolveType": "CoursesCardsSection"
     },
     {
       "__resolveType": "Footer"

@@ -139,14 +139,14 @@ export default function FooterIsland(props) {
             </div>
             <div className="hidden lg:flex flex-col gap-4">
               <div className="flex gap-6">
-                <a href={props.testButton.url}>
+                <a href={props.testButton.url} target="_blank">
                   <button className="whitespace-nowrap bg-red-300 text-white hover:bg-white hover:text-red-300 border border-red-300 border-opacity-0 hover:border-opacity-100 uppercase py-3 px-4 rounded-lg text-xs font-black-900 leading-6 transition duration-300 w-full">
                     {selectedLanguage.value === "ptBr"
                       ? props.testButton.textInPortuguese
                       : props.testButton.textInEnglish}
                   </button>
                 </a>
-                <a href={props.myBrasasButton.url}>
+                <a href={props.myBrasasButton.url} target="_blank">
                   <button className="whitespace-nowrap bg-blue-300 text-white hover:bg-white hover:text-blue-300 border border-blue-300 uppercase py-3 px-4 rounded-lg text-xs font-black-900 leading-6 flex gap-2 items-center justify-center border-opacity-0 hover:border-opacity-100 transition duration-300 w-full">
                     <IconUserFilled className="w-6 h-6" />
                     {selectedLanguage.value === "ptBr"

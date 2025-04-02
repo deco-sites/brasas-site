@@ -12,14 +12,21 @@
       "titleInPortuguese": "Seja um franqueado",
       "titleInEnglish": "Become a franchisee",
       "descriptionInPortuguese": "O BRASAS está sempre em expansão, e você também pode fazer parte dessa história de sucesso. Torne-se um franqueado e nos ajude na nossa missão de expandir horizontes com o domínio do inglês.",
-      "descriptionInEnglish": "BRASAS is always expanding, and you can be part of this success story too. Become a franchisee and help us in our mission to expand horizons through English proficiency."
+      "descriptionInEnglish": "BRASAS is always expanding, and you can be part of this success story too. Become a franchisee and help us in our mission to expand horizons through English proficiency.",
+      "hasNotice": false
     },
     {
       "__resolveType": "site/sections/BecomeAFranchisee/BecomeAFranchiseeForm.tsx",
       "titleInEnglish": "Quality above all",
-      "textInEnglish": "<p>BRASAS places a high value on the quality of its teaching, offering the best in the market to its students through its learning method, efficient teachers, and qualified materials. We have been achieving positive results for years by following this didactic philosophy. Read more about our method.</p><p>It is extremely important that the owner of a BRASAS franchise is in tune with our philosophy and commitment to quality. This careful selection of partners may cause delays in the process of expanding units. On the other hand, all the schools that open are successful, gaining the highest prestige in their cities.</p><p>Become a BRASAS franchisee.</p>",
+      "textInEnglish": "<p>BRASAS places a high value on the quality of its teaching, offering the best in the market to its students through its learning method, efficient teachers, and qualified materials. We have been achieving positive results for years by following this didactic philosophy. <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/metodo\">Read more about our method.</a></p><p>It is extremely important that the owner of a BRASAS franchise is in tune with our philosophy and commitment to quality. This careful selection of partners may cause delays in the process of expanding units. On the other hand, all the schools that open are successful, gaining the highest prestige in their cities.</p><p>Become a BRASAS franchisee.</p>",
       "titleInPortuguese": "Qualidade acima de tudo",
-      "textInPortuguese": "<p>O BRASAS preza muito pela qualidade de seu ensino, oferecendo o que há de melhor no mercado para os seus alunos através do seu método de aprendizagem, professores eficientes e material qualificado. São anos obtendo resultados positivos seguindo essa filosofia didática. Leia mais sobre o nosso método.</p><p>É de extrema importância que o dono de uma franquia BRASAS esteja afinado com nossa filosofia e compromisso com a qualidade. Este cuidado na escolha de parceiros pode determinar uma demora no processo de expansão das unidades. Mas por outro lado, todas as escolas abertas são um sucesso, adquirindo o mais alto conceito prestígio nas suas cidades.</p><p>Seja um franqueado BRASAS.</p>"
+      "textInPortuguese": "<p>O BRASAS preza muito pela qualidade de seu ensino, oferecendo o que há de melhor no mercado para os seus alunos através do seu método de aprendizagem, professores eficientes e material qualificado. São anos obtendo resultados positivos seguindo essa filosofia didática. <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/metodo\">Leia mais sobre o nosso método.</a></p><p>É de extrema importância que o dono de uma franquia BRASAS esteja afinado com nossa filosofia e compromisso com a qualidade. Este cuidado na escolha de parceiros pode determinar uma demora no processo de expansão das unidades. Mas por outro lado, todas as escolas abertas são um sucesso, adquirindo o mais alto conceito prestígio nas suas cidades.</p><p>Seja um franqueado BRASAS.</p>",
+      "RecipientsEmailArr": [
+        {
+          "email": "erick.nascimento@simbioseventures.com"
+        }
+      ],
+      "subject": "Formulário Brasas - Seja um Franqueado"
     },
     {
       "__resolveType": "Footer"

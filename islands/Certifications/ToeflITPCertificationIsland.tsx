@@ -10,9 +10,9 @@ export default function ToeflITPCertificationIsland(props) {
 
   return (
     <section className="flex flex-col items-center justify-center w-full">
-      <div className="flex flex-col xl:flex-row w-full pt-10 pb-5 max-w-[88.5rem] px-9">
+      <div className="flex flex-col xl:flex-row w-full justify-between pt-10 pb-5 max-w-[88.5rem] px-9">
         <CertificationTitle />
-        <div className="flex flex-col xl:w-1/2">
+        <div className="flex flex-col xl:w-1/2 xl:max-w-[35rem]">
           <span className="text-center xl:text-start text-orange-300 font-bold text-4xl leading-8 mb-6">
             {props.title}
           </span>
@@ -35,7 +35,7 @@ export default function ToeflITPCertificationIsland(props) {
         </div>
 
         <PreparatoryCourseTitle />
-        <div className="flex justify-center xl:w-1/2">
+        <div className="flex justify-center xl:w-1/2 xl:max-w-[23.75rem]">
           <div className="flex flex-col items-center border border-orange-300 rounded-[50px] p-8 h-fit">
             <Image src={props.card.logo} className="w-52 h-24 object-contain" />
             <div className="flex gap-4">

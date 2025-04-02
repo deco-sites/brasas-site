@@ -83,13 +83,16 @@ const sendEmail = async (
     });
 
     if (response.ok) {
-      console.log("Email sent successfully");
+      //console.log("Email sent successfully");
+      return 200;
     } else {
       const errorData = await response.json();
-      console.error("SendGrid API error:", errorData);
+      //console.error("SendGrid API error:", errorData);
+      return errorData;
     }
   } catch (error) {
-    console.error("Error sending email:", error);
+    return error;
+    //console.error("Error sending email:", error);
   }
 };
 

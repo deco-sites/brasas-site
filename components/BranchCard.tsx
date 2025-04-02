@@ -4,6 +4,7 @@ import IconMapPinFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/map
 import IconMailFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/mail-filled.tsx";
 import IconBrandWhatsapp from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/brand-whatsapp.tsx";
 import IconPhoneFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/phone-filled.tsx";
+import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function BranchCard(
   {
@@ -19,36 +20,78 @@ export default function BranchCard(
     lon,
     lat,
     zip_code,
+    index,
   },
 ) {
+  const whatsappNumbers = tels.filter((tel) => tel.isWhatsapp === true);
+  const telNumbers = tels.filter((tel) => tel.isWhatsapp === false);
+
+  const saveBranchInfos = () => {
+    const branchInfos = {
+      branchName: name,
+      branchImage: image,
+      branchAddress: address,
+      branchNeighborhood: neighborhood,
+      branchCity: city,
+      branchState: state,
+      branchEmail: email,
+      branchTels: tels,
+      branchInstagram: instagram,
+      branchLon: lon,
+      branchLat: lat,
+      branchZipcode: zip_code,
+    };
+
+    localStorage.setItem("brasasBranchInfos", JSON.stringify(branchInfos));
+  };
+
+  const { selectedLanguage } = useSelectLanguage();
+
   return (
-    <div className="flex flex-col xl:flex-row border border-gray-100 rounded-2xl">
+    <div className="flex flex-col lg:flex-row border border-gray-100 rounded-2xl overflow-hidden">
       <Image
-        src={image}
-        className="rounded-t-2xl xl:rounded-l-2xl xl:rounded-tr-none object-cover w-full xl:w-1/3"
+        src={image ? image : "brasas-logo-ballon.png"}
+        className="object-cover w-full lg:w-1/3"
       />
       <div className="p-6 flex flex-col gap-4 w-full">
         <div className="flex items-center justify-between w-full">
-          <a href="/unidade" className="text-black-500 font-bold text-2xl">
+          <a
+            href={`/unidade`}
+            onClick={saveBranchInfos}
+            className="text-black-500 font-bold text-2xl"
+          >
             {name}
           </a>
-          <a href={instagram}>
-            <IconBrandInstagram class="w-6 h-6 text-blue-300" />
-          </a>
-        </div>
-        <div className="flex gap-2">
-          <IconMapPinFilled class="w-6 h-6 text-blue-900" />
-          <div className="flex flex-col font-normal text-base text-black-500">
-            <span>{address}</span>
-            <span>{neighborhood}, {city}</span>
-            <a
-              href="#"
-              className="text-blue-300 underline text-xs font-semibold"
-            >
-              Como chegar?
+          {instagram && (
+            <a href={instagram} target="_blank">
+              <IconBrandInstagram class="w-6 h-6 text-blue-300" />
             </a>
-          </div>
+          )}
         </div>
+
+        {address && (
+          <div className="flex gap-2">
+            <IconMapPinFilled class="w-6 h-6 text-blue-900" />
+            <div className="flex flex-col font-normal text-base text-black-500">
+              <span>{address}</span>
+              <span>{neighborhood}, {city}</span>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${
+                  encodeURIComponent(
+                    `${address}, ${neighborhood}, ${city}, ${state}, ${zip_code}`,
+                  )
+                }`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 underline text-xs font-semibold"
+              >
+                {selectedLanguage.value === "ptBr"
+                  ? "Como chegar?"
+                  : "How to get there?"}
+              </a>
+            </div>
+          </div>
+        )}
 
         <div className="flex gap-2">
           <IconMailFilled class="w-6 h-6 text-blue-900" />
@@ -60,17 +103,27 @@ export default function BranchCard(
           </a>
         </div>
 
-        <div className="flex">
-          {tels.map((tel) => (
+        <div className="flex gap-4 items-center">
+          {telNumbers?.map((tel) => (
             <div key={tel} className="flex gap-2">
-              {tel.isWhatsapp === true
-                ? <IconBrandWhatsapp class="w-6 h-6 text-blue-900" />
-                : <IconPhoneFilled class="w-6 h-6 text-blue-900" />}
-
+              <IconPhoneFilled class="w-6 h-6 text-blue-900" />
               <span className="font-normal text-base text-black-500 underline">
                 {tel.number}
               </span>
             </div>
+          ))}
+          {whatsappNumbers?.map((tel) => (
+            <a
+              href={`https://api.whatsapp.com/send?1=pt_BR&phone=55${tel.number}`}
+              target="_blank"
+              key={tel}
+              className="flex gap-2"
+            >
+              <IconBrandWhatsapp class="w-6 h-6 text-blue-900" />
+              <span className="font-normal text-base text-black-500 underline">
+                {tel.number}
+              </span>
+            </a>
           ))}
         </div>
       </div>

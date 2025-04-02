@@ -33,6 +33,7 @@ export default function PageBannerIsland(props) {
             ? props.titleInPortuguese
             : props.titleInEnglish}
         </h1>
+
         {props.descriptionInPortuguese
           ? (
             <p className="text-white text-2xl font-normal leading-8 text-center">
@@ -42,6 +43,14 @@ export default function PageBannerIsland(props) {
             </p>
           )
           : ("")}
+
+        {props.hasNotice && (
+          <p className="text-white">
+            {selectedLanguage.value === "ptBr"
+              ? "Curso disponível nas modalidades Presencial e Online"
+              : "Course available in In-Person and Online formats"}
+          </p>
+        )}
       </div>
     </section>
   );

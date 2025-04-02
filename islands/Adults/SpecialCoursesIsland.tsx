@@ -6,15 +6,15 @@ export default function SpecialCoursesIsland(props) {
 
   return (
     <section className="flex flex-col items-center justify-center w-full">
-      <div className="max-w-[88.5rem] px-9 py-16">
-        <div className="flex justify-center py-16">
+      <div className="max-w-[88.5rem] px-9 pb-16">
+        <div className="flex justify-center pt-0 lg:pt-16 pb-24">
           <h2 className="font-black text-black-500 text-4xl leading-10">
             {selectedLanguage.value === "ptBr"
               ? props.titleInPortuguese
               : props.titleInEnglish}
           </h2>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-16 xl:gap-4 ">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-16 xl:gap-x-8 xl:gap-y-16 ">
           {props.specialCoursesCards.map((card, index) => (
             <div
               key={index}
@@ -39,6 +39,30 @@ export default function SpecialCoursesIsland(props) {
               </span>
             </div>
           ))}
+          <div className="flex justify-center gap-4 items-center rounded-[50px] border border-blue-400 px-7 xl:px-16 py-20">
+            <div className="flex flex-col gap-4">
+              <Image
+                src="/AdultsPage/brasas_exam-preparation_toefl-itp.png"
+                alt="Logo"
+                className="object-contain"
+              />
+              <Image
+                src="/AdultsPage/brasas_exam-preparation_toeic.png"
+                alt="Logo"
+                className="object-contain"
+              />
+            </div>
+
+            <span
+              className="text-gray-500 font-normal text-xl"
+              dangerouslySetInnerHTML={{
+                __html: selectedLanguage.value === "ptBr"
+                  ? "Informe-se sobre o curso preparatório e aplicações dos testes."
+                  : "Find out about the preparatory course and the test application.",
+              }}
+            >
+            </span>
+          </div>
         </div>
       </div>
     </section>

@@ -12,7 +12,8 @@
       "bgColor": "orange-300",
       "bgImage": "https://assets.decocache.com/brasas-site/367e3ac6-b34c-4e9c-b47a-6b3834703f62/certifications-bg.png",
       "titleInEnglish": "International Certifications",
-      "descriptionInEnglish": "BRASAS offers courses that prepare you for the TOEIC®, TOEFL® Junior, and TOEFL ITP® international certifications, in addition to administering the tests."
+      "descriptionInEnglish": "BRASAS offers courses that prepare you for the TOEIC®, TOEFL® Junior, and TOEFL ITP® international certifications, in addition to administering the tests.",
+      "hasNotice": true
     },
     {
       "__resolveType": "site/sections/Breadcrumbs.tsx",
@@ -54,8 +55,8 @@
         },
         {
           "icon": "https://assets.decocache.com/brasas-site/ee34a816-6b37-4fb2-9322-f64eb5d9f2e6/toiec-star.svg",
-          "textInEnglish": "<p><strong>Objective:</strong></p><p>Assess the ability of non-native English speakers to communicate in English, especially in the work and business environment. It's a way to add value to your resume and enhance your chances of winning a position at a multinational.</p><p>It's a way to add value to the resume and enhance the chances of getting a job in a multinational company.</p>",
-          "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa de se comunicar em inglês, principalmente no ambiente de trabalho e negócios. É uma maneira de trazer valor ao currículo e potencializar as chances de conquistar uma vaga em uma multinacional.</p><p>É uma forma de agregar valor ao currículo e aumentar as chances de conseguir um emprego em uma empresa multinacional.</p>"
+          "textInEnglish": "<p><strong>Objective:</strong></p><p>To assess the ability of non-native English speakers to use English in the workplace and business environment. It is a way to add value to your resume and increase your chances of landing a job at a multinational company. The test is also used by companies when hiring, placing and promoting their employees.</p>",
+          "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa em utilizar o inglês no ambiente de trabalho e negócios. É uma maneira de trazer valor ao currículo e potencializar as chances de conquistar uma vaga em uma multinacional. O teste também é utilizado por empresas na hora de contratar, colocar e promover seus colaboradores.</p>"
         },
         {
           "icon": "https://assets.decocache.com/brasas-site/2780c02e-288f-4d36-9353-843e70436ee1/toiec-book.svg",
@@ -82,8 +83,8 @@
         },
         {
           "icon": "https://assets.decocache.com/brasas-site/450d53a3-38b7-48ea-a9c8-7acad2ec180e/star.png",
-          "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Preparar estudantes que querem fazer o High School ou um programa de intercâmbio, assim como para medir a eficácia de programas de ensino de inglês em escolas.</p>",
-          "textInEnglish": "<p><strong>Objective:</strong></p><p>To evaluate the English communication skills of young and adolescent students, non-native speakers of English, who want to attend High School or an exchange program, as well as to measure the effectiveness of English teaching programs in schools.</p>"
+          "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Avaliar as habilidades linguísticas, em inglês, dos alunos jovens e adolescentes, não nativos da língua inglesa, que desejam cursar o High School ou fazer parte de um programa de intercâmbio no exterior, assim como medir a eficácia de programas de ensino de inglês em escolas.</p>",
+          "textInEnglish": "<p><strong>Objective:</strong></p><p>To assess the English language skills of young and adolescent students, non-native English speakers, who wish to attend High School or take part in an exchange program abroad, as well as to measure the effectiveness of English teaching programs in schools.</p>"
         },
         {
           "icon": "https://assets.decocache.com/brasas-site/ec9a567b-b216-47dc-8620-34572281276b/Vector.png",
@@ -110,8 +111,8 @@
         },
         {
           "icon": "https://assets.decocache.com/brasas-site/4bcd9c73-703d-462f-85f7-229f28a52408/star-(1).png",
-          "textInEnglish": "<p><strong>Objective:</strong></p><p>Assess the ability of non-native English speakers to communicate in English in the academic environment.</p>",
-          "textInPortuguese": "<p><strong>Objetivo: </strong></p><p>Avaliar o nível de inglês no ambiente acadêmico.</p>"
+          "textInEnglish": "<p><strong>Objective:</strong></p><p>To assess the ability of non-native English speakers to use English effectively in an academic environment.</p>",
+          "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa de utilizar o inglês, de forma eficaz, no ambiente acadêmico.</p>"
         },
         {
           "icon": "https://assets.decocache.com/brasas-site/1c4f4f35-d207-4350-86be-2bf4875de50c/Vector-(1).png",
@@ -140,80 +141,10 @@
       ]
     },
     {
-      "__resolveType": "site/sections/IWantKnowMore.tsx",
-      "titleInEnglish": "I want to know more",
-      "titleInPortuguese": "Quero saber mais"
+      "__resolveType": "IWantKnowMore"
     },
     {
-      "__resolveType": "site/sections/CoursesCardsSection.tsx",
-      "titleInPortuguese": "Conheça nossos cursos",
-      "titleInEnglish": "Discover our courses",
-      "cards": [
-        {
-          "englishTitle": "Pre-K",
-          "portugueseTitle": "Pre-K",
-          "englishDescription": "From Pre-2",
-          "portugueseDescription": "A partir do Pré-2",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png"
-        },
-        {
-          "englishTitle": "Kids",
-          "portugueseTitle": "Kids",
-          "englishDescription": "3rd year of Elementary School",
-          "portugueseDescription": "3º ano do Ensino Fundamental",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/3862a645-7c71-4bc0-a506-ea9d9cbef4cc/Frame-1105.png"
-        },
-        {
-          "englishTitle": "Juniors & Teens",
-          "portugueseTitle": "Juniors & Teens",
-          "englishDescription": "6th year of Elementary School",
-          "portugueseDescription": "6º ano do Ensino Fundamental",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png"
-        },
-        {
-          "englishTitle": "Adults",
-          "portugueseTitle": "Adults",
-          "englishDescription": "From 14 years old",
-          "portugueseDescription": "A partir de 14 anos",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png"
-        },
-        {
-          "englishTitle": "BRASAS Online",
-          "portugueseTitle": "BRASAS Online",
-          "englishDescription": "Learn with live online classes",
-          "portugueseDescription": "Aprenda com aulas online e ao vivo",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/11f2b643-0c09-4da2-9fe9-a19486eded2b/BRASAS-online.png"
-        },
-        {
-          "englishTitle": "International Certification",
-          "portugueseTitle": "Certificação Internacional",
-          "englishDescription": "Preparatory Courses and Exam",
-          "portugueseDescription": "Cursos preparatórios e prova",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png"
-        },
-        {
-          "englishTitle": "Partnerships",
-          "portugueseTitle": "Parcerias",
-          "englishDescription": "Schools, Universities and Companies",
-          "portugueseDescription": "Escolas, Universidades e Empresas",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png"
-        },
-        {
-          "englishTitle": "Portuguese for Foreigners",
-          "portugueseTitle": "Português para estrangeiros",
-          "englishDescription": "Learn spoken Portuguese in Brazil",
-          "portugueseDescription": "Aprenda português falado no Brasil",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png"
-        }
-      ]
+      "__resolveType": "CoursesCardsSection"
     },
     {
       "__resolveType": "Footer"

@@ -5,14 +5,17 @@ import CertificationTitle from "site/components/CertificationTitle.tsx";
 import PreparatoryCourseTitle from "site/components/PreparatoryCourseTitle.tsx";
 
 export default function ToefljrCertificationIsland(props) {
-  const textStyle = { WebkitTextStroke: "1px #001E60" };
+  //const textStyle = { WebkitTextStroke: "1px #001E60" };
   const { selectedLanguage } = useSelectLanguage();
 
   return (
-    <section className="flex flex-col items-center justify-center w-full bg-yellow-50">
-      <div className="flex flex-col xl:flex-row w-full pt-10 pb-5 max-w-[88.5rem] px-9">
+    <section
+      id="toeicjr"
+      className="flex flex-col items-center justify-center w-full bg-yellow-50"
+    >
+      <div className="flex flex-col xl:flex-row justify-between w-full pt-10 pb-5 max-w-[88.5rem] px-9">
         <CertificationTitle />
-        <div className="flex flex-col xl:w-1/2">
+        <div className="flex flex-col xl:w-1/2 xl:max-w-[35rem]">
           <span className="text-center xl:text-start text-yellow-500 font-bold text-4xl leading-8 mb-6">
             {props.title}
           </span>
@@ -35,7 +38,7 @@ export default function ToefljrCertificationIsland(props) {
         </div>
 
         <PreparatoryCourseTitle />
-        <div className="flex justify-center xl:w-1/2">
+        <div className="flex justify-center xl:w-1/2 xl:max-w-[23.75rem]">
           <div className="flex flex-col items-center border border-yellow-500 rounded-[50px] p-8 h-fit">
             <Image src={props.card.logo} className="w-52 h-24 object-contain" />
             <div className="flex gap-4">

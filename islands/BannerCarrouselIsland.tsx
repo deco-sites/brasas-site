@@ -167,14 +167,16 @@ export default function BannerCarrouselIsland(props) {
           >
           </span>
 
-          <button className="flex gap-2 px-4 py-3 w-fit bg-red-300 rounded-lg transition duration-300 hover:bg-white hover:text-blue-300">
-            <span className="font-bold text-base">
-              {selectedLanguage.value === "ptBr"
-                ? props.CTAtextInPortuguese
-                : props.CTAtextInEnglish}
-            </span>
-            <IconArrowNarrowRight class="w-6 h-6" />
-          </button>
+          <a href={props.CTALink} target="_blank">
+            <button className="flex gap-2 px-4 py-3 w-fit bg-red-300 rounded-lg transition duration-300 hover:bg-white hover:text-blue-300">
+              <span className="font-bold text-base">
+                {selectedLanguage.value === "ptBr"
+                  ? props.CTAtextInPortuguese
+                  : props.CTAtextInEnglish}
+              </span>
+              <IconArrowNarrowRight class="w-6 h-6" />
+            </button>
+          </a>
         </div>
       </div>
 

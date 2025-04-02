@@ -1,6 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import BrasasSchoolsIsland from "site/islands/Partnerships/BrasasSchoolsIsland.tsx";
 
+/* @titleBy titleInPortuguese */
 interface Item {
   icon: ImageWidget;
   titleInEnglish?: string;

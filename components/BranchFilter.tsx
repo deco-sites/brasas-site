@@ -1,6 +1,6 @@
-import { useState } from "preact/hooks";
 import IconSearch from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/search.tsx";
 import SelectInput from "site/components/ui/SelectInput.tsx";
+import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function BranchFilter(
   {
@@ -9,6 +9,10 @@ export default function BranchFilter(
     filteredBranches,
     activeState,
     setActiveState,
+    selectedCity,
+    setSelectedCity,
+    selectedUnity,
+    setSelectedUnity,
     textInputed,
     setTextInputed,
     handleSearch,
@@ -24,9 +28,11 @@ export default function BranchFilter(
     { name: "Rio Grande do Sul", value: "rs" },
   ];
 
+  const { selectedLanguage } = useSelectLanguage();
+
   return (
-    <div className="flex flex-col gap-6 border border-gray-100 rounded-2xl p-6">
-      <div className="flex gap-7 py-3 px-4 border border-gray-100 rounded-lg">
+    <div className="w-full flex flex-col gap-6 border border-gray-100 rounded-2xl p-6">
+      <div className="hidden lg:flex gap-7 py-3 px-4 border border-gray-100 rounded-lg">
         <input
           className="placeholder:text-gray-500 placeholder:font-normal placeholder:text-base w-full outline-none"
           placeholder="Buscar"
@@ -38,55 +44,63 @@ export default function BranchFilter(
 
       <div className="w-full flex justify-between">
         <span className="text-gray-500 font-semibold text-base">
-          Filtrar por
+          {selectedLanguage.value === "ptBr" ? "Filtrar por" : "Filter by"}
         </span>
         <button
           className="text-base capitalize underline font-semibold text-gray-100 hover:text-blue-300 transition duration-100"
           onClick={handleClear}
         >
-          Limpar
+          {selectedLanguage.value === "ptBr" ? "Limpar" : "Clear"}
         </button>
       </div>
 
       <div className="flex flex-col gap-2">
         <span className="uppercase text-black-500 font-black text-xs leading-6">
-          Estado
+          {selectedLanguage.value === "ptBr" ? "Estado" : "State"}
         </span>
         <div className="flex flex-wrap gap-2">
-          {stateFilters.map((city, index) => (
+          {stateFilters.map((state, index) => (
             <button
-              key={city.value}
+              key={state.value}
               className={`border border-gray-500 text-gray-500 p-2 rounded-lg hover:bg-blue-300 hover:text-white transition duration-100 ${
-                activeState === city.value ? "bg-blue-300 text-white" : ""
+                activeState === state.value ? "bg-blue-300 text-white" : ""
               }`}
-              onClick={() => setActiveState(city.value)}
+              onClick={() => setActiveState(state.value)}
             >
-              {city.name}
+              {state.name}
             </button>
           ))}
         </div>
       </div>
 
       <SelectInput
-        label={"cidade"}
-        placeholder={"Selecione a cidade"}
+        label={selectedLanguage.value === "ptBr" ? "cidade" : "city"}
+        placeholder={selectedLanguage.value === "ptBr"
+          ? "Selecione a cidade"
+          : "Select the city"}
         options={cityOptions}
         bgColor="white"
-        onChangeFunction={handleFilterBranch}
+        value={selectedCity}
+        onChangeFunction={setSelectedCity}
+        functionToExecute={handleFilterBranch}
       />
 
       <SelectInput
-        label={"unidade"}
-        placeholder={"Selecione a unidade"}
+        label={selectedLanguage.value === "ptBr" ? "unidade" : "branch"}
+        placeholder={selectedLanguage.value === "ptBr"
+          ? "Selecione a unidade"
+          : "Select the branch"}
         options={filteredBranches}
         bgColor="white"
+        value={selectedUnity}
+        onChangeFunction={setSelectedUnity}
       />
 
       <button
         className="bg-blue-300 rounded-lg text-white capitalize py-3 border border-blue-300 border-opacity-0 hover:bg-white hover:text-blue-300  hover:border-opacity-100 transition duration-100"
         onClick={handleSearch}
       >
-        Buscar
+        {selectedLanguage.value === "ptBr" ? "Buscar" : "Search"}
       </button>
     </div>
   );

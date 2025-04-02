@@ -1,4 +1,14 @@
-export default function BranchProfileBannerIsland(props) {
+import { useEffect, useState } from "preact/hooks";
+
+export default function BranchProfileBannerIsland() {
+  const [branchInfos, setBranchInfos] = useState({});
+  useEffect(() => {
+    const storedBranchInfos = JSON.parse(
+      localStorage.getItem("brasasBranchInfos"),
+    );
+    setBranchInfos(storedBranchInfos);
+  }, []);
+
   return (
     <section
       className=" flex items-center justify-center bg-blue-300 h-[25rem]"
@@ -9,8 +19,8 @@ export default function BranchProfileBannerIsland(props) {
         backgroundSize: "cover",
       }}
     >
-      <h1 className="text-white text-6xl font-black">
-        {props.branchName}
+      <h1 className="text-white text-6xl font-black text-center">
+        <span>{branchInfos.branchName}</span>
       </h1>
     </section>
   );

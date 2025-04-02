@@ -15,7 +15,13 @@
       "descriptionInEnglish": "We would love to hear what you have to say. Send a message below."
     },
     {
-      "__resolveType": "site/sections/Contact/FormSection.tsx"
+      "__resolveType": "site/sections/Contact/FormSection.tsx",
+      "RecipientsEmailArr": [
+        {
+          "email": "erick.nascimento@simbioseventures.com"
+        }
+      ],
+      "subject": "Fale Conosco - Brasas"
     },
     {
       "__resolveType": "Footer"

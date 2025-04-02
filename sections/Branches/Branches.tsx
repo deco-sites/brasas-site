@@ -1,6 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import BranchesIsland from "site/islands/Branches/BranchesIsland.tsx";
 
+/**  @titleBy number */
 interface Tel {
   number: string;
   isWhatsapp: boolean;
@@ -8,18 +9,18 @@ interface Tel {
 
 /** @titleBy name */
 interface Branch {
-  image: ImageWidget;
+  image?: ImageWidget;
   name: string;
-  address: string;
-  neighborhood: string;
-  city: string;
-  state: string;
-  email: string;
-  tels: Tel[];
-  instagram: string;
-  lon: string;
-  lat: string;
-  zip_code: string;
+  address?: string;
+  neighborhood?: string;
+  city?: string;
+  state?: string;
+  email?: string;
+  tels?: Tel[];
+  instagram?: string;
+  lon?: string;
+  lat?: string;
+  zip_code?: string;
 }
 
 interface BranchesProps {
