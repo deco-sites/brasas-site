@@ -1,6 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import BrasasUniversitiesIsland from "site/islands/Partnerships/BrasasUniversitiesIsland.tsx";
 
+/* @titleBy titleInPortuguese */
 interface Item {
   icon: ImageWidget;
   titleInEnglish?: string;
@@ -9,11 +10,17 @@ interface Item {
   textInPortuguese?: string;
 }
 
-interface BrasasUniversitiesProps {
-  logo: ImageWidget;
+interface Section {
   titleInEnglish: string;
   titleInPortuguese: string;
+  subtitleInEnglish?: string;
+  subtitleInPortuguese?: string;
   items: Item[];
+}
+
+interface BrasasUniversitiesProps {
+  logo: ImageWidget;
+  sections: Section[];
 }
 
 export default function BrasasUniversities(props: BrasasUniversitiesProps) {

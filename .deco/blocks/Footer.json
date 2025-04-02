@@ -3,50 +3,50 @@
   "socialMediaIcons": [
     {
       "icon": "https://data.decoassets.com/brasas-site/aab5b033-3d65-4b21-aa11-b9a03c831269/facebook.svg",
-      "link": "#",
+      "link": "https://www.facebook.com/BRASASEnglishCourse/",
       "altText": "Facebook"
     },
     {
       "icon": "https://data.decoassets.com/brasas-site/08037ecf-61ee-4657-b825-c9155335b3b5/instagram.svg",
       "altText": "Instagram",
-      "link": "#"
+      "link": "https://www.instagram.com/brasasenglishcourse/"
     },
     {
       "icon": "https://data.decoassets.com/brasas-site/601a10e1-6f68-4921-a054-db872f16f566/tiktok.svg",
       "altText": "TikTok",
-      "link": "#"
+      "link": "https://www.tiktok.com/@brasasenglishcourse"
     },
     {
       "icon": "https://assets.decocache.com/brasas-site/dfc06e14-3fb4-4cd0-b145-2061ac796de5/Youtube.svg",
       "altText": "Youtube",
-      "link": "#"
+      "link": "https://www.youtube.com/channel/UCsmygXC8HjbbfcR2ehazymg"
     },
     {
       "icon": "https://data.decoassets.com/brasas-site/b1afe8c8-f2d9-47da-8661-dcdfdbfca7a2/linkedin.svg",
-      "link": "#",
+      "link": "https://www.linkedin.com/company/brasas-english-course/?originalSubdomain=br",
       "altText": "Linkedin"
     },
     {
       "altText": "Spotify",
       "icon": "https://data.decoassets.com/brasas-site/8879421e-9c7b-43a1-ad1e-f95b6f51cab2/spotify.svg",
-      "link": "#"
+      "link": "https://open.spotify.com/show/7N2HDAPjUD9QjpQorg9Gq5"
     }
   ],
   "footerNav": [
     {
       "textInEnglish": "o brasas",
       "textInPortuguese": "o brasas",
-      "url": "#"
+      "url": "/sobre"
     },
     {
       "textInEnglish": "method",
       "textInPortuguese": "método",
-      "url": "#"
+      "url": "/metodo"
     },
     {
       "textInEnglish": "branches",
       "textInPortuguese": "unidades",
-      "url": "#"
+      "url": "/unidades"
     },
     {
       "textInEnglish": "refer and win",
@@ -56,27 +56,27 @@
     {
       "textInEnglish": "partnerships",
       "textInPortuguese": "parcerias",
-      "url": "#"
+      "url": "/parcerias"
     },
     {
       "textInEnglish": "contact us",
       "textInPortuguese": "fale conosco",
-      "url": "#"
+      "url": "/contato"
     },
     {
       "textInEnglish": "work with us",
       "textInPortuguese": "trabalhe conosco",
-      "url": "#"
+      "url": "/trabalhe-conosco"
     },
     {
       "textInEnglish": "be a franchisee",
       "textInPortuguese": "seja franqueado",
-      "url": "#"
+      "url": "/seja-um-franqueado"
     },
     {
       "textInEnglish": "faq",
       "textInPortuguese": "perguntas frequentes",
-      "url": "#"
+      "url": "/perguntas"
     }
   ],
   "coursesList": [
@@ -129,12 +129,12 @@
   "testButton": {
     "textInEnglish": "test your english",
     "textInPortuguese": "teste seu inglês",
-    "url": "#"
+    "url": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br"
   },
   "myBrasasButton": {
     "textInEnglish": "my brasas",
     "textInPortuguese": "my brasas",
-    "url": "#"
+    "url": "https://id.layers.digital/sign-in/select-account?community=sophia-4375-25"
   },
   "seals": [
     {

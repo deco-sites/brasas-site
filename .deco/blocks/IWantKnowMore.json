@@ -1,0 +1,14 @@
+{
+  "__resolveType": "site/sections/IWantKnowMore.tsx",
+  "titleInPortuguese": "Quero saber mais",
+  "titleInEnglish": "I want to know more",
+  "RecipientsEmailArr": [
+    {
+      "email": "erick.nascimento@simbioseventures.com"
+    }
+  ],
+  "subject": "Formulário Brasas - Quero saber mais",
+  "CopyToArr": [],
+  "testButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+  "rendersLeveling": true
+}

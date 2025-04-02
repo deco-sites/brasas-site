@@ -17,17 +17,21 @@ export default function BrasasCompaniesIsland(props) {
             </span>
             <div className="flex flex-col gap-5 mb-10">
               {props.items.map((item, index) => (
-                <div key={index} className="flex items-center gap-2">
+                <div key={index} className="flex items-start gap-2">
                   <Image src={item.icon} className="w-8 h-8 object-contain" />
-                  <span className="font-semibold text-base">
-                    {selectedLanguage.value === "ptBr"
-                      ? item.textInPortuguese
-                      : item.textInEnglish}
+                  <span
+                    className="font-semibold text-base"
+                    dangerouslySetInnerHTML={{
+                      __html: selectedLanguage.value === "ptBr"
+                        ? item.textInPortuguese
+                        : item.textInEnglish,
+                    }}
+                  >
                   </span>
                 </div>
               ))}
             </div>
-            <a href="#">
+            <a href="#quero-saber-mais">
               <button className="text-white bg-blue-300 rounded-lg py-3 px-8 w-fit">
                 {selectedLanguage.value === "ptBr"
                   ? "Quero saber mais"

@@ -13,7 +13,13 @@
       "titleInEnglish": "Work with Us"
     },
     {
-      "__resolveType": "site/sections/WorkWithUs/WorkWithUsForm.tsx"
+      "__resolveType": "site/sections/WorkWithUs/WorkWithUsForm.tsx",
+      "RecipientsEmailArr": [
+        {
+          "email": "erick.nascimento@simbioseventures.com"
+        }
+      ],
+      "subject": "Trabalhe Conosco - Brasas"
     },
     {
       "__resolveType": "Footer"

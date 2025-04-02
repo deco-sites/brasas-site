@@ -1,3 +1,4 @@
+import Image from "apps/website/components/Image.tsx";
 import IconMoodSmile from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/mood-smile.tsx";
 import { useSelectLanguage } from "site/sdk/language.ts";
 
@@ -10,7 +11,8 @@ export default function PaymentsSectionIsland(props) {
         <div className="border border-red-400 rounded-[35px] max-w-[55rem] p-5 flex flex-col xl:flex-row gap-5 justify-between text-blue-500">
           {props.items.map((item, index) => (
             <div key={index} className="flex gap-2 px-4">
-              <IconMoodSmile class="w-6 h-6" />
+              <Image src="blue-happy-face.svg" className="w-8 h-8" />
+
               <div className="flex flex-col">
                 <h3 className="text-xl font-bold">
                   {selectedLanguage.value === "ptBr"

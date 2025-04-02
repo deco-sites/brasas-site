@@ -1,0 +1,93 @@
+{
+  "name": "Perguntas Frequentes",
+  "path": "/perguntas",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/BannerWithoutImage.tsx",
+      "titleInPortuguese": "Perguntas Frequentes",
+      "titleInEnglish": "Frequently Asked Questions",
+      "bgColor": "blue"
+    },
+    {
+      "__resolveType": "site/sections/FrequentlyAskedQuestions/FrequentlyAskedQuestions.tsx",
+      "items": [
+        {
+          "titleInPortuguese": "Qual é a diferença do presencial para o online?",
+          "titleInEnglish": "What is the difference between in-person and online?",
+          "textInPortuguese": "<p>O método BRASAS, tem total foco na conversação, sendo presencial e on-line. As</p><p>turmas no BRASAS on-line tem o tempo de aula de 60 minutos minutos, diferente do presencial que tem 85 minutos no curso regular. Isso diferencia o tempo de formação do curso. </p>",
+          "textInEnglish": "<p>The BRASAS method focuses entirely on conversation, both in person and online. The BRASAS online classes last 60 minutes, unlike the regular in-person classes, which last 85 minutes. This makes the course training time different.</p>"
+        },
+        {
+          "titleInPortuguese": "Qual é a idade mínima para estudar no BRASAS?",
+          "titleInEnglish": "What is the minimum age to study at BRASAS?",
+          "textInPortuguese": "<p>Os alunos iniciam o curso de acordo com o ano letivo escolar, a partir do Pré 2 escolar. Entre 5 e 6 anos.</p>",
+          "textInEnglish": "<p>Students begin the course according to the school year, starting from Pre-school 2. Between 5 and 6 years old.</p>"
+        },
+        {
+          "titleInPortuguese": "Como faço para saber mais sobre os cursos?",
+          "titleInEnglish": "How do I find out more about the courses?",
+          "textInPortuguese": "<p>Para saber mais sobre os nossos cursos, por gentileza, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://api.whatsapp.com/send?1=pt_BR&amp;phone=552122017586\">clique aqui</a> e fale com o nosso time comercial pelo whatsApp.</p>",
+          "textInEnglish": "<p>To learn more about our courses, please <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://api.whatsapp.com/send?1=pt_BR&amp;phone=552122017586\">click here</a> and speak to our sales team via WhatsApp.</p>"
+        },
+        {
+          "titleInPortuguese": "Qual é a média de alunos por turma?",
+          "titleInEnglish": "What is the average number of students per class?",
+          "textInPortuguese": "<p>No <strong>BRASAS Online</strong> Para um aprendizado eficiente com foco na conversação e aulas altamente dinâmicas, o BRASAS Online oferece turmas de 10 a 12 alunos, com duração de uma hora por aula e no <strong>presencial</strong> de acordo com o segmento escolhido, pre-k, kids, juniors, teens e adults. </p>",
+          "textInEnglish": "<p>At <strong>BRASAS Online</strong> For efficient learning with a focus on conversation and highly dynamic classes, BRASAS Online offers groups of 10 to 12 students, lasting one hour per class and <strong>in person</strong> according to the chosen segment, pre-k, kids, juniors, teens and adults.</p>"
+        },
+        {
+          "titleInPortuguese": "As aulas são com horário fixo?",
+          "titleInEnglish": "Are the classes scheduled?",
+          "textInPortuguese": "<p>No <strong>BRASAS Online</strong>, as aulas têm horário fixo e são realizadas ao vivo, proporcionando uma experiência interativa em tempo real com professores e colegas. Além disso, as aulas ficam gravadas, permitindo que o aluno as reveja sempre que quiser, seja para reforçar o conteúdo ou revisar algum ponto específico. Já no <strong>curso presencial</strong>, as turmas também seguem horários fixos, garantindo uma estrutura organizada para o aprendizado.</p>",
+          "textInEnglish": "<p>At <strong>BRASAS Online</strong>, classes have fixed times and are held live, providing a real-time interactive experience with teachers and classmates. In addition, classes are recorded, allowing students to review them whenever they want, whether to reinforce the content or review a specific point.<strong> In the in-person course</strong>, classes also follow fixed times, ensuring an organized structure for learning.</p>"
+        },
+        {
+          "titleInPortuguese": "O Curso do BRASAS é reconhecido pelo MEC?",
+          "titleInEnglish": "Is the BRASAS course recognized by the MEC?",
+          "textInPortuguese": "<p>O MEC é responsável por cursos de graduação e pós-graduação.</p><p>Cursos livres, como o do <strong>BRASAS</strong>, são fiscalizados unicamente pela instituição responsável e não pelo MEC.</p>",
+          "textInEnglish": "<p>The MEC is responsible for undergraduate and postgraduate courses.</p><p>Independent courses, such as the one offered by <strong>BRASAS</strong>, are monitored solely by the responsible institution and not by the MEC.</p>"
+        },
+        {
+          "titleInPortuguese": "O BRASAS trabalha com intercâmbio?",
+          "titleInEnglish": "Does BRASAS work with exchange programs?",
+          "textInPortuguese": "<p>O BRASAS não trabalha diretamente com intercâmbio, mas estamos aqui para garantir que <strong>você esteja 100% preparado para essa experiência! </strong>Nosso método focado na conversação e fluência deixa você pronto para se comunicar com confiança em qualquer lugar do mundo. Além disso, somos aplicadores dos testes internacionais, como o <strong>TOEIC e o TOEFL ITP</strong>, que são essenciais para muitas oportunidades no exterior. Então, se a ideia é estudar fora, você pode contar com o BRASAS para chegar lá com o inglês afiado!</p>",
+          "textInEnglish": "<p>BRASAS does not work directly with exchange programs, but we are here to ensure that<strong> you are 100% prepared for this experience!</strong> Our method focused on conversation and fluency will get you ready to communicate with confidence anywhere in the world. In addition, we administer international tests, such as <strong>TOEIC and TOEFL ITP</strong>, which are essential for many opportunities abroad. So, if your idea is to study abroad, you can count on BRASAS to get you there with sharp English!</p>"
+        },
+        {
+          "titleInPortuguese": "O BRASAS tem curso gratuito?",
+          "titleInEnglish": "Does BRASAS offer free courses?",
+          "textInPortuguese": "<p>Não oferecemos cursos gratuitos. Vale ressaltar que temos o melhor custo-benefício do mercado de ensino de inglês, com preço justo e professores qualificados.</p>",
+          "textInEnglish": "<p>We do not offer free courses. It is worth mentioning that we have the best cost-benefit ratio in the English teaching market, with fair prices and qualified teachers.</p>"
+        },
+        {
+          "titleInPortuguese": "O BRASAS oferece bolsa ou descontos?",
+          "titleInEnglish": "Does BRASAS offer scholarships or discounts?",
+          "textInPortuguese": "<p>Trabalhamos com descontos por região de acordo com a nossa tabela, além de descontos empresariais e plano família. Para saber dos valores, entre em contato com a unidade de seu interesse.</p>",
+          "textInEnglish": "<p>We work with discounts by region according to our table, in addition to corporate discounts and family plans. To find out the prices, contact the unit of your interest.</p>"
+        },
+        {
+          "titleInPortuguese": "O BRASAS tem curso para formação de professores?",
+          "titleInEnglish": "Does BRASAS have a teacher training course?",
+          "textInPortuguese": "<p>O BRASAS não é um curso reconhecido pelo MEC para a formação de professores, mas o nosso foco é preparar nossos alunos para todos os desafios, seja no mundo acadêmico ou no business. Muitos dos nossos professores começaram como alunos BRASAS, se destacaram e hoje fazem parte da nossa equipe! Isso mostra a qualidade do nosso método, que não só desenvolve a fluência no inglês, mas também forma profissionais confiantes e capacitados para diversas áreas.</p>",
+          "textInEnglish": "<p>BRASAS is not a MEC-recognized teacher training course, but our focus is to prepare our students for all challenges, whether in the academic world or in business. Many of our teachers started out as BRASAS students, excelled, and are now part of our team! This shows the quality of our method, which not only develops fluency in English, but also trains confident and capable professionals for various areas.</p>"
+        },
+        {
+          "titleInPortuguese": "Como faço para trabalhar no BRASAS?",
+          "titleInEnglish": "How do I work at BRASAS?",
+          "textInPortuguese": "<p>Quer fazer parte da equipe BRASAS? <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/trabalhe-conosco\">Clique aqui</a> e envie o seu currículo para o nosso banco de talentos.</p>",
+          "textInEnglish": "<p>Do you want to be part of the BRASAS team? <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/trabalhe-conosco\">Click here</a> and send your resume to our talent pool.</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

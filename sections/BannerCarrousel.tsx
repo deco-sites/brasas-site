@@ -19,7 +19,7 @@ export interface Banner {
   };
   /** @description Image's alt text */
   alt: string;
-  link: string;
+  link?: string;
 }
 export interface Props {
   titleInPortuguese: string;
@@ -28,6 +28,7 @@ export interface Props {
   descriptionInEnglish: string;
   CTAtextInPortuguese: string;
   CTAtextInEnglish: string;
+  CTALink: string;
   images?: Banner[];
   /**
    * @description Check this option when this banner is the biggest image on the screen for image optimizations

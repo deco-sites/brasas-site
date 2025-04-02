@@ -1,4 +1,5 @@
 import BecomeAFranchiseeFormIsland from "site/islands/BecomeAFranchisee/BecomeAFranchiseeFormIsland.tsx";
+import { CopyEmail, RecipientsEmail } from "site/types/Emails.ts";
 
 interface BecomeAFranchiseeFormProps {
   titleInEnglish: string;
@@ -11,6 +12,9 @@ interface BecomeAFranchiseeFormProps {
    * @format rich-text
    */
   textInPortuguese: string;
+  RecipientsEmailArr: RecipientsEmail[];
+  CopyToArr?: CopyEmail[];
+  subject: string;
 }
 
 export default function BecomeAFranchiseeForm(

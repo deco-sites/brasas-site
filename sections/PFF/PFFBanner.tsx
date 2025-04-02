@@ -6,6 +6,7 @@ interface PFFBannerProps {
   bgImageMobile: ImageWidget;
   imageInEnglish: ImageWidget;
   imageInPortuguese: ImageWidget;
+  hasNotice: boolean;
 }
 
 export default function PFFBanner(props: PFFBannerProps) {

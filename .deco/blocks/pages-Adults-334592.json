@@ -11,8 +11,9 @@
       "bgImage": "https://assets.decocache.com/brasas-site/15d19107-65be-4a73-9607-b11c31ccd2e8/adults.png",
       "titleInEnglish": "Adults",
       "titleInPortuguese": "Adults",
-      "descriptionInPortuguese": "Inglês do seu jeito, no seu tempo!",
-      "descriptionInEnglish": "English Your Way, in Your Time!"
+      "descriptionInPortuguese": "Inglês do seu jeito, no seu tempo",
+      "descriptionInEnglish": "English Your Way, in Your Time",
+      "hasNotice": true
     },
     {
       "__resolveType": "site/sections/Breadcrumbs.tsx",
@@ -23,82 +24,6 @@
       "__resolveType": "site/sections/Adults/AdultsCards.tsx",
       "textInPortuguese": "<p><strong>Foco na comunicação oral com gramática estruturada.</strong></p><p>&nbsp;</p><p>Você aprende a pensar em inglês, sem recorrer a traduções, e a usar corretamente o vocabulário e estrutura do idioma.</p>",
       "textInEnglish": "<p><strong>Focus on oral communication with structured grammar.</strong></p><p>&nbsp;</p><p>You learn to think in English, without resorting to translations, and to use the vocabulary and structure of the language correctly.</p>"
-    },
-    {
-      "__resolveType": "site/sections/IWantKnowMore.tsx",
-      "titleInPortuguese": "Quero saber mais",
-      "titleInEnglish": "I want to know more"
-    },
-    {
-      "__resolveType": "site/sections/CoursesCardsSection.tsx",
-      "titleInEnglish": "Discover our courses",
-      "titleInPortuguese": "Conheça nossos cursos",
-      "cards": [
-        {
-          "englishTitle": "Pre-K",
-          "portugueseTitle": "Pre-K",
-          "englishDescription": "From Pre-2",
-          "portugueseDescription": "A partir do Pré-2",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png"
-        },
-        {
-          "englishTitle": "Kids",
-          "portugueseTitle": "Kids",
-          "englishDescription": "3rd year of Elementary School",
-          "portugueseDescription": "3º ano do Ensino Fundamental",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/3b108c24-ee92-49e0-97a8-2cd5bcabbdac/Frame-1105-1.png"
-        },
-        {
-          "englishTitle": "Juniors & Teens",
-          "portugueseTitle": "Juniors & Teens",
-          "englishDescription": "6th year of Elementary School",
-          "portugueseDescription": "6º ano do Ensino Fundamental",
-          "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png",
-          "link": "#"
-        },
-        {
-          "englishTitle": "Adults",
-          "portugueseTitle": "Adults",
-          "englishDescription": "From 14 years old",
-          "portugueseDescription": "A partir de 14 anos",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png"
-        },
-        {
-          "englishTitle": "BRASAS Online",
-          "portugueseTitle": "BRASAS Online",
-          "englishDescription": "Learn with live online classes",
-          "portugueseDescription": "Aprenda com aulas online e ao vivo",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/11f2b643-0c09-4da2-9fe9-a19486eded2b/BRASAS-online.png"
-        },
-        {
-          "englishTitle": "International Certification",
-          "portugueseTitle": "Certificação Internacional",
-          "englishDescription": "Preparatory Courses and Exam",
-          "portugueseDescription": "Cursos preparatórios e prova",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png"
-        },
-        {
-          "portugueseTitle": "Parcerias",
-          "englishTitle": "Partnerships",
-          "englishDescription": "Schools, Universities and Companies",
-          "portugueseDescription": "Escolas, Universidades e Empresas",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png"
-        },
-        {
-          "portugueseTitle": "Português para estrangeiros",
-          "englishTitle": "Portuguese for Foreigners",
-          "englishDescription": "Learn spoken Portuguese in Brazil",
-          "portugueseDescription": "Aprenda português falado no Brasil",
-          "link": "#",
-          "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png"
-        }
-      ]
     },
     {
       "__resolveType": "site/sections/Adults/SpecialCourses.tsx",
@@ -127,6 +52,12 @@
           "descriptionInEnglish": "<p><span>A type of course developed for students to maintain their fluency, with current and relevant topics.</span></p>"
         }
       ]
+    },
+    {
+      "__resolveType": "IWantKnowMore"
+    },
+    {
+      "__resolveType": "CoursesCardsSection"
     },
     {
       "__resolveType": "Footer"

@@ -8,6 +8,7 @@ interface PageBannerProps {
   titleInPortuguese: string;
   descriptionInEnglish?: string;
   descriptionInPortuguese?: string;
+  hasNotice: boolean;
 }
 
 export default function PageBanner(props: PageBannerProps) {

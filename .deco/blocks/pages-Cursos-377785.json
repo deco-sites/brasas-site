@@ -21,7 +21,7 @@
           "portugueseDescription": "A partir do Pré-2",
           "englishDescription": "From Pre-2",
           "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
-          "link": "#"
+          "link": "/pre-k"
         },
         {
           "englishTitle": "Kids",
@@ -29,7 +29,7 @@
           "portugueseDescription": "3° ano do Ensino Fundamental",
           "englishDescription": "3rd year of Elementary School",
           "image": "https://data.decoassets.com/brasas-site/3862a645-7c71-4bc0-a506-ea9d9cbef4cc/Frame-1105.png",
-          "link": "#"
+          "link": "/kids"
         },
         {
           "englishTitle": "Juniors & Teens",
@@ -37,7 +37,7 @@
           "portugueseDescription": "6° ano do Ensino Fundamental",
           "englishDescription": "6th year of Elementary School",
           "image": "https://data.decoassets.com/brasas-site/49945766-a36f-45c8-a115-262c658b1005/img.png",
-          "link": "#"
+          "link": "/juniors-e-teens"
         },
         {
           "englishTitle": "Adults",
@@ -45,7 +45,7 @@
           "portugueseDescription": "A partir de 14 anos",
           "englishDescription": "From 14 years old",
           "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png",
-          "link": "#"
+          "link": "/adults"
         },
         {
           "englishTitle": "BRASAS Online",
@@ -53,7 +53,7 @@
           "portugueseDescription": "Aprenda com aulas online e ao vivo",
           "englishDescription": "Learn with live online classes",
           "image": "https://data.decoassets.com/brasas-site/b79677ef-d78f-48d3-b07a-a6a0a6099bcb/5_qd6zbf-removebg-preview_bl5s9t.png",
-          "link": "#"
+          "link": "/brasas-online"
         },
         {
           "portugueseTitle": "Certificações Internacionais",
@@ -61,7 +61,7 @@
           "englishDescription": "Preparatory Courses and Exam",
           "portugueseDescription": "Cursos preparatórios e prova",
           "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png",
-          "link": "#"
+          "link": "/certificacoes"
         },
         {
           "portugueseTitle": "Parcerias",
@@ -69,7 +69,7 @@
           "englishTitle": "Partnerships",
           "englishDescription": "Schools, Universities and Companies",
           "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png",
-          "link": "#"
+          "link": "/parcerias"
         },
         {
           "englishTitle": "Portuguese For Foreigners",
@@ -77,7 +77,7 @@
           "portugueseTitle": "Português para estrangeiros",
           "portugueseDescription": "Aprenda português falado no Brasil",
           "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png",
-          "link": "#"
+          "link": "/portuguese-for-foreigners"
         }
       ]
     },

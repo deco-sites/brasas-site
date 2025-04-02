@@ -13,6 +13,69 @@
       "__resolveType": "site/sections/Branches/BranchProfile/BranchProfilePage.tsx"
     },
     {
+      "__resolveType": "site/sections/Branches/BranchProfile/ProfileCoursesCards.tsx",
+      "titleInPortuguese": "Conheça nossos cursos",
+      "titleInEnglish": "Discover our courses",
+      "cards": [
+        {
+          "englishTitle": "Pre-K",
+          "portugueseTitle": "Pre-K",
+          "englishDescription": "From Pre-2",
+          "portugueseDescription": "A partir do Pré-2",
+          "link": "/pre-k",
+          "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png"
+        },
+        {
+          "englishTitle": "Kids",
+          "portugueseTitle": "Kids",
+          "englishDescription": "3rd year of Elementary School",
+          "portugueseDescription": "3º ano do Ensino Fundamental",
+          "link": "/kids",
+          "image": "https://data.decoassets.com/brasas-site/3b108c24-ee92-49e0-97a8-2cd5bcabbdac/Frame-1105-1.png"
+        },
+        {
+          "englishTitle": "Juniors & Teens",
+          "portugueseTitle": "Juniors & Teens",
+          "englishDescription": "6th year of Elementary School",
+          "portugueseDescription": "6º ano do Ensino Fundamental",
+          "link": "/juniors-e-teens",
+          "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png"
+        },
+        {
+          "englishTitle": "Adults",
+          "portugueseTitle": "Adults",
+          "englishDescription": "From 14 years old",
+          "portugueseDescription": "A partir de 14 anos",
+          "link": "/adults",
+          "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png"
+        },
+        {
+          "englishTitle": "BRASAS Online",
+          "portugueseTitle": "BRASAS Online",
+          "englishDescription": "Learn with live online classes",
+          "portugueseDescription": "Aprenda com aulas online e ao vivo",
+          "link": "/brasas-online",
+          "image": "https://data.decoassets.com/brasas-site/11f2b643-0c09-4da2-9fe9-a19486eded2b/BRASAS-online.png"
+        },
+        {
+          "englishTitle": "International Certification",
+          "portugueseTitle": "Certificação Internacional",
+          "englishDescription": "Preparatory Courses and Exam",
+          "portugueseDescription": "Cursos preparatórios e prova",
+          "link": "/certificacoes",
+          "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png"
+        },
+        {
+          "englishTitle": "Portuguese for Foreigners",
+          "portugueseTitle": "Português para estrangeiros",
+          "englishDescription": "Learn spoken Portuguese in Brazil",
+          "portugueseDescription": "Aprenda português falado no Brasil",
+          "link": "/portuguese-for-foreigners",
+          "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png"
+        }
+      ]
+    },
+    {
       "__resolveType": "Footer"
     }
   ],

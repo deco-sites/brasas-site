@@ -1,18 +1,20 @@
-import { useState } from "preact/hooks";
+import { useRef, useState } from "preact/hooks";
 import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function VideosCarouselIsland({ videos }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { selectedLanguage } = useSelectLanguage();
+  const videoRef = useRef(null);
 
-  const nextVideo = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % videos.length);
-  };
+  const changeVideo = (direction) => {
+    if (videoRef.current) {
+      videoRef.current.pause(); // Pausa o vídeo atual antes de trocar
+    }
 
-  const prevVideo = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex - 1 + videos.length) % videos.length
-    );
+    setCurrentIndex((prevIndex) => {
+      const newIndex = (prevIndex + direction + videos.length) % videos.length;
+      return newIndex;
+    });
   };
 
   return (
@@ -22,24 +24,33 @@ export default function VideosCarouselIsland({ videos }) {
           ? videos[currentIndex].titleInPortuguese
           : videos[currentIndex].titleInEnglish}
       </h2>
-      <div className="relative w-full">
-        <video
-          className="w-full max-h-[46rem] bg-black"
-          controls
-          poster={videos[currentIndex].poster}
+      <div className="relative w-full overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          <source src={videos[currentIndex].url} type="video/mp4" />
-          Seu navegador não suporta vídeos.
-        </video>
+          {videos.map((video, index) => (
+            <video
+              key={index}
+              ref={index === currentIndex ? videoRef : null}
+              className="w-full max-h-[46rem] bg-black flex-shrink-0"
+              controls
+              poster={video.poster}
+            >
+              <source src={video.url} type="video/mp4" />
+              Seu navegador não suporta vídeos.
+            </video>
+          ))}
+        </div>
         <button
-          onClick={prevVideo}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+          onClick={() => changeVideo(-1)}
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black-500 bg-opacity-50 shrink-0 text-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-opacity-75"
         >
           &#9664;
         </button>
         <button
-          onClick={nextVideo}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+          onClick={() => changeVideo(1)}
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black-500 bg-opacity-50 shrink-0 text-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-opacity-75"
         >
           &#9654;
         </button>

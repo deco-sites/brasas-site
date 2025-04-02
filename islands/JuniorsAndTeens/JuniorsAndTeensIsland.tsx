@@ -10,6 +10,7 @@ export default function JuniorsAndTeensIsland(props) {
         <div className="flex w-full justify-center">
           <div className="py-8 max-w-[48rem]">
             <span
+              className="text-2xl"
               dangerouslySetInnerHTML={{
                 __html: selectedLanguage.value === "ptBr"
                   ? props.textInPortuguese
@@ -41,13 +42,15 @@ export default function JuniorsAndTeensIsland(props) {
             src={"/JuniorsAndTeensPage/esquema_jr.png"}
             alt="Esquema Kids"
           />
-          <Image
-            src={selectedLanguage.value === "ptBr"
-              ? "/JuniorsAndTeensPage/juniors-and-teens-3-pt.png"
-              : "/JuniorsAndTeensPage/juniors-and-teens-3-en.png"}
-            alt="Kids Cards"
-            className="w-full max-w-[38.5rem]"
-          />
+          <a href="/certificacoes#toeicjr" target="_self">
+            <Image
+              src={selectedLanguage.value === "ptBr"
+                ? "/JuniorsAndTeensPage/juniors-and-teens-3-pt.png"
+                : "/JuniorsAndTeensPage/juniors-and-teens-3-en.png"}
+              alt="Kids Cards"
+              className="w-full max-w-[38.5rem]"
+            />
+          </a>
         </div>
       </div>
     </div>
