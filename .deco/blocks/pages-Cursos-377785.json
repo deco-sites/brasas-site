@@ -21,7 +21,7 @@
           "portugueseDescription": "A partir do Pré-2",
           "englishDescription": "From Pre-2",
           "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
-          "link": "/pre-k"
+          "link": "/prek"
         },
         {
           "englishTitle": "Kids",
@@ -37,7 +37,7 @@
           "portugueseDescription": "6° ano do Ensino Fundamental",
           "englishDescription": "6th year of Elementary School",
           "image": "https://data.decoassets.com/brasas-site/49945766-a36f-45c8-a115-262c658b1005/img.png",
-          "link": "/juniors-e-teens"
+          "link": "/juniors_e_teens"
         },
         {
           "englishTitle": "Adults",
@@ -53,7 +53,7 @@
           "portugueseDescription": "Aprenda com aulas online e ao vivo",
           "englishDescription": "Learn with live online classes",
           "image": "https://data.decoassets.com/brasas-site/b79677ef-d78f-48d3-b07a-a6a0a6099bcb/5_qd6zbf-removebg-preview_bl5s9t.png",
-          "link": "/brasas-online"
+          "link": "/bol"
         },
         {
           "portugueseTitle": "Certificações Internacionais",
@@ -77,7 +77,7 @@
           "portugueseTitle": "Português para estrangeiros",
           "portugueseDescription": "Aprenda português falado no Brasil",
           "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png",
-          "link": "/portuguese-for-foreigners"
+          "link": "/pff"
         }
       ]
     },

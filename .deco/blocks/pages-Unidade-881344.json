@@ -1,6 +1,6 @@
 {
   "name": "Unidade",
-  "path": "/unidade",
+  "path": "/unidade_lista",
   "sections": [
     {
       "__resolveType": "Header"
@@ -22,7 +22,7 @@
           "portugueseTitle": "Pre-K",
           "englishDescription": "From Pre-2",
           "portugueseDescription": "A partir do Pré-2",
-          "link": "/pre-k",
+          "link": "/prek",
           "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png"
         },
         {
@@ -38,7 +38,7 @@
           "portugueseTitle": "Juniors & Teens",
           "englishDescription": "6th year of Elementary School",
           "portugueseDescription": "6º ano do Ensino Fundamental",
-          "link": "/juniors-e-teens",
+          "link": "/juniors_e_teens",
           "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png"
         },
         {
@@ -54,7 +54,7 @@
           "portugueseTitle": "BRASAS Online",
           "englishDescription": "Learn with live online classes",
           "portugueseDescription": "Aprenda com aulas online e ao vivo",
-          "link": "/brasas-online",
+          "link": "/bol",
           "image": "https://data.decoassets.com/brasas-site/11f2b643-0c09-4da2-9fe9-a19486eded2b/BRASAS-online.png"
         },
         {
@@ -70,7 +70,7 @@
           "portugueseTitle": "Português para estrangeiros",
           "englishDescription": "Learn spoken Portuguese in Brazil",
           "portugueseDescription": "Aprenda português falado no Brasil",
-          "link": "/portuguese-for-foreigners",
+          "link": "/pff",
           "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png"
         }
       ]

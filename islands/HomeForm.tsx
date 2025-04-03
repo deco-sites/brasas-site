@@ -89,34 +89,44 @@ export default function HomeForm(
           </span>
           <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-x-8 gap-y-4">
             <TextInput
-              label="nome completo"
-              placeholder="Insira seu nome"
+              label={selectedLanguage.value === "ptBr"
+                ? "nome completo"
+                : "full name"}
+              placeholder={selectedLanguage.value === "ptBr"
+                ? "Insira seu nome"
+                : "Enter your name"}
               value={name}
               setValue={setName}
               required
             />
             <TextInput
-              label="celular/whatsapp"
+              label={selectedLanguage.value === "ptBr"
+                ? "celular/whatsapp"
+                : "cell phone/whatsapp"}
               placeholder="(dd) xxxxx-xxxx"
               value={email}
               setValue={setEmail}
               required
             />
             <TextInput
-              label="e-mail"
-              placeholder="Insira seu e-mail"
+              label={selectedLanguage.value === "ptBr" ? "e-mail" : "email"}
+              placeholder={selectedLanguage.value === "ptBr"
+                ? "Insira seu e-mail"
+                : "Enter your email"}
               value={phone}
               setValue={setPhone}
               required
             />
             <SelectInput
-              label="Estado"
-              placeholder="Selecione um estado"
+              label={selectedLanguage.value === "ptBr" ? "Estado" : "State"}
+              placeholder={selectedLanguage.value === "ptBr"
+                ? "Selecione um estado"
+                : "Select a state"}
               options={stateOptions}
               bgColor="gray"
               onChangeFunction={setState}
-              value={state} // Passa o valor atual
-              required // Torna o campo obrigatório
+              value={state}
+              required
             />
           </div>
           <div className="flex flex-col w-full items-start gap-2">

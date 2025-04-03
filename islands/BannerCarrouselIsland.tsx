@@ -72,7 +72,7 @@ function Dots({ images, interval = 0 }: Props) {
           `,
         }}
       />
-      <ul className="absolute -bottom-6 lg:bottom-4 left-1/2 -translate-x-1/2 carousel justify-center col-span-full gap-4 z-10 row-start-4">
+      <ul className="hidden absolute -bottom-6 lg:bottom-4 left-1/2 -translate-x-1/2 carousel justify-center col-span-full gap-4 z-40 row-start-4">
         {images?.map((_, index) => (
           <li className="carousel-item">
             <Slider.Dot index={index}>
@@ -145,11 +145,13 @@ export default function BannerCarrouselIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
 
   return (
-    <div className="relative flex justify-center h-[42rem] bg-blue-300">
-      <div className="absolute z-10 w-full h-full hidden xl:flex justify-end items-center max-w-[88.5rem] px-9">
-        <div className="flex flex-col text-white">
+    <div
+      className={`relative xl:pb-0 flex flex-col-reverse xl:flex-row justify-center bg-blue-300`}
+    >
+      <div className="flex pt-12 pb-36 min-h-min justify-center items-center xl:absolute z-10 w-full h-full xl:justify-end xl:items-center  px-9 xl:pt-0 xl:mb-0">
+        <div className="flex flex-col text-white max-w-[88.5rem]">
           <span
-            className="mb-4 font-black text-4xl leading-10"
+            className="text-center xl:text-start mb-4 font-black text-4xl leading-10"
             dangerouslySetInnerHTML={{
               __html: selectedLanguage.value === "ptBr"
                 ? props.titleInPortuguese
@@ -158,7 +160,7 @@ export default function BannerCarrouselIsland(props) {
           >
           </span>
           <span
-            className="mb-10 font-medium leading-8 text-2xl"
+            className="text-center xl:text-start mb-10 font-medium leading-8 text-2xl"
             dangerouslySetInnerHTML={{
               __html: selectedLanguage.value === "ptBr"
                 ? props.descriptionInPortuguese
@@ -168,7 +170,7 @@ export default function BannerCarrouselIsland(props) {
           </span>
 
           <a href={props.CTALink} target="_blank">
-            <button className="flex gap-2 px-4 py-3 w-fit bg-red-300 rounded-lg transition duration-300 hover:bg-white hover:text-blue-300">
+            <button className="flex gap-2 px-4 py-3 w-full items-center justify-center xl:w-fit bg-red-300 rounded-lg transition duration-300 hover:bg-white hover:text-blue-300">
               <span className="font-bold text-base">
                 {selectedLanguage.value === "ptBr"
                   ? props.CTAtextInPortuguese
@@ -180,10 +182,10 @@ export default function BannerCarrouselIsland(props) {
         </div>
       </div>
 
-      <div className="flex gap-6 w-full">
+      <div className="flex gap-6 w-full h-96 xl:h-[42rem]">
         <div
           id={id}
-          className="w-full relative grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]"
+          className="w-full relative "
         >
           <Slider className="carousel carousel-center w-full col-span-full row-span-full gap-6 h-full">
             {images?.map((image, index) => {

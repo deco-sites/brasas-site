@@ -23,7 +23,7 @@ export default function ReferAndEarnBannerIsland(props) {
       <div className="flex justify-center w-full mt-32">
         <div className="relative w-full max-w-[88.5rem] px-9">
           <h1
-            className="relative z-50 text-blue-900 font-bold text-4xl sm:text-5xl md:text-7xl md:ml-16 xl:ml-28"
+            className="relative z-40 text-blue-900 font-bold text-4xl sm:text-5xl md:text-7xl md:ml-16 xl:ml-28"
             dangerouslySetInnerHTML={{
               __html: selectedLanguage.value === "ptBr"
                 ? props.titleInPortuguese

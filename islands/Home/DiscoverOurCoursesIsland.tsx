@@ -26,8 +26,8 @@ export default function DiscoverOurCoursesIsland(
           CopyToArr={props.CopyToArr}
           subject={props.subject}
         />
-        <div className="mt-[40rem] xl:mt-[26.5rem] flex flex-col items-center">
-          <h2 className="font-black leading-[48px] text-black-500 text-[2.5rem] mb-12">
+        <div className="mt-[50rem] md:mt-[42rem] xl:mt-[26.5rem] flex flex-col items-center">
+          <h2 className="text-center font-black leading-[48px] text-black-500 text-[2.5rem] mb-12">
             {selectedLanguage.value === "ptBr"
               ? props.portugueseTitle
               : props.englishTitle}

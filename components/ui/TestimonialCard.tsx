@@ -17,12 +17,12 @@ export default function TestimonialCard(
   return (
     <div
       key={userName}
-      className={`max-w-2xl px-4 transition-all duration-300 ${
+      className={`max-w-[22.8rem] xl:max-w-2xl px-4 transition-all duration-300 ${
         isActive ? "scale-100 opacity-100" : "scale-90 opacity-50 blur-sm"
       }`}
     >
       <div
-        className={`relative rounded-2xl px-32 py-20 overflow-visible -skew-y-3 ${
+        className={`relative rounded-2xl px-6 py-4 xl:px-32 xl:py-20 overflow-visible -skew-y-3 ${
           isActive ? "bg-yellow-500" : "bg-gray-300"
         }`}
       >
@@ -43,9 +43,11 @@ export default function TestimonialCard(
         </div>
       </div>
       <div className="flex justify-end mt-16">
-        <div className="flex gap-4">
-          <div className="flex flex-col items-end gap-2 text-gray-500">
-            <span>&mdash; {userName}</span>
+        <div className="flex flex-col-reverse items-center xl:flex-row gap-4">
+          <div className="flex flex-col items-center xl:items-end gap-2 text-gray-500">
+            <span>
+              &mdash; {userName}
+            </span>
             <span>
               {selectedLanguage.value === "ptBr"
                 ? userRoleInPortuguese

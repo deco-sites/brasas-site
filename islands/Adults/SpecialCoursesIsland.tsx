@@ -5,7 +5,10 @@ export default function SpecialCoursesIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
 
   return (
-    <section className="flex flex-col items-center justify-center w-full">
+    <section
+      className="flex flex-col items-center justify-center w-full"
+      id="ancora-immersion-conversation"
+    >
       <div className="max-w-[88.5rem] px-9 pb-16">
         <div className="flex justify-center pt-0 lg:pt-16 pb-24">
           <h2 className="font-black text-black-500 text-4xl leading-10">

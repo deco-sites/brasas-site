@@ -26,7 +26,10 @@ export default function SocialMediaFloat(props: SocialMediaFloatProps) {
   };
 
   return (
-    <div className="fixed flex flex-col gap-9 right-0 top-24 z-50">
+    <div
+      className="fixed flex flex-col gap-9 right-0 top-24"
+      style={{ zIndex: 1000 }}
+    >
       {props.socialMedias.map((media) => {
         const IconComponent = ICONS[media.text.toLowerCase()];
         if (!IconComponent) return null;

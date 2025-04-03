@@ -77,8 +77,8 @@
         {
           "titleInPortuguese": "Como faço para trabalhar no BRASAS?",
           "titleInEnglish": "How do I work at BRASAS?",
-          "textInPortuguese": "<p>Quer fazer parte da equipe BRASAS? <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/trabalhe-conosco\">Clique aqui</a> e envie o seu currículo para o nosso banco de talentos.</p>",
-          "textInEnglish": "<p>Do you want to be part of the BRASAS team? <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/trabalhe-conosco\">Click here</a> and send your resume to our talent pool.</p>"
+          "textInPortuguese": "<p>Quer fazer parte da equipe BRASAS? <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/trabalhe_conosco\">Clique aqui</a> e envie o seu currículo para o nosso banco de talentos.</p>",
+          "textInEnglish": "<p>Do you want to be part of the BRASAS team? <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/trabalhe_conosco\">Click here</a> and send your resume to our talent pool.</p>"
         }
       ]
     },

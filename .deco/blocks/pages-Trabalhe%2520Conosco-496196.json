@@ -1,6 +1,6 @@
 {
   "name": "Trabalhe Conosco",
-  "path": "/trabalhe-conosco",
+  "path": "/trabalhe_conosco",
   "sections": [
     {
       "__resolveType": "Header"
@@ -10,7 +10,8 @@
       "bgColor": "blue-300",
       "bgImage": "https://assets.decocache.com/brasas-site/47a809df-f604-40b8-8b37-b369f1ab2bcf/work-with-us-bg.png",
       "titleInPortuguese": "Trabalhe Conosco",
-      "titleInEnglish": "Work with Us"
+      "titleInEnglish": "Work with Us",
+      "hasNotice": false
     },
     {
       "__resolveType": "site/sections/WorkWithUs/WorkWithUsForm.tsx",

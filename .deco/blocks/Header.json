@@ -28,7 +28,7 @@
     },
     {
       "name": "contato",
-      "link": "/contato"
+      "link": "/contatos"
     },
     {
       "name": "parcerias",
@@ -36,7 +36,7 @@
     },
     {
       "name": "indique e ganhe",
-      "link": "/indique-e-ganhe"
+      "link": "/indique_e_ganhe"
     }
   ],
   "Logo": "https://data.decoassets.com/brasas-site/d1e98057-2823-4760-bacc-fe76eb89a02e/Logo.png",
@@ -67,7 +67,7 @@
     },
     {
       "name": "contato",
-      "link": "/contato",
+      "link": "/contatos",
       "nameInEnglish": "contact",
       "nameInPortuguese": "contato"
     },
@@ -79,14 +79,14 @@
     },
     {
       "name": "indique e ganhe",
-      "link": "/indique-e-ganhe",
+      "link": "/indique_e_ganhe",
       "nameInEnglish": "refer and win",
       "nameInPortuguese": "indique e ganhe"
     },
     {
       "nameInEnglish": "work with us",
       "nameInPortuguese": "trabalhe conosco",
-      "link": "/trabalhe-conosco"
+      "link": "/trabalhe_conosco"
     }
   ],
   "logo": {
