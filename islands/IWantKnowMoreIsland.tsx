@@ -127,6 +127,7 @@ export default function IWantKnowMoreIsland(props) {
                   value={email}
                   setValue={setEmail}
                   required
+                  type="email"
                 />
                 <TextInput
                   label={selectedLanguage.value === "ptBr"
@@ -136,6 +137,7 @@ export default function IWantKnowMoreIsland(props) {
                   value={phone}
                   setValue={setPhone}
                   required
+                  type="tel"
                 />
               </div>
 

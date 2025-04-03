@@ -82,6 +82,7 @@ export default function FormSectionIsland(
                   value={email}
                   setValue={setEmail}
                   required
+                  type="email"
                 />
                 <TextInput
                   label="telefone"
@@ -89,6 +90,7 @@ export default function FormSectionIsland(
                   value={phone}
                   setValue={setPhone}
                   required
+                  type="tel"
                 />
                 <TextArea
                   label="mensagem"

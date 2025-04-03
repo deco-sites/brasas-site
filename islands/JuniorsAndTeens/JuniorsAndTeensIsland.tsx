@@ -28,14 +28,14 @@ export default function JuniorsAndTeensIsland(props) {
                 ? "/JuniorsAndTeensPage/juniors-and-teens-1-pt.png"
                 : "/JuniorsAndTeensPage/juniors-and-teens-1-en.png"}
               alt="Kids Cards"
-              className="w-full max-w-[38.5rem]"
+              className="w-[33.75rem]"
             />
             <Image
               src={selectedLanguage.value === "ptBr"
                 ? "/JuniorsAndTeensPage/juniors-and-teens-2-pt.png"
                 : "/JuniorsAndTeensPage/juniors-and-teens-2-en.png"}
               alt="Kids Cards"
-              className="w-full max-w-[38.5rem]"
+              className="w-[33.75rem]"
             />
           </div>
           <Image
@@ -48,7 +48,7 @@ export default function JuniorsAndTeensIsland(props) {
                 ? "/JuniorsAndTeensPage/juniors-and-teens-3-pt.png"
                 : "/JuniorsAndTeensPage/juniors-and-teens-3-en.png"}
               alt="Kids Cards"
-              className="w-full max-w-[38.5rem]"
+              className="w-[33.75rem]"
             />
           </a>
         </div>

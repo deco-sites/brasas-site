@@ -1,6 +1,6 @@
+import { useEffect, useState } from "preact/hooks";
 import TestimonialCard from "site/components/ui/TestimonialCard.tsx";
 import { useSelectLanguage } from "site/sdk/language.ts";
-import { useEffect, useState } from "preact/hooks";
 import IconChevronRight from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/chevron-right.tsx";
 import IconChevronLeft from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/chevron-left.tsx";
 
@@ -16,6 +16,8 @@ export default function TestimonialsIsland(props) {
 
   const [currentIndex, setCurrentIndex] = useState(totalItems);
   const [isTransitioning, setIsTransitioning] = useState(true);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
 
   const nextSlide = () => {
     setIsTransitioning(true);
@@ -27,6 +29,11 @@ export default function TestimonialsIsland(props) {
     setCurrentIndex((prev) => prev - 1);
   };
 
+  const goToSlide = (index) => {
+    setIsTransitioning(true);
+    setCurrentIndex(index + totalItems);
+  };
+
   useEffect(() => {
     if (currentIndex === totalItems * 2) {
       setIsTransitioning(false);
@@ -36,6 +43,25 @@ export default function TestimonialsIsland(props) {
       setCurrentIndex(totalItems * 2 - 1);
     }
   }, [currentIndex, totalItems]);
+
+  // Eventos de toque para deslizar
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      // Deslizou para a esquerda (próximo slide)
+      nextSlide();
+    } else if (touchStartX - touchEndX < -50) {
+      // Deslizou para a direita (slide anterior)
+      prevSlide();
+    }
+  };
 
   return (
     <div
@@ -54,10 +80,15 @@ export default function TestimonialsIsland(props) {
         </h2>
       </div>
 
-      <div className="flex">
+      <div className="flex flex-col">
         <div className="w-full flex items-center justify-center">
           {/* Contêiner do Carrossel */}
-          <div className="relative w-full overflow-x-hidden flex justify-center">
+          <div
+            className="relative w-full overflow-x-hidden flex justify-center"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             <div
               className={`flex transition-transform duration-300 ease-in-out mt-16`}
               style={{
@@ -112,6 +143,21 @@ export default function TestimonialsIsland(props) {
               <IconChevronRight class="w-6 h-6" />
             </button>
           </div>
+        </div>
+
+        <div className="flex md:hidden justify-center gap-2">
+          {props.testimonials.map((_, index) => (
+            <div
+              key={index}
+              className={`h-4 w-4 rounded-full cursor-pointer ${
+                index + totalItems === currentIndex
+                  ? "bg-blue-300"
+                  : "bg-blue-300/25"
+              }`}
+              onClick={() => goToSlide(index)}
+            >
+            </div>
+          ))}
         </div>
       </div>
     </div>

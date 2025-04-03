@@ -4,6 +4,7 @@
 
 import * as $_app from "./routes/_app.tsx";
 import * as $About_AboutPageBannerIsland from "./islands/About/AboutPageBannerIsland.tsx";
+import * as $About_AboutTitlePageIsland from "./islands/About/AboutTitlePageIsland.tsx";
 import * as $About_BrasasHistoryIsland from "./islands/About/BrasasHistoryIsland.tsx";
 import * as $About_StatisticsIsland from "./islands/About/StatisticsIsland.tsx";
 import * as $About_VideoSectionIsland from "./islands/About/VideoSectionIsland.tsx";
@@ -77,6 +78,7 @@ const manifest = {
   },
   islands: {
     "./islands/About/AboutPageBannerIsland.tsx": $About_AboutPageBannerIsland,
+    "./islands/About/AboutTitlePageIsland.tsx": $About_AboutTitlePageIsland,
     "./islands/About/BrasasHistoryIsland.tsx": $About_BrasasHistoryIsland,
     "./islands/About/StatisticsIsland.tsx": $About_StatisticsIsland,
     "./islands/About/VideoSectionIsland.tsx": $About_VideoSectionIsland,

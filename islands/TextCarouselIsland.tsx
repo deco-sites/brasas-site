@@ -91,6 +91,19 @@ export default function TextCarouselIsland(props) {
                   COLORS[props.color]
                 } border-l-8`}
               >
+                <style
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                      p > mark {
+                        color: #C8102E !important;
+                        padding: 4px 8px;
+                        border-radius: 5px;
+                        background: #c8102e1f !important;
+                        
+                      }
+                    `,
+                  }}
+                />
                 <h3 className={`text-${COLORS[props.color]} font-bold text-xl`}>
                   {selectedLanguage.value === "ptBr"
                     ? methodCard.titleInPortuguese

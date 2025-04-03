@@ -9,7 +9,6 @@ export default function VideoSectionIsland(props) {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlayVideo = () => {
-    console.log("play no vídeo");
     setIsPlaying(true);
   };
 

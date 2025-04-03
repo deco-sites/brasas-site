@@ -14,7 +14,6 @@ export default function ReferAndEarnFormIsland(props) {
   const [showingPassword, setShowingPassword] = useState(false);
 
   const handleChangeVisibility = () => {
-    console.log("trocou a visibilidade");
     setShowingPassword(!showingPassword);
   };
 
@@ -110,6 +109,7 @@ export default function ReferAndEarnFormIsland(props) {
                 value={email}
                 setValue={setEmail}
                 required
+                type="email"
               />
               <TextInput
                 label="Telefone"
