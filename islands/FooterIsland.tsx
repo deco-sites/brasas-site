@@ -120,11 +120,13 @@ export default function FooterIsland(props) {
               </div>
 
               <div className="flex flex-col gap-4">
-                <span className="uppercase font-black leading-6 text-xs text-blue-300">
-                  {selectedLanguage.value === "ptBr"
-                    ? props.coursesTitleInPortuguese
-                    : props.coursesTitleInEnglish}
-                </span>
+                <a href={props.coursesLink} target="_self">
+                  <span className="uppercase font-black leading-6 text-xs text-blue-300">
+                    {selectedLanguage.value === "ptBr"
+                      ? props.coursesTitleInPortuguese
+                      : props.coursesTitleInEnglish}
+                  </span>
+                </a>
                 {props.coursesList.map((course) => (
                   <a
                     href={course.url}

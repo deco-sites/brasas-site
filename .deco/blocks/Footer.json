@@ -51,7 +51,7 @@
     {
       "textInEnglish": "refer and win",
       "textInPortuguese": "indique e ganhe",
-      "url": "#"
+      "url": "/indique_e_ganhe"
     },
     {
       "textInEnglish": "partnerships",
@@ -61,17 +61,17 @@
     {
       "textInEnglish": "contact us",
       "textInPortuguese": "fale conosco",
-      "url": "/contato"
+      "url": "/contatos"
     },
     {
       "textInEnglish": "work with us",
       "textInPortuguese": "trabalhe conosco",
-      "url": "/trabalhe-conosco"
+      "url": "/trabalhe_conosco"
     },
     {
       "textInEnglish": "be a franchisee",
       "textInPortuguese": "seja franqueado",
-      "url": "/seja-um-franqueado"
+      "url": "/franqueado"
     },
     {
       "textInEnglish": "faq",
@@ -83,47 +83,47 @@
     {
       "nameInEnglish": "pre-k",
       "nameInPortuguese": "pre-k",
-      "url": "#"
+      "url": "/prek"
     },
     {
       "nameInEnglish": "kids",
       "nameInPortuguese": "kids",
-      "url": "#"
+      "url": "/kids"
     },
     {
       "nameInEnglish": "juniors & teens",
       "nameInPortuguese": "juniors & teens",
-      "url": "#"
+      "url": "/juniors_e_teens"
     },
     {
       "nameInEnglish": "adults",
       "nameInPortuguese": "adults",
-      "url": "#"
+      "url": "/adults"
     },
     {
       "nameInEnglish": "international certification",
       "nameInPortuguese": "certificação internacional",
-      "url": "#"
+      "url": "/certificacoes"
     },
     {
       "nameInEnglish": "brasas online english",
       "nameInPortuguese": "brasas online english",
-      "url": "#"
+      "url": "/bol"
     },
     {
       "nameInEnglish": "immersion",
       "nameInPortuguese": "imersão",
-      "url": "#"
+      "url": "/adults#ancora-immersion-conversation"
     },
     {
       "nameInEnglish": "conversation",
       "nameInPortuguese": "conversation",
-      "url": "#"
+      "url": "/adults#ancora-immersion-conversation"
     },
     {
       "nameInEnglish": "Portuguese for Foreigners",
       "nameInPortuguese": "Português para estrangeiros",
-      "url": "#"
+      "url": "/pff"
     }
   ],
   "testButton": {
@@ -252,12 +252,12 @@
     {
       "textInEnglish": "Privacy Policy",
       "textInPortuguese": "Política de Privacidade",
-      "url": "#"
+      "url": "/privacidade"
     },
     {
       "textInEnglish": "Terms of Use",
       "textInPortuguese": "Termos de Uso",
-      "url": "#"
+      "url": "/termos"
     }
   ],
   "copyright": {
@@ -363,5 +363,6 @@
   "socialMediaTitleInEnglish": "follow on networks",
   "socialMediaTitleInPortuguese": "siga nas redes",
   "coursesTitleInEnglish": "courses",
-  "coursesTitleInPortuguese": "cursos"
+  "coursesTitleInPortuguese": "cursos",
+  "coursesLink": "/cursos"
 }

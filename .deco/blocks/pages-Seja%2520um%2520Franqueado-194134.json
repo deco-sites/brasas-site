@@ -1,6 +1,6 @@
 {
   "name": "Seja um Franqueado",
-  "path": "/seja-um-franqueado",
+  "path": "/franqueado",
   "sections": [
     {
       "__resolveType": "Header"
@@ -24,6 +24,9 @@
       "RecipientsEmailArr": [
         {
           "email": "erick.nascimento@simbioseventures.com"
+        },
+        {
+          "email": "karla@brasas.com"
         }
       ],
       "subject": "Formulário Brasas - Seja um Franqueado"

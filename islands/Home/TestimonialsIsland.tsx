@@ -78,7 +78,7 @@ export default function TestimonialsIsland(props) {
                 return (
                   <div
                     key={index}
-                    className={` flex-shrink-0 flex ${justifyClass}`}
+                    className={`flex-shrink-0 flex ${justifyClass}`}
                     style={{
                       width: "calc(100% / 3)",
                     }}
@@ -98,7 +98,7 @@ export default function TestimonialsIsland(props) {
             </div>
             {/* Botão Esquerdo */}
             <button
-              className="absolute top-1/4 translate-y-full left-[calc(50%-336px-20px)] z-10 bg-blue-300 text-white rounded-full p-4"
+              className="absolute hidden md:block top-1/4 translate-y-full left-[calc(50%-336px-20px)] z-10 bg-blue-300 text-white rounded-full p-4"
               onClick={prevSlide}
             >
               <IconChevronLeft class="w-6 h-6" />
@@ -106,7 +106,7 @@ export default function TestimonialsIsland(props) {
 
             {/* Botão Direito */}
             <button
-              className="absolute top-1/4 translate-y-full right-[calc(50%-336px-20px)] z-10 bg-blue-300 text-white rounded-full p-4"
+              className="absolute hidden md:block top-1/4 translate-y-full right-[calc(50%-336px-20px)] z-10 bg-blue-300 text-white rounded-full p-4"
               onClick={nextSlide}
             >
               <IconChevronRight class="w-6 h-6" />

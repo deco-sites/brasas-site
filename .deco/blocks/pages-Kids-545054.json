@@ -9,7 +9,7 @@
       "__resolveType": "site/sections/PageBanner.tsx",
       "titleInEnglish": "Kids",
       "titleInPortuguese": "Kids",
-      "descriptionInPortuguese": "Aprender inglês é prazeroso e surpreendente",
+      "descriptionInPortuguese": "Aprender inglês é prazerosoe surpreendente",
       "descriptionInEnglish": "Learning English is enjoyable and surprising",
       "bgColor": "blue-200",
       "bgImage": "https://data.decoassets.com/brasas-site/240f318f-fa71-4a7e-b965-9f4a941c3900/Group-6.png",
@@ -28,9 +28,9 @@
     {
       "__resolveType": "site/sections/Pre-K/NextSteps.tsx",
       "nextStepTitleInPortuguese": "Próximos passos",
-      "nextStepTextInPortuguese": "<p>Após sua passagem pelo Kids, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors-e-teens\">Juniors</a>.</p>",
+      "nextStepTextInPortuguese": "<p>Após sua passagem pelo Kids, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors_e_teens\">Juniors</a>.</p>",
       "nextStepTitleInEnglish": "Next Steps",
-      "nextStepTextInEnglish": "<p>After completing Kids, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors-e-teens\">Juniors</a> course.</p>"
+      "nextStepTextInEnglish": "<p>After completing Kids, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors_e_teens\">Juniors</a> course.</p>"
     },
     {
       "__resolveType": "IWantKnowMore"

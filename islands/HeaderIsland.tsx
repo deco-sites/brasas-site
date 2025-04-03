@@ -11,7 +11,7 @@ export default function HeaderIsland(
   const { selectedLanguage } = useSelectLanguage();
 
   return (
-    <section className="flex justify-center bg-blue-900">
+    <section className="flex justify-center bg-blue-900 relative z-50">
       <header className="relative flex items-center justify-between h-14 xl:h-20 w-screen max-w-[88.5rem] px-9">
         <HeaderMenu
           navItems={navItems}

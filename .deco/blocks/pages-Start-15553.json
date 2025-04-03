@@ -75,7 +75,7 @@
           "englishDescription": "From Pre-2",
           "portugueseDescription": "A partir do Pré-2",
           "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
-          "link": "/pre-k"
+          "link": "/prek"
         },
         {
           "englishTitle": "Kids",
@@ -91,7 +91,7 @@
           "englishDescription": "6th year of Elementary School",
           "portugueseDescription": "6º ano do Ensino Fundamental",
           "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png",
-          "link": "/juniors-e-teens"
+          "link": "/juniors_e_teens"
         },
         {
           "englishTitle": "Adults",
@@ -107,7 +107,7 @@
           "englishDescription": "Learn with live online classes",
           "portugueseDescription": "Aprenda com aulas online e ao vivo",
           "image": "https://data.decoassets.com/brasas-site/ffa031fe-4307-4ced-8d35-d1bcce708761/BRASAS-online-1.png",
-          "link": "/brasas-online"
+          "link": "/bol"
         },
         {
           "englishTitle": "International Certification",
@@ -131,7 +131,7 @@
           "englishDescription": "Learn spoken Portuguese in Brazil",
           "portugueseDescription": "Aprenda português falado no Brasil",
           "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png",
-          "link": "/portuguese-for-foreigners"
+          "link": "/pff"
         }
       ],
       "portugueseFormTitle": "Precisa de ajuda? Preencha abaixo e fale com um especialista do BRASAS",
@@ -139,6 +139,9 @@
       "RecipientsEmailArr": [
         {
           "email": "erick.nascimento@simbioseventures.com"
+        },
+        {
+          "email": "comercial@brasas.com"
         }
       ],
       "CopyToArr": [
@@ -240,7 +243,7 @@
       "descriptionInPortuguese": "Junte-se a uma empresa que tem mais<br /> de 55 anos de experiência no mercado<br /> de ensino da língua inglesa.",
       "buttonTextInEnglish": "Be a Franchisee",
       "buttonTextInPortuguese": "Seja um franqueado",
-      "link": "/seja-um-franqueado"
+      "link": "/franqueado"
     },
     {
       "__resolveType": "Footer"

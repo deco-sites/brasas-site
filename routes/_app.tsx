@@ -78,7 +78,9 @@ export default defineApp(async (_req, ctx) => {
                       font-style: normal;
                       font-weight: 100;
                       font-display: swap;
-                      src: url(${asset("MuseoSans-100.otf")}) format('opentype');
+                      src: url(${
+              asset("MuseoSans-100.otf")
+            }) format('opentype');
                     }
 
                     @font-face {
@@ -86,7 +88,9 @@ export default defineApp(async (_req, ctx) => {
                       font-style: normal;
                       font-weight: 300;
                       font-display: swap;
-                      src: url(${asset("MuseoSans-300.otf")}) format('opentype');
+                      src: url(${
+              asset("MuseoSans-300.otf")
+            }) format('opentype');
                     }
 
                     @font-face {
@@ -94,7 +98,9 @@ export default defineApp(async (_req, ctx) => {
                       font-style: normal;
                       font-weight: 500;
                       font-display: swap;
-                      src: url(${asset("MuseoSans-500.otf")}) format('opentype');
+                      src: url(${
+              asset("MuseoSans-500.otf")
+            }) format('opentype');
                     }
 
                     @font-face {
@@ -102,7 +108,9 @@ export default defineApp(async (_req, ctx) => {
                       font-style: normal;
                       font-weight: 700;
                       font-display: swap;
-                      src: url(${asset("MuseoSans-700.otf")}) format('opentype');
+                      src: url(${
+              asset("MuseoSans-700.otf")
+            }) format('opentype');
                     }
 
                     @font-face {
@@ -110,7 +118,9 @@ export default defineApp(async (_req, ctx) => {
                       font-style: normal;
                       font-weight: 100;
                       font-display: swap;
-                      src: url(${asset("MuseoSans-900.otf")}) format('opentype');
+                      src: url(${
+              asset("MuseoSans-900.otf")
+            }) format('opentype');
                     }
                       
                     * {

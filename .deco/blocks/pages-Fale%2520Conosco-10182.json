@@ -1,6 +1,6 @@
 {
   "name": "Fale Conosco",
-  "path": "/contato",
+  "path": "/contatos",
   "sections": [
     {
       "__resolveType": "Header"
@@ -12,13 +12,20 @@
       "titleInPortuguese": "Fale conosco",
       "descriptionInPortuguese": "A gente adoraria ouvir o que você tem a dizer. Mande uma mensagem abaixo.",
       "titleInEnglish": "Contact Us",
-      "descriptionInEnglish": "We would love to hear what you have to say. Send a message below."
+      "descriptionInEnglish": "We would love to hear what you have to say. Send a message below.",
+      "hasNotice": false
     },
     {
       "__resolveType": "site/sections/Contact/FormSection.tsx",
       "RecipientsEmailArr": [
         {
           "email": "erick.nascimento@simbioseventures.com"
+        },
+        {
+          "email": "peter@brasas.com"
+        },
+        {
+          "email": "tatiana.cordeiro@brasas.com"
         }
       ],
       "subject": "Fale Conosco - Brasas"

@@ -62,7 +62,7 @@ export default function BranchCard(
       <div className="p-6 flex flex-col gap-4 w-full">
         <div className="flex items-center justify-between w-full">
           <a
-            href={`/unidade`}
+            href={`/unidade_lista`}
             onClick={saveBranchInfos}
             className="text-black-500 font-bold text-2xl"
           >

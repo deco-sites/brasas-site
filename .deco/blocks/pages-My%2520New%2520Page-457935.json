@@ -1,6 +1,6 @@
 {
   "name": "Indique e Ganhe",
-  "path": "/indique-e-ganhe",
+  "path": "/indique_e_ganhe",
   "sections": [
     {
       "__resolveType": "Header"
@@ -22,7 +22,16 @@
       "formTitleInPortuguese": "Vamos começar?",
       "formSubtitleInPortuguese": "Deixe os seus dados abaixo e entraremos em contato para mais informações.",
       "formTitleInEnglish": "Shall we begin?",
-      "formSubtitleInEnglish": "Leave your details below and we will get in touch for more information."
+      "formSubtitleInEnglish": "Leave your details below and we will get in touch for more information.",
+      "subject": "Formulário Brasas - Indique e Ganhe",
+      "RecipientsEmailArr": [
+        {
+          "email": "comercial@brasas.com"
+        },
+        {
+          "email": "erick.nascimento@simbioseventures.com"
+        }
+      ]
     },
     {
       "__resolveType": "Footer"

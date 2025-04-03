@@ -69,6 +69,7 @@ interface FooterProps {
   footerNav: NavItem[];
   coursesTitleInEnglish: string;
   coursesTitleInPortuguese: string;
+  coursesLink: string;
   coursesList: Course[];
   testButton: TestButton;
   myBrasasButton: MyBrasasButton;
