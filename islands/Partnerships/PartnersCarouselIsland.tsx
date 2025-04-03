@@ -5,7 +5,7 @@ export default function PartnersCarouselIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
   const carouselRef = useRef(null);
   const requestRef = useRef();
-  const speed = 0.8; // Velocidade ajustável (0.5-1.5)
+  const speed = 0.8; // Velocidade ajustável
 
   useEffect(() => {
     if (!carouselRef.current || !props.partnersLogos.length) return;
@@ -26,19 +26,18 @@ export default function PartnersCarouselIsland(props) {
       });
     };
 
-    // 2. Limpa e prepara o carrossel
+    // 2. Limpa e configura o carrossel
     carousel.innerHTML = "";
     const elements = createLogoElements();
 
-    // 3. Adiciona 3 cópias dos logos para transição suave
-    for (let i = 0; i < 3; i++) {
-      elements.forEach((el) => carousel.appendChild(el.cloneNode(true)));
-    }
+    // 3. Duplicação dos elementos para efeito contínuo
+    elements.forEach((el) => carousel.appendChild(el.cloneNode(true)));
+    elements.forEach((el) => carousel.appendChild(el.cloneNode(true))); // Duplica novamente
 
-    // 4. Configura animação fluída
+    // 4. Configura a animação contínua
     let position = 0;
-    const singleLoopWidth = carousel.scrollWidth / 3;
     let lastTime = performance.now();
+    const totalWidth = carousel.scrollWidth / 2; // Metade do conteúdo visível
 
     const animate = (currentTime) => {
       const delta = currentTime - lastTime;
@@ -46,16 +45,11 @@ export default function PartnersCarouselIsland(props) {
 
       position -= (speed * delta) / 16;
 
-      // Reset suave antes de chegar ao final
-      if (position <= -singleLoopWidth * 2) {
-        position += singleLoopWidth;
-        carousel.style.transition = "none";
-        carousel.style.transform = `translateX(${position}px)`;
-        // Força reflow
-        void carousel.offsetWidth;
+      // Reset suave ao atingir a metade do carrossel
+      if (Math.abs(position) >= totalWidth) {
+        position = 0;
       }
 
-      carousel.style.transition = "transform 0s linear";
       carousel.style.transform = `translateX(${position}px)`;
 
       requestRef.current = requestAnimationFrame(animate);

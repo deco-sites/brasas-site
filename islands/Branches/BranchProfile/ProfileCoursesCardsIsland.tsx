@@ -114,7 +114,7 @@ export default function ProfileCoursesCardsIsland(props) {
                   }
                   : {}}
               >
-                <div className="flex flex-col items-center gap-2 text-blue-900 p-4 h-[36.36%]">
+                <div className="flex flex-col items-center gap-2 text-blue-900 p-4 h-[30%]">
                   <span className="leading-8 font-black text-xl">
                     {selectedLanguage.value === "ptBr"
                       ? card.portugueseTitle
@@ -126,11 +126,11 @@ export default function ProfileCoursesCardsIsland(props) {
                       : card.englishDescription}
                   </span>
                 </div>
-                <div className="relative max-w-full h-[63.64%]">
+                <div className="relative max-w-full max-h-[70%]">
                   <Image
                     src={card.image}
                     alt=""
-                    className="absolute bottom-0 rounded-b-2xl w-full h-full lg:h-auto object-cover"
+                    className="absolute bottom-0 w-full h-full lg:h-auto object-cover max-h-[14rem]"
                     style={{ overflowClipMargin: "content-box" }}
                   />
                 </div>

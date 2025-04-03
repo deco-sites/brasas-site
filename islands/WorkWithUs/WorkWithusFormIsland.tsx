@@ -140,6 +140,7 @@ export default function WorkWithUsFormIsland(props) {
                   value={email}
                   setValue={setEmail}
                   required
+                  type="email"
                 />
                 <TextInput
                   label={selectedLanguage.value === "ptBr"
@@ -149,6 +150,7 @@ export default function WorkWithUsFormIsland(props) {
                   value={phone}
                   setValue={setPhone}
                   required
+                  type="tel"
                 />
                 <TextInput
                   label={selectedLanguage.value === "ptBr" ? "cidade" : "city"}

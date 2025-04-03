@@ -23,7 +23,7 @@
           "englishDescription": "From Pre-2",
           "portugueseDescription": "A partir do Pré-2",
           "link": "/prek",
-          "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png"
+          "image": "https://assets.decocache.com/brasas-site/e99f4496-c9ad-48ce-96b3-0846a7e7b7af/Frame-1105.png"
         },
         {
           "englishTitle": "Kids",
@@ -31,7 +31,7 @@
           "englishDescription": "3rd year of Elementary School",
           "portugueseDescription": "3º ano do Ensino Fundamental",
           "link": "/kids",
-          "image": "https://data.decoassets.com/brasas-site/3b108c24-ee92-49e0-97a8-2cd5bcabbdac/Frame-1105-1.png"
+          "image": "https://assets.decocache.com/brasas-site/a1038ecb-ee54-4707-b9d7-a8cac3e9d713/Frame-1105-(1).png"
         },
         {
           "englishTitle": "Juniors & Teens",
@@ -39,7 +39,7 @@
           "englishDescription": "6th year of Elementary School",
           "portugueseDescription": "6º ano do Ensino Fundamental",
           "link": "/juniors_e_teens",
-          "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png"
+          "image": "https://assets.decocache.com/brasas-site/782a9e51-cfcb-4e12-abc4-cd773a06676d/banner-jrsteens-und.png"
         },
         {
           "englishTitle": "Adults",
@@ -47,7 +47,7 @@
           "englishDescription": "From 14 years old",
           "portugueseDescription": "A partir de 14 anos",
           "link": "/adults",
-          "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png"
+          "image": "https://assets.decocache.com/brasas-site/acc48bbf-f107-4918-8492-a64f1601852d/Adults-(1).png"
         },
         {
           "englishTitle": "BRASAS Online",
@@ -55,15 +55,15 @@
           "englishDescription": "Learn with live online classes",
           "portugueseDescription": "Aprenda com aulas online e ao vivo",
           "link": "/bol",
-          "image": "https://data.decoassets.com/brasas-site/11f2b643-0c09-4da2-9fe9-a19486eded2b/BRASAS-online.png"
+          "image": "https://assets.decocache.com/brasas-site/85ebd17a-843e-4862-a332-a3faab233429/BRASAS-online.png"
         },
         {
           "englishTitle": "International Certification",
-          "portugueseTitle": "Certificação Internacional",
+          "portugueseTitle": "Certificações Internacionais",
           "englishDescription": "Preparatory Courses and Exam",
           "portugueseDescription": "Cursos preparatórios e prova",
           "link": "/certificacoes",
-          "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png"
+          "image": "https://assets.decocache.com/brasas-site/2bc83be8-1401-4bf1-99ba-e6e65c36461a/certi_internacional.jpg"
         },
         {
           "englishTitle": "Portuguese for Foreigners",
@@ -71,7 +71,7 @@
           "englishDescription": "Learn spoken Portuguese in Brazil",
           "portugueseDescription": "Aprenda português falado no Brasil",
           "link": "/pff",
-          "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png"
+          "image": "https://assets.decocache.com/brasas-site/becb8681-c78b-487e-b47f-6026b2e9bae7/Frame-1105-(2).png"
         }
       ]
     },

@@ -2,10 +2,13 @@ interface TextInputdProps {
   label: string;
   placeholder: string;
   required?: boolean;
+  type?: "text" | "email" | "password" | "tel";
+  maxLength?: number;
 }
 
 export default function TextInput(
-  { label, placeholder, value, setValue, required }: TextInputdProps,
+  { label, placeholder, value, setValue, required, type = "text", maxLength }:
+    TextInputdProps,
 ) {
   return (
     <div className="flex flex-col gap-2">
@@ -13,12 +16,13 @@ export default function TextInput(
         {label}
       </label>
       <input
-        type="text"
+        type={type}
         placeholder={placeholder}
         className="w-full bg-gray-300 p-3 border border-gray-500 rounded-lg text-gray-700 placeholder-gray-500 focus:outline-none focus:ring transition duration-300 focus:border-blue-30 focus:ring-blue-30/25"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         required={required}
+        maxLength={maxLength}
       />
     </div>
   );

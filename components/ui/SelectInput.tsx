@@ -41,11 +41,6 @@ export default function SelectInput(
     }
   };
 
-  useEffect(() => {
-    console.log("Aqui", options);
-    console.log("Aqui", placeholder);
-  }, []);
-
   return (
     <div className="flex flex-col gap-2">
       <label className="text-sm font-semibold text-black-500 uppercase leading-6">

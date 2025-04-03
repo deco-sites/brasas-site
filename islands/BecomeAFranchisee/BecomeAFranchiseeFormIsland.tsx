@@ -110,6 +110,7 @@ export default function BecomeAFranchiseeFormIsland(props) {
                   value={email}
                   setValue={setEmail}
                   required
+                  type="email"
                 />
                 <TextInput
                   label="telefone"
@@ -117,6 +118,7 @@ export default function BecomeAFranchiseeFormIsland(props) {
                   value={phone}
                   setValue={setPhone}
                   required
+                  type="tel"
                 />
                 <TextArea
                   label="mensagem"

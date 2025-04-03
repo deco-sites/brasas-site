@@ -54,7 +54,7 @@ export default function BranchCard(
         className={`w-full lg:w-1/3 ${
           image ? "" : "bg-gray-100 p-5 object-contain"
         } ${
-          name === "Brasas Online"
+          name === "BRASAS Online"
             ? "object-contain bg-gray-100 p-5"
             : "object-cover"
         }`}

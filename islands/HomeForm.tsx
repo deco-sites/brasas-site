@@ -104,18 +104,21 @@ export default function HomeForm(
                 ? "celular/whatsapp"
                 : "cell phone/whatsapp"}
               placeholder="(dd) xxxxx-xxxx"
-              value={email}
-              setValue={setEmail}
+              value={phone}
+              setValue={setPhone}
               required
+              type="tel"
+              maxLength={11}
             />
             <TextInput
               label={selectedLanguage.value === "ptBr" ? "e-mail" : "email"}
               placeholder={selectedLanguage.value === "ptBr"
                 ? "Insira seu e-mail"
                 : "Enter your email"}
-              value={phone}
-              setValue={setPhone}
+              value={email}
+              setValue={setEmail}
               required
+              type="email"
             />
             <SelectInput
               label={selectedLanguage.value === "ptBr" ? "Estado" : "State"}

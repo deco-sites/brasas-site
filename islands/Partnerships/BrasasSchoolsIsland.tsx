@@ -40,7 +40,7 @@ export default function BrasasSchoolsIsland(props) {
               ))}
             </div>
             <a href="#quero-saber-mais">
-              <button className="text-white bg-blue-300 rounded-lg py-3 px-8 w-fit">
+              <button className="text-white bg-blue-300 hover:text-blue-300 hover:bg-white border border-blue-300 border-opacity-0 hover:border-opacity-100 transition-all duration-300 rounded-lg py-3 px-8 w-fit">
                 {selectedLanguage.value === "ptBr"
                   ? "Quero saber mais"
                   : "I want to know more"}

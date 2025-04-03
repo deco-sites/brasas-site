@@ -176,7 +176,7 @@ export default function BranchesIsland(props) {
         // Permissão já concedida - pode prosseguir com geolocalização
         navigator.geolocation.getCurrentPosition(
           (position) => {
-            console.log("Localização:", position.coords);
+            //console.log("Localização:", position.coords);
             // Lógica para encontrar a unidade mais próxima
           },
           (error) => {
@@ -188,7 +188,7 @@ export default function BranchesIsland(props) {
         // O navegador vai pedir permissão
         navigator.geolocation.getCurrentPosition(
           (position) => {
-            console.log("Localização:", position.coords);
+            //console.log("Localização:", position.coords);
 
             // Lógica para ordenar as unidades por proximidade
             const userLat = position.coords.latitude;

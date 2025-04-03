@@ -40,8 +40,17 @@ export default function FrequentlyAskedQuestionsIsland(props) {
                   activeIndex === index ? "max-h-96 pb-4" : "max-h-0"
                 }`}
               >
+                <style
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                      .blue-link a {
+                      color: #0D6EFD !important;
+                      }
+                    `,
+                  }}
+                />
                 <div
-                  className="bg-gray-400 rounded-lg p-4 text-gray-700"
+                  className="blue-link bg-gray-400 rounded-lg p-4 text-gray-700"
                   dangerouslySetInnerHTML={{
                     __html: selectedLanguage.value === "ptBr"
                       ? item.textInPortuguese

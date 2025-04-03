@@ -10,6 +10,7 @@ export default function PreKCardsIsland(props) {
         <div className="flex w-full justify-center">
           <div className="py-8 max-w-[48rem]">
             <span
+              className="text-2xl"
               dangerouslySetInnerHTML={{
                 __html: selectedLanguage.value === "ptBr"
                   ? props.textInPortuguese
