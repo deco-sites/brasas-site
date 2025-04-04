@@ -97,7 +97,7 @@ export default function FooterIsland(props) {
                     </button>
                   </a>
                   <a href={props.myBrasasButton.url}>
-                    <button className="whitespace-nowrap bg-blue-300 text-white hover:bg-white hover:text-blue-300 border border-blue-300 uppercase py-3 px-4 rounded-lg text-xs font-black-900 leading-6 flex gap-2 items-center justify-center border-opacity-0 hover:border-opacity-100 transition duration-300 w-full">
+                    <button className="notranslate whitespace-nowrap bg-blue-300 text-white hover:bg-white hover:text-blue-300 border border-blue-300 uppercase py-3 px-4 rounded-lg text-xs font-black-900 leading-6 flex gap-2 items-center justify-center border-opacity-0 hover:border-opacity-100 transition duration-300 w-full">
                       <IconUserFilled className="w-6 h-6" />
                       {selectedLanguage.value === "ptBr"
                         ? props.myBrasasButton.textInPortuguese
@@ -149,7 +149,7 @@ export default function FooterIsland(props) {
                   </button>
                 </a>
                 <a href={props.myBrasasButton.url} target="_blank">
-                  <button className="whitespace-nowrap bg-blue-300 text-white hover:bg-white hover:text-blue-300 border border-blue-300 uppercase py-3 px-4 rounded-lg text-xs font-black-900 leading-6 flex gap-2 items-center justify-center border-opacity-0 hover:border-opacity-100 transition duration-300 w-full">
+                  <button className="notranslate whitespace-nowrap bg-blue-300 text-white hover:bg-white hover:text-blue-300 border border-blue-300 uppercase py-3 px-4 rounded-lg text-xs font-black-900 leading-6 flex gap-2 items-center justify-center border-opacity-0 hover:border-opacity-100 transition duration-300 w-full">
                     <IconUserFilled className="w-6 h-6" />
                     {selectedLanguage.value === "ptBr"
                       ? props.myBrasasButton.textInPortuguese

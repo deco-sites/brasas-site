@@ -42,7 +42,7 @@ export default function HeaderIsland(
                 </button>
               </a>
               <a href={MyBrasasButton.link} target="_blank">
-                <button className="whitespace-nowrap bg-white uppercase py-3 px-4 rounded-lg text-xs font-bold leading-6 flex gap-2 items-center text-blue-900 hover:bg-transparent hover:text-white border border-transparent hover:border-white transition duration-300">
+                <button className="notranslate whitespace-nowrap bg-white uppercase py-3 px-4 rounded-lg text-xs font-bold leading-6 flex gap-2 items-center text-blue-900 hover:bg-transparent hover:text-white border border-transparent hover:border-white transition duration-300">
                   <IconUserFilled className="w-4 h-4" />
                   {selectedLanguage.value === "ptBr"
                     ? MyBrasasButton.textInPortuguese

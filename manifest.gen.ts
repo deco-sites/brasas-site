@@ -26,51 +26,52 @@ import * as $$$$$$16 from "./sections/BrasasOnline/PaymentsSection.tsx";
 import * as $$$$$$17 from "./sections/BrasasOnline/VideosCarousel.tsx";
 import * as $$$$$$18 from "./sections/Breadcrumbs.tsx";
 import * as $$$$$$19 from "./sections/Certifications/CertificationsBanner.tsx";
-import * as $$$$$$20 from "./sections/Certifications/ToeflITPCertification.tsx";
-import * as $$$$$$21 from "./sections/Certifications/ToefljrCertification.tsx";
-import * as $$$$$$22 from "./sections/Certifications/ToiecCertification.tsx";
-import * as $$$$$$23 from "./sections/Contact/FormSection.tsx";
-import * as $$$$$$24 from "./sections/CookiesCard.tsx";
-import * as $$$$$$25 from "./sections/Courses/CoursesBanner.tsx";
-import * as $$$$$$26 from "./sections/Courses/CoursesCards.tsx";
-import * as $$$$$$27 from "./sections/CoursesCardsSection.tsx";
-import * as $$$$$$28 from "./sections/Footer.tsx";
-import * as $$$$$$29 from "./sections/FrequentlyAskedQuestions/FrequentlyAskedQuestions.tsx";
-import * as $$$$$$30 from "./sections/Header.tsx";
-import * as $$$$$$31 from "./sections/Home/BeAFranchisee.tsx";
-import * as $$$$$$32 from "./sections/Home/BrasasCards.tsx";
-import * as $$$$$$33 from "./sections/Home/DiscoverOurCourses.tsx";
-import * as $$$$$$34 from "./sections/Home/Testimonials.tsx";
-import * as $$$$$$35 from "./sections/IWantKnowMore.tsx";
-import * as $$$$$$36 from "./sections/JuniorsAndTeens/JuniorsAndTeens.tsx";
-import * as $$$$$$37 from "./sections/Kids/KidsCards.tsx";
-import * as $$$$$$38 from "./sections/Method/ConnectedDifferences.tsx";
-import * as $$$$$$39 from "./sections/Method/HighlightedDifferences.tsx";
-import * as $$$$$$40 from "./sections/Method/MethodCards.tsx";
-import * as $$$$$$41 from "./sections/Method/MethodPageBanner.tsx";
-import * as $$$$$$44 from "./sections/PageBanner.tsx";
-import * as $$$$$$45 from "./sections/Partnerships/BrasasCompanies.tsx";
-import * as $$$$$$46 from "./sections/Partnerships/BrasasSchools.tsx";
-import * as $$$$$$47 from "./sections/Partnerships/BrasasUniversities.tsx";
-import * as $$$$$$48 from "./sections/Partnerships/PartnersCarousel.tsx";
-import * as $$$$$$42 from "./sections/PFF/PFFBanner.tsx";
-import * as $$$$$$43 from "./sections/PFF/PFFCards.tsx";
-import * as $$$$$$49 from "./sections/Pre-K/NextSteps.tsx";
-import * as $$$$$$50 from "./sections/Pre-K/PreKBanner.tsx";
-import * as $$$$$$51 from "./sections/Pre-K/PreKCards.tsx";
-import * as $$$$$$52 from "./sections/ReferAndEarn/ReferAndEarnBanner.tsx";
-import * as $$$$$$53 from "./sections/ReferAndEarn/ReferAndEarnForm.tsx";
-import * as $$$$$$54 from "./sections/ReferAndEarnPage/HaveQuestions.tsx";
-import * as $$$$$$55 from "./sections/ReferAndEarnPage/ReferAndEarnPageBanner.tsx";
-import * as $$$$$$56 from "./sections/ReferAndEarnPage/RegulationText.tsx";
-import * as $$$$$$57 from "./sections/ReferAndEarnPage/WhoIndicates.tsx";
-import * as $$$$$$58 from "./sections/SocialMediasFloat.tsx";
-import * as $$$$$$59 from "./sections/Statistics.tsx";
-import * as $$$$$$60 from "./sections/Terms/TermsOfUse.tsx";
-import * as $$$$$$61 from "./sections/TextCarousel.tsx";
-import * as $$$$$$62 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$63 from "./sections/WhatsappFloatingButton.tsx";
-import * as $$$$$$64 from "./sections/WorkWithUs/WorkWithUsForm.tsx";
+import * as $$$$$$20 from "./sections/Certifications/CertificationsPageBanner.tsx";
+import * as $$$$$$21 from "./sections/Certifications/ToeflITPCertification.tsx";
+import * as $$$$$$22 from "./sections/Certifications/ToefljrCertification.tsx";
+import * as $$$$$$23 from "./sections/Certifications/ToiecCertification.tsx";
+import * as $$$$$$24 from "./sections/Contact/FormSection.tsx";
+import * as $$$$$$25 from "./sections/CookiesCard.tsx";
+import * as $$$$$$27 from "./sections/Courses/CoursesBanner.tsx";
+import * as $$$$$$28 from "./sections/Courses/CoursesCards.tsx";
+import * as $$$$$$26 from "./sections/CoursesCardsSection.tsx";
+import * as $$$$$$29 from "./sections/Footer.tsx";
+import * as $$$$$$30 from "./sections/FrequentlyAskedQuestions/FrequentlyAskedQuestions.tsx";
+import * as $$$$$$31 from "./sections/Header.tsx";
+import * as $$$$$$32 from "./sections/Home/BeAFranchisee.tsx";
+import * as $$$$$$33 from "./sections/Home/BrasasCards.tsx";
+import * as $$$$$$34 from "./sections/Home/DiscoverOurCourses.tsx";
+import * as $$$$$$35 from "./sections/Home/Testimonials.tsx";
+import * as $$$$$$36 from "./sections/IWantKnowMore.tsx";
+import * as $$$$$$37 from "./sections/JuniorsAndTeens/JuniorsAndTeens.tsx";
+import * as $$$$$$38 from "./sections/Kids/KidsCards.tsx";
+import * as $$$$$$39 from "./sections/Method/ConnectedDifferences.tsx";
+import * as $$$$$$40 from "./sections/Method/HighlightedDifferences.tsx";
+import * as $$$$$$41 from "./sections/Method/MethodCards.tsx";
+import * as $$$$$$42 from "./sections/Method/MethodPageBanner.tsx";
+import * as $$$$$$45 from "./sections/PageBanner.tsx";
+import * as $$$$$$46 from "./sections/Partnerships/BrasasCompanies.tsx";
+import * as $$$$$$47 from "./sections/Partnerships/BrasasSchools.tsx";
+import * as $$$$$$48 from "./sections/Partnerships/BrasasUniversities.tsx";
+import * as $$$$$$49 from "./sections/Partnerships/PartnersCarousel.tsx";
+import * as $$$$$$43 from "./sections/PFF/PFFBanner.tsx";
+import * as $$$$$$44 from "./sections/PFF/PFFCards.tsx";
+import * as $$$$$$50 from "./sections/Pre-K/NextSteps.tsx";
+import * as $$$$$$51 from "./sections/Pre-K/PreKBanner.tsx";
+import * as $$$$$$52 from "./sections/Pre-K/PreKCards.tsx";
+import * as $$$$$$57 from "./sections/ReferAndEarn/ReferAndEarnBanner.tsx";
+import * as $$$$$$58 from "./sections/ReferAndEarn/ReferAndEarnForm.tsx";
+import * as $$$$$$53 from "./sections/ReferAndEarnPage/HaveQuestions.tsx";
+import * as $$$$$$54 from "./sections/ReferAndEarnPage/ReferAndEarnPageBanner.tsx";
+import * as $$$$$$55 from "./sections/ReferAndEarnPage/RegulationText.tsx";
+import * as $$$$$$56 from "./sections/ReferAndEarnPage/WhoIndicates.tsx";
+import * as $$$$$$59 from "./sections/SocialMediasFloat.tsx";
+import * as $$$$$$60 from "./sections/Statistics.tsx";
+import * as $$$$$$61 from "./sections/Terms/TermsOfUse.tsx";
+import * as $$$$$$62 from "./sections/TextCarousel.tsx";
+import * as $$$$$$63 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$64 from "./sections/WhatsappFloatingButton.tsx";
+import * as $$$$$$65 from "./sections/WorkWithUs/WorkWithUsForm.tsx";
 
 const manifest = {
   "loaders": {
@@ -97,52 +98,53 @@ const manifest = {
     "site/sections/BrasasOnline/VideosCarousel.tsx": $$$$$$17,
     "site/sections/Breadcrumbs.tsx": $$$$$$18,
     "site/sections/Certifications/CertificationsBanner.tsx": $$$$$$19,
-    "site/sections/Certifications/ToeflITPCertification.tsx": $$$$$$20,
-    "site/sections/Certifications/ToefljrCertification.tsx": $$$$$$21,
-    "site/sections/Certifications/ToiecCertification.tsx": $$$$$$22,
-    "site/sections/Contact/FormSection.tsx": $$$$$$23,
-    "site/sections/CookiesCard.tsx": $$$$$$24,
-    "site/sections/Courses/CoursesBanner.tsx": $$$$$$25,
-    "site/sections/Courses/CoursesCards.tsx": $$$$$$26,
-    "site/sections/CoursesCardsSection.tsx": $$$$$$27,
-    "site/sections/Footer.tsx": $$$$$$28,
+    "site/sections/Certifications/CertificationsPageBanner.tsx": $$$$$$20,
+    "site/sections/Certifications/ToeflITPCertification.tsx": $$$$$$21,
+    "site/sections/Certifications/ToefljrCertification.tsx": $$$$$$22,
+    "site/sections/Certifications/ToiecCertification.tsx": $$$$$$23,
+    "site/sections/Contact/FormSection.tsx": $$$$$$24,
+    "site/sections/CookiesCard.tsx": $$$$$$25,
+    "site/sections/Courses/CoursesBanner.tsx": $$$$$$27,
+    "site/sections/Courses/CoursesCards.tsx": $$$$$$28,
+    "site/sections/CoursesCardsSection.tsx": $$$$$$26,
+    "site/sections/Footer.tsx": $$$$$$29,
     "site/sections/FrequentlyAskedQuestions/FrequentlyAskedQuestions.tsx":
-      $$$$$$29,
-    "site/sections/Header.tsx": $$$$$$30,
-    "site/sections/Home/BeAFranchisee.tsx": $$$$$$31,
-    "site/sections/Home/BrasasCards.tsx": $$$$$$32,
-    "site/sections/Home/DiscoverOurCourses.tsx": $$$$$$33,
-    "site/sections/Home/Testimonials.tsx": $$$$$$34,
-    "site/sections/IWantKnowMore.tsx": $$$$$$35,
-    "site/sections/JuniorsAndTeens/JuniorsAndTeens.tsx": $$$$$$36,
-    "site/sections/Kids/KidsCards.tsx": $$$$$$37,
-    "site/sections/Method/ConnectedDifferences.tsx": $$$$$$38,
-    "site/sections/Method/HighlightedDifferences.tsx": $$$$$$39,
-    "site/sections/Method/MethodCards.tsx": $$$$$$40,
-    "site/sections/Method/MethodPageBanner.tsx": $$$$$$41,
-    "site/sections/PageBanner.tsx": $$$$$$44,
-    "site/sections/Partnerships/BrasasCompanies.tsx": $$$$$$45,
-    "site/sections/Partnerships/BrasasSchools.tsx": $$$$$$46,
-    "site/sections/Partnerships/BrasasUniversities.tsx": $$$$$$47,
-    "site/sections/Partnerships/PartnersCarousel.tsx": $$$$$$48,
-    "site/sections/PFF/PFFBanner.tsx": $$$$$$42,
-    "site/sections/PFF/PFFCards.tsx": $$$$$$43,
-    "site/sections/Pre-K/NextSteps.tsx": $$$$$$49,
-    "site/sections/Pre-K/PreKBanner.tsx": $$$$$$50,
-    "site/sections/Pre-K/PreKCards.tsx": $$$$$$51,
-    "site/sections/ReferAndEarn/ReferAndEarnBanner.tsx": $$$$$$52,
-    "site/sections/ReferAndEarn/ReferAndEarnForm.tsx": $$$$$$53,
-    "site/sections/ReferAndEarnPage/HaveQuestions.tsx": $$$$$$54,
-    "site/sections/ReferAndEarnPage/ReferAndEarnPageBanner.tsx": $$$$$$55,
-    "site/sections/ReferAndEarnPage/RegulationText.tsx": $$$$$$56,
-    "site/sections/ReferAndEarnPage/WhoIndicates.tsx": $$$$$$57,
-    "site/sections/SocialMediasFloat.tsx": $$$$$$58,
-    "site/sections/Statistics.tsx": $$$$$$59,
-    "site/sections/Terms/TermsOfUse.tsx": $$$$$$60,
-    "site/sections/TextCarousel.tsx": $$$$$$61,
-    "site/sections/Theme/Theme.tsx": $$$$$$62,
-    "site/sections/WhatsappFloatingButton.tsx": $$$$$$63,
-    "site/sections/WorkWithUs/WorkWithUsForm.tsx": $$$$$$64,
+      $$$$$$30,
+    "site/sections/Header.tsx": $$$$$$31,
+    "site/sections/Home/BeAFranchisee.tsx": $$$$$$32,
+    "site/sections/Home/BrasasCards.tsx": $$$$$$33,
+    "site/sections/Home/DiscoverOurCourses.tsx": $$$$$$34,
+    "site/sections/Home/Testimonials.tsx": $$$$$$35,
+    "site/sections/IWantKnowMore.tsx": $$$$$$36,
+    "site/sections/JuniorsAndTeens/JuniorsAndTeens.tsx": $$$$$$37,
+    "site/sections/Kids/KidsCards.tsx": $$$$$$38,
+    "site/sections/Method/ConnectedDifferences.tsx": $$$$$$39,
+    "site/sections/Method/HighlightedDifferences.tsx": $$$$$$40,
+    "site/sections/Method/MethodCards.tsx": $$$$$$41,
+    "site/sections/Method/MethodPageBanner.tsx": $$$$$$42,
+    "site/sections/PageBanner.tsx": $$$$$$45,
+    "site/sections/Partnerships/BrasasCompanies.tsx": $$$$$$46,
+    "site/sections/Partnerships/BrasasSchools.tsx": $$$$$$47,
+    "site/sections/Partnerships/BrasasUniversities.tsx": $$$$$$48,
+    "site/sections/Partnerships/PartnersCarousel.tsx": $$$$$$49,
+    "site/sections/PFF/PFFBanner.tsx": $$$$$$43,
+    "site/sections/PFF/PFFCards.tsx": $$$$$$44,
+    "site/sections/Pre-K/NextSteps.tsx": $$$$$$50,
+    "site/sections/Pre-K/PreKBanner.tsx": $$$$$$51,
+    "site/sections/Pre-K/PreKCards.tsx": $$$$$$52,
+    "site/sections/ReferAndEarn/ReferAndEarnBanner.tsx": $$$$$$57,
+    "site/sections/ReferAndEarn/ReferAndEarnForm.tsx": $$$$$$58,
+    "site/sections/ReferAndEarnPage/HaveQuestions.tsx": $$$$$$53,
+    "site/sections/ReferAndEarnPage/ReferAndEarnPageBanner.tsx": $$$$$$54,
+    "site/sections/ReferAndEarnPage/RegulationText.tsx": $$$$$$55,
+    "site/sections/ReferAndEarnPage/WhoIndicates.tsx": $$$$$$56,
+    "site/sections/SocialMediasFloat.tsx": $$$$$$59,
+    "site/sections/Statistics.tsx": $$$$$$60,
+    "site/sections/Terms/TermsOfUse.tsx": $$$$$$61,
+    "site/sections/TextCarousel.tsx": $$$$$$62,
+    "site/sections/Theme/Theme.tsx": $$$$$$63,
+    "site/sections/WhatsappFloatingButton.tsx": $$$$$$64,
+    "site/sections/WorkWithUs/WorkWithUsForm.tsx": $$$$$$65,
   },
   "actions": {
     "site/actions/sendEmail.ts": $$$$$$$$$0,

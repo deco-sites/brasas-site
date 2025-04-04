@@ -14,7 +14,7 @@ export default function ButtonsAndFlags({ TestButton, MyBrasasButton }) {
           </button>
         </a>
         <a className="">
-          <button className="whitespace-nowrap bg-white uppercase py-3 px-4 rounded-lg text-xs font-black-900 leading-6 flex w-full gap-2 items-center text-blue-900">
+          <button className="notranslate whitespace-nowrap bg-white uppercase py-3 px-4 rounded-lg text-xs font-black-900 leading-6 flex w-full gap-2 items-center text-blue-900">
             <IconUserFilled className="w-6 h-6" />
             {MyBrasasButton.textInPortuguese}
           </button>
