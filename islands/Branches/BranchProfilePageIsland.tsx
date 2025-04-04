@@ -53,7 +53,7 @@ export default function BranchProfilePageIsland() {
   }
 
   return (
-    <section className="flex justify-center pb-20 relative mb-[26rem] md:mb-80">
+    <section className="flex justify-center pb-20 relative mb-[33rem] md:mb-80">
       <div className="max-w-[69.6rem] flex flex-col md:flex-row gap-8 w-full absolute -top-20 px-4">
         <Image
           src={branchInfos?.branchImage || "brasas-logo-ballon.png"}

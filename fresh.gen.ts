@@ -24,6 +24,7 @@ import * as $BrasasOnline_PaymentsSectionIsland from "./islands/BrasasOnline/Pay
 import * as $BrasasOnline_VideosCarouselIsland from "./islands/BrasasOnline/VideosCarouselIsland.tsx";
 import * as $BreadcrumbsIsland from "./islands/BreadcrumbsIsland.tsx";
 import * as $Certifications_CertificationsBannerIsland from "./islands/Certifications/CertificationsBannerIsland.tsx";
+import * as $Certifications_CertificationsPageBannerIsland from "./islands/Certifications/CertificationsPageBannerIsland.tsx";
 import * as $Certifications_ToeflITPCertificationIsland from "./islands/Certifications/ToeflITPCertificationIsland.tsx";
 import * as $Certifications_ToefljrCertificationIsland from "./islands/Certifications/ToefljrCertificationIsland.tsx";
 import * as $Certifications_ToiecCertificationIsland from "./islands/Certifications/ToiecCertificationIsland.tsx";
@@ -108,6 +109,8 @@ const manifest = {
     "./islands/BreadcrumbsIsland.tsx": $BreadcrumbsIsland,
     "./islands/Certifications/CertificationsBannerIsland.tsx":
       $Certifications_CertificationsBannerIsland,
+    "./islands/Certifications/CertificationsPageBannerIsland.tsx":
+      $Certifications_CertificationsPageBannerIsland,
     "./islands/Certifications/ToeflITPCertificationIsland.tsx":
       $Certifications_ToeflITPCertificationIsland,
     "./islands/Certifications/ToefljrCertificationIsland.tsx":

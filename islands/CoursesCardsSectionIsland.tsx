@@ -14,12 +14,12 @@ export default function CoursesCardsSectionIsland(props) {
         backgroundSize: "100% auto",
       }}
     >
-      <span className="font-black text-black-500 text-4xl leading-10 pt-16 pb-12">
+      <span className="font-black text-black-500 text-4xl leading-10 pt-16 pb-12 text-center">
         {selectedLanguage.value === "ptBr"
           ? props.titleInPortuguese
           : props.titleInEnglish}
       </span>
-      <div className="max-w-[88.5rem] px-9 pb-36">
+      <div className="max-w-[88.5rem] px-9 pb-24 lg:pb-36">
         <CardsGrid cards={props.cards} />
       </div>
     </div>

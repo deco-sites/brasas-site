@@ -13,7 +13,9 @@
       "titleInPortuguese": "BRASAS Online",
       "descriptionInPortuguese": "Viva a experiência de aprender inglês 100% online com aulas ao vivo.",
       "descriptionInEnglish": "Experience of learning English 100% online with live classes.",
-      "hasNotice": false
+      "hasNotice": false,
+      "bgImageDesktop": "https://assets.decocache.com/brasas-site/b5a232b4-2747-4bcf-b290-8b3784f7191e/brasas-online-bg.png",
+      "bgImageMobile": "https://assets.decocache.com/brasas-site/6f6270fc-14d8-44dd-a38d-ab594ba3356e/bol-bg-mobile.png"
     },
     {
       "__resolveType": "site/sections/Breadcrumbs.tsx",

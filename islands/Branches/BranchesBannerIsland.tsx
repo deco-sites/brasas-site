@@ -5,7 +5,7 @@ export default function BranchesBannerIsland(props) {
 
   return (
     <section
-      className=" flex items-center justify-center bg-blue-300 h-[25rem]"
+      className=" flex items-center justify-center bg-blue-300 min-h-[25rem]"
       style={{
         backgroundImage: `url('/branches-banner-bg.svg')`,
         backgroundPosition: "center",
@@ -13,7 +13,7 @@ export default function BranchesBannerIsland(props) {
         backgroundSize: "cover",
       }}
     >
-      <div className="flex flex-col gap-6 items-center justify-center w-[45rem]">
+      <div className="flex flex-col gap-6 items-center justify-center w-[45rem] max-w-full px-9 pt-12 pb-10">
         <h1 className="capitalize text-white font-black text-7xl leading-[4.5rem]">
           {selectedLanguage.value === "ptBr"
             ? props.titleInPortuguese

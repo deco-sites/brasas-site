@@ -21,7 +21,9 @@
         "descriptionInEnglish": "Solutions for Companies, Schools and Universities"
       },
       "descriptionInPortuguese": "Soluções para Empresas, Escolas e Universidades",
-      "hasNotice": false
+      "hasNotice": false,
+      "bgImageMobile": "https://assets.decocache.com/brasas-site/cf22b062-4f53-4374-98f8-8c2be7591476/parcerias-bg-mobile.png",
+      "bgImageDesktop": "https://assets.decocache.com/brasas-site/0c24790e-506b-4cf8-9ff8-908d94eb283e/Group-153.png"
     },
     {
       "__resolveType": "site/sections/Breadcrumbs.tsx",

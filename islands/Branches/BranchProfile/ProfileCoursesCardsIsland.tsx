@@ -130,7 +130,7 @@ export default function ProfileCoursesCardsIsland(props) {
                   <Image
                     src={card.image}
                     alt=""
-                    className="absolute bottom-0 w-full h-full lg:h-auto object-cover max-h-[14rem]"
+                    className="lg:absolute bottom-0 w-full h-full lg:h-auto object-cover max-h-[14rem]"
                     style={{ overflowClipMargin: "content-box" }}
                   />
                 </div>

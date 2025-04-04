@@ -42,7 +42,7 @@ export default function SpecialCoursesIsland(props) {
               </span>
             </div>
           ))}
-          <div className="flex justify-center gap-4 items-center rounded-[50px] border border-blue-400 px-7 xl:px-16 py-20">
+          <div className="flex justify-center gap-4 items-center rounded-[50px] border border-blue-400 px-7 xl:px-16 py-20 -mt-8">
             <div className="flex flex-col gap-4">
               <Image
                 src="/AdultsPage/brasas_exam-preparation_toefl-itp.png"

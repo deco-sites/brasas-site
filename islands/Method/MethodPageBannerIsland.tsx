@@ -23,7 +23,7 @@ export default function MethodPageBannerIsland(props) {
 
   return (
     <section
-      className=" flex items-center justify-center bg-blue-200 h-[25rem]"
+      className=" flex items-center justify-center bg-blue-200 h-[25rem] px-9"
       style={{
         backgroundImage: `url('/method-banner-bg.svg')`,
         backgroundPosition: "center",
@@ -33,7 +33,7 @@ export default function MethodPageBannerIsland(props) {
     >
       <h1 className="flex flex-col text-center uppercase font-bold">
         <span
-          className="text-blue-200 md:text-white text-8xl"
+          className="text-blue-200 md:text-white text-7xl"
           style={textStyle}
         >
           {selectedLanguage.value === "ptBr"
@@ -41,7 +41,7 @@ export default function MethodPageBannerIsland(props) {
             : props.principalWordInEnglish}
         </span>
         <br />
-        <span className="text-blue-300 md:text-white text-6xl">
+        <span className="text-blue-300 md:text-white text-5xl">
           {selectedLanguage.value === "ptBr"
             ? props.secondaryWordInPortuguese
             : props.secondaryWordInEnglish}

@@ -18,7 +18,7 @@ export default function DiscoverOurCoursesIsland(
         backgroundSize: "auto, 100% auto",
       }}
     >
-      <div className="w-full max-w-[88.5rem] px-9 pb-36">
+      <div className="w-full max-w-[88.5rem] px-9 pb-24 lg:pb-36">
         <HomeForm
           ptBrTitle={props.portugueseFormTitle}
           enUsTitle={props.englishFormTitle}

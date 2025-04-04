@@ -22,20 +22,20 @@ export default function JuniorsAndTeensIsland(props) {
         </div>
 
         <div className="flex flex-col items-center justify-center py-5 pb-11">
-          <div className="flex gap-8">
+          <div className="flex flex-wrap w-full justify-center gap-8">
             <Image
               src={selectedLanguage.value === "ptBr"
                 ? "/JuniorsAndTeensPage/juniors-and-teens-1-pt.png"
                 : "/JuniorsAndTeensPage/juniors-and-teens-1-en.png"}
               alt="Kids Cards"
-              className="w-[33.75rem]"
+              className="w-[33.75rem] object-contain"
             />
             <Image
               src={selectedLanguage.value === "ptBr"
                 ? "/JuniorsAndTeensPage/juniors-and-teens-2-pt.png"
                 : "/JuniorsAndTeensPage/juniors-and-teens-2-en.png"}
               alt="Kids Cards"
-              className="w-[33.75rem]"
+              className="w-[33.75rem] object-contain"
             />
           </div>
           <Image
