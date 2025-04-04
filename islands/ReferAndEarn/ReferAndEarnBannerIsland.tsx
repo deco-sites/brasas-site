@@ -6,7 +6,10 @@ export default function ReferAndEarnBannerIsland(props) {
 
   return (
     <section className="relative w-full h-[608px] overflow-hidden">
-      <svg className="absolute inset-0 w-full h-full" aria-hidden="true">
+      <svg
+        className="absolute inset-0 w-full h-full"
+        aria-hidden="true"
+      >
         <clipPath id="sectionClip" clipPathUnits="objectBoundingBox">
           <path d="M0,0 H1 V0.24 C1,0.24 0.855,0.525 0.743,0.602 C0.619,0.687 0.537,0.518 0.413,0.602 C0.314,0.669 0.283,0.841 0.184,0.899 C0.114,0.938 0,0.927 0,0.927 V0 Z" />
         </clipPath>

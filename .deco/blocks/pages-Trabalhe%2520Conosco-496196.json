@@ -11,7 +11,9 @@
       "bgImage": "https://assets.decocache.com/brasas-site/47a809df-f604-40b8-8b37-b369f1ab2bcf/work-with-us-bg.png",
       "titleInPortuguese": "Trabalhe Conosco",
       "titleInEnglish": "Work with Us",
-      "hasNotice": false
+      "hasNotice": false,
+      "bgImageDesktop": "https://assets.decocache.com/brasas-site/47a809df-f604-40b8-8b37-b369f1ab2bcf/work-with-us-bg.png",
+      "bgImageMobile": "https://assets.decocache.com/brasas-site/9859a829-7938-4808-825d-caa8e56184d8/work-with-us-bg-mobile.png"
     },
     {
       "__resolveType": "site/sections/WorkWithUs/WorkWithUsForm.tsx",

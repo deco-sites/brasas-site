@@ -13,7 +13,9 @@
       "titleInEnglish": "Become a franchisee",
       "descriptionInPortuguese": "O BRASAS está sempre em expansão, e você também pode fazer parte dessa história de sucesso. Torne-se um franqueado e nos ajude na nossa missão de expandir horizontes com o domínio do inglês.",
       "descriptionInEnglish": "BRASAS is always expanding, and you can be part of this success story too. Become a franchisee and help us in our mission to expand horizons through English proficiency.",
-      "hasNotice": false
+      "hasNotice": false,
+      "bgImageDesktop": "https://assets.decocache.com/brasas-site/677148d5-6aed-4ae5-91d8-6c090142e909/seja-um-franqueado-bg.png",
+      "bgImageMobile": "https://assets.decocache.com/brasas-site/1bb2fec1-4dec-4922-b967-9e738b562d02/be-a-franchisee-bg-mobile.png"
     },
     {
       "__resolveType": "site/sections/BecomeAFranchisee/BecomeAFranchiseeForm.tsx",

@@ -33,8 +33,8 @@ function BannerItem({ image, lcp, id, isMobile }: {
           className="object-cover w-full h-full"
           src={mobile.image}
           alt={alt}
-          width={mobile.width ?? 350}
-          height={mobile.height ?? 350}
+          width={mobile.width ?? 384}
+          height={mobile.height ?? 633}
           preload
           loading="eager"
           fetchPriority="high"
@@ -47,8 +47,8 @@ function BannerItem({ image, lcp, id, isMobile }: {
           loading={lcp ? "eager" : "lazy"}
           src={desktop.image}
           alt={alt}
-          width={desktop.width ?? 1440}
-          height={desktop.height ?? 520}
+          width={desktop.width ?? 1924}
+          height={desktop.height ?? 708}
           fetchPriority={lcp ? "high" : "low"}
           preload={lcp ? true : false}
           decoding={"async"}
@@ -149,7 +149,7 @@ export default function BannerCarrouselIsland(props) {
       className={`relative xl:pb-0 flex flex-col-reverse xl:flex-row justify-center bg-blue-300`}
     >
       <div className="flex pt-12 pb-36 min-h-min justify-center items-center xl:absolute z-10 w-full h-full xl:justify-end xl:items-center  px-9 xl:pt-0 xl:mb-0">
-        <div className="flex flex-col text-white max-w-[88.5rem]">
+        <div className="flex flex-col text-white max-w-[32.4rem]">
           <span
             className="text-center xl:text-start mb-4 font-black text-4xl leading-10"
             dangerouslySetInnerHTML={{
@@ -160,7 +160,7 @@ export default function BannerCarrouselIsland(props) {
           >
           </span>
           <span
-            className="text-center xl:text-start mb-10 font-medium leading-8 text-2xl"
+            className="text-center xl:text-start mb-10 font-medium leading-8 text-2xl break-words whitespace-normal"
             dangerouslySetInnerHTML={{
               __html: selectedLanguage.value === "ptBr"
                 ? props.descriptionInPortuguese
@@ -182,7 +182,7 @@ export default function BannerCarrouselIsland(props) {
         </div>
       </div>
 
-      <div className="flex gap-6 w-full h-96 xl:h-[42rem]">
+      <div className="flex gap-6 w-full h-[39.6] xl:h-[42rem]">
         <div
           id={id}
           className="w-full relative "

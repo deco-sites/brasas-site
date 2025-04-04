@@ -13,7 +13,9 @@
       "descriptionInPortuguese": "A gente adoraria ouvir o que você tem a dizer. Mande uma mensagem abaixo.",
       "titleInEnglish": "Contact Us",
       "descriptionInEnglish": "We would love to hear what you have to say. Send a message below.",
-      "hasNotice": false
+      "hasNotice": false,
+      "bgImageDesktop": "https://assets.decocache.com/brasas-site/85466733-33fa-4d8a-a568-5fa3c9c7f7bc/Group-155.png",
+      "bgImageMobile": "https://assets.decocache.com/brasas-site/671c05d6-96e6-447a-bc46-4264a28dba1e/contact-bg-mobile.png"
     },
     {
       "__resolveType": "site/sections/Contact/FormSection.tsx",

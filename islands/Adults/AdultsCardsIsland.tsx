@@ -31,7 +31,7 @@ export default function AdultsCardsIsland(props) {
           />
 
           <div className="flex flex-col gap-4 py-5 max-w-[37rem]">
-            <div className="flex gap-6">
+            <div className="flex flex-col items-center lg:flex-row gap-6">
               <div className="flex gap-4">
                 <Image
                   src="/AdultsPage/signal-bars.svg"
@@ -43,7 +43,7 @@ export default function AdultsCardsIsland(props) {
                     : "free placement test without obligation"}
                 </span>
               </div>
-              <div className="flex gap-4 max-w-[40%]">
+              <div className="flex gap-4 lg:max-w-[40%]">
                 <Image
                   src="/AdultsPage/circled-dollar.svg"
                   className="w-14 h-14 object-contain"
@@ -56,12 +56,12 @@ export default function AdultsCardsIsland(props) {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center text-blue-900 text-xs">
-              <span>
+              <span className="text-center">
                 {selectedLanguage.value === "ptBr"
                   ? "*duração aproximada do curso (sem férias, recessos e feriados)."
                   : "*approximate duration of the course (without holidays, breaks and public holidays)."}
               </span>
-              <span>
+              <span className="text-center">
                 {selectedLanguage.value === "ptBr"
                   ? "**Podem ser 2 dias na semana ou 2 aulas consecutivas no mesmo"
                   : "**It can be 2 days a week or 2 consecutive classes in the same day."}

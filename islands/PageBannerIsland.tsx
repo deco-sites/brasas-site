@@ -1,7 +1,9 @@
+import { useEffect, useState } from "preact/hooks";
 import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function PageBannerIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   const bgColors = {
     "blue-300": "bg-blue-300",
@@ -15,20 +17,37 @@ export default function PageBannerIsland(props) {
     "orange-300": "bg-orange-300",
   };
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 1280);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   return (
     <section
-      className={`flex items-center justify-center ${
+      className={`flex items-center justify-center w-full ${
         bgColors[props.bgColor]
-      } h-[25rem]`}
+      } min-h-[25rem]`}
       style={{
-        backgroundImage: `url(${props.bgImage})`,
+        backgroundImage: `url(${
+          isMobile
+            ? props.bgImageMobile || props.bgImageDesktop
+            : props.bgImageDesktop
+        })`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
     >
-      <div className="flex flex-col gap-6 items-center justify-center w-[45rem]">
-        <h1 className="capitalize text-white font-black text-7xl leading-[4.5rem] text-center">
+      <div className="normal-case flex flex-col gap-6 items-center justify-center w-[45rem] max-w-full px-9 pt-12 pb-10">
+        <h1 className="text-white font-black text-7xl leading-[4.5rem] text-center">
           {selectedLanguage.value === "ptBr"
             ? props.titleInPortuguese
             : props.titleInEnglish}
@@ -45,7 +64,7 @@ export default function PageBannerIsland(props) {
           : ("")}
 
         {props.hasNotice && (
-          <p className="text-white">
+          <p className="text-white text-center">
             {selectedLanguage.value === "ptBr"
               ? "Curso disponível nas modalidades Presencial e Online"
               : "Course available in In-Person and Online formats"}

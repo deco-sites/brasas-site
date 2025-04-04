@@ -21,7 +21,7 @@ export default function PFFBannerIsland(props) {
 
   return (
     <section
-      className={`flex items-center justify-center bg-yellow-400 h-[25rem]`}
+      className={`flex items-center justify-center bg-yellow-400 min-h-[25rem]`}
       style={{
         backgroundImage: `url(${
           isMobile ? props.bgImageMobile : props.bgImageDesktop
@@ -31,7 +31,7 @@ export default function PFFBannerIsland(props) {
         backgroundSize: "cover",
       }}
     >
-      <div className="flex flex-col gap-6 items-center justify-center">
+      <div className="flex flex-col gap-6 items-center justify-center px-9">
         <Image
           src={selectedLanguage.value === "ptBr"
             ? props.imageInPortuguese
@@ -56,7 +56,7 @@ export default function PFFBannerIsland(props) {
         }
 
         {props.hasNotice && (
-          <p className="text-white">
+          <p className="text-white text-center">
             {selectedLanguage.value === "ptBr"
               ? "Curso disponível nas modalidades Presencial e Online"
               : "Course available in In-Person and Online formats"}

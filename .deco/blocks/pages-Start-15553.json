@@ -14,7 +14,9 @@
             "image": "https://assets.decocache.com/brasas-site/dc6dc8a4-623a-4869-acac-6f0cf410f8b9/BOL_Campanha-200-Credito_Webdoor_Desktop.jpg"
           },
           "mobile": {
-            "image": "https://assets.decocache.com/brasas-site/5bb3e479-08d9-4ae2-863a-f704a68b13b1/BOL_Campanha-200-Credito_Webdoor_Mobile.png"
+            "image": "https://assets.decocache.com/brasas-site/5bb3e479-08d9-4ae2-863a-f704a68b13b1/BOL_Campanha-200-Credito_Webdoor_Mobile.png",
+            "width": 384,
+            "height": 633
           },
           "alt": "Banner3",
           "link": "#"
@@ -50,8 +52,8 @@
       ],
       "titleInPortuguese": " Descubra o nível <br />do seu inglês!",
       "titleInEnglish": "Discover Your English<br /> Level!",
-      "descriptionInPortuguese": "O nosso teste de nivelamento te<br /> ajuda a descobrir em que módulo você deve<br /> ingressar. Comece o seu agora mesmo!",
-      "descriptionInEnglish": "Our placement test helps you find<br /> out which module you should start.<br /> Take your test now!",
+      "descriptionInPortuguese": "O nosso teste de nivelamento te ajuda a descobrir em que módulo você deve ingressar. Comece o seu agora mesmo!",
+      "descriptionInEnglish": "Our placement test helps you find out which module you should start. Take your test now!",
       "CTAtextInPortuguese": "Teste seu inglês",
       "CTAtextInEnglish": "Test your English",
       "CTALink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br"

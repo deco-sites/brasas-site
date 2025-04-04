@@ -6,14 +6,13 @@
       "__resolveType": "Header"
     },
     {
-      "__resolveType": "site/sections/PageBanner.tsx",
+      "__resolveType": "site/sections/Certifications/CertificationsPageBanner.tsx",
       "titleInPortuguese": "Certificações Internacionais",
-      "descriptionInPortuguese": "O BRASAS oferece cursos que preparam você para as certificações internacionais TOEIC®, TOEFL® Junior e TOEFL ITP®, além de aplicar os testes.",
-      "bgColor": "orange-300",
       "bgImage": "https://assets.decocache.com/brasas-site/367e3ac6-b34c-4e9c-b47a-6b3834703f62/certifications-bg.png",
       "titleInEnglish": "International Certifications",
-      "descriptionInEnglish": "BRASAS offers courses that prepare you for the TOEIC®, TOEFL® Junior, and TOEFL ITP® international certifications, in addition to administering the tests.",
-      "hasNotice": true
+      "hasNotice": true,
+      "subtitleInEnglish": "BRASAS offers courses that prepare you for the TOEIC®, TOEFL® Junior, and TOEFL ITP® international certifications, in addition to administering the tests.",
+      "subtitleInPortuguese": "O BRASAS oferece cursos que preparam você para as certificações internacionais TOEIC®, TOEFL® Junior e TOEFL ITP®, além de aplicar os testes."
     },
     {
       "__resolveType": "site/sections/Breadcrumbs.tsx",
@@ -22,7 +21,31 @@
     },
     {
       "__resolveType": "site/sections/Certifications/ToiecCertification.tsx",
+      "card": {
+        "logo": "https://assets.decocache.com/brasas-site/63cf858b-acaa-4426-af60-15bb7ca01f5a/BS_submarcas-brasas_exam-preparation_toeic-10-1.png",
+        "modalityInPortuguese": "<p><strong>Modalidade:</strong> Presencial ou online</p>",
+        "sessionsInEnglish": "<p><strong>5 Sessions:</strong> 4 classes + 1 mock test</p><p>2h/session</p>",
+        "modalityInEnglish": "<p><strong>Modality:</strong> In-person or online</p>",
+        "sessionsInPortuguese": "<p><strong>5 Sessões:</strong> 4 aulas + 1 simulado</p><p>2h/sessão</p>"
+      },
       "title": "TOEIC®",
+      "items": [
+        {
+          "icon": "https://assets.decocache.com/brasas-site/1f80d94d-6970-4821-943d-70de0e07d137/toiec-teacher.svg",
+          "textInEnglish": "<p><strong>Who is it for:</strong> Adults, from 18 years old.</p>",
+          "textInPortuguese": "<p><strong>Para quem é indicado:</strong> Adultos, a partir de 18 anos.</p>"
+        },
+        {
+          "icon": "https://assets.decocache.com/brasas-site/ee34a816-6b37-4fb2-9322-f64eb5d9f2e6/toiec-star.svg",
+          "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa em utilizar o inglês no ambiente de trabalho e negócios. É uma maneira de trazer valor ao currículo e potencializar as chances de conquistar uma vaga em uma multinacional. O teste também é utilizado por empresas na hora de contratar, colocar e promover seus colaboradores.</p>",
+          "textInEnglish": "<p><strong>Objective:</strong></p><p>To assess the ability of non-native English speakers to use English in the workplace and business environment. It is a way to add value to your resume and increase your chances of landing a job at a multinational company. The test is also used by companies when hiring, placing and promoting their employees.</p>"
+        },
+        {
+          "icon": "https://assets.decocache.com/brasas-site/2780c02e-288f-4d36-9353-843e70436ee1/toiec-book.svg",
+          "textInPortuguese": "<p><strong>Conheça o teste:</strong></p><p>200 questões múltipla escolha</p><p>Tempo: 120 minutos</p><p>Avalia compreensão oral e interpretação de textos em inglês</p><p>&nbsp;</p><p>Contempla 2 habilidades linguísticas:</p><p>100 questões de Listening</p><p>100 questões de Reading</p>",
+          "textInEnglish": "<p><strong>About the test:</strong></p><p>200 multiple-choice questions</p><p>Time: 120 minutes</p><p>Assesses oral comprehension and interpretation of texts in English</p><p>&nbsp;</p><p>Includes 2 language skills:</p><p>100 Listening questions</p><p>100 Reading questions</p>"
+        }
+      ],
       "item": [
         {
           "icon": "https://assets.decocache.com/brasas-site/1f80d94d-6970-4821-943d-70de0e07d137/toiec-teacher.svg",
@@ -38,30 +61,6 @@
           "icon": "https://assets.decocache.com/brasas-site/2780c02e-288f-4d36-9353-843e70436ee1/toiec-book.svg",
           "textInEnglish": "<p><strong>About the test:</strong></p><p>200 multiple-choice questions</p><p>Time: 120 minutes</p><p>Assesses oral comprehension and interpretation of texts in English</p><p>Includes 2 language skills:</p><p>100 Listening questions</p><p>100 Reading questions</p>",
           "textInPortuguese": "<p><strong>Conheça o teste:</strong></p><p>200 questões múltipla escolha</p><p>Tempo: 120 minutos</p><p>Avalia compreensão oral e interpretação de textos em inglês</p><p>Contempla 2 habilidades linguísticas:</p><p>100 questões de Listening</p><p>100 questões de Reading</p>"
-        }
-      ],
-      "card": {
-        "logo": "https://assets.decocache.com/brasas-site/63cf858b-acaa-4426-af60-15bb7ca01f5a/BS_submarcas-brasas_exam-preparation_toeic-10-1.png",
-        "modalityInPortuguese": "<p><strong>Modalidade:</strong> Presencial ou online</p>",
-        "sessionsInPortuguese": "<p><strong>5 Sessões:</strong> 4 aulas + 1 simulado</p><p>2h/sessão</p>",
-        "modalityInEnglish": "<p><strong>Modality:</strong> In-person or online</p>",
-        "sessionsInEnglish": "<p><strong>5 Sessions:</strong> 4 classes + 1 mock test</p><p>2h/session</p>"
-      },
-      "items": [
-        {
-          "icon": "https://assets.decocache.com/brasas-site/1f80d94d-6970-4821-943d-70de0e07d137/toiec-teacher.svg",
-          "textInEnglish": "<p><strong>Who is it for:</strong> Adults, from 18 years old.</p>",
-          "textInPortuguese": "<p><strong>Para quem é indicado:</strong> Adultos, a partir de 18 anos.</p>"
-        },
-        {
-          "icon": "https://assets.decocache.com/brasas-site/ee34a816-6b37-4fb2-9322-f64eb5d9f2e6/toiec-star.svg",
-          "textInEnglish": "<p><strong>Objective:</strong></p><p>To assess the ability of non-native English speakers to use English in the workplace and business environment. It is a way to add value to your resume and increase your chances of landing a job at a multinational company. The test is also used by companies when hiring, placing and promoting their employees.</p>",
-          "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa em utilizar o inglês no ambiente de trabalho e negócios. É uma maneira de trazer valor ao currículo e potencializar as chances de conquistar uma vaga em uma multinacional. O teste também é utilizado por empresas na hora de contratar, colocar e promover seus colaboradores.</p>"
-        },
-        {
-          "icon": "https://assets.decocache.com/brasas-site/2780c02e-288f-4d36-9353-843e70436ee1/toiec-book.svg",
-          "textInEnglish": "<p><strong>About the test:</strong></p><p>200 multiple-choice questions</p><p>Time: 120 minutes</p><p>Assesses oral comprehension and interpretation of texts in English</p><p>&nbsp;</p><p>Includes 2 language skills:</p><p>100 Listening questions</p><p>100 Reading questions</p>",
-          "textInPortuguese": "<p><strong>Conheça o teste:</strong></p><p>200 questões múltipla escolha</p><p>Tempo: 120 minutos</p><p>Avalia compreensão oral e interpretação de textos em inglês</p><p>&nbsp;</p><p>Contempla 2 habilidades linguísticas:</p><p>100 questões de Listening</p><p>100 questões de Reading</p>"
         }
       ]
     },

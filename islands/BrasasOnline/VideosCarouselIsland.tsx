@@ -19,7 +19,7 @@ export default function VideosCarouselIsland({ videos }) {
 
   return (
     <section className="relative flex flex-col items-center w-full mx-auto">
-      <h2 className="absolute z-50 top-4 text-2xl font-bold mb-4 text-center text-red-300">
+      <h2 className="absolute z-50 top-4 text-base xl:text-2xl font-bold mb-4 text-center text-red-300">
         {selectedLanguage.value === "ptBr"
           ? videos[currentIndex].titleInPortuguese
           : videos[currentIndex].titleInEnglish}

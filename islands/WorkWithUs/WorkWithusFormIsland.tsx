@@ -103,7 +103,7 @@ export default function WorkWithUsFormIsland(props) {
 
   return (
     <>
-      <section className="flex justify-center relative h-[72rem] md:h-[50rem]">
+      <section className="flex justify-center relative h-[82rem] sm:h-[75rem] md:h-[54rem]">
         <div className="absolute -top-16">
           <div className="pb-24 max-w-[88.5rem] px-9 w-full flex flex-col xl:flex-row">
             <form

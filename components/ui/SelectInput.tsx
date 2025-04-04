@@ -51,7 +51,7 @@ export default function SelectInput(
         value={value || ""}
         className={`w-full ${
           BG_COLORS[bgColor]
-        } p-3 h-full border border-gray-500 rounded-lg text-gray-700 placeholder-gray-500 focus:outline-none focus:ring transition duration-300 focus:border-blue-30 focus:ring-blue-30/25`}
+        } p-3 h-full border border-gray-500 rounded-lg text-gray-700 placeholder-gray-500 focus:outline-none focus:ring transition duration-300 focus:border-blue-30 focus:ring-blue-30/25 min-h-[50px]`}
         onChange={handleChange}
       >
         <option

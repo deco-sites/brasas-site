@@ -24,7 +24,7 @@ export default function BrasasCardIsland(props) {
 
   return (
     <>
-      <div className="flex justify-center pt-20 pb-14 bg-[url('/brasas-card-bg.svg')] bg-no-repeat bg-top">
+      <div className="flex justify-center pt-20 pb-28 xl:pb-14 bg-[url('/brasas-card-bg.svg')] bg-no-repeat bg-top">
         <div className="flex flex-wrap justify-center gap-20 max-w-[88.5rem] px-9">
           {props.cards.map((card) => (
             <div

@@ -13,7 +13,9 @@
       "descriptionInPortuguese": "BRASAS, o inglês que te conecta com o mundo",
       "descriptionInEnglish": "RASAS, the English that connects you to the world",
       "bgImage": "https://assets.decocache.com/brasas-site/77b2d670-33d5-4d82-9635-5ccc57ba1e9a/juniors-e-teens-bg.png",
-      "hasNotice": true
+      "hasNotice": true,
+      "bgImageDesktop": "https://assets.decocache.com/brasas-site/77b2d670-33d5-4d82-9635-5ccc57ba1e9a/juniors-e-teens-bg.png",
+      "bgImageMobile": "https://assets.decocache.com/brasas-site/1ca839c8-e39b-4b7d-9811-f7270310e92e/juniors-and-teens-bg-mobile.png"
     },
     {
       "__resolveType": "site/sections/Breadcrumbs.tsx",

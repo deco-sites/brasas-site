@@ -51,14 +51,15 @@ export default function BranchCard(
     <div className="flex flex-col min-h-60 lg:flex-row border border-gray-100 rounded-2xl overflow-hidden">
       <Image
         src={image ? image : "brasas-logo-ballon.png"}
-        className={`w-full lg:w-1/3 ${
-          image ? "" : "bg-gray-100 p-5 object-contain"
-        } ${
-          name === "BRASAS Online"
+        className={`w-full lg:w-1/3 
+    ${
+          name === "BRASAS Online" || !image
             ? "object-contain bg-gray-100 p-5"
             : "object-cover"
-        }`}
+        }
+  `}
       />
+
       <div className="p-6 flex flex-col gap-4 w-full">
         <div className="flex items-center justify-between w-full">
           <a
@@ -111,7 +112,7 @@ export default function BranchCard(
           </div>
         )}
 
-        <div className="flex gap-4 items-center">
+        <div className="flex flex-wrap gap-4 items-center">
           {telNumbers?.map((tel) => (
             <div key={tel} className="flex gap-2">
               <IconPhoneFilled class="w-6 h-6 text-blue-900" />

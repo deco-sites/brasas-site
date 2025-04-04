@@ -3,7 +3,8 @@ import PageBannerIsland from "site/islands/PageBannerIsland.tsx";
 
 interface PageBannerProps {
   bgColor: string;
-  bgImage: ImageWidget;
+  bgImageDesktop: ImageWidget;
+  bgImageMobile?: ImageWidget;
   titleInEnglish: string;
   titleInPortuguese: string;
   descriptionInEnglish?: string;
