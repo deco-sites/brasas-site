@@ -11,7 +11,7 @@ export default function CoursesCardsIsland(props) {
         backgroundSize: "100% auto",
       }}
     >
-      <div className="max-w-[88.5rem] px-9 pt-12 pb-36">
+      <div className="max-w-full md:max-w-[88.5rem] px-9 pt-12 pb-36">
         <CardsGrid cards={props.cards} />
       </div>
     </div>

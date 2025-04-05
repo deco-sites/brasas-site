@@ -19,7 +19,7 @@ export default function CoursesCardsSectionIsland(props) {
           ? props.titleInPortuguese
           : props.titleInEnglish}
       </span>
-      <div className="max-w-[88.5rem] px-9 pb-24 lg:pb-36">
+      <div className="max-w-full md:max-w-[88.5rem] px-9 pb-24 lg:pb-36">
         <CardsGrid cards={props.cards} />
       </div>
     </div>
