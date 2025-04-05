@@ -4,6 +4,8 @@ import { useSelectLanguage } from "site/sdk/language.ts";
 export default function TextCarouselIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -22,8 +24,25 @@ export default function TextCarouselIsland(props) {
   };
 
   const COLORS = {
-    "blue": "blue-300",
-    "red": "red-300",
+    blue: "blue-300",
+    red: "red-300",
+  };
+
+  // Eventos de toque
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      nextSlide();
+    } else if (touchStartX - touchEndX < -50) {
+      prevSlide();
+    }
   };
 
   return (
@@ -31,7 +50,7 @@ export default function TextCarouselIsland(props) {
       {/* Container principal do carrossel */}
       <div className="relative w-full">
         {/* Navegação por setas */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-0 max-w-5xl mx-auto z-50">
+        <div className="absolute hidden xl:block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-0 max-w-5xl mx-auto z-50">
           <button
             onClick={prevSlide}
             className="absolute -left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-md hover:bg-gray-100"
@@ -74,8 +93,13 @@ export default function TextCarouselIsland(props) {
           </button>
         </div>
 
-        {/* Slides do carrossel */}
-        <div className="w-full px-9 max-w-5xl flex overflow-hidden mx-auto">
+        {/* Slides do carrossel com eventos de toque */}
+        <div
+          className="w-full px-9 max-w-5xl flex overflow-hidden mx-auto"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           <div
             className="flex items-center w-full gap-20 transition-transform duration-300"
             style={{
@@ -99,12 +123,15 @@ export default function TextCarouselIsland(props) {
                         padding: 4px 8px;
                         border-radius: 5px;
                         background: #c8102e1f !important;
-                        
                       }
                     `,
                   }}
                 />
-                <h3 className={`text-${COLORS[props.color]} font-bold text-xl`}>
+                <h3
+                  className={`text-${
+                    COLORS[props.color]
+                  } font-bold text-xl text-center`}
+                >
                   {selectedLanguage.value === "ptBr"
                     ? methodCard.titleInPortuguese
                     : methodCard.titleInEnglish}
