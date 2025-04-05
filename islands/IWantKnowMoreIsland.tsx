@@ -56,7 +56,7 @@ export default function IWantKnowMoreIsland(props) {
           id="quero-saber-mais"
           className="flex flex-col gap-16 items-center max-w-[88.5rem] px-9"
         >
-          <h2 className="text-white font-black text-4xl leading-10">
+          <h2 className="text-white font-black text-4xl leading-10 text-center">
             {selectedLanguage.value === "ptBr"
               ? "Quero saber mais"
               : "I want to know more"}
