@@ -80,6 +80,33 @@
               "lon": "-43.318482",
               "lat": "-23.004389",
               "zip_code": "22640-100"
+            },
+            {
+              "tels": [
+                {
+                  "number": "2124385043",
+                  "isWhatsapp": false
+                },
+                {
+                  "number": "2131519410",
+                  "isWhatsapp": false
+                },
+                {
+                  "number": "21992717543",
+                  "isWhatsapp": true
+                }
+              ],
+              "name": "Barra - Novo Leblon",
+              "image": "https://assets.decocache.com/brasas-site/c0099b2a-2976-4a66-a0a7-d0902e2c03ff/Novo_Leblon.webp",
+              "address": "Av. das Américas, 7607 - Sala 330,",
+              "neighborhood": "Barra da Tijuca",
+              "city": "Rio de Janeiro",
+              "state": "RJ",
+              "email": "nl@brasas.com",
+              "instagram": "https://www.instagram.com/director_novoleblon/",
+              "lon": "-43.38297",
+              "lat": "-23.00098",
+              "zip_code": "22793-081"
             }
           ],
           "name": "Rio de Janeiro"
@@ -103,6 +130,90 @@
               "lon": "-47.88303",
               "lat": "-15.78045",
               "zip_code": "70722-400"
+            },
+            {
+              "tels": [
+                {
+                  "number": "6134421011",
+                  "isWhatsapp": false
+                }
+              ],
+              "name": "Brasília - Asa Sul",
+              "image": "https://assets.decocache.com/brasas-site/c83ac3a1-5f10-4394-b626-279ca4f65a0f/BRASILIA---ASA-SUL.jpg",
+              "address": "A138 SHC/ SUL EQ 110/111 - Bloco A - Lojas 1, 2, 3, 4, 12, 13, 14 e 15,",
+              "neighborhood": "Asa Sul",
+              "city": "Brasília",
+              "state": "DF",
+              "email": "as@brasas.com",
+              "lon": "-47.9104",
+              "lat": "-15.82134",
+              "zip_code": "70373-400"
+            },
+            {
+              "tels": [
+                {
+                  "number": "61996577711",
+                  "isWhatsapp": true
+                }
+              ],
+              "name": "Brasília - Noroeste",
+              "image": "https://assets.decocache.com/brasas-site/a8170234-d42e-44ce-afe8-84851af9982a/Noroeste.jpg",
+              "address": "SHCNW SQNW 8/9 SQNW BL D - Loja 4,",
+              "neighborhood": "Setor Noroeste",
+              "city": "Brasília",
+              "state": "DF",
+              "email": "no@brasas.com",
+              "lon": "-47.91082",
+              "lat": "-15.74857",
+              "zip_code": "70686-290"
+            },
+            {
+              "tels": [
+                {
+                  "number": "6233442220",
+                  "isWhatsapp": false
+                },
+                {
+                  "number": "62998792220",
+                  "isWhatsapp": true
+                }
+              ],
+              "name": "Sudoeste",
+              "image": "https://assets.decocache.com/brasas-site/f4fec3f1-678a-4935-be04-da4a5b3667a4/Sudoeste.jpg",
+              "address": "Q CLSW 304 BLOCO B - S/N - Sala 113, 115, 117, 118, 119 - Ed. Oasis,",
+              "neighborhood": "Setor Sudoeste",
+              "city": "Brasília",
+              "state": "DF",
+              "email": "sw@brasas.com",
+              "lon": "-47.92892",
+              "lat": "-15.80221",
+              "zip_code": "70673-632"
+            },
+            {
+              "tels": [
+                {
+                  "number": "6135671626",
+                  "isWhatsapp": false
+                },
+                {
+                  "number": "61983290003",
+                  "isWhatsapp": true
+                },
+                {
+                  "number": "61985921590",
+                  "isWhatsapp": true
+                }
+              ],
+              "name": "Brasília - Águas Claras",
+              "image": "https://assets.decocache.com/brasas-site/fac5c1e0-8d35-4213-a2dc-9aaefb98f37e/BRASILIA---AGUAS-CLARAS.jpg",
+              "address": "Av. Araucárias, Lotes 1835, 1905, 1955 e 2005 - Salas 333 e 334,",
+              "neighborhood": "Águas Claras",
+              "city": "Brasília",
+              "state": "DF",
+              "email": "ac@brasas.com",
+              "lon": "-48.02441",
+              "lat": "-15.84186",
+              "zip_code": "71936-250"
             }
           ],
           "name": "Distrito Federal"
