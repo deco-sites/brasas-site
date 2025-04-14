@@ -84,7 +84,7 @@
     "__resolveType": "site/loaders/sendgridConfig.ts",
     "sendgridApiKey": {
       "__resolveType": "website/loaders/secret.ts",
-      "encrypted": "2e36fd688189e74c73b85f09505b320230eeab8524b5a7f7be826a80b465fbe2d0203fa103297e34363b62c7475e0a70ebcab0be2b6413f077bcf4fe57ec4ffa151c7607deb7aaab746dfeeb542376f6",
+      "encrypted": "c2fd9b0c5ea24b64715d50c9b17c25a6597c18f7e5a2ff716559f0e829efcefa9c88c13d0540925fee17a6d07574d62ad19c683645e14f5cca58209a2fb09cb219a72c4b848f342481733dc59c0cde04",
       "name": "SEND_GRID"
     }
   }
