@@ -6,6 +6,7 @@ import IconSend from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/send.tsx";
 import { useEffect, useRef, useState } from "preact/hooks";
 import { invoke } from "../../runtime.ts";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
+import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 
 export default function BecomeAFranchiseeFormIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
@@ -26,6 +27,13 @@ export default function BecomeAFranchiseeFormIsland(props) {
   Mensagem: ${message}
 `;
 
+  const sendDataToRD = {
+    nome: name,
+    email: email,
+    telefone: phone,
+    mensagem: message,
+  };
+
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
@@ -38,7 +46,7 @@ export default function BecomeAFranchiseeFormIsland(props) {
 
     if (emailSent === 200) setIsConfirmationModalOpen(true);
 
-    //sendToRDStation(sendData, "become-a-franchisee-page-form");
+    sendToRDStation(sendDataToRD, "become-a-franchisee-page-form");
 
     setName("");
     setEmail("");

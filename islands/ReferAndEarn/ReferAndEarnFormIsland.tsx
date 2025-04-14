@@ -8,6 +8,7 @@ import { useState } from "preact/hooks";
 import IconEyeClosed from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/eye-closed.tsx";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import { invoke } from "../../runtime.ts";
+import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 
 export default function ReferAndEarnFormIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
@@ -31,6 +32,13 @@ export default function ReferAndEarnFormIsland(props) {
   Código: ${referralCode}
 `;
 
+  const sendDataToRD = {
+    nome: name,
+    email: email,
+    telefone: phone,
+    codigo: referralCode,
+  };
+
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
@@ -43,7 +51,7 @@ export default function ReferAndEarnFormIsland(props) {
 
     if (emailSent === 200) setIsConfirmationModalOpen(true);
 
-    //sendToRDStation(sendData, "home-page-form");
+    sendToRDStation(sendDataToRD, "home-page-form");
 
     setName("");
     setEmail("");

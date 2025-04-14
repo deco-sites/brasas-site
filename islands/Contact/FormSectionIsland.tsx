@@ -7,6 +7,7 @@ import { useSelectLanguage } from "site/sdk/language.ts";
 import { useState } from "preact/hooks";
 import { invoke } from "../../runtime.ts";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
+import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 
 export default function FormSectionIsland(
   { RecipientsEmailArr, CopyToArr, subject },
@@ -28,6 +29,13 @@ export default function FormSectionIsland(
   Mensagem: ${message}
 `;
 
+  const sendDataToRD = {
+    nome: name,
+    email: email,
+    telefone: phone,
+    mensagem: message,
+  };
+
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
@@ -40,7 +48,7 @@ export default function FormSectionIsland(
 
     if (emailSent === 200) setIsConfirmationModalOpen(true);
 
-    //sendToRDStation(sendData, "contact-page-form");
+    sendToRDStation(sendDataToRD, "contact-page-form");
 
     setName("");
     setEmail("");
