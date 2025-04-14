@@ -9,6 +9,7 @@ import portugueseData from "site/data/portuguese/home.json" with {
 import { invoke } from "../runtime.ts";
 import { useState } from "preact/hooks";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
+import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 
 export default function HomeForm(
   { ptBrTitle, enUsTitle, RecipientsEmailArr, CopyToArr, subject },
@@ -49,6 +50,14 @@ export default function HomeForm(
   Opções Selecionadas: ${Object.keys(selectedOptions)}
 `;
 
+  const sendDataToRD = {
+    nome: name,
+    email: email,
+    telefone: phone,
+    estado: state,
+    opcoes_selecionadas: Object.keys(selectedOptions).join(", "),
+  };
+
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
@@ -67,7 +76,7 @@ export default function HomeForm(
 
     if (emailSent === 200) setIsConfirmationModalOpen(true);
 
-    //sendToRDStation(sendData, "home-page-form");
+    sendToRDStation(sendDataToRD, "home-page-form");
 
     setError("");
     setName("");
