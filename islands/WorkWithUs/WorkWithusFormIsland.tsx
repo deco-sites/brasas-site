@@ -8,6 +8,7 @@ import SelectInput from "site/components/ui/SelectInput.tsx";
 import { useRef, useState } from "preact/hooks";
 import { invoke } from "../../runtime.ts";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
+import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 
 export default function WorkWithUsFormIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
@@ -58,6 +59,15 @@ export default function WorkWithUsFormIsland(props) {
   Comentários Adicionais: ${additionalComments}
 `;
 
+  const sendDataToRD = {
+    nome: name,
+    email: email,
+    telefone: phone,
+    cidade: city,
+    area_desejada: desiredArea,
+    comentarios_adicionais: additionalComments,
+  };
+
   const handleFileChange = (e) => {
     e.preventDefault();
     const file = e.target.files[0];
@@ -88,7 +98,7 @@ export default function WorkWithUsFormIsland(props) {
 
     if (emailSent === 200) setIsConfirmationModalOpen(true);
 
-    //sendToRDStation(sendData, "work-with-us-form");
+    sendToRDStation(sendDataToRD, "work-with-us-form");
 
     setName("");
     setEmail("");

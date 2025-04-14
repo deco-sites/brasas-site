@@ -6,6 +6,7 @@ import { useState } from "preact/hooks";
 import { invoke } from "../runtime.ts";
 import InputCheckbox from "site/components/ui/InputCheckbox.tsx";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
+import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 
 export default function IWantKnowMoreIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
@@ -22,6 +23,12 @@ export default function IWantKnowMoreIsland(props) {
   Telefone: ${phone}
 `;
 
+  const sendDataToRD = {
+    nome: name,
+    email: email,
+    telefone: phone,
+  };
+
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
@@ -34,7 +41,7 @@ export default function IWantKnowMoreIsland(props) {
 
     if (emailSent === 200) setIsConfirmationModalOpen(true);
 
-    //sendToRDStation(sendData, "i-want-know-more-form");
+    sendToRDStation(sendDataToRD, "i-want-know-more-form");
 
     setName("");
     setEmail("");
