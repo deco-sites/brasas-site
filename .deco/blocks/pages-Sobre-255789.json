@@ -14,8 +14,8 @@
     },
     {
       "__resolveType": "site/sections/About/aboutTitlePage.tsx",
-      "titleInEnglish": "<p>The History of BRASAS and its founder, <strong>George Peter Zinovetz</strong>.</p>",
-      "titleInPortuguese": "<p>A História do BRASAS e de seu fundador, <strong>George Peter Zinovetz</strong>.</p>"
+      "titleInEnglish": "<p>The history of BRASAS and its founder, <strong>George Peter Zinovetz</strong>.</p>",
+      "titleInPortuguese": "<p>A história do BRASAS e de seu fundador, <strong>George Peter Zinovetz</strong>.</p>"
     },
     {
       "__resolveType": "site/sections/TextCarousel.tsx",
