@@ -35,8 +35,8 @@
         {
           "color": "blue-400",
           "logo": "https://assets.decocache.com/brasas-site/b6dd35f3-5716-4f08-82b0-60ee1c5105d6/brasas-imersao.png",
-          "descriptionInPortuguese": "<p>Este curso superintensivo é para quem precisa aprender inglês o mais rápido possível. Na modalidade presencial, você conclui 1 módulo em 15 dias. São 3h de aula por dia,&nbsp;5x por semana. </p><p>&nbsp;</p><p>Na modalidade online, você conclui  1 módulo em 23 dias. 2h de aula por dia,  6x por semana.</p>",
-          "descriptionInEnglish": "<p><span>This superintense course is for those who need to learn English as quickly as possible. In the in-person format, a book is concluded in 15 days, with three-hour classes per day, 5 times a week.</span></p><p><span>&nbsp;<br>In the online format, a book is concluded in 23 days, with 2-hour classes per day, 6 times a week.</span></p>",
+          "descriptionInPortuguese": "<p>Este curso superintensivo é para quem precisa aprender inglês o mais rápido possível. Na modalidade presencial, você conclui 1 módulo em 15 dias. São 3h de aula por dia,&nbsp;5x por semana.</p><p>&nbsp;</p><p>Na modalidade <em>online</em>, você conclui 1 módulo em 23 dias. 2h de aula por dia, 6x por semana.</p>",
+          "descriptionInEnglish": "<p>This superintense course is for those who need to learn English as quickly as possible. In the in-person format, a book is concluded in 15 days, with three-hour classes per day, 5 times a week.</p><p>&nbsp;<br>In the <em>online</em> format, a book is concluded in 23 days, with 2-hour classes per day, 6 times a week.</p>",
           "altText": "Brasas Imersão"
         },
         {
