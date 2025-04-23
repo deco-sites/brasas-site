@@ -37,7 +37,7 @@ export default function PFFCardsIsland(props) {
 
         <div className="flex flex-col gap-4 sm:flex-row justify-between items-center w-full">
           <span
-            className="font-normal text-2xl sm:text-5xl"
+            className="font-normal text-2xl sm:text-[40px] leading-10"
             dangerouslySetInnerHTML={{
               __html: selectedLanguage.value === "ptBr"
                 ? props.bottomTextInPortuguese

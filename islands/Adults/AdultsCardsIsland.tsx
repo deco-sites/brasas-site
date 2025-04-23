@@ -63,9 +63,8 @@ export default function AdultsCardsIsland(props) {
               </span>
               <span className="text-center">
                 {selectedLanguage.value === "ptBr"
-                  ? "**Podem ser 2 dias na semana ou 2 aulas consecutivas no mesmo"
+                  ? "**Podem ser 2 dias na semana ou 2 aulas consecutivas no mesmo dia."
                   : "**It can be 2 days a week or 2 consecutive classes in the same day."}
-                dia.
               </span>
             </div>
           </div>

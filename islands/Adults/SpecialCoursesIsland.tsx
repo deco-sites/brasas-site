@@ -42,6 +42,43 @@ export default function SpecialCoursesIsland(props) {
               </span>
             </div>
           ))}
+
+          <div className="relative flex justify-center items-center rounded-[50px] border border-blue-400 px-7 xl:px-16 py-20">
+            <div className="absolute bg-white flex items-center justify-center top-0 -translate-y-1/2 w-[15.7rem] h-[5.25rem] rounded-tr-xl rounded-bl-xl border border-blue-400">
+              <Image
+                src={"/AdultsPage/brasas-exam-preparation.png"}
+                alt="Logo"
+                className="object-contain"
+              />
+            </div>
+
+            <div className="flex flex-col gap-4 justify-center items-center">
+              <span
+                className="text-gray-500 font-normal text-xl"
+                dangerouslySetInnerHTML={{
+                  __html: selectedLanguage.value === "ptBr"
+                    ? "Informe-se sobre o curso preparatório e aplicações dos testes."
+                    : "Find out about the preparatory course and the test application.",
+                }}
+              >
+              </span>
+              <div className="flex gap-4">
+                <Image
+                  src="/AdultsPage/toeic.png"
+                  alt="Logo"
+                  className="object-contain"
+                />
+                <Image
+                  src="/AdultsPage/toefl-itp.png"
+                  alt="Logo"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          {
+            /*
           <div className="flex justify-center gap-4 items-center rounded-[50px] border border-blue-400 px-7 xl:px-16 py-20 -mt-8">
             <div className="flex flex-col gap-4">
               <Image
@@ -65,7 +102,8 @@ export default function SpecialCoursesIsland(props) {
               }}
             >
             </span>
-          </div>
+          </div>*/
+          }
         </div>
       </div>
     </section>
