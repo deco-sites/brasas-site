@@ -62,30 +62,56 @@ export default function ReferAndEarnFormIsland(props) {
 
   return (
     <>
-      <section className="flex justify-center w-full pb-16 xl:pb-24">
+      <section className="flex justify-center w-full py-16 xl:py-24">
         <div className="w-full max-w-[88.5rem] px-9 flex flex-col items-center xl:flex-row justify-center gap-20">
           <div className="flex flex-col items-center max-w-[27.6rem]">
             <div className="flex flex-col items-start gap-10 text-black-500">
-              <span className="text-center xl:text-start font-bold text-3xl">
+              <span className="text-center xl:text-start font-bold text-3xl uppercase">
                 {selectedLanguage.value === "ptBr"
                   ? props.titleInPortuguese
                   : props.titleInEnglish}
               </span>
-              <span className="text-center xl:text-start font-normal text-base">
-                {selectedLanguage.value === "ptBr"
-                  ? props.subtitleInPortuguese
-                  : props.subtitleInEnglish}
+              <span
+                className="text-center xl:text-start font-normal text-xl"
+                dangerouslySetInnerHTML={{
+                  __html: selectedLanguage.value === "ptBr"
+                    ? props.subtitleInPortuguese
+                    : props.subtitleInEnglish,
+                }}
+              >
+              </span>
+
+              <div className="flex justify-center gap-2 text-yellow-500 font-bold text-xl rounded-full w-full py-4 bg-purple-500">
+                <span>
+                  {selectedLanguage.value === "ptBr" ? "indicou" : "indicated"}
+                </span>
+                <span className="text-white">&gt;&gt;</span>
+                <span>
+                  {selectedLanguage.value === "ptBr"
+                    ? "matriculou"
+                    : "enrolled"}
+                </span>
+                <span className="text-white">&gt;&gt;</span>
+                <span>
+                  {selectedLanguage.value === "ptBr" ? "ganhou" : "won"}
+                </span>
+              </div>
+
+              <span
+                className="text-center xl:text-start font-normal text-xs"
+                dangerouslySetInnerHTML={{
+                  __html: selectedLanguage.value === "ptBr"
+                    ? props.regulationTextInPortuguese
+                    : props.regulationTextInEnglish,
+                }}
+              >
               </span>
             </div>
-            <Image
-              src={props.image}
-              className="hidden xl:flex mt-20 w-[19.68rem] h-[22.4rem]"
-            />
           </div>
 
           <form
             onSubmit={(e) => handleSendEmail(e)}
-            className="xl:-mt-32 flex flex-col gap-8 border border-gray-100 rounded-2xl p-8 max-w-[33.8rem]"
+            className=" flex flex-col gap-8 border border-gray-100 rounded-2xl p-8 max-w-[33.8rem]"
           >
             <div className="flex flex-col gap-4 text-black-500">
               <span className="font-bold text-4xl">

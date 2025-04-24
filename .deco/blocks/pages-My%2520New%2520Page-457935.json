@@ -10,19 +10,31 @@
       "titleInPortuguese": "<p>Você tem um </p><p>amigo de verdade!</p>",
       "titleInEnglish": "<p>You have a </p><p>true friend!</p>",
       "bgImage": "https://assets.decocache.com/brasas-site/1dbe4c42-e0dc-40cb-9e50-fdfe1484e805/Group-159.png",
-      "iconImage": "https://assets.decocache.com/brasas-site/a99c0352-62f5-432b-893b-9cd7d95a876d/student-vector.png"
+      "iconImage": "https://assets.decocache.com/brasas-site/a99c0352-62f5-432b-893b-9cd7d95a876d/student-vector.png",
+      "background": {
+        "image": "https://assets.decocache.com/brasas-site/b892a014-5e57-4066-b566-23670858f031/Header_Indique-e-ganhe_fundo.png",
+        "width": 1440,
+        "height": 573,
+        "alt": "background"
+      },
+      "centeredImage": {
+        "image": "https://assets.decocache.com/brasas-site/9ebf2047-117c-484d-bb09-9e8617a4b2b7/Header_Indique-e-ganhe_sem-fundo.png",
+        "width": 1654,
+        "height": 1190,
+        "alt": "indique e ganhe"
+      }
     },
     {
       "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnForm.tsx",
-      "titleInEnglish": "Did your friend refer you to an English course at BRASAS?",
-      "subtitleInEnglish": "Fill out the form to the side to learn more and start right away!",
-      "titleInPortuguese": "O seu amigo(a) indicou você para um curso de inglês no BRASAS?",
-      "subtitleInPortuguese": "Preencha o formulário ao lado para saber mais e iniciar agora mesmo!",
+      "titleInEnglish": "How to participate?",
+      "subtitleInEnglish": "<p>Ask your friend to <strong>indicate your full name when registering</strong> and the discount for both of you is guaranteed!*</p>",
+      "titleInPortuguese": "Como participar?",
+      "subtitleInPortuguese": "<p>Peça para seu amigo<strong> indicar o seu nome completo no ato da matrícula</strong> e o desconto de vocês dois está garantido!*</p>",
       "image": "https://assets.decocache.com/brasas-site/aa742bbc-e80e-4d96-9ada-c390ef94383d/Group-9.png",
       "formTitleInPortuguese": "Vamos começar?",
-      "formSubtitleInPortuguese": "Deixe os seus dados abaixo e entraremos em contato para mais informações.",
+      "formSubtitleInPortuguese": "Se você está entrando no BRASAS através da indicação de um aluno, deixe os seus dados abaixo que entraremos em contato para seguir com a sua matrícula e com o desconto.",
       "formTitleInEnglish": "Shall we begin?",
-      "formSubtitleInEnglish": "Leave your details below and we will get in touch for more information.",
+      "formSubtitleInEnglish": "If you are joining BRASAS through a student's referral, leave your details below and we will contact you to proceed with your enrollment and discount.",
       "subject": "Formulário Brasas - Indique e Ganhe",
       "RecipientsEmailArr": [
         {
@@ -31,7 +43,9 @@
         {
           "email": "erick.nascimento@simbioseventures.com"
         }
-      ]
+      ],
+      "regulationTextInPortuguese": "<p>*O aluno e o amigo indicado ganham crédito de R$100,00 em uma mensalidade a cada indicação que se matricular. Desconto válido apenas em mensalidades, até o último dia do ano letivo de 2025, nas unidades BRASAS do Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu e no BRASAS <em>Online</em>. Consulte o regulamento completo na secretaria dessas unidades ou com a secretaria virtual do BRASAS <em>Online</em>.</p>",
+      "regulationTextInEnglish": "<p>*The student and the referred friend will receive a R$100.00 credit towards a monthly fee for each referral who enrolls. Discount valid only on monthly fees, until the last day of the 2025 school year, at BRASAS units in Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu and on BRASAS <em>Online</em>. Consult the complete rules at the secretariat of these units or with the virtual secretariat of BRASAS <em>Online</em>.</p>"
     },
     {
       "__resolveType": "Footer"

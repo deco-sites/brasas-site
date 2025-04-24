@@ -1,19 +1,20 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import ReferAndEarnBannerIsland from "site/islands/ReferAndEarn/ReferAndEarnBannerIsland.tsx";
 
-interface ReferAndEarnBannerProps {
-  /**
-   * @format rich-text
-   */
-  titleInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  titleInPortuguese: string;
-  bgImage: ImageWidget;
-  iconImage: ImageWidget;
+interface Image {
+  image: ImageWidget;
+  alt: string;
+  width?: number;
+  height?: number;
 }
 
-export default function ReferAndEarnBanner(props: ReferAndEarnBannerProps) {
+interface ReferAndEarnBannerProps {
+  background: Image;
+  centeredImage: Image;
+}
+
+export default function ReferAndEarnPageBanner(
+  props: ReferAndEarnBannerProps,
+) {
   return <ReferAndEarnBannerIsland {...props} />;
 }
