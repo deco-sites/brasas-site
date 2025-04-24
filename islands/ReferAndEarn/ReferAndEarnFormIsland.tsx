@@ -66,7 +66,7 @@ export default function ReferAndEarnFormIsland(props) {
         <div className="w-full max-w-[88.5rem] px-9 flex flex-col items-center xl:flex-row justify-center gap-20">
           <div className="flex flex-col items-center max-w-[27.6rem]">
             <div className="flex flex-col items-start gap-10 text-black-500">
-              <span className="text-center xl:text-start font-bold text-3xl uppercase">
+              <span className="text-center w-full xl:text-start font-bold text-3xl uppercase">
                 {selectedLanguage.value === "ptBr"
                   ? props.titleInPortuguese
                   : props.titleInEnglish}
