@@ -25,9 +25,11 @@ export default function SpecialCoursesIsland(props) {
             >
               <div className="absolute bg-white flex items-center justify-center top-0 -translate-y-1/2 w-[15.7rem] h-[5.25rem] rounded-tr-xl rounded-bl-xl border border-blue-400">
                 <Image
-                  src={card.logo}
+                  src={selectedLanguage.value === "ptBr"
+                    ? card.logoInPortuguese
+                    : card.logoInEnglish}
                   alt="Logo"
-                  className="object-contain"
+                  className="object-contain w-40"
                 />
               </div>
 
@@ -48,7 +50,7 @@ export default function SpecialCoursesIsland(props) {
               <Image
                 src={"/AdultsPage/brasas-exam-preparation.png"}
                 alt="Logo"
-                className="object-contain"
+                className="object-contain w-40"
               />
             </div>
 
