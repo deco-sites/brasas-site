@@ -3,7 +3,8 @@ import SpecialCoursesIsland from "site/islands/Adults/SpecialCoursesIsland.tsx";
 
 /** @titleBy altText */
 interface SpecialCourseCard {
-  logo: ImageWidget;
+  logoInEnglish: ImageWidget;
+  logoInPortuguese: ImageWidget;
   altText: string;
   color: string;
   /**

@@ -37,21 +37,30 @@
           "logo": "https://assets.decocache.com/brasas-site/b6dd35f3-5716-4f08-82b0-60ee1c5105d6/brasas-imersao.png",
           "descriptionInPortuguese": "<p>Este curso superintensivo é para quem precisa aprender inglês o mais rápido possível. Na modalidade presencial, você conclui 1 módulo em 15 dias. São 3h de aula por dia,&nbsp;5x por semana.</p><p>&nbsp;</p><p>Na modalidade <em>online</em>, você conclui 1 módulo em 23 dias. 2h de aula por dia, 6x por semana.</p>",
           "descriptionInEnglish": "<p>This superintense course is for those who need to learn English as quickly as possible. In the in-person format, a book is concluded in 15 days, with three-hour classes per day, 5 times a week.</p><p>&nbsp;<br>In the <em>online</em> format, a book is concluded in 23 days, with 2-hour classes per day, 6 times a week.</p>",
-          "altText": "Brasas Imersão"
+          "altText": "Brasas Imersão",
+          "logoInEnglish": "https://assets.decocache.com/brasas-site/b6dd35f3-5716-4f08-82b0-60ee1c5105d6/brasas-imersao.png",
+          "logoInportuguese": "https://assets.decocache.com/brasas-site/b6dd35f3-5716-4f08-82b0-60ee1c5105d6/brasas-imersao.png",
+          "logoInPortuguese": "https://assets.decocache.com/brasas-site/b6dd35f3-5716-4f08-82b0-60ee1c5105d6/brasas-imersao.png"
         },
         {
           "logo": "https://assets.decocache.com/brasas-site/07e4f1f5-ecbc-4e74-9724-99b8212e0e28/brasas-portuguese-for-foreigners.png",
           "descriptionInPortuguese": "<p><span>Além de inglês, o BRASAS também oferece curso de português para estrangeiros. Você aprende a pensar e falar em português através do nosso método original.&nbsp;</span></p>",
           "altText": "Brasas Portuguese for Foreigners",
           "color": "blue-400",
-          "descriptionInEnglish": "<p><span>In addition to English, BRASAS also offers a Portuguese course for foreigners. You learn how to think and speak in Portuguese using our original method.</span></p>"
+          "descriptionInEnglish": "<p><span>In addition to English, BRASAS also offers a Portuguese course for foreigners. You learn how to think and speak in Portuguese using our original method.</span></p>",
+          "logoInEnglish": "https://assets.decocache.com/brasas-site/47247e80-89a0-489b-ab07-da59a04e230d/logo-pff-banner-en.png",
+          "logoInportuguese": "https://assets.decocache.com/brasas-site/d8f5326e-52f3-461d-b019-2eac4ef0a3c8/logo-pff-banner-ptbr.png",
+          "logoInPortuguese": "https://assets.decocache.com/brasas-site/d8f5326e-52f3-461d-b019-2eac4ef0a3c8/logo-pff-banner-ptbr.png"
         },
         {
           "logo": "https://assets.decocache.com/brasas-site/8653cd06-a5b0-4966-87b2-6b7ac63fd154/brasas-conversation.png",
           "altText": "Brasas Conversation",
           "color": "blue-400",
           "descriptionInPortuguese": "<p><span>Uma modalidade desenvolvida para o aluno manter sua fluência oral, com temas atuais e relevantes.</span></p>",
-          "descriptionInEnglish": "<p><span>A type of course developed for students to maintain their fluency, with current and relevant topics.</span></p>"
+          "descriptionInEnglish": "<p><span>A type of course developed for students to maintain their fluency, with current and relevant topics.</span></p>",
+          "logoInEnglish": "https://assets.decocache.com/brasas-site/8653cd06-a5b0-4966-87b2-6b7ac63fd154/brasas-conversation.png",
+          "logoInportuguese": "https://assets.decocache.com/brasas-site/8653cd06-a5b0-4966-87b2-6b7ac63fd154/brasas-conversation.png",
+          "logoInPortuguese": "https://assets.decocache.com/brasas-site/8653cd06-a5b0-4966-87b2-6b7ac63fd154/brasas-conversation.png"
         }
       ]
     },
