@@ -59,19 +59,15 @@ import * as $$$$$$44 from "./sections/PFF/PFFCards.tsx";
 import * as $$$$$$50 from "./sections/Pre-K/NextSteps.tsx";
 import * as $$$$$$51 from "./sections/Pre-K/PreKBanner.tsx";
 import * as $$$$$$52 from "./sections/Pre-K/PreKCards.tsx";
-import * as $$$$$$57 from "./sections/ReferAndEarn/ReferAndEarnBanner.tsx";
-import * as $$$$$$58 from "./sections/ReferAndEarn/ReferAndEarnForm.tsx";
-import * as $$$$$$53 from "./sections/ReferAndEarnPage/HaveQuestions.tsx";
-import * as $$$$$$54 from "./sections/ReferAndEarnPage/ReferAndEarnPageBanner.tsx";
-import * as $$$$$$55 from "./sections/ReferAndEarnPage/RegulationText.tsx";
-import * as $$$$$$56 from "./sections/ReferAndEarnPage/WhoIndicates.tsx";
-import * as $$$$$$59 from "./sections/SocialMediasFloat.tsx";
-import * as $$$$$$60 from "./sections/Statistics.tsx";
-import * as $$$$$$61 from "./sections/Terms/TermsOfUse.tsx";
-import * as $$$$$$62 from "./sections/TextCarousel.tsx";
-import * as $$$$$$63 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$64 from "./sections/WhatsappFloatingButton.tsx";
-import * as $$$$$$65 from "./sections/WorkWithUs/WorkWithUsForm.tsx";
+import * as $$$$$$53 from "./sections/ReferAndEarn/ReferAndEarnBanner.tsx";
+import * as $$$$$$54 from "./sections/ReferAndEarn/ReferAndEarnForm.tsx";
+import * as $$$$$$55 from "./sections/SocialMediasFloat.tsx";
+import * as $$$$$$56 from "./sections/Statistics.tsx";
+import * as $$$$$$57 from "./sections/Terms/TermsOfUse.tsx";
+import * as $$$$$$58 from "./sections/TextCarousel.tsx";
+import * as $$$$$$59 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$60 from "./sections/WhatsappFloatingButton.tsx";
+import * as $$$$$$61 from "./sections/WorkWithUs/WorkWithUsForm.tsx";
 
 const manifest = {
   "loaders": {
@@ -132,19 +128,15 @@ const manifest = {
     "site/sections/Pre-K/NextSteps.tsx": $$$$$$50,
     "site/sections/Pre-K/PreKBanner.tsx": $$$$$$51,
     "site/sections/Pre-K/PreKCards.tsx": $$$$$$52,
-    "site/sections/ReferAndEarn/ReferAndEarnBanner.tsx": $$$$$$57,
-    "site/sections/ReferAndEarn/ReferAndEarnForm.tsx": $$$$$$58,
-    "site/sections/ReferAndEarnPage/HaveQuestions.tsx": $$$$$$53,
-    "site/sections/ReferAndEarnPage/ReferAndEarnPageBanner.tsx": $$$$$$54,
-    "site/sections/ReferAndEarnPage/RegulationText.tsx": $$$$$$55,
-    "site/sections/ReferAndEarnPage/WhoIndicates.tsx": $$$$$$56,
-    "site/sections/SocialMediasFloat.tsx": $$$$$$59,
-    "site/sections/Statistics.tsx": $$$$$$60,
-    "site/sections/Terms/TermsOfUse.tsx": $$$$$$61,
-    "site/sections/TextCarousel.tsx": $$$$$$62,
-    "site/sections/Theme/Theme.tsx": $$$$$$63,
-    "site/sections/WhatsappFloatingButton.tsx": $$$$$$64,
-    "site/sections/WorkWithUs/WorkWithUsForm.tsx": $$$$$$65,
+    "site/sections/ReferAndEarn/ReferAndEarnBanner.tsx": $$$$$$53,
+    "site/sections/ReferAndEarn/ReferAndEarnForm.tsx": $$$$$$54,
+    "site/sections/SocialMediasFloat.tsx": $$$$$$55,
+    "site/sections/Statistics.tsx": $$$$$$56,
+    "site/sections/Terms/TermsOfUse.tsx": $$$$$$57,
+    "site/sections/TextCarousel.tsx": $$$$$$58,
+    "site/sections/Theme/Theme.tsx": $$$$$$59,
+    "site/sections/WhatsappFloatingButton.tsx": $$$$$$60,
+    "site/sections/WorkWithUs/WorkWithUsForm.tsx": $$$$$$61,
   },
   "actions": {
     "site/actions/sendEmail.ts": $$$$$$$$$0,

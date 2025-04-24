@@ -1,13 +1,25 @@
-import { ImageWidget } from "apps/admin/widgets.ts";
 import ReferAndEarnFormIsland from "site/islands/ReferAndEarn/ReferAndEarnFormIsland.tsx";
 import { CopyEmail, RecipientsEmail } from "site/types/Emails.ts";
 
 interface ReferAndEarnFormProps {
   titleInEnglish: string;
   titleInPortuguese: string;
+  /**
+   * @format rich-text
+   */
   subtitleInEnglish: string;
+  /**
+   * @format rich-text
+   */
   subtitleInPortuguese: string;
-  image: ImageWidget;
+  /**
+   * @format rich-text
+   */
+  regulationTextInEnglish: string;
+  /**
+   * @format rich-text
+   */
+  regulationTextInPortuguese: string;
   formTitleInEnglish: string;
   formTitleInPortuguese: string;
   formSubtitleInEnglish: string;

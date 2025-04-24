@@ -58,10 +58,6 @@ import * as $Partnerships_PartnersCarouselIsland from "./islands/Partnerships/Pa
 import * as $Pre_K_NextStepsIsland from "./islands/Pre-K/NextStepsIsland.tsx";
 import * as $Pre_K_PreKBannerIsland from "./islands/Pre-K/PreKBannerIsland.tsx";
 import * as $Pre_K_PreKCardsIsland from "./islands/Pre-K/PreKCardsIsland.tsx";
-import * as $ReferAndEarnPage_HaveQuestionsIsland from "./islands/ReferAndEarnPage/HaveQuestionsIsland.tsx";
-import * as $ReferAndEarnPage_ReferAndEarnPageBannerIsland from "./islands/ReferAndEarnPage/ReferAndEarnPageBannerIsland.tsx";
-import * as $ReferAndEarnPage_RegulationTextIsland from "./islands/ReferAndEarnPage/RegulationTextIsland.tsx";
-import * as $ReferAndEarnPage_WhoIndicatesIsland from "./islands/ReferAndEarnPage/WhoIndicatesIsland.tsx";
 import * as $ReferAndEarn_ReferAndEarnBannerIsland from "./islands/ReferAndEarn/ReferAndEarnBannerIsland.tsx";
 import * as $ReferAndEarn_ReferAndEarnFormIsland from "./islands/ReferAndEarn/ReferAndEarnFormIsland.tsx";
 import * as $Terms_TermsOfUseIsland from "./islands/Terms/TermsOfUseIsland.tsx";
@@ -157,14 +153,6 @@ const manifest = {
     "./islands/Pre-K/NextStepsIsland.tsx": $Pre_K_NextStepsIsland,
     "./islands/Pre-K/PreKBannerIsland.tsx": $Pre_K_PreKBannerIsland,
     "./islands/Pre-K/PreKCardsIsland.tsx": $Pre_K_PreKCardsIsland,
-    "./islands/ReferAndEarnPage/HaveQuestionsIsland.tsx":
-      $ReferAndEarnPage_HaveQuestionsIsland,
-    "./islands/ReferAndEarnPage/ReferAndEarnPageBannerIsland.tsx":
-      $ReferAndEarnPage_ReferAndEarnPageBannerIsland,
-    "./islands/ReferAndEarnPage/RegulationTextIsland.tsx":
-      $ReferAndEarnPage_RegulationTextIsland,
-    "./islands/ReferAndEarnPage/WhoIndicatesIsland.tsx":
-      $ReferAndEarnPage_WhoIndicatesIsland,
     "./islands/ReferAndEarn/ReferAndEarnBannerIsland.tsx":
       $ReferAndEarn_ReferAndEarnBannerIsland,
     "./islands/ReferAndEarn/ReferAndEarnFormIsland.tsx":
