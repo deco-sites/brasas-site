@@ -119,50 +119,12 @@ const setup = ({ rootId, scroll, interval, infinite, alwaysGo }: Props) => {
     { threshold: THRESHOLD, root: slider },
   );
 
-  // If items length be <= 2, it is necessary to clone first and second elements for it to work
-  if (alwaysGo && items?.length) {
-    switch (items.length) {
-      case 2: {
-        const first_item = items[0];
-        const second_item = items[1];
-        const clone_item = first_item.cloneNode(true) as HTMLElement;
-        const second_clone_item = second_item.cloneNode(
-          true,
-        ) as HTMLElement;
-
-        slider?.appendChild(clone_item);
-        slider?.appendChild(second_clone_item);
-
-        // so we need to get items again before clone infos
-        // is needed at least 4 items to alwaysGo works
-        items = undefined;
-        items = root?.querySelectorAll(
-          `[${ATTRIBUTES["data-slider-item"]}]`,
-        );
-        break;
-      }
-      case 3: {
-        const first_item = items[0];
-        const clone_item = first_item.cloneNode(true) as HTMLElement;
-
-        slider?.appendChild(clone_item);
-
-        // so we need to get items again before clone infos
-        // is needed at least 4 items to alwaysGo works
-        items = undefined;
-        items = root?.querySelectorAll(
-          `[${ATTRIBUTES["data-slider-item"]}]`,
-        );
-        break;
-      }
-    }
-  }
-
   const cloneAndRemoveItems = (
     onClickNext: boolean,
     itemsPerPage: number = 1,
   ) => {
     if (!items || items.length === 0) return;
+    console.log("items", items);
 
     if (onClickNext) {
       for (let i = 0; i < itemsPerPage; i++) {

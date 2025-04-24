@@ -20,6 +20,8 @@ export interface Banner {
   /** @description Image's alt text */
   alt: string;
   link?: string;
+  startDate?: string;
+  expirationDate?: string;
 }
 export interface Props {
   titleInPortuguese: string;
