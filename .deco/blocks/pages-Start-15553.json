@@ -11,6 +11,20 @@
       "images": [
         {
           "desktop": {
+            "image": "https://assets.decocache.com/brasas-site/9e766b36-6ec7-400a-a425-b842b4c25019/brasas_promo-200-credito_webdoor_desktop.jpg",
+            "width": 1923,
+            "height": 708
+          },
+          "mobile": {
+            "image": "https://assets.decocache.com/brasas-site/04a0265b-431e-48fc-a037-167aaa7ce495/brasas_promo-200-credito_webdoor_mobile.jpg",
+            "width": 384,
+            "height": 633
+          },
+          "alt": "Banner",
+          "link": "https://campanha.brasas.com/brasas-promo-200-de-credito"
+        },
+        {
+          "desktop": {
             "image": "https://assets.decocache.com/brasas-site/dc6dc8a4-623a-4869-acac-6f0cf410f8b9/BOL_Campanha-200-Credito_Webdoor_Desktop.jpg"
           },
           "mobile": {
@@ -19,35 +33,21 @@
             "height": 633
           },
           "alt": "Banner3",
-          "link": "#"
+          "link": "https://campanha.brasas.com/bol-promo-200-de-credito"
         },
         {
           "desktop": {
-            "image": "https://data.decoassets.com/brasas-site/0b92c3d4-aaa0-482f-85fb-b4c4736bf9b0/BRASAS_campanha-imersao-2025_webdoor_desktop.png",
+            "image": "https://assets.decocache.com/brasas-site/2eeebea3-636e-4ddc-b3c0-25326625bf57/BRASAS_Campanha_2025_Abril_Certificacoes-Internacionais_webdoors_desktop.png",
             "width": 1923,
             "height": 708
           },
           "mobile": {
-            "image": "https://data.decoassets.com/brasas-site/9d08767a-8675-43ae-8f5a-41a2a3834994/BRASAS_campanha-imersao-2025_webdoor_mobile.png",
-            "width": 384,
-            "height": 633
-          },
-          "alt": "Banner",
-          "link": "#"
-        },
-        {
-          "desktop": {
-            "image": "https://data.decoassets.com/brasas-site/75d137fb-93f0-4678-a85a-e0938d421bbc/BRASAS_campanha_promo-150_webdoors_desktop_v2.png",
-            "width": 1923,
-            "height": 708
-          },
-          "mobile": {
-            "image": "https://data.decoassets.com/brasas-site/f4da65d2-563a-40ea-9fcf-0a9f26196faa/BRASAS_campanha_promo-150_webdoors_mobile_v2.png",
+            "image": "https://assets.decocache.com/brasas-site/29269946-4365-430a-9fa4-4945a9e2b581/BRASAS_Campanha_2025_Abril_Certificacoes-Internacionais_webdoors_mobile.png",
             "width": 384,
             "height": 633
           },
           "alt": "Banner2",
-          "link": "#"
+          "link": "https://campanha.brasas.com/certificacoes-internacionais-2025"
         }
       ],
       "titleInPortuguese": " Descubra o nível <br />do seu inglês!",

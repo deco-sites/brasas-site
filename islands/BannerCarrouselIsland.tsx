@@ -25,6 +25,7 @@ function BannerItem({ image, lcp, id, isMobile }: {
     <a
       id={id}
       href={link ?? "#"}
+      target="_blank"
       aria-label="Banners"
       className="relative overflow-y-hidden w-full h-full"
     >
@@ -127,6 +128,29 @@ export default function BannerCarrouselIsland(props) {
     ...props,
   };
 
+  //Aqui faço um outro array sem as imagens com data de expiração menor que a data atual
+  const parseDate = (dateStr: string) => {
+    const [day, month, year] = dateStr.split("/");
+    return new Date(`${year}-${month}-${day}T00:00:00`);
+  };
+
+  const currentDate = new Date();
+
+  const imagesFiltered = images.filter((image) => {
+    const { startDate, expirationDate } = image;
+
+    const start = startDate ? parseDate(startDate) : null;
+    const end = expirationDate ? parseDate(expirationDate) : null;
+
+    if (!start && !end) return true; // Nenhuma data: incluir
+
+    if (start && !end) return start <= currentDate; // Apenas início: incluir se já começou
+
+    if (!start && end) return end >= currentDate; // Apenas fim: incluir se ainda não expirou
+
+    return start <= currentDate && end >= currentDate; // Ambas: incluir se estiver no intervalo
+  });
+
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   useEffect(() => {
@@ -148,8 +172,8 @@ export default function BannerCarrouselIsland(props) {
     <div
       className={`relative xl:pb-0 flex flex-col-reverse xl:flex-row justify-center bg-blue-300`}
     >
-      <div className="flex pt-12 pb-36 min-h-min justify-center items-center xl:absolute z-10 w-full h-full xl:justify-end xl:items-center  px-9 xl:pt-0 xl:mb-0">
-        <div className="flex flex-col text-white max-w-[32.4rem]">
+      <div className="flex justify-center items-center xl:absolute xl:right-8 xl:top-1/2 xl:-translate-y-1/2 z-10 pt-12 pb-36 px-9 xl:pt-0 xl:mb-0 xl:pb-0 xl:px-0">
+        <div className="flex flex-col text-white max-w-[32.4rem] items-center xl:items-start">
           <span
             className="text-center xl:text-start mb-4 font-black text-4xl leading-10"
             dangerouslySetInnerHTML={{
@@ -169,7 +193,7 @@ export default function BannerCarrouselIsland(props) {
           >
           </span>
 
-          <a href={props.CTALink} target="_blank">
+          <a className="w-fit" href={props.CTALink} target="_blank">
             <button className="flex gap-2 px-4 py-3 w-full items-center justify-center xl:w-fit bg-red-300 rounded-lg transition duration-300 hover:bg-white hover:text-blue-300">
               <span className="font-bold text-base">
                 {selectedLanguage.value === "ptBr"
@@ -188,8 +212,8 @@ export default function BannerCarrouselIsland(props) {
           className="w-full relative "
         >
           <Slider className="carousel carousel-center w-full col-span-full row-span-full gap-6 h-full">
-            {images?.map((image, index) => {
-              const params = { promotion_name: image.alt };
+            {imagesFiltered?.map((image, index) => {
+              //const params = { promotion_name: image.alt };
               return (
                 <Slider.Item
                   index={index}
