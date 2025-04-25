@@ -93,7 +93,7 @@ export default function ReferAndEarnFormIsland(props) {
                 </span>
                 <span className="text-white">&gt;&gt;</span>
                 <span>
-                  {selectedLanguage.value === "ptBr" ? "ganhou" : "won"}
+                  {selectedLanguage.value === "ptBr" ? "ganhou!" : "won!"}
                 </span>
               </div>
 
