@@ -40,7 +40,8 @@ export default function JuniorsAndTeensIsland(props) {
           </div>
           <Image
             src={"/JuniorsAndTeensPage/esquema_jr.png"}
-            alt="Esquema Kids"
+            alt="Esquema Jr and Teens"
+            className="lg:my-16 w-[65rem]"
           />
           <a href="/certificacoes#toeicjr" target="_self">
             <Image
