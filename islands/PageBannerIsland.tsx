@@ -55,10 +55,14 @@ export default function PageBannerIsland(props) {
 
         {props.descriptionInPortuguese
           ? (
-            <p className="text-white text-2xl font-normal leading-8 text-center">
-              {selectedLanguage.value === "ptBr"
-                ? props.descriptionInPortuguese
-                : props.descriptionInEnglish}
+            <p
+              className="text-white text-2xl font-normal leading-8 text-center"
+              dangerouslySetInnerHTML={{
+                __html: selectedLanguage.value === "ptBr"
+                  ? props.descriptionInPortuguese
+                  : props.descriptionInEnglish,
+              }}
+            >
             </p>
           )
           : ("")}

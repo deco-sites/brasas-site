@@ -52,8 +52,8 @@
         {
           "englishTitle": "BRASAS Online",
           "portugueseTitle": "BRASAS Online",
-          "englishDescription": "Learn with live online classes",
-          "portugueseDescription": "Aprenda com aulas online e ao vivo",
+          "englishDescription": "<p>Learn with live <em>online</em> classes</p>",
+          "portugueseDescription": "<p>Aprenda com aulas <em>online</em> e ao vivo</p>",
           "link": "/bol",
           "image": "https://assets.decocache.com/brasas-site/85ebd17a-843e-4862-a332-a3faab233429/BRASAS-online.png"
         },

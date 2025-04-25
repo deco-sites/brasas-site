@@ -115,15 +115,19 @@ export default function ProfileCoursesCardsIsland(props) {
                   : {}}
               >
                 <div className="flex flex-col items-center gap-2 text-blue-900 p-4 h-[30%]">
-                  <span className="leading-8 font-black text-xl">
+                  <span className="leading-8 font-black text-xl text-center">
                     {selectedLanguage.value === "ptBr"
                       ? card.portugueseTitle
                       : card.englishTitle}
                   </span>
-                  <span className="leading-6 font-medium font-base text-center">
-                    {selectedLanguage.value === "ptBr"
-                      ? card.portugueseDescription
-                      : card.englishDescription}
+                  <span
+                    className="leading-6 font-medium font-base text-center"
+                    dangerouslySetInnerHTML={{
+                      __html: selectedLanguage.value === "ptBr"
+                        ? card.portugueseDescription
+                        : card.englishDescription,
+                    }}
+                  >
                   </span>
                 </div>
                 <div className="relative max-w-full max-h-[70%]">
