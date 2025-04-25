@@ -36,7 +36,7 @@ export default function BranchFilter(
   }, [activeState]);
 
   return (
-    <div className="w-full flex flex-col gap-6 border border-gray-100 rounded-2xl p-6">
+    <div className="sticky top-4 w-full flex flex-col gap-6 border border-gray-100 rounded-2xl p-6">
       <div className="hidden lg:flex gap-7 py-3 px-4 border border-gray-100 rounded-lg">
         <input
           className="placeholder:text-gray-500 placeholder:font-normal placeholder:text-base w-full outline-none"

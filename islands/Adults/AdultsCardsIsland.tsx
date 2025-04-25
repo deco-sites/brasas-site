@@ -21,7 +21,7 @@ export default function AdultsCardsIsland(props) {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center py-5 lg:pb-11">
+        <div className="flex flex-col gap-6 items-center justify-center py-5 lg:pb-11">
           <Image
             src={selectedLanguage.value === "ptBr"
               ? "/AdultsPage/adults-1-pt.png"
@@ -30,7 +30,7 @@ export default function AdultsCardsIsland(props) {
             className="w-full max-w-[38.5rem]"
           />
 
-          <div className="flex flex-col gap-4 py-5 max-w-[37rem]">
+          <div className="flex flex-col gap-6 py-5 max-w-[37rem]">
             <div className="flex flex-col items-center lg:flex-row gap-6">
               <div className="flex gap-4">
                 <Image
@@ -58,8 +58,8 @@ export default function AdultsCardsIsland(props) {
             <div className="flex flex-col items-center justify-center text-blue-900 text-xs">
               <span className="text-center">
                 {selectedLanguage.value === "ptBr"
-                  ? "*duração aproximada do curso (sem férias, recessos e feriados)."
-                  : "*approximate duration of the course (without holidays, breaks and public holidays)."}
+                  ? "*Dduração aproximada do curso (sem férias, recessos e feriados)."
+                  : "*Approximate duration of the course (without holidays, breaks and public holidays)."}
               </span>
               <span className="text-center">
                 {selectedLanguage.value === "ptBr"
