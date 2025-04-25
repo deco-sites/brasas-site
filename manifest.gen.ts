@@ -32,9 +32,9 @@ import * as $$$$$$22 from "./sections/Certifications/ToefljrCertification.tsx";
 import * as $$$$$$23 from "./sections/Certifications/ToiecCertification.tsx";
 import * as $$$$$$24 from "./sections/Contact/FormSection.tsx";
 import * as $$$$$$25 from "./sections/CookiesCard.tsx";
-import * as $$$$$$27 from "./sections/Courses/CoursesBanner.tsx";
-import * as $$$$$$28 from "./sections/Courses/CoursesCards.tsx";
-import * as $$$$$$26 from "./sections/CoursesCardsSection.tsx";
+import * as $$$$$$26 from "./sections/Courses/CoursesBanner.tsx";
+import * as $$$$$$27 from "./sections/Courses/CoursesCards.tsx";
+import * as $$$$$$28 from "./sections/CoursesCardsSection.tsx";
 import * as $$$$$$29 from "./sections/Footer.tsx";
 import * as $$$$$$30 from "./sections/FrequentlyAskedQuestions/FrequentlyAskedQuestions.tsx";
 import * as $$$$$$31 from "./sections/Header.tsx";
@@ -100,9 +100,9 @@ const manifest = {
     "site/sections/Certifications/ToiecCertification.tsx": $$$$$$23,
     "site/sections/Contact/FormSection.tsx": $$$$$$24,
     "site/sections/CookiesCard.tsx": $$$$$$25,
-    "site/sections/Courses/CoursesBanner.tsx": $$$$$$27,
-    "site/sections/Courses/CoursesCards.tsx": $$$$$$28,
-    "site/sections/CoursesCardsSection.tsx": $$$$$$26,
+    "site/sections/Courses/CoursesBanner.tsx": $$$$$$26,
+    "site/sections/Courses/CoursesCards.tsx": $$$$$$27,
+    "site/sections/CoursesCardsSection.tsx": $$$$$$28,
     "site/sections/Footer.tsx": $$$$$$29,
     "site/sections/FrequentlyAskedQuestions/FrequentlyAskedQuestions.tsx":
       $$$$$$30,
