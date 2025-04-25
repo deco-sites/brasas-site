@@ -23,9 +23,9 @@
       "__resolveType": "site/sections/Certifications/ToiecCertification.tsx",
       "card": {
         "logo": "https://assets.decocache.com/brasas-site/63cf858b-acaa-4426-af60-15bb7ca01f5a/BS_submarcas-brasas_exam-preparation_toeic-10-1.png",
-        "modalityInPortuguese": "<p><strong>Modalidade:</strong> Presencial ou online</p>",
+        "modalityInPortuguese": "<p><strong>Modalidade:</strong> Presencial ou <em>online</em></p>",
         "sessionsInEnglish": "<p><strong>5 Sessions:</strong> 4 classes + 1 mock test</p><p>2h/session</p>",
-        "modalityInEnglish": "<p><strong>Modality:</strong> In-person or online</p>",
+        "modalityInEnglish": "<p><strong>Modality:</strong> In-person or <em>online</em></p>",
         "sessionsInPortuguese": "<p><strong>5 Sessões:</strong> 4 aulas + 1 simulado</p><p>2h/sessão</p>"
       },
       "title": "TOEIC®",
@@ -68,9 +68,9 @@
       "__resolveType": "site/sections/Certifications/ToefljrCertification.tsx",
       "card": {
         "logo": "https://assets.decocache.com/brasas-site/40a03e74-5245-48ea-93f6-1f1d3cea0f12/BS_submarcas-brasas_exam-preparation_toelf-junior-06-1.png",
-        "modalityInPortuguese": "<p><strong><span>Modalidade:</span></strong><span> Presencial ou online</span></p>",
+        "modalityInPortuguese": "<p><strong>Modalidade:</strong> Presencial ou <em>online</em></p>",
         "sessionsInEnglish": "<p><strong>5 Sessions:</strong> 4 classes + 1 simulation</p><p>2h/session</p>",
-        "modalityInEnglish": "<p><strong>Modality:</strong> In-person or online</p>",
+        "modalityInEnglish": "<p><strong>Modality:</strong> In-person or <em>online</em></p>",
         "sessionsInPortuguese": "<p><strong>5 Sessões:</strong> 4 aulas + 1 simulado</p><p>2h/sessão</p>"
       },
       "title": "TOEFL® JR",
