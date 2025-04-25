@@ -7,7 +7,13 @@ interface PageBannerProps {
   bgImageMobile?: ImageWidget;
   titleInEnglish: string;
   titleInPortuguese: string;
+  /**
+   * @format rich-text
+   */
   descriptionInEnglish?: string;
+  /**
+   * @format rich-text
+   */
   descriptionInPortuguese?: string;
   hasNotice: boolean;
 }

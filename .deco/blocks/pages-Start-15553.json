@@ -106,8 +106,8 @@
         {
           "englishTitle": "BRASAS Online",
           "portugueseTitle": "BRASAS Online",
-          "englishDescription": "Learn with live online classes",
-          "portugueseDescription": "Aprenda com aulas online e ao vivo",
+          "englishDescription": "<p>Learn with live <em>online</em> classes</p>",
+          "portugueseDescription": "<p>Aprenda com aulas <em>online</em> e ao vivo</p>",
           "image": "https://data.decoassets.com/brasas-site/ffa031fe-4307-4ced-8d35-d1bcce708761/BRASAS-online-1.png",
           "link": "/bol"
         },

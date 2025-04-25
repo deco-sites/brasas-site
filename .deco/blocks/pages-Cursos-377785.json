@@ -50,8 +50,8 @@
         {
           "englishTitle": "BRASAS Online",
           "portugueseTitle": "BRASAS Online",
-          "portugueseDescription": "Aprenda com aulas online e ao vivo",
-          "englishDescription": "Learn with live online classes",
+          "portugueseDescription": "<p>Aprenda com aulas <em>online</em> e ao vivo</p>",
+          "englishDescription": "<p>Learn with live <em>online</em> classes</p>",
           "image": "https://data.decoassets.com/brasas-site/b79677ef-d78f-48d3-b07a-a6a0a6099bcb/5_qd6zbf-removebg-preview_bl5s9t.png",
           "link": "/bol"
         },
@@ -67,7 +67,7 @@
           "portugueseTitle": "Parcerias",
           "portugueseDescription": "Empresas, Escolas e Universidades",
           "englishTitle": "Partnerships",
-          "englishDescription": "Schools, Universities and Companies",
+          "englishDescription": "<p>Companies, Schools and Universities</p>",
           "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png",
           "link": "/parcerias"
         },
