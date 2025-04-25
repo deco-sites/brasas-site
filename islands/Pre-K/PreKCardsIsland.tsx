@@ -29,7 +29,11 @@ export default function PreKCardsIsland(props) {
             alt="Pre-K Cards"
             className="w-full max-w-[38.5rem]"
           />
-          <Image src={"/esquema_prek.png"} alt="Esquema Pre-K" />
+          <Image
+            src={"/esquema_prek.png"}
+            alt="Esquema Pre-K"
+            className="lg:my-16 w-[65rem]"
+          />
         </div>
       </div>
     </div>

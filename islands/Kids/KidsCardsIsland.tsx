@@ -29,7 +29,11 @@ export default function KidsCardsIsland(props) {
             alt="Kids Cards"
             className="w-full max-w-[38.5rem]"
           />
-          <Image src={"/esquema_kids.png"} alt="Esquema Kids" />
+          <Image
+            src={"/esquema_kids.png"}
+            alt="Esquema Kids"
+            className="lg:my-16 w-[45rem]"
+          />
         </div>
       </div>
     </div>
