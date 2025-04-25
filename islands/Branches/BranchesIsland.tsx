@@ -354,7 +354,7 @@ export default function BranchesIsland(props) {
 
         <div className="flex gap-20">
           {/*Esquerda*/}
-          <div className="hidden lg:flex flex-col gap-6 w-96 max-w-full">
+          <div className="relative hidden lg:flex flex-col gap-6 w-96 max-w-full">
             <BranchFilter
               cityOptions={filteredCities.length > 0
                 ? filteredCities
