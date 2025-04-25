@@ -4596,6 +4596,10 @@ html {
     position: absolute;
   }
 
+  .lg\:inset-0 {
+    inset: 0px;
+  }
+
   .lg\:bottom-0 {
     bottom: 0px;
   }

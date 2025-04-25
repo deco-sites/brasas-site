@@ -50,7 +50,7 @@ export default function BranchCard(
   return (
     <div className="flex flex-col min-h-60 lg:flex-row border border-gray-100 rounded-2xl overflow-hidden">
       <div className="w-full lg:w-1/3 relative">
-        <div className="absolute inset-0">
+        <div className="lg:absolute lg:inset-0">
           <Image
             src={image ? image : "brasas-logo-ballon.png"}
             className={`w-full h-full
