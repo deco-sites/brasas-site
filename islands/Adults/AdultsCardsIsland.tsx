@@ -58,7 +58,7 @@ export default function AdultsCardsIsland(props) {
             <div className="flex flex-col items-center justify-center text-blue-900 text-xs">
               <span className="text-center">
                 {selectedLanguage.value === "ptBr"
-                  ? "*Dduração aproximada do curso (sem férias, recessos e feriados)."
+                  ? "*Duração aproximada do curso (sem férias, recessos e feriados)."
                   : "*Approximate duration of the course (without holidays, breaks and public holidays)."}
               </span>
               <span className="text-center">
