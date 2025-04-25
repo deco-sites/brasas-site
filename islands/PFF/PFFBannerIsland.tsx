@@ -56,10 +56,14 @@ export default function PFFBannerIsland(props) {
         }
 
         {props.hasNotice && (
-          <p className="text-white text-center">
-            {selectedLanguage.value === "ptBr"
-              ? "Curso disponível nas modalidades Presencial e Online"
-              : "Course available in In-Person and Online formats"}
+          <p
+            className="text-white text-center"
+            dangerouslySetInnerHTML={{
+              __html: selectedLanguage.value === "ptBr"
+                ? `Curso disponível nas modalidades presencial e <i>online</i>`
+                : "Course available in In-Person and Online formats",
+            }}
+          >
           </p>
         )}
       </div>
