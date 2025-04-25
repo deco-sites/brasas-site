@@ -7,7 +7,7 @@ export default function PFFCardsIsland(props) {
 
   return (
     <section className="w-full flex justify-center py-14">
-      <div className="w-full lg:max-w-[70%] px-9 flex flex-col items-center gap-20">
+      <div className="w-full max-w-[88.5rem] px-9 flex flex-col items-center gap-20">
         <span
           className="text-2xl text-justify"
           dangerouslySetInnerHTML={{
