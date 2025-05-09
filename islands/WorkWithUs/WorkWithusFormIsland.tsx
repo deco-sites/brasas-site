@@ -13,29 +13,15 @@ export default function WorkWithUsFormIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
   const fileInputRef = useRef(null);
 
-  const desiredAreaOptionsPtBr = [
-    { name: "Administrativo", value: "Administrativo" },
-    { name: "BI", value: "BI" },
-    { name: "Comercial", value: "Comercial" },
-    { name: "Compras", value: "Compras" },
-    { name: "Financeiro", value: "Financeiro" },
-    { name: "Marketing", value: "Marketing" },
-    { name: "Pedagógico", value: "Pedagógico" },
-    { name: "RH", value: "RH" },
-    { name: "TI", value: "TI" },
-  ];
+  const desiredAreaOptionsPtBr = props.desiredAreas.map((area) => ({
+    name: area.nameInPortuguese,
+    value: area.value,
+  }));
 
-  const desiredAreaOptionsEnUS = [
-    { name: "Administrative", value: "Administrativo" },
-    { name: "BI", value: "BI" },
-    { name: "Commercial", value: "Comercial" },
-    { name: "Purchasing", value: "Compras" },
-    { name: "Finance", value: "Financeiro" },
-    { name: "Marketing", value: "Marketing" },
-    { name: "Pedagogical", value: "Pedagógico" },
-    { name: "Human Resources", value: "RH" },
-    { name: "IT", value: "TI" },
-  ];
+  const desiredAreaOptionsEnUS = props.desiredAreas.map((area) => ({
+    name: area.nameInEnglish,
+    value: area.value,
+  }));
 
   const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
   const [name, setName] = useState("");
@@ -45,7 +31,6 @@ export default function WorkWithUsFormIsland(props) {
   const [desiredArea, setDesiredArea] = useState("");
   const [selectedFile, setSelectedFile] = useState(null);
   const [additionalComments, setAdditionalComments] = useState("");
-
   const [acceptedSendData, setAcceptedSendData] = useState(false);
   const [acceptedTerms, setAcceptedTerms] = useState(false);
 
@@ -78,9 +63,13 @@ export default function WorkWithUsFormIsland(props) {
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
+    const selectedEmail = props.desiredAreas.find(
+      (area) => area.value === desiredArea,
+    );
+
     const emailSent = await invoke.site.actions.sendEmail({
-      RecipientsEmailArr: props.RecipientsEmailArr,
-      CopyToArr: props.CopyToArr,
+      RecipientsEmailArr: selectedEmail.RecipientsEmailArr,
+      CopyToArr: selectedEmail.CopyToArr,
       subject: props.subject,
       attachment: selectedFile,
       data: sendData,
@@ -166,7 +155,9 @@ export default function WorkWithUsFormIsland(props) {
                   placeholder={selectedLanguage.value === "ptBr"
                     ? "Selecione a área desejada"
                     : "Select the desired area"}
-                  options={desiredAreaOptionsPtBr}
+                  options={selectedLanguage.value === "ptBr"
+                    ? desiredAreaOptionsPtBr
+                    : desiredAreaOptionsEnUS}
                   bgColor="gray"
                   value={desiredArea}
                   onChangeFunction={setDesiredArea}
