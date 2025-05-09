@@ -4,7 +4,7 @@ import InputCheckbox from "site/components/ui/InputCheckbox.tsx";
 import { useSelectLanguage } from "site/sdk/language.ts";
 import IconSend from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/send.tsx";
 import IconEye from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/eye.tsx";
-import { useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import IconEyeClosed from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/eye-closed.tsx";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import { invoke } from "../../runtime.ts";
@@ -24,6 +24,15 @@ export default function ReferAndEarnFormIsland(props) {
   const [phone, setPhone] = useState("");
   const [referralCode, setReferralCode] = useState("");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [loadedCode, setLoadedCode] = useState(null);
+
+  useEffect(() => {
+    const params = new URLSearchParams(document.location.search);
+    const code = params.get("code");
+    if (code) {
+      setLoadedCode(code);
+    }
+  }, []);
 
   const sendData = `
   Nome: ${name}
@@ -167,7 +176,7 @@ export default function ReferAndEarnFormIsland(props) {
                       ? "ABC123-EXEMPLO"
                       : "ABC123-EXAMPLE"}
                     className="w-full bg-gray-100 outline-none h-full placeholder:text-black-500 focus:outline-none "
-                    value={name}
+                    value={loadedCode !== null ? loadedCode : name}
                     onChange={(e) => setReferralCode(e.target.value)}
                     required
                   />
