@@ -22,7 +22,108 @@
           "email": "erick.nascimento@simbioseventures.com"
         }
       ],
-      "subject": "Trabalhe Conosco - Brasas"
+      "subject": "Trabalhe Conosco - Brasas",
+      "desiredAreas": [
+        {
+          "RecipientsEmailArr": [
+            {
+              "email": "administrativo@brasas.com"
+            }
+          ],
+          "CopyToArr": [],
+          "nameInPortuguese": "Administrativo",
+          "nameInEnglish": "Administrative",
+          "value": "Administrativo"
+        },
+        {
+          "RecipientsEmailArr": [
+            {
+              "email": "adriane@brasas.com"
+            }
+          ],
+          "CopyToArr": [],
+          "nameInPortuguese": "BI",
+          "nameInEnglish": "BI",
+          "value": "BI"
+        },
+        {
+          "RecipientsEmailArr": [
+            {
+              "email": "comercial@brasas.com"
+            }
+          ],
+          "CopyToArr": [],
+          "nameInPortuguese": "Comercial",
+          "value": "Comercial",
+          "nameInEnglish": "Commercial"
+        },
+        {
+          "RecipientsEmailArr": [
+            {
+              "email": "carlos.henrique@brasas.com"
+            }
+          ],
+          "CopyToArr": [],
+          "nameInPortuguese": "Compras",
+          "value": "Compras",
+          "nameInEnglish": "Purchasing"
+        },
+        {
+          "RecipientsEmailArr": [
+            {
+              "email": "financeiro@brasas.com"
+            }
+          ],
+          "CopyToArr": [],
+          "nameInPortuguese": "Financeiro",
+          "value": "Financeiro",
+          "nameInEnglish": "Finance"
+        },
+        {
+          "RecipientsEmailArr": [
+            {
+              "email": "marketing.brasas@brasas.com"
+            }
+          ],
+          "CopyToArr": [],
+          "nameInPortuguese": "Marketing",
+          "value": "Marketing",
+          "nameInEnglish": "Marketing"
+        },
+        {
+          "RecipientsEmailArr": [
+            {
+              "email": "coord.rj@brasas.com"
+            }
+          ],
+          "CopyToArr": [],
+          "nameInPortuguese": "Pedagógico",
+          "nameInEnglish": "Pedagogical",
+          "value": "Pedagógico"
+        },
+        {
+          "RecipientsEmailArr": [
+            {
+              "email": "dp@brasas.com"
+            }
+          ],
+          "CopyToArr": [],
+          "nameInPortuguese": "RH",
+          "value": "RH",
+          "nameInEnglish": "Human Resources"
+        },
+        {
+          "RecipientsEmailArr": [
+            {
+              "email": "brasasbrasil@brasas.com"
+            }
+          ],
+          "CopyToArr": [],
+          "nameInPortuguese": "TI",
+          "value": "TI",
+          "nameInEnglish": "IT"
+        }
+      ]
     },
     {
       "__resolveType": "Footer"
