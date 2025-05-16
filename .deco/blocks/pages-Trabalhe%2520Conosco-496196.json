@@ -27,7 +27,7 @@
         {
           "RecipientsEmailArr": [
             {
-              "email": "administrativo@brasas.com"
+              "email": "vagas@brasas.com"
             }
           ],
           "CopyToArr": [],
@@ -38,7 +38,7 @@
         {
           "RecipientsEmailArr": [
             {
-              "email": "adriane@brasas.com"
+              "email": "vagas@brasas.com"
             }
           ],
           "CopyToArr": [],
@@ -49,7 +49,7 @@
         {
           "RecipientsEmailArr": [
             {
-              "email": "comercial@brasas.com"
+              "email": "vagas@brasas.com"
             }
           ],
           "CopyToArr": [],
@@ -60,7 +60,7 @@
         {
           "RecipientsEmailArr": [
             {
-              "email": "carlos.henrique@brasas.com"
+              "email": "vagas@brasas.com"
             }
           ],
           "CopyToArr": [],
@@ -71,7 +71,7 @@
         {
           "RecipientsEmailArr": [
             {
-              "email": "financeiro@brasas.com"
+              "email": "vagas@brasas.com"
             }
           ],
           "CopyToArr": [],
@@ -82,7 +82,7 @@
         {
           "RecipientsEmailArr": [
             {
-              "email": "marketing.brasas@brasas.com"
+              "email": "vagas@brasas.com"
             }
           ],
           "CopyToArr": [],
@@ -93,7 +93,7 @@
         {
           "RecipientsEmailArr": [
             {
-              "email": "coord.rj@brasas.com"
+              "email": "cv@brasas.com"
             }
           ],
           "CopyToArr": [],
@@ -104,7 +104,7 @@
         {
           "RecipientsEmailArr": [
             {
-              "email": "dp@brasas.com"
+              "email": "vagas@brasas.com"
             }
           ],
           "CopyToArr": [],
@@ -115,13 +115,13 @@
         {
           "RecipientsEmailArr": [
             {
-              "email": "brasasbrasil@brasas.com"
+              "email": "vagas@brasas.com"
             }
           ],
           "CopyToArr": [],
-          "nameInPortuguese": "TI",
+          "nameInPortuguese": "Tecnologia",
           "value": "TI",
-          "nameInEnglish": "IT"
+          "nameInEnglish": "Technology"
         }
       ]
     },
