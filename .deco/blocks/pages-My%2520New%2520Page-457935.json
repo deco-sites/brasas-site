@@ -35,13 +35,10 @@
       "formSubtitleInPortuguese": "Se você está entrando no BRASAS através da indicação de um aluno, deixe os seus dados abaixo que entraremos em contato para seguir com a sua matrícula e com o desconto.",
       "formTitleInEnglish": "Shall we begin?",
       "formSubtitleInEnglish": "If you are joining BRASAS through a student's referral, leave your details below and we will contact you to proceed with your enrollment and discount.",
-      "subject": "Formulário Brasas - Indique e Ganhe",
+      "subject": "Formulário BRASAS - Indique e Ganhe",
       "RecipientsEmailArr": [
         {
           "email": "comercial@brasas.com"
-        },
-        {
-          "email": "erick.nascimento@simbioseventures.com"
         }
       ],
       "regulationTextInPortuguese": "<p>*O aluno e o amigo indicado ganham crédito de R$100,00 em uma mensalidade a cada indicação que se matricular. Desconto válido apenas em mensalidades, até o último dia do ano letivo de 2025, nas unidades BRASAS do Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu e no BRASAS Online. Consulte o regulamento completo na secretaria dessas unidades ou com a secretaria virtual do BRASAS Online.</p>",

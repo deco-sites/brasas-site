@@ -21,16 +21,13 @@
       "__resolveType": "site/sections/Contact/FormSection.tsx",
       "RecipientsEmailArr": [
         {
-          "email": "erick.nascimento@simbioseventures.com"
-        },
-        {
           "email": "peter@brasas.com"
         },
         {
           "email": "tatiana.cordeiro@brasas.com"
         }
       ],
-      "subject": "Fale Conosco - Brasas"
+      "subject": "Fale Conosco - BRASAS"
     },
     {
       "__resolveType": "Footer"
