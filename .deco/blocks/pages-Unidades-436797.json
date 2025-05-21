@@ -1026,16 +1026,15 @@
                   "isWhatsapp": true
                 }
               ],
-              "name": "Santo Agostinho",
-              "image": "https://assets.decocache.com/brasas-site/16f7d88b-78ef-4609-9bac-56df6b21406b/santo-agostinho.jpg",
-              "address": "R. Alvarenga Peixoto, 1440,",
-              "neighborhood": "Santo Agostinho",
+              "name": "Savassi",
+              "address": "Rua Major Lopes 34 A,",
+              "neighborhood": "Savassi",
               "city": "Belo Horizonte",
               "state": "MG",
               "email": "sa@brasas.com",
               "lon": "-43.769632",
               "lat": "-21.226148",
-              "zip_code": "30180-121",
+              "zip_code": "30330-050",
               "instagram": "https://www.instagram.com/brasasbh/"
             }
           ],
