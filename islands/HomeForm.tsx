@@ -10,6 +10,7 @@ import { invoke } from "../runtime.ts";
 import { useState } from "preact/hooks";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
+import Recaptcha from "site/helpers/recaptcha.tsx";
 
 export default function HomeForm(
   { ptBrTitle, enUsTitle, RecipientsEmailArr, CopyToArr, subject },
@@ -36,6 +37,9 @@ export default function HomeForm(
     Record<string, boolean>
   >({});
   const [error, setError] = useState("");
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const [warnRecaptcha, setWarnRecaptcha] = useState(false);
+  const [recaptchaWidgetId, setRecaptchaWidgetId] = useState(null);
 
   const handleCheckboxChange = (value: string, checked: boolean) => {
     setSelectedOptions((prev) => ({ ...prev, [value]: checked }));
@@ -61,6 +65,11 @@ export default function HomeForm(
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
+    if (recaptchaToken === null) {
+      setWarnRecaptcha(true);
+      return;
+    }
+
     // Verifica se pelo menos uma opção foi selecionada
     if (!Object.values(selectedOptions).some((checked) => checked)) {
       setError("Selecione pelo menos uma opção de comunicação");
@@ -84,6 +93,12 @@ export default function HomeForm(
     setPhone("");
     setState("");
     setSelectedOptions({});
+    setWarnRecaptcha(false);
+
+    if (window.grecaptcha && recaptchaWidgetId !== null) {
+      window.grecaptcha.reset(recaptchaWidgetId);
+      setRecaptchaToken(null);
+    }
   };
 
   return (
@@ -159,6 +174,11 @@ export default function HomeForm(
             </div>
             {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
           </div>
+          <Recaptcha
+            setToken={setRecaptchaToken}
+            setWidgetId={setRecaptchaWidgetId}
+            warnRecaptcha={warnRecaptcha}
+          />
           <button className="bg-blue-300 text-white hover:bg-white hover:text-blue-300 transition duration-300 border border-transparent hover:border-blue-300 rounded-lg w-full xl:w-fit px-6 py-3">
             {data.HomeForm.SendButtonText}
           </button>

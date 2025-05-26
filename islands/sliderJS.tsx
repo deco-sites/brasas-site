@@ -124,7 +124,6 @@ const setup = ({ rootId, scroll, interval, infinite, alwaysGo }: Props) => {
     itemsPerPage: number = 1,
   ) => {
     if (!items || items.length === 0) return;
-    console.log("items", items);
 
     if (onClickNext) {
       for (let i = 0; i < itemsPerPage; i++) {

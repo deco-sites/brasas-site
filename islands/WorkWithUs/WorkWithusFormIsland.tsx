@@ -8,6 +8,7 @@ import SelectInput from "site/components/ui/SelectInput.tsx";
 import { useRef, useState } from "preact/hooks";
 import { invoke } from "../../runtime.ts";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
+import Recaptcha from "site/helpers/recaptcha.tsx";
 
 export default function WorkWithUsFormIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
@@ -33,6 +34,9 @@ export default function WorkWithUsFormIsland(props) {
   const [additionalComments, setAdditionalComments] = useState("");
   const [acceptedSendData, setAcceptedSendData] = useState(false);
   const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const [warnRecaptcha, setWarnRecaptcha] = useState(false);
+  const [recaptchaWidgetId, setRecaptchaWidgetId] = useState(null);
 
   const sendData = `
   Nome: ${name}
@@ -45,6 +49,7 @@ export default function WorkWithUsFormIsland(props) {
 
   const handleFileChange = (e) => {
     e.preventDefault();
+
     const file = e.target.files[0];
 
     if (file) {
@@ -62,6 +67,11 @@ export default function WorkWithUsFormIsland(props) {
 
   const handleSendEmail = async (e) => {
     e.preventDefault();
+
+    if (recaptchaToken === null) {
+      setWarnRecaptcha(true);
+      return;
+    }
 
     const selectedEmail = props.desiredAreas.find(
       (area) => area.value === desiredArea,
@@ -86,11 +96,17 @@ export default function WorkWithUsFormIsland(props) {
     setAcceptedTerms(false);
     setSelectedFile(null);
     setAdditionalComments("");
+    setWarnRecaptcha(false);
+
+    if (window.grecaptcha && recaptchaWidgetId !== null) {
+      window.grecaptcha.reset(recaptchaWidgetId);
+      setRecaptchaToken(null);
+    }
   };
 
   return (
     <>
-      <section className="flex justify-center relative h-[82rem] sm:h-[75rem] md:h-[54rem]">
+      <section className="flex justify-center relative h-[86rem] sm:h-[80rem] md:h-[60rem]">
         <div className="absolute -top-16">
           <div className="pb-24 max-w-[88.5rem] px-9 w-full flex flex-col xl:flex-row">
             <form
@@ -215,6 +231,11 @@ export default function WorkWithUsFormIsland(props) {
                 value={acceptedTerms}
                 setValue={setAcceptedTerms}
                 required
+              />
+              <Recaptcha
+                setToken={setRecaptchaToken}
+                setWidgetId={setRecaptchaWidgetId}
+                warnRecaptcha={warnRecaptcha}
               />
               <button className="bg-gray-500 hover:bg-blue-300 transition duration-300 text-white rounded-lg w-full py-4 flex gap-2 justify-center items-center">
                 <IconSend class="w-6 h-6" />

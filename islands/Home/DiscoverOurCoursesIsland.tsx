@@ -13,7 +13,7 @@ export default function DiscoverOurCoursesIsland(
       className="relative flex justify-center bg-blue-100 w-full"
       style={{
         backgroundImage: `url('/courses-bg-1.svg'), url('/courses-bg-2.svg')`,
-        backgroundPosition: "55% -15%, 0px calc(100% - 296px)",
+        backgroundPosition: "55% -2%, 0px calc(100% - 296px)",
         backgroundRepeat: "no-repeat, no-repeat",
         backgroundSize: "auto, 100% auto",
       }}
@@ -26,7 +26,7 @@ export default function DiscoverOurCoursesIsland(
           CopyToArr={props.CopyToArr}
           subject={props.subject}
         />
-        <div className="mt-[50rem] md:mt-[42rem] xl:mt-[26.5rem] flex flex-col items-center">
+        <div className="mt-[56rem] md:mt-[48rem] xl:mt-[32.5rem] flex flex-col items-center">
           <h2 className="text-center font-black leading-[48px] text-black-500 text-[2.5rem] mb-12">
             {selectedLanguage.value === "ptBr"
               ? props.portugueseTitle

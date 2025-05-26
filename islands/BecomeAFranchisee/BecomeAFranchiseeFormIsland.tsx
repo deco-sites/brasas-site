@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "preact/hooks";
 import { invoke } from "../../runtime.ts";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
+import Recaptcha from "site/helpers/recaptcha.tsx";
 
 export default function BecomeAFranchiseeFormIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
@@ -19,6 +20,9 @@ export default function BecomeAFranchiseeFormIsland(props) {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const [warnRecaptcha, setWarnRecaptcha] = useState(false);
+  const [recaptchaWidgetId, setRecaptchaWidgetId] = useState(null);
 
   const sendData = `
   Nome: ${name}
@@ -37,6 +41,11 @@ export default function BecomeAFranchiseeFormIsland(props) {
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
+    if (recaptchaToken === null) {
+      setWarnRecaptcha(true);
+      return;
+    }
+
     const emailSent = await invoke.site.actions.sendEmail({
       RecipientsEmailArr: props.RecipientsEmailArr,
       CopyToArr: props.CopyToArr,
@@ -53,6 +62,12 @@ export default function BecomeAFranchiseeFormIsland(props) {
     setPhone("");
     setMessage("");
     setAcceptedTerms(false);
+    setWarnRecaptcha(false);
+
+    if (window.grecaptcha && recaptchaWidgetId !== null) {
+      window.grecaptcha.reset(recaptchaWidgetId);
+      setRecaptchaToken(null);
+    }
   };
 
   useEffect(() => {
@@ -69,7 +84,7 @@ export default function BecomeAFranchiseeFormIsland(props) {
   return (
     <>
       <section className="flex justify-center w-full">
-        <div className="max-w-[88.5rem] px-9 w-full flex flex-col xl:flex-row justify-center gap-6 xl:gap-8 pb-28 xl:pb-96">
+        <div className="max-w-[88.5rem] px-9 w-full flex flex-col xl:flex-row justify-center gap-6 xl:gap-8 pb-28 xl:pb-[28rem]">
           {/* Div de conteúdo (esquerda) */}
           <div className="flex flex-col gap-4 text-black-500 xl:max-w-[34rem] mt-10 w-full xl:w-1/2">
             <span
@@ -142,6 +157,13 @@ export default function BecomeAFranchiseeFormIsland(props) {
                   required
                 />
               </div>
+
+              <Recaptcha
+                setToken={setRecaptchaToken}
+                setWidgetId={setRecaptchaWidgetId}
+                warnRecaptcha={warnRecaptcha}
+              />
+
               <button className="bg-gray-500 hover:bg-blue-300 transition duration-300 text-white rounded-lg w-full py-4 flex gap-2 justify-center items-center">
                 <IconSend class="w-6 h-6" />
                 <span>Enviar</span>

@@ -4,10 +4,11 @@ import TextInput from "site/components/ui/TextInput.tsx";
 import TextArea from "site/components/ui/Textarea.tsx";
 import InputCheckbox from "site/components/ui/InputCheckbox.tsx";
 import { useSelectLanguage } from "site/sdk/language.ts";
-import { useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import { invoke } from "../../runtime.ts";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
+import Recaptcha from "site/helpers/recaptcha.tsx";
 
 export default function FormSectionIsland(
   { RecipientsEmailArr, CopyToArr, subject },
@@ -19,8 +20,10 @@ export default function FormSectionIsland(
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-
   const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const [warnRecaptcha, setWarnRecaptcha] = useState(false);
+  const [recaptchaWidgetId, setRecaptchaWidgetId] = useState(null);
 
   const sendData = `
   Nome: ${name}
@@ -39,6 +42,11 @@ export default function FormSectionIsland(
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
+    if (recaptchaToken === null) {
+      setWarnRecaptcha(true);
+      return;
+    }
+
     const emailSent = await invoke.site.actions.sendEmail({
       RecipientsEmailArr: RecipientsEmailArr,
       CopyToArr: CopyToArr,
@@ -55,13 +63,19 @@ export default function FormSectionIsland(
     setPhone("");
     setMessage("");
     setAcceptedTerms(false);
+    setWarnRecaptcha(false);
+
+    if (window.grecaptcha && recaptchaWidgetId !== null) {
+      window.grecaptcha.reset(recaptchaWidgetId);
+      setRecaptchaToken(null);
+    }
   };
 
   return (
     <>
-      <section className="flex justify-center relative h-[72rem] xl:h-[46rem]">
+      <section className="flex justify-center relative h-[80rem] xl:h-[52rem] ">
         <div className="absolute -top-16">
-          <div className="pb-24 max-w-[88.5rem] px-9 w-full flex flex-col xl:flex-row gap-12 xl:gap-28">
+          <div className="pb-28 max-w-[88.5rem] mx-auto px-4 w-full flex flex-col xl:flex-row gap-12 xl:gap-28">
             <form
               onSubmit={(e) => handleSendEmail(e)}
               className="bg-white border border-gray-100 rounded-2xl p-8 flex flex-col gap-8 max-w-lg"
@@ -116,6 +130,11 @@ export default function FormSectionIsland(
                   required
                 />
               </div>
+              <Recaptcha
+                setToken={setRecaptchaToken}
+                setWidgetId={setRecaptchaWidgetId}
+                warnRecaptcha={warnRecaptcha}
+              />
               <button className="bg-gray-500 hover:bg-blue-300 transition duration-300 text-white rounded-lg w-full py-4 flex gap-2 justify-center items-center">
                 <IconSend class="w-6 h-6" />
                 <span>
