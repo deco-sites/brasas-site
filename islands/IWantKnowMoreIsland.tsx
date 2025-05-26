@@ -7,6 +7,7 @@ import { invoke } from "../runtime.ts";
 import InputCheckbox from "site/components/ui/InputCheckbox.tsx";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
+import Recaptcha from "site/helpers/recaptcha.tsx";
 
 export default function IWantKnowMoreIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
@@ -16,6 +17,9 @@ export default function IWantKnowMoreIsland(props) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const [warnRecaptcha, setWarnRecaptcha] = useState(false);
+  const [recaptchaWidgetId, setRecaptchaWidgetId] = useState(null);
 
   const sendData = `
   Nome: ${name}
@@ -32,6 +36,11 @@ export default function IWantKnowMoreIsland(props) {
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
+    if (recaptchaToken === null) {
+      setWarnRecaptcha(true);
+      return;
+    }
+
     const emailSent = await invoke.site.actions.sendEmail({
       RecipientsEmailArr: props.RecipientsEmailArr,
       CopyToArr: props.CopyToArr,
@@ -47,6 +56,12 @@ export default function IWantKnowMoreIsland(props) {
     setEmail("");
     setPhone("");
     setAcceptedTerms(false);
+    setWarnRecaptcha(false);
+
+    if (window.grecaptcha && recaptchaWidgetId !== null) {
+      window.grecaptcha.reset(recaptchaWidgetId);
+      setRecaptchaToken(null);
+    }
   };
 
   return (
@@ -155,6 +170,12 @@ export default function IWantKnowMoreIsland(props) {
                 value={acceptedTerms}
                 setValue={setAcceptedTerms}
                 required
+              />
+
+              <Recaptcha
+                setToken={setRecaptchaToken}
+                setWidgetId={setRecaptchaWidgetId}
+                warnRecaptcha={warnRecaptcha}
               />
 
               <button className="bg-blue-300 hover:bg-white flex items-center justify-center gap-2 rounded-lg text-white hover:text-blue-300 border border-opacity-0 hover:border-opacity-100 border-blue-300 font-bold text-base py-4 transition duration-300">

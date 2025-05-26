@@ -137,20 +137,13 @@
         }
       ],
       "portugueseFormTitle": "Precisa de ajuda? Preencha abaixo e fale com um especialista do BRASAS",
-      "subject": "Formulário Brasas",
+      "subject": "Formulário BRASAS",
       "RecipientsEmailArr": [
-        {
-          "email": "erick.nascimento@simbioseventures.com"
-        },
         {
           "email": "comercial@brasas.com"
         }
       ],
-      "CopyToArr": [
-        {
-          "email": "erick.nascim3nto@gmail.com"
-        }
-      ]
+      "CopyToArr": []
     },
     {
       "__resolveType": "site/sections/Home/Testimonials.tsx",

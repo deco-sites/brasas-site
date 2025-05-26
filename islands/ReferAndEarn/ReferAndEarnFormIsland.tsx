@@ -9,6 +9,7 @@ import IconEyeClosed from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/eye-cl
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import { invoke } from "../../runtime.ts";
 import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
+import Recaptcha from "site/helpers/recaptcha.tsx";
 
 export default function ReferAndEarnFormIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
@@ -25,6 +26,9 @@ export default function ReferAndEarnFormIsland(props) {
   const [referralCode, setReferralCode] = useState("");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [loadedCode, setLoadedCode] = useState(null);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const [warnRecaptcha, setWarnRecaptcha] = useState(false);
+  const [recaptchaWidgetId, setRecaptchaWidgetId] = useState(null);
 
   useEffect(() => {
     const params = new URLSearchParams(document.location.search);
@@ -51,6 +55,11 @@ export default function ReferAndEarnFormIsland(props) {
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
+    if (recaptchaToken === null) {
+      setWarnRecaptcha(true);
+      return;
+    }
+
     const emailSent = await invoke.site.actions.sendEmail({
       RecipientsEmailArr: props.RecipientsEmailArr,
       CopyToArr: props.CopyToArr,
@@ -67,6 +76,12 @@ export default function ReferAndEarnFormIsland(props) {
     setPhone("");
     setReferralCode("");
     setAcceptedTerms(false);
+    setWarnRecaptcha(false);
+
+    if (window.grecaptcha && recaptchaWidgetId !== null) {
+      window.grecaptcha.reset(recaptchaWidgetId);
+      setRecaptchaToken(null);
+    }
   };
 
   return (
@@ -205,6 +220,11 @@ export default function ReferAndEarnFormIsland(props) {
                 required
               />
             </div>
+            <Recaptcha
+              setToken={setRecaptchaToken}
+              setWidgetId={setRecaptchaWidgetId}
+              warnRecaptcha={warnRecaptcha}
+            />
             <button className="bg-blue-300 hover:bg-white border border-blue-300 border-opacity-0 hover:border-opacity-100 text-white hover:text-blue-300 transition-all duration-300 py-4 rounded-lg flex items-center justify-center gap-2">
               <IconSend class="w-4 h-4" />
               <span>
