@@ -48,6 +48,20 @@
           },
           "alt": "Banner2",
           "link": "https://campanha.brasas.com/certificacoes-internacionais-2025"
+        },
+        {
+          "desktop": {
+            "image": "https://assets.decocache.com/brasas-site/97244a3f-14cf-4c74-843d-0a1f54d56961/IMG_6069.png",
+            "width": 1924,
+            "height": 657
+          },
+          "mobile": {
+            "image": "https://assets.decocache.com/brasas-site/29269946-4365-430a-9fa4-4945a9e2b581/BRASAS_Campanha_2025_Abril_Certificacoes-Internacionais_webdoors_mobile.png",
+            "width": 384,
+            "height": 633
+          },
+          "alt": "Banner2",
+          "link": "https://campanha.brasas.com/certificacoes-internacionais-2025"
         }
       ],
       "titleInPortuguese": " Descubra o nível <br />do seu inglês!",
