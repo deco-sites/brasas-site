@@ -1,24 +1,31 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import BannerCarrouselIsland from "site/islands/BannerCarrouselIsland.tsx";
 
+export interface BannerImage {
+  image: ImageWidget;
+  width?: number;
+  height?: number;
+}
+
 /**
  * @titleBy alt
  */
 export interface Banner {
-  /** @description desktop otimized image */
-  desktop: {
-    image: ImageWidget;
-    width?: number;
-    height?: number;
-  };
-  /** @description mobile otimized image */
-  mobile: {
-    image: ImageWidget;
-    width?: number;
-    height?: number;
-  };
+  /** @description Mobile-optimized image (e.g. 768px) */
+  mobile: BannerImage;
+
+  /** @description Tablet-optimized image (e.g. 1024px–1440px) */
+  tablet: BannerImage;
+
+  /** @description Desktop/desktop image (e.g. 1440px–1920px) */
+  desktop: BannerImage;
+
+  /** @description Large screens / ultrawide (e.g. >1920px) */
+  ultrawide: BannerImage;
+
   /** @description Image's alt text */
   alt: string;
+
   link?: string;
   startDate?: string;
   expirationDate?: string;
