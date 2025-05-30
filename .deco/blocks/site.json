@@ -18,12 +18,8 @@
       "__resolveType": "site/sections/SocialMediasFloat.tsx",
       "socialMedias": [
         {
-          "link": "https://www.facebook.com/BRASASEnglishCourse/",
-          "text": "Facebook"
-        },
-        {
-          "text": "Instagram",
-          "link": "https://www.instagram.com/brasasenglishcourse/"
+          "link": "https://www.instagram.com/brasasenglishcourse/",
+          "text": "Instagram"
         },
         {
           "text": "TikTok",
@@ -36,10 +32,6 @@
         {
           "text": "Linkedin",
           "link": "https://www.linkedin.com/company/brasas-english-course/?originalSubdomain=br"
-        },
-        {
-          "text": "Spotify",
-          "link": "https://open.spotify.com/show/7N2HDAPjUD9QjpQorg9Gq5"
         }
       ]
     },
