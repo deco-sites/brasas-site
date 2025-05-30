@@ -172,40 +172,6 @@ export default function BannerCarrouselIsland(props) {
     <div
       className={`relative xl:pb-0 flex flex-col-reverse xl:flex-row justify-center bg-blue-300`}
     >
-      <div className="flex justify-center items-center xl:absolute xl:right-8 xl:top-1/2 xl:-translate-y-1/2 z-10 pt-12 pb-36 px-9 xl:pt-0 xl:mb-0 xl:pb-0 xl:px-0">
-        <div className="flex flex-col text-white max-w-[32.4rem] items-center xl:items-start">
-          <span
-            className="text-center xl:text-start mb-4 font-black text-4xl leading-10"
-            dangerouslySetInnerHTML={{
-              __html: selectedLanguage.value === "ptBr"
-                ? props.titleInPortuguese
-                : props.titleInEnglish,
-            }}
-          >
-          </span>
-          <span
-            className="text-center xl:text-start mb-10 font-medium leading-8 text-2xl break-words whitespace-normal"
-            dangerouslySetInnerHTML={{
-              __html: selectedLanguage.value === "ptBr"
-                ? props.descriptionInPortuguese
-                : props.descriptionInEnglish,
-            }}
-          >
-          </span>
-
-          <a className="w-fit" href={props.CTALink} target="_blank">
-            <button className="flex gap-2 px-4 py-3 w-full items-center justify-center xl:w-fit bg-red-300 rounded-lg transition duration-300 hover:bg-white hover:text-blue-300">
-              <span className="font-bold text-base">
-                {selectedLanguage.value === "ptBr"
-                  ? props.CTAtextInPortuguese
-                  : props.CTAtextInEnglish}
-              </span>
-              <IconArrowNarrowRight class="w-6 h-6" />
-            </button>
-          </a>
-        </div>
-      </div>
-
       <div className="flex gap-6 w-full h-[39.6] xl:h-[42rem]">
         <div
           id={id}
