@@ -24,13 +24,6 @@ export interface Banner {
   expirationDate?: string;
 }
 export interface Props {
-  titleInPortuguese: string;
-  titleInEnglish: string;
-  descriptionInPortuguese: string;
-  descriptionInEnglish: string;
-  CTAtextInPortuguese: string;
-  CTAtextInEnglish: string;
-  CTALink: string;
   images?: Banner[];
   /**
    * @description Check this option when this banner is the biggest image on the screen for image optimizations
