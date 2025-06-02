@@ -11,57 +11,32 @@
       "images": [
         {
           "desktop": {
-            "image": "https://assets.decocache.com/brasas-site/9e766b36-6ec7-400a-a425-b842b4c25019/brasas_promo-200-credito_webdoor_desktop.jpg",
-            "width": 1923,
-            "height": 708
+            "image": "https://assets.decocache.com/brasas-site/1511d5a4-d338-4d41-8cf6-e00d75359d86/nova-desktop.png",
+            "width": 1920,
+            "height": 1080
           },
           "mobile": {
-            "image": "https://assets.decocache.com/brasas-site/04a0265b-431e-48fc-a037-167aaa7ce495/brasas_promo-200-credito_webdoor_mobile.jpg",
-            "width": 384,
-            "height": 633
+            "image": "https://assets.decocache.com/brasas-site/69042518-9bc8-4b8e-b942-6dca9d5c1a3c/nova-mobile.png",
+            "width": 385,
+            "height": 634
           },
           "alt": "Banner",
-          "link": "https://campanha.brasas.com/brasas-promo-200-de-credito"
-        },
-        {
-          "desktop": {
-            "image": "https://assets.decocache.com/brasas-site/dc6dc8a4-623a-4869-acac-6f0cf410f8b9/BOL_Campanha-200-Credito_Webdoor_Desktop.jpg"
+          "link": "https://campanha.brasas.com/brasas-promo-200-de-credito",
+          "tablet": {
+            "image": "https://assets.decocache.com/brasas-site/80a3afac-25fe-4dd9-9008-805a4d71cc49/nova-tablet.png",
+            "width": 1024,
+            "height": 768
           },
-          "mobile": {
-            "image": "https://assets.decocache.com/brasas-site/2b03af71-0f71-4278-b57b-ac57f29aa243/BOL_Campanha-200-Credito_Webdoor_Mobile.png",
-            "width": 384,
-            "height": 633
+          "laptop": {
+            "image": "https://assets.decocache.com/brasas-site/e8718808-8363-467f-838f-f0d2d619ecf2/BOL_Campanha-200-Credito_Junho-Agosto_Webdoor_1920x1080_Ultra-Wide.png",
+            "width": 1920,
+            "height": 1080
           },
-          "alt": "Banner3",
-          "link": "https://campanha.brasas.com/bol-promo-200-de-credito"
-        },
-        {
-          "desktop": {
-            "image": "https://assets.decocache.com/brasas-site/2eeebea3-636e-4ddc-b3c0-25326625bf57/BRASAS_Campanha_2025_Abril_Certificacoes-Internacionais_webdoors_desktop.png",
-            "width": 1923,
-            "height": 708
-          },
-          "mobile": {
-            "image": "https://assets.decocache.com/brasas-site/29269946-4365-430a-9fa4-4945a9e2b581/BRASAS_Campanha_2025_Abril_Certificacoes-Internacionais_webdoors_mobile.png",
-            "width": 384,
-            "height": 633
-          },
-          "alt": "Banner2",
-          "link": "https://campanha.brasas.com/certificacoes-internacionais-2025"
-        },
-        {
-          "desktop": {
-            "image": "https://assets.decocache.com/brasas-site/dc8c73e2-f973-44b9-ac7e-5e54f5148c3d/BOL_Campanha-200-Credito_Junho-Agosto_Webdoor_Desktop.png",
-            "width": 1924,
-            "height": 657
-          },
-          "mobile": {
-            "image": "https://assets.decocache.com/brasas-site/29269946-4365-430a-9fa4-4945a9e2b581/BRASAS_Campanha_2025_Abril_Certificacoes-Internacionais_webdoors_mobile.png",
-            "width": 384,
-            "height": 633
-          },
-          "alt": "Banner2",
-          "link": "https://campanha.brasas.com/certificacoes-internacionais-2025"
+          "ultrawide": {
+            "image": "https://assets.decocache.com/brasas-site/b578ae52-567c-464c-b6aa-31754b3d5244/nova-ultrawide.png",
+            "width": 2560,
+            "height": 1080
+          }
         }
       ],
       "titleInPortuguese": " Descubra o nível <br />do seu inglês!",

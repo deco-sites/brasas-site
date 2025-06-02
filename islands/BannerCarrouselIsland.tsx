@@ -5,21 +5,40 @@ import Icon from "site/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import { useEffect, useState } from "preact/hooks";
 import { Banner, Props } from "site/sections/BannerCarrousel.tsx";
-import IconArrowNarrowRight from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/arrow-narrow-right.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 const DEFAULT_PROPS = {
   images: [],
   preload: true,
 };
 
-function BannerItem({ image, lcp, id, isMobile }: {
+function BannerItem({ image, lcp, id }: {
   image: Banner;
   lcp?: boolean;
   id: string;
-  isMobile: boolean;
 }) {
-  const { alt, mobile, desktop, link } = image;
+  const { alt, mobile, tablet, desktop, ultrawide, link } = image;
+
+  const [windowWidth, setWindowWidth] = useState<number>(
+    typeof window !== "undefined" ? window.innerWidth : 0,
+  );
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    handleResize(); // inicial
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Escolhe a imagem com base na largura
+  const getResponsiveImage = () => {
+    if (windowWidth >= 1440) return ultrawide;
+    if (windowWidth >= 1024) return desktop;
+    if (windowWidth >= 768) return tablet;
+    return mobile;
+  };
+
+  const selectedImage = getResponsiveImage();
 
   return (
     <a
@@ -29,32 +48,17 @@ function BannerItem({ image, lcp, id, isMobile }: {
       aria-label="Banners"
       className="relative overflow-y-hidden w-full h-full"
     >
-      {isMobile && (
-        <Image
-          className="object-cover w-full h-full"
-          src={mobile.image}
-          alt={alt}
-          width={mobile.width ?? 384}
-          height={mobile.height ?? 633}
-          preload
-          loading="eager"
-          fetchPriority="high"
-          decoding={"async"}
-        />
-      )}
-      {!isMobile && (
-        <Image
-          className="object-cover w-full h-full"
-          loading={lcp ? "eager" : "lazy"}
-          src={desktop.image}
-          alt={alt}
-          width={desktop.width ?? 1924}
-          height={desktop.height ?? 708}
-          fetchPriority={lcp ? "high" : "low"}
-          preload={lcp ? true : false}
-          decoding={"async"}
-        />
-      )}
+      <Image
+        className="object-cover w-full h-full"
+        src={selectedImage.image}
+        alt={alt}
+        width={selectedImage.width ?? 1920}
+        height={selectedImage.height ?? 1080}
+        preload={lcp}
+        loading={lcp ? "eager" : "lazy"}
+        fetchPriority={lcp ? "high" : "auto"}
+        decoding={"async"}
+      />
     </a>
   );
 }
@@ -151,23 +155,6 @@ export default function BannerCarrouselIsland(props) {
     return start <= currentDate && end >= currentDate; // Ambas: incluir se estiver no intervalo
   });
 
-  const [isMobile, setIsMobile] = useState<boolean | null>(null);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
-
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <div
       className={`relative xl:pb-0 flex flex-col-reverse xl:flex-row justify-center bg-blue-300`}
@@ -189,7 +176,6 @@ export default function BannerCarrouselIsland(props) {
                     image={image}
                     lcp={index === 0}
                     id={`${id}::${index}`}
-                    isMobile={isMobile}
                   />
                 </Slider.Item>
               );
