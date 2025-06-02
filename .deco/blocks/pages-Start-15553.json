@@ -11,19 +11,19 @@
       "images": [
         {
           "desktop": {
-            "image": "https://assets.decocache.com/brasas-site/c272b2a5-0bd1-409f-926a-4509fcdf82d8/desktop.png",
+            "image": "https://assets.decocache.com/brasas-site/1511d5a4-d338-4d41-8cf6-e00d75359d86/nova-desktop.png",
             "width": 1920,
             "height": 1080
           },
           "mobile": {
-            "image": "https://assets.decocache.com/brasas-site/153a2f50-d04d-4510-ac86-d0c77ea0b4ed/mobile.png",
+            "image": "https://assets.decocache.com/brasas-site/69042518-9bc8-4b8e-b942-6dca9d5c1a3c/nova-mobile.png",
             "width": 385,
             "height": 634
           },
           "alt": "Banner",
           "link": "https://campanha.brasas.com/brasas-promo-200-de-credito",
           "tablet": {
-            "image": "https://assets.decocache.com/brasas-site/1802e65f-94cf-4ace-bfec-2803cefa9283/tablet.png",
+            "image": "https://assets.decocache.com/brasas-site/80a3afac-25fe-4dd9-9008-805a4d71cc49/nova-tablet.png",
             "width": 1024,
             "height": 768
           },
@@ -33,7 +33,7 @@
             "height": 1080
           },
           "ultrawide": {
-            "image": "https://assets.decocache.com/brasas-site/2ef144ad-2f5a-4921-937e-752f62ee4798/ultra-wide.png",
+            "image": "https://assets.decocache.com/brasas-site/b578ae52-567c-464c-b6aa-31754b3d5244/nova-ultrawide.png",
             "width": 2560,
             "height": 1080
           }
