@@ -11,12 +11,12 @@
       "images": [
         {
           "desktop": {
-            "image": "https://assets.decocache.com/brasas-site/1511d5a4-d338-4d41-8cf6-e00d75359d86/nova-desktop.png",
+            "image": "https://assets.decocache.com/brasas-site/1a58dc82-1f7a-4a75-94c1-d19548fe8aad/new-desktop.png",
             "width": 1920,
             "height": 1080
           },
           "mobile": {
-            "image": "https://assets.decocache.com/brasas-site/69042518-9bc8-4b8e-b942-6dca9d5c1a3c/nova-mobile.png",
+            "image": "https://assets.decocache.com/brasas-site/0901ed81-bea8-4667-80a5-5cd8aabf66eb/new-mobile.png",
             "width": 385,
             "height": 634
           },
