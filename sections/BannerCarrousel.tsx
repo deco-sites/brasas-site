@@ -11,11 +11,14 @@ export interface BannerImage {
  * @titleBy alt
  */
 export interface Banner {
-  /** @description Mobile-optimized image (e.g. 768px) */
+  /** @description Mobile-optimized image (e.g. < 768px) */
   mobile: BannerImage;
 
-  /** @description Tablet-optimized image (e.g. 1024px–1440px) */
+  /** @description Tablet-optimized image (e.g. 768px–1024px) */
   tablet: BannerImage;
+
+  /** @description Laptop-optimized image (e.g. 1024px–1440px) */
+  laptop: BannerImage;
 
   /** @description Desktop/desktop image (e.g. 1440px–1920px) */
   desktop: BannerImage;

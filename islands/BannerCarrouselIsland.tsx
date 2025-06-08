@@ -16,7 +16,7 @@ function BannerItem({ image, lcp, id }: {
   lcp?: boolean;
   id: string;
 }) {
-  const { alt, mobile, tablet, desktop, ultrawide, link } = image;
+  const { alt, mobile, tablet, laptop, desktop, ultrawide, link } = image;
 
   const [windowWidth, setWindowWidth] = useState<number>(
     typeof window !== "undefined" ? window.innerWidth : 0,
@@ -33,7 +33,8 @@ function BannerItem({ image, lcp, id }: {
   // Escolhe a imagem com base na largura
   const getResponsiveImage = () => {
     if (windowWidth >= 1920) return ultrawide;
-    if (windowWidth >= 1024) return desktop;
+    if (windowWidth >= 1440) return desktop;
+    if (windowWidth >= 1024) return laptop;
     if (windowWidth >= 768) return tablet;
     return mobile;
   };
@@ -159,7 +160,7 @@ export default function BannerCarrouselIsland(props) {
     <div
       className={`relative xl:pb-0 flex flex-col-reverse xl:flex-row justify-center bg-blue-300`}
     >
-      <div className="flex gap-6 w-full h-[39.6] xl:h-[42rem]">
+      <div className="flex gap-6 w-full h-[39.6rem] xl:h-[42rem]">
         <div
           id={id}
           className="w-full relative "

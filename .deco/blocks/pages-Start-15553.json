@@ -11,29 +11,29 @@
       "images": [
         {
           "desktop": {
-            "image": "https://assets.decocache.com/brasas-site/1a58dc82-1f7a-4a75-94c1-d19548fe8aad/new-desktop.png",
+            "image": "https://assets.decocache.com/brasas-site/4207b727-5de7-41a5-b9df-8095355b29a3/new-desktop.png",
             "width": 1920,
             "height": 1080
           },
           "mobile": {
-            "image": "https://assets.decocache.com/brasas-site/394e2563-9237-4af6-82bd-74a2f388ee88/new-mobile-2.png",
+            "image": "https://assets.decocache.com/brasas-site/2cea3eac-d04f-4f38-984b-ce12f69390f3/new-mobile-2.png",
             "width": 385,
             "height": 634
           },
           "alt": "Banner",
           "link": "https://campanha.brasas.com/brasas-promo-200-de-credito",
           "tablet": {
-            "image": "https://assets.decocache.com/brasas-site/80a3afac-25fe-4dd9-9008-805a4d71cc49/nova-tablet.png",
+            "image": "https://assets.decocache.com/brasas-site/8f4c7a7c-df95-4747-b7a7-1421631f0bcf/nova-tablet.png",
             "width": 1024,
             "height": 768
           },
           "laptop": {
-            "image": "https://assets.decocache.com/brasas-site/e8718808-8363-467f-838f-f0d2d619ecf2/BOL_Campanha-200-Credito_Junho-Agosto_Webdoor_1920x1080_Ultra-Wide.png",
-            "width": 1920,
+            "image": "https://assets.decocache.com/brasas-site/e4d0166d-fe87-45b5-90f2-84fb2ea728ae/laptop.png",
+            "width": 1440,
             "height": 1080
           },
           "ultrawide": {
-            "image": "https://assets.decocache.com/brasas-site/13cafced-ce9c-42c6-955a-ccbed24b738c/new-ultrawide-2.png",
+            "image": "https://assets.decocache.com/brasas-site/f3ec15dc-55d9-4b9d-aa8d-0010bf6b7a68/new-ultrawide-2.png",
             "width": 2560,
             "height": 1080
           }
