@@ -141,6 +141,16 @@ export default defineApp(async (_req, ctx) => {
 
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
+        {/* Google Tag Manager */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=GTM-PXCP9QB"
+        >
+        </script>
+        <script>
+          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date()); gtag('config', 'GTM-PXCP9QB');`}
+        </script>
 
         {/* CSS do Leaflet */}
         <link
