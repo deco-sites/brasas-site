@@ -143,17 +143,13 @@
                   "isWhatsapp": false
                 },
                 {
-                  "number": "2122665026",
-                  "isWhatsapp": false
-                },
-                {
                   "number": "21992717526",
                   "isWhatsapp": true
                 }
               ],
               "name": "Botafogo",
               "image": "https://assets.decocache.com/brasas-site/763ac519-501c-4abb-a574-838a82ba2fd2/botafogo.jpg",
-              "address": "R. Voluntários da Pátria, 190 - 3º andar",
+              "address": "R. Voluntários da Pátria, 147 - 3º andar",
               "neighborhood": "Botafogo",
               "city": "Rio de Janeiro",
               "state": "RJ",
@@ -923,7 +919,7 @@
             {
               "tels": [
                 {
-                  "number": "2730294720",
+                  "number": "2730294975",
                   "isWhatsapp": false
                 },
                 {
