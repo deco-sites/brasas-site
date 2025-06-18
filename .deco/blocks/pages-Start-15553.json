@@ -11,29 +11,116 @@
       "images": [
         {
           "desktop": {
-            "image": "https://assets.decocache.com/brasas-site/4207b727-5de7-41a5-b9df-8095355b29a3/new-desktop.png",
+            "image": "https://assets.decocache.com/brasas-site/19495616-eb82-44dc-993a-e2fb53deb02c/DESKTOP_CERT_INTERai.png",
             "width": 1920,
             "height": 1080
           },
           "mobile": {
-            "image": "https://assets.decocache.com/brasas-site/2cea3eac-d04f-4f38-984b-ce12f69390f3/new-mobile-2.png",
+            "image": "https://assets.decocache.com/brasas-site/c92d497d-1f41-46f5-a54f-3047f2ec9479/BRASAS_Campanha_2025_Abril_Certificacoes-Internacionais_webdoors_mobile_385x634.png",
             "width": 385,
             "height": 634
           },
           "alt": "Banner",
           "link": "https://campanha.brasas.com/brasas-promo-200-de-credito",
           "tablet": {
-            "image": "https://assets.decocache.com/brasas-site/8f4c7a7c-df95-4747-b7a7-1421631f0bcf/nova-tablet.png",
+            "image": "https://assets.decocache.com/brasas-site/87856fa1-837d-462c-8c9f-46154de2d217/TABLET_CERT_INTER.png",
             "width": 1024,
             "height": 768
           },
           "laptop": {
-            "image": "https://assets.decocache.com/brasas-site/e4d0166d-fe87-45b5-90f2-84fb2ea728ae/laptop.png",
+            "image": "https://assets.decocache.com/brasas-site/d5f29477-9dc3-4558-bd70-3733b892a449/LAPTOP_CERT_INTER.png",
             "width": 1440,
             "height": 1080
           },
           "ultrawide": {
-            "image": "https://assets.decocache.com/brasas-site/f3ec15dc-55d9-4b9d-aa8d-0010bf6b7a68/new-ultrawide-2.png",
+            "image": "https://assets.decocache.com/brasas-site/6830cfae-36bd-43ec-98a8-4016cbee4a66/ULTRAWIDE_CERT_INT.png",
+            "width": 2560,
+            "height": 1080
+          }
+        },
+        {
+          "desktop": {
+            "image": "https://assets.decocache.com/brasas-site/26c104a8-62f5-4abe-8532-fea78c868ff9/DESKTOP_INDGAN.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "mobile": {
+            "image": "https://assets.decocache.com/brasas-site/482ea656-fddd-431e-a756-99dca7f3cf0f/BRASAS_Webdoor-Mobile_Indique-e-Ganhe_Mobile.png",
+            "width": 385,
+            "height": 634
+          },
+          "alt": "Banner",
+          "link": "https://campanha.brasas.com/brasas-promo-200-de-credito",
+          "tablet": {
+            "image": "https://assets.decocache.com/brasas-site/f964add2-6555-4d89-a9b5-6bb353c1af24/TABLET_INDGAN.png",
+            "width": 1024,
+            "height": 768
+          },
+          "laptop": {
+            "image": "https://assets.decocache.com/brasas-site/dcbbab34-5917-4575-8e7d-a7bd4e1df15e/LAPTOP_IND_GAN.png",
+            "width": 1440,
+            "height": 1080
+          },
+          "ultrawide": {
+            "image": "https://assets.decocache.com/brasas-site/1aeb3f67-2c1d-402e-8fd9-ebc3062e280f/ULTRAWIDE_INDIQUE.png",
+            "width": 2560,
+            "height": 1080
+          }
+        },
+        {
+          "desktop": {
+            "image": "https://assets.decocache.com/brasas-site/48502452-0054-42c9-90bb-613b12752f85/DESKTOP_BRASAS-CAST.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "mobile": {
+            "image": "https://assets.decocache.com/brasas-site/729e7d7c-ed95-428b-9de9-55ab43381cd9/BRASAS_BRASAS-Cast_Webdoor_Mobile.png",
+            "width": 385,
+            "height": 634
+          },
+          "alt": "Banner",
+          "link": "https://campanha.brasas.com/brasas-promo-200-de-credito",
+          "tablet": {
+            "image": "https://assets.decocache.com/brasas-site/ea9011a5-3ee3-4810-97e6-ebeb9cbc03d6/TABLET_BRASASCAST.png",
+            "width": 1024,
+            "height": 768
+          },
+          "laptop": {
+            "image": "https://assets.decocache.com/brasas-site/301fc464-ea22-48e8-ad5e-7f5cd1504e94/LAPTOP_BRASASCAST.png",
+            "width": 1440,
+            "height": 1080
+          },
+          "ultrawide": {
+            "image": "https://assets.decocache.com/brasas-site/b8b781b2-b899-4d25-96b4-54d2f9c41260/ULTRAWIDE_BRASASCAST.png",
+            "width": 2560,
+            "height": 1080
+          }
+        },
+        {
+          "desktop": {
+            "image": "https://assets.decocache.com/brasas-site/ff0bb74d-5fc2-4d7f-bea2-b115dc4fdfc1/DESKTOP_NIVEL.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "mobile": {
+            "image": "https://assets.decocache.com/brasas-site/f89608ff-9f3d-4511-b83c-6bf5e278c6ff/BRASAS_Webdoor_Teste-mobile.png",
+            "width": 385,
+            "height": 634
+          },
+          "alt": "Banner",
+          "link": "https://campanha.brasas.com/brasas-promo-200-de-credito",
+          "tablet": {
+            "image": "https://assets.decocache.com/brasas-site/2e43030e-5db8-466e-be85-95048ad0eb8f/TABLET_NIVELAMENTO.png",
+            "width": 1024,
+            "height": 768
+          },
+          "laptop": {
+            "image": "https://assets.decocache.com/brasas-site/dd497717-b62e-40a8-83de-6a83657e593f/LAPTOP_TESTENIVEL.png",
+            "width": 1440,
+            "height": 1080
+          },
+          "ultrawide": {
+            "image": "https://assets.decocache.com/brasas-site/d38bc5c9-24d0-4add-ad46-a8d3af70b504/ULTRAWIDE_NIVELAMENTO.png",
             "width": 2560,
             "height": 1080
           }
