@@ -2,7 +2,7 @@ import { useSelectLanguage } from "site/sdk/language.ts";
 import TextInput from "site/components/ui/TextInput.tsx";
 import IconSend from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/send.tsx";
 import IconArrowNarrowRight from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/arrow-narrow-right.tsx";
-import { useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import { invoke } from "../runtime.ts";
 import InputCheckbox from "site/components/ui/InputCheckbox.tsx";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
@@ -11,6 +11,7 @@ import Recaptcha from "site/helpers/recaptcha.tsx";
 
 export default function IWantKnowMoreIsland(props) {
   const { selectedLanguage } = useSelectLanguage();
+  const [formId, setFormId] = useState("default-form-id");
 
   const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
   const [name, setName] = useState("");
@@ -33,6 +34,15 @@ export default function IWantKnowMoreIsland(props) {
     telefone: phone,
   };
 
+  useEffect(() => {
+    const pathname = window.location.pathname.replace(/\//g, "-").replace(
+      /^-|-$/g,
+      "",
+    );
+    const id = pathname || "home";
+    setFormId(id);
+  }, []);
+
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
@@ -50,7 +60,7 @@ export default function IWantKnowMoreIsland(props) {
 
     if (emailSent === 200) setIsConfirmationModalOpen(true);
 
-    sendToRDStation(sendDataToRD, "i-want-know-more-form");
+    sendToRDStation(sendDataToRD, `i-want-know-more-form-${formId}`);
 
     setName("");
     setEmail("");
