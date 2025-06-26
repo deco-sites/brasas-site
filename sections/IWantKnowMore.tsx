@@ -1,14 +1,28 @@
 import IWantKnowMoreIsland from "site/islands/IWantKnowMoreIsland.tsx";
 import { CopyEmail, RecipientsEmail } from "site/types/Emails.ts";
 
+interface InputProps {
+  label: string;
+  placeholder: string;
+}
+
 interface IWantKnowMoreProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
+  levelingTitle: string;
+  levelingSubtitle: string;
+  levelingButtonText: string;
+  levelingButtonLink: string;
+  formTitle: string;
+  formSubtitle: string;
+  nameInput: InputProps;
+  emailInput: InputProps;
+  telInput: InputProps;
+  acceptanceTermText: string;
+  sendButtonText: string;
   RecipientsEmailArr: RecipientsEmail[];
   CopyToArr?: CopyEmail[];
   subject: string;
   rendersLeveling?: boolean;
-  testButtonLink: string;
 }
 
 export default function IWantKnowMore(props: IWantKnowMoreProps) {

@@ -36,105 +36,125 @@
     {
       "textInEnglish": "o brasas",
       "textInPortuguese": "o brasas",
-      "url": "/sobre"
+      "url": "/sobre",
+      "text": "o brasas"
     },
     {
       "textInEnglish": "method",
       "textInPortuguese": "método",
-      "url": "/metodo"
+      "url": "/metodo",
+      "text": "método"
     },
     {
       "textInEnglish": "branches",
       "textInPortuguese": "unidades",
-      "url": "/unidades"
+      "url": "/unidades",
+      "text": "unidades"
     },
     {
       "textInEnglish": "refer and win",
       "textInPortuguese": "indique e ganhe",
-      "url": "/indique_e_ganhe"
+      "url": "/indique_e_ganhe",
+      "text": "indique e ganhe"
     },
     {
       "textInEnglish": "partnerships",
       "textInPortuguese": "parcerias",
-      "url": "/parcerias"
+      "url": "/parcerias",
+      "text": "parcerias"
     },
     {
       "textInEnglish": "contact us",
       "textInPortuguese": "fale conosco",
-      "url": "/contatos"
+      "url": "/contatos",
+      "text": "fale conosco"
     },
     {
       "textInEnglish": "work with us",
       "textInPortuguese": "trabalhe conosco",
-      "url": "/trabalhe_conosco"
+      "url": "/trabalhe_conosco",
+      "text": "trabalhe conosco"
     },
     {
       "textInEnglish": "be a franchisee",
       "textInPortuguese": "seja franqueado",
-      "url": "/franqueado"
+      "url": "/franqueado",
+      "text": "seja franqueado"
     },
     {
       "textInEnglish": "faq",
       "textInPortuguese": "perguntas frequentes",
-      "url": "/perguntas"
+      "url": "/perguntas",
+      "text": "perguntas frequentes"
     }
   ],
   "coursesList": [
     {
       "nameInEnglish": "pre-k",
       "nameInPortuguese": "pre-k",
-      "url": "/prek"
+      "url": "/prek",
+      "name": "pre-k"
     },
     {
       "nameInEnglish": "kids",
       "nameInPortuguese": "kids",
-      "url": "/kids"
+      "url": "/kids",
+      "name": "kids"
     },
     {
       "nameInEnglish": "juniors & teens",
       "nameInPortuguese": "juniors & teens",
-      "url": "/juniors_e_teens"
+      "url": "/juniors_e_teens",
+      "name": "juniors & teens"
     },
     {
       "nameInEnglish": "adults",
       "nameInPortuguese": "adults",
-      "url": "/adults"
+      "url": "/adults",
+      "name": "adults"
     },
     {
       "nameInEnglish": "international certification",
       "nameInPortuguese": "certificação internacional",
-      "url": "/certificacoes"
+      "url": "/certificacoes",
+      "name": "certificação internacional"
     },
     {
       "nameInEnglish": "BRASAS online english",
       "nameInPortuguese": "BRASAS online english",
-      "url": "/bol"
+      "url": "/bol",
+      "name": "BRASAS online english"
     },
     {
       "nameInEnglish": "immersion",
       "nameInPortuguese": "imersão",
-      "url": "/adults#ancora-immersion-conversation"
+      "url": "/adults#ancora-immersion-conversation",
+      "name": "imersão"
     },
     {
       "nameInEnglish": "conversation",
       "nameInPortuguese": "conversation",
-      "url": "/adults#ancora-immersion-conversation"
+      "url": "/adults#ancora-immersion-conversation",
+      "name": "conversation"
     },
     {
       "nameInEnglish": "Portuguese for Foreigners",
       "nameInPortuguese": "Português para estrangeiros",
-      "url": "/pff"
+      "url": "/pff",
+      "name": "Português para estrangeiros"
     }
   ],
   "testButton": {
     "textInEnglish": "test your english",
     "textInPortuguese": "teste seu inglês",
-    "url": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br"
+    "url": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+    "text": "teste seu inglês"
   },
   "myBrasasButton": {
     "textInEnglish": "my brasas",
     "textInPortuguese": "my brasas",
-    "url": "https://id.layers.digital/sign-in/select-account?community=sophia-4375-25"
+    "url": "https://id.layers.digital/sign-in/select-account?community=sophia-4375-25",
+    "text": "my brasas"
   },
   "seals": [
     {
@@ -245,24 +265,28 @@
         "width": 74,
         "height": 13
       },
-      "title": "Selo RA Verificada"
+      "title": "Selo RA Verificada",
+      "text": "vericada por"
     }
   ],
   "endPageNavItems": [
     {
       "textInEnglish": "Privacy Policy",
       "textInPortuguese": "Política de Privacidade",
-      "url": "/privacidade"
+      "url": "/privacidade",
+      "text": "Política de Privacidade"
     },
     {
       "textInEnglish": "Terms of Use",
       "textInPortuguese": "Termos de Uso",
-      "url": "/termos"
+      "url": "/termos",
+      "text": "Termos de Uso"
     }
   ],
   "copyright": {
     "textInEnglish": "All rights reserved",
-    "textInPortuguese": "Todos os direitos reservados"
+    "textInPortuguese": "Todos os direitos reservados",
+    "text": "Todos os direitos reservados"
   },
   "footerLogo": {
     "0": "h",
@@ -364,5 +388,7 @@
   "socialMediaTitleInPortuguese": "siga nas redes",
   "coursesTitleInEnglish": "courses",
   "coursesTitleInPortuguese": "cursos",
-  "coursesLink": "/cursos"
+  "coursesLink": "/cursos",
+  "socialMediaTitle": "siga nas redes",
+  "coursesTitle": "cursos"
 }

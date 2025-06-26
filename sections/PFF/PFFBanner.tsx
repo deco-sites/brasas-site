@@ -4,9 +4,10 @@ import PFFBannerIsland from "site/islands/PFF/PFFBannerIsland.tsx";
 interface PFFBannerProps {
   bgImageDesktop: ImageWidget;
   bgImageMobile: ImageWidget;
-  imageInEnglish: ImageWidget;
-  imageInPortuguese: ImageWidget;
+  image: ImageWidget;
   hasNotice: boolean;
+  /* @format rich-text */
+  noticeText?: string;
 }
 
 export default function PFFBanner(props: PFFBannerProps) {

@@ -27,7 +27,7 @@ import * as $Certifications_CertificationsBannerIsland from "./islands/Certifica
 import * as $Certifications_CertificationsPageBannerIsland from "./islands/Certifications/CertificationsPageBannerIsland.tsx";
 import * as $Certifications_ToeflITPCertificationIsland from "./islands/Certifications/ToeflITPCertificationIsland.tsx";
 import * as $Certifications_ToefljrCertificationIsland from "./islands/Certifications/ToefljrCertificationIsland.tsx";
-import * as $Certifications_ToiecCertificationIsland from "./islands/Certifications/ToiecCertificationIsland.tsx";
+import * as $Certifications_ToeicCertificationIsland from "./islands/Certifications/ToeicCertificationIsland.tsx";
 import * as $Contact_FormSectionIsland from "./islands/Contact/FormSectionIsland.tsx";
 import * as $CookiesCardIsland from "./islands/CookiesCardIsland.tsx";
 import * as $CoursesCardsSectionIsland from "./islands/CoursesCardsSectionIsland.tsx";
@@ -42,6 +42,7 @@ import * as $Home_BrasasCardsIsland from "./islands/Home/BrasasCardsIsland.tsx";
 import * as $Home_DiscoverOurCoursesIsland from "./islands/Home/DiscoverOurCoursesIsland.tsx";
 import * as $Home_TestimonialsIsland from "./islands/Home/TestimonialsIsland.tsx";
 import * as $IWantKnowMoreIsland from "./islands/IWantKnowMoreIsland.tsx";
+import * as $InternationalizationController from "./islands/InternationalizationController.tsx";
 import * as $JuniorsAndTeens_JuniorsAndTeensIsland from "./islands/JuniorsAndTeens/JuniorsAndTeensIsland.tsx";
 import * as $Kids_KidsCardsIsland from "./islands/Kids/KidsCardsIsland.tsx";
 import * as $Method_ConnectedDifferencesIsland from "./islands/Method/ConnectedDifferencesIsland.tsx";
@@ -111,8 +112,8 @@ const manifest = {
       $Certifications_ToeflITPCertificationIsland,
     "./islands/Certifications/ToefljrCertificationIsland.tsx":
       $Certifications_ToefljrCertificationIsland,
-    "./islands/Certifications/ToiecCertificationIsland.tsx":
-      $Certifications_ToiecCertificationIsland,
+    "./islands/Certifications/ToeicCertificationIsland.tsx":
+      $Certifications_ToeicCertificationIsland,
     "./islands/Contact/FormSectionIsland.tsx": $Contact_FormSectionIsland,
     "./islands/CookiesCardIsland.tsx": $CookiesCardIsland,
     "./islands/CoursesCardsSectionIsland.tsx": $CoursesCardsSectionIsland,
@@ -129,6 +130,8 @@ const manifest = {
       $Home_DiscoverOurCoursesIsland,
     "./islands/Home/TestimonialsIsland.tsx": $Home_TestimonialsIsland,
     "./islands/IWantKnowMoreIsland.tsx": $IWantKnowMoreIsland,
+    "./islands/InternationalizationController.tsx":
+      $InternationalizationController,
     "./islands/JuniorsAndTeens/JuniorsAndTeensIsland.tsx":
       $JuniorsAndTeens_JuniorsAndTeensIsland,
     "./islands/Kids/KidsCardsIsland.tsx": $Kids_KidsCardsIsland,

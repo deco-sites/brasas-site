@@ -1,18 +1,34 @@
 import WorkWithUsFormIsland from "site/islands/WorkWithUs/WorkWithusFormIsland.tsx";
 import { CopyEmail, RecipientsEmail } from "site/types/Emails.ts";
 
+interface InputProps {
+  label: string;
+  placeholder: string;
+}
+
 /**
- * @titleBy nameInPortuguese
+ * @titleBy name
  */
 interface DesiredArea {
-  nameInPortuguese: string;
-  nameInEnglish: string;
+  name: string;
   value: string;
   RecipientsEmailArr: RecipientsEmail[];
   CopyToArr?: CopyEmail[];
 }
 
 interface WorkWithUsFormProps {
+  formTitle: string;
+  formSubtitle: string;
+  nameInput: InputProps;
+  emailInput: InputProps;
+  telInput: InputProps;
+  cityInput: InputProps;
+  desiredAreaInput: InputProps;
+  curriculumInput: InputProps;
+  additionalCommentsInput: InputProps;
+  acceptanceSendText: string;
+  acceptanceReceiveText: string;
+  buttonText: string;
   desiredAreas: DesiredArea[];
   subject: string;
 }

@@ -1,14 +1,8 @@
-import { useSelectLanguage } from "site/sdk/language.ts";
-
 export default function StatisticsIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <section className="flex flex-col gap-12 items-center bg-green-100 py-20 px-6">
       <p className="text-2xl font-normal max-w-[44rem] text-center">
-        {selectedLanguage.value === "ptBr"
-          ? props.textInPortuguese
-          : props.textInEnglish}
+        {props.text}
       </p>
 
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-36 w-full lg:justify-center">
@@ -18,7 +12,7 @@ export default function StatisticsIsland(props) {
               <div className=" flex items-center justify-center bg-blue-300 w-14 h-14 rounded-full">
                 <img
                   src={item.icon}
-                  alt={item.textInEnglish}
+                  alt={item.text}
                 />
                 {/*Linha esquerda*/}
                 {index !== 0 && (
@@ -38,9 +32,7 @@ export default function StatisticsIsland(props) {
               </div>
             </div>
             <p className="font-black text-2xl whitespace-nowrap lg:text-wrap lg:text-center">
-              {selectedLanguage.value === "ptBr"
-                ? item.textInPortuguese
-                : item.textInEnglish}
+              {item.text}
             </p>
           </div>
         ))}

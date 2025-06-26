@@ -6,7 +6,7 @@ import IconBrandWhatsapp from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/br
 import IconPhoneFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/phone-filled.tsx";
 import IconMapPinFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/map-pin-filled.tsx";
 
-export default function BranchProfilePageIsland() {
+export default function BranchProfilePageIsland(props) {
   const [branchInfos, setBranchInfos] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -86,7 +86,7 @@ export default function BranchProfilePageIsland() {
                     rel="noopener noreferrer"
                     className="text-blue-300 underline text-xs font-semibold"
                   >
-                    Como chegar?
+                    {props.howToGetThereText}
                   </a>
                 </div>
               </div>

@@ -1,19 +1,14 @@
 import TextCarouselIsland from "site/islands/TextCarouselIsland.tsx";
 
 /**
- * @titleBy titleInPortuguese
+ * @titleBy title
  */
 interface Card {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   /**
    * @format rich-text
    */
-  descriptionInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  descriptionInPortuguese: string;
+  description: string;
 }
 
 interface TextCarouselProps {

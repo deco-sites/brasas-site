@@ -1,4 +1,3 @@
-import { useSelectLanguage } from "site/sdk/language.ts";
 import TextInput from "site/components/ui/TextInput.tsx";
 import TextArea from "site/components/ui/Textarea.tsx";
 import InputCheckbox from "site/components/ui/InputCheckbox.tsx";
@@ -8,9 +7,21 @@ import { invoke } from "../../runtime.ts";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 import Recaptcha from "site/helpers/recaptcha.tsx";
+import { getCookie } from "../../helpers/getCookie.ts";
+import { setCookie } from "../../helpers/setCookie.ts";
 
 export default function BecomeAFranchiseeFormIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
+  const [language, setLanguage] = useState("pt-BR");
+
+  useEffect(() => {
+    const currentLang = getCookie("language");
+
+    if (!currentLang) {
+      const userLanguage = navigator.language || navigator.languages[0];
+      setCookie(userLanguage);
+    }
+    setLanguage(currentLang);
+  }, []);
 
   const spanRef = useRef(null);
 
@@ -79,7 +90,7 @@ export default function BecomeAFranchiseeFormIsland(props) {
         link.rel = "noopener noreferrer";
       });
     }
-  }, [props.titleInPortuguese, props.titleInEnglish, selectedLanguage.value]);
+  }, [props.title, language]);
 
   return (
     <>
@@ -89,19 +100,11 @@ export default function BecomeAFranchiseeFormIsland(props) {
           <div className="flex flex-col gap-4 text-black-500 xl:max-w-[34rem] mt-10 w-full xl:w-1/2">
             <span
               className="font-semibold text-2xl leading-10"
-              dangerouslySetInnerHTML={{
-                __html: selectedLanguage.value === "ptBr"
-                  ? props.titleInPortuguese
-                  : props.titleInEnglish,
-              }}
+              dangerouslySetInnerHTML={{ __html: props.title }}
             />
             <span
               ref={spanRef}
-              dangerouslySetInnerHTML={{
-                __html: selectedLanguage.value === "ptBr"
-                  ? props.textInPortuguese
-                  : props.textInEnglish,
-              }}
+              dangerouslySetInnerHTML={{ __html: props.text }}
             />
           </div>
 
@@ -113,45 +116,45 @@ export default function BecomeAFranchiseeFormIsland(props) {
             >
               <div className="flex flex-col gap-4 text-black-500">
                 <span className="font-bold text-3xl leading-10">
-                  Entre em contato!
+                  {props.formTitle}
                 </span>
                 <span className="text-base font-normal">
-                  Para enviar uma mensagem, é necessário preencher os campos.
+                  {props.formSubtitle}
                 </span>
               </div>
               <div className="flex flex-col gap-4">
                 <TextInput
-                  label="nome"
-                  placeholder="insira seu nome"
+                  label={props.nameInput.label}
+                  placeholder={props.nameInput.placeholder}
                   value={name}
                   setValue={setName}
                   required
                 />
                 <TextInput
-                  label="e-mail"
-                  placeholder="insira seu e-mail"
+                  label={props.emailInput.label}
+                  placeholder={props.emailInput.placeholder}
                   value={email}
                   setValue={setEmail}
                   required
                   type="email"
                 />
                 <TextInput
-                  label="telefone"
-                  placeholder="(dd) xxxxx-xxxx"
+                  label={props.telInput.label}
+                  placeholder={props.telInput.placeholder}
                   value={phone}
                   setValue={setPhone}
                   required
                   type="tel"
                 />
                 <TextArea
-                  label="mensagem"
-                  placeholder="insira sua mensagem"
+                  label={props.messageInput.label}
+                  placeholder={props.messageInput.placeholder}
                   value={message}
                   setValue={setMessage}
                   required
                 />
                 <InputCheckbox
-                  text="Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses"
+                  text={props.acceptanceText}
                   value={acceptedTerms}
                   setValue={setAcceptedTerms}
                   required
@@ -166,7 +169,7 @@ export default function BecomeAFranchiseeFormIsland(props) {
 
               <button className="bg-gray-500 hover:bg-blue-300 transition duration-300 text-white rounded-lg w-full py-4 flex gap-2 justify-center items-center">
                 <IconSend class="w-6 h-6" />
-                <span>Enviar</span>
+                <span>{props.buttonText}</span>
               </button>
             </form>
           </div>

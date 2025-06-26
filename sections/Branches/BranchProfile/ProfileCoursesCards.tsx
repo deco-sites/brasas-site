@@ -2,11 +2,10 @@ import ProfileCoursesCardsIsland from "site/islands/Branches/BranchProfile/Profi
 import { CourseCard } from "site/types/CourseCards.ts";
 
 interface ProfileCoursesCardsProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   cards: CourseCard[];
 }
 
-export default function ProfileCoursesCards(props:ProfileCoursesCardsProps) {
+export default function ProfileCoursesCards(props: ProfileCoursesCardsProps) {
   return <ProfileCoursesCardsIsland {...props} />;
 }

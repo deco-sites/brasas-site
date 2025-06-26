@@ -1,30 +1,22 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import PFFCardsIsland from "site/islands/PFF/PFFCardsIsland.tsx";
 
+/* @titleBy text */
 interface Item {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
 }
 
 interface PFFCardsProps {
   /**
    * @format rich-text
    */
-  textInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  textInPortuguese: string;
+  text: string;
   items: Item[];
   image: ImageWidget;
   /**
    * @format rich-text
    */
-  bottomTextInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  bottomTextInPortuguese: string;
+  bottomText: string;
 }
 
 export default function PFFCards(props: PFFCardsProps) {

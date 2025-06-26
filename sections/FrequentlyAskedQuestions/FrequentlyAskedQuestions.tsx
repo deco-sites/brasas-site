@@ -1,17 +1,12 @@
 import FrequentlyAskedQuestionsIsland from "site/islands/FrequentlyAskedQuestions/FrequentlyAskedQuestionsIsland.tsx";
 
-/* @titleBy titleInPortuguese */
+/* @titleBy title */
 interface Item {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   /**
    * @format rich-text
    */
-  textInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  textInPortuguese: string;
+  text: string;
 }
 
 interface FrequentlyAskedQuestionsProps {

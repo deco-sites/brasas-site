@@ -1,8 +1,20 @@
 import Image from "apps/website/components/Image.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
+import { useEffect, useState } from "preact/hooks";
+import { getCookie } from "../../helpers/getCookie.ts";
+import { setCookie } from "../../helpers/setCookie.ts";
 
 export default function AdultsCardsIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
+  const [language, setLanguage] = useState("pt-BR");
+
+  useEffect(() => {
+    const currentLang = getCookie("language");
+
+    if (!currentLang) {
+      const userLanguage = navigator.language || navigator.languages[0];
+      setCookie(userLanguage);
+    }
+    setLanguage(currentLang);
+  }, []);
 
   return (
     <div className="flex w-full justify-center">
@@ -12,9 +24,7 @@ export default function AdultsCardsIsland(props) {
             <span
               className="text-2xl"
               dangerouslySetInnerHTML={{
-                __html: selectedLanguage.value === "ptBr"
-                  ? props.textInPortuguese
-                  : props.textInEnglish,
+                __html: props.text,
               }}
             >
             </span>
@@ -23,7 +33,7 @@ export default function AdultsCardsIsland(props) {
 
         <div className="flex flex-col gap-6 items-center justify-center py-5 lg:pb-11">
           <Image
-            src={selectedLanguage.value === "ptBr"
+            src={language === "pt-BR"
               ? "/AdultsPage/adults-1-pt.png"
               : "/AdultsPage/adults-1-en.png"}
             alt="Kids Cards"
@@ -38,9 +48,7 @@ export default function AdultsCardsIsland(props) {
                   className="w-14 h-14 object-contain"
                 />
                 <span className="text-blue-900 font-black text-xl">
-                  {selectedLanguage.value === "ptBr"
-                    ? "teste de nivelamento grátis sem compromisso"
-                    : "free placement test without obligation"}
+                  {props.leftItem}
                 </span>
               </div>
               <div className="flex gap-4 lg:max-w-[40%]">
@@ -49,29 +57,23 @@ export default function AdultsCardsIsland(props) {
                   className="w-14 h-14 object-contain"
                 />
                 <span className="text-blue-900 font-black text-xl">
-                  {selectedLanguage.value === "ptBr"
-                    ? "aulas de apoio gratuitas"
-                    : "free support classes"}
+                  {props.rightItem}
                 </span>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center text-blue-900 text-xs">
               <span className="text-center">
-                {selectedLanguage.value === "ptBr"
-                  ? "*Duração aproximada do curso (sem férias, recessos e feriados)."
-                  : "*Approximate duration of the course (without holidays, breaks and public holidays)."}
+                {props.firstDescriptionPhrase}
               </span>
               <span className="text-center">
-                {selectedLanguage.value === "ptBr"
-                  ? "**Podem ser 2 dias na semana ou 2 aulas consecutivas no mesmo dia."
-                  : "**It can be 2 days a week or 2 consecutive classes in the same day."}
+                {props.secondDescriptionPhrase}
               </span>
             </div>
           </div>
           {
             /*
           <Image
-            src={selectedLanguage.value === "ptBr"
+            src={language === "ptBr"
               ? "/AdultsPage/adults-2-pt.png"
               : "/AdultsPage/adults-2-en.png"}
             alt="Kids Cards"

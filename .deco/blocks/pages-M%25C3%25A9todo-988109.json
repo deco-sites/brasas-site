@@ -1,109 +1,267 @@
 {
   "name": "Método",
   "path": "/metodo",
-  "sections": [
-    {
-      "__resolveType": "Header"
-    },
-    {
-      "__resolveType": "site/sections/Method/MethodPageBanner.tsx",
-      "principalWordInEnglish": "brasas",
-      "secondaryWordInEnglish": "method",
-      "principalWordInPortuguese": "método",
-      "secondaryWordInPortuguese": "brasas"
-    },
-    {
-      "__resolveType": "site/sections/Method/HighlightedDifferences.tsx",
-      "titleInEnglish": "Original and exclusive method that uses the same process as learning the native language: before reading or writing, the student speaks.",
-      "titleInPortuguese": "Método original e exclusivo que utiliza o mesmo processo do aprendizado da língua materna: antes de ler ou escrever, o aluno fala.",
-      "descriptionInEnglish": "The student communicates only in English in the classes, thus acquiring mastery of the four linguistic skills:",
-      "differenceCards": [
-        {
-          "icon": {
-            "src": "https://data.decoassets.com/brasas-site/454946b2-2857-4e38-85d2-267a7d640708/hear.svg",
-            "alt": "Listening Comprehension",
-            "width": 37,
-            "height": 43
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "HeaderEnglish"
           },
-          "textInEnglish": "Listening Comprehension",
-          "textInPortuguese": "Compreensão oral"
-        },
-        {
-          "icon": {
-            "src": "https://data.decoassets.com/brasas-site/13da3e39-7176-418d-95cc-e0fbb96d0e57/speaking.svg",
-            "alt": "Speaking",
-            "width": 40,
-            "height": 33
+          {
+            "__resolveType": "site/sections/Method/MethodPageBanner.tsx",
+            "principalWordInEnglish": "brasas",
+            "secondaryWordInEnglish": "method",
+            "principalWordInPortuguese": "método",
+            "secondaryWordInPortuguese": "brasas",
+            "principalWord": "brasas",
+            "secondaryWord": "method"
           },
-          "textInPortuguese": "Fala",
-          "textInEnglish": "Speaking"
-        },
-        {
-          "icon": {
-            "src": "https://data.decoassets.com/brasas-site/381b4153-32a8-4266-8452-9532d782d432/reading.svg",
-            "alt": "Reading",
-            "width": 48,
-            "height": 48
+          {
+            "__resolveType": "site/sections/Method/HighlightedDifferences.tsx",
+            "titleInEnglish": "Original and exclusive method that uses the same process as learning the native language: before reading or writing, the student speaks.",
+            "titleInPortuguese": "Método original e exclusivo que utiliza o mesmo processo do aprendizado da língua materna: antes de ler ou escrever, o aluno fala.",
+            "descriptionInEnglish": "The student communicates only in English in the classes, thus acquiring mastery of the four linguistic skills:",
+            "differenceCards": [
+              {
+                "icon": {
+                  "src": "https://data.decoassets.com/brasas-site/454946b2-2857-4e38-85d2-267a7d640708/hear.svg",
+                  "alt": "Listening Comprehension",
+                  "width": 37,
+                  "height": 43
+                },
+                "textInEnglish": "Listening Comprehension",
+                "textInPortuguese": "Compreensão oral",
+                "text": "Listening Comprehension"
+              },
+              {
+                "icon": {
+                  "src": "https://data.decoassets.com/brasas-site/13da3e39-7176-418d-95cc-e0fbb96d0e57/speaking.svg",
+                  "alt": "Speaking",
+                  "width": 40,
+                  "height": 33
+                },
+                "textInPortuguese": "Fala",
+                "textInEnglish": "Speaking",
+                "text": "Speaking"
+              },
+              {
+                "icon": {
+                  "src": "https://data.decoassets.com/brasas-site/381b4153-32a8-4266-8452-9532d782d432/reading.svg",
+                  "alt": "Reading",
+                  "width": 48,
+                  "height": 48
+                },
+                "textInEnglish": "Reading",
+                "textInPortuguese": "Leitura",
+                "text": "Reading"
+              },
+              {
+                "icon": {
+                  "src": "https://data.decoassets.com/brasas-site/6d9d9f7d-bf0a-4083-8eaa-f680a7b6d140/writing.svg",
+                  "alt": "Writing",
+                  "width": 48,
+                  "height": 48
+                },
+                "textInPortuguese": "Escrita",
+                "textInEnglish": "Writing",
+                "text": "Writing"
+              }
+            ],
+            "descriptionInPortuguese": "O aluno se comunica somente em inglês nas aulas, pois assim adquire o domínio das quatro habilidades linguísticas:",
+            "title": "Original and exclusive method that uses the same process as learning the native language: before reading or writing, the student speaks.",
+            "description": "The student communicates only in English in the classes, thus acquiring mastery of the four linguistic skills:"
           },
-          "textInEnglish": "Reading",
-          "textInPortuguese": "Leitura"
-        },
-        {
-          "icon": {
-            "src": "https://data.decoassets.com/brasas-site/6d9d9f7d-bf0a-4083-8eaa-f680a7b6d140/writing.svg",
-            "alt": "Writing",
-            "width": 48,
-            "height": 48
+          {
+            "__resolveType": "site/sections/TextCarousel.tsx",
+            "cards": [
+              {
+                "titleInPortuguese": "Tradição, eficiência e fluência",
+                "descriptionInPortuguese": "<p>Com quase <strong>60 anos de história</strong> e mais de <strong>150.000 alunos formados</strong>, o <strong>BRASAS English Course</strong> se consolidou como referência no ensino de inglês no Brasil. Fundado por <strong>George Zinovetz</strong>, o método BRASAS foi desenvolvido com um foco essencial: garantir <strong>fluência real e comunicação eficiente</strong>, priorizando a oralidade desde o primeiro dia de aula.</p>",
+                "descriptionInEnglish": "<p>With almost <strong>60 years of history</strong> and more than <strong>150,000 students graduates</strong>, the <strong>BRASAS English Course</strong> has established itself as a benchmark in english teaching in Brazil. Founded by <strong>George Zinovetz</strong>, the BRASAS method was developed with one essential focus: ensuring <strong>real fluency and effective communication</strong>, prioritizing speaking from the very first day of class.</p>",
+                "titleInEnglish": "Tradition, efficiency, and fluency",
+                "title": "Tradition, efficiency, and fluency",
+                "description": "<p>With almost <strong>60 years of history</strong> and more than <strong>150,000 students graduates</strong>, the <strong>BRASAS English Course</strong> has established itself as a benchmark in english teaching in Brazil. Founded by <strong>George Zinovetz</strong>, the BRASAS method was developed with one essential focus: ensuring <strong>real fluency and effective communication</strong>, prioritizing speaking from the very first day of class.</p>"
+              },
+              {
+                "titleInPortuguese": "Uma Metodologia Exclusiva e Comprovada",
+                "descriptionInPortuguese": "<p>O método BRASAS combina abordagens reconhecidas internacionalmente, como o <strong>Audiolingual Method</strong> e o <strong>Communicative Approach</strong>, além de técnicas de ensino próprias criadas pela equipe pedagógica do BRASAS que fornece um tom especial ao nosso método, criando um aprendizado natural e progressivo. Nossa metodologia:</p><p>&nbsp;</p><p>✅ <strong>Aprendizado 100% em inglês</strong> – Desde a primeira aula, os alunos são imersos no idioma, estimulando o pensamento direto em inglês sem o uso da tradução.</p><p>✅ <strong>Foco na oralidade</strong> – A prática constante da conversação é o diferencial do BRASAS, garantindo confiança e fluência para interações no mundo real.</p><p>✅ <strong>Repetição estruturada e aprendizado intuitivo</strong> – O método reforça padrões gramaticais e estruturas linguísticas através da escuta e repetição guiada, consolidando o idioma de forma natural.</p><p>✅ <strong>Material didático exclusivo</strong> – Nosso conteúdo é totalmente adaptado ao público brasileiro, promovendo uma imersão real na cultura da língua inglesa.</p><p>✅ <strong>Professores altamente capacitados</strong> – Nosso rigoroso processo seletivo inclui aproximadamente <strong>120 horas de treinamento intensivo</strong>, além de workshops e acompanhamento contínuo para garantir a qualidade do ensino.</p>",
+                "descriptionInEnglish": "<p>The BRASAS method combines internationally recognized approaches, such as the <strong>Audiolingual Method</strong> and the <strong>Communicative Approach</strong>, in addition to our own teaching techniques created by the BRASAS pedagogical team that provide a special tone to our method, creating a natural and progressive learning process. Our methodology:</p><p>&nbsp;</p><p>✅ <strong>100% English learning </strong>– From the very first lesson, students are immersed in the language, stimulating direct thinking in English without translation.</p><p>✅ <strong>Focus on speaking</strong> – Constant conversation practice is BRASAS’ key differentiator, ensuring confidence and fluency for real-world interactions.</p><p>✅ <strong>Structured repetition and intuitive learning </strong>– The method reinforces grammatical patterns and linguistic structures through guided listening and repetition, consolidating the language naturally.</p><p>✅ <strong>Exclusive teaching materials</strong> – Our content is fully adapted for the Brazilian audience, promoting an authentic immersion in the English language and culture.</p><p>✅ <strong>Highly qualified teachers</strong> – Our rigorous selection process includes approximately <strong>120 hours of intensive training</strong>, along with workshops and continuous mentoring to ensure high-quality teaching.</p>",
+                "titleInEnglish": "An Exclusive and Proven Methodology",
+                "title": "An Exclusive and Proven Methodology",
+                "description": "<p>The BRASAS method combines internationally recognized approaches, such as the <strong>Audiolingual Method</strong> and the <strong>Communicative Approach</strong>, in addition to our own teaching techniques created by the BRASAS pedagogical team that provide a special tone to our method, creating a natural and progressive learning process. Our methodology:</p><p>&nbsp;</p><p>✅ <strong>100% English learning </strong>– From the very first lesson, students are immersed in the language, stimulating direct thinking in English without translation.</p><p>✅ <strong>Focus on speaking</strong> – Constant conversation practice is BRASAS’ key differentiator, ensuring confidence and fluency for real-world interactions.</p><p>✅ <strong>Structured repetition and intuitive learning </strong>– The method reinforces grammatical patterns and linguistic structures through guided listening and repetition, consolidating the language naturally.</p><p>✅ <strong>Exclusive teaching materials</strong> – Our content is fully adapted for the Brazilian audience, promoting an authentic immersion in the English language and culture.</p><p>✅ <strong>Highly qualified teachers</strong> – Our rigorous selection process includes approximately <strong>120 hours of intensive training</strong>, along with workshops and continuous mentoring to ensure high-quality teaching.</p>"
+              },
+              {
+                "titleInEnglish": "Practice and Immersion for Proven Results",
+                "descriptionInEnglish": "<p>At BRASAS, students engage in daily practical exercises, debates and discussions, actively applying the language. Additionally, our unique method includes:</p><p>&nbsp;</p><p>▪️ <strong>Personalized correction</strong> – Teachers closely monitor students’ performance, ensuring continuous progress.</p><p>▪️ <strong>Use of authentic materials</strong> – Exposure to real English, bringing learning closer to everyday and professional use.</p><p>▪️ <strong>Comprehensive training in all skills</strong> – Besides speaking, BRASAS equally develops writing, reading, and listening comprehension.</p>",
+                "titleInPortuguese": "Prática e Imersão para Resultados Comprovados",
+                "descriptionInPortuguese": "<p>No BRASAS, os alunos participam de exercícios práticos diários, debates e discussões, aplicando o idioma de forma ativa. Além disso, nosso método exclusivo inclui:</p><p>&nbsp;</p><p>▪️ <strong>Correção personalizada</strong> – Professores acompanham individualmente o desempenho dos alunos, garantindo evolução contínua.</p><p>▪️ <strong>Uso de materiais autênticos</strong> – Exposição ao inglês real, aproximando o aprendizado do cotidiano e do uso profissional do idioma.</p><p>▪️ <strong>Treinamento completo em todas as habilidades</strong> – Além da fala, o BRASAS desenvolve a escrita, leitura e compreensão auditiva de forma equilibrada.</p>",
+                "title": "Practice and Immersion for Proven Results",
+                "description": "<p>At BRASAS, students engage in daily practical exercises, debates and discussions, actively applying the language. Additionally, our unique method includes:</p><p>&nbsp;</p><p>▪️ <strong>Personalized correction</strong> – Teachers closely monitor students’ performance, ensuring continuous progress.</p><p>▪️ <strong>Use of authentic materials</strong> – Exposure to real English, bringing learning closer to everyday and professional use.</p><p>▪️ <strong>Comprehensive training in all skills</strong> – Besides speaking, BRASAS equally develops writing, reading, and listening comprehension.</p>"
+              },
+              {
+                "titleInPortuguese": "Sucesso Comprovado: Fluência que Abre Portas",
+                "descriptionInPortuguese": "<p>O método BRASAS já preparou milhares de alunos para <strong>certificações internacionais como TOEIC e TOEFL Jr.</strong>, destacando-se pela <strong>eficiência e resultados consistentes</strong>. Nossa maior prova de sucesso é a confiança dos nossos alunos, que se tornam falantes do inglês capazes de se comunicar com fluidez em qualquer parte do mundo.</p><p>&nbsp;</p><p style=\"text-align: center\"><mark data-color=\"#00000c\" style=\"background-color: #00000c; color: inherit\">Venha para o BRASAS e descubra como aprender inglês pode ser natural, envolvente e transformador!</mark></p><p></p>",
+                "titleInEnglish": "Proven Success: Fluency that Opens Doors",
+                "descriptionInEnglish": "<p>The BRASAS method has already prepared thousands of students for <strong>international certifications such as TOEIC and TOEFL Jr.</strong>, standing out for its <strong>efficiency and consistent results</strong>. Our greatest proof of success is the confidence of our students, who become fluent English speakers capable of communicating anywhere in the world.</p><p>&nbsp;</p><p style=\"text-align: center\"><mark data-color=\"#00000c\" style=\"background-color: #00000c; color: inherit\">Join BRASAS and discover how learning English can be natural, engaging, and life-changing!</mark></p><p></p>",
+                "title": "Proven Success: Fluency that Opens Doors",
+                "description": "<p>The BRASAS method has already prepared thousands of students for <strong>international certifications such as TOEIC and TOEFL Jr.</strong>, standing out for its <strong>efficiency and consistent results</strong>. Our greatest proof of success is the confidence of our students, who become fluent English speakers capable of communicating anywhere in the world.</p><p>&nbsp;</p><p style=\"text-align: center\"><mark data-color=\"#00000c\" style=\"background-color: #00000c; color: inherit\">Join BRASAS and discover how learning English can be natural, engaging, and life-changing!</mark></p><p></p>"
+              }
+            ],
+            "color": "red"
           },
-          "textInPortuguese": "Escrita",
-          "textInEnglish": "Writing"
+          {
+            "__resolveType": "site/sections/Method/ConnectedDifferences.tsx",
+            "titleInEnglish": "The big difference at BRASAS is that the student learns the structures in practice and not just by studying grammar rules, which greatly speeds up language development.",
+            "titleInPortuguese": "A grande diferença do BRASAS é que o aluno aprende as estruturas na prática e não estudando somente regras gramaticais, o que agiliza muito a evolução no idioma.",
+            "desktopImageEnglish": "https://data.decoassets.com/brasas-site/a024cbce-0c99-4ede-bfe4-40e7b496f044/desktop-enUs.png",
+            "mobileImageEnglish": "https://data.decoassets.com/brasas-site/3b2eea9e-9e07-46ca-9128-9cddcd6ca1aa/mobile-enUs.png",
+            "desktopImagePortuguese": "https://assets.decocache.com/brasas-site/4562d722-3dfa-4c25-952e-663495c0677c/mandala-pt.png",
+            "mobileImagePortuguese": "https://data.decoassets.com/brasas-site/9771fa7c-e3e2-4dd8-b2a6-ab6f8c02fced/mobile-ptBr.png",
+            "title": "The big difference at BRASAS is that the student learns the structures in practice and not just by studying grammar rules, which greatly speeds up language development.",
+            "desktopImage": "https://data.decoassets.com/brasas-site/a024cbce-0c99-4ede-bfe4-40e7b496f044/desktop-enUs.png",
+            "mobileImage": "https://data.decoassets.com/brasas-site/3b2eea9e-9e07-46ca-9128-9cddcd6ca1aa/mobile-enUs.png"
+          },
+          {
+            "__resolveType": "FooterEnglish"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/cookie.ts",
+          "name": "language",
+          "value": "en-US"
         }
-      ],
-      "descriptionInPortuguese": "O aluno se comunica somente em inglês nas aulas, pois assim adquire o domínio das quatro habilidades linguísticas:"
-    },
-    {
-      "__resolveType": "site/sections/TextCarousel.tsx",
-      "cards": [
-        {
-          "titleInPortuguese": "Tradição, eficiência e fluência",
-          "descriptionInPortuguese": "<p>Com quase <strong>60 anos de história</strong> e mais de <strong>150.000 alunos formados</strong>, o <strong>BRASAS English Course</strong> se consolidou como referência no ensino de inglês no Brasil. Fundado por <strong>George Zinovetz</strong>, o método BRASAS foi desenvolvido com um foco essencial: garantir <strong>fluência real e comunicação eficiente</strong>, priorizando a oralidade desde o primeiro dia de aula.</p>",
-          "descriptionInEnglish": "<p>With almost <strong>60 years of history</strong> and more than <strong>150,000 students graduates</strong>, the <strong>BRASAS English Course</strong> has established itself as a benchmark in english teaching in Brazil. Founded by <strong>George Zinovetz</strong>, the BRASAS method was developed with one essential focus: ensuring <strong>real fluency and effective communication</strong>, prioritizing speaking from the very first day of class.</p>",
-          "titleInEnglish": "Tradition, efficiency, and fluency"
-        },
-        {
-          "titleInPortuguese": "Uma Metodologia Exclusiva e Comprovada",
-          "descriptionInPortuguese": "<p>O método BRASAS combina abordagens reconhecidas internacionalmente, como o <strong>Audiolingual Method</strong> e o <strong>Communicative Approach</strong>, além de técnicas de ensino próprias criadas pela equipe pedagógica do BRASAS que fornece um tom especial ao nosso método, criando um aprendizado natural e progressivo. Nossa metodologia:</p><p>&nbsp;</p><p>✅ <strong>Aprendizado 100% em inglês</strong> – Desde a primeira aula, os alunos são imersos no idioma, estimulando o pensamento direto em inglês sem o uso da tradução.</p><p>✅ <strong>Foco na oralidade</strong> – A prática constante da conversação é o diferencial do BRASAS, garantindo confiança e fluência para interações no mundo real.</p><p>✅ <strong>Repetição estruturada e aprendizado intuitivo</strong> – O método reforça padrões gramaticais e estruturas linguísticas através da escuta e repetição guiada, consolidando o idioma de forma natural.</p><p>✅ <strong>Material didático exclusivo</strong> – Nosso conteúdo é totalmente adaptado ao público brasileiro, promovendo uma imersão real na cultura da língua inglesa.</p><p>✅ <strong>Professores altamente capacitados</strong> – Nosso rigoroso processo seletivo inclui aproximadamente <strong>120 horas de treinamento intensivo</strong>, além de workshops e acompanhamento contínuo para garantir a qualidade do ensino.</p>",
-          "descriptionInEnglish": "<p>The BRASAS method combines internationally recognized approaches, such as the <strong>Audiolingual Method</strong> and the <strong>Communicative Approach</strong>, in addition to our own teaching techniques created by the BRASAS pedagogical team that provide a special tone to our method, creating a natural and progressive learning process. Our methodology:</p><p>&nbsp;</p><p>✅ <strong>100% English learning </strong>– From the very first lesson, students are immersed in the language, stimulating direct thinking in English without translation.</p><p>✅ <strong>Focus on speaking</strong> – Constant conversation practice is BRASAS’ key differentiator, ensuring confidence and fluency for real-world interactions.</p><p>✅ <strong>Structured repetition and intuitive learning </strong>– The method reinforces grammatical patterns and linguistic structures through guided listening and repetition, consolidating the language naturally.</p><p>✅ <strong>Exclusive teaching materials</strong> – Our content is fully adapted for the Brazilian audience, promoting an authentic immersion in the English language and culture.</p><p>✅ <strong>Highly qualified teachers</strong> – Our rigorous selection process includes approximately <strong>120 hours of intensive training</strong>, along with workshops and continuous mentoring to ensure high-quality teaching.</p>",
-          "titleInEnglish": "An Exclusive and Proven Methodology"
-        },
-        {
-          "titleInEnglish": "Practice and Immersion for Proven Results",
-          "descriptionInEnglish": "<p>At BRASAS, students engage in daily practical exercises, debates and discussions, actively applying the language. Additionally, our unique method includes:</p><p>&nbsp;</p><p>▪️ <strong>Personalized correction</strong> – Teachers closely monitor students’ performance, ensuring continuous progress.</p><p>▪️ <strong>Use of authentic materials</strong> – Exposure to real English, bringing learning closer to everyday and professional use.</p><p>▪️ <strong>Comprehensive training in all skills</strong> – Besides speaking, BRASAS equally develops writing, reading, and listening comprehension.</p>",
-          "titleInPortuguese": "Prática e Imersão para Resultados Comprovados",
-          "descriptionInPortuguese": "<p>No BRASAS, os alunos participam de exercícios práticos diários, debates e discussões, aplicando o idioma de forma ativa. Além disso, nosso método exclusivo inclui:</p><p>&nbsp;</p><p>▪️ <strong>Correção personalizada</strong> – Professores acompanham individualmente o desempenho dos alunos, garantindo evolução contínua.</p><p>▪️ <strong>Uso de materiais autênticos</strong> – Exposição ao inglês real, aproximando o aprendizado do cotidiano e do uso profissional do idioma.</p><p>▪️ <strong>Treinamento completo em todas as habilidades</strong> – Além da fala, o BRASAS desenvolve a escrita, leitura e compreensão auditiva de forma equilibrada.</p>"
-        },
-        {
-          "titleInPortuguese": "Sucesso Comprovado: Fluência que Abre Portas",
-          "descriptionInPortuguese": "<p>O método BRASAS já preparou milhares de alunos para <strong>certificações internacionais como TOEIC e TOEFL Jr.</strong>, destacando-se pela <strong>eficiência e resultados consistentes</strong>. Nossa maior prova de sucesso é a confiança dos nossos alunos, que se tornam falantes do inglês capazes de se comunicar com fluidez em qualquer parte do mundo.</p><p>&nbsp;</p><p style=\"text-align: center\"><mark data-color=\"#00000c\" style=\"background-color: #00000c; color: inherit\">Venha para o BRASAS e descubra como aprender inglês pode ser natural, envolvente e transformador!</mark></p><p></p>",
-          "titleInEnglish": "Proven Success: Fluency that Opens Doors",
-          "descriptionInEnglish": "<p>The BRASAS method has already prepared thousands of students for <strong>international certifications such as TOEIC and TOEFL Jr.</strong>, standing out for its <strong>efficiency and consistent results</strong>. Our greatest proof of success is the confidence of our students, who become fluent English speakers capable of communicating anywhere in the world.</p><p>&nbsp;</p><p style=\"text-align: center\"><mark data-color=\"#00000c\" style=\"background-color: #00000c; color: inherit\">Join BRASAS and discover how learning English can be natural, engaging, and life-changing!</mark></p><p></p>"
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Header"
+          },
+          {
+            "__resolveType": "site/sections/Method/MethodPageBanner.tsx",
+            "principalWordInEnglish": "brasas",
+            "secondaryWordInEnglish": "method",
+            "principalWordInPortuguese": "método",
+            "secondaryWordInPortuguese": "brasas",
+            "principalWord": "método",
+            "secondaryWord": "brasas"
+          },
+          {
+            "__resolveType": "site/sections/Method/HighlightedDifferences.tsx",
+            "titleInEnglish": "Original and exclusive method that uses the same process as learning the native language: before reading or writing, the student speaks.",
+            "titleInPortuguese": "Método original e exclusivo que utiliza o mesmo processo do aprendizado da língua materna: antes de ler ou escrever, o aluno fala.",
+            "descriptionInEnglish": "The student communicates only in English in the classes, thus acquiring mastery of the four linguistic skills:",
+            "differenceCards": [
+              {
+                "icon": {
+                  "src": "https://data.decoassets.com/brasas-site/454946b2-2857-4e38-85d2-267a7d640708/hear.svg",
+                  "alt": "Listening Comprehension",
+                  "width": 37,
+                  "height": 43
+                },
+                "textInEnglish": "Listening Comprehension",
+                "textInPortuguese": "Compreensão oral",
+                "text": "Compreensão oral"
+              },
+              {
+                "icon": {
+                  "src": "https://data.decoassets.com/brasas-site/13da3e39-7176-418d-95cc-e0fbb96d0e57/speaking.svg",
+                  "alt": "Speaking",
+                  "width": 40,
+                  "height": 33
+                },
+                "textInPortuguese": "Fala",
+                "textInEnglish": "Speaking",
+                "text": "Fala"
+              },
+              {
+                "icon": {
+                  "src": "https://data.decoassets.com/brasas-site/381b4153-32a8-4266-8452-9532d782d432/reading.svg",
+                  "alt": "Reading",
+                  "width": 48,
+                  "height": 48
+                },
+                "textInEnglish": "Reading",
+                "textInPortuguese": "Leitura",
+                "text": "Leitura"
+              },
+              {
+                "icon": {
+                  "src": "https://data.decoassets.com/brasas-site/6d9d9f7d-bf0a-4083-8eaa-f680a7b6d140/writing.svg",
+                  "alt": "Writing",
+                  "width": 48,
+                  "height": 48
+                },
+                "textInPortuguese": "Escrita",
+                "textInEnglish": "Writing",
+                "text": "Escrita"
+              }
+            ],
+            "descriptionInPortuguese": "O aluno se comunica somente em inglês nas aulas, pois assim adquire o domínio das quatro habilidades linguísticas:",
+            "title": "Método original e exclusivo que utiliza o mesmo processo do aprendizado da língua materna: antes de ler ou escrever, o aluno fala.",
+            "description": "O aluno se comunica somente em inglês nas aulas, pois assim adquire o domínio das quatro habilidades linguísticas:"
+          },
+          {
+            "__resolveType": "site/sections/TextCarousel.tsx",
+            "cards": [
+              {
+                "titleInPortuguese": "Tradição, eficiência e fluência",
+                "descriptionInPortuguese": "<p>Com quase <strong>60 anos de história</strong> e mais de <strong>150.000 alunos formados</strong>, o <strong>BRASAS English Course</strong> se consolidou como referência no ensino de inglês no Brasil. Fundado por <strong>George Zinovetz</strong>, o método BRASAS foi desenvolvido com um foco essencial: garantir <strong>fluência real e comunicação eficiente</strong>, priorizando a oralidade desde o primeiro dia de aula.</p>",
+                "descriptionInEnglish": "<p>With almost <strong>60 years of history</strong> and more than <strong>150,000 students graduates</strong>, the <strong>BRASAS English Course</strong> has established itself as a benchmark in english teaching in Brazil. Founded by <strong>George Zinovetz</strong>, the BRASAS method was developed with one essential focus: ensuring <strong>real fluency and effective communication</strong>, prioritizing speaking from the very first day of class.</p>",
+                "titleInEnglish": "Tradition, efficiency, and fluency",
+                "title": "Tradição, eficiência e fluência",
+                "description": "<p>Com quase <strong>60 anos de história</strong> e mais de <strong>150.000 alunos formados</strong>, o <strong>BRASAS English Course</strong> se consolidou como referência no ensino de inglês no Brasil. Fundado por <strong>George Zinovetz</strong>, o método BRASAS foi desenvolvido com um foco essencial: garantir <strong>fluência real e comunicação eficiente</strong>, priorizando a oralidade desde o primeiro dia de aula.</p>"
+              },
+              {
+                "titleInPortuguese": "Uma Metodologia Exclusiva e Comprovada",
+                "descriptionInPortuguese": "<p>O método BRASAS combina abordagens reconhecidas internacionalmente, como o <strong>Audiolingual Method</strong> e o <strong>Communicative Approach</strong>, além de técnicas de ensino próprias criadas pela equipe pedagógica do BRASAS que fornece um tom especial ao nosso método, criando um aprendizado natural e progressivo. Nossa metodologia:</p><p>&nbsp;</p><p>✅ <strong>Aprendizado 100% em inglês</strong> – Desde a primeira aula, os alunos são imersos no idioma, estimulando o pensamento direto em inglês sem o uso da tradução.</p><p>✅ <strong>Foco na oralidade</strong> – A prática constante da conversação é o diferencial do BRASAS, garantindo confiança e fluência para interações no mundo real.</p><p>✅ <strong>Repetição estruturada e aprendizado intuitivo</strong> – O método reforça padrões gramaticais e estruturas linguísticas através da escuta e repetição guiada, consolidando o idioma de forma natural.</p><p>✅ <strong>Material didático exclusivo</strong> – Nosso conteúdo é totalmente adaptado ao público brasileiro, promovendo uma imersão real na cultura da língua inglesa.</p><p>✅ <strong>Professores altamente capacitados</strong> – Nosso rigoroso processo seletivo inclui aproximadamente <strong>120 horas de treinamento intensivo</strong>, além de workshops e acompanhamento contínuo para garantir a qualidade do ensino.</p>",
+                "descriptionInEnglish": "<p>The BRASAS method combines internationally recognized approaches, such as the <strong>Audiolingual Method</strong> and the <strong>Communicative Approach</strong>, in addition to our own teaching techniques created by the BRASAS pedagogical team that provide a special tone to our method, creating a natural and progressive learning process. Our methodology:</p><p>&nbsp;</p><p>✅ <strong>100% English learning </strong>– From the very first lesson, students are immersed in the language, stimulating direct thinking in English without translation.</p><p>✅ <strong>Focus on speaking</strong> – Constant conversation practice is BRASAS’ key differentiator, ensuring confidence and fluency for real-world interactions.</p><p>✅ <strong>Structured repetition and intuitive learning </strong>– The method reinforces grammatical patterns and linguistic structures through guided listening and repetition, consolidating the language naturally.</p><p>✅ <strong>Exclusive teaching materials</strong> – Our content is fully adapted for the Brazilian audience, promoting an authentic immersion in the English language and culture.</p><p>✅ <strong>Highly qualified teachers</strong> – Our rigorous selection process includes approximately <strong>120 hours of intensive training</strong>, along with workshops and continuous mentoring to ensure high-quality teaching.</p>",
+                "titleInEnglish": "An Exclusive and Proven Methodology",
+                "title": "Uma Metodologia Exclusiva e Comprovada",
+                "description": "<p>O método BRASAS combina abordagens reconhecidas internacionalmente, como o <strong>Audiolingual Method</strong> e o <strong>Communicative Approach</strong>, além de técnicas de ensino próprias criadas pela equipe pedagógica do BRASAS que fornece um tom especial ao nosso método, criando um aprendizado natural e progressivo. Nossa metodologia:</p><p>&nbsp;</p><p>✅ <strong>Aprendizado 100% em inglês</strong> – Desde a primeira aula, os alunos são imersos no idioma, estimulando o pensamento direto em inglês sem o uso da tradução.</p><p>✅ <strong>Foco na oralidade</strong> – A prática constante da conversação é o diferencial do BRASAS, garantindo confiança e fluência para interações no mundo real.</p><p>✅ <strong>Repetição estruturada e aprendizado intuitivo</strong> – O método reforça padrões gramaticais e estruturas linguísticas através da escuta e repetição guiada, consolidando o idioma de forma natural.</p><p>✅ <strong>Material didático exclusivo</strong> – Nosso conteúdo é totalmente adaptado ao público brasileiro, promovendo uma imersão real na cultura da língua inglesa.</p><p>✅ <strong>Professores altamente capacitados</strong> – Nosso rigoroso processo seletivo inclui aproximadamente <strong>120 horas de treinamento intensivo</strong>, além de workshops e acompanhamento contínuo para garantir a qualidade do ensino.</p>"
+              },
+              {
+                "titleInEnglish": "Practice and Immersion for Proven Results",
+                "descriptionInEnglish": "<p>At BRASAS, students engage in daily practical exercises, debates and discussions, actively applying the language. Additionally, our unique method includes:</p><p>&nbsp;</p><p>▪️ <strong>Personalized correction</strong> – Teachers closely monitor students’ performance, ensuring continuous progress.</p><p>▪️ <strong>Use of authentic materials</strong> – Exposure to real English, bringing learning closer to everyday and professional use.</p><p>▪️ <strong>Comprehensive training in all skills</strong> – Besides speaking, BRASAS equally develops writing, reading, and listening comprehension.</p>",
+                "titleInPortuguese": "Prática e Imersão para Resultados Comprovados",
+                "descriptionInPortuguese": "<p>No BRASAS, os alunos participam de exercícios práticos diários, debates e discussões, aplicando o idioma de forma ativa. Além disso, nosso método exclusivo inclui:</p><p>&nbsp;</p><p>▪️ <strong>Correção personalizada</strong> – Professores acompanham individualmente o desempenho dos alunos, garantindo evolução contínua.</p><p>▪️ <strong>Uso de materiais autênticos</strong> – Exposição ao inglês real, aproximando o aprendizado do cotidiano e do uso profissional do idioma.</p><p>▪️ <strong>Treinamento completo em todas as habilidades</strong> – Além da fala, o BRASAS desenvolve a escrita, leitura e compreensão auditiva de forma equilibrada.</p>",
+                "title": "Prática e Imersão para Resultados Comprovados",
+                "description": "<p>No BRASAS, os alunos participam de exercícios práticos diários, debates e discussões, aplicando o idioma de forma ativa. Além disso, nosso método exclusivo inclui:</p><p>&nbsp;</p><p>▪️ <strong>Correção personalizada</strong> – Professores acompanham individualmente o desempenho dos alunos, garantindo evolução contínua.</p><p>▪️ <strong>Uso de materiais autênticos</strong> – Exposição ao inglês real, aproximando o aprendizado do cotidiano e do uso profissional do idioma.</p><p>▪️ <strong>Treinamento completo em todas as habilidades</strong> – Além da fala, o BRASAS desenvolve a escrita, leitura e compreensão auditiva de forma equilibrada.</p>"
+              },
+              {
+                "titleInPortuguese": "Sucesso Comprovado: Fluência que Abre Portas",
+                "descriptionInPortuguese": "<p>O método BRASAS já preparou milhares de alunos para <strong>certificações internacionais como TOEIC e TOEFL Jr.</strong>, destacando-se pela <strong>eficiência e resultados consistentes</strong>. Nossa maior prova de sucesso é a confiança dos nossos alunos, que se tornam falantes do inglês capazes de se comunicar com fluidez em qualquer parte do mundo.</p><p>&nbsp;</p><p style=\"text-align: center\"><mark data-color=\"#00000c\" style=\"background-color: #00000c; color: inherit\">Venha para o BRASAS e descubra como aprender inglês pode ser natural, envolvente e transformador!</mark></p><p></p>",
+                "titleInEnglish": "Proven Success: Fluency that Opens Doors",
+                "descriptionInEnglish": "<p>The BRASAS method has already prepared thousands of students for <strong>international certifications such as TOEIC and TOEFL Jr.</strong>, standing out for its <strong>efficiency and consistent results</strong>. Our greatest proof of success is the confidence of our students, who become fluent English speakers capable of communicating anywhere in the world.</p><p>&nbsp;</p><p style=\"text-align: center\"><mark data-color=\"#00000c\" style=\"background-color: #00000c; color: inherit\">Join BRASAS and discover how learning English can be natural, engaging, and life-changing!</mark></p><p></p>",
+                "title": "Sucesso Comprovado: Fluência que Abre Portas",
+                "description": "<p>O método BRASAS já preparou milhares de alunos para <strong>certificações internacionais como TOEIC e TOEFL Jr.</strong>, destacando-se pela <strong>eficiência e resultados consistentes</strong>. Nossa maior prova de sucesso é a confiança dos nossos alunos, que se tornam falantes do inglês capazes de se comunicar com fluidez em qualquer parte do mundo.</p><p>&nbsp;</p><p style=\"text-align: center\"><mark data-color=\"#00000c\" style=\"background-color: #00000c; color: inherit\">Venha para o BRASAS e descubra como aprender inglês pode ser natural, envolvente e transformador!</mark></p><p></p>"
+              }
+            ],
+            "color": "red"
+          },
+          {
+            "__resolveType": "site/sections/Method/ConnectedDifferences.tsx",
+            "titleInEnglish": "The big difference at BRASAS is that the student learns the structures in practice and not just by studying grammar rules, which greatly speeds up language development.",
+            "titleInPortuguese": "A grande diferença do BRASAS é que o aluno aprende as estruturas na prática e não estudando somente regras gramaticais, o que agiliza muito a evolução no idioma.",
+            "desktopImageEnglish": "https://data.decoassets.com/brasas-site/a024cbce-0c99-4ede-bfe4-40e7b496f044/desktop-enUs.png",
+            "mobileImageEnglish": "https://data.decoassets.com/brasas-site/3b2eea9e-9e07-46ca-9128-9cddcd6ca1aa/mobile-enUs.png",
+            "desktopImagePortuguese": "https://assets.decocache.com/brasas-site/4562d722-3dfa-4c25-952e-663495c0677c/mandala-pt.png",
+            "mobileImagePortuguese": "https://data.decoassets.com/brasas-site/9771fa7c-e3e2-4dd8-b2a6-ab6f8c02fced/mobile-ptBr.png",
+            "title": "A grande diferença do BRASAS é que o aluno aprende as estruturas na prática e não estudando somente regras gramaticais, o que agiliza muito a evolução no idioma.",
+            "desktopImage": "https://assets.decocache.com/brasas-site/4562d722-3dfa-4c25-952e-663495c0677c/mandala-pt.png",
+            "mobileImage": "https://data.decoassets.com/brasas-site/9771fa7c-e3e2-4dd8-b2a6-ab6f8c02fced/mobile-ptBr.png"
+          },
+          {
+            "__resolveType": "Footer"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
         }
-      ],
-      "color": "red"
-    },
-    {
-      "__resolveType": "site/sections/Method/ConnectedDifferences.tsx",
-      "titleInEnglish": "The big difference at BRASAS is that the student learns the structures in practice and not just by studying grammar rules, which greatly speeds up language development.",
-      "titleInPortuguese": "A grande diferença do BRASAS é que o aluno aprende as estruturas na prática e não estudando somente regras gramaticais, o que agiliza muito a evolução no idioma.",
-      "desktopImageEnglish": "https://data.decoassets.com/brasas-site/a024cbce-0c99-4ede-bfe4-40e7b496f044/desktop-enUs.png",
-      "mobileImageEnglish": "https://data.decoassets.com/brasas-site/3b2eea9e-9e07-46ca-9128-9cddcd6ca1aa/mobile-enUs.png",
-      "desktopImagePortuguese": "https://assets.decocache.com/brasas-site/4562d722-3dfa-4c25-952e-663495c0677c/mandala-pt.png",
-      "mobileImagePortuguese": "https://data.decoassets.com/brasas-site/9771fa7c-e3e2-4dd8-b2a6-ab6f8c02fced/mobile-ptBr.png"
-    },
-    {
-      "__resolveType": "Footer"
-    }
-  ],
+      }
+    ]
+  },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

@@ -1,0 +1,154 @@
+{
+  "__resolveType": "site/sections/Footer.tsx",
+  "footerLogo": {
+    "src": "https://data.decoassets.com/brasas-site/a182f6f1-49af-4c9c-ab8e-699f71edec17/33_unldsq.png",
+    "alt": "Brasas Logo",
+    "width": 197.25,
+    "height": 140.36
+  },
+  "socialMediaIcons": [
+    {
+      "altText": "Facebook",
+      "link": "https://www.facebook.com/BRASASEnglishCourse/",
+      "icon": "https://data.decoassets.com/brasas-site/aab5b033-3d65-4b21-aa11-b9a03c831269/facebook.svg"
+    },
+    {
+      "altText": "Instagram",
+      "link": "https://www.instagram.com/brasasenglishcourse/",
+      "icon": "https://data.decoassets.com/brasas-site/08037ecf-61ee-4657-b825-c9155335b3b5/instagram.svg"
+    },
+    {
+      "altText": "TikTok",
+      "link": "https://www.tiktok.com/@brasasenglishcourse",
+      "icon": "https://data.decoassets.com/brasas-site/601a10e1-6f68-4921-a054-db872f16f566/tiktok.svg"
+    },
+    {
+      "altText": "Youtube",
+      "link": "https://www.youtube.com/channel/UCsmygXC8HjbbfcR2ehazymg",
+      "icon": "https://assets.decocache.com/brasas-site/dfc06e14-3fb4-4cd0-b145-2061ac796de5/Youtube.svg"
+    },
+    {
+      "altText": "Linkedin",
+      "link": "https://www.linkedin.com/company/brasas-english-course/?originalSubdomain=br",
+      "icon": "https://data.decoassets.com/brasas-site/b1afe8c8-f2d9-47da-8661-dcdfdbfca7a2/linkedin.svg"
+    },
+    {
+      "altText": "Spotify",
+      "link": "https://open.spotify.com/show/7N2HDAPjUD9QjpQorg9Gq5",
+      "icon": "https://data.decoassets.com/brasas-site/8879421e-9c7b-43a1-ad1e-f95b6f51cab2/spotify.svg"
+    }
+  ],
+  "footerNav": [
+    {
+      "text": "o brasas",
+      "url": "/sobre"
+    },
+    {
+      "text": "method",
+      "url": "/metodo"
+    },
+    {
+      "text": "branches",
+      "url": "/unidades"
+    },
+    {
+      "text": "refer and win",
+      "url": "/indique_e_ganhe"
+    },
+    {
+      "text": "partnerships",
+      "url": "/parcerias"
+    },
+    {
+      "text": "contact us",
+      "url": "/contatos"
+    },
+    {
+      "text": "work with us",
+      "url": "/trabalhe_conosco"
+    },
+    {
+      "text": "be a franchisee",
+      "url": "/franqueado"
+    },
+    {
+      "text": "faq",
+      "url": "/perguntas"
+    }
+  ],
+  "coursesList": [
+    {
+      "name": "pre-k",
+      "url": "/prek"
+    },
+    {
+      "name": "kids",
+      "url": "/kids"
+    },
+    {
+      "name": "juniors & teens",
+      "url": "/juniors_e_teens"
+    },
+    {
+      "name": "adults",
+      "url": "/adults"
+    },
+    {
+      "name": "international certification",
+      "url": "/certificacoes"
+    },
+    {
+      "name": "BRASAS online english",
+      "url": "/bol"
+    },
+    {
+      "name": "immersion",
+      "url": "/adults#ancora-immersion-conversation"
+    },
+    {
+      "name": "conversation",
+      "url": "/adults#ancora-immersion-conversation"
+    },
+    {
+      "name": "Portuguese for Foreigners",
+      "url": "/pff"
+    }
+  ],
+  "testButton": {
+    "text": "test your english",
+    "url": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br"
+  },
+  "myBrasasButton": {
+    "text": "my brasas",
+    "url": "https://id.layers.digital/sign-in/select-account?community=sophia-4375-25"
+  },
+  "seals": [
+    {
+      "image": {
+        "src": "https://data.decoassets.com/brasas-site/c99870a6-4106-465e-ac4f-0df471da229d/reclame-aqui-logo.png",
+        "alt": "RA Logo",
+        "width": 74,
+        "height": 13
+      },
+      "text": "verified by",
+      "link": "https://www.reclameaqui.com.br/empresa/brasas-english-course/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=vertical",
+      "title": "Selo RA Verificada"
+    }
+  ],
+  "endPageNavItems": [
+    {
+      "text": "Privacy Policy",
+      "url": "/privacidade"
+    },
+    {
+      "text": "Terms of Use",
+      "url": "/termos"
+    }
+  ],
+  "copyright": {
+    "text": "All rights reserved"
+  },
+  "socialMediaTitle": "follow on networks",
+  "coursesTitle": "courses",
+  "coursesLink": "/cursos"
+}

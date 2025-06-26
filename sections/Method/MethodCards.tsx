@@ -1,21 +1,15 @@
 import MethodCardsIsland from "site/islands/Method/MethodCardsIsland.tsx";
 
-/** @titleBy titleInEnglish */
+/** @titleBy title */
 interface MethodCard {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   /**
    * @format rich-text
    */
-  descriptionInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  descriptionInPortuguese: string;
+  description: string;
 }
 interface MethodCardsProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   methodCards: MethodCard[];
 }
 

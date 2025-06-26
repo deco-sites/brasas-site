@@ -1,9 +1,8 @@
 import BrasasOnlineCardsIsland from "site/islands/BrasasOnline/BrasasOnlineCardsIsland.tsx";
 
-/* @titleBy textInPortuguese */
+/* @titleBy text */
 interface Item {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
 }
 
 /* @titleBy title */
@@ -14,8 +13,7 @@ interface ClasseCard {
 }
 
 interface BrasasOnlineCardsProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   classesCards: ClasseCard[];
 }
 

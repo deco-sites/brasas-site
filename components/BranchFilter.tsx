@@ -1,7 +1,6 @@
 import { useEffect } from "preact/hooks";
 import IconSearch from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/search.tsx";
 import SelectInput from "site/components/ui/SelectInput.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function BranchFilter(
   {
@@ -18,6 +17,7 @@ export default function BranchFilter(
     setTextInputed,
     handleSearch,
     handleClear,
+    props,
   },
 ) {
   const stateFilters = [
@@ -27,8 +27,6 @@ export default function BranchFilter(
     { name: "Minas Gerais", value: "mg" },
     { name: "Rio de Janeiro", value: "rj" },
   ];
-
-  const { selectedLanguage } = useSelectLanguage();
 
   useEffect(() => {
     setSelectedCity(null);
@@ -40,7 +38,7 @@ export default function BranchFilter(
       <div className="hidden lg:flex gap-7 py-3 px-4 border border-gray-100 rounded-lg">
         <input
           className="placeholder:text-gray-500 placeholder:font-normal placeholder:text-base w-full outline-none"
-          placeholder="Buscar"
+          placeholder={props.searchInputPlaceholder}
           onChange={(e) => setTextInputed(e.target.value)}
           value={textInputed}
         />
@@ -49,19 +47,19 @@ export default function BranchFilter(
 
       <div className="w-full flex justify-between">
         <span className="text-gray-500 font-semibold text-base">
-          {selectedLanguage.value === "ptBr" ? "Filtrar por" : "Filter by"}
+          {props.filterLabel}
         </span>
         <button
           className="text-base capitalize underline font-semibold text-gray-100 hover:text-blue-300 transition duration-100"
           onClick={handleClear}
         >
-          {selectedLanguage.value === "ptBr" ? "Limpar" : "Clear"}
+          {props.clearButtonText}
         </button>
       </div>
 
       <div className="flex flex-col gap-2">
         <span className="uppercase text-black-500 font-black text-xs leading-6">
-          {selectedLanguage.value === "ptBr" ? "Estado" : "State"}
+          {props.stateLabel}
         </span>
         <div className="flex flex-wrap gap-2">
           {stateFilters.map((state, index) => (
@@ -79,10 +77,8 @@ export default function BranchFilter(
       </div>
 
       <SelectInput
-        label={selectedLanguage.value === "ptBr" ? "cidade" : "city"}
-        placeholder={selectedLanguage.value === "ptBr"
-          ? "Selecione a cidade"
-          : "Select the city"}
+        label={props.cityInput.label}
+        placeholder={props.cityInput.placeholder}
         options={cityOptions}
         bgColor="white"
         value={selectedCity}
@@ -91,10 +87,10 @@ export default function BranchFilter(
       />
 
       <SelectInput
-        label={selectedLanguage.value === "ptBr" ? "unidade" : "branch"}
-        placeholder={selectedLanguage.value === "ptBr"
-          ? "Selecione a unidade"
-          : "Select the branch"}
+        label={props.branchInput.label}
+        placeholder={!selectedCity
+          ? props.selectCityFirst
+          : props.branchInput.placeholder}
         options={filteredBranches}
         bgColor="white"
         value={selectedUnity}
@@ -105,7 +101,7 @@ export default function BranchFilter(
         className="bg-blue-300 rounded-lg text-white capitalize py-3 border border-blue-300 border-opacity-0 hover:bg-white hover:text-blue-300  hover:border-opacity-100 transition duration-100"
         onClick={handleSearch}
       >
-        {selectedLanguage.value === "ptBr" ? "Buscar" : "Search"}
+        {props.searchInputPlaceholder}
       </button>
     </div>
   );

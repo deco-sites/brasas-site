@@ -3,24 +3,19 @@ import SpecialCoursesIsland from "site/islands/Adults/SpecialCoursesIsland.tsx";
 
 /** @titleBy altText */
 interface SpecialCourseCard {
-  logoInEnglish: ImageWidget;
-  logoInPortuguese: ImageWidget;
+  logo: ImageWidget;
   altText: string;
   color: string;
   /**
    * @format rich-text
    */
-  descriptionInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  descriptionInPortuguese: string;
+  description: string;
 }
 
 interface SpecialCoursesProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   specialCoursesCards: SpecialCourseCard[];
+  examPreparationText: string;
 }
 
 export default function SpecialCourses(props: SpecialCoursesProps) {

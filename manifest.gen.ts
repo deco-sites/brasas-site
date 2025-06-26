@@ -29,7 +29,7 @@ import * as $$$$$$19 from "./sections/Certifications/CertificationsBanner.tsx";
 import * as $$$$$$20 from "./sections/Certifications/CertificationsPageBanner.tsx";
 import * as $$$$$$21 from "./sections/Certifications/ToeflITPCertification.tsx";
 import * as $$$$$$22 from "./sections/Certifications/ToefljrCertification.tsx";
-import * as $$$$$$23 from "./sections/Certifications/ToiecCertification.tsx";
+import * as $$$$$$23 from "./sections/Certifications/ToeicCertification.tsx";
 import * as $$$$$$24 from "./sections/Contact/FormSection.tsx";
 import * as $$$$$$25 from "./sections/CookiesCard.tsx";
 import * as $$$$$$27 from "./sections/Courses/CoursesBanner.tsx";
@@ -97,7 +97,7 @@ const manifest = {
     "site/sections/Certifications/CertificationsPageBanner.tsx": $$$$$$20,
     "site/sections/Certifications/ToeflITPCertification.tsx": $$$$$$21,
     "site/sections/Certifications/ToefljrCertification.tsx": $$$$$$22,
-    "site/sections/Certifications/ToiecCertification.tsx": $$$$$$23,
+    "site/sections/Certifications/ToeicCertification.tsx": $$$$$$23,
     "site/sections/Contact/FormSection.tsx": $$$$$$24,
     "site/sections/CookiesCard.tsx": $$$$$$25,
     "site/sections/Courses/CoursesBanner.tsx": $$$$$$27,

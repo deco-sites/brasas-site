@@ -7,7 +7,8 @@ import BranchCard from "site/components/BranchCard.tsx";
 import MapComponent from "site/components/MapComponent.tsx";
 import IconSearch from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/search.tsx";
 import IconHeartFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/heart-filled.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
+import { getCookie } from "../../helpers/getCookie.ts";
+import { setCookie } from "../../helpers/setCookie.ts";
 
 export default function BranchesIsland(props) {
   const STATE_NAMES = {
@@ -36,12 +37,21 @@ export default function BranchesIsland(props) {
     return acc;
   }, {});
 
-  const { selectedLanguage } = useSelectLanguage();
+  const [language, setLanguage] = useState("pt-BR");
+
+  useEffect(() => {
+    const currentLang = getCookie("language");
+
+    if (!currentLang) {
+      const userLanguage = navigator.language || navigator.languages[0];
+      setCookie(userLanguage);
+    }
+    setLanguage(currentLang);
+  }, []);
+
   const [view, setView] = useState("list");
   const [filteredBranches, setFilteredBranches] = useState([{
-    name: selectedLanguage.value === "ptBr"
-      ? "Selecione uma cidade"
-      : "Select a city",
+    name: props.cityInput.placeholder,
     value: "",
   }]);
   const [finalFilteredBranches, setFinalFilteredBranches] = useState(
@@ -100,12 +110,12 @@ export default function BranchesIsland(props) {
   // Efeito para sincronizar quando o idioma mudar
   useEffect(() => {
     setFilteredBranches([{
-      name: selectedLanguage.value === "ptBr"
-        ? "Selecione uma cidade"
-        : "Select a city",
+      name: !selectedCity
+        ? props.selectCityFirst
+        : props.branchInput.placeholder,
       value: "",
     }]);
-  }, [selectedLanguage.value]);
+  }, [language]);
 
   // Função para filtrar branches com base nos filtros ativos
   const filterBranches = (branches) => {
@@ -155,9 +165,7 @@ export default function BranchesIsland(props) {
     setSelectedCity(null);
     setSelectedUnity(null);
     setFilteredBranches([{
-      name: selectedLanguage.value === "ptBr"
-        ? "Selecione uma cidade"
-        : "Select a city",
+      name: props.cityInput.placeholder,
       value: "",
     }]);
     setFinalFilteredBranches(Object.values(groupedBranches).flat());
@@ -276,9 +284,7 @@ export default function BranchesIsland(props) {
           >
             <Image src={"/happy-face.svg"} alt="Happy Face" className="" />
             <span>
-              {selectedLanguage.value === "ptBr"
-                ? "Ative a localização no navegador e descubra a unidade mais perto de você!"
-                : "Activate the location in your browser and find the unit closest to you!"}
+              {props.geolocationText}
             </span>
           </div>
 
@@ -288,16 +294,14 @@ export default function BranchesIsland(props) {
           >
             <IconHeartFilled class="w-6 h-6" />
             <span>
-              {selectedLanguage.value === "ptBr" ? "Filtrar por" : "Filter by"}
+              {props.filterLabel}
             </span>
           </button>
 
           <div className="flex lg:hidden gap-7 py-3 px-4 border border-gray-100 rounded-lg w-full">
             <input
               className="placeholder:text-gray-500 placeholder:font-normal placeholder:text-base w-full outline-none"
-              placeholder={selectedLanguage.value === "ptBr"
-                ? "Buscar"
-                : "Search"}
+              placeholder={props.searchInputPlaceholder}
               onChange={(e) => setTextInputed(e.target.value)}
               value={textInputed}
             />
@@ -371,6 +375,7 @@ export default function BranchesIsland(props) {
               setTextInputed={setTextInputed}
               handleSearch={handleSearch}
               handleClear={handleClear}
+              props={props}
             />
           </div>
 
@@ -437,7 +442,7 @@ export default function BranchesIsland(props) {
                     )
                     : (
                       <div className="text-center py-8 text-gray-500">
-                        Nenhuma unidade encontrada com os filtros selecionados
+                        {props.branchNotFoundText}
                       </div>
                     )
                 )

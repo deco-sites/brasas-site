@@ -1,9 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function SpecialCoursesIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <section
       className="flex flex-col items-center justify-center w-full"
@@ -12,9 +9,7 @@ export default function SpecialCoursesIsland(props) {
       <div className="max-w-[88.5rem] px-9 pb-16">
         <div className="flex justify-center pt-0 lg:pt-16 pb-24">
           <h2 className="font-black text-black-500 text-4xl leading-10">
-            {selectedLanguage.value === "ptBr"
-              ? props.titleInPortuguese
-              : props.titleInEnglish}
+            {props.title}
           </h2>
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-16 xl:gap-x-8 xl:gap-y-16 ">
@@ -25,9 +20,7 @@ export default function SpecialCoursesIsland(props) {
             >
               <div className="absolute bg-white flex items-center justify-center top-0 -translate-y-1/2 w-[15.7rem] h-[5.25rem] rounded-tr-xl rounded-bl-xl border border-blue-400">
                 <Image
-                  src={selectedLanguage.value === "ptBr"
-                    ? card.logoInPortuguese
-                    : card.logoInEnglish}
+                  src={card.logo}
                   alt="Logo"
                   className="object-contain w-40"
                 />
@@ -36,9 +29,7 @@ export default function SpecialCoursesIsland(props) {
               <span
                 className="text-gray-500 font-normal text-xl"
                 dangerouslySetInnerHTML={{
-                  __html: selectedLanguage.value === "ptBr"
-                    ? card.descriptionInPortuguese
-                    : card.descriptionInEnglish,
+                  __html: card.description,
                 }}
               >
               </span>
@@ -58,9 +49,7 @@ export default function SpecialCoursesIsland(props) {
               <span
                 className="text-gray-500 font-normal text-xl"
                 dangerouslySetInnerHTML={{
-                  __html: selectedLanguage.value === "ptBr"
-                    ? "Informe-se sobre o curso preparatório e aplicações dos testes."
-                    : "Find out about the preparatory course and the test application.",
+                  __html: props.examPreparationText,
                 }}
               >
               </span>

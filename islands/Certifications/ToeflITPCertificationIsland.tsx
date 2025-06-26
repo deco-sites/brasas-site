@@ -1,13 +1,9 @@
 import Image from "apps/website/components/Image.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 import CertificationTitle from "site/components/CertificationTitle.tsx";
 import PreparatoryCourseTitle from "site/components/PreparatoryCourseTitle.tsx";
 import IconCheck from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/check.tsx";
 
 export default function ToeflITPCertificationIsland(props) {
-  const textStyle = { WebkitTextStroke: "1px #001E60" };
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <section className="flex flex-col items-center justify-center w-full">
       <div className="flex flex-col xl:flex-row w-full justify-between pt-10 pb-5 max-w-[88.5rem] px-9">
@@ -23,9 +19,7 @@ export default function ToeflITPCertificationIsland(props) {
                 <span
                   className=""
                   dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? item.textInPortuguese
-                      : item.textInEnglish,
+                    __html: item.text,
                   }}
                 >
                 </span>
@@ -44,18 +38,14 @@ export default function ToeflITPCertificationIsland(props) {
                 <span
                   className=""
                   dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? props.card.modalityInPortuguese
-                      : props.card.modalityInEnglish,
+                    __html: props.card.modality,
                   }}
                 >
                 </span>
                 <span
                   className="text-center"
                   dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? props.card.sessionsInPortuguese
-                      : props.card.sessionsInEnglish,
+                    __html: props.card.sessions,
                   }}
                 >
                 </span>

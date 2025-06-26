@@ -1,38 +1,137 @@
 {
   "name": "Fale Conosco",
   "path": "/contatos",
-  "sections": [
-    {
-      "__resolveType": "Header"
-    },
-    {
-      "__resolveType": "site/sections/PageBanner.tsx",
-      "bgImage": "https://assets.decocache.com/brasas-site/85466733-33fa-4d8a-a568-5fa3c9c7f7bc/Group-155.png",
-      "bgColor": "blue-300",
-      "titleInPortuguese": "Fale conosco",
-      "descriptionInPortuguese": "A gente adoraria ouvir o que você tem a dizer. Mande uma mensagem abaixo.",
-      "titleInEnglish": "Contact Us",
-      "descriptionInEnglish": "We would love to hear what you have to say. Send a message below.",
-      "hasNotice": false,
-      "bgImageDesktop": "https://assets.decocache.com/brasas-site/85466733-33fa-4d8a-a568-5fa3c9c7f7bc/Group-155.png",
-      "bgImageMobile": "https://assets.decocache.com/brasas-site/671c05d6-96e6-447a-bc46-4264a28dba1e/contact-bg-mobile.png"
-    },
-    {
-      "__resolveType": "site/sections/Contact/FormSection.tsx",
-      "RecipientsEmailArr": [
-        {
-          "email": "peter@brasas.com"
-        },
-        {
-          "email": "tatiana.cordeiro@brasas.com"
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "HeaderEnglish"
+          },
+          {
+            "__resolveType": "site/sections/PageBanner.tsx",
+            "bgImage": "https://assets.decocache.com/brasas-site/85466733-33fa-4d8a-a568-5fa3c9c7f7bc/Group-155.png",
+            "bgColor": "blue-300",
+            "titleInPortuguese": "Fale conosco",
+            "descriptionInPortuguese": "A gente adoraria ouvir o que você tem a dizer. Mande uma mensagem abaixo.",
+            "titleInEnglish": "Contact Us",
+            "descriptionInEnglish": "We would love to hear what you have to say. Send a message below.",
+            "hasNotice": false,
+            "bgImageDesktop": "https://assets.decocache.com/brasas-site/85466733-33fa-4d8a-a568-5fa3c9c7f7bc/Group-155.png",
+            "bgImageMobile": "https://assets.decocache.com/brasas-site/671c05d6-96e6-447a-bc46-4264a28dba1e/contact-bg-mobile.png",
+            "title": "Contact Us",
+            "description": "<p>We would love to hear what you have to say. Send a message below.</p>"
+          },
+          {
+            "__resolveType": "site/sections/Contact/FormSection.tsx",
+            "RecipientsEmailArr": [
+              {
+                "email": "peter@brasas.com"
+              },
+              {
+                "email": "tatiana.cordeiro@brasas.com"
+              }
+            ],
+            "subject": "Fale Conosco - BRASAS",
+            "formTitle": "Contact",
+            "formSubtitle": "To send a message, you must fill in the fields.",
+            "nameInput": {
+              "label": "name",
+              "placeholder": "Enter your name"
+            },
+            "emailInput": {
+              "label": "email",
+              "placeholder": "Enter your email"
+            },
+            "telInput": {
+              "label": "phone",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "messageInput": {
+              "label": "message",
+              "placeholder": "Enter your message"
+            },
+            "acceptanceTermText": "I agree to receive communications and personalized offers according to my interests",
+            "sendButtonText": "Submit",
+            "branchBoxTitle": "Want to speak to a specific unit?",
+            "branchBoxDescription": "For information on monthly fee, hours and promotions, please contact the desired unit directly.",
+            "branchBoxButtonText": "See Branches"
+          },
+          {
+            "__resolveType": "FooterEnglish"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/cookie.ts",
+          "name": "language",
+          "value": "en-US"
         }
-      ],
-      "subject": "Fale Conosco - BRASAS"
-    },
-    {
-      "__resolveType": "Footer"
-    }
-  ],
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Header"
+          },
+          {
+            "__resolveType": "site/sections/PageBanner.tsx",
+            "bgImage": "https://assets.decocache.com/brasas-site/85466733-33fa-4d8a-a568-5fa3c9c7f7bc/Group-155.png",
+            "bgColor": "blue-300",
+            "titleInPortuguese": "Fale conosco",
+            "descriptionInPortuguese": "A gente adoraria ouvir o que você tem a dizer. Mande uma mensagem abaixo.",
+            "titleInEnglish": "Contact Us",
+            "descriptionInEnglish": "We would love to hear what you have to say. Send a message below.",
+            "hasNotice": false,
+            "bgImageDesktop": "https://assets.decocache.com/brasas-site/85466733-33fa-4d8a-a568-5fa3c9c7f7bc/Group-155.png",
+            "bgImageMobile": "https://assets.decocache.com/brasas-site/671c05d6-96e6-447a-bc46-4264a28dba1e/contact-bg-mobile.png",
+            "title": "Fale conosco",
+            "description": "<p>A gente adoraria ouvir o que você tem a dizer. Mande uma mensagem abaixo.</p>"
+          },
+          {
+            "__resolveType": "site/sections/Contact/FormSection.tsx",
+            "RecipientsEmailArr": [
+              {
+                "email": "peter@brasas.com"
+              },
+              {
+                "email": "tatiana.cordeiro@brasas.com"
+              }
+            ],
+            "subject": "Fale Conosco - BRASAS",
+            "formTitle": "Contato",
+            "formSubtitle": "Para enviar uma mensagem, é necessário preencher os campos.",
+            "nameInput": {
+              "label": "nome",
+              "placeholder": "Insira seu nome"
+            },
+            "emailInput": {
+              "label": "e-mail",
+              "placeholder": "Insira seu e-mail"
+            },
+            "telInput": {
+              "label": "telefone",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "messageInput": {
+              "label": "mensagem",
+              "placeholder": "Insira sua mensagem"
+            },
+            "acceptanceTermText": "Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses",
+            "sendButtonText": "Enviar",
+            "branchBoxTitle": "Quer falar com uma unidade específica?",
+            "branchBoxDescription": "Para informações sobre valor da mensalidade, horários e promoções, entre em contato direto com a unidade desejada.",
+            "branchBoxButtonText": "Ver Unidades"
+          },
+          {
+            "__resolveType": "Footer"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

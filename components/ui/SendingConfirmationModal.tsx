@@ -1,9 +1,20 @@
 import { useEffect, useState } from "preact/hooks";
-import { useSelectLanguage } from "site/sdk/language.ts";
 import IconX from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/x.tsx";
+import { getCookie } from "../../helpers/getCookie.ts";
+import { setCookie } from "../../helpers/setCookie.ts";
 
 export default function SendingConfirmationModal({ onClose }) {
-  const { selectedLanguage } = useSelectLanguage();
+  const [language, setLanguage] = useState("pt-BR");
+
+  useEffect(() => {
+    const currentLang = getCookie("language");
+
+    if (!currentLang) {
+      const userLanguage = navigator.language || navigator.languages[0];
+      setCookie(userLanguage);
+    }
+    setLanguage(currentLang);
+  }, []);
 
   useEffect(() => {
     // Desabilita o scroll quando o modal é aberto
@@ -28,7 +39,7 @@ export default function SendingConfirmationModal({ onClose }) {
       <div className="z-50 fixed flex flex-col top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg shadow-lg ">
         <div className="flex relative justify-center bg-blue-900 py-4 px-8 text-white">
           <span className="text-center">
-            {selectedLanguage.value === "ptBr"
+            {language === "pt-BR"
               ? "E-mail enviado com sucesso"
               : "Email sent successfully"}
           </span>
@@ -39,7 +50,7 @@ export default function SendingConfirmationModal({ onClose }) {
         </div>
         <div className="bg-white p-8">
           <span className="text-black-500">
-            {selectedLanguage.value === "ptBr"
+            {language === "pt-BR"
               ? "Em breve a equipe BRASAS entrará em contato."
               : "The BRASAS team will contact you shortly."}
           </span>

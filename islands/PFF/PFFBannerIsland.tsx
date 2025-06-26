@@ -1,9 +1,7 @@
 import Image from "apps/website/components/Image.tsx";
 import { useEffect, useState } from "preact/hooks";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function PFFBannerIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   useEffect(() => {
@@ -33,9 +31,7 @@ export default function PFFBannerIsland(props) {
     >
       <div className="flex flex-col gap-6 items-center justify-center px-9">
         <Image
-          src={selectedLanguage.value === "ptBr"
-            ? props.imageInPortuguese
-            : props.imageInEnglish}
+          src={props.image}
           className="w-96 object-contain"
         />
         {
@@ -58,11 +54,7 @@ export default function PFFBannerIsland(props) {
         {props.hasNotice && (
           <p
             className="text-white text-center"
-            dangerouslySetInnerHTML={{
-              __html: selectedLanguage.value === "ptBr"
-                ? `Curso disponível nas modalidades presencial e <i>online</i>`
-                : "Course available in In-Person and Online formats",
-            }}
+            dangerouslySetInnerHTML={{ __html: props.noticeText }}
           >
           </p>
         )}

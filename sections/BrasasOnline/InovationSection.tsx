@@ -1,22 +1,17 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import InovationSectionIsland from "site/islands/BrasasOnline/InovationSectionIsland.tsx";
 
-/* @titleBy textInPortuguese */
+/* @titleBy text */
 interface Item {
   icon: ImageWidget;
   /**
    * @format rich-text
    */
-  textInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  textInPortuguese: string;
+  text: string;
 }
 
 interface InovationSectionProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   items: Item[];
 }
 

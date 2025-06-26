@@ -1,16 +1,11 @@
 import NextStepsIsland from "site/islands/Pre-K/NextStepsIsland.tsx";
 
 interface NextStepsProps {
-  nextStepTitleInEnglish: string;
-  nextStepTitleInPortuguese: string;
+  nextStepTitle: string;
   /**
    * @format rich-text
    */
-  nextStepTextInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  nextStepTextInPortuguese: string;
+  nextStepText: string;
 }
 
 export default function NextSteps(props: NextStepsProps) {

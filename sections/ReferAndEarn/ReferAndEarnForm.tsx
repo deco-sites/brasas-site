@@ -1,29 +1,30 @@
 import ReferAndEarnFormIsland from "site/islands/ReferAndEarn/ReferAndEarnFormIsland.tsx";
 import { CopyEmail, RecipientsEmail } from "site/types/Emails.ts";
 
+interface InputProps {
+  label: string;
+  placeholder: string;
+}
+
 interface ReferAndEarnFormProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   /**
    * @format rich-text
    */
-  subtitleInEnglish: string;
+  subtitle: string;
+  highlightedWords: string[];
   /**
    * @format rich-text
    */
-  subtitleInPortuguese: string;
-  /**
-   * @format rich-text
-   */
-  regulationTextInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  regulationTextInPortuguese: string;
-  formTitleInEnglish: string;
-  formTitleInPortuguese: string;
-  formSubtitleInEnglish: string;
-  formSubtitleInPortuguese: string;
+  regulationText: string;
+  formTitle: string;
+  formSubtitle: string;
+  nameInput: InputProps;
+  emailInput: InputProps;
+  telInput: InputProps;
+  referralCodeInput: InputProps;
+  acceptanceText: string;
+  sendButtonText: string;
   RecipientsEmailArr: RecipientsEmail[];
   CopyToArr?: CopyEmail[];
   subject: string;

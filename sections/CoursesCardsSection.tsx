@@ -2,8 +2,7 @@ import CoursesCardsSectionIsland from "site/islands/CoursesCardsSectionIsland.ts
 import { CourseCard } from "site/types/CourseCards.ts";
 
 interface CoursesCardsSectionProps {
-  titleInEnglish?: string;
-  titleInPortuguese?: string;
+  title?: string;
   cards: CourseCard[];
 }
 

@@ -1,0 +1,51 @@
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "logo": {
+    "src": "https://data.decoassets.com/brasas-site/cc181151-1cfe-455e-9bd5-dc38d1d0e950/logo_primary.png",
+    "alt": "Brasas Logo",
+    "width": 96,
+    "height": 64
+  },
+  "navItems": [
+    {
+      "name": "brasas",
+      "link": "/sobre"
+    },
+    {
+      "name": "method",
+      "link": "/metodo"
+    },
+    {
+      "name": "courses",
+      "link": "/cursos"
+    },
+    {
+      "name": "branches",
+      "link": "/unidades"
+    },
+    {
+      "name": "contact",
+      "link": "/contatos"
+    },
+    {
+      "name": "partnerships",
+      "link": "/parcerias"
+    },
+    {
+      "name": "refer and win",
+      "link": "/indique_e_ganhe"
+    },
+    {
+      "name": "work with us",
+      "link": "/trabalhe_conosco"
+    }
+  ],
+  "TestButton": {
+    "text": "test your english",
+    "link": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br"
+  },
+  "MyBrasasButton": {
+    "text": "my brasas",
+    "link": "https://id.layers.digital/sign-in/select-account?community=sophia-4375-25"
+  }
+}

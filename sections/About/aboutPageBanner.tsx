@@ -1,10 +1,8 @@
 import AboutPageBannerIsland from "site/islands/About/AboutPageBannerIsland.tsx";
 
 interface AboutPageBannerProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
-  descriptionInEnglish: string;
-  descriptionInPortuguese: string;
+  title: string;
+  description: string;
 }
 
 export default function AboutPageBanner(props: AboutPageBannerProps) {

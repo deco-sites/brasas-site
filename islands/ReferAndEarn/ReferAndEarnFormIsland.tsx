@@ -1,7 +1,5 @@
-import Image from "apps/website/components/Image.tsx";
 import TextInput from "site/components/ui/TextInput.tsx";
 import InputCheckbox from "site/components/ui/InputCheckbox.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 import IconSend from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/send.tsx";
 import IconEye from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/eye.tsx";
 import { useEffect, useState } from "preact/hooks";
@@ -12,7 +10,6 @@ import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 import Recaptcha from "site/helpers/recaptcha.tsx";
 
 export default function ReferAndEarnFormIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
   const [showingPassword, setShowingPassword] = useState(false);
 
   const handleChangeVisibility = () => {
@@ -91,43 +88,30 @@ export default function ReferAndEarnFormIsland(props) {
           <div className="flex flex-col items-center max-w-[27.6rem]">
             <div className="flex flex-col items-start gap-10 text-black-500">
               <span className="text-center w-full xl:text-start font-bold text-3xl uppercase">
-                {selectedLanguage.value === "ptBr"
-                  ? props.titleInPortuguese
-                  : props.titleInEnglish}
+                {props.title}
               </span>
               <span
                 className="text-center xl:text-start font-normal text-xl"
-                dangerouslySetInnerHTML={{
-                  __html: selectedLanguage.value === "ptBr"
-                    ? props.subtitleInPortuguese
-                    : props.subtitleInEnglish,
-                }}
+                dangerouslySetInnerHTML={{ __html: props.subtitle }}
               >
               </span>
 
               <div className="flex justify-center gap-2 text-yellow-500 font-bold text-xl rounded-full w-full py-4 bg-purple-500">
-                <span>
-                  {selectedLanguage.value === "ptBr" ? "indicou" : "indicated"}
-                </span>
-                <span className="text-white">&gt;&gt;</span>
-                <span>
-                  {selectedLanguage.value === "ptBr"
-                    ? "matriculou"
-                    : "enrolled"}
-                </span>
-                <span className="text-white">&gt;&gt;</span>
-                <span>
-                  {selectedLanguage.value === "ptBr" ? "ganhou!" : "won!"}
-                </span>
+                {props.highlightedWords.map((word, index) => (
+                  <>
+                    <span>
+                      {word}
+                    </span>
+                    {index !== props.highlightedWords.length - 1 && (
+                      <span className="text-white">&gt;&gt;</span>
+                    )}
+                  </>
+                ))}
               </div>
 
               <span
                 className="text-center xl:text-start font-normal text-xs"
-                dangerouslySetInnerHTML={{
-                  __html: selectedLanguage.value === "ptBr"
-                    ? props.regulationTextInPortuguese
-                    : props.regulationTextInEnglish,
-                }}
+                dangerouslySetInnerHTML={{ __html: props.regulationText }}
               >
               </span>
             </div>
@@ -139,57 +123,43 @@ export default function ReferAndEarnFormIsland(props) {
           >
             <div className="flex flex-col gap-4 text-black-500">
               <span className="font-bold text-4xl">
-                {selectedLanguage.value === "ptBr"
-                  ? props.formTitleInPortuguese
-                  : props.formTitleInEnglish}
+                {props.formTitle}
               </span>
               <span className="text-base font-normal">
-                {selectedLanguage.value === "ptBr"
-                  ? props.formSubtitleInPortuguese
-                  : props.formSubtitleInEnglish}
+                {props.formSubtitle}
               </span>
             </div>
             <div className="flex flex-col gap-4">
               <TextInput
-                label="Nome"
-                placeholder={selectedLanguage.value === "ptBr"
-                  ? "Insira seu nome"
-                  : "Enter your name"}
+                label={props.nameInput.label}
+                placeholder={props.nameInput.placeholder}
                 value={name}
                 setValue={setName}
                 required
               />
               <TextInput
-                label="E-mail"
-                placeholder={selectedLanguage.value === "ptBr"
-                  ? "Insira seu e-mail"
-                  : "Enter your email"}
+                label={props.emailInput.label}
+                placeholder={props.emailInput.placeholder}
                 value={email}
                 setValue={setEmail}
                 required
                 type="email"
               />
               <TextInput
-                label="Telefone"
-                placeholder={selectedLanguage.value === "ptBr"
-                  ? "Insira seu telefone"
-                  : "Enter your phone"}
+                label={props.telInput.label}
+                placeholder={props.telInput.placeholder}
                 value={phone}
                 setValue={setPhone}
                 required
               />
               <div className="flex flex-col gap-2">
                 <label className="text-sm font-semibold text-black-500 uppercase leading-6">
-                  {selectedLanguage.value === "ptBr"
-                    ? "Código de indicação"
-                    : "Referral code"}
+                  {props.referralCodeInput.label}
                 </label>
                 <div className="flex items-center w-full bg-gray-100 p-3 border border-gray-500 focus:ring-2 focus:ring-gray-500 rounded-lg text-gray-700 ">
                   <input
                     type={showingPassword ? "text" : "password"}
-                    placeholder={selectedLanguage.value === "ptBr"
-                      ? "ABC123-EXEMPLO"
-                      : "ABC123-EXAMPLE"}
+                    placeholder={props.referralCodeInput.placeholder}
                     className="w-full bg-gray-100 outline-none h-full placeholder:text-black-500 focus:outline-none "
                     value={loadedCode !== null ? loadedCode : name}
                     onChange={(e) => setReferralCode(e.target.value)}
@@ -212,9 +182,7 @@ export default function ReferAndEarnFormIsland(props) {
               </div>
 
               <InputCheckbox
-                text={selectedLanguage.value === "ptBr"
-                  ? "Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses"
-                  : "I agree to receive communications and personalized offers according to my interests"}
+                text={props.acceptanceText}
                 value={acceptedTerms}
                 setValue={setAcceptedTerms}
                 required
@@ -228,9 +196,7 @@ export default function ReferAndEarnFormIsland(props) {
             <button className="bg-blue-300 hover:bg-white border border-blue-300 border-opacity-0 hover:border-opacity-100 text-white hover:text-blue-300 transition-all duration-300 py-4 rounded-lg flex items-center justify-center gap-2">
               <IconSend class="w-4 h-4" />
               <span>
-                {selectedLanguage.value === "ptBr"
-                  ? "Solicitar contato"
-                  : "Request contact"}
+                {props.sendButtonText}
               </span>
             </button>
           </form>

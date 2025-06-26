@@ -1,9 +1,7 @@
 import { useRef, useState } from "preact/hooks";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function VideosCarouselIsland({ videos }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const { selectedLanguage } = useSelectLanguage();
   const videoRef = useRef(null);
 
   const changeVideo = (direction) => {
@@ -20,9 +18,7 @@ export default function VideosCarouselIsland({ videos }) {
   return (
     <section className="relative flex flex-col items-center w-full mx-auto">
       <h2 className="absolute z-50 top-4 text-base xl:text-2xl font-bold mb-4 text-center text-red-300">
-        {selectedLanguage.value === "ptBr"
-          ? videos[currentIndex].titleInPortuguese
-          : videos[currentIndex].titleInEnglish}
+        {videos[currentIndex].title}
       </h2>
       <div className="relative w-full overflow-hidden">
         <div

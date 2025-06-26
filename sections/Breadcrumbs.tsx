@@ -1,8 +1,8 @@
 import BreadcrumbsIsland from "site/islands/BreadcrumbsIsland.tsx";
 
 interface BreadcrumbsProps {
-  pageNameInEnglish: string;
-  pageNameInPortuguese: string;
+  prefix: string;
+  pageName: string;
 }
 
 export default function Breadcrumbs(props: BreadcrumbsProps) {

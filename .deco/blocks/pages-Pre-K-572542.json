@@ -1,59 +1,185 @@
 {
   "name": "Pre-K",
   "path": "/prek",
-  "sections": [
-    {
-      "__resolveType": "Header"
-    },
-    {
-      "__resolveType": "site/sections/Pre-K/PreKBanner.tsx",
-      "titleInEnglish": "Pre-K",
-      "titleInPortuguese": "Pre-K",
-      "descriptionInPortuguese": "Crianças aprendem se divertindo",
-      "descriptionInEnglish": "Children Learn While Having Fun"
-    },
-    {
-      "__resolveType": "site/sections/Breadcrumbs.tsx",
-      "pageNameInEnglish": "Pré-K",
-      "pageNameInPortuguese": "Pré-K"
-    },
-    {
-      "__resolveType": "site/sections/Pre-K/PreKCards.tsx",
-      "nextStepTitleInPortuguese": "Próximos passos",
-      "nextStepTextInPortuguese": "Após sua passagem pelo Pre-k, a criança ingressa no curso Kids.",
-      "nextStepTitleInEnglish": "Next Steps",
-      "nextStepTextInEnglish": "After completing Pre-k, the child progresses to the Kids course.",
-      "textInEnglish": "<p><strong>These are fun classes where children participate in dynamic games, all in English.</strong></p><p><strong>&nbsp;&nbsp;</strong></p><p>Thus, they begin to familiarize themselves with the musicality of the language.</p><p>&nbsp;</p><p>We do not work with written words to avoid interfering with the process of Portuguese literacy.</p>",
-      "textInPortuguese": "<p><strong>São aulas divertidas em que as crianças participam de brincadeiras dinâmicas, todas em inglês.</strong></p><p><br>Assim, começam a se familiarizar com a musicalidade da língua.</p><p><br>Não trabalhamos com palavras escritas para não interferir no processo de alfabetização da língua portuguesa.</p>"
-    },
-    {
-      "__resolveType": "site/sections/Pre-K/NextSteps.tsx",
-      "nextStepTitleInPortuguese": "Próximos passos",
-      "nextStepTextInPortuguese": "<p>Após sua passagem pelo Pre-k, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/kids\">Kids</a>.</p>",
-      "nextStepTitleInEnglish": "Next Steps",
-      "nextStepTextInEnglish": "<p>After completing Pre-k, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/kids\">Kids</a> course.</p>"
-    },
-    {
-      "__resolveType": "site/sections/IWantKnowMore.tsx",
-      "titleInPortuguese": "Quero saber mais",
-      "titleInEnglish": "I want to know more",
-      "RecipientsEmailArr": [
-        {
-          "email": "comercial@brasas.com"
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "HeaderEnglish"
+          },
+          {
+            "__resolveType": "site/sections/Pre-K/PreKBanner.tsx",
+            "titleInEnglish": "Pre-K",
+            "titleInPortuguese": "Pre-K",
+            "descriptionInPortuguese": "Crianças aprendem se divertindo",
+            "descriptionInEnglish": "Children Learn While Having Fun",
+            "title": "Pre-K",
+            "description": "Children Learn While Having Fun"
+          },
+          {
+            "__resolveType": "site/sections/Breadcrumbs.tsx",
+            "pageNameInEnglish": "Pré-K",
+            "pageNameInPortuguese": "Pré-K",
+            "pageName": "Pré-K",
+            "prefix": "Courses"
+          },
+          {
+            "__resolveType": "site/sections/Pre-K/PreKCards.tsx",
+            "nextStepTitleInPortuguese": "Próximos passos",
+            "nextStepTextInPortuguese": "Após sua passagem pelo Pre-k, a criança ingressa no curso Kids.",
+            "nextStepTitleInEnglish": "Next Steps",
+            "nextStepTextInEnglish": "After completing Pre-k, the child progresses to the Kids course.",
+            "textInEnglish": "<p><strong>These are fun classes where children participate in dynamic games, all in English.</strong></p><p><strong>&nbsp;&nbsp;</strong></p><p>Thus, they begin to familiarize themselves with the musicality of the language.</p><p>&nbsp;</p><p>We do not work with written words to avoid interfering with the process of Portuguese literacy.</p>",
+            "textInPortuguese": "<p><strong>São aulas divertidas em que as crianças participam de brincadeiras dinâmicas, todas em inglês.</strong></p><p><br>Assim, começam a se familiarizar com a musicalidade da língua.</p><p><br>Não trabalhamos com palavras escritas para não interferir no processo de alfabetização da língua portuguesa.</p>",
+            "text": "<p><strong>These are fun classes where children participate in dynamic games, all in English.</strong></p><p><strong>&nbsp;&nbsp;</strong></p><p>Thus, they begin to familiarize themselves with the musicality of the language.</p><p>&nbsp;</p><p>We do not work with written words to avoid interfering with the process of Portuguese literacy.</p>"
+          },
+          {
+            "__resolveType": "site/sections/Pre-K/NextSteps.tsx",
+            "nextStepTitleInPortuguese": "Próximos passos",
+            "nextStepTextInPortuguese": "<p>Após sua passagem pelo Pre-k, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/kids\">Kids</a>.</p>",
+            "nextStepTitleInEnglish": "Next Steps",
+            "nextStepTextInEnglish": "<p>After completing Pre-k, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/kids\">Kids</a> course.</p>",
+            "nextStepTitle": "Next Steps",
+            "nextStepText": "<p>After completing Pre-k, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/kids\">Kids</a> course.</p>"
+          },
+          {
+            "__resolveType": "site/sections/IWantKnowMore.tsx",
+            "titleInPortuguese": "Quero saber mais",
+            "titleInEnglish": "I want to know more",
+            "RecipientsEmailArr": [
+              {
+                "email": "comercial@brasas.com"
+              }
+            ],
+            "subject": "Formulário BRASAS - Quero saber mais",
+            "CopyToArr": [],
+            "testButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+            "rendersLeveling": false,
+            "title": "I want to know more",
+            "levelingTitle": "To start, discover your level with our placement test.",
+            "levelingSubtitle": "Our placement test helps you find out which module you should enroll in. Access the link below and start your test now!",
+            "levelingButtonText": "Access the test",
+            "levelingButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+            "formTitle": "Request a contact",
+            "formSubtitle": "Leave your details below and we will contact you for more information.",
+            "nameInput": {
+              "label": "Name",
+              "placeholder": "Enter your name"
+            },
+            "emailInput": {
+              "label": "Email",
+              "placeholder": "Enter your email"
+            },
+            "telInput": {
+              "label": "Phone",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "acceptanceTermText": "I agree to receive communications and personalized offers according to my interests",
+            "sendButtonText": "Request contact"
+          },
+          {
+            "__resolveType": "CoursesCardsSectionEnglish"
+          },
+          {
+            "__resolveType": "FooterEnglish"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/cookie.ts",
+          "name": "language",
+          "value": "en-US"
         }
-      ],
-      "subject": "Formulário BRASAS - Quero saber mais",
-      "CopyToArr": [],
-      "testButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
-      "rendersLeveling": false
-    },
-    {
-      "__resolveType": "CoursesCardsSection"
-    },
-    {
-      "__resolveType": "Footer"
-    }
-  ],
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Header"
+          },
+          {
+            "__resolveType": "site/sections/Pre-K/PreKBanner.tsx",
+            "titleInEnglish": "Pre-K",
+            "titleInPortuguese": "Pre-K",
+            "descriptionInPortuguese": "Crianças aprendem se divertindo",
+            "descriptionInEnglish": "Children Learn While Having Fun",
+            "title": "Pre-K",
+            "description": "Crianças aprendem se divertindo"
+          },
+          {
+            "__resolveType": "site/sections/Breadcrumbs.tsx",
+            "pageNameInEnglish": "Pré-K",
+            "pageNameInPortuguese": "Pré-K",
+            "pageName": "Pré-K",
+            "prefix": "Cursos"
+          },
+          {
+            "__resolveType": "site/sections/Pre-K/PreKCards.tsx",
+            "nextStepTitleInPortuguese": "Próximos passos",
+            "nextStepTextInPortuguese": "Após sua passagem pelo Pre-k, a criança ingressa no curso Kids.",
+            "nextStepTitleInEnglish": "Next Steps",
+            "nextStepTextInEnglish": "After completing Pre-k, the child progresses to the Kids course.",
+            "textInEnglish": "<p><strong>These are fun classes where children participate in dynamic games, all in English.</strong></p><p><strong>&nbsp;&nbsp;</strong></p><p>Thus, they begin to familiarize themselves with the musicality of the language.</p><p>&nbsp;</p><p>We do not work with written words to avoid interfering with the process of Portuguese literacy.</p>",
+            "textInPortuguese": "<p><strong>São aulas divertidas em que as crianças participam de brincadeiras dinâmicas, todas em inglês.</strong></p><p><br>Assim, começam a se familiarizar com a musicalidade da língua.</p><p><br>Não trabalhamos com palavras escritas para não interferir no processo de alfabetização da língua portuguesa.</p>",
+            "text": "<p><strong>São aulas divertidas em que as crianças participam de brincadeiras dinâmicas, todas em inglês.</strong></p><p><br>Assim, começam a se familiarizar com a musicalidade da língua.</p><p><br>Não trabalhamos com palavras escritas para não interferir no processo de alfabetização da língua portuguesa.</p>"
+          },
+          {
+            "__resolveType": "site/sections/Pre-K/NextSteps.tsx",
+            "nextStepTitleInPortuguese": "Próximos passos",
+            "nextStepTextInPortuguese": "<p>Após sua passagem pelo Pre-k, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/kids\">Kids</a>.</p>",
+            "nextStepTitleInEnglish": "Next Steps",
+            "nextStepTextInEnglish": "<p>After completing Pre-k, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/kids\">Kids</a> course.</p>",
+            "nextStepTitle": "Próximos passos",
+            "nextStepText": "<p>Após sua passagem pelo Pre-k, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/kids\">Kids</a>.</p>"
+          },
+          {
+            "__resolveType": "site/sections/IWantKnowMore.tsx",
+            "titleInPortuguese": "Quero saber mais",
+            "titleInEnglish": "I want to know more",
+            "RecipientsEmailArr": [
+              {
+                "email": "comercial@brasas.com"
+              }
+            ],
+            "subject": "Formulário BRASAS - Quero saber mais",
+            "CopyToArr": [],
+            "testButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+            "rendersLeveling": false,
+            "title": "Quero saber mais",
+            "levelingTitle": "Para começar, descubra seu nível em nosso teste de nivelamento.",
+            "levelingSubtitle": "O nosso teste de nivelamento te ajuda a descobrir em que módulo você deve ingressar. Acesse o link abaixo e comece o seu teste agora mesmo!",
+            "levelingButtonText": "Acessar o teste",
+            "levelingButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+            "formTitle": "Solicite um contato",
+            "formSubtitle": "Deixe os seus dados abaixo e entraremos em contato para mais informações.",
+            "nameInput": {
+              "label": "Nome",
+              "placeholder": "Insira seu nome"
+            },
+            "emailInput": {
+              "label": "E-mail",
+              "placeholder": "Insira seu e-mail"
+            },
+            "telInput": {
+              "label": "Telefone",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "acceptanceTermText": "Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses",
+            "sendButtonText": "Solicitar contato"
+          },
+          {
+            "__resolveType": "CoursesCardsSection"
+          },
+          {
+            "__resolveType": "Footer"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

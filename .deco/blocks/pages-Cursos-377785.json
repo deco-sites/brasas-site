@@ -1,90 +1,227 @@
 {
   "name": "Cursos",
   "path": "/cursos",
-  "sections": [
-    {
-      "__resolveType": "Header"
-    },
-    {
-      "__resolveType": "site/sections/Courses/CoursesBanner.tsx",
-      "titleInPortuguese": "Cursos",
-      "descriptionInPortuguese": "O foco de todas as nossas aulas é a conversação. Aprenda a falar e a pensar em inglês, além de usar corretamente o vocabulário, a gramática e as estruturas da língua. Encontre o curso que mais se encaixa nos seus objetivos e faixa etária.",
-      "titleInEnglish": "Courses",
-      "descriptionInEnglish": "The focus of all our classes is conversation. Learn to speak and think in English, as well as correctly using vocabulary, grammar, and language structures. Find the course that best suits your goals and age group."
-    },
-    {
-      "__resolveType": "site/sections/Courses/CoursesCards.tsx",
-      "cards": [
-        {
-          "englishTitle": "Pre-K",
-          "portugueseTitle": "Pre-K",
-          "portugueseDescription": "A partir do Pré-2",
-          "englishDescription": "From Pre-2",
-          "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
-          "link": "/prek"
-        },
-        {
-          "englishTitle": "Kids",
-          "portugueseTitle": "Kids",
-          "portugueseDescription": "3° ano do Ensino Fundamental",
-          "englishDescription": "3rd year of Elementary School",
-          "image": "https://data.decoassets.com/brasas-site/3862a645-7c71-4bc0-a506-ea9d9cbef4cc/Frame-1105.png",
-          "link": "/kids"
-        },
-        {
-          "englishTitle": "Juniors & Teens",
-          "portugueseTitle": "Juniors & Teens",
-          "portugueseDescription": "6° ano do Ensino Fundamental",
-          "englishDescription": "6th year of Elementary School",
-          "image": "https://data.decoassets.com/brasas-site/49945766-a36f-45c8-a115-262c658b1005/img.png",
-          "link": "/juniors_e_teens"
-        },
-        {
-          "englishTitle": "Adults",
-          "portugueseTitle": "Adults",
-          "portugueseDescription": "A partir de 14 anos",
-          "englishDescription": "From 14 years old",
-          "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png",
-          "link": "/adults"
-        },
-        {
-          "englishTitle": "BRASAS Online",
-          "portugueseTitle": "BRASAS Online",
-          "portugueseDescription": "<p>Aprenda com aulas <em>online</em> e ao vivo</p>",
-          "englishDescription": "<p>Learn with live <em>online</em> classes</p>",
-          "image": "https://data.decoassets.com/brasas-site/b79677ef-d78f-48d3-b07a-a6a0a6099bcb/5_qd6zbf-removebg-preview_bl5s9t.png",
-          "link": "/bol"
-        },
-        {
-          "portugueseTitle": "Certificações Internacionais",
-          "englishTitle": "International Certification",
-          "englishDescription": "Preparatory Courses and Exam",
-          "portugueseDescription": "Cursos preparatórios e prova",
-          "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png",
-          "link": "/certificacoes"
-        },
-        {
-          "portugueseTitle": "Parcerias",
-          "portugueseDescription": "Empresas, Escolas e Universidades",
-          "englishTitle": "Partnerships",
-          "englishDescription": "<p>Companies, Schools and Universities</p>",
-          "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png",
-          "link": "/parcerias"
-        },
-        {
-          "englishTitle": "Portuguese For Foreigners",
-          "englishDescription": "Learn spoken Portuguese in Brazil",
-          "portugueseTitle": "Português para Estrangeiros",
-          "portugueseDescription": "Aprenda português falado no Brasil",
-          "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png",
-          "link": "/pff"
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "HeaderEnglish"
+          },
+          {
+            "__resolveType": "site/sections/Courses/CoursesBanner.tsx",
+            "titleInPortuguese": "Cursos",
+            "descriptionInPortuguese": "O foco de todas as nossas aulas é a conversação. Aprenda a falar e a pensar em inglês, além de usar corretamente o vocabulário, a gramática e as estruturas da língua. Encontre o curso que mais se encaixa nos seus objetivos e faixa etária.",
+            "titleInEnglish": "Courses",
+            "descriptionInEnglish": "The focus of all our classes is conversation. Learn to speak and think in English, as well as correctly using vocabulary, grammar, and language structures. Find the course that best suits your goals and age group.",
+            "title": "Courses",
+            "description": "The focus of all our classes is conversation. Learn to speak and think in English, as well as correctly using vocabulary, grammar, and language structures. Find the course that best suits your goals and age group."
+          },
+          {
+            "__resolveType": "site/sections/Courses/CoursesCards.tsx",
+            "cards": [
+              {
+                "englishTitle": "Pre-K",
+                "portugueseTitle": "Pre-K",
+                "portugueseDescription": "A partir do Pré-2",
+                "englishDescription": "From Pre-2",
+                "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
+                "link": "/prek",
+                "title": "Pre-K",
+                "description": "<p>From Pre-2</p>"
+              },
+              {
+                "englishTitle": "Kids",
+                "portugueseTitle": "Kids",
+                "portugueseDescription": "3° ano do Ensino Fundamental",
+                "englishDescription": "3rd year of Elementary School",
+                "image": "https://data.decoassets.com/brasas-site/3862a645-7c71-4bc0-a506-ea9d9cbef4cc/Frame-1105.png",
+                "link": "/kids",
+                "title": "Kids",
+                "description": "<p>3rd year of Elementary School</p>"
+              },
+              {
+                "englishTitle": "Juniors & Teens",
+                "portugueseTitle": "Juniors & Teens",
+                "portugueseDescription": "6° ano do Ensino Fundamental",
+                "englishDescription": "6th year of Elementary School",
+                "image": "https://data.decoassets.com/brasas-site/49945766-a36f-45c8-a115-262c658b1005/img.png",
+                "link": "/juniors_e_teens",
+                "title": "Juniors & Teens",
+                "description": "<p>6th year of Elementary School</p>"
+              },
+              {
+                "englishTitle": "Adults",
+                "portugueseTitle": "Adults",
+                "portugueseDescription": "A partir de 14 anos",
+                "englishDescription": "From 14 years old",
+                "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png",
+                "link": "/adults",
+                "title": "Adults",
+                "description": "<p>From 14 years old</p>"
+              },
+              {
+                "englishTitle": "BRASAS Online",
+                "portugueseTitle": "BRASAS Online",
+                "portugueseDescription": "<p>Aprenda com aulas <em>online</em> e ao vivo</p>",
+                "englishDescription": "<p>Learn with live <em>online</em> classes</p>",
+                "image": "https://data.decoassets.com/brasas-site/b79677ef-d78f-48d3-b07a-a6a0a6099bcb/5_qd6zbf-removebg-preview_bl5s9t.png",
+                "link": "/bol",
+                "title": "BRASAS Online",
+                "description": "<p>Learn with live <em>online</em> classes</p>"
+              },
+              {
+                "portugueseTitle": "Certificações Internacionais",
+                "englishTitle": "International Certification",
+                "englishDescription": "Preparatory Courses and Exam",
+                "portugueseDescription": "Cursos preparatórios e prova",
+                "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png",
+                "link": "/certificacoes",
+                "title": "International Certification",
+                "description": "<p>Preparatory Courses and Exam</p>"
+              },
+              {
+                "portugueseTitle": "Parcerias",
+                "portugueseDescription": "Empresas, Escolas e Universidades",
+                "englishTitle": "Partnerships",
+                "englishDescription": "<p>Companies, Schools and Universities</p>",
+                "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png",
+                "link": "/parcerias",
+                "title": "Partnerships",
+                "description": "<p>Companies, Schools and Universities</p>"
+              },
+              {
+                "englishTitle": "Portuguese For Foreigners",
+                "englishDescription": "Learn spoken Portuguese in Brazil",
+                "portugueseTitle": "Português para Estrangeiros",
+                "portugueseDescription": "Aprenda português falado no Brasil",
+                "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png",
+                "link": "/pff",
+                "title": "Portuguese For Foreigners",
+                "description": "<p>Learn spoken Portuguese in Brazil</p>"
+              }
+            ]
+          },
+          {
+            "__resolveType": "FooterEnglish"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/cookie.ts",
+          "name": "language",
+          "value": "en-US"
         }
-      ]
-    },
-    {
-      "__resolveType": "Footer"
-    }
-  ],
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Header"
+          },
+          {
+            "__resolveType": "site/sections/Courses/CoursesBanner.tsx",
+            "titleInPortuguese": "Cursos",
+            "descriptionInPortuguese": "O foco de todas as nossas aulas é a conversação. Aprenda a falar e a pensar em inglês, além de usar corretamente o vocabulário, a gramática e as estruturas da língua. Encontre o curso que mais se encaixa nos seus objetivos e faixa etária.",
+            "titleInEnglish": "Courses",
+            "descriptionInEnglish": "The focus of all our classes is conversation. Learn to speak and think in English, as well as correctly using vocabulary, grammar, and language structures. Find the course that best suits your goals and age group.",
+            "title": "Cursos",
+            "description": "O foco de todas as nossas aulas é a conversação. Aprenda a falar e a pensar em inglês, além de usar corretamente o vocabulário, a gramática e as estruturas da língua. Encontre o curso que mais se encaixa nos seus objetivos e faixa etária."
+          },
+          {
+            "__resolveType": "site/sections/Courses/CoursesCards.tsx",
+            "cards": [
+              {
+                "englishTitle": "Pre-K",
+                "portugueseTitle": "Pre-K",
+                "portugueseDescription": "A partir do Pré-2",
+                "englishDescription": "From Pre-2",
+                "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
+                "link": "/prek",
+                "title": "Pre-K",
+                "description": "<p>A partir do Pré-2</p>"
+              },
+              {
+                "englishTitle": "Kids",
+                "portugueseTitle": "Kids",
+                "portugueseDescription": "3° ano do Ensino Fundamental",
+                "englishDescription": "3rd year of Elementary School",
+                "image": "https://data.decoassets.com/brasas-site/3862a645-7c71-4bc0-a506-ea9d9cbef4cc/Frame-1105.png",
+                "link": "/kids",
+                "title": "Kids",
+                "description": "<p>3° ano do Ensino Fundamental</p>"
+              },
+              {
+                "englishTitle": "Juniors & Teens",
+                "portugueseTitle": "Juniors & Teens",
+                "portugueseDescription": "6° ano do Ensino Fundamental",
+                "englishDescription": "6th year of Elementary School",
+                "image": "https://data.decoassets.com/brasas-site/49945766-a36f-45c8-a115-262c658b1005/img.png",
+                "link": "/juniors_e_teens",
+                "title": "Juniors & Teens",
+                "description": "<p>6° ano do Ensino Fundamental</p>"
+              },
+              {
+                "englishTitle": "Adults",
+                "portugueseTitle": "Adults",
+                "portugueseDescription": "A partir de 14 anos",
+                "englishDescription": "From 14 years old",
+                "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png",
+                "link": "/adults",
+                "title": "Adults",
+                "description": "<p>A partir de 14 anos</p>"
+              },
+              {
+                "englishTitle": "BRASAS Online",
+                "portugueseTitle": "BRASAS Online",
+                "portugueseDescription": "<p>Aprenda com aulas <em>online</em> e ao vivo</p>",
+                "englishDescription": "<p>Learn with live <em>online</em> classes</p>",
+                "image": "https://data.decoassets.com/brasas-site/b79677ef-d78f-48d3-b07a-a6a0a6099bcb/5_qd6zbf-removebg-preview_bl5s9t.png",
+                "link": "/bol",
+                "title": "BRASAS Online",
+                "description": "<p>Aprenda com aulas <em>online</em> e ao vivo</p>"
+              },
+              {
+                "portugueseTitle": "Certificações Internacionais",
+                "englishTitle": "International Certification",
+                "englishDescription": "Preparatory Courses and Exam",
+                "portugueseDescription": "Cursos preparatórios e prova",
+                "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png",
+                "link": "/certificacoes",
+                "title": "Certificações Internacionais",
+                "description": "<p>Cursos preparatórios e prova</p>"
+              },
+              {
+                "portugueseTitle": "Parcerias",
+                "portugueseDescription": "Empresas, Escolas e Universidades",
+                "englishTitle": "Partnerships",
+                "englishDescription": "<p>Companies, Schools and Universities</p>",
+                "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png",
+                "link": "/parcerias",
+                "title": "Parcerias",
+                "description": "<p>Empresas, Escolas e Universidades</p>"
+              },
+              {
+                "englishTitle": "Portuguese For Foreigners",
+                "englishDescription": "Learn spoken Portuguese in Brazil",
+                "portugueseTitle": "Português para Estrangeiros",
+                "portugueseDescription": "Aprenda português falado no Brasil",
+                "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png",
+                "link": "/pff",
+                "title": "Português para Estrangeiros",
+                "description": "<p>Aprenda português falado no Brasil</p>"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

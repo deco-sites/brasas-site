@@ -1,28 +1,21 @@
 import Image from "apps/website/components/Image.tsx";
 import IconCheck from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/check.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 import CertificationTitle from "site/components/CertificationTitle.tsx";
 import PreparatoryCourseTitle from "site/components/PreparatoryCourseTitle.tsx";
 
-export default function TOIECCertificationIsland(props) {
-  //const textStyle = { WebkitTextStroke: "1px #001E60" };
-  const { selectedLanguage } = useSelectLanguage();
+export default function TOEICCertificationIsland(props) {
 
   return (
     <section className="flex flex-col items-center justify-center w-full">
       <div className="hidden xl:flex justify-between w-full max-w-[88.5rem] px-9 pt-10 pb-5">
         <div className="flex justify-center xl:w-1/2 xl:max-w-[35rem]">
           <h2 className="font-bold text-4xl leading-8 uppercase text-blue-900">
-            {selectedLanguage.value === "ptBr"
-              ? "Certificação"
-              : "Certification"}
+            {props.certificationTitle}
           </h2>
         </div>
         <div className="flex justify-center xl:w-1/2 xl:max-w-[23.75rem]">
           <h2 className="font-bold text-4xl leading-8 uppercase text-blue-900 whitespace-nowrap">
-            {selectedLanguage.value === "ptBr"
-              ? "Curso Preparatório"
-              : "Preparatory Course"}
+            {props.preparatoryCourseTitle}
           </h2>
         </div>
       </div>
@@ -40,9 +33,7 @@ export default function TOIECCertificationIsland(props) {
                 <span
                   className=""
                   dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? item.textInPortuguese
-                      : item.textInEnglish,
+                    __html: item.text,
                   }}
                 >
                 </span>
@@ -61,18 +52,14 @@ export default function TOIECCertificationIsland(props) {
                 <span
                   className=""
                   dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? props.card.modalityInPortuguese
-                      : props.card.modalityInEnglish,
+                    __html: props.card.modality,
                   }}
                 >
                 </span>
                 <span
                   className="text-center"
                   dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? props.card.sessionsInPortuguese
-                      : props.card.sessionsInEnglish,
+                    __html: props.card.sessions,
                   }}
                 >
                 </span>

@@ -5,17 +5,16 @@ interface PageBannerProps {
   bgColor: string;
   bgImageDesktop: ImageWidget;
   bgImageMobile?: ImageWidget;
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   /**
    * @format rich-text
    */
-  descriptionInEnglish?: string;
-  /**
-   * @format rich-text
-   */
-  descriptionInPortuguese?: string;
+  description?: string;
   hasNotice: boolean;
+  /**
+   * @format rich-text
+   */
+  noticeText?: string;
 }
 
 export default function PageBanner(props: PageBannerProps) {

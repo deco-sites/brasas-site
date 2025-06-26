@@ -1,9 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function CardsGrid({ cards }) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <div className="w-full flex flex-wrap justify-center gap-x-4 gap-y-6 xl:grid-cols-4">
       {cards.map((card) => (
@@ -13,16 +10,12 @@ export default function CardsGrid({ cards }) {
         >
           <div className="flex flex-col items-center gap-2 text-blue-900 p-4 h-[36.36%]">
             <span className="leading-8 font-black text-xl text-center">
-              {selectedLanguage.value === "ptBr"
-                ? card.portugueseTitle
-                : card.englishTitle}
+              {card.title}
             </span>
             <span
               className="leading-6 font-medium font-base"
               dangerouslySetInnerHTML={{
-                __html: selectedLanguage.value === "ptBr"
-                  ? card.portugueseDescription
-                  : card.englishDescription,
+                __html: card.description,
               }}
             >
             </span>

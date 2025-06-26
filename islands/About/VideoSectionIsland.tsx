@@ -2,10 +2,8 @@ import Image from "apps/website/components/Image.tsx";
 import { useState } from "preact/hooks";
 import IconPlayerPlayFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/player-play-filled.tsx";
 import IconX from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/x.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function VideoSectionIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlayVideo = () => {
@@ -29,7 +27,7 @@ export default function VideoSectionIsland(props) {
             <IconPlayerPlayFilled class="w-6 h-6" />
           </div>
           <span className="text-white font-bold text-4xl text-center">
-            {props.titleInPortuguese}
+            {props.title}
           </span>
         </div>
       </div>
@@ -42,7 +40,7 @@ export default function VideoSectionIsland(props) {
             <div className="relative">
               <video controls controlsList="nodownload" autoPlay>
                 <source
-                  src="https://brasas-videos.s3.us-east-2.amazonaws.com/Manifesto_BRASAS_ejsjud.mp4"
+                  src={props.videoLink}
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.

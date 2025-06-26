@@ -1,22 +1,19 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import BrasasSchoolsIsland from "site/islands/Partnerships/BrasasSchoolsIsland.tsx";
 
-/* @titleBy titleInPortuguese */
+/* @titleBy title */
 interface Item {
   icon: ImageWidget;
-  titleInEnglish?: string;
-  titleInPortuguese?: string;
-  textInEnglish?: string;
-  textInPortuguese?: string;
+  title?: string;
+  text?: string;
 }
 
 interface BrasasSchoolsProps {
   logo: ImageWidget;
-  titleInEnglish: string;
-  titleInPortuguese: string;
-  subtitleInEnglish: string;
-  subtitleInPortuguese: string;
+  title: string;
+  subtitle: string;
   items: Item[];
+  buttonText: string;
 }
 
 export default function BrasasSchools(props: BrasasSchoolsProps) {

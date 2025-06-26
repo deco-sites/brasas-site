@@ -7,18 +7,14 @@ interface Item {
   /**
    * @format rich-text
    */
-  textInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  textInPortuguese: string;
+  text: string;
 }
 
 interface BrasasCompaniesProps {
   logo: ImageWidget;
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   items: Item[];
+  buttonText: string;
 }
 
 export default function BrasasCompanies(props: BrasasCompaniesProps) {

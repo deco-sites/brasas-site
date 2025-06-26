@@ -1,16 +1,14 @@
 import HeaderIsland from "site/islands/HeaderIsland.tsx";
 import { ImageProps } from "site/types/ImageProps.ts";
 
-/** @titleBy nameInPortuguese */
+/** @titleBy name */
 interface NavItems {
-  nameInEnglish: string;
-  nameInPortuguese: string;
+  name: string;
   link: string;
 }
 
 interface HeaderButton {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
   link: string;
 }
 

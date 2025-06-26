@@ -1,8 +1,20 @@
 import Image from "apps/website/components/Image.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
+import { useEffect, useState } from "preact/hooks";
+import { getCookie } from "../../helpers/getCookie.ts";
+import { setCookie } from "../../helpers/setCookie.ts";
 
 export default function KidsCardsIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
+  const [language, setLanguage] = useState("pt-BR");
+
+  useEffect(() => {
+    const currentLang = getCookie("language");
+
+    if (!currentLang) {
+      const userLanguage = navigator.language || navigator.languages[0];
+      setCookie(userLanguage);
+    }
+    setLanguage(currentLang);
+  }, []);
 
   return (
     <div className="flex w-full justify-center">
@@ -11,11 +23,7 @@ export default function KidsCardsIsland(props) {
           <div className="py-8 max-w-[48rem]">
             <span
               className="text-2xl"
-              dangerouslySetInnerHTML={{
-                __html: selectedLanguage.value === "ptBr"
-                  ? props.textInPortuguese
-                  : props.textInEnglish,
-              }}
+              dangerouslySetInnerHTML={{ __html: props.text }}
             >
             </span>
           </div>
@@ -23,7 +31,7 @@ export default function KidsCardsIsland(props) {
 
         <div className="flex flex-col items-center justify-center py-5 pb-11">
           <Image
-            src={selectedLanguage.value === "ptBr"
+            src={language === "pt-BR"
               ? "/kids-cards-pt.png"
               : "/kids-cards-en.png"}
             alt="Kids Cards"

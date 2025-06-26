@@ -1,10 +1,7 @@
 import Image from "apps/website/components/Image.tsx";
 import IconArrowNarrowRight from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/arrow-narrow-right.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function BrasasCardIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   const COLORS = {
     "blue-50": "bg-blue-50",
     "blue-900": "bg-blue-900",
@@ -34,14 +31,10 @@ export default function BrasasCardIsland(props) {
               }`}
             >
               <h2 className="text-4xl leading-10 font-black text-center text-blue-900">
-                {selectedLanguage.value === "ptBr"
-                  ? card.titleInPortuguese
-                  : card.titleInEnglish}
+                {card.title}
               </h2>
               <p className="text-center text-blue-900 text-base font-medium ">
-                {selectedLanguage.value === "ptBr"
-                  ? card.descriptionInPortuguese
-                  : card.descriptionInEnglish}
+                {card.description}
               </p>
               <a href={card.link}>
                 <button
@@ -50,9 +43,7 @@ export default function BrasasCardIsland(props) {
                   }`}
                 >
                   <span className="text-base font-bold">
-                    {selectedLanguage.value === "ptBr"
-                      ? card.buttonTextInPortuguese
-                      : card.buttonTextInEnglish}
+                    {card.buttonText}
                   </span>
                   <IconArrowNarrowRight class="w-6 h-6" />
                 </button>

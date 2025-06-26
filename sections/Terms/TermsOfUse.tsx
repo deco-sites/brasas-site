@@ -1,22 +1,16 @@
 import TermsOfUseIsland from "site/islands/Terms/TermsOfUseIsland.tsx";
 
-/* @titleBy titleInPortuguese */
+/* @titleBy title */
 interface TextBlock {
-  titleInEnglish?: string;
-  titleInPortuguese?: string;
+  title?: string;
   /**
    * @format rich-text
    */
-  textInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  textInPortuguese: string;
+  text: string;
 }
 
 interface TermsOfUseProps {
-  lastUpdateDateInEnglish: string;
-  lastUpdateDateInPortuguese: string;
+  lastUpdateDate: string;
   textBlocks: TextBlock[];
 }
 

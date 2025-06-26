@@ -1,11 +1,9 @@
-import { useSelectLanguage } from "site/sdk/language.ts";
 import { useEffect, useRef } from "preact/hooks";
 
 export default function PartnersCarouselIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
   const carouselRef = useRef(null);
   const requestRef = useRef();
-  const speed = 0.8; // Velocidade ajustável
+  const speed = 0.8;
 
   useEffect(() => {
     if (!carouselRef.current || !props.partnersLogos.length) return;
@@ -13,7 +11,6 @@ export default function PartnersCarouselIsland(props) {
     const carousel = carouselRef.current;
     const logos = props.partnersLogos;
 
-    // 1. Cria elementos de imagem otimizados
     const createLogoElements = () => {
       return logos.map((logo) => {
         const img = document.createElement("img");
@@ -26,18 +23,15 @@ export default function PartnersCarouselIsland(props) {
       });
     };
 
-    // 2. Limpa e configura o carrossel
     carousel.innerHTML = "";
     const elements = createLogoElements();
 
-    // 3. Duplicação dos elementos para efeito contínuo
     elements.forEach((el) => carousel.appendChild(el.cloneNode(true)));
-    elements.forEach((el) => carousel.appendChild(el.cloneNode(true))); // Duplica novamente
+    elements.forEach((el) => carousel.appendChild(el.cloneNode(true)));
 
-    // 4. Configura a animação contínua
     let position = 0;
     let lastTime = performance.now();
-    const totalWidth = carousel.scrollWidth / 2; // Metade do conteúdo visível
+    const totalWidth = carousel.scrollWidth / 2;
 
     const animate = (currentTime) => {
       const delta = currentTime - lastTime;
@@ -45,7 +39,6 @@ export default function PartnersCarouselIsland(props) {
 
       position -= (speed * delta) / 16;
 
-      // Reset suave ao atingir a metade do carrossel
       if (Math.abs(position) >= totalWidth) {
         position = 0;
       }
@@ -55,7 +48,6 @@ export default function PartnersCarouselIsland(props) {
       requestRef.current = requestAnimationFrame(animate);
     };
 
-    // 5. Inicia animação após breve delay
     const startDelay = setTimeout(() => {
       requestRef.current = requestAnimationFrame(animate);
     }, 300);
@@ -69,9 +61,7 @@ export default function PartnersCarouselIsland(props) {
   return (
     <section className="bg-gray-100/10 flex flex-col gap-20 items-center justify-center h-[22rem] relative">
       <h2 className="text-center text-2xl font-bold text-blue-500 z-10">
-        {selectedLanguage.value === "ptBr"
-          ? props.titleInPortuguese
-          : props.titleInEnglish}
+        {props.title}
       </h2>
 
       <div className="w-full overflow-hidden relative px-4">

@@ -8,18 +8,15 @@ interface Icon {
   height?: number;
 }
 
-/* @titleBy textInPortuguese */
+/* @titleBy text */
 interface DifferenceCard {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
   icon: Icon;
 }
 
 interface HighlightedDifferencesProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
-  descriptionInEnglish: string;
-  descriptionInPortuguese: string;
+  title: string;
+  description: string;
   differenceCards: DifferenceCard[];
 }
 
