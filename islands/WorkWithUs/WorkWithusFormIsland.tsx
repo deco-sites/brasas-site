@@ -3,7 +3,6 @@ import TextInput from "site/components/ui/TextInput.tsx";
 import InputCheckbox from "site/components/ui/InputCheckbox.tsx";
 import IconSend from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/send.tsx";
 import IconCloudUpload from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/cloud-upload.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 import SelectInput from "site/components/ui/SelectInput.tsx";
 import { useRef, useState } from "preact/hooks";
 import { invoke } from "../../runtime.ts";
@@ -11,16 +10,10 @@ import SendingConfirmationModal from "site/components/ui/SendingConfirmationModa
 import Recaptcha from "site/helpers/recaptcha.tsx";
 
 export default function WorkWithUsFormIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
   const fileInputRef = useRef(null);
 
-  const desiredAreaOptionsPtBr = props.desiredAreas.map((area) => ({
-    name: area.nameInPortuguese,
-    value: area.value,
-  }));
-
-  const desiredAreaOptionsEnUS = props.desiredAreas.map((area) => ({
-    name: area.nameInEnglish,
+  const desiredAreaOptions = props.desiredAreas.map((area) => ({
+    name: area.name,
     value: area.value,
   }));
 
@@ -115,65 +108,47 @@ export default function WorkWithUsFormIsland(props) {
             >
               <div className="flex flex-col gap-4">
                 <span className="text-black-500 font-bold text-2xl leading-10">
-                  {selectedLanguage.value === "ptBr"
-                    ? "Faça parte do time BRASAS"
-                    : "Be part of the BRASAS team"}
+                  {props.formTitle}
                 </span>
                 <span>
-                  {selectedLanguage.value === "ptBr"
-                    ? "Preencha o formulário com as suas informações e entraremos em contato."
-                    : "Fill out the form with your information and we will contact you."}
+                  {props.formSubtitle}
                 </span>
               </div>
               <div className="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-4">
                 <TextInput
-                  label={selectedLanguage.value === "ptBr" ? "nome" : "name"}
-                  placeholder={selectedLanguage.value === "ptBr"
-                    ? "Insira seu nome"
-                    : "Enter your name"}
+                  label={props.nameInput.label}
+                  placeholder={props.nameInput.placeholder}
                   value={name}
                   setValue={setName}
                   required
                 />
                 <TextInput
-                  label={selectedLanguage.value === "ptBr" ? "e-mail" : "email"}
-                  placeholder={selectedLanguage.value === "ptBr"
-                    ? "Insira seu e-mail"
-                    : "Enter your email"}
+                  label={props.emailInput.label}
+                  placeholder={props.emailInput.placeholder}
                   value={email}
                   setValue={setEmail}
                   required
                   type="email"
                 />
                 <TextInput
-                  label={selectedLanguage.value === "ptBr"
-                    ? "telefone"
-                    : "phone"}
-                  placeholder="(dd) xxxxx-xxxx"
+                  label={props.telInput.label}
+                  placeholder={props.telInput.placeholder}
                   value={phone}
                   setValue={setPhone}
                   required
                   type="tel"
                 />
                 <TextInput
-                  label={selectedLanguage.value === "ptBr" ? "cidade" : "city"}
-                  placeholder={selectedLanguage.value === "ptBr"
-                    ? "Insira sua cidade"
-                    : "Enter your city"}
+                  label={props.cityInput.label}
+                  placeholder={props.cityInput.placeholder}
                   value={city}
                   setValue={setCity}
                   required
                 />
                 <SelectInput
-                  label={selectedLanguage.value === "ptBr"
-                    ? "área desejada"
-                    : "desired area"}
-                  placeholder={selectedLanguage.value === "ptBr"
-                    ? "Selecione a área desejada"
-                    : "Select the desired area"}
-                  options={selectedLanguage.value === "ptBr"
-                    ? desiredAreaOptionsPtBr
-                    : desiredAreaOptionsEnUS}
+                  label={props.desiredAreaInput.label}
+                  placeholder={props.desiredAreaInput.placeholder}
+                  options={desiredAreaOptions}
                   bgColor="gray"
                   value={desiredArea}
                   onChangeFunction={setDesiredArea}
@@ -182,7 +157,7 @@ export default function WorkWithUsFormIsland(props) {
 
                 <div className="flex flex-col gap-2">
                   <label className="text-sm font-semibold text-black-500 uppercase leading-6">
-                    {selectedLanguage.value === "ptBr" ? "Currículo" : "resume"}
+                    {props.curriculumInput.label}
                   </label>
                   <div className="relative">
                     <div className="flex cursor-pointer gap-2 justify-center items-center py-3 border border-dashed border-blue-500 rounded-lg">
@@ -190,9 +165,7 @@ export default function WorkWithUsFormIsland(props) {
                       <span className="text-gray-500 font-normal text-base">
                         {selectedFile !== null
                           ? selectedFile.name
-                          : selectedLanguage.value === "ptBr"
-                          ? "Selecione seu arquivo"
-                          : "Select your file"}
+                          : props.curriculumInput.placeholder}
                       </span>
                     </div>
                     <input
@@ -206,28 +179,20 @@ export default function WorkWithUsFormIsland(props) {
                 </div>
               </div>
               <TextArea
-                label={selectedLanguage.value === "ptBr"
-                  ? "comentários adicionais"
-                  : "additional comments"}
-                placeholder={selectedLanguage.value === "ptBr"
-                  ? "Insira seu comentário"
-                  : "Enter your comment"}
+                label={props.additionalCommentsInput.label}
+                placeholder={props.additionalCommentsInput.placeholder}
                 value={additionalComments}
                 setValue={setAdditionalComments}
                 required
               />
               <InputCheckbox
-                text={selectedLanguage.value === "ptBr"
-                  ? "Eu concordo em enviar meus dados pessoais para análise em um possível processo seletivo para vaga."
-                  : "I agree to send my personal data for analysis in a possible selection process for a vacancy."}
+                text={props.acceptanceSendText}
                 value={acceptedSendData}
                 setValue={setAcceptedSendData}
                 required
               />
               <InputCheckbox
-                text={selectedLanguage.value === "ptBr"
-                  ? "Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses"
-                  : "I agree to receive personalized communications and offers according to my interests"}
+                text={props.acceptanceReceiveText}
                 value={acceptedTerms}
                 setValue={setAcceptedTerms}
                 required
@@ -240,7 +205,7 @@ export default function WorkWithUsFormIsland(props) {
               <button className="bg-gray-500 hover:bg-blue-300 transition duration-300 text-white rounded-lg w-full py-4 flex gap-2 justify-center items-center">
                 <IconSend class="w-6 h-6" />
                 <span>
-                  {selectedLanguage.value === "ptBr" ? "Enviar" : "Submit"}
+                  {props.buttonText}
                 </span>
               </button>
             </form>

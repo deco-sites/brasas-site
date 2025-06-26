@@ -1,4 +1,3 @@
-import { useSelectLanguage } from "site/sdk/language.ts";
 import HomeForm from "site/islands/HomeForm.tsx";
 import CardsGrid from "site/components/ui/CardsGrid.tsx";
 import { DiscoverOurCoursesProps } from "site/sections/Home/DiscoverOurCourses.tsx";
@@ -6,8 +5,6 @@ import { DiscoverOurCoursesProps } from "site/sections/Home/DiscoverOurCourses.t
 export default function DiscoverOurCoursesIsland(
   props: DiscoverOurCoursesProps,
 ) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <div
       className="relative flex justify-center bg-blue-100 w-full"
@@ -20,17 +17,14 @@ export default function DiscoverOurCoursesIsland(
     >
       <div className="w-full max-w-[88.5rem] px-9 pb-24 lg:pb-36">
         <HomeForm
-          ptBrTitle={props.portugueseFormTitle}
-          enUsTitle={props.englishFormTitle}
+          title={props.formTitle}
           RecipientsEmailArr={props.RecipientsEmailArr}
           CopyToArr={props.CopyToArr}
           subject={props.subject}
         />
         <div className="mt-[56rem] md:mt-[48rem] xl:mt-[32.5rem] flex flex-col items-center">
           <h2 className="text-center font-black leading-[48px] text-black-500 text-[2.5rem] mb-12">
-            {selectedLanguage.value === "ptBr"
-              ? props.portugueseTitle
-              : props.englishTitle}
+            {props.title}
           </h2>
           <CardsGrid cards={props.cards} />
         </div>

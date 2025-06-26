@@ -1,8 +1,6 @@
 import { useEffect, useState } from "preact/hooks";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function PageBannerIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   const bgColors = {
@@ -48,9 +46,7 @@ export default function PageBannerIsland(props) {
     >
       <div className="normal-case flex flex-col gap-6 items-center justify-center w-[45rem] max-w-full px-9 pt-12 pb-10">
         <h1 className="text-white font-black text-7xl leading-[4.5rem] text-center">
-          {selectedLanguage.value === "ptBr"
-            ? props.titleInPortuguese
-            : props.titleInEnglish}
+          {props.title}
         </h1>
 
         {props.descriptionInPortuguese
@@ -58,9 +54,7 @@ export default function PageBannerIsland(props) {
             <p
               className="text-white text-2xl font-normal leading-8 text-center"
               dangerouslySetInnerHTML={{
-                __html: selectedLanguage.value === "ptBr"
-                  ? props.descriptionInPortuguese
-                  : props.descriptionInEnglish,
+                __html: props.description,
               }}
             >
             </p>
@@ -71,9 +65,7 @@ export default function PageBannerIsland(props) {
           <p
             className="text-white text-center"
             dangerouslySetInnerHTML={{
-              __html: selectedLanguage.value === "ptBr"
-                ? `Curso disponível nas modalidades presencial e <i>online</i>`
-                : "Course available in in-person and <i>online</i> formats",
+              __html: props.noticeText,
             }}
           >
             {}

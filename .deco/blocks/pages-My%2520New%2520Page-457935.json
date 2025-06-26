@@ -1,53 +1,173 @@
 {
   "name": "Indique e Ganhe",
   "path": "/indique_e_ganhe",
-  "sections": [
-    {
-      "__resolveType": "Header"
-    },
-    {
-      "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnBanner.tsx",
-      "titleInPortuguese": "<p>Você tem um </p><p>amigo de verdade!</p>",
-      "titleInEnglish": "<p>You have a </p><p>true friend!</p>",
-      "bgImage": "https://assets.decocache.com/brasas-site/1dbe4c42-e0dc-40cb-9e50-fdfe1484e805/Group-159.png",
-      "iconImage": "https://assets.decocache.com/brasas-site/a99c0352-62f5-432b-893b-9cd7d95a876d/student-vector.png",
-      "background": {
-        "image": "https://assets.decocache.com/brasas-site/b892a014-5e57-4066-b566-23670858f031/Header_Indique-e-ganhe_fundo.png",
-        "width": 1440,
-        "height": 573,
-        "alt": "background"
-      },
-      "centeredImage": {
-        "image": "https://assets.decocache.com/brasas-site/9ebf2047-117c-484d-bb09-9e8617a4b2b7/Header_Indique-e-ganhe_sem-fundo.png",
-        "width": 1654,
-        "height": 1190,
-        "alt": "indique e ganhe"
-      }
-    },
-    {
-      "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnForm.tsx",
-      "titleInEnglish": "How to participate?",
-      "subtitleInEnglish": "<p><strong>BRASAS Student:</strong> Ask your friend to indicate your name when registering and you will both receive a discount!</p><p>&nbsp;</p><p><strong>Referred friend:</strong> Enter the name or code of your friend who is already studying at BRASAS. Fill out the form below!</p>",
-      "titleInPortuguese": "Como participar?",
-      "subtitleInPortuguese": "<p><strong>Aluno BRASAS:</strong> Peça para seu amigo indicar o seu nome no ato da matrícula e o desconto de vocês dois está garantido! </p><p>&nbsp;</p><p><strong>Amigo indicado:</strong> Informe o nome ou código do seu amigo que já estuda no BRASAS. Preencha o formulário ao lado!</p>",
-      "image": "https://assets.decocache.com/brasas-site/aa742bbc-e80e-4d96-9ada-c390ef94383d/Group-9.png",
-      "formTitleInPortuguese": "Vamos começar?",
-      "formSubtitleInPortuguese": "Se você está entrando no BRASAS através da indicação de um aluno, deixe os seus dados abaixo que entraremos em contato para seguir com a sua matrícula e com o desconto.",
-      "formTitleInEnglish": "Shall we begin?",
-      "formSubtitleInEnglish": "If you are joining BRASAS through a student's referral, leave your details below and we will contact you to proceed with your enrollment and discount.",
-      "subject": "Formulário BRASAS - Indique e Ganhe",
-      "RecipientsEmailArr": [
-        {
-          "email": "comercial@brasas.com"
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "HeaderEnglish"
+          },
+          {
+            "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnBanner.tsx",
+            "titleInPortuguese": "<p>Você tem um </p><p>amigo de verdade!</p>",
+            "titleInEnglish": "<p>You have a </p><p>true friend!</p>",
+            "bgImage": "https://assets.decocache.com/brasas-site/1dbe4c42-e0dc-40cb-9e50-fdfe1484e805/Group-159.png",
+            "iconImage": "https://assets.decocache.com/brasas-site/a99c0352-62f5-432b-893b-9cd7d95a876d/student-vector.png",
+            "background": {
+              "image": "https://assets.decocache.com/brasas-site/b892a014-5e57-4066-b566-23670858f031/Header_Indique-e-ganhe_fundo.png",
+              "width": 1440,
+              "height": 573,
+              "alt": "background"
+            },
+            "centeredImage": {
+              "image": "https://assets.decocache.com/brasas-site/9ebf2047-117c-484d-bb09-9e8617a4b2b7/Header_Indique-e-ganhe_sem-fundo.png",
+              "width": 1654,
+              "height": 1190,
+              "alt": "indique e ganhe"
+            }
+          },
+          {
+            "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnForm.tsx",
+            "titleInEnglish": "How to participate?",
+            "titleInPortuguese": "Como participar?",
+            "subtitleInEnglish": "<p><strong>BRASAS Student:</strong> Ask your friend to indicate your name when registering and you will both receive a discount!</p><p>&nbsp;</p><p><strong>Referred friend:</strong> Enter the name or code of your friend who is already studying at BRASAS. Fill out the form below!</p>",
+            "subtitleInPortuguese": "<p><strong>Aluno BRASAS:</strong> Peça para seu amigo indicar o seu nome no ato da matrícula e o desconto de vocês dois está garantido! </p><p>&nbsp;</p><p><strong>Amigo indicado:</strong> Informe o nome ou código do seu amigo que já estuda no BRASAS. Preencha o formulário ao lado!</p>",
+            "image": "https://assets.decocache.com/brasas-site/aa742bbc-e80e-4d96-9ada-c390ef94383d/Group-9.png",
+            "formTitleInPortuguese": "Vamos começar?",
+            "formSubtitleInPortuguese": "Se você está entrando no BRASAS através da indicação de um aluno, deixe os seus dados abaixo que entraremos em contato para seguir com a sua matrícula e com o desconto.",
+            "formTitleInEnglish": "Shall we begin?",
+            "formSubtitleInEnglish": "If you are joining BRASAS through a student's referral, leave your details below and we will contact you to proceed with your enrollment and discount.",
+            "subject": "Formulário BRASAS - Indique e Ganhe",
+            "RecipientsEmailArr": [
+              {
+                "email": "comercial@brasas.com"
+              }
+            ],
+            "regulationTextInPortuguese": "<p>*O aluno e o amigo indicado ganham crédito de R$100,00 em uma mensalidade a cada indicação que se matricular. Desconto válido apenas em mensalidades, até o último dia do ano letivo de 2025, nas unidades BRASAS do Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu e no BRASAS Online. Consulte o regulamento completo na secretaria dessas unidades ou com a secretaria virtual do BRASAS Online.</p>",
+            "regulationTextInEnglish": "<p>*The student and the referred friend will receive a R$100.00 credit towards a monthly fee for each referral who enrolls. Discount valid only on monthly fees, until the last day of the 2025 school year, at BRASAS units in Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu and on BRASAS Online. Consult the complete rules at the secretariat of these units or with the virtual secretariat of BRASAS Online.</p>",
+            "title": "How to participate?",
+            "subtitle": "<p><strong>BRASAS Student:</strong> Ask your friend to indicate your name when registering and you will both receive a discount!</p><p>&nbsp;</p><p><strong>Referred friend:</strong> Enter the name or code of your friend who is already studying at BRASAS. Fill out the form below!</p>",
+            "regulationText": "<p>*The student and the referred friend will receive a R$100.00 credit towards a monthly fee for each referral who enrolls. Discount valid only on monthly fees, until the last day of the 2025 school year, at BRASAS units in Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu and on BRASAS Online. Consult the complete rules at the secretariat of these units or with the virtual secretariat of BRASAS Online.</p>",
+            "formTitle": "Shall we begin?",
+            "formSubtitle": "If you are joining BRASAS through a student's referral, leave your details below and we will contact you to proceed with your enrollment and discount.",
+            "highlightedWords": [
+              "indicated",
+              "enrolled",
+              "won!"
+            ],
+            "nameInput": {
+              "label": "Name",
+              "placeholder": "Enter your name"
+            },
+            "emailInput": {
+              "label": "Email",
+              "placeholder": "Enter your email"
+            },
+            "telInput": {
+              "label": "phone",
+              "placeholder": "Enter your phone"
+            },
+            "referralCodeInput": {
+              "label": "Referral code",
+              "placeholder": "ABC123-EXAMPLE"
+            },
+            "sendButtonText": "Request contact",
+            "acceptanceText": "I agree to receive communications and personalized offers according to my interests"
+          },
+          {
+            "__resolveType": "FooterEnglish"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/cookie.ts",
+          "name": "language",
+          "value": "en-US"
         }
-      ],
-      "regulationTextInPortuguese": "<p>*O aluno e o amigo indicado ganham crédito de R$100,00 em uma mensalidade a cada indicação que se matricular. Desconto válido apenas em mensalidades, até o último dia do ano letivo de 2025, nas unidades BRASAS do Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu e no BRASAS Online. Consulte o regulamento completo na secretaria dessas unidades ou com a secretaria virtual do BRASAS Online.</p>",
-      "regulationTextInEnglish": "<p>*The student and the referred friend will receive a R$100.00 credit towards a monthly fee for each referral who enrolls. Discount valid only on monthly fees, until the last day of the 2025 school year, at BRASAS units in Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu and on BRASAS Online. Consult the complete rules at the secretariat of these units or with the virtual secretariat of BRASAS Online.</p>"
-    },
-    {
-      "__resolveType": "Footer"
-    }
-  ],
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Header"
+          },
+          {
+            "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnBanner.tsx",
+            "titleInPortuguese": "<p>Você tem um </p><p>amigo de verdade!</p>",
+            "titleInEnglish": "<p>You have a </p><p>true friend!</p>",
+            "bgImage": "https://assets.decocache.com/brasas-site/1dbe4c42-e0dc-40cb-9e50-fdfe1484e805/Group-159.png",
+            "iconImage": "https://assets.decocache.com/brasas-site/a99c0352-62f5-432b-893b-9cd7d95a876d/student-vector.png",
+            "background": {
+              "image": "https://assets.decocache.com/brasas-site/b892a014-5e57-4066-b566-23670858f031/Header_Indique-e-ganhe_fundo.png",
+              "width": 1440,
+              "height": 573,
+              "alt": "background"
+            },
+            "centeredImage": {
+              "image": "https://assets.decocache.com/brasas-site/9ebf2047-117c-484d-bb09-9e8617a4b2b7/Header_Indique-e-ganhe_sem-fundo.png",
+              "width": 1654,
+              "height": 1190,
+              "alt": "indique e ganhe"
+            }
+          },
+          {
+            "__resolveType": "site/sections/ReferAndEarn/ReferAndEarnForm.tsx",
+            "titleInEnglish": "How to participate?",
+            "subtitleInEnglish": "<p><strong>BRASAS Student:</strong> Ask your friend to indicate your name when registering and you will both receive a discount!</p><p>&nbsp;</p><p><strong>Referred friend:</strong> Enter the name or code of your friend who is already studying at BRASAS. Fill out the form below!</p>",
+            "titleInPortuguese": "Como participar?",
+            "subtitleInPortuguese": "<p><strong>Aluno BRASAS:</strong> Peça para seu amigo indicar o seu nome no ato da matrícula e o desconto de vocês dois está garantido! </p><p>&nbsp;</p><p><strong>Amigo indicado:</strong> Informe o nome ou código do seu amigo que já estuda no BRASAS. Preencha o formulário ao lado!</p>",
+            "image": "https://assets.decocache.com/brasas-site/aa742bbc-e80e-4d96-9ada-c390ef94383d/Group-9.png",
+            "formTitleInPortuguese": "Vamos começar?",
+            "formSubtitleInPortuguese": "Se você está entrando no BRASAS através da indicação de um aluno, deixe os seus dados abaixo que entraremos em contato para seguir com a sua matrícula e com o desconto.",
+            "formTitleInEnglish": "Shall we begin?",
+            "formSubtitleInEnglish": "If you are joining BRASAS through a student's referral, leave your details below and we will contact you to proceed with your enrollment and discount.",
+            "subject": "Formulário BRASAS - Indique e Ganhe",
+            "RecipientsEmailArr": [
+              {
+                "email": "comercial@brasas.com"
+              }
+            ],
+            "regulationTextInPortuguese": "<p>*O aluno e o amigo indicado ganham crédito de R$100,00 em uma mensalidade a cada indicação que se matricular. Desconto válido apenas em mensalidades, até o último dia do ano letivo de 2025, nas unidades BRASAS do Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu e no BRASAS Online. Consulte o regulamento completo na secretaria dessas unidades ou com a secretaria virtual do BRASAS Online.</p>",
+            "regulationTextInEnglish": "<p>*The student and the referred friend will receive a R$100.00 credit towards a monthly fee for each referral who enrolls. Discount valid only on monthly fees, until the last day of the 2025 school year, at BRASAS units in Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu and on BRASAS Online. Consult the complete rules at the secretariat of these units or with the virtual secretariat of BRASAS Online.</p>",
+            "title": "Como participar?",
+            "subtitle": "<p><strong>Aluno BRASAS:</strong> Peça para seu amigo indicar o seu nome no ato da matrícula e o desconto de vocês dois está garantido!</p><p>&nbsp;</p><p><strong>Amigo indicado:</strong> Informe o nome ou código do seu amigo que já estuda no BRASAS. Preencha o formulário ao lado!</p>",
+            "regulationText": "<p>*O aluno e o amigo indicado ganham crédito de R$100,00 em uma mensalidade a cada indicação que se matricular. Desconto válido apenas em mensalidades, até o último dia do ano letivo de 2025, nas unidades BRASAS do Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu e no BRASAS Online. Consulte o regulamento completo na secretaria dessas unidades ou com a secretaria virtual do BRASAS Online.</p>",
+            "formTitle": "Vamos começar?",
+            "formSubtitle": "Se você está entrando no BRASAS através da indicação de um aluno, deixe os seus dados abaixo que entraremos em contato para seguir com a sua matrícula e com o desconto.",
+            "highlightedWords": [
+              "indicou",
+              "matriculou",
+              "ganhou!"
+            ],
+            "nameInput": {
+              "label": "Nome",
+              "placeholder": "Insira seu nome"
+            },
+            "emailInput": {
+              "label": "E-mail",
+              "placeholder": "Insira seu e-mail"
+            },
+            "telInput": {
+              "label": "Telefone",
+              "placeholder": "Insira seu telefone"
+            },
+            "referralCodeInput": {
+              "label": "Código de indicação",
+              "placeholder": "ABC123-EXEMPLO"
+            },
+            "sendButtonText": "Solicitar contato",
+            "acceptanceText": "Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses"
+          },
+          {
+            "__resolveType": "Footer"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

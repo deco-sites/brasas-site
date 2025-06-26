@@ -1,8 +1,4 @@
-import { useSelectLanguage } from "site/sdk/language.ts";
-
 export default function BannerWithoutImageIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   const BG_COLORS = {
     "green": "bg-green-100",
     "blue": "bg-blue-300",
@@ -20,9 +16,7 @@ export default function BannerWithoutImageIsland(props) {
             props.bgColor === "green" ? "text-blue-900" : "text-white"
           } font-black text-7xl leading-[4.5rem] text-center`}
         >
-          {selectedLanguage.value === "ptBr"
-            ? props.titleInPortuguese
-            : props.titleInEnglish}
+          {props.title}
         </h1>
       </div>
     </section>

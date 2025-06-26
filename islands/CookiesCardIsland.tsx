@@ -1,10 +1,21 @@
 import Image from "apps/website/components/Image.tsx";
 import { useEffect, useState } from "preact/hooks";
-import { useSelectLanguage } from "site/sdk/language.ts";
+import { getCookie } from "../helpers/getCookie.ts";
+import { setCookie } from "../helpers/setCookie.ts";
 
 export default function CookiesCardIsland() {
   const [isAccepted, setIsAccepted] = useState<boolean | null>(null);
-  const { selectedLanguage } = useSelectLanguage();
+  const [language, setLanguage] = useState("pt-BR");
+
+  useEffect(() => {
+    const currentLang = getCookie("language");
+
+    if (!currentLang) {
+      const userLanguage = navigator.language || navigator.languages[0];
+      setCookie(userLanguage);
+    }
+    setLanguage(currentLang);
+  }, []);
 
   useEffect(() => {
     const savedPreference = localStorage.getItem("cookiesAccepted");
@@ -43,7 +54,7 @@ export default function CookiesCardIsland() {
           loading="eager"
         />
         <span className="text-center font-bold">
-          {selectedLanguage.value === "ptBr"
+          {language === "pt-BR"
             ? "Usamos cookies para garantir que oferecemos a melhor experiência em nosso site."
             : "We use cookies to ensure that we give you the best experience on our website."}
         </span>
@@ -53,13 +64,13 @@ export default function CookiesCardIsland() {
           onClick={handleAccept}
           className="bg-blue-300 hover:bg-blue-950 transition-all duration-300 py-2 px-8 text-white rounded-lg"
         >
-          {selectedLanguage.value === "ptBr" ? "Aceitar" : "Accept"}
+          {language === "pt-BR" ? "Aceitar" : "Accept"}
         </button>
         <button
           onClick={handleClose}
           className="bg-blue-300 hover:bg-blue-950 transition-all duration-300 py-2 px-8 text-white rounded-lg"
         >
-          {selectedLanguage.value === "ptBr" ? "Fechar" : "Close"}
+          {language === "pt-BR" ? "Fechar" : "Close"}
         </button>
       </div>
     </div>

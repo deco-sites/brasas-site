@@ -10,5 +10,26 @@
   "subject": "Formulário BRASAS - Quero saber mais",
   "CopyToArr": [],
   "testButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
-  "rendersLeveling": true
+  "rendersLeveling": true,
+  "title": "Quero saber mais",
+  "levelingTitle": "Para começar, descubra seu nível em nosso teste de nivelamento.",
+  "levelingSubtitle": "O nosso teste de nivelamento te ajuda a descobrir em que módulo você deve ingressar. Acesse o link abaixo e comece o seu teste agora mesmo!",
+  "levelingButtonText": "Acessar o teste",
+  "levelingButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+  "nameInput": {
+    "label": "Nome",
+    "placeholder": "Insira seu nome"
+  },
+  "emailInput": {
+    "label": "E-mail",
+    "placeholder": "Insira seu e-mail"
+  },
+  "telInput": {
+    "label": "Telefone",
+    "placeholder": "(dd) xxxxx-xxxx"
+  },
+  "formTitle": "Solicite um contato",
+  "formSubtitle": "Deixe os seus dados abaixo e entraremos em contato para mais informações.",
+  "acceptanceTermText": "Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses",
+  "sendButtonText": "Solicitar contato"
 }

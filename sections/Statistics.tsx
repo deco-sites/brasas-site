@@ -1,15 +1,14 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import StatisticsIsland from "site/islands/About/StatisticsIsland.tsx";
 
+/*@titleBy text*/
 interface Item {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
   icon: ImageWidget;
 }
 
 interface StatisticsProps {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
   items: Item[];
 }
 

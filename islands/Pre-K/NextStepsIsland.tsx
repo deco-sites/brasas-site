@@ -1,8 +1,19 @@
-import { useEffect, useRef } from "preact/hooks";
-import { useSelectLanguage } from "site/sdk/language.ts";
+import { useEffect, useRef, useState } from "preact/hooks";
+import { getCookie } from "../../helpers/getCookie.ts";
+import { setCookie } from "../../helpers/setCookie.ts";
 
 export default function NextStepsIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
+  const [language, setLanguage] = useState("pt-BR");
+
+  useEffect(() => {
+    const currentLang = getCookie("language");
+
+    if (!currentLang) {
+      const userLanguage = navigator.language || navigator.languages[0];
+      setCookie(userLanguage);
+    }
+    setLanguage(currentLang);
+  }, []);
 
   const spanRef = useRef(null);
 
@@ -15,26 +26,20 @@ export default function NextStepsIsland(props) {
         link.rel = "noopener noreferrer";
       });
     }
-  }, [props.titleInPortuguese, props.titleInEnglish, selectedLanguage.value]);
+  }, [props.title, language]);
 
   return (
     <div className="w-full flex flex-col xl:flex-row gap:4 xl:gap-10 justify-center items-center pb-12">
       <div className="flex justify-end xl:w-1/2 text-center">
         <span className="text-3xl font-semibold font-black-500">
-          {selectedLanguage.value === "ptBr"
-            ? props.nextStepTitleInPortuguese
-            : props.nextStepTitleInEnglish}
+          {props.nextStepTitle}
         </span>
       </div>
       <div className="flex justify-start xl:w-1/2 text-center xl:text-left">
         <span
           ref={spanRef}
           className="text-xl font-black-500 max-w-64"
-          dangerouslySetInnerHTML={{
-            __html: selectedLanguage.value === "ptBr"
-              ? props.nextStepTextInPortuguese
-              : props.nextStepTextInEnglish,
-          }}
+          dangerouslySetInnerHTML={{ __html: props.nextStepText }}
         >
         </span>
       </div>

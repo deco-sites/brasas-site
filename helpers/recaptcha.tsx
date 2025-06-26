@@ -1,12 +1,23 @@
 import { useEffect, useRef, useState } from "preact/hooks";
-import { useSelectLanguage } from "site/sdk/language.ts";
+import { getCookie } from "./getCookie.ts";
+import { setCookie } from "./setCookie.ts";
 
 export default function Recaptcha({ setToken, setWidgetId, warnRecaptcha }) {
   const recaptchaRef = useRef(null);
   const hasRendered = useRef(false);
   const SITE_KEY = "6LeFE0QrAAAAAE5gmXmBrSaslOMF7Ftnsg0naINk";
-  const { selectedLanguage } = useSelectLanguage();
   const [isLoading, setIsLoading] = useState(true);
+  const [language, setLanguage] = useState("pt-BR");
+
+  useEffect(() => {
+    const currentLang = getCookie("language");
+
+    if (!currentLang) {
+      const userLanguage = navigator.language || navigator.languages[0];
+      setCookie(userLanguage);
+    }
+    setLanguage(currentLang);
+  }, []);
 
   useEffect(() => {
     const loadReCaptchaScript = () => {
@@ -55,7 +66,7 @@ export default function Recaptcha({ setToken, setWidgetId, warnRecaptcha }) {
 
       {warnRecaptcha && (
         <span className="text-xs -my-4 text-center text-red-300">
-          {selectedLanguage.value === "ptBr"
+          {language === "pt-BR"
             ? "Marque a caixa acima para continuar"
             : "Mark the box above to continue"}
         </span>

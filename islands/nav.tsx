@@ -1,9 +1,7 @@
 import { useEffect, useState } from "preact/hooks";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 interface NavItem {
-  nameInEnglish: string;
-  nameInPortuguese: string;
+  name: string;
   link: string;
 }
 
@@ -14,7 +12,6 @@ interface Props {
 
 export default function Nav({ navItems, isOpen }: Props) {
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
-  const { selectedLanguage } = useSelectLanguage();
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -44,9 +41,7 @@ export default function Nav({ navItems, isOpen }: Props) {
                 href={item.link}
                 className="text-xs font-bold uppercase text-white"
               >
-                {selectedLanguage.value === "ptBr"
-                  ? item.nameInPortuguese
-                  : item.nameInEnglish}
+                {item.name}
               </a>
             ))}
           </nav>
@@ -56,12 +51,10 @@ export default function Nav({ navItems, isOpen }: Props) {
             {navItems.map((item) => (
               <a
                 className="first:ml-6 whitespace-nowrap"
-                key={item.nameInPortuguese}
+                key={item.name}
                 href={item.link}
               >
-                {selectedLanguage.value === "ptBr"
-                  ? item.nameInPortuguese
-                  : item.nameInEnglish}
+                {item.name}
               </a>
             ))}
           </nav>

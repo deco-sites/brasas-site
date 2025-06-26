@@ -1,17 +1,12 @@
-import { useSelectLanguage } from "site/sdk/language.ts";
 import IconArrowRight from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/arrow-right.tsx";
 
 export default function BrasasOnlineCardsIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <section className="w-full flex flex-col">
       <div className="bg-blue-600 w-full flex justify-center">
         <div className="w-full max-w-[88.5rem] px-9 flex flex-col items-center">
           <span className="font-bold text-black-500 text-4xl leading-10 py-9">
-            {selectedLanguage.value === "ptBr"
-              ? props.titleInPortuguese
-              : props.titleInEnglish}
+            {props.title}
           </span>
           <div className="py-20 grid xl:flex grid-cols-1 gap-8">
             {props.classesCards.map((card, index) => (
@@ -28,9 +23,7 @@ export default function BrasasOnlineCardsIsland(props) {
                     <div key={index} className="flex items-start gap-2">
                       <IconArrowRight class="w-3 h-3 shrink-0 mt-1" />
                       <span className="text-gray-500">
-                        {selectedLanguage.value === "ptBr"
-                          ? item.textInPortuguese
-                          : item.textInEnglish}
+                        {item.text}
                       </span>
                     </div>
                   ))}

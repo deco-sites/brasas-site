@@ -1,8 +1,4 @@
-import { useSelectLanguage } from "site/sdk/language.ts";
-
 export default function AboutTitlePageIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <section className="flex justify-center">
       <div className="max-w-[88.5rem] px-9 py-14">
@@ -22,11 +18,7 @@ export default function AboutTitlePageIsland(props) {
         />
         <h2
           className="header-about text-blue-800 text-3xl text-center font-bold"
-          dangerouslySetInnerHTML={{
-            __html: selectedLanguage.value === "ptBr"
-              ? props.titleInPortuguese
-              : props.titleInEnglish,
-          }}
+          dangerouslySetInnerHTML={{ __html: props.title }}
         >
         </h2>
       </div>

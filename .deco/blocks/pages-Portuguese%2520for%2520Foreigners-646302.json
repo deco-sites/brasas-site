@@ -1,74 +1,223 @@
 {
   "name": "Portuguese for Foreigners",
   "path": "/pff",
-  "sections": [
-    {
-      "__resolveType": "Header"
-    },
-    {
-      "__resolveType": "site/sections/PFF/PFFBanner.tsx",
-      "bgImageDesktop": "https://assets.decocache.com/brasas-site/30a1c3a2-5838-478a-a986-edb692a708ed/pff-banner-bg.png",
-      "bgImageMobile": "https://assets.decocache.com/brasas-site/54f32abf-8bf0-4858-9551-ee4727438699/pff-banner-mobile-bg.png",
-      "imageInEnglish": "https://assets.decocache.com/brasas-site/47247e80-89a0-489b-ab07-da59a04e230d/logo-pff-banner-en.png",
-      "imageInPortuguese": "https://assets.decocache.com/brasas-site/d8f5326e-52f3-461d-b019-2eac4ef0a3c8/logo-pff-banner-ptbr.png",
-      "hasNotice": true
-    },
-    {
-      "__resolveType": "site/sections/Breadcrumbs.tsx",
-      "pageNameInEnglish": "Portuguese For Foreigners",
-      "pageNameInPortuguese": "Português para Estrangeiros"
-    },
-    {
-      "__resolveType": "site/sections/PFF/PFFCards.tsx",
-      "textInEnglish": "<p><strong>Hello!</strong></p><p><strong>We are BRASAS, a leading English school in Brazil since 1966.</strong></p><p>&nbsp;</p><p>Here’s some exciting news! We also offer Portuguese lessons for foreigners who want to speak like a true Brazilian. Our mission is to boost your confidence and help you speak the language with ease. With personalized lessons and native instructors, you’ll immerse yourself in the culture and master the nuances of the language. ﻿Start your journey with us today!</p>",
-      "textInPortuguese": "<p><strong>Olá!</strong></p><p><strong>Nós somos o BRASAS, uma das principais escolas de inglês no Brasil desde 1966.</strong></p><p>&nbsp;</p><p>Temos uma novidade empolgante! Também oferecemos aulas de português para estrangeiros que desejam falar como um verdadeiro brasileiro. Nossa missão é aumentar sua confiança e ajudá-lo a falar o idioma com facilidade. Com aulas personalizadas e instrutores nativos, você se envolverá na cultura e dominará as nuances do idioma. Comece sua jornada conosco hoje mesmo!</p>",
-      "image": "https://assets.decocache.com/brasas-site/63897a1e-92d9-4666-bc18-68fafc75e842/PFF.png",
-      "items": [
-        {
-          "textInEnglish": "Twice a week, one hour per day or other formats according to your needs.",
-          "textInPortuguese": "Duas vezes por semana, uma hora por dia ou outros formatos conforme sua necessidade."
-        },
-        {
-          "textInEnglish": "Flexible schedules and frequencies.",
-          "textInPortuguese": "Horários e frequências flexíveis."
-        },
-        {
-          "textInPortuguese": "Aulas particulares ou em grupo.",
-          "textInEnglish": "Private classes or in groups."
-        },
-        {
-          "textInEnglish": "Our school offers both online and in-person classes.",
-          "textInPortuguese": "Aulas ao vivo online ou presenciais."
-        },
-        {
-          "textInPortuguese": "Material próprio.",
-          "textInEnglish": "Own material."
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "HeaderEnglish"
+          },
+          {
+            "__resolveType": "site/sections/PFF/PFFBanner.tsx",
+            "bgImageDesktop": "https://assets.decocache.com/brasas-site/30a1c3a2-5838-478a-a986-edb692a708ed/pff-banner-bg.png",
+            "bgImageMobile": "https://assets.decocache.com/brasas-site/54f32abf-8bf0-4858-9551-ee4727438699/pff-banner-mobile-bg.png",
+            "imageInEnglish": "https://assets.decocache.com/brasas-site/47247e80-89a0-489b-ab07-da59a04e230d/logo-pff-banner-en.png",
+            "imageInPortuguese": "https://assets.decocache.com/brasas-site/d8f5326e-52f3-461d-b019-2eac4ef0a3c8/logo-pff-banner-ptbr.png",
+            "hasNotice": true,
+            "noticeText": "<p>Course available in in-person and <em>online</em> formats</p>",
+            "image": "https://assets.decocache.com/brasas-site/47247e80-89a0-489b-ab07-da59a04e230d/logo-pff-banner-en.png"
+          },
+          {
+            "__resolveType": "site/sections/Breadcrumbs.tsx",
+            "pageNameInEnglish": "Portuguese For Foreigners",
+            "pageNameInPortuguese": "Português para Estrangeiros",
+            "pageName": "Portuguese For Foreigners",
+            "prefix": "Courses"
+          },
+          {
+            "__resolveType": "site/sections/PFF/PFFCards.tsx",
+            "textInEnglish": "<p><strong>Hello!</strong></p><p><strong>We are BRASAS, a leading English school in Brazil since 1966.</strong></p><p>&nbsp;</p><p>Here’s some exciting news! We also offer Portuguese lessons for foreigners who want to speak like a true Brazilian. Our mission is to boost your confidence and help you speak the language with ease. With personalized lessons and native instructors, you’ll immerse yourself in the culture and master the nuances of the language. ﻿Start your journey with us today!</p>",
+            "textInPortuguese": "<p><strong>Olá!</strong></p><p><strong>Nós somos o BRASAS, uma das principais escolas de inglês no Brasil desde 1966.</strong></p><p>&nbsp;</p><p>Temos uma novidade empolgante! Também oferecemos aulas de português para estrangeiros que desejam falar como um verdadeiro brasileiro. Nossa missão é aumentar sua confiança e ajudá-lo a falar o idioma com facilidade. Com aulas personalizadas e instrutores nativos, você se envolverá na cultura e dominará as nuances do idioma. Comece sua jornada conosco hoje mesmo!</p>",
+            "image": "https://assets.decocache.com/brasas-site/63897a1e-92d9-4666-bc18-68fafc75e842/PFF.png",
+            "items": [
+              {
+                "textInEnglish": "Twice a week, one hour per day or other formats according to your needs.",
+                "textInPortuguese": "Duas vezes por semana, uma hora por dia ou outros formatos conforme sua necessidade.",
+                "text": "Twice a week, one hour per day or other formats according to your needs."
+              },
+              {
+                "textInEnglish": "Flexible schedules and frequencies.",
+                "textInPortuguese": "Horários e frequências flexíveis.",
+                "text": "Flexible schedules and frequencies."
+              },
+              {
+                "textInPortuguese": "Aulas particulares ou em grupo.",
+                "textInEnglish": "Private classes or in groups.",
+                "text": "Private classes or in groups."
+              },
+              {
+                "textInEnglish": "Our school offers both online and in-person classes.",
+                "textInPortuguese": "Aulas ao vivo online ou presenciais.",
+                "text": "Our school offers both online and in-person classes."
+              },
+              {
+                "textInPortuguese": "Material próprio.",
+                "textInEnglish": "Own material.",
+                "text": "Own material."
+              }
+            ],
+            "bottomTextInPortuguese": "<p>Embarque na sua jornada</p><p><strong><span style=\"color: rgb(187, 31, 52)\">para aprender português</span></strong> conosco hoje mesmo!</p>",
+            "bottomTextInEnglish": "<p>Embark on your journey</p><p><strong><span style=\"color: rgb(187, 31, 52)\">to learn Portuguese</span></strong> with us today!</p>",
+            "text": "<p><strong>Hello!</strong></p><p><strong>We are BRASAS, a leading English school in Brazil since 1966.</strong></p><p>&nbsp;</p><p>Here’s some exciting news! We also offer Portuguese lessons for foreigners who want to speak like a true Brazilian. Our mission is to boost your confidence and help you speak the language with ease. With personalized lessons and native instructors, you’ll immerse yourself in the culture and master the nuances of the language. ﻿Start your journey with us today!</p>",
+            "bottomText": "<p>Embark on your journey</p><p><strong><span style=\"color: rgb(187, 31, 52)\">to learn Portuguese</span></strong> with us today!</p>"
+          },
+          {
+            "__resolveType": "site/sections/IWantKnowMore.tsx",
+            "titleInPortuguese": "Quero saber mais",
+            "titleInEnglish": "I want to know more",
+            "RecipientsEmailArr": [
+              {
+                "email": "comercial@brasas.com"
+              }
+            ],
+            "subject": "Formulário BRASAS - Quero saber mais",
+            "CopyToArr": [],
+            "rendersLeveling": false,
+            "testButtonLink": "#",
+            "title": "I want to know more",
+            "levelingTitle": "To start, discover your level with our placement test.",
+            "levelingSubtitle": "Our placement test helps you find out which module you should enroll in. Access the link below and start your test now!",
+            "levelingButtonText": "Access the test",
+            "levelingButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+            "formTitle": "Request a contact",
+            "formSubtitle": "Leave your details below and we will contact you for more information.",
+            "nameInput": {
+              "label": "Name",
+              "placeholder": "Enter your name"
+            },
+            "emailInput": {
+              "label": "Email",
+              "placeholder": "Enter your email"
+            },
+            "telInput": {
+              "label": "Phone",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "acceptanceTermText": "I agree to receive communications and personalized offers according to my interests",
+            "sendButtonText": "Request contact"
+          },
+          {
+            "__resolveType": "CoursesCardsSectionEnglish"
+          },
+          {
+            "__resolveType": "FooterEnglish"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/cookie.ts",
+          "name": "language",
+          "value": "en-US"
         }
-      ],
-      "bottomTextInPortuguese": "<p>Embarque na sua jornada</p><p><strong><span style=\"color: rgb(187, 31, 52)\">para aprender português</span></strong> conosco hoje mesmo!</p>",
-      "bottomTextInEnglish": "<p>Embark on your journey</p><p><strong><span style=\"color: rgb(187, 31, 52)\">to learn Portuguese</span></strong> with us today!</p>"
-    },
-    {
-      "__resolveType": "site/sections/IWantKnowMore.tsx",
-      "titleInPortuguese": "Quero saber mais",
-      "titleInEnglish": "I want to know more",
-      "RecipientsEmailArr": [
-        {
-          "email": "comercial@brasas.com"
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Header"
+          },
+          {
+            "__resolveType": "site/sections/PFF/PFFBanner.tsx",
+            "bgImageDesktop": "https://assets.decocache.com/brasas-site/30a1c3a2-5838-478a-a986-edb692a708ed/pff-banner-bg.png",
+            "bgImageMobile": "https://assets.decocache.com/brasas-site/54f32abf-8bf0-4858-9551-ee4727438699/pff-banner-mobile-bg.png",
+            "imageInEnglish": "https://assets.decocache.com/brasas-site/47247e80-89a0-489b-ab07-da59a04e230d/logo-pff-banner-en.png",
+            "imageInPortuguese": "https://assets.decocache.com/brasas-site/d8f5326e-52f3-461d-b019-2eac4ef0a3c8/logo-pff-banner-ptbr.png",
+            "hasNotice": true,
+            "noticeText": "<p>Curso disponível nas modalidades presencial e<em> online</em></p>",
+            "image": "https://assets.decocache.com/brasas-site/d8f5326e-52f3-461d-b019-2eac4ef0a3c8/logo-pff-banner-ptbr.png"
+          },
+          {
+            "__resolveType": "site/sections/Breadcrumbs.tsx",
+            "pageNameInEnglish": "Portuguese For Foreigners",
+            "pageNameInPortuguese": "Português para Estrangeiros",
+            "pageName": "Português para Estrangeiros",
+            "prefix": "Cursos"
+          },
+          {
+            "__resolveType": "site/sections/PFF/PFFCards.tsx",
+            "textInEnglish": "<p><strong>Hello!</strong></p><p><strong>We are BRASAS, a leading English school in Brazil since 1966.</strong></p><p>&nbsp;</p><p>Here’s some exciting news! We also offer Portuguese lessons for foreigners who want to speak like a true Brazilian. Our mission is to boost your confidence and help you speak the language with ease. With personalized lessons and native instructors, you’ll immerse yourself in the culture and master the nuances of the language. ﻿Start your journey with us today!</p>",
+            "textInPortuguese": "<p><strong>Olá!</strong></p><p><strong>Nós somos o BRASAS, uma das principais escolas de inglês no Brasil desde 1966.</strong></p><p>&nbsp;</p><p>Temos uma novidade empolgante! Também oferecemos aulas de português para estrangeiros que desejam falar como um verdadeiro brasileiro. Nossa missão é aumentar sua confiança e ajudá-lo a falar o idioma com facilidade. Com aulas personalizadas e instrutores nativos, você se envolverá na cultura e dominará as nuances do idioma. Comece sua jornada conosco hoje mesmo!</p>",
+            "image": "https://assets.decocache.com/brasas-site/63897a1e-92d9-4666-bc18-68fafc75e842/PFF.png",
+            "items": [
+              {
+                "textInEnglish": "Twice a week, one hour per day or other formats according to your needs.",
+                "textInPortuguese": "Duas vezes por semana, uma hora por dia ou outros formatos conforme sua necessidade.",
+                "text": "Duas vezes por semana, uma hora por dia ou outros formatos conforme sua necessidade."
+              },
+              {
+                "textInEnglish": "Flexible schedules and frequencies.",
+                "textInPortuguese": "Horários e frequências flexíveis.",
+                "text": "Horários e frequências flexíveis."
+              },
+              {
+                "textInPortuguese": "Aulas particulares ou em grupo.",
+                "textInEnglish": "Private classes or in groups.",
+                "text": "Aulas particulares ou em grupo."
+              },
+              {
+                "textInEnglish": "Our school offers both online and in-person classes.",
+                "textInPortuguese": "Aulas ao vivo online ou presenciais.",
+                "text": "Aulas ao vivo online ou presenciais."
+              },
+              {
+                "textInPortuguese": "Material próprio.",
+                "textInEnglish": "Own material.",
+                "text": "Material próprio."
+              }
+            ],
+            "bottomTextInPortuguese": "<p>Embarque na sua jornada</p><p><strong><span style=\"color: rgb(187, 31, 52)\">para aprender português</span></strong> conosco hoje mesmo!</p>",
+            "bottomTextInEnglish": "<p>Embark on your journey</p><p><strong><span style=\"color: rgb(187, 31, 52)\">to learn Portuguese</span></strong> with us today!</p>",
+            "text": "<p><strong>Olá!</strong></p><p><strong>Nós somos o BRASAS, uma das principais escolas de inglês no Brasil desde 1966.</strong></p><p>&nbsp;</p><p>Temos uma novidade empolgante! Também oferecemos aulas de português para estrangeiros que desejam falar como um verdadeiro brasileiro. Nossa missão é aumentar sua confiança e ajudá-lo a falar o idioma com facilidade. Com aulas personalizadas e instrutores nativos, você se envolverá na cultura e dominará as nuances do idioma. Comece sua jornada conosco hoje mesmo!</p>",
+            "bottomText": "<p>Embarque na sua jornada</p><p><strong><span style=\"color: rgb(187, 31, 52)\">para aprender português</span></strong> conosco hoje mesmo!</p>"
+          },
+          {
+            "__resolveType": "site/sections/IWantKnowMore.tsx",
+            "titleInPortuguese": "Quero saber mais",
+            "titleInEnglish": "I want to know more",
+            "RecipientsEmailArr": [
+              {
+                "email": "comercial@brasas.com"
+              }
+            ],
+            "subject": "Formulário BRASAS - Quero saber mais",
+            "CopyToArr": [],
+            "rendersLeveling": false,
+            "testButtonLink": "#",
+            "title": "Quero saber mais",
+            "levelingTitle": "Para começar, descubra seu nível em nosso teste de nivelamento.",
+            "levelingSubtitle": "O nosso teste de nivelamento te ajuda a descobrir em que módulo você deve ingressar. Acesse o link abaixo e comece o seu teste agora mesmo!",
+            "levelingButtonText": "Acessar o teste",
+            "levelingButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+            "formTitle": "Solicite um contato",
+            "formSubtitle": "Deixe os seus dados abaixo e entraremos em contato para mais informações.",
+            "nameInput": {
+              "label": "Nome",
+              "placeholder": "Insira seu nome"
+            },
+            "emailInput": {
+              "label": "E-mail",
+              "placeholder": "Insira seu e-mail"
+            },
+            "telInput": {
+              "label": "Telefone",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "acceptanceTermText": "Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses",
+            "sendButtonText": "Solicitar contato"
+          },
+          {
+            "__resolveType": "CoursesCardsSection"
+          },
+          {
+            "__resolveType": "Footer"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
         }
-      ],
-      "subject": "Formulário BRASAS - Quero saber mais",
-      "CopyToArr": [],
-      "rendersLeveling": false,
-      "testButtonLink": "#"
-    },
-    {
-      "__resolveType": "CoursesCardsSection"
-    },
-    {
-      "__resolveType": "Footer"
-    }
-  ],
+      }
+    ]
+  },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

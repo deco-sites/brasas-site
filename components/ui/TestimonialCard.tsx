@@ -1,19 +1,14 @@
 import Image from "apps/website/components/Image.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function TestimonialCard(
   {
-    textInEnglish,
-    textInPortuguese,
+    text,
     userName,
-    userRoleInEnglish,
-    userRoleInPortuguese,
+    userRole,
     userImage,
     isActive,
   },
 ) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <div
       key={userName}
@@ -29,9 +24,7 @@ export default function TestimonialCard(
         <div className="skew-y-3">
           {/* Contêiner para compensar a inclinação */}
           <span className="font-semibold text-black-500 leading-8 flex text-center">
-            {selectedLanguage.value === "ptBr"
-              ? textInPortuguese
-              : textInEnglish}
+            {text}
           </span>
         </div>
         {/* Triângulo no final do balão */}
@@ -49,9 +42,7 @@ export default function TestimonialCard(
               &mdash; {userName}
             </span>
             <span>
-              {selectedLanguage.value === "ptBr"
-                ? userRoleInPortuguese
-                : userRoleInEnglish}
+              {userRole}
             </span>
           </div>
           <Image

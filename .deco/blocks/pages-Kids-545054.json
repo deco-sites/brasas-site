@@ -1,59 +1,185 @@
 {
   "name": "Kids",
   "path": "/kids",
-  "sections": [
-    {
-      "__resolveType": "Header"
-    },
-    {
-      "__resolveType": "site/sections/PageBanner.tsx",
-      "titleInEnglish": "Kids",
-      "titleInPortuguese": "Kids",
-      "descriptionInPortuguese": "Aprender inglês é prazeroso e surpreendente",
-      "descriptionInEnglish": "Learning English is enjoyable and surprising",
-      "bgColor": "blue-200",
-      "bgImage": "https://data.decoassets.com/brasas-site/240f318f-fa71-4a7e-b965-9f4a941c3900/Group-6.png",
-      "hasNotice": true,
-      "bgImageDesktop": "https://data.decoassets.com/brasas-site/240f318f-fa71-4a7e-b965-9f4a941c3900/Group-6.png"
-    },
-    {
-      "__resolveType": "site/sections/Breadcrumbs.tsx",
-      "pageNameInEnglish": "Kids",
-      "pageNameInPortuguese": "Kids"
-    },
-    {
-      "__resolveType": "site/sections/Kids/KidsCards.tsx",
-      "textInPortuguese": "<p><strong><span>Com a alfabetização em português já consolidada, empregamos atividades, todas em inglês, que colocam os alunos no mundo da língua inglesa, estimulando o gosto e o interesse por ela.</span></strong></p><p><span><br>Ao final de dois anos, as crianças estão com ótima pronúncia, excelente vocabulário e um domínio de estruturas gramaticais básicas que permitem a comunicação.</span></p>",
-      "textInEnglish": "<p><strong>With literacy in Portuguese already established, we use activities, all in English, that immerse students in the world of the English language, stimulating their interest and enthusiasm for it.</strong></p><p>&nbsp;</p><p>At the end of two years, children achieve excellent pronunciation, an impressive vocabulary, and a solid grasp of basic grammatical structures, enabling effective communication.</p>"
-    },
-    {
-      "__resolveType": "site/sections/Pre-K/NextSteps.tsx",
-      "nextStepTitleInPortuguese": "Próximos passos",
-      "nextStepTextInPortuguese": "<p>Após sua passagem pelo Kids, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors_e_teens\">Juniors</a>.</p>",
-      "nextStepTitleInEnglish": "Next Steps",
-      "nextStepTextInEnglish": "<p>After completing Kids, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors_e_teens\">Juniors</a> course.</p>"
-    },
-    {
-      "__resolveType": "site/sections/IWantKnowMore.tsx",
-      "titleInPortuguese": "Quero saber mais",
-      "titleInEnglish": "I want to know more",
-      "RecipientsEmailArr": [
-        {
-          "email": "comercial@brasas.com"
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "HeaderEnglish"
+          },
+          {
+            "__resolveType": "site/sections/PageBanner.tsx",
+            "titleInEnglish": "Kids",
+            "titleInPortuguese": "Kids",
+            "descriptionInPortuguese": "Aprender inglês é prazeroso e surpreendente",
+            "descriptionInEnglish": "Learning English is enjoyable and surprising",
+            "bgColor": "blue-200",
+            "bgImage": "https://data.decoassets.com/brasas-site/240f318f-fa71-4a7e-b965-9f4a941c3900/Group-6.png",
+            "hasNotice": true,
+            "bgImageDesktop": "https://data.decoassets.com/brasas-site/240f318f-fa71-4a7e-b965-9f4a941c3900/Group-6.png",
+            "title": "Kids",
+            "description": "<p>Learning English is enjoyable and surprising</p>",
+            "noticeText": "<p>Course available in in-person and <em>online</em> formats</p>"
+          },
+          {
+            "__resolveType": "site/sections/Breadcrumbs.tsx",
+            "pageNameInEnglish": "Kids",
+            "pageNameInPortuguese": "Kids",
+            "pageName": "Kids",
+            "prefix": "Courses"
+          },
+          {
+            "__resolveType": "site/sections/Kids/KidsCards.tsx",
+            "textInPortuguese": "<p><strong><span>Com a alfabetização em português já consolidada, empregamos atividades, todas em inglês, que colocam os alunos no mundo da língua inglesa, estimulando o gosto e o interesse por ela.</span></strong></p><p><span><br>Ao final de dois anos, as crianças estão com ótima pronúncia, excelente vocabulário e um domínio de estruturas gramaticais básicas que permitem a comunicação.</span></p>",
+            "textInEnglish": "<p><strong>With literacy in Portuguese already established, we use activities, all in English, that immerse students in the world of the English language, stimulating their interest and enthusiasm for it.</strong></p><p>&nbsp;</p><p>At the end of two years, children achieve excellent pronunciation, an impressive vocabulary, and a solid grasp of basic grammatical structures, enabling effective communication.</p>",
+            "text": "<p><strong>With literacy in Portuguese already established, we use activities, all in English, that immerse students in the world of the English language, stimulating their interest and enthusiasm for it.</strong></p><p>&nbsp;</p><p>At the end of two years, children achieve excellent pronunciation, an impressive vocabulary, and a solid grasp of basic grammatical structures, enabling effective communication.</p>"
+          },
+          {
+            "__resolveType": "site/sections/Pre-K/NextSteps.tsx",
+            "nextStepTitleInPortuguese": "Próximos passos",
+            "nextStepTextInPortuguese": "<p>Após sua passagem pelo Kids, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors_e_teens\">Juniors</a>.</p>",
+            "nextStepTitleInEnglish": "Next Steps",
+            "nextStepTextInEnglish": "<p>After completing Kids, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors_e_teens\">Juniors</a> course.</p>",
+            "nextStepTitle": "Next Steps",
+            "nextStepText": "<p>After completing Kids, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors_e_teens\">Juniors</a> course.</p>"
+          },
+          {
+            "__resolveType": "site/sections/IWantKnowMore.tsx",
+            "RecipientsEmailArr": [
+              {
+                "email": "comercial@brasas.com"
+              }
+            ],
+            "CopyToArr": [],
+            "title": "I want to know more",
+            "subject": "Formulário BRASAS - Quero saber mais",
+            "testButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+            "levelingTitle": "To start, discover your level with our placement test.",
+            "levelingSubtitle": "Our placement test helps you find out which module you should enroll in. Access the link below and start your test now!",
+            "levelingButtonText": "Access the test",
+            "levelingButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+            "rendersLeveling": false,
+            "nameInput": {
+              "label": "Name",
+              "placeholder": "Enter your name"
+            },
+            "emailInput": {
+              "label": "Email",
+              "placeholder": "Enter your email"
+            },
+            "telInput": {
+              "label": "Phone",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "formTitle": "Request a contact",
+            "formSubtitle": "Leave your details below and we will contact you for more information.",
+            "acceptanceTermText": "I agree to receive communications and personalized offers according to my interests",
+            "sendButtonText": "Request contact"
+          },
+          {
+            "__resolveType": "CoursesCardsSectionEnglish"
+          },
+          {
+            "__resolveType": "FooterEnglish"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/cookie.ts",
+          "name": "language",
+          "value": "en-US"
         }
-      ],
-      "subject": "Formulário BRASAS - Quero saber mais",
-      "CopyToArr": [],
-      "testButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
-      "rendersLeveling": false
-    },
-    {
-      "__resolveType": "CoursesCardsSection"
-    },
-    {
-      "__resolveType": "Footer"
-    }
-  ],
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Header"
+          },
+          {
+            "__resolveType": "site/sections/PageBanner.tsx",
+            "titleInEnglish": "Kids",
+            "titleInPortuguese": "Kids",
+            "descriptionInPortuguese": "Aprender inglês é prazeroso e surpreendente",
+            "descriptionInEnglish": "Learning English is enjoyable and surprising",
+            "bgColor": "blue-200",
+            "bgImage": "https://data.decoassets.com/brasas-site/240f318f-fa71-4a7e-b965-9f4a941c3900/Group-6.png",
+            "hasNotice": true,
+            "bgImageDesktop": "https://data.decoassets.com/brasas-site/240f318f-fa71-4a7e-b965-9f4a941c3900/Group-6.png",
+            "title": "Kids",
+            "description": "<p>Aprender inglês é prazeroso e surpreendente</p>",
+            "noticeText": "<p>Curso disponível nas modalidades presencial e <em>online</em></p>"
+          },
+          {
+            "__resolveType": "site/sections/Breadcrumbs.tsx",
+            "pageNameInEnglish": "Kids",
+            "pageNameInPortuguese": "Kids",
+            "pageName": "Kids",
+            "prefix": "Cursos"
+          },
+          {
+            "__resolveType": "site/sections/Kids/KidsCards.tsx",
+            "textInPortuguese": "<p><strong><span>Com a alfabetização em português já consolidada, empregamos atividades, todas em inglês, que colocam os alunos no mundo da língua inglesa, estimulando o gosto e o interesse por ela.</span></strong></p><p><span><br>Ao final de dois anos, as crianças estão com ótima pronúncia, excelente vocabulário e um domínio de estruturas gramaticais básicas que permitem a comunicação.</span></p>",
+            "textInEnglish": "<p><strong>With literacy in Portuguese already established, we use activities, all in English, that immerse students in the world of the English language, stimulating their interest and enthusiasm for it.</strong></p><p>&nbsp;</p><p>At the end of two years, children achieve excellent pronunciation, an impressive vocabulary, and a solid grasp of basic grammatical structures, enabling effective communication.</p>",
+            "text": "<p><strong>Com a alfabetização em português já consolidada, empregamos atividades, todas em inglês, que colocam os alunos no mundo da língua inglesa, estimulando o gosto e o interesse por ela.</strong></p><p><br>Ao final de dois anos, as crianças estão com ótima pronúncia, excelente vocabulário e um domínio de estruturas gramaticais básicas que permitem a comunicação.</p>"
+          },
+          {
+            "__resolveType": "site/sections/Pre-K/NextSteps.tsx",
+            "nextStepTitleInPortuguese": "Próximos passos",
+            "nextStepTextInPortuguese": "<p>Após sua passagem pelo Kids, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors_e_teens\">Juniors</a>.</p>",
+            "nextStepTitleInEnglish": "Next Steps",
+            "nextStepTextInEnglish": "<p>After completing Kids, the child progresses to the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors_e_teens\">Juniors</a> course.</p>",
+            "nextStepTitle": "Próximos passos",
+            "nextStepText": "<p>Após sua passagem pelo Kids, a criança ingressa no curso <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/juniors_e_teens\">Juniors</a>.</p>"
+          },
+          {
+            "__resolveType": "site/sections/IWantKnowMore.tsx",
+            "titleInPortuguese": "Quero saber mais",
+            "titleInEnglish": "I want to know more",
+            "RecipientsEmailArr": [
+              {
+                "email": "comercial@brasas.com"
+              }
+            ],
+            "subject": "Formulário BRASAS - Quero saber mais",
+            "CopyToArr": [],
+            "testButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+            "rendersLeveling": false,
+            "title": "Quero saber mais",
+            "levelingTitle": "Para começar, descubra seu nível em nosso teste de nivelamento.",
+            "levelingSubtitle": "O nosso teste de nivelamento te ajuda a descobrir em que módulo você deve ingressar. Acesse o link abaixo e comece o seu teste agora mesmo!",
+            "levelingButtonText": "Acessar o teste",
+            "levelingButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+            "formTitle": "Solicite um contato",
+            "formSubtitle": "Deixe os seus dados abaixo e entraremos em contato para mais informações.",
+            "nameInput": {
+              "label": "Nome",
+              "placeholder": "Insira seu nome"
+            },
+            "emailInput": {
+              "label": "E-mail",
+              "placeholder": "Insira seu e-mail"
+            },
+            "telInput": {
+              "label": "Telefone",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "acceptanceTermText": "Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses",
+            "sendButtonText": "Solicitar contato"
+          },
+          {
+            "__resolveType": "CoursesCardsSection"
+          },
+          {
+            "__resolveType": "Footer"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

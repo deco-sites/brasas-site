@@ -1,18 +1,15 @@
 import BrasasHistoryIsland from "site/islands/About/BrasasHistoryIsland.tsx";
 
 /**
- * @titleBy titleInEnglish
+ * @titleBy title
  */
 interface Card {
-  titleInEnglish: string;
-  titleInPortuguese: string;
-  descriptionInEnglish: string;
-  descriptionInPortuguese: string;
+  title: string;
+  description: string;
 }
 
 interface BrasasHistoryProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   foundersName: string;
   historyCards: Card[];
 }

@@ -3,10 +3,8 @@ import DiscoverOurCoursesIsland from "site/islands/Home/DiscoverOurCoursesIsland
 import { CopyEmail, RecipientsEmail } from "site/types/Emails.ts";
 
 export interface DiscoverOurCoursesProps {
-  englishTitle: string;
-  portugueseTitle: string;
-  englishFormTitle: string;
-  portugueseFormTitle: string;
+  title: string;
+  formTitle: string;
   RecipientsEmailArr: RecipientsEmail[];
   CopyToArr?: CopyEmail[];
   subject: string;

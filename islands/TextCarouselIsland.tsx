@@ -1,8 +1,6 @@
 import { useState } from "preact/hooks";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function TextCarouselIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchEndX, setTouchEndX] = useState(0);
@@ -132,16 +130,12 @@ export default function TextCarouselIsland(props) {
                     COLORS[props.color]
                   } font-bold text-xl text-center`}
                 >
-                  {selectedLanguage.value === "ptBr"
-                    ? methodCard.titleInPortuguese
-                    : methodCard.titleInEnglish}
+                  {methodCard.title}
                 </h3>
                 <p
                   className="text-black-500 text-base"
                   dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? methodCard.descriptionInPortuguese
-                      : methodCard.descriptionInEnglish,
+                    __html: methodCard.description,
                   }}
                 >
                 </p>

@@ -1,10 +1,7 @@
 import Image from "apps/website/components/Image.tsx";
 import IconArrowNarrowRight from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/arrow-narrow-right.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function BeAFranchiseeIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <>
       <div className="flex flex-col-reverse sm:flex-row w-full h-[45rem]">
@@ -25,28 +22,18 @@ export default function BeAFranchiseeIsland(props) {
             <div className="flex flex-col text-white">
               <span
                 className="font-black leading-10 text-4xl mb-4"
-                dangerouslySetInnerHTML={{
-                  __html: selectedLanguage.value === "ptBr"
-                    ? props.titleInPortuguese
-                    : props.titleInEnglish,
-                }}
+                dangerouslySetInnerHTML={{ __html: props.title }}
               >
               </span>
               <span
                 className="text-2xl font-medium leading-8 mb-8"
-                dangerouslySetInnerHTML={{
-                  __html: selectedLanguage.value === "ptBr"
-                    ? props.descriptionInPortuguese
-                    : props.descriptionInEnglish,
-                }}
+                dangerouslySetInnerHTML={{ __html: props.description }}
               >
               </span>
               <a href={props.link}>
                 <button className="flex items-center justify-center gap-2 bg-white text-blue-300 hover:bg-blue-200 transition duration-300 rounded-lg px-4 py-3 w-fit">
                   <span className="font-bold text-base">
-                    {selectedLanguage.value === "ptBr"
-                      ? props.buttonTextInPortuguese
-                      : props.buttonTextInEnglish}
+                    {props.buttonText}
                   </span>
                   <IconArrowNarrowRight class="w-6 h-6" />
                 </button>

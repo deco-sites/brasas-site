@@ -1,9 +1,7 @@
-import { useSelectLanguage } from "site/sdk/language.ts";
 import { useState } from "preact/hooks";
 import IconChevronDown from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/chevron-down.tsx";
 
 export default function FrequentlyAskedQuestionsIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggleAccordion = (index: number) => {
@@ -24,9 +22,7 @@ export default function FrequentlyAskedQuestionsIsland(props) {
                 onClick={() => toggleAccordion(index)}
               >
                 <span className="font-bold text-xl flex-1">
-                  {selectedLanguage.value === "ptBr"
-                    ? item.titleInPortuguese
-                    : item.titleInEnglish}
+                  {item.title}
                 </span>
                 <IconChevronDown
                   class={`w-6 h-6 transform transition-transform duration-300 ${
@@ -51,11 +47,7 @@ export default function FrequentlyAskedQuestionsIsland(props) {
                 />
                 <div
                   className="blue-link bg-gray-400 rounded-lg p-4 text-gray-700"
-                  dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? item.textInPortuguese
-                      : item.textInEnglish,
-                  }}
+                  dangerouslySetInnerHTML={{ __html: item.text }}
                 >
                 </div>
               </div>

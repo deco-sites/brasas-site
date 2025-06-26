@@ -1,16 +1,13 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import ToeflITPCertificationIsland from "../../islands/Certifications/ToeflITPCertificationIsland.tsx";
 
+/* @titleBy text */
 interface Item {
   icon: ImageWidget;
   /**
    * @format rich-text
    */
-  textInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  textInPortuguese: string;
+  text: string;
 }
 
 interface Card {
@@ -18,19 +15,11 @@ interface Card {
   /**
    * @format rich-text
    */
-  modalityInEnglish: string;
+  modality: string;
   /**
    * @format rich-text
    */
-  modalityInPortuguese: string;
-  /**
-   * @format rich-text
-   */
-  sessionsInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  sessionsInPortuguese: string;
+  sessions: string;
 }
 
 interface ToeflITPCertificationProps {

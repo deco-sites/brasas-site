@@ -1,9 +1,6 @@
 import { useEffect, useState } from "preact/hooks";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function MethodPageBannerIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   useEffect(() => {
@@ -36,15 +33,11 @@ export default function MethodPageBannerIsland(props) {
           className="text-blue-200 md:text-white text-7xl"
           style={textStyle}
         >
-          {selectedLanguage.value === "ptBr"
-            ? props.principalWordInPortuguese
-            : props.principalWordInEnglish}
+          {props.principalWord}
         </span>
         <br />
         <span className="text-blue-300 md:text-white text-5xl">
-          {selectedLanguage.value === "ptBr"
-            ? props.secondaryWordInPortuguese
-            : props.secondaryWordInEnglish}
+          {props.secondaryWord}
         </span>
       </h1>
     </section>

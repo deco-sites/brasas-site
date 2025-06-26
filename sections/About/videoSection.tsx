@@ -5,10 +5,9 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import VideoSectionIsland from "site/islands/About/VideoSectionIsland.tsx";
 
 interface VideoSectionProps {
-  video: string;
+  videoLink: string;
   poster: ImageWidget;
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
 }
 
 export default function VideoSection(props: VideoSectionProps) {

@@ -1,11 +1,9 @@
 import { useEffect, useState } from "preact/hooks";
 import TestimonialCard from "site/components/ui/TestimonialCard.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 import IconChevronRight from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/chevron-right.tsx";
 import IconChevronLeft from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/chevron-left.tsx";
 
 export default function TestimonialsIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
   const totalItems = props.testimonials.length;
 
   const extendedTestimonials = [
@@ -74,9 +72,7 @@ export default function TestimonialsIsland(props) {
     >
       <div className="flex justify-center">
         <h2 className="text-blue-900 leading-10 text-4xl font-black text-center">
-          {selectedLanguage.value === "ptBr"
-            ? props.titleInPortuguese
-            : props.titleInEnglish}
+          {props.title}
         </h2>
       </div>
 
@@ -115,11 +111,9 @@ export default function TestimonialsIsland(props) {
                     }}
                   >
                     <TestimonialCard
-                      textInEnglish={testimonial.textInEnglish}
-                      textInPortuguese={testimonial.textInPortuguese}
+                      text={testimonial.text}
                       userName={testimonial.userName}
-                      userRoleInEnglish={testimonial.userRoleInEnglish}
-                      userRoleInPortuguese={testimonial.userRoleInPortuguese}
+                      userRole={testimonial.userRole}
                       userImage={testimonial.userImage}
                       isActive={index === currentIndex}
                     />

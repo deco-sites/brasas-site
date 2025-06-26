@@ -1,221 +1,528 @@
 {
   "name": "Brasas Online",
   "path": "/bol",
-  "sections": [
-    {
-      "__resolveType": "Header"
-    },
-    {
-      "__resolveType": "site/sections/PageBanner.tsx",
-      "bgColor": "blue-500",
-      "bgImage": "https://assets.decocache.com/brasas-site/b5a232b4-2747-4bcf-b290-8b3784f7191e/brasas-online-bg.png",
-      "titleInEnglish": "BRASAS Online",
-      "titleInPortuguese": "BRASAS Online",
-      "descriptionInPortuguese": "<p>Viva a experiência de aprender inglês 100% <em>online</em> com aulas ao vivo.</p>",
-      "descriptionInEnglish": "<p>Experience of learning English 100% <em>online</em> with live classes.</p>",
-      "hasNotice": false,
-      "bgImageDesktop": "https://assets.decocache.com/brasas-site/b5a232b4-2747-4bcf-b290-8b3784f7191e/brasas-online-bg.png",
-      "bgImageMobile": "https://assets.decocache.com/brasas-site/6f6270fc-14d8-44dd-a38d-ab594ba3356e/bol-bg-mobile.png"
-    },
-    {
-      "__resolveType": "site/sections/Breadcrumbs.tsx",
-      "pageNameInEnglish": "BRASAS Online",
-      "pageNameInPortuguese": "BRASAS Online"
-    },
-    {
-      "__resolveType": "site/sections/BrasasOnline/BrasasOnlineCards.tsx",
-      "titleInEnglish": "Live classes",
-      "titleInPortuguese": "Aulas ao vivo",
-      "classesCards": [
-        {
-          "items": [
-            {
-              "textInPortuguese": "Aulas em grupo",
-              "textInEnglish": "Group classes"
-            },
-            {
-              "textInPortuguese": "Para alunos matriculados a partir do 3º ano do ensino fundamental",
-              "textInEnglish": "For students enrolled from the 3rd year of elementary school"
-            },
-            {
-              "textInEnglish": "2x per week",
-              "textInPortuguese": "2x na semana"
-            }
-          ],
-          "title": "Kids"
-        },
-        {
-          "items": [
-            {
-              "textInEnglish": "Group classes",
-              "textInPortuguese": "Aulas em grupo"
-            },
-            {
-              "textInPortuguese": "Para alunos matriculados a partir do 6º ano do ensino fundamental",
-              "textInEnglish": "For students enrolled from the 6th year of elementary school"
-            },
-            {
-              "textInPortuguese": "2x na semana",
-              "textInEnglish": "2x per week"
-            }
-          ],
-          "title": "Juniors"
-        },
-        {
-          "items": [
-            {
-              "textInPortuguese": "Aulas em grupo",
-              "textInEnglish": "Group classes"
-            },
-            {
-              "textInPortuguese": "Formação completa em aproximadamente 5 anos",
-              "textInEnglish": "Complete training in approximately 5 years"
-            },
-            {
-              "textInPortuguese": "6 meses cada módulo (livro)",
-              "textInEnglish": "6 months per module (book)"
-            },
-            {
-              "textInPortuguese": "2x na semana",
-              "textInEnglish": "2x per week"
-            }
-          ],
-          "title": "Regular"
-        },
-        {
-          "items": [
-            {
-              "textInPortuguese": "Aulas em grupo",
-              "textInEnglish": "Group classes"
-            },
-            {
-              "textInPortuguese": "Formação completa em aproximadamente 2 anos e meio",
-              "textInEnglish": "Complete training in approximately 2.5 years"
-            },
-            {
-              "textInPortuguese": "3 meses cada módulo (livro)",
-              "textInEnglish": "3 months per module (book)"
-            },
-            {
-              "textInPortuguese": "4x na semana",
-              "textInEnglish": "4x per week"
-            }
-          ],
-          "title": "Intensive"
-        },
-        {
-          "items": [
-            {
-              "textInPortuguese": "Aulas particulares para 1 ou 2 alunos",
-              "textInEnglish": "Private lessons for 1 or 2 students"
-            }
-          ],
-          "title": "Private"
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "HeaderEnglish"
+          },
+          {
+            "__resolveType": "site/sections/PageBanner.tsx",
+            "bgColor": "blue-500",
+            "bgImage": "https://assets.decocache.com/brasas-site/b5a232b4-2747-4bcf-b290-8b3784f7191e/brasas-online-bg.png",
+            "titleInEnglish": "BRASAS Online",
+            "titleInPortuguese": "BRASAS Online",
+            "descriptionInPortuguese": "<p>Viva a experiência de aprender inglês 100% <em>online</em> com aulas ao vivo.</p>",
+            "descriptionInEnglish": "<p>Experience of learning English 100% <em>online</em> with live classes.</p>",
+            "hasNotice": false,
+            "bgImageDesktop": "https://assets.decocache.com/brasas-site/b5a232b4-2747-4bcf-b290-8b3784f7191e/brasas-online-bg.png",
+            "bgImageMobile": "https://assets.decocache.com/brasas-site/6f6270fc-14d8-44dd-a38d-ab594ba3356e/bol-bg-mobile.png",
+            "title": "BRASAS Online",
+            "noticeText": "<p></p>",
+            "description": "<p>Experience of learning English 100% <em>online</em> with live classes.</p>"
+          },
+          {
+            "__resolveType": "site/sections/Breadcrumbs.tsx",
+            "pageNameInEnglish": "BRASAS Online",
+            "pageNameInPortuguese": "BRASAS Online",
+            "pageName": "BRASAS Online",
+            "prefix": "Courses"
+          },
+          {
+            "__resolveType": "site/sections/BrasasOnline/BrasasOnlineCards.tsx",
+            "titleInEnglish": "Live classes",
+            "titleInPortuguese": "Aulas ao vivo",
+            "classesCards": [
+              {
+                "items": [
+                  {
+                    "textInPortuguese": "Aulas em grupo",
+                    "textInEnglish": "Group classes",
+                    "text": "Group classes"
+                  },
+                  {
+                    "textInPortuguese": "Para alunos matriculados a partir do 3º ano do ensino fundamental",
+                    "textInEnglish": "For students enrolled from the 3rd year of elementary school",
+                    "text": "For students enrolled from the 3rd year of elementary school"
+                  },
+                  {
+                    "textInEnglish": "2x per week",
+                    "textInPortuguese": "2x na semana",
+                    "text": "2x per week"
+                  }
+                ],
+                "title": "Kids"
+              },
+              {
+                "items": [
+                  {
+                    "textInEnglish": "Group classes",
+                    "textInPortuguese": "Aulas em grupo",
+                    "text": "Group classes"
+                  },
+                  {
+                    "textInPortuguese": "Para alunos matriculados a partir do 6º ano do ensino fundamental",
+                    "textInEnglish": "For students enrolled from the 6th year of elementary school",
+                    "text": "For students enrolled from the 6th year of elementary school"
+                  },
+                  {
+                    "textInPortuguese": "2x na semana",
+                    "textInEnglish": "2x per week",
+                    "text": "2x per week"
+                  }
+                ],
+                "title": "Juniors"
+              },
+              {
+                "items": [
+                  {
+                    "textInPortuguese": "Aulas em grupo",
+                    "textInEnglish": "Group classes",
+                    "text": "Group classes"
+                  },
+                  {
+                    "textInPortuguese": "Formação completa em aproximadamente 5 anos",
+                    "textInEnglish": "Complete training in approximately 5 years",
+                    "text": "Complete training in approximately 5 years"
+                  },
+                  {
+                    "textInPortuguese": "6 meses cada módulo (livro)",
+                    "textInEnglish": "6 months per module (book)",
+                    "text": "6 months per module (book)"
+                  },
+                  {
+                    "textInPortuguese": "2x na semana",
+                    "textInEnglish": "2x per week",
+                    "text": "2x per week"
+                  }
+                ],
+                "title": "Regular"
+              },
+              {
+                "items": [
+                  {
+                    "textInPortuguese": "Aulas em grupo",
+                    "textInEnglish": "Group classes",
+                    "text": "Group classes"
+                  },
+                  {
+                    "textInPortuguese": "Formação completa em aproximadamente 2 anos e meio",
+                    "textInEnglish": "Complete training in approximately 2.5 years",
+                    "text": "Complete training in approximately 2.5 years"
+                  },
+                  {
+                    "textInPortuguese": "3 meses cada módulo (livro)",
+                    "textInEnglish": "3 months per module (book)",
+                    "text": "3 months per module (book)"
+                  },
+                  {
+                    "textInPortuguese": "4x na semana",
+                    "textInEnglish": "4x per week",
+                    "text": "4x per week"
+                  }
+                ],
+                "title": "Intensive"
+              },
+              {
+                "items": [
+                  {
+                    "textInPortuguese": "Aulas particulares para 1 ou 2 alunos",
+                    "textInEnglish": "Private lessons for 1 or 2 students",
+                    "text": "Private lessons for 1 or 2 students"
+                  }
+                ],
+                "title": "Private"
+              }
+            ],
+            "title": "Live classes"
+          },
+          {
+            "__resolveType": "site/sections/BrasasOnline/InovationSection.tsx",
+            "titleInEnglish": "Innovation in learning",
+            "titleInPortuguese": "Inovação no aprendizado",
+            "items": [
+              {
+                "icon": "https://assets.decocache.com/brasas-site/5a32d11d-49c5-432d-b599-954e788af559/laptop-icon.svg",
+                "textInEnglish": "<p>Live classes with 60 minutes</p>",
+                "textInPortuguese": "<p><strong>Aulas ao vivo</strong> com 60 minutos</p>",
+                "text": "<p>Live classes with 60 minutes</p>"
+              },
+              {
+                "icon": "https://assets.decocache.com/brasas-site/05eda9db-0450-4122-9ab9-1328d3f799ca/star-icon.svg",
+                "textInPortuguese": "<p>Qualidade comprovada com certificações internacionais</p>",
+                "textInEnglish": "<p>Proven quality with international certifications</p>",
+                "text": "<p>Proven quality with international certifications</p>"
+              },
+              {
+                "textInPortuguese": "<p>100% dos alunos de Book 10 tiveram notas acima de 800 pontos no TOEIC</p>",
+                "textInEnglish": "<p>100% of Book 10 students scored above 800 points on the TOEIC</p>",
+                "icon": "https://assets.decocache.com/brasas-site/ee08bfad-f910-4f09-a1d8-4ee3f2e4e09e/clipboard-icon.svg",
+                "text": "<p>100% of Book 10 students scored above 800 points on the TOEIC</p>"
+              },
+              {
+                "textInPortuguese": "<p>Professores com certificação internacional</p>",
+                "textInEnglish": "<p>Teachers with international certification</p>",
+                "icon": "https://assets.decocache.com/brasas-site/0abe175b-cf9c-49a9-96ab-829955907411/teacher-icon.svg",
+                "text": "<p>Teachers with international certification</p>"
+              },
+              {
+                "textInPortuguese": "<p>Acesso a todo nosso acervo digital sem custo extra</p>",
+                "icon": "https://assets.decocache.com/brasas-site/4dc21ee0-3db0-4b38-97c4-000becab8ca6/movies-icon.svg",
+                "textInEnglish": "<p>Access to all our digital collection at no extra cost</p>",
+                "text": "<p>Access to all our digital collection at no extra cost</p>"
+              },
+              {
+                "icon": "https://assets.decocache.com/brasas-site/918f9c51-fc25-468e-9ef9-89af1c38a5fc/audio-icon.svg",
+                "textInEnglish": "<p>Practice your listening comprehension and pronunciation with BRASAS Audio Tracks recordings</p>",
+                "textInPortuguese": "<p>Pratique a sua compreensão auditiva e pronúncia com as gravações do BRASAS Audio Tracks</p>",
+                "text": "<p>Practice your listening comprehension and pronunciation with BRASAS Audio Tracks recordings</p>"
+              },
+              {
+                "textInEnglish": "<p>Free support classes</p>",
+                "textInPortuguese": "<p>Aulas de apoio gratuitas</p>",
+                "icon": "https://assets.decocache.com/brasas-site/189c501e-8727-4889-a8f3-6abb7b360d45/dollar-sign.svg",
+                "text": "<p>Free support classes</p>"
+              },
+              {
+                "textInEnglish": "<p>Always updated Digital Book with modern tools</p>",
+                "textInPortuguese": "<p>Livro Digital sempre atualizado e com ferramentas modernas</p>",
+                "icon": "https://assets.decocache.com/brasas-site/d6298ccd-da90-4ca0-b273-0fe33181a100/book-icon.svg",
+                "text": "<p>Always updated Digital Book with modern tools</p>"
+              },
+              {
+                "textInEnglish": "<p>Connect with your class through Google Classroom</p>",
+                "textInPortuguese": "<p>Conecte-se com a sua turma através do Google Classroom</p>",
+                "icon": "https://assets.decocache.com/brasas-site/4484e918-92f4-4de9-8ba0-f06ca96af017/logo-google.svg",
+                "text": "<p>Connect with your class through Google Classroom</p>"
+              }
+            ],
+            "title": "Innovation in learning"
+          },
+          {
+            "__resolveType": "site/sections/BrasasOnline/PaymentsSection.tsx",
+            "items": [
+              {
+                "titleInEnglish": "Monthly Payment",
+                "subTitleInEnglish": "No loyalty",
+                "titleInPortuguese": "Pagamento Mensal",
+                "subTitleInPortuguese": "Sem fidelidade",
+                "title": "Monthly Payment",
+                "subtitle": "No loyalty"
+              },
+              {
+                "titleInEnglish": "Half-Yearly and Annual Payment",
+                "subTitleInEnglish": "With special conditions",
+                "titleInPortuguese": "Pagamento Semestral e Anual",
+                "subTitleInPortuguese": "Com condições especiais",
+                "title": "Half-Yearly and Annual Payment",
+                "subtitle": "With special conditions"
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/BrasasOnline/VideosCarousel.tsx",
+            "videos": [
+              {
+                "url": "https://brasas-videos.s3.us-east-2.amazonaws.com/BRASAS_JR.mp4",
+                "poster": "https://assets.decocache.com/brasas-site/0792645d-d62c-44d9-bf7a-f591044a906a/brasas-online.png",
+                "titleInPortuguese": "Aula demonstrativa - Juniors&Teens",
+                "titleInEnglish": "Demonstration class - Jufniors&Teens",
+                "title": "Demonstration class - Jufniors&Teens"
+              },
+              {
+                "poster": "https://assets.decocache.com/brasas-site/0792645d-d62c-44d9-bf7a-f591044a906a/brasas-online.png",
+                "titleInPortuguese": "Aula demonstrativa - Book 4",
+                "titleInEnglish": "Demonstration class - Book 4",
+                "url": "https://brasas-videos.s3.us-east-2.amazonaws.com/BOOK_4.mp4",
+                "title": "Demonstration class - Book 4"
+              },
+              {
+                "titleInPortuguese": "Aula demonstrativa - Book 1",
+                "titleInEnglish": "Demonstration class - Book 1",
+                "poster": "https://assets.decocache.com/brasas-site/0792645d-d62c-44d9-bf7a-f591044a906a/brasas-online.png",
+                "url": "https://brasas-videos.s3.us-east-2.amazonaws.com/BOOK_1.mp4",
+                "title": "Demonstration class - Book 1"
+              }
+            ]
+          },
+          {
+            "__resolveType": "IWantKnowMoreEnglish"
+          },
+          {
+            "__resolveType": "CoursesCardsSectionEnglish"
+          },
+          {
+            "__resolveType": "FooterEnglish"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/cookie.ts",
+          "name": "language",
+          "value": "en-US"
         }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/BrasasOnline/InovationSection.tsx",
-      "items": [
-        {
-          "icon": "https://assets.decocache.com/brasas-site/5a32d11d-49c5-432d-b599-954e788af559/laptop-icon.svg",
-          "textInEnglish": "<p>Live classes with 60 minutes</p>",
-          "textInPortuguese": "<p><strong>Aulas ao vivo</strong> com 60 minutos</p>"
-        },
-        {
-          "icon": "https://assets.decocache.com/brasas-site/05eda9db-0450-4122-9ab9-1328d3f799ca/star-icon.svg",
-          "textInPortuguese": "<p>Qualidade comprovada com certificações internacionais</p>",
-          "textInEnglish": "<p>Proven quality with international certifications</p>"
-        },
-        {
-          "textInPortuguese": "<p>100% dos alunos de Book 10 tiveram notas acima de 800 pontos no TOEIC</p>",
-          "textInEnglish": "<p>100% of Book 10 students scored above 800 points on the TOEIC</p>",
-          "icon": "https://assets.decocache.com/brasas-site/ee08bfad-f910-4f09-a1d8-4ee3f2e4e09e/clipboard-icon.svg"
-        },
-        {
-          "textInPortuguese": "<p>Professores com certificação internacional</p>",
-          "textInEnglish": "<p>Teachers with international certification</p>",
-          "icon": "https://assets.decocache.com/brasas-site/0abe175b-cf9c-49a9-96ab-829955907411/teacher-icon.svg"
-        },
-        {
-          "textInPortuguese": "<p>Acesso a todo nosso acervo digital sem custo extra</p>",
-          "icon": "https://assets.decocache.com/brasas-site/4dc21ee0-3db0-4b38-97c4-000becab8ca6/movies-icon.svg",
-          "textInEnglish": "<p>Access to all our digital collection at no extra cost</p>"
-        },
-        {
-          "icon": "https://assets.decocache.com/brasas-site/918f9c51-fc25-468e-9ef9-89af1c38a5fc/audio-icon.svg",
-          "textInEnglish": "<p>Practice your listening comprehension and pronunciation with BRASAS Audio Tracks recordings</p>",
-          "textInPortuguese": "<p>Pratique a sua compreensão auditiva e pronúncia com as gravações do BRASAS Audio Tracks</p>"
-        },
-        {
-          "textInEnglish": "<p>Free support classes</p>",
-          "textInPortuguese": "<p>Aulas de apoio gratuitas</p>",
-          "icon": "https://assets.decocache.com/brasas-site/189c501e-8727-4889-a8f3-6abb7b360d45/dollar-sign.svg"
-        },
-        {
-          "textInEnglish": "<p>Always updated Digital Book with modern tools</p>",
-          "textInPortuguese": "<p>Livro Digital sempre atualizado e com ferramentas modernas</p>",
-          "icon": "https://assets.decocache.com/brasas-site/d6298ccd-da90-4ca0-b273-0fe33181a100/book-icon.svg"
-        },
-        {
-          "textInEnglish": "<p>Connect with your class through Google Classroom</p>",
-          "textInPortuguese": "<p>Conecte-se com a sua turma através do Google Classroom</p>",
-          "icon": "https://assets.decocache.com/brasas-site/4484e918-92f4-4de9-8ba0-f06ca96af017/logo-google.svg"
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Header"
+          },
+          {
+            "__resolveType": "site/sections/PageBanner.tsx",
+            "bgColor": "blue-500",
+            "bgImage": "https://assets.decocache.com/brasas-site/b5a232b4-2747-4bcf-b290-8b3784f7191e/brasas-online-bg.png",
+            "titleInEnglish": "BRASAS Online",
+            "titleInPortuguese": "BRASAS Online",
+            "descriptionInPortuguese": "<p>Viva a experiência de aprender inglês 100% <em>online</em> com aulas ao vivo.</p>",
+            "descriptionInEnglish": "<p>Experience of learning English 100% <em>online</em> with live classes.</p>",
+            "hasNotice": false,
+            "bgImageDesktop": "https://assets.decocache.com/brasas-site/b5a232b4-2747-4bcf-b290-8b3784f7191e/brasas-online-bg.png",
+            "bgImageMobile": "https://assets.decocache.com/brasas-site/6f6270fc-14d8-44dd-a38d-ab594ba3356e/bol-bg-mobile.png",
+            "title": "BRASAS Online",
+            "description": "<p>Viva a experiência de aprender inglês 100% <em>online</em> com aulas ao vivo.</p>"
+          },
+          {
+            "__resolveType": "site/sections/Breadcrumbs.tsx",
+            "pageNameInEnglish": "BRASAS Online",
+            "pageNameInPortuguese": "BRASAS Online",
+            "pageName": "BRASAS Online",
+            "prefix": "Cursos"
+          },
+          {
+            "__resolveType": "site/sections/BrasasOnline/BrasasOnlineCards.tsx",
+            "titleInEnglish": "Live classes",
+            "titleInPortuguese": "Aulas ao vivo",
+            "classesCards": [
+              {
+                "items": [
+                  {
+                    "textInPortuguese": "Aulas em grupo",
+                    "textInEnglish": "Group classes",
+                    "text": "Aulas em grupo"
+                  },
+                  {
+                    "textInPortuguese": "Para alunos matriculados a partir do 3º ano do ensino fundamental",
+                    "textInEnglish": "For students enrolled from the 3rd year of elementary school",
+                    "text": "Para alunos matriculados a partir do 3º ano do ensino fundamental"
+                  },
+                  {
+                    "textInEnglish": "2x per week",
+                    "textInPortuguese": "2x na semana",
+                    "text": "2x na semana"
+                  }
+                ],
+                "title": "Kids"
+              },
+              {
+                "items": [
+                  {
+                    "textInEnglish": "Group classes",
+                    "textInPortuguese": "Aulas em grupo",
+                    "text": "Aulas em grupo"
+                  },
+                  {
+                    "textInPortuguese": "Para alunos matriculados a partir do 6º ano do ensino fundamental",
+                    "textInEnglish": "For students enrolled from the 6th year of elementary school",
+                    "text": "Para alunos matriculados a partir do 6º ano do ensino fundamental"
+                  },
+                  {
+                    "textInPortuguese": "2x na semana",
+                    "textInEnglish": "2x per week",
+                    "text": "2x na semana"
+                  }
+                ],
+                "title": "Juniors"
+              },
+              {
+                "items": [
+                  {
+                    "textInPortuguese": "Aulas em grupo",
+                    "textInEnglish": "Group classes",
+                    "text": "Aulas em grupo"
+                  },
+                  {
+                    "textInPortuguese": "Formação completa em aproximadamente 5 anos",
+                    "textInEnglish": "Complete training in approximately 5 years",
+                    "text": "Formação completa em aproximadamente 5 anos"
+                  },
+                  {
+                    "textInPortuguese": "6 meses cada módulo (livro)",
+                    "textInEnglish": "6 months per module (book)",
+                    "text": "6 meses cada módulo (livro)"
+                  },
+                  {
+                    "textInPortuguese": "2x na semana",
+                    "textInEnglish": "2x per week",
+                    "text": "2x na semana"
+                  }
+                ],
+                "title": "Regular"
+              },
+              {
+                "items": [
+                  {
+                    "textInPortuguese": "Aulas em grupo",
+                    "textInEnglish": "Group classes",
+                    "text": "Aulas em grupo"
+                  },
+                  {
+                    "textInPortuguese": "Formação completa em aproximadamente 2 anos e meio",
+                    "textInEnglish": "Complete training in approximately 2.5 years",
+                    "text": "Formação completa em aproximadamente 2 anos e meio"
+                  },
+                  {
+                    "textInPortuguese": "3 meses cada módulo (livro)",
+                    "textInEnglish": "3 months per module (book)",
+                    "text": "3 meses cada módulo (livro)"
+                  },
+                  {
+                    "textInPortuguese": "4x na semana",
+                    "textInEnglish": "4x per week",
+                    "text": "4x na semana"
+                  }
+                ],
+                "title": "Intensive"
+              },
+              {
+                "items": [
+                  {
+                    "textInPortuguese": "Aulas particulares para 1 ou 2 alunos",
+                    "textInEnglish": "Private lessons for 1 or 2 students",
+                    "text": "Aulas particulares para 1 ou 2 alunos"
+                  }
+                ],
+                "title": "Private"
+              }
+            ],
+            "title": "Aulas ao vivo"
+          },
+          {
+            "__resolveType": "site/sections/BrasasOnline/InovationSection.tsx",
+            "items": [
+              {
+                "icon": "https://assets.decocache.com/brasas-site/5a32d11d-49c5-432d-b599-954e788af559/laptop-icon.svg",
+                "textInEnglish": "<p>Live classes with 60 minutes</p>",
+                "textInPortuguese": "<p><strong>Aulas ao vivo</strong> com 60 minutos</p>",
+                "text": "<p><strong>Aulas ao vivo</strong> com 60 minutos</p>"
+              },
+              {
+                "icon": "https://assets.decocache.com/brasas-site/05eda9db-0450-4122-9ab9-1328d3f799ca/star-icon.svg",
+                "textInPortuguese": "<p>Qualidade comprovada com certificações internacionais</p>",
+                "textInEnglish": "<p>Proven quality with international certifications</p>",
+                "text": "<p>Qualidade comprovada com certificações internacionais</p>"
+              },
+              {
+                "textInPortuguese": "<p>100% dos alunos de Book 10 tiveram notas acima de 800 pontos no TOEIC</p>",
+                "textInEnglish": "<p>100% of Book 10 students scored above 800 points on the TOEIC</p>",
+                "icon": "https://assets.decocache.com/brasas-site/ee08bfad-f910-4f09-a1d8-4ee3f2e4e09e/clipboard-icon.svg",
+                "text": "<p>100% dos alunos de Book 10 tiveram notas acima de 800 pontos no TOEIC</p>"
+              },
+              {
+                "textInPortuguese": "<p>Professores com certificação internacional</p>",
+                "textInEnglish": "<p>Teachers with international certification</p>",
+                "icon": "https://assets.decocache.com/brasas-site/0abe175b-cf9c-49a9-96ab-829955907411/teacher-icon.svg",
+                "text": "<p>Professores com certificação internacional</p>"
+              },
+              {
+                "textInPortuguese": "<p>Acesso a todo nosso acervo digital sem custo extra</p>",
+                "icon": "https://assets.decocache.com/brasas-site/4dc21ee0-3db0-4b38-97c4-000becab8ca6/movies-icon.svg",
+                "textInEnglish": "<p>Access to all our digital collection at no extra cost</p>",
+                "text": "<p>Acesso a todo nosso acervo digital sem custo extra</p>"
+              },
+              {
+                "icon": "https://assets.decocache.com/brasas-site/918f9c51-fc25-468e-9ef9-89af1c38a5fc/audio-icon.svg",
+                "textInEnglish": "<p>Practice your listening comprehension and pronunciation with BRASAS Audio Tracks recordings</p>",
+                "textInPortuguese": "<p>Pratique a sua compreensão auditiva e pronúncia com as gravações do BRASAS Audio Tracks</p>",
+                "text": "<p>Pratique a sua compreensão auditiva e pronúncia com as gravações do BRASAS Audio Tracks</p>"
+              },
+              {
+                "textInEnglish": "<p>Free support classes</p>",
+                "textInPortuguese": "<p>Aulas de apoio gratuitas</p>",
+                "icon": "https://assets.decocache.com/brasas-site/189c501e-8727-4889-a8f3-6abb7b360d45/dollar-sign.svg",
+                "text": "<p>Aulas de apoio gratuitas</p>"
+              },
+              {
+                "textInEnglish": "<p>Always updated Digital Book with modern tools</p>",
+                "textInPortuguese": "<p>Livro Digital sempre atualizado e com ferramentas modernas</p>",
+                "icon": "https://assets.decocache.com/brasas-site/d6298ccd-da90-4ca0-b273-0fe33181a100/book-icon.svg",
+                "text": "<p>Livro Digital sempre atualizado e com ferramentas modernas</p>"
+              },
+              {
+                "textInEnglish": "<p>Connect with your class through Google Classroom</p>",
+                "textInPortuguese": "<p>Conecte-se com a sua turma através do Google Classroom</p>",
+                "icon": "https://assets.decocache.com/brasas-site/4484e918-92f4-4de9-8ba0-f06ca96af017/logo-google.svg",
+                "text": "<p>Conecte-se com a sua turma através do Google Classroom</p>"
+              }
+            ],
+            "titleInEnglish": "Innovation in learning",
+            "titleInPortuguese": "Inovação no aprendizado",
+            "title": "Inovação no aprendizado"
+          },
+          {
+            "__resolveType": "site/sections/BrasasOnline/PaymentsSection.tsx",
+            "items": [
+              {
+                "titleInEnglish": "Monthly Payment",
+                "subTitleInEnglish": "No loyalty",
+                "titleInPortuguese": "Pagamento Mensal",
+                "subTitleInPortuguese": "Sem fidelidade",
+                "title": "Pagamento Mensal",
+                "subtitle": "Sem fidelidade"
+              },
+              {
+                "titleInEnglish": "Half-Yearly and Annual Payment",
+                "subTitleInEnglish": "With special conditions",
+                "titleInPortuguese": "Pagamento Semestral e Anual",
+                "subTitleInPortuguese": "Com condições especiais",
+                "title": "Pagamento Semestral e Anual",
+                "subtitle": "Com condições especiais"
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/BrasasOnline/VideosCarousel.tsx",
+            "videos": [
+              {
+                "url": "https://brasas-videos.s3.us-east-2.amazonaws.com/BRASAS_JR.mp4",
+                "poster": "https://assets.decocache.com/brasas-site/0792645d-d62c-44d9-bf7a-f591044a906a/brasas-online.png",
+                "titleInPortuguese": "Aula demonstrativa - Juniors&Teens",
+                "titleInEnglish": "Demonstration class - Jufniors&Teens",
+                "title": "Aula demonstrativa - Juniors&Teens"
+              },
+              {
+                "poster": "https://assets.decocache.com/brasas-site/0792645d-d62c-44d9-bf7a-f591044a906a/brasas-online.png",
+                "titleInPortuguese": "Aula demonstrativa - Book 4",
+                "titleInEnglish": "Demonstration class - Book 4",
+                "url": "https://brasas-videos.s3.us-east-2.amazonaws.com/BOOK_4.mp4",
+                "title": "Aula demonstrativa - Book 4"
+              },
+              {
+                "titleInPortuguese": "Aula demonstrativa - Book 1",
+                "titleInEnglish": "Demonstration class - Book 1",
+                "poster": "https://assets.decocache.com/brasas-site/0792645d-d62c-44d9-bf7a-f591044a906a/brasas-online.png",
+                "url": "https://brasas-videos.s3.us-east-2.amazonaws.com/BOOK_1.mp4",
+                "title": "Aula demonstrativa - Book 1"
+              }
+            ]
+          },
+          {
+            "__resolveType": "IWantKnowMore"
+          },
+          {
+            "__resolveType": "CoursesCardsSection"
+          },
+          {
+            "__resolveType": "Footer"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
         }
-      ],
-      "titleInEnglish": "Innovation in learning",
-      "titleInPortuguese": "Inovação no aprendizado"
-    },
-    {
-      "__resolveType": "site/sections/BrasasOnline/PaymentsSection.tsx",
-      "items": [
-        {
-          "titleInEnglish": "Monthly Payment",
-          "subTitleInEnglish": "No loyalty",
-          "titleInPortuguese": "Pagamento Mensal",
-          "subTitleInPortuguese": "Sem fidelidade"
-        },
-        {
-          "titleInEnglish": "Half-Yearly and Annual Payment",
-          "subTitleInEnglish": "With special conditions",
-          "titleInPortuguese": "Pagamento Semestral e Anual",
-          "subTitleInPortuguese": "Com condições especiais"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/BrasasOnline/VideosCarousel.tsx",
-      "videos": [
-        {
-          "url": "https://brasas-videos.s3.us-east-2.amazonaws.com/BRASAS_JR.mp4",
-          "poster": "https://assets.decocache.com/brasas-site/0792645d-d62c-44d9-bf7a-f591044a906a/brasas-online.png",
-          "titleInPortuguese": "Aula demonstrativa - Juniors&Teens",
-          "titleInEnglish": "Demonstration class - Jufniors&Teens"
-        },
-        {
-          "poster": "https://assets.decocache.com/brasas-site/0792645d-d62c-44d9-bf7a-f591044a906a/brasas-online.png",
-          "titleInPortuguese": "Aula demonstrativa - Book 4",
-          "titleInEnglish": "Demonstration class - Book 4",
-          "url": "https://brasas-videos.s3.us-east-2.amazonaws.com/BOOK_4.mp4"
-        },
-        {
-          "titleInPortuguese": "Aula demonstrativa - Book 1",
-          "titleInEnglish": "Demonstration class - Book 1",
-          "poster": "https://assets.decocache.com/brasas-site/0792645d-d62c-44d9-bf7a-f591044a906a/brasas-online.png",
-          "url": "https://brasas-videos.s3.us-east-2.amazonaws.com/BOOK_1.mp4"
-        }
-      ]
-    },
-    {
-      "__resolveType": "IWantKnowMore"
-    },
-    {
-      "__resolveType": "CoursesCardsSection"
-    },
-    {
-      "__resolveType": "Footer"
-    }
-  ],
+      }
+    ]
+  },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

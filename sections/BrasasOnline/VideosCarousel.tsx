@@ -1,10 +1,9 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import VideosCarouselIsland from "../../islands/BrasasOnline/VideosCarouselIsland.tsx";
 
-/** @titleBy titleInPortuguese */
+/** @titleBy title */
 interface Video {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   url: string;
   poster: ImageWidget;
 }

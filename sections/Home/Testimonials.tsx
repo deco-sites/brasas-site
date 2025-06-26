@@ -3,17 +3,14 @@ import TestimonialsIsland from "site/islands/Home/TestimonialsIsland.tsx";
 
 /** @titleBy userName */
 export interface TestimonialCard {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
   userName: string;
-  userRoleInEnglish: string;
-  userRoleInPortuguese: string;
+  userRole: string;
   userImage: ImageWidget;
 }
 
 interface TestimonialProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   testimonials: TestimonialCard[];
 }
 

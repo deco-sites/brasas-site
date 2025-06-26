@@ -4,11 +4,7 @@ interface KidsCardsProps {
   /**
    * @format rich-text
    */
-  textInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  textInPortuguese: string;
+  text: string;
 }
 
 export default function KidsCards(props: KidsCardsProps) {

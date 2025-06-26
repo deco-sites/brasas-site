@@ -1,11 +1,11 @@
 import PaymentsSectionIsland from "site/islands/BrasasOnline/PaymentsSectionIsland.tsx";
 
+/* @titleBy title */
 interface Item {
-  titleInEnglish: string;
-  subTitleInEnglish: string;
-  titleInPortuguese: string;
-  subTitleInPortuguese: string;
+  title: string;
+  subtitle: string;
 }
+
 interface PaymentsSectionProps {
   items: Item[];
 }

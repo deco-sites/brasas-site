@@ -4,7 +4,9 @@ import IconMapPinFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/map
 import IconMailFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/mail-filled.tsx";
 import IconBrandWhatsapp from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/brand-whatsapp.tsx";
 import IconPhoneFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/phone-filled.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
+import { useEffect, useState } from "preact/hooks";
+import { getCookie } from "../helpers/getCookie.ts";
+import { setCookie } from "../helpers/setCookie.ts";
 
 export default function BranchCard(
   {
@@ -45,7 +47,17 @@ export default function BranchCard(
     localStorage.setItem("brasasBranchInfos", JSON.stringify(branchInfos));
   };
 
-  const { selectedLanguage } = useSelectLanguage();
+  const [language, setLanguage] = useState("pt-BR");
+
+  useEffect(() => {
+    const currentLang = getCookie("language");
+
+    if (!currentLang) {
+      const userLanguage = navigator.language || navigator.languages[0];
+      setCookie(userLanguage);
+    }
+    setLanguage(currentLang);
+  }, []);
 
   return (
     <div className="flex flex-col min-h-60 lg:flex-row border border-gray-100 rounded-2xl overflow-hidden">
@@ -96,9 +108,7 @@ export default function BranchCard(
                 rel="noopener noreferrer"
                 className="text-blue-300 underline text-xs font-semibold"
               >
-                {selectedLanguage.value === "ptBr"
-                  ? "Como chegar?"
-                  : "How to get there?"}
+                {language === "pt-BR" ? "Como chegar?" : "How to get there?"}
               </a>
             </div>
           </div>

@@ -3,12 +3,11 @@ import HeaderMenu from "site/islands/header-menu.tsx";
 import IconUserFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/user-filled.tsx";
 import { HeaderProps } from "site/sections/Header.tsx";
 import Nav from "site/islands/nav.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
+import InternationalizationController from "./InternationalizationController.tsx";
 
 export default function HeaderIsland(
   { logo, navItems, TestButton, MyBrasasButton }: HeaderProps,
 ) {
-  const { selectedLanguage } = useSelectLanguage();
 
   return (
     <section className="flex justify-center bg-blue-900 relative z-50">
@@ -36,38 +35,17 @@ export default function HeaderIsland(
             <div className="flex gap-4">
               <a href={TestButton.link} target="_blank">
                 <button className="whitespace-nowrap bg-red-300 text-white uppercase py-3 px-4 rounded-lg text-xs font-bold leading-6 hover:bg-white hover:text-red-300 transition duration-300">
-                  {selectedLanguage.value === "ptBr"
-                    ? TestButton.textInPortuguese
-                    : TestButton.textInEnglish}
+                  {TestButton.text}
                 </button>
               </a>
               <a href={MyBrasasButton.link} target="_blank">
                 <button className="notranslate whitespace-nowrap bg-white uppercase py-3 px-4 rounded-lg text-xs font-bold leading-6 flex gap-2 items-center text-blue-900 hover:bg-transparent hover:text-white border border-transparent hover:border-white transition duration-300">
                   <IconUserFilled className="w-4 h-4" />
-                  {selectedLanguage.value === "ptBr"
-                    ? MyBrasasButton.textInPortuguese
-                    : MyBrasasButton.textInEnglish}
+                  {MyBrasasButton.text}
                 </button>
               </a>
             </div>
-            <div className="flex gap-4">
-              <Image
-                src={"/brasil.svg"}
-                alt="Brasil Flag"
-                width=""
-                height=""
-                className="w-8 h-8 cursor-pointer"
-                onClick={() => selectedLanguage.value = "ptBr"}
-              />
-              <Image
-                src={"/estados-unidos.svg"}
-                alt="Brasil Flag"
-                width=""
-                height=""
-                className="w-8 h-8 cursor-pointer"
-                onClick={() => selectedLanguage.value = "enUs"}
-              />
-            </div>
+            <InternationalizationController />
           </div>
         </div>
       </header>

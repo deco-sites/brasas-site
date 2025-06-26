@@ -1,13 +1,9 @@
 import Image from "apps/website/components/Image.tsx";
 import IconCheck from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/check.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 import CertificationTitle from "site/components/CertificationTitle.tsx";
 import PreparatoryCourseTitle from "site/components/PreparatoryCourseTitle.tsx";
 
 export default function ToefljrCertificationIsland(props) {
-  //const textStyle = { WebkitTextStroke: "1px #001E60" };
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <section
       id="toeicjr"
@@ -26,9 +22,7 @@ export default function ToefljrCertificationIsland(props) {
                 <span
                   className=""
                   dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? item.textInPortuguese
-                      : item.textInEnglish,
+                    __html: item.text,
                   }}
                 >
                 </span>
@@ -47,18 +41,14 @@ export default function ToefljrCertificationIsland(props) {
                 <span
                   className=""
                   dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? props.card.modalityInPortuguese
-                      : props.card.modalityInEnglish,
+                    __html: props.card.modality,
                   }}
                 >
                 </span>
                 <span
                   className="text-center"
                   dangerouslySetInnerHTML={{
-                    __html: selectedLanguage.value === "ptBr"
-                      ? props.card.sessionsInPortuguese
-                      : props.card.sessionsInEnglish,
+                    __html: props.card.sessions,
                   }}
                 >
                 </span>

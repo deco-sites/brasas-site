@@ -1,22 +1,35 @@
 import TextInput from "site/components/ui/TextInput.tsx";
 import SelectInput from "site/components/ui/SelectInput.tsx";
 import Checkbox from "site/components/ui/Checkbox.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 import englishData from "site/data/english/home.json" with { type: "json" };
 import portugueseData from "site/data/portuguese/home.json" with {
   type: "json",
 };
 import { invoke } from "../runtime.ts";
-import { useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 import Recaptcha from "site/helpers/recaptcha.tsx";
+import { getCookie } from "../helpers/getCookie.ts";
+import { setCookie } from "../helpers/setCookie.ts";
 
 export default function HomeForm(
-  { ptBrTitle, enUsTitle, RecipientsEmailArr, CopyToArr, subject },
+  { title, RecipientsEmailArr, CopyToArr, subject },
 ) {
-  const { selectedLanguage } = useSelectLanguage();
-  const data = selectedLanguage.value === "ptBr" ? portugueseData : englishData;
+  const [language, setLanguage] = useState("pt-BR");
+
+  useEffect(() => {
+    const currentLang = getCookie("language");
+
+    if (!currentLang) {
+      const userLanguage = navigator.language || navigator.languages[0];
+      setCookie(userLanguage);
+    }
+    setLanguage(currentLang);
+  }, []);
+
+  const isPortuguese = language === "pt-BR";
+  const data = isPortuguese ? portugueseData : englishData;
 
   const stateOptions = [
     { "name": "Rio de Janeiro", "value": "rj" },
@@ -109,24 +122,18 @@ export default function HomeForm(
           className="absolute z-50 -top-28 bg-white flex flex-col items-center gap-8 border-gray-100 rounded-2xl p-8 xl:min-w-[55rem]"
         >
           <span className="font-bold text-xl">
-            {selectedLanguage.value === "ptBr" ? ptBrTitle : enUsTitle}
+            {title}
           </span>
           <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-x-8 gap-y-4">
             <TextInput
-              label={selectedLanguage.value === "ptBr"
-                ? "nome completo"
-                : "full name"}
-              placeholder={selectedLanguage.value === "ptBr"
-                ? "Insira seu nome"
-                : "Enter your name"}
+              label={isPortuguese ? "nome completo" : "full name"}
+              placeholder={isPortuguese ? "Insira seu nome" : "Enter your name"}
               value={name}
               setValue={setName}
               required
             />
             <TextInput
-              label={selectedLanguage.value === "ptBr"
-                ? "celular/whatsapp"
-                : "cell phone/whatsapp"}
+              label={isPortuguese ? "celular/whatsapp" : "cell phone/whatsapp"}
               placeholder="(dd) xxxxx-xxxx"
               value={phone}
               setValue={setPhone}
@@ -135,8 +142,8 @@ export default function HomeForm(
               maxLength={11}
             />
             <TextInput
-              label={selectedLanguage.value === "ptBr" ? "e-mail" : "email"}
-              placeholder={selectedLanguage.value === "ptBr"
+              label={isPortuguese ? "e-mail" : "email"}
+              placeholder={isPortuguese
                 ? "Insira seu e-mail"
                 : "Enter your email"}
               value={email}
@@ -145,8 +152,8 @@ export default function HomeForm(
               type="email"
             />
             <SelectInput
-              label={selectedLanguage.value === "ptBr" ? "Estado" : "State"}
-              placeholder={selectedLanguage.value === "ptBr"
+              label={isPortuguese ? "Estado" : "State"}
+              placeholder={isPortuguese
                 ? "Selecione um estado"
                 : "Select a state"}
               options={stateOptions}

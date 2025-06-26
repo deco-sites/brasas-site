@@ -1,17 +1,12 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 
-/** @titleBy englishTitle */
+/** @titleBy title */
 export interface CourseCard {
-  englishTitle: string;
-  portugueseTitle: string;
+  title: string;
   /**
    * @format rich-text
    */
-  englishDescription: string;
-  /**
-   * @format rich-text
-   */
-  portugueseDescription: string;
+  description: string;
   image: ImageWidget;
   link: string;
 }

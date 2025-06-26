@@ -12,8 +12,7 @@ interface Logo {
 }
 
 interface PartnersCarouselProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   partnersLogos: Logo[];
 }
 

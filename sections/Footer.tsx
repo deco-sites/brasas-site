@@ -10,65 +10,56 @@ interface socialMediaIcon {
 }
 
 /**
- * @titleBy textInPortuguese
+ * @titleBy text
  */
 interface NavItem {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
   url: string;
 }
 
 /**
- * @titleBy nameInPortuguese
+ * @titleBy name
  */
 interface Course {
-  nameInEnglish: string;
-  nameInPortuguese: string;
+  name: string;
   url: string;
 }
 
 interface TestButton {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
   url: string;
 }
 
 interface MyBrasasButton {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
   url: string;
 }
 
 interface Seal {
   image: ImageProps;
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
   link: string;
   title: string;
 }
 
 /**
- * @titleBy textInPortuguese
+ * @titleBy text
  */
 interface endPageNavItem {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
   url: string;
 }
 
 interface Copyright {
-  textInEnglish: string;
-  textInPortuguese: string;
+  text: string;
 }
 
 interface FooterProps {
   footerLogo: ImageProps;
-  socialMediaTitleInEnglish: string;
-  socialMediaTitleInPortuguese: string;
+  socialMediaTitle: string;
   socialMediaIcons: socialMediaIcon[];
   footerNav: NavItem[];
-  coursesTitleInEnglish: string;
-  coursesTitleInPortuguese: string;
+  coursesTitle: string;
   coursesLink: string;
   coursesList: Course[];
   testButton: TestButton;

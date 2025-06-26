@@ -1,17 +1,25 @@
 import BecomeAFranchiseeFormIsland from "site/islands/BecomeAFranchisee/BecomeAFranchiseeFormIsland.tsx";
 import { CopyEmail, RecipientsEmail } from "site/types/Emails.ts";
 
+interface InputProps {
+  label: string;
+  placeholder: string;
+}
+
 interface BecomeAFranchiseeFormProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
+  title: string;
   /**
    * @format rich-text
    */
-  textInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  textInPortuguese: string;
+  text: string;
+  formTitle: string;
+  formSubtitle: string;
+  nameInput: InputProps;
+  emailInput: InputProps;
+  telInput: InputProps;
+  messageInput: InputProps;
+  acceptanceText: string;
+  buttonText: string;
   RecipientsEmailArr: RecipientsEmail[];
   CopyToArr?: CopyEmail[];
   subject: string;

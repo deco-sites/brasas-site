@@ -1,12 +1,10 @@
 import Image from "apps/website/components/Image.tsx";
 import IconArrowLeft from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/arrow-left.tsx";
 import IconArrowRight from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/arrow-right.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 import { useSignal } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
 
 export default function ProfileCoursesCardsIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
   const currentIndex = useSignal(0);
   const containerRef = useRef(null);
   const visibleCards = 4;
@@ -69,9 +67,7 @@ export default function ProfileCoursesCardsIsland(props) {
       <div className="w-full flex flex-col gap-16 max-w-[88.5rem] px-9 py-16 pb-28">
         <div className="flex items-center justify-between w-full">
           <h2 className="text-center lg:text-start text-black-500 font-bold text-4xl ">
-            {selectedLanguage.value === "ptBr"
-              ? props.titleInPortuguese
-              : props.titleInEnglish}
+            {props.title}
           </h2>
           <div className="hidden lg:flex gap-4">
             <button
@@ -116,17 +112,11 @@ export default function ProfileCoursesCardsIsland(props) {
               >
                 <div className="flex flex-col items-center gap-2 text-blue-900 p-4 h-[35%]">
                   <span className="leading-8 font-black text-xl text-center">
-                    {selectedLanguage.value === "ptBr"
-                      ? card.portugueseTitle
-                      : card.englishTitle}
+                    {card.title}
                   </span>
                   <span
                     className="leading-6 font-medium font-base text-center"
-                    dangerouslySetInnerHTML={{
-                      __html: selectedLanguage.value === "ptBr"
-                        ? card.portugueseDescription
-                        : card.englishDescription,
-                    }}
+                    dangerouslySetInnerHTML={{ __html: card.description }}
                   >
                   </span>
                 </div>

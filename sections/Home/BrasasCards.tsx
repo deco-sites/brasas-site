@@ -2,15 +2,12 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import BrasasCardIsland from "../../islands/Home/BrasasCardsIsland.tsx";
 
 /**
- * @titleBy titleInEnglish
+ * @titleBy title
  */
 interface Card {
-  titleInEnglish: string;
-  titleInPortuguese: string;
-  descriptionInEnglish: string;
-  descriptionInPortuguese: string;
-  buttonTextInEnglish: string;
-  buttonTextInPortuguese: string;
+  title: string;
+  description: string;
+  buttonText: string;
   cardImage: ImageWidget;
   cardBgColor: string;
   buttonBgColor: string;

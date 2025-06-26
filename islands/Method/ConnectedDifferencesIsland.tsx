@@ -1,27 +1,18 @@
 import Image from "apps/website/components/Image.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function ConnectedDifferencesIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <section className="flex flex-col gap-6 xl:gap-9 items-center justify-center py-10 xl:pt-20 xl:pb-16">
       <h2 className="font-normal leading-8 text-2xl max-w-[45rem] text-center">
-        {selectedLanguage.value === "ptBr"
-          ? props.titleInPortuguese
-          : props.titleInEnglish}
+        {props.title}
       </h2>
       <Image
-        src={selectedLanguage.value === "ptBr"
-          ? props.desktopImagePortuguese
-          : props.desktopImageEnglish}
+        src={props.desktopImage}
         alt="Mandala"
         className="hidden md:flex object-cover"
       />
       <Image
-        src={selectedLanguage.value === "ptBr"
-          ? props.mobileImagePortuguese
-          : props.mobileImageEnglish}
+        src={props.mobileImage}
         alt="Mandala"
         className="md:hidden object-cover"
       />

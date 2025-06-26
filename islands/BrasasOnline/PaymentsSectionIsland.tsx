@@ -1,10 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
-import IconMoodSmile from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/mood-smile.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function PaymentsSectionIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <section className="flex justify-center pb-14">
       <div className="px-5 max-w-[88.5rem] xl:px-9">
@@ -15,14 +11,10 @@ export default function PaymentsSectionIsland(props) {
 
               <div className="flex flex-col">
                 <h3 className="text-xl font-bold">
-                  {selectedLanguage.value === "ptBr"
-                    ? item.titleInPortuguese
-                    : item.titleInEnglish}
+                  {item.title}
                 </h3>
                 <p className="text-sm">
-                  {selectedLanguage.value === "ptBr"
-                    ? item.subTitleInPortuguese
-                    : item.subTitleInEnglish}
+                  {item.subtitle}
                 </p>
               </div>
             </div>

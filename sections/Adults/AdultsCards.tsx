@@ -4,11 +4,11 @@ interface AdultsCardsProps {
   /**
    * @format rich-text
    */
-  textInEnglish: string;
-  /**
-   * @format rich-text
-   */
-  textInPortuguese: string;
+  text: string;
+  leftItem: string;
+  rightItem: string;
+  firstDescriptionPhrase: string;
+  secondDescriptionPhrase: string;
 }
 
 export default function AdultsCards(props: AdultsCardsProps) {

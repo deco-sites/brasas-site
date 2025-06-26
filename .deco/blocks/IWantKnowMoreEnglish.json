@@ -1,0 +1,33 @@
+{
+  "__resolveType": "site/sections/IWantKnowMore.tsx",
+  "RecipientsEmailArr": [
+    {
+      "email": "comercial@brasas.com"
+    }
+  ],
+  "CopyToArr": [],
+  "title": "I want to know more",
+  "subject": "Formulário BRASAS - Quero saber mais",
+  "testButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+  "levelingTitle": "To start, discover your level with our placement test.",
+  "levelingSubtitle": "Our placement test helps you find out which module you should enroll in. Access the link below and start your test now!",
+  "levelingButtonText": "Access the test",
+  "levelingButtonLink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+  "rendersLeveling": true,
+  "nameInput": {
+    "label": "Name",
+    "placeholder": "Enter your name"
+  },
+  "emailInput": {
+    "label": "Email",
+    "placeholder": "Enter your email"
+  },
+  "telInput": {
+    "label": "Phone",
+    "placeholder": "(dd) xxxxx-xxxx"
+  },
+  "formTitle": "Request a contact",
+  "formSubtitle": "Leave your details below and we will contact you for more information.",
+  "acceptanceTermText": "I agree to receive communications and personalized offers according to my interests",
+  "sendButtonText": "Request contact"
+}

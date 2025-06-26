@@ -3,11 +3,13 @@ import CertificationsPageBannerIsland from "site/islands/Certifications/Certific
 
 interface CertificationsPageBannerProps {
   bgImage: ImageWidget;
-  titleInEnglish: string;
-  titleInPortuguese: string;
-  subtitleInEnglish?: string;
-  subtitleInPortuguese?: string;
+  title: string;
+  subtitle?: string;
   hasNotice: boolean;
+  /**
+   * @format rich-text
+   */
+  noticeText?: string;
 }
 
 export default function CertificationsPageBanner(

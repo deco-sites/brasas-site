@@ -1,20 +1,13 @@
 import Image from "apps/website/components/Image.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 import IconSquareCheckFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/square-check-filled.tsx";
 
 export default function PFFCardsIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <section className="w-full flex justify-center py-14">
       <div className="w-full max-w-[88.5rem] px-9 flex flex-col items-center gap-20">
         <span
           className="text-2xl text-justify"
-          dangerouslySetInnerHTML={{
-            __html: selectedLanguage.value === "ptBr"
-              ? props.textInPortuguese
-              : props.textInEnglish,
-          }}
+          dangerouslySetInnerHTML={{ __html: props.text }}
         >
         </span>
 
@@ -27,9 +20,7 @@ export default function PFFCardsIsland(props) {
               <IconSquareCheckFilled class="w-8 h-8 text-green-200 shrink-0" />
               {/*<span className="w-6 h-6 text-green-200 shrink-0">✅</span>*/}
               <span className="text-2xl">
-                {selectedLanguage.value === "ptBr"
-                  ? item.textInPortuguese
-                  : item.textInEnglish}
+                {item.text}
               </span>
             </div>
           ))}
@@ -38,11 +29,7 @@ export default function PFFCardsIsland(props) {
         <div className="flex flex-col gap-4 sm:flex-row justify-between items-center w-full">
           <span
             className="font-normal text-2xl sm:text-[40px] leading-10"
-            dangerouslySetInnerHTML={{
-              __html: selectedLanguage.value === "ptBr"
-                ? props.bottomTextInPortuguese
-                : props.bottomTextInEnglish,
-            }}
+            dangerouslySetInnerHTML={{ __html: props.bottomText }}
           >
           </span>
           <Image

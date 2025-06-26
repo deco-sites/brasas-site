@@ -1,4 +1,6 @@
-export default function CourseCardExpanded() {
+import Image from "apps/website/components/Image.tsx";
+
+export default function CourseCardExpanded({ card }) {
   return (
     <a
       href={card.link}
@@ -6,14 +8,10 @@ export default function CourseCardExpanded() {
     >
       <div className="flex flex-col items-center gap-2 text-blue-900 p-4 h-[36.36%]">
         <span className="leading-8 font-black text-xl">
-          {selectedLanguage.value === "ptBr"
-            ? card.portugueseTitle
-            : card.englishTitle}
+          {card.title}
         </span>
         <span className="leading-6 font-medium font-base">
-          {selectedLanguage.value === "ptBr"
-            ? card.portugueseDescription
-            : card.englishDescription}
+          {card.description}
         </span>
       </div>
       <div className="relative max-w-full h-[63.64%]">

@@ -9,7 +9,9 @@
       "englishDescription": "From Pre-2",
       "portugueseDescription": "A partir do Pré-2",
       "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
-      "link": "/prek"
+      "link": "/prek",
+      "title": "Pre-K",
+      "description": "<p>A partir do Pré-2</p>"
     },
     {
       "englishTitle": "Kids",
@@ -17,7 +19,9 @@
       "englishDescription": "3rd year of Elementary School",
       "portugueseDescription": "3º ano do Ensino Fundamental",
       "image": "https://data.decoassets.com/brasas-site/3b108c24-ee92-49e0-97a8-2cd5bcabbdac/Frame-1105-1.png",
-      "link": "/kids"
+      "link": "/kids",
+      "title": "Kids",
+      "description": "<p>3º ano do Ensino Fundamental</p>"
     },
     {
       "englishTitle": "Juniors & Teens",
@@ -25,7 +29,9 @@
       "englishDescription": "6th year of Elementary School",
       "portugueseDescription": "6º ano do Ensino Fundamental",
       "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png",
-      "link": "/juniors_e_teens"
+      "link": "/juniors_e_teens",
+      "title": "Juniors & Teens",
+      "description": "<p>6º ano do Ensino Fundamental</p>"
     },
     {
       "englishTitle": "Adults",
@@ -33,7 +39,9 @@
       "englishDescription": "From 14 years old",
       "portugueseDescription": "A partir de 14 anos",
       "link": "/adults",
-      "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png"
+      "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png",
+      "title": "Adults",
+      "description": "<p>A partir de 14 anos</p>"
     },
     {
       "englishTitle": "BRASAS Online",
@@ -41,7 +49,9 @@
       "englishDescription": "<p>Learn with live <em>online</em> classes</p>",
       "portugueseDescription": "<p>Aprenda com aulas <em>online</em> e ao vivo</p>",
       "link": "/bol",
-      "image": "https://data.decoassets.com/brasas-site/11f2b643-0c09-4da2-9fe9-a19486eded2b/BRASAS-online.png"
+      "image": "https://data.decoassets.com/brasas-site/11f2b643-0c09-4da2-9fe9-a19486eded2b/BRASAS-online.png",
+      "title": "BRASAS Online",
+      "description": "<p>Aprenda com aulas <em>online</em> e ao vivo</p>"
     },
     {
       "englishTitle": "International Certification",
@@ -49,7 +59,9 @@
       "englishDescription": "Preparatory Courses and Exam",
       "portugueseDescription": "Cursos preparatórios e prova",
       "link": "/certificacoes",
-      "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png"
+      "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png",
+      "title": "Certificações Internacionais",
+      "description": "<p>Cursos preparatórios e prova</p>"
     },
     {
       "englishTitle": "Partnerships",
@@ -57,7 +69,9 @@
       "englishDescription": "<p>Companies, Schools and Universities</p>",
       "portugueseDescription": "Empresas, Escolas e Universidades",
       "link": "/parcerias",
-      "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png"
+      "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png",
+      "title": "Parcerias",
+      "description": "<p>Empresas, Escolas e Universidades</p>"
     },
     {
       "englishTitle": "Portuguese for Foreigners",
@@ -65,7 +79,10 @@
       "englishDescription": "Learn spoken Portuguese in Brazil",
       "portugueseDescription": "Aprenda português falado no Brasil",
       "link": "/pff",
-      "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png"
+      "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png",
+      "title": "Português para Estrangeiros",
+      "description": "<p>Aprenda português falado no Brasil</p>"
     }
-  ]
+  ],
+  "title": "Conheça nossos cursos"
 }

@@ -1,134 +1,365 @@
 {
   "name": "Trabalhe Conosco",
   "path": "/trabalhe_conosco",
-  "sections": [
-    {
-      "__resolveType": "Header"
-    },
-    {
-      "__resolveType": "site/sections/PageBanner.tsx",
-      "bgColor": "blue-300",
-      "bgImage": "https://assets.decocache.com/brasas-site/47a809df-f604-40b8-8b37-b369f1ab2bcf/work-with-us-bg.png",
-      "titleInPortuguese": "Trabalhe Conosco",
-      "titleInEnglish": "Work with Us",
-      "hasNotice": false,
-      "bgImageDesktop": "https://assets.decocache.com/brasas-site/47a809df-f604-40b8-8b37-b369f1ab2bcf/work-with-us-bg.png",
-      "bgImageMobile": "https://assets.decocache.com/brasas-site/9859a829-7938-4808-825d-caa8e56184d8/work-with-us-bg-mobile.png"
-    },
-    {
-      "__resolveType": "site/sections/WorkWithUs/WorkWithUsForm.tsx",
-      "RecipientsEmailArr": [
-        {
-          "email": "erick.nascimento@simbioseventures.com"
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "HeaderEnglish"
+          },
+          {
+            "__resolveType": "site/sections/PageBanner.tsx",
+            "bgColor": "blue-300",
+            "bgImage": "https://assets.decocache.com/brasas-site/47a809df-f604-40b8-8b37-b369f1ab2bcf/work-with-us-bg.png",
+            "titleInPortuguese": "Trabalhe Conosco",
+            "titleInEnglish": "Work with Us",
+            "hasNotice": false,
+            "bgImageDesktop": "https://assets.decocache.com/brasas-site/47a809df-f604-40b8-8b37-b369f1ab2bcf/work-with-us-bg.png",
+            "bgImageMobile": "https://assets.decocache.com/brasas-site/9859a829-7938-4808-825d-caa8e56184d8/work-with-us-bg-mobile.png",
+            "title": "Work with Us"
+          },
+          {
+            "__resolveType": "site/sections/WorkWithUs/WorkWithUsForm.tsx",
+            "RecipientsEmailArr": [
+              {
+                "email": "erick.nascimento@simbioseventures.com"
+              }
+            ],
+            "subject": "Trabalhe Conosco - BRASAS",
+            "desiredAreas": [
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Administrativo",
+                "nameInEnglish": "Administrative",
+                "value": "Administrativo",
+                "name": "Administrative"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "BI",
+                "nameInEnglish": "BI",
+                "value": "BI",
+                "name": "BI"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Comercial",
+                "value": "Comercial",
+                "nameInEnglish": "Commercial",
+                "name": "Commercial"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Compras",
+                "value": "Compras",
+                "nameInEnglish": "Purchasing",
+                "name": "Purchasing"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Financeiro",
+                "value": "Financeiro",
+                "nameInEnglish": "Finance",
+                "name": "Finance"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Marketing",
+                "value": "Marketing",
+                "nameInEnglish": "Marketing",
+                "name": "Marketing"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "cv@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Pedagógico",
+                "nameInEnglish": "Pedagogical",
+                "value": "Pedagógico",
+                "name": "Pedagogical"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "RH",
+                "value": "RH",
+                "nameInEnglish": "Human Resources",
+                "name": "Human Resources"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Tecnologia",
+                "value": "TI",
+                "nameInEnglish": "Technology",
+                "name": "Technology"
+              }
+            ],
+            "formTitle": "Be part of the BRASAS team",
+            "formSubtitle": "Fill out the form with your information and we will contact you.",
+            "nameInput": {
+              "placeholder": "Enter your name",
+              "label": "name"
+            },
+            "emailInput": {
+              "label": "email",
+              "placeholder": "Enter your email"
+            },
+            "telInput": {
+              "label": "phone",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "cityInput": {
+              "label": "city",
+              "placeholder": "Enter your city"
+            },
+            "desiredAreaInput": {
+              "label": "desired area",
+              "placeholder": "Select the desired area"
+            },
+            "curriculumInput": {
+              "label": "resume",
+              "placeholder": "Select your file"
+            },
+            "additionalCommentsInput": {
+              "label": "additional comments",
+              "placeholder": "Enter your comment"
+            },
+            "acceptanceSendText": "I agree to send my personal data for analysis in a possible selection process for a vacancy.",
+            "acceptanceReceiveText": "I agree to receive personalized communications and offers according to my interests",
+            "buttonText": "Submit"
+          },
+          {
+            "__resolveType": "FooterEnglish"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/cookie.ts",
+          "name": "language",
+          "value": "en-US"
         }
-      ],
-      "subject": "Trabalhe Conosco - BRASAS",
-      "desiredAreas": [
-        {
-          "RecipientsEmailArr": [
-            {
-              "email": "vagas@brasas.com"
-            }
-          ],
-          "CopyToArr": [],
-          "nameInPortuguese": "Administrativo",
-          "nameInEnglish": "Administrative",
-          "value": "Administrativo"
-        },
-        {
-          "RecipientsEmailArr": [
-            {
-              "email": "vagas@brasas.com"
-            }
-          ],
-          "CopyToArr": [],
-          "nameInPortuguese": "BI",
-          "nameInEnglish": "BI",
-          "value": "BI"
-        },
-        {
-          "RecipientsEmailArr": [
-            {
-              "email": "vagas@brasas.com"
-            }
-          ],
-          "CopyToArr": [],
-          "nameInPortuguese": "Comercial",
-          "value": "Comercial",
-          "nameInEnglish": "Commercial"
-        },
-        {
-          "RecipientsEmailArr": [
-            {
-              "email": "vagas@brasas.com"
-            }
-          ],
-          "CopyToArr": [],
-          "nameInPortuguese": "Compras",
-          "value": "Compras",
-          "nameInEnglish": "Purchasing"
-        },
-        {
-          "RecipientsEmailArr": [
-            {
-              "email": "vagas@brasas.com"
-            }
-          ],
-          "CopyToArr": [],
-          "nameInPortuguese": "Financeiro",
-          "value": "Financeiro",
-          "nameInEnglish": "Finance"
-        },
-        {
-          "RecipientsEmailArr": [
-            {
-              "email": "vagas@brasas.com"
-            }
-          ],
-          "CopyToArr": [],
-          "nameInPortuguese": "Marketing",
-          "value": "Marketing",
-          "nameInEnglish": "Marketing"
-        },
-        {
-          "RecipientsEmailArr": [
-            {
-              "email": "cv@brasas.com"
-            }
-          ],
-          "CopyToArr": [],
-          "nameInPortuguese": "Pedagógico",
-          "nameInEnglish": "Pedagogical",
-          "value": "Pedagógico"
-        },
-        {
-          "RecipientsEmailArr": [
-            {
-              "email": "vagas@brasas.com"
-            }
-          ],
-          "CopyToArr": [],
-          "nameInPortuguese": "RH",
-          "value": "RH",
-          "nameInEnglish": "Human Resources"
-        },
-        {
-          "RecipientsEmailArr": [
-            {
-              "email": "vagas@brasas.com"
-            }
-          ],
-          "CopyToArr": [],
-          "nameInPortuguese": "Tecnologia",
-          "value": "TI",
-          "nameInEnglish": "Technology"
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Header"
+          },
+          {
+            "__resolveType": "site/sections/PageBanner.tsx",
+            "bgColor": "blue-300",
+            "bgImage": "https://assets.decocache.com/brasas-site/47a809df-f604-40b8-8b37-b369f1ab2bcf/work-with-us-bg.png",
+            "titleInPortuguese": "Trabalhe Conosco",
+            "titleInEnglish": "Work with Us",
+            "hasNotice": false,
+            "bgImageDesktop": "https://assets.decocache.com/brasas-site/47a809df-f604-40b8-8b37-b369f1ab2bcf/work-with-us-bg.png",
+            "bgImageMobile": "https://assets.decocache.com/brasas-site/9859a829-7938-4808-825d-caa8e56184d8/work-with-us-bg-mobile.png",
+            "title": "Trabalhe Conosco"
+          },
+          {
+            "__resolveType": "site/sections/WorkWithUs/WorkWithUsForm.tsx",
+            "RecipientsEmailArr": [
+              {
+                "email": "erick.nascimento@simbioseventures.com"
+              }
+            ],
+            "subject": "Trabalhe Conosco - BRASAS",
+            "desiredAreas": [
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Administrativo",
+                "nameInEnglish": "Administrative",
+                "value": "Administrativo",
+                "name": "Administrativo"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "BI",
+                "nameInEnglish": "BI",
+                "value": "BI",
+                "name": "BI"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Comercial",
+                "value": "Comercial",
+                "nameInEnglish": "Commercial",
+                "name": "Comercial"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Compras",
+                "value": "Compras",
+                "nameInEnglish": "Purchasing",
+                "name": "Compras"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Financeiro",
+                "value": "Financeiro",
+                "nameInEnglish": "Finance",
+                "name": "Financeiro"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Marketing",
+                "value": "Marketing",
+                "nameInEnglish": "Marketing",
+                "name": "Marketing"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "cv@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Pedagógico",
+                "nameInEnglish": "Pedagogical",
+                "value": "Pedagógico",
+                "name": "Pedagógico"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "RH",
+                "value": "RH",
+                "nameInEnglish": "Human Resources",
+                "name": "RH"
+              },
+              {
+                "RecipientsEmailArr": [
+                  {
+                    "email": "vagas@brasas.com"
+                  }
+                ],
+                "CopyToArr": [],
+                "nameInPortuguese": "Tecnologia",
+                "value": "TI",
+                "nameInEnglish": "Technology",
+                "name": "Tecnologia"
+              }
+            ],
+            "formTitle": "Faça parte do time BRASAS",
+            "formSubtitle": "Preencha o formulário com as suas informações e entraremos em contato.",
+            "nameInput": {
+              "label": "nome",
+              "placeholder": "Insira seu nome"
+            },
+            "emailInput": {
+              "label": "e-mail",
+              "placeholder": "Insira seu e-mail"
+            },
+            "telInput": {
+              "label": "telefone",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "cityInput": {
+              "label": "cidade",
+              "placeholder": "Insira sua cidade"
+            },
+            "desiredAreaInput": {
+              "label": "área desejada",
+              "placeholder": "Selecione a área desejada"
+            },
+            "curriculumInput": {
+              "label": "Currículo",
+              "placeholder": "Selecione seu arquivo"
+            },
+            "additionalCommentsInput": {
+              "label": "comentários adicionais",
+              "placeholder": "Insira seu comentário"
+            },
+            "acceptanceSendText": "Eu concordo em enviar meus dados pessoais para análise em um possível processo seletivo para vaga.",
+            "acceptanceReceiveText": "Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses",
+            "buttonText": "Enviar"
+          },
+          {
+            "__resolveType": "Footer"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
         }
-      ]
-    },
-    {
-      "__resolveType": "Footer"
-    }
-  ],
+      }
+    ]
+  },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

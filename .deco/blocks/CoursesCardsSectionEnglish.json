@@ -1,0 +1,54 @@
+{
+  "__resolveType": "site/sections/CoursesCardsSection.tsx",
+  "cards": [
+    {
+      "title": "Pre-K",
+      "description": "<p>From Pre-2</p>",
+      "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
+      "link": "/prek"
+    },
+    {
+      "title": "Kids",
+      "description": "<p>3rd year of Elementary School</p>",
+      "image": "https://data.decoassets.com/brasas-site/3b108c24-ee92-49e0-97a8-2cd5bcabbdac/Frame-1105-1.png",
+      "link": "/kids"
+    },
+    {
+      "title": "Juniors & Teens",
+      "description": "<p>6th year of Elementary School</p>",
+      "link": "/juniors_e_teens",
+      "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png"
+    },
+    {
+      "title": "Adults",
+      "description": "<p>From 14 years old</p>",
+      "link": "/adults",
+      "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png"
+    },
+    {
+      "title": "BRASAS Online",
+      "description": "<p>Learn with live <em>online</em> classes</p>",
+      "link": "/bol",
+      "image": "https://data.decoassets.com/brasas-site/11f2b643-0c09-4da2-9fe9-a19486eded2b/BRASAS-online.png"
+    },
+    {
+      "title": "International Certification",
+      "description": "<p>Preparatory Courses and Exam</p>",
+      "link": "/certificacoes",
+      "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png"
+    },
+    {
+      "title": "Partnerships",
+      "description": "<p>Companies, Schools and Universities</p>",
+      "link": "/parcerias",
+      "image": "https://data.decoassets.com/brasas-site/7b4278d7-74ed-447e-ade1-8c275b00deb0/Parcerias.png"
+    },
+    {
+      "title": "Portuguese for Foreigners",
+      "description": "<p>Learn spoken Portuguese in Brazil</p>",
+      "link": "/pff",
+      "image": "https://data.decoassets.com/brasas-site/891748d0-3acf-4f85-acf2-337ffb144ba2/Parcerias-(1).png"
+    }
+  ],
+  "title": "Discover our courses"
+}

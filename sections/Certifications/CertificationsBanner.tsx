@@ -1,12 +1,11 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import CertificationsBannerIsland from "../../islands/Certifications/CertificationsBannerIsland.tsx";
 
+/* @titleBy title */
 interface Item {
   icon: ImageWidget;
-  titleInEnglish: string;
-  titleInPortuguese: string;
-  subtitleInEnglish: string;
-  subtitleInPortuguese: string;
+  title: string;
+  subtitle: string;
 }
 
 interface CertificationsBannerProps {

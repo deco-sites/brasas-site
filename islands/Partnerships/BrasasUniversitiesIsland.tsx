@@ -1,9 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
-import { useSelectLanguage } from "site/sdk/language.ts";
 
 export default function BrasasUniversitiesIsland(props) {
-  const { selectedLanguage } = useSelectLanguage();
-
   return (
     <section className="flex w-full justify-center py-20">
       <div className="w-full max-w-[88.5rem] px-9">
@@ -13,14 +10,10 @@ export default function BrasasUniversitiesIsland(props) {
             {props.sections.map((section, index) => (
               <div className="flex flex-col max-w-2xl">
                 <span className="text-blue-500 font-semibold text-2xl mb-6">
-                  {selectedLanguage.value === "ptBr"
-                    ? section.titleInPortuguese
-                    : section.titleInEnglish}
+                  {section.title}
                 </span>
                 <span className="mb-6">
-                  {selectedLanguage.value === "ptBr"
-                    ? section.subtitleInPortuguese
-                    : section.subtitleInEnglish}
+                  {section.subtitle}
                 </span>
                 <div
                   className={`flex flex-col gap-5 mb-10 pb-10 ${
@@ -37,14 +30,10 @@ export default function BrasasUniversitiesIsland(props) {
                       />
                       <div className="flex flex-col">
                         <span className="font-semibold text-base">
-                          {selectedLanguage.value === "ptBr"
-                            ? item.titleInPortuguese
-                            : item.titleInEnglish}
+                          {item.title}
                         </span>
                         <span className="text-base">
-                          {selectedLanguage.value === "ptBr"
-                            ? item.textInPortuguese
-                            : item.textInEnglish}
+                          {item.text}
                         </span>
                       </div>
                     </div>
@@ -54,9 +43,7 @@ export default function BrasasUniversitiesIsland(props) {
             ))}
             <a href="#quero-saber-mais">
               <button className="text-white bg-blue-300 hover:text-blue-300 hover:bg-white border border-blue-300 border-opacity-0 hover:border-opacity-100 transition-all duration-300 rounded-lg py-3 px-8 w-fit">
-                {selectedLanguage.value === "ptBr"
-                  ? "Quero saber mais"
-                  : "I want to know more"}
+                {props.buttonText}
               </button>
             </a>
           </div>

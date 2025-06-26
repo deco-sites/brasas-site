@@ -1,10 +1,8 @@
 import BranchesBannerIsland from "site/islands/Branches/BranchesBannerIsland.tsx";
 
 interface BranchesBannerProps {
-  titleInEnglish: string;
-  titleInPortuguese: string;
-  descriptionInEnglish: string;
-  descriptionInPortuguese: string;
+  title: string;
+  description: string;
 }
 
 export default function BranchesBanner(props: BranchesBannerProps) {
