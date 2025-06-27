@@ -21,7 +21,7 @@
             "bgImageDesktop": "https://data.decoassets.com/brasas-site/240f318f-fa71-4a7e-b965-9f4a941c3900/Group-6.png",
             "title": "Kids",
             "description": "<p>Learning English is enjoyable and surprising</p>",
-            "noticeText": "<p>Course available in in-person and <em>online</em> formats</p>"
+            "noticeText": "<p>This course is available both in person and <em>online</em></p>"
           },
           {
             "__resolveType": "site/sections/Breadcrumbs.tsx",
@@ -66,11 +66,11 @@
               "placeholder": "Enter your name"
             },
             "emailInput": {
-              "label": "Email",
+              "label": "Email address",
               "placeholder": "Enter your email"
             },
             "telInput": {
-              "label": "Phone",
+              "label": "Phone number",
               "placeholder": "(dd) xxxxx-xxxx"
             },
             "formTitle": "Request a contact",

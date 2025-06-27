@@ -20,9 +20,9 @@
             "hasNotice": true,
             "bgImageMobile": "https://assets.decocache.com/brasas-site/9867a710-4fd5-4a45-bc0d-881e5a41d70e/adults-bg-mobile.png",
             "bgImageDesktop": "https://assets.decocache.com/brasas-site/15d19107-65be-4a73-9607-b11c31ccd2e8/adults.png",
-            "noticeText": "<p>Course available in in-person and <em>online</em> formats</p>",
+            "noticeText": "<p>This course is available both in person and <em>online</em></p>",
             "title": "Adults",
-            "description": "<p>English Your Way, in Your Time</p>"
+            "description": "<p>English your way, at your pace</p>"
           },
           {
             "__resolveType": "site/sections/Breadcrumbs.tsx",
@@ -35,7 +35,7 @@
             "__resolveType": "site/sections/Adults/AdultsCards.tsx",
             "textInPortuguese": "<p><strong>Foco na comunicação oral com gramática estruturada.</strong></p><p>&nbsp;</p><p>Você aprende a pensar em inglês, sem recorrer a traduções, e a usar corretamente o vocabulário e estrutura do idioma.</p>",
             "textInEnglish": "<p><strong>Focus on oral communication with structured grammar.</strong></p><p>&nbsp;</p><p>You learn to think in English, without resorting to translations, and to use the vocabulary and structure of the language correctly.</p>",
-            "text": "<p><strong>Focus on oral communication with structured grammar.</strong></p><p>&nbsp;</p><p>You learn to think in English, without resorting to translations, and to use the vocabulary and structure of the language correctly.</p>",
+            "text": "<p><strong>Focus on oral communication with structured grammar.</strong></p><p>&nbsp;</p><p>You learn to think in English—without relying on translations—and to use vocabulary and sentence structure correctly.</p>",
             "leftItem": "free placement test without obligation",
             "description": "<p>*Approximate duration of the course (without holidays, breaks and public holidays).</p><p>**It can be 2 days a week or 2 consecutive classes in the same day.</p>",
             "rightItem": "free support classes",

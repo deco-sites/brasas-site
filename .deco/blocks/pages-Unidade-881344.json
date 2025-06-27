@@ -30,7 +30,7 @@
                 "link": "/prek",
                 "image": "https://assets.decocache.com/brasas-site/ab6f487f-2e97-4fc6-9a52-952608f6c26e/Frame-1105.png",
                 "title": "Pre-K",
-                "description": "<p>From Pre-2</p>"
+                "description": "<p>As of Pre-2</p>"
               },
               {
                 "englishTitle": "Kids",
@@ -40,7 +40,7 @@
                 "link": "/kids",
                 "image": "https://assets.decocache.com/brasas-site/80fb8f20-b409-47b5-8c7f-3804792ea1d8/Untitled-1.png",
                 "title": "Kids",
-                "description": "<p>3rd year of Elementary School</p>"
+                "description": "<p>3rd grade students</p>"
               },
               {
                 "englishTitle": "Juniors & Teens",
@@ -50,7 +50,7 @@
                 "link": "/juniors_e_teens",
                 "image": "https://assets.decocache.com/brasas-site/a81fac9f-9476-4a15-9750-cd62405fb3ca/img.png",
                 "title": "Juniors & Teens",
-                "description": "<p>6th year of Elementary School</p>"
+                "description": "<p>6th grade students</p>"
               },
               {
                 "englishTitle": "Adults",
@@ -60,7 +60,7 @@
                 "link": "/adults",
                 "image": "https://assets.decocache.com/brasas-site/393e1282-e63b-404b-ac99-057587287a6d/Adults.png",
                 "title": "Adults",
-                "description": "<p>From 14 years old</p>"
+                "description": "<p>As of 14 years old</p>"
               },
               {
                 "englishTitle": "BRASAS Online",
@@ -80,7 +80,7 @@
                 "link": "/certificacoes",
                 "image": "https://assets.decocache.com/brasas-site/041f5373-e19a-4eaf-b90b-dd0d0abed372/Certificacao-Internacional.png",
                 "title": "International Certification",
-                "description": "<p>Preparatory Courses and Exam</p>"
+                "description": "<p>Exam preparation and courses</p>"
               },
               {
                 "englishTitle": "Portuguese for Foreigners",

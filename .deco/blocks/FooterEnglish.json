@@ -40,7 +40,7 @@
   ],
   "footerNav": [
     {
-      "text": "o brasas",
+      "text": "about brasas",
       "url": "/sobre"
     },
     {
@@ -52,7 +52,7 @@
       "url": "/unidades"
     },
     {
-      "text": "refer and win",
+      "text": "refer and earn",
       "url": "/indique_e_ganhe"
     },
     {
@@ -68,7 +68,7 @@
       "url": "/trabalhe_conosco"
     },
     {
-      "text": "be a franchisee",
+      "text": "become a franchisee",
       "url": "/franqueado"
     },
     {
@@ -148,7 +148,7 @@
   "copyright": {
     "text": "All rights reserved"
   },
-  "socialMediaTitle": "follow on networks",
+  "socialMediaTitle": "follow us on social media",
   "coursesTitle": "courses",
   "coursesLink": "/cursos"
 }

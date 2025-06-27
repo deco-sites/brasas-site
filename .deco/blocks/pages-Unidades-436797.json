@@ -155,7 +155,7 @@
                     ],
                     "name": "Botafogo",
                     "image": "https://assets.decocache.com/brasas-site/763ac519-501c-4abb-a574-838a82ba2fd2/botafogo.jpg",
-                    "address": "R. Voluntários da Pátria, 147 - 3º andar",
+                    "address": "R. Voluntários da Pátria, 147",
                     "neighborhood": "Botafogo",
                     "city": "Rio de Janeiro",
                     "state": "RJ",
@@ -1051,7 +1051,7 @@
               "label": "city",
               "placeholder": "Select a city"
             },
-            "geolocationText": "Activate the location in your browser and find the unit closest to you!",
+            "geolocationText": "Enable location services in your browser to find the nearest branch.",
             "filterLabel": "Filter by",
             "searchInputPlaceholder": "Search",
             "branchNotFoundText": "No branches found with selected filters",

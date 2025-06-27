@@ -33,7 +33,7 @@
             "nextStepTextInEnglish": "After completing Pre-k, the child progresses to the Kids course.",
             "textInEnglish": "<p><strong>These are fun classes where children participate in dynamic games, all in English.</strong></p><p><strong>&nbsp;&nbsp;</strong></p><p>Thus, they begin to familiarize themselves with the musicality of the language.</p><p>&nbsp;</p><p>We do not work with written words to avoid interfering with the process of Portuguese literacy.</p>",
             "textInPortuguese": "<p><strong>São aulas divertidas em que as crianças participam de brincadeiras dinâmicas, todas em inglês.</strong></p><p><br>Assim, começam a se familiarizar com a musicalidade da língua.</p><p><br>Não trabalhamos com palavras escritas para não interferir no processo de alfabetização da língua portuguesa.</p>",
-            "text": "<p><strong>These are fun classes where children participate in dynamic games, all in English.</strong></p><p><strong>&nbsp;&nbsp;</strong></p><p>Thus, they begin to familiarize themselves with the musicality of the language.</p><p>&nbsp;</p><p>We do not work with written words to avoid interfering with the process of Portuguese literacy.</p>"
+            "text": "<p><strong>These are fun classes where children take part in dynamic games—all in English.</strong></p><p>&nbsp;</p><p>This way, they begin to get familiar with the rhythm and sound of the language.</p><p>&nbsp;</p><p>We don’t use written words, so as not to interfere with their Portuguese literacy process.</p>"
           },
           {
             "__resolveType": "site/sections/Pre-K/NextSteps.tsx",
@@ -69,11 +69,11 @@
               "placeholder": "Enter your name"
             },
             "emailInput": {
-              "label": "Email",
+              "label": "Email address",
               "placeholder": "Enter your email"
             },
             "telInput": {
-              "label": "Phone",
+              "label": "Phone number",
               "placeholder": "(dd) xxxxx-xxxx"
             },
             "acceptanceTermText": "I agree to receive communications and personalized offers according to my interests",

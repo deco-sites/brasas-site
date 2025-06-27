@@ -13,9 +13,7 @@ import Recaptcha from "site/helpers/recaptcha.tsx";
 import { getCookie } from "../helpers/getCookie.ts";
 import { setCookie } from "../helpers/setCookie.ts";
 
-export default function HomeForm(
-  { title, RecipientsEmailArr, CopyToArr, subject },
-) {
+export default function HomeForm(props) {
   const [language, setLanguage] = useState("pt-BR");
 
   useEffect(() => {
@@ -90,9 +88,9 @@ export default function HomeForm(
     }
 
     const emailSent = await invoke.site.actions.sendEmail({
-      RecipientsEmailArr: RecipientsEmailArr,
-      CopyToArr: CopyToArr,
-      subject: subject,
+      RecipientsEmailArr: props.RecipientsEmailArr,
+      CopyToArr: props.CopyToArr,
+      subject: props.subject,
       data: sendData,
     });
 
@@ -122,19 +120,19 @@ export default function HomeForm(
           className="absolute z-50 -top-28 bg-white flex flex-col items-center gap-8 border-gray-100 rounded-2xl p-8 xl:min-w-[55rem]"
         >
           <span className="font-bold text-xl">
-            {title}
+            {props.formTitle}
           </span>
           <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-x-8 gap-y-4">
             <TextInput
-              label={isPortuguese ? "nome completo" : "full name"}
-              placeholder={isPortuguese ? "Insira seu nome" : "Enter your name"}
+              label={props.nameInput.label}
+              placeholder={props.nameInput.placeholder}
               value={name}
               setValue={setName}
               required
             />
             <TextInput
-              label={isPortuguese ? "celular/whatsapp" : "cell phone/whatsapp"}
-              placeholder="(dd) xxxxx-xxxx"
+              label={props.telInput.label}
+              placeholder={props.telInput.placeholder}
               value={phone}
               setValue={setPhone}
               required
@@ -142,20 +140,16 @@ export default function HomeForm(
               maxLength={11}
             />
             <TextInput
-              label={isPortuguese ? "e-mail" : "email"}
-              placeholder={isPortuguese
-                ? "Insira seu e-mail"
-                : "Enter your email"}
+              label={props.emailInput.label}
+              placeholder={props.emailInput.placeholder}
               value={email}
               setValue={setEmail}
               required
               type="email"
             />
             <SelectInput
-              label={isPortuguese ? "Estado" : "State"}
-              placeholder={isPortuguese
-                ? "Selecione um estado"
-                : "Select a state"}
+              label={props.stateInput.label}
+              placeholder={props.stateInput.placeholder}
               options={stateOptions}
               bgColor="gray"
               onChangeFunction={setState}
@@ -165,7 +159,7 @@ export default function HomeForm(
           </div>
           <div className="flex flex-col w-full items-start gap-2">
             <span className="text-sm font-semibold text-black-500 uppercase leading-6">
-              {data.HomeForm.AcceptTerm}
+              {props.acceptanceTermText}
             </span>
             <div className="flex flex-col xl:flex-row xl:items-center gap-2 xl:gap-8">
               {data.HomeForm.CommunicationOptions.map((option) => (
