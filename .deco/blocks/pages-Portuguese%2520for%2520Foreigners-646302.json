@@ -16,7 +16,7 @@
             "imageInEnglish": "https://assets.decocache.com/brasas-site/47247e80-89a0-489b-ab07-da59a04e230d/logo-pff-banner-en.png",
             "imageInPortuguese": "https://assets.decocache.com/brasas-site/d8f5326e-52f3-461d-b019-2eac4ef0a3c8/logo-pff-banner-ptbr.png",
             "hasNotice": true,
-            "noticeText": "<p>Course available in in-person and <em>online</em> formats</p>",
+            "noticeText": "<p>This course is available both in person and <em>online</em></p>",
             "image": "https://assets.decocache.com/brasas-site/47247e80-89a0-489b-ab07-da59a04e230d/logo-pff-banner-en.png"
           },
           {
@@ -88,11 +88,11 @@
               "placeholder": "Enter your name"
             },
             "emailInput": {
-              "label": "Email",
+              "label": "Email address",
               "placeholder": "Enter your email"
             },
             "telInput": {
-              "label": "Phone",
+              "label": "Phone number",
               "placeholder": "(dd) xxxxx-xxxx"
             },
             "acceptanceTermText": "I agree to receive communications and personalized offers according to my interests",

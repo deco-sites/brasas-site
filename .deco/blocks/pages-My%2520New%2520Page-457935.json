@@ -47,26 +47,26 @@
             ],
             "regulationTextInPortuguese": "<p>*O aluno e o amigo indicado ganham crédito de R$100,00 em uma mensalidade a cada indicação que se matricular. Desconto válido apenas em mensalidades, até o último dia do ano letivo de 2025, nas unidades BRASAS do Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu e no BRASAS Online. Consulte o regulamento completo na secretaria dessas unidades ou com a secretaria virtual do BRASAS Online.</p>",
             "regulationTextInEnglish": "<p>*The student and the referred friend will receive a R$100.00 credit towards a monthly fee for each referral who enrolls. Discount valid only on monthly fees, until the last day of the 2025 school year, at BRASAS units in Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu and on BRASAS Online. Consult the complete rules at the secretariat of these units or with the virtual secretariat of BRASAS Online.</p>",
-            "title": "How to participate?",
-            "subtitle": "<p><strong>BRASAS Student:</strong> Ask your friend to indicate your name when registering and you will both receive a discount!</p><p>&nbsp;</p><p><strong>Referred friend:</strong> Enter the name or code of your friend who is already studying at BRASAS. Fill out the form below!</p>",
-            "regulationText": "<p>*The student and the referred friend will receive a R$100.00 credit towards a monthly fee for each referral who enrolls. Discount valid only on monthly fees, until the last day of the 2025 school year, at BRASAS units in Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu and on BRASAS Online. Consult the complete rules at the secretariat of these units or with the virtual secretariat of BRASAS Online.</p>",
+            "title": "How to participate",
+            "subtitle": "<p><strong>BRASAS Student:</strong> Ask your friend to mention your name when signing up — you’ll both get a discount!</p><p>&nbsp;</p><p><strong>Referred Friend:</strong> Enter the name or code of your friend who already studies at BRASAS. Then, fill out the form below!</p>",
+            "regulationText": "<p>*The student and the referred friend will each receive a R$100 credit on their tuition for every successful enrollment. This discount applies only to tuition fees and is valid until the last day of the 2025 academic year, at BRASAS branches in Rio de Janeiro, Duque de Caxias, Niterói, Nova Iguaçu, and BRASAS Online. Check the full terms and conditions at the front desk of these branches or with the BRASAS Online virtual office.</p>",
             "formTitle": "Shall we begin?",
-            "formSubtitle": "If you are joining BRASAS through a student's referral, leave your details below and we will contact you to proceed with your enrollment and discount.",
+            "formSubtitle": "If you’re joining BRASAS through a student referral, just leave your details below. We’ll get in touch to help you with your enrollment and apply your discount!",
             "highlightedWords": [
-              "indicated",
-              "enrolled",
-              "won!"
+              "Refer",
+              "Enroll",
+              "Earn!"
             ],
             "nameInput": {
               "label": "Name",
               "placeholder": "Enter your name"
             },
             "emailInput": {
-              "label": "Email",
+              "label": "email address",
               "placeholder": "Enter your email"
             },
             "telInput": {
-              "label": "phone",
+              "label": "phone number",
               "placeholder": "Enter your phone"
             },
             "referralCodeInput": {
@@ -74,7 +74,7 @@
               "placeholder": "ABC123-EXAMPLE"
             },
             "sendButtonText": "Request contact",
-            "acceptanceText": "I agree to receive communications and personalized offers according to my interests"
+            "acceptanceText": "I agree to receive communications and personalized offers based on my interests."
           },
           {
             "__resolveType": "FooterEnglish"

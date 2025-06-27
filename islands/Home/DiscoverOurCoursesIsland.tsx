@@ -16,12 +16,7 @@ export default function DiscoverOurCoursesIsland(
       }}
     >
       <div className="w-full max-w-[88.5rem] px-9 pb-24 lg:pb-36">
-        <HomeForm
-          title={props.formTitle}
-          RecipientsEmailArr={props.RecipientsEmailArr}
-          CopyToArr={props.CopyToArr}
-          subject={props.subject}
-        />
+        <HomeForm {...props} />
         <div className="mt-[56rem] md:mt-[48rem] xl:mt-[32.5rem] flex flex-col items-center">
           <h2 className="text-center font-black leading-[48px] text-black-500 text-[2.5rem] mb-12">
             {props.title}

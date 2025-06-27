@@ -48,58 +48,58 @@
                 "textInPortuguese": "<p>Aulas <em>online</em>, in company ou nas unidades BRASAS.</p>",
                 "textInEnglish": "<p><em>Online</em> classes, in company, or at BRASAS branches.</p>",
                 "icon": "https://assets.decocache.com/brasas-site/d7cb3c05-c6c4-44b9-ad14-be88580f8e51/teacher-(2).png",
-                "text": "<p><em>Online</em> classes, in company, or at BRASAS branches.</p>"
+                "text": "<p><em>Online</em> classes, in-company training, or at BRASAS branches.</p>"
               },
               {
                 "textInPortuguese": "Retorno de investimento: relatórios mensais de aproveitamento e frequência de cada aluno.",
                 "textInEnglish": "Return on investment: monthly reports on the performance and attendance of each student.",
                 "icon": "https://assets.decocache.com/brasas-site/40967cc6-21dc-467f-bc77-f87c0652d77d/nivelamento.png",
-                "text": "<p>Return on investment: monthly reports on the performance and attendance of each student.</p>"
+                "text": "<p>Return on investment: Monthly reports on each student’s performance and attendance.</p>"
               },
               {
                 "icon": "https://assets.decocache.com/brasas-site/5b0a0ebe-0918-433d-8001-54b53344ec58/google-plus.svg",
                 "textInEnglish": "Class formation according to the level of knowledge.",
                 "textInPortuguese": "Formação de turmas de acordo com o grau de conhecimento.",
-                "text": "<p>Class formation according to the level of knowledge.</p>"
+                "text": "<p>Class formation based on knowledge level.</p>"
               },
               {
                 "textInEnglish": "<p>Leveling done <em>online</em>, in company, or at BRASAS branches.</p>",
                 "textInPortuguese": "<p>Nivelamento feito <em>online</em>, in company ou nas unidades BRASAS.</p>",
                 "icon": "https://assets.decocache.com/brasas-site/d81c351a-5011-499f-9b59-7162098fcc98/bars-column.svg",
-                "text": "<p>Leveling done <em>online</em>, in company, or at BRASAS branches.</p>"
+                "text": "<p>Placement testing conducted <em>online</em>, in-company, or at BRASAS branches.</p>"
               },
               {
                 "textInEnglish": "Leveling for candidate selection or employee promotion.",
                 "textInPortuguese": "Nivelamento para seleção de candidatos ou promoção de colaboradores.",
                 "icon": "https://assets.decocache.com/brasas-site/323ef6d8-a885-4cdf-97c5-d28da3144176/like.png",
-                "text": "<p>Leveling for candidate selection or employee promotion.</p>"
+                "text": "<p>Placement testing for candidate selection or employee promotion.</p>"
               },
               {
                 "textInPortuguese": "Aulas em grupo ou individuais.",
                 "textInEnglish": "Group or individual classes.",
                 "icon": "https://assets.decocache.com/brasas-site/913e49a8-7a59-488c-88a3-06e75af1fc02/user.png",
-                "text": "<p>Group or individual classes.</p>"
+                "text": "<p>Group or individual classes available.</p>"
               },
               {
                 "textInEnglish": "Closed classes - composed exclusively of company employees.",
                 "textInPortuguese": "Turmas fechadas - compostas somente por colaboradores da empresa.",
                 "icon": "https://assets.decocache.com/brasas-site/b369ddf4-4d7a-499c-8897-a4c147f37497/turmas_fechadas.png",
-                "text": "<p>Closed classes - composed exclusively of company employees.</p>"
+                "text": "<p>Closed classes — exclusively for company employees.</p>"
               },
               {
                 "textInEnglish": "Billing of monthly fees directly to the company, with special conditions.",
                 "textInPortuguese": "Faturamento das mensalidades diretamente para a empresa, com condições especiais.",
                 "icon": "https://assets.decocache.com/brasas-site/7320ca95-24d9-4af8-be19-b3aee1cc1593/faturamento.png",
-                "text": "<p>Billing of monthly fees directly to the company, with special conditions.</p>"
+                "text": "<p>Billing of monthly fees directly to the company, with special terms.</p>"
               },
               {
                 "textInPortuguese": "Descontos para funcionários e dependentes em turmas presenciais regulares.",
                 "textInEnglish": "Discounts for employees and dependents in regular in-person classes.",
                 "icon": "https://assets.decocache.com/brasas-site/e8913c90-bcb2-4971-bca1-a96c63de40a7/descontos.png",
-                "text": "<p>Discounts for employees and dependents in regular in-person classes.</p>"
+                "text": "<p>Discounts for employees and their dependents on regular in-person classes.</p>"
               }
             ],
-            "title": "BRASAS trains your company's professionals with excellent English. We have the best solution and the best English for your business!",
+            "title": "BRASAS trains your company’s professionals with top-quality English. We offer the best solutions and the finest English training for your business!",
             "buttonText": "I want to know more"
           },
           {
@@ -115,7 +115,7 @@
                 "titleInEnglish": "BRASAS Quality",
                 "titleInPortuguese": "Qualidade BRASAS",
                 "title": "BRASAS Quality",
-                "text": "For over 55 years, we have been training fluent English students with an exclusive teaching method. A partnership with a brand recognized for its excellence in English teaching."
+                "text": "For over 55 years, we have been training fluent English speakers using an exclusive teaching method. Partner with a brand renowned for excellence in English education."
               },
               {
                 "icon": "https://assets.decocache.com/brasas-site/5385b7d6-cd0b-4dc3-aa92-2b90db31db46/comunicacao.png",
@@ -124,7 +124,7 @@
                 "titleInEnglish": "Direct Communication",
                 "titleInPortuguese": "Comunicação direta",
                 "title": "Direct Communication",
-                "text": "The school has constant and direct contact with BRASAS, without bureaucracy."
+                "text": "Your school will have constant, direct contact with BRASAS — no bureaucracy involved."
               },
               {
                 "icon": "https://assets.decocache.com/brasas-site/fe859b5b-b68a-4ab4-8c52-6e4c2deb625e/comodidade.png",
@@ -133,19 +133,21 @@
                 "titleInPortuguese": "Comodidade e segurança",
                 "titleInEnglish": "Convenience and Safety",
                 "title": "Convenience and Safety",
-                "text": "Classes take place within the school, eliminating the need for commuting, simplifying logistics, and enhancing your value proposition."
+                "text": "Classes take place on your school’s premises, eliminating the need for commuting, simplifying logistics, and adding value to your offerings."
               },
               {
                 "icon": "https://assets.decocache.com/brasas-site/9764dfea-fcaa-4e45-af75-5f53665c9bdc/tabela-diferenciada.png",
                 "textInPortuguese": "Tabela diferenciada de mensalidades para seus alunos ou pagamento diretamente ao BRASAS, com condições especiais de faturamento para a escola parceira.",
                 "textInEnglish": "Special tuition fee table for your students or direct payment to BRASAS, with special billing conditions for the partner school.",
-                "text": "Special tuition fee table for your students or direct payment to BRASAS, with special billing conditions for the partner school."
+                "text": "We offer a special tuition fee table for your students or direct billing to BRASAS, with exclusive payment terms for partner schools.",
+                "title": "Special Tuition Options"
               },
               {
                 "icon": "https://assets.decocache.com/brasas-site/4041fc2d-6b45-4aee-823c-13f1efb5740d/modalidade.png",
                 "textInEnglish": "Class modalities with regular hours, 2 times a week, or extended hours, 4 or 5 times a week.",
                 "textInPortuguese": "Modalidades de aulas com carga horária regular, 2x na semana, ou estendida, 4 ou 5x na semana.",
-                "title": "Class modalities with regular hours, 2 times a week, or extended hours, 4 or 5 times a week."
+                "title": "Flexible Class Schedules",
+                "text": "Choose from regular classes twice a week or extended classes 4 to 5 times a week."
               },
               {
                 "icon": "https://assets.decocache.com/brasas-site/6459fefc-e32f-41e6-8dfc-dd61f6afe8f7/professores.png",
@@ -154,13 +156,13 @@
                 "titleInPortuguese": "Professores BRASAS",
                 "titleInEnglish": "BRASAS Teachers",
                 "title": "BRASAS Teachers",
-                "text": "Highly qualified professionals, constantly supervised by our pedagogical coordination. Teachers hired by BRASAS, with no need for hiring by the partner school."
+                "text": "Our highly qualified teachers are continuously supervised by our pedagogical team and are employed by BRASAS — no hiring required by the partner school."
               }
             ],
             "subtitleInPortuguese": "Ofereça o melhor inglês e também comodidade e segurança para pais e alunos, com aulas em carga horária estendida ou regular, no contraturno. Além da aprendizagem do idioma, as aulas visam ampliar a bagagem cultural do aluno com atividades lúdicas que envolvem arte, música e eventos. Saiba mais sobre as modalidades disponíveis.",
             "subtitleInEnglish": "BRASAS, in addition to ensuring language learning, seeks to expand students' cultural background, with playful activities involving art, music and the promotion of themed events within the school. Bring an institution with over 55 years of success in teaching the English language into your school!",
-            "title": "Have you thought about bringing BRASAS English to your school?",
-            "subtitle": "BRASAS, in addition to ensuring language learning, seeks to expand students' cultural background, with playful activities involving art, music and the promotion of themed events within the school. Bring an institution with over 55 years of success in teaching the English language into your school!",
+            "title": "Have you considered bringing BRASAS English to your school?",
+            "subtitle": "At BRASAS, not only do we teach the language, but we also expand students’ cultural backgrounds through fun activities involving art, music, and themed events right at your school. Partner with an institution boasting over 55 years of success in English language education and bring a world of opportunity to your students!",
             "buttonText": "I want to know more"
           },
           {
@@ -187,7 +189,7 @@
                     "textInPortuguese": "Há mais de 55 anos formamos alunos fluentes em inglês com um método exclusivo de ensino. Uma parceria com uma marca reconhecida por sua excelência no ensino de inglês.",
                     "textInEnglish": "For over 55 years, we have been training fluent English students with an exclusive teaching method. A partnership with a brand recognized for its excellence in English teaching.",
                     "title": "BRASAS Quality",
-                    "text": "For over 55 years, we have been training fluent English students with an exclusive teaching method. A partnership with a brand recognized for its excellence in English teaching."
+                    "text": "For over 55 years, we have been training fluent English speakers using an exclusive teaching method. Partner with a brand renowned for excellence in English education."
                   },
                   {
                     "icon": "https://assets.decocache.com/brasas-site/5385b7d6-cd0b-4dc3-aa92-2b90db31db46/comunicacao.png",
@@ -196,7 +198,7 @@
                     "textInEnglish": "The university has constant contact with BRASAS, without bureaucracy.",
                     "textInPortuguese": "A universidade tem contato constante com o BRASAS, sem burocracia.",
                     "title": "Direct Communication",
-                    "text": "The university has constant contact with BRASAS, without bureaucracy."
+                    "text": "The university will have constant, direct contact with BRASAS — no bureaucracy involved."
                   },
                   {
                     "icon": "https://assets.decocache.com/brasas-site/fe859b5b-b68a-4ab4-8c52-6e4c2deb625e/comodidade.png",
@@ -205,19 +207,19 @@
                     "textInPortuguese": "As aulas acontecem dentro da universidade, sem necessidade de deslocamento, facilitando a logística e ampliando sua oferta de valor.",
                     "textInEnglish": "Classes take place within the university, eliminating the need for commuting, simplifying logistics, and enhancing your value proposition.",
                     "title": "Convenience and Safety",
-                    "text": "Classes take place within the university, eliminating the need for commuting, simplifying logistics, and enhancing your value proposition."
+                    "text": "Classes take place on your school’s premises, eliminating the need for commuting, simplifying logistics, and adding value to your offerings."
                   },
                   {
                     "textInEnglish": "Class formation according to the level of knowledge.",
                     "textInPortuguese": "Formação de turmas de acordo com o grau de conhecimento.",
                     "icon": "https://assets.decocache.com/brasas-site/5b0a0ebe-0918-433d-8001-54b53344ec58/google-plus.svg",
-                    "text": "Class formation according to the level of knowledge."
+                    "text": "Classes formed based on students’ knowledge levels."
                   },
                   {
                     "textInPortuguese": "Aulas em grupo ou individuais.",
                     "textInEnglish": "Group or individual classes.",
                     "icon": "https://assets.decocache.com/brasas-site/913e49a8-7a59-488c-88a3-06e75af1fc02/user.png",
-                    "text": "Group or individual classes."
+                    "text": "Group or individual classes available."
                   }
                 ],
                 "titleInEnglish": "Bring BRASAS' exclusive English teaching method to your university's students and staff!",
@@ -333,11 +335,11 @@
               "placeholder": "Enter your name"
             },
             "emailInput": {
-              "label": "Email",
+              "label": "Email address",
               "placeholder": "Enter your email"
             },
             "telInput": {
-              "label": "Phone",
+              "label": "Phone number",
               "placeholder": "(dd) xxxxx-xxxx"
             },
             "acceptanceTermText": "I agree to receive communications and personalized offers according to my interests",

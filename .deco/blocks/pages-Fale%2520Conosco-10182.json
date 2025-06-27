@@ -41,21 +41,21 @@
               "placeholder": "Enter your name"
             },
             "emailInput": {
-              "label": "email",
+              "label": "email address",
               "placeholder": "Enter your email"
             },
             "telInput": {
-              "label": "phone",
+              "label": "phone number",
               "placeholder": "(dd) xxxxx-xxxx"
             },
             "messageInput": {
               "label": "message",
               "placeholder": "Enter your message"
             },
-            "acceptanceTermText": "I agree to receive communications and personalized offers according to my interests",
+            "acceptanceTermText": "I agree to receive communications and personalized offers based on my interests.",
             "sendButtonText": "Submit",
-            "branchBoxTitle": "Want to speak to a specific unit?",
-            "branchBoxDescription": "For information on monthly fee, hours and promotions, please contact the desired unit directly.",
+            "branchBoxTitle": "Would you like to speak with a specific branch?",
+            "branchBoxDescription": "For information about monthly fees, schedules, and promotions, please contact the desired branch directly.",
             "branchBoxButtonText": "See Branches"
           },
           {

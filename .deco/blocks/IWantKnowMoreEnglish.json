@@ -19,11 +19,11 @@
     "placeholder": "Enter your name"
   },
   "emailInput": {
-    "label": "Email",
+    "label": "Email address",
     "placeholder": "Enter your email"
   },
   "telInput": {
-    "label": "Phone",
+    "label": "Phone number",
     "placeholder": "(dd) xxxxx-xxxx"
   },
   "formTitle": "Request a contact",

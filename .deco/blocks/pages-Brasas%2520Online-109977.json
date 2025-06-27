@@ -22,7 +22,7 @@
             "bgImageMobile": "https://assets.decocache.com/brasas-site/6f6270fc-14d8-44dd-a38d-ab594ba3356e/bol-bg-mobile.png",
             "title": "BRASAS Online",
             "noticeText": "<p></p>",
-            "description": "<p>Experience of learning English 100% <em>online</em> with live classes.</p>"
+            "description": "<p>Experience learning English 100% <em>online</em> with live classes.</p>"
           },
           {
             "__resolveType": "site/sections/Breadcrumbs.tsx",
@@ -46,7 +46,7 @@
                   {
                     "textInPortuguese": "Para alunos matriculados a partir do 3º ano do ensino fundamental",
                     "textInEnglish": "For students enrolled from the 3rd year of elementary school",
-                    "text": "For students enrolled from the 3rd year of elementary school"
+                    "text": "For students enrolled as of 3rd grade"
                   },
                   {
                     "textInEnglish": "2x per week",
@@ -66,7 +66,7 @@
                   {
                     "textInPortuguese": "Para alunos matriculados a partir do 6º ano do ensino fundamental",
                     "textInEnglish": "For students enrolled from the 6th year of elementary school",
-                    "text": "For students enrolled from the 6th year of elementary school"
+                    "text": "For students enrolled as of 6th grade"
                   },
                   {
                     "textInPortuguese": "2x na semana",
@@ -148,7 +148,7 @@
                 "icon": "https://assets.decocache.com/brasas-site/5a32d11d-49c5-432d-b599-954e788af559/laptop-icon.svg",
                 "textInEnglish": "<p>Live classes with 60 minutes</p>",
                 "textInPortuguese": "<p><strong>Aulas ao vivo</strong> com 60 minutos</p>",
-                "text": "<p>Live classes with 60 minutes</p>"
+                "text": "<p>60-minute live classes </p>"
               },
               {
                 "icon": "https://assets.decocache.com/brasas-site/05eda9db-0450-4122-9ab9-1328d3f799ca/star-icon.svg",
@@ -160,7 +160,7 @@
                 "textInPortuguese": "<p>100% dos alunos de Book 10 tiveram notas acima de 800 pontos no TOEIC</p>",
                 "textInEnglish": "<p>100% of Book 10 students scored above 800 points on the TOEIC</p>",
                 "icon": "https://assets.decocache.com/brasas-site/ee08bfad-f910-4f09-a1d8-4ee3f2e4e09e/clipboard-icon.svg",
-                "text": "<p>100% of Book 10 students scored above 800 points on the TOEIC</p>"
+                "text": "<p>100% of Book 10 students scored above 800 points on the TOEIC test</p>"
               },
               {
                 "textInPortuguese": "<p>Professores com certificação internacional</p>",
@@ -190,7 +190,7 @@
                 "textInEnglish": "<p>Always updated Digital Book with modern tools</p>",
                 "textInPortuguese": "<p>Livro Digital sempre atualizado e com ferramentas modernas</p>",
                 "icon": "https://assets.decocache.com/brasas-site/d6298ccd-da90-4ca0-b273-0fe33181a100/book-icon.svg",
-                "text": "<p>Always updated Digital Book with modern tools</p>"
+                "text": "<p>Up-to-date digital book with modern tools</p>"
               },
               {
                 "textInEnglish": "<p>Connect with your class through Google Classroom</p>",

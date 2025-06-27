@@ -159,7 +159,7 @@
                 "image": "https://data.decoassets.com/brasas-site/21b2c5c6-f533-4ad4-881b-796661ce7363/Frame-1105-(1).png",
                 "link": "/prek",
                 "title": "Pre-k",
-                "description": "<p>From Pre-2</p>"
+                "description": "<p>As of Pre-2</p>"
               },
               {
                 "englishTitle": "Kids",
@@ -169,7 +169,7 @@
                 "image": "https://data.decoassets.com/brasas-site/3b108c24-ee92-49e0-97a8-2cd5bcabbdac/Frame-1105-1.png",
                 "link": "/kids",
                 "title": "Kids",
-                "description": "<p>3rd year of Elementary School</p>"
+                "description": "<p>3rd grade students</p>"
               },
               {
                 "englishTitle": "Juniors & Teens",
@@ -179,7 +179,7 @@
                 "image": "https://data.decoassets.com/brasas-site/2039bc59-8be8-460c-bb07-a0de807d8afa/banner-jrsteens-mobile.png",
                 "link": "/juniors_e_teens",
                 "title": "Juniors & Teens",
-                "description": "<p>6th year of Elementary School</p>"
+                "description": "<p>6th grade students</p>"
               },
               {
                 "englishTitle": "Adults",
@@ -189,7 +189,7 @@
                 "image": "https://data.decoassets.com/brasas-site/2d266ae9-b72b-4c52-b23a-f5719c6d453e/Adults.png",
                 "link": "/adults",
                 "title": "Adults",
-                "description": "<p>From 14 years old</p>"
+                "description": "<p>As of 14 years old</p>"
               },
               {
                 "englishTitle": "BRASAS Online",
@@ -209,7 +209,7 @@
                 "image": "https://data.decoassets.com/brasas-site/534c0ba2-e131-4e45-905f-90e2048685bc/Certificacao-Internacional.png",
                 "link": "/certificacoes",
                 "title": "International Certification",
-                "description": "<p>Preparatory Courses and Exam</p>"
+                "description": "<p>Exam preparation and courses</p>"
               },
               {
                 "englishTitle": "Partnerships",
@@ -241,7 +241,24 @@
             ],
             "CopyToArr": [],
             "title": "Discover our courses",
-            "formTitle": "Need help? Fill out the form below and speak with a BRASAS specialist"
+            "formTitle": "Need help? Fill out the form below and speak with a BRASAS specialist",
+            "nameInput": {
+              "label": "full name",
+              "placeholder": "Enter your name"
+            },
+            "telInput": {
+              "label": "cell phone/whatsapp number",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "emailInput": {
+              "label": "email address",
+              "placeholder": "Enter your email"
+            },
+            "stateInput": {
+              "label": "State",
+              "placeholder": "Select a state"
+            },
+            "acceptanceTermText": "I AGREE TO RECEIVE BRASAS OFFERS AND COMMUNICATIONS THROUGH"
           },
           {
             "__resolveType": "site/sections/Home/Testimonials.tsx",
@@ -308,7 +325,7 @@
                 "bgPosition": "left",
                 "link": "/sobre",
                 "title": "Who We Are",
-                "description": "A course with more than 55 years of tradition and experience in teaching the English language. Learn about our history and purpose.",
+                "description": "With over 55 years of tradition and experience in teaching English, we invite you to discover our story and our purpose.",
                 "buttonText": "Learn More"
               },
               {
@@ -606,7 +623,24 @@
             ],
             "CopyToArr": [],
             "title": "Conheça nossos cursos",
-            "formTitle": "Precisa de ajuda? Preencha abaixo e fale com um especialista do BRASAS"
+            "formTitle": "Precisa de ajuda? Preencha abaixo e fale com um especialista do BRASAS",
+            "nameInput": {
+              "label": "nome completo",
+              "placeholder": "Insira seu nome"
+            },
+            "telInput": {
+              "label": "celular/whatsapp",
+              "placeholder": "(dd) xxxxx-xxxx"
+            },
+            "emailInput": {
+              "label": "e-mail",
+              "placeholder": "Insira seu e-mail"
+            },
+            "stateInput": {
+              "label": "Estado",
+              "placeholder": "Selecione um estado"
+            },
+            "acceptanceTermText": "CONCORDO EM RECEBER COMUNICAÇÕES DE OFERTAS DO BRASAS ATRAVÉS DE"
           },
           {
             "__resolveType": "site/sections/Home/Testimonials.tsx",

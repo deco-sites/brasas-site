@@ -71,7 +71,7 @@
             ],
             "descriptionInPortuguese": "O aluno se comunica somente em inglês nas aulas, pois assim adquire o domínio das quatro habilidades linguísticas:",
             "title": "Original and exclusive method that uses the same process as learning the native language: before reading or writing, the student speaks.",
-            "description": "The student communicates only in English in the classes, thus acquiring mastery of the four linguistic skills:"
+            "description": "Students speak only English in class, which helps  them master all four language skills."
           },
           {
             "__resolveType": "site/sections/TextCarousel.tsx",
@@ -82,7 +82,7 @@
                 "descriptionInEnglish": "<p>With almost <strong>60 years of history</strong> and more than <strong>150,000 students graduates</strong>, the <strong>BRASAS English Course</strong> has established itself as a benchmark in english teaching in Brazil. Founded by <strong>George Zinovetz</strong>, the BRASAS method was developed with one essential focus: ensuring <strong>real fluency and effective communication</strong>, prioritizing speaking from the very first day of class.</p>",
                 "titleInEnglish": "Tradition, efficiency, and fluency",
                 "title": "Tradition, efficiency, and fluency",
-                "description": "<p>With almost <strong>60 years of history</strong> and more than <strong>150,000 students graduates</strong>, the <strong>BRASAS English Course</strong> has established itself as a benchmark in english teaching in Brazil. Founded by <strong>George Zinovetz</strong>, the BRASAS method was developed with one essential focus: ensuring <strong>real fluency and effective communication</strong>, prioritizing speaking from the very first day of class.</p>"
+                "description": "<p>With almost <strong>60 years of history</strong> and more than <strong>150,000 graduates</strong>, <strong>BRASAS English Cours</strong>e has established itself as a benchmark in English teaching in Brazil. Founded by <strong>George Zinovetz</strong>, the BRASAS method was developed with one essential focus: ensuring<strong> real fluency and effective communication</strong>, prioritizing speaking from the very first day of class.</p>"
               },
               {
                 "titleInPortuguese": "Uma Metodologia Exclusiva e Comprovada",
@@ -119,7 +119,7 @@
             "mobileImageEnglish": "https://data.decoassets.com/brasas-site/3b2eea9e-9e07-46ca-9128-9cddcd6ca1aa/mobile-enUs.png",
             "desktopImagePortuguese": "https://assets.decocache.com/brasas-site/4562d722-3dfa-4c25-952e-663495c0677c/mandala-pt.png",
             "mobileImagePortuguese": "https://data.decoassets.com/brasas-site/9771fa7c-e3e2-4dd8-b2a6-ab6f8c02fced/mobile-ptBr.png",
-            "title": "The big difference at BRASAS is that the student learns the structures in practice and not just by studying grammar rules, which greatly speeds up language development.",
+            "title": "What sets BRASAS apart is that students learn through practice—not just by studying grammar rules—which significantly speeds up their language development.",
             "desktopImage": "https://data.decoassets.com/brasas-site/a024cbce-0c99-4ede-bfe4-40e7b496f044/desktop-enUs.png",
             "mobileImage": "https://data.decoassets.com/brasas-site/3b2eea9e-9e07-46ca-9128-9cddcd6ca1aa/mobile-enUs.png"
           },

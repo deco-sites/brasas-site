@@ -138,18 +138,18 @@
                 "name": "Technology"
               }
             ],
-            "formTitle": "Be part of the BRASAS team",
-            "formSubtitle": "Fill out the form with your information and we will contact you.",
+            "formTitle": "Become part of our team!",
+            "formSubtitle": "Fill out the form with your information and we’ll get in touch with you.",
             "nameInput": {
               "placeholder": "Enter your name",
               "label": "name"
             },
             "emailInput": {
-              "label": "email",
+              "label": "email address",
               "placeholder": "Enter your email"
             },
             "telInput": {
-              "label": "phone",
+              "label": "phone number",
               "placeholder": "(dd) xxxxx-xxxx"
             },
             "cityInput": {
@@ -169,7 +169,7 @@
               "placeholder": "Enter your comment"
             },
             "acceptanceSendText": "I agree to send my personal data for analysis in a possible selection process for a vacancy.",
-            "acceptanceReceiveText": "I agree to receive personalized communications and offers according to my interests",
+            "acceptanceReceiveText": "I agree to receive communications and personalized offers based on my interests.",
             "buttonText": "Submit"
           },
           {

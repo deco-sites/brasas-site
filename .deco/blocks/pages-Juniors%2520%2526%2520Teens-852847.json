@@ -21,8 +21,8 @@
             "bgImageDesktop": "https://assets.decocache.com/brasas-site/77b2d670-33d5-4d82-9635-5ccc57ba1e9a/juniors-e-teens-bg.png",
             "bgImageMobile": "https://assets.decocache.com/brasas-site/1ca839c8-e39b-4b7d-9811-f7270310e92e/juniors-and-teens-bg-mobile.png",
             "title": "Juniors & Teens",
-            "description": "<p>BRASAS, the English that connects you to the world</p>",
-            "noticeText": "<p>Course available in in-person and online formats</p>"
+            "description": "<p>BRASAS — English that connects you to the world</p>",
+            "noticeText": "<p>This course is available both in person and <em>online</em></p>"
           },
           {
             "__resolveType": "site/sections/Breadcrumbs.tsx",
@@ -35,7 +35,7 @@
             "__resolveType": "site/sections/JuniorsAndTeens/JuniorsAndTeens.tsx",
             "textInPortuguese": "<p><strong>Aprofundamos o ensino das estruturas gramaticais e abordamos um vocabulário apropriado ao universo dos jovens. As aulas são dinâmicas e totalmente em inglês.</strong></p><p><br>Ao final do curso, os alunos estão com um nível de comunicação que os deixa confortáveis para realizarem viagens ao exterior, terem contato com jovens de outros países e explorarem recursos da internet.</p>",
             "textInEnglish": "<p><strong>We teach grammatical structures in depth and use vocabulary appropriate to the world of young people. Classes are dynamic and taught entirely in English.</strong></p><p></p><p>At the end of the course, students will have a level of communication that makes them comfortable enough to travel abroad, interact with young people from other countries and explore Internet resources.</p>",
-            "text": "<p><strong>We teach grammatical structures in depth and use vocabulary appropriate to the world of young people. Classes are dynamic and taught entirely in English.</strong></p><p></p><p>At the end of the course, students will have a level of communication that makes them comfortable enough to travel abroad, interact with young people from other countries and explore Internet resources.</p>"
+            "text": "<p><strong>We teach grammatical structures in depth and use vocabulary appropriate to the world of young people. Classes are dynamic and taught entirely in English.</strong></p><p>&nbsp;</p><p>At the end of the course, students will have a level of communication that makes them comfortable enough to travel abroad, interact with young people from other countries and explore Internet resources.</p>"
           },
           {
             "__resolveType": "IWantKnowMoreEnglish"
