@@ -66,7 +66,7 @@ export default function ReferAndEarnFormIsland(props) {
 
     if (emailSent === 200) setIsConfirmationModalOpen(true);
 
-    sendToRDStation(sendDataToRD, "home-page-form");
+    sendToRDStation(sendDataToRD, "refer-and-earn-page-form");
 
     setName("");
     setEmail("");
