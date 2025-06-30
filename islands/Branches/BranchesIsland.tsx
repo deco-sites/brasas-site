@@ -24,16 +24,21 @@ export default function BranchesIsland(props) {
   // Agrupa as branches por estado para exibição (incluindo apenas estados com branches)
   const groupedBranches = props.states.reduce((acc, state) => {
     if (state.branches.length > 0) {
-      // Primeiro remove o primeiro item se for o Rio de Janeiro
-      const branchesToSort = state.name === "Rio de Janeiro"
-        ? state.branches.slice(1)
-        : [...state.branches];
+      let branchesToDisplay;
 
-      // Depois ordena os branches restantes por nome
-      acc[state.name] = branchesToSort.sort((a, b) =>
-        a.name.localeCompare(b.name)
-      );
+      if (state.name === "Rio de Janeiro") {
+        // Mantém ordem original, removendo o primeiro item
+        branchesToDisplay = state.branches.slice(1);
+      } else {
+        // Faz uma cópia e ordena os branches restantes por nome
+        branchesToDisplay = [...state.branches].sort((a, b) =>
+          a.name.localeCompare(b.name)
+        );
+      }
+
+      acc[state.name] = branchesToDisplay;
     }
+
     return acc;
   }, {});
 

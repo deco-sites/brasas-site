@@ -1116,12 +1116,12 @@
                       }
                     ],
                     "name": "Bangu - Polo Colégio Matriz",
+                    "email": "bg@brasas.com",
+                    "instagram": "https://www.instagram.com/dirbangu/",
                     "address": "R. Agrícola, 318",
                     "neighborhood": "Bangu",
                     "city": "Rio de Janeiro",
                     "state": "RJ",
-                    "email": "bg@brasas.com",
-                    "instagram": "https://www.instagram.com/dirbangu/",
                     "lon": "-43.458808",
                     "lat": "-22.878473",
                     "zip_code": "21810-090"
@@ -1142,7 +1142,6 @@
                       }
                     ],
                     "name": "Barra - Downtown",
-                    "image": "https://assets.decocache.com/brasas-site/9fe29136-0651-4673-8f67-0e518ba588fd/brasas-barra-downtown.webp",
                     "address": "Av. das Américas, 500 - Bloco 10 - Loja 104,",
                     "neighborhood": "Barra da Tijuca",
                     "city": "Rio de Janeiro",
@@ -1151,7 +1150,8 @@
                     "lon": "-43.318482",
                     "lat": "-23.004389",
                     "zip_code": "22640-100",
-                    "instagram": "https://www.instagram.com/dir_downtown/"
+                    "instagram": "https://www.instagram.com/dir_downtown/",
+                    "image": "https://assets.decocache.com/brasas-site/9fe29136-0651-4673-8f67-0e518ba588fd/brasas-barra-downtown.webp"
                   },
                   {
                     "tels": [
@@ -1430,7 +1430,6 @@
                       }
                     ],
                     "name": "Jpa - Pechincha",
-                    "image": "https://assets.decocache.com/brasas-site/553edbf1-cc15-4a8e-9767-2e7531e40828/pechincha.jpeg",
                     "address": "Rua Retiro dos Artistas, nº 855 - Lojas A, B, C - Bloco 1",
                     "neighborhood": "Pechincha",
                     "city": "Rio de Janeiro",
@@ -1438,7 +1437,8 @@
                     "email": "pc@brasas.com",
                     "lon": "-43.35844803202265",
                     "lat": "-22.935223004473656",
-                    "zip_code": "22770-102"
+                    "zip_code": "22770-102",
+                    "image": "https://assets.decocache.com/brasas-site/553edbf1-cc15-4a8e-9767-2e7531e40828/pechincha.jpeg"
                   },
                   {
                     "tels": [
@@ -1513,7 +1513,6 @@
                       }
                     ],
                     "name": "Méier",
-                    "image": "https://assets.decocache.com/brasas-site/50508e13-b262-403c-a1d9-09d1a319cec8/meier.jpg",
                     "address": "R. Vilela Tavares, 46",
                     "neighborhood": "Méier",
                     "city": "Rio de Janeiro",
@@ -1522,7 +1521,8 @@
                     "lon": "-43.288452",
                     "lat": "-22.905863",
                     "zip_code": "20725-220",
-                    "instagram": "https://www.instagram.com/dir_meier/"
+                    "instagram": "https://www.instagram.com/dir_meier/",
+                    "image": "https://assets.decocache.com/brasas-site/50508e13-b262-403c-a1d9-09d1a319cec8/meier.jpg"
                   },
                   {
                     "tels": [
@@ -1708,29 +1708,6 @@
                   {
                     "tels": [
                       {
-                        "number": "2433407230",
-                        "isWhatsapp": false
-                      },
-                      {
-                        "number": "24999715858",
-                        "isWhatsapp": true
-                      }
-                    ],
-                    "name": "Volta Redonda",
-                    "image": "https://assets.decocache.com/brasas-site/8364075e-65d3-46a8-8444-6b996e179dc4/volta-redonda.jpg",
-                    "address": "R. 31, 113",
-                    "neighborhood": "Vila Santa Cecília, Volta Redonda",
-                    "city": "Rio de Janeiro",
-                    "state": "RJ",
-                    "email": "vr@brasas.com",
-                    "lon": "-44.104255",
-                    "lat": "-22.523044",
-                    "zip_code": "27261-305",
-                    "instagram": "https://www.instagram.com/brasasvr/"
-                  },
-                  {
-                    "tels": [
-                      {
                         "number": "22988084363",
                         "isWhatsapp": true
                       }
@@ -1778,6 +1755,7 @@
                       }
                     ],
                     "name": "Macaé",
+                    "image": "https://assets.decocache.com/brasas-site/79f7204d-9f63-42d8-859a-f7c3d3a5d11e/macae.jpg",
                     "address": "R. Francisco Portela, 798",
                     "neighborhood": "Macaé, Centro",
                     "city": "Rio de Janeiro",
@@ -1786,7 +1764,6 @@
                     "lon": "-41.780322",
                     "lat": "-22.377121",
                     "zip_code": "27910-200",
-                    "image": "https://assets.decocache.com/brasas-site/79f7204d-9f63-42d8-859a-f7c3d3a5d11e/macae.jpg",
                     "instagram": "https://www.instagram.com/brasas.macae/"
                   },
                   {
@@ -1797,7 +1774,6 @@
                       }
                     ],
                     "name": "Petrópolis",
-                    "image": "https://assets.decocache.com/brasas-site/9572bfac-9407-4e0c-b7f6-ec36f8b16b87/petropolis.jpg",
                     "address": "Av. Tiradentes 106",
                     "neighborhood": "Petrópolis, Centro",
                     "city": "Rio de Janeiro",
@@ -1806,6 +1782,7 @@
                     "lon": "-43.178575",
                     "lat": "-22.506209",
                     "zip_code": "25685-311",
+                    "image": "https://assets.decocache.com/brasas-site/9572bfac-9407-4e0c-b7f6-ec36f8b16b87/petropolis.jpg",
                     "instagram": "https://www.instagram.com/brasas_petropolis/"
                   },
                   {
@@ -1838,8 +1815,8 @@
                         "isWhatsapp": true
                       }
                     ],
-                    "image": "https://assets.decocache.com/brasas-site/0f15a65b-0bb6-4d86-8d05-0e3dc6eaefba/RiodasOstras.JPG",
                     "name": "Rio das Ostras",
+                    "image": "https://assets.decocache.com/brasas-site/0f15a65b-0bb6-4d86-8d05-0e3dc6eaefba/RiodasOstras.JPG",
                     "address": "Av. Amazonas, 541",
                     "neighborhood": "Balneário Remanso, Rio das Ostras",
                     "city": "Rio de Janeiro",
@@ -1861,8 +1838,8 @@
                         "isWhatsapp": true
                       }
                     ],
-                    "name": "Teresópolis",
                     "image": "https://assets.decocache.com/brasas-site/8a8dac0a-023f-44ff-b1d6-536dd935607d/teresopolis.jpeg",
+                    "name": "Teresópolis",
                     "address": "Av. Delfim Moreira, 1092",
                     "neighborhood": "Artistas, Teresópolis",
                     "city": "Rio de Janeiro",
@@ -1872,9 +1849,110 @@
                     "lat": "-22.407155",
                     "zip_code": "25953-236",
                     "instagram": "https://www.instagram.com/brasas.teresopolis/"
+                  },
+                  {
+                    "tels": [
+                      {
+                        "number": "2433407230",
+                        "isWhatsapp": false
+                      },
+                      {
+                        "number": "24999715858",
+                        "isWhatsapp": true
+                      }
+                    ],
+                    "name": "Volta Redonda",
+                    "image": "https://assets.decocache.com/brasas-site/8364075e-65d3-46a8-8444-6b996e179dc4/volta-redonda.jpg",
+                    "address": "R. 31, 113",
+                    "neighborhood": "Vila Santa Cecília, Volta Redonda",
+                    "city": "Rio de Janeiro",
+                    "state": "RJ",
+                    "email": "vr@brasas.com",
+                    "lon": "-44.104255",
+                    "lat": "-22.523044",
+                    "zip_code": "27261-305",
+                    "instagram": "https://www.instagram.com/brasasvr/"
                   }
                 ],
-                "name": "Rio de Janeiro"
+                "name": "Rio de Janeiro",
+                "sections": [
+                  {
+                    "branches": [
+                      {
+                        "tels": [
+                          {
+                            "number": "21992717409",
+                            "isWhatsapp": true
+                          },
+                          {
+                            "number": "21998119825",
+                            "isWhatsapp": true
+                          },
+                          {
+                            "number": "21972964245",
+                            "isWhatsapp": true
+                          }
+                        ],
+                        "image": "https://assets.decocache.com/brasas-site/ba93431d-0476-439c-a3f9-716b12b4df9c/BRASAS_ID_BOL_RGB_Positivo.png",
+                        "name": "BRASAS Online",
+                        "email": "online@brasas.com",
+                        "instagram": "https://www.instagram.com/brasasonline/"
+                      },
+                      {
+                        "tels": [
+                          {
+                            "number": "21970985768",
+                            "isWhatsapp": true
+                          }
+                        ],
+                        "name": "Bangu - Polo Colégio Matriz",
+                        "address": "R. Agrícola, 318",
+                        "neighborhood": "Bangu",
+                        "city": "Rio de Janeiro",
+                        "state": "RJ",
+                        "email": "bg@brasas.com",
+                        "instagram": "https://www.instagram.com/dirbangu/",
+                        "lon": "-43.458808",
+                        "lat": "-22.878473",
+                        "zip_code": "21810-090"
+                      },
+                      {
+                        "tels": [
+                          {
+                            "number": "2134338688",
+                            "isWhatsapp": false
+                          },
+                          {
+                            "number": "2134338760",
+                            "isWhatsapp": false
+                          },
+                          {
+                            "number": "21992977284",
+                            "isWhatsapp": false
+                          }
+                        ],
+                        "image": "https://assets.decocache.com/brasas-site/9fe29136-0651-4673-8f67-0e518ba588fd/brasas-barra-downtown.webp",
+                        "name": "Barra - Downtown",
+                        "address": "Av. das Américas, 500 - Bloco 10 - Loja 104,",
+                        "neighborhood": "Barra da Tijuca",
+                        "city": "Rio de Janeiro",
+                        "state": "RJ",
+                        "email": "dt@brasas.com",
+                        "instagram": "https://www.instagram.com/dir_downtown/",
+                        "lon": "-43.318482",
+                        "lat": "-23.004389",
+                        "zip_code": "22640-100"
+                      }
+                    ]
+                  },
+                  {
+                    "branches": [
+                      {
+                        "tels": []
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "branches": [
