@@ -79,5 +79,7 @@
       "encrypted": "c2fd9b0c5ea24b64715d50c9b17c25a6597c18f7e5a2ff716559f0e829efcefa9c88c13d0540925fee17a6d07574d62ad19c683645e14f5cca58209a2fb09cb219a72c4b848f342481733dc59c0cde04",
       "name": "SEND_GRID"
     }
-  }
+  },
+  "whilelistURLs": [],
+  "whitelistPatterns": []
 }

@@ -1138,7 +1138,7 @@
                       },
                       {
                         "number": "21992977284",
-                        "isWhatsapp": false
+                        "isWhatsapp": true
                       }
                     ],
                     "name": "Barra - Downtown",
@@ -1452,7 +1452,7 @@
                       },
                       {
                         "number": "21994991813",
-                        "isWhatsapp": false
+                        "isWhatsapp": true
                       }
                     ],
                     "image": "https://assets.decocache.com/brasas-site/225ebf0c-8158-494e-becb-89a5e61bfc5d/taquara.jpg",

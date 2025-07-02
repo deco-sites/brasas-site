@@ -230,7 +230,7 @@
             "subtitleInPortuguese": "O BRASAS oferece cursos que preparam você para as certificações internacionais TOEIC®, TOEFL® Junior e TOEFL ITP®, além de aplicar os testes.",
             "title": "Certificações Internacionais",
             "subtitle": "O BRASAS oferece cursos que preparam você para as certificações internacionais TOEIC®, TOEFL® Junior e TOEFL ITP®, além de aplicar os testes.",
-            "noticeText": "<p>Curso disponível nas modalidades presencial e &lt;i&gt;online&lt;</p>"
+            "noticeText": "<p>Curso disponível nas modalidades presencial e <em>online</em></p>"
           },
           {
             "__resolveType": "site/sections/Breadcrumbs.tsx",
