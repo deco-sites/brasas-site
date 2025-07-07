@@ -14,6 +14,47 @@ import { signal } from "@preact/signals";
 export const userLocation = signal<[number, number] | null>(null);
 
 export default function BranchesIsland(props) {
+  function normalizeCep(cep: string) {
+    return cep.replace(/\D/g, ""); // Remove tudo que não for número
+  }
+
+  async function getCoordinatesByCep(
+    cep: string,
+  ): Promise<[number, number] | null> {
+    const cleanCep = normalizeCep(cep);
+    if (cleanCep.length !== 8) return null;
+
+    try {
+      // Usa ViaCEP para pegar endereço
+      const viaCepRes = await fetch(
+        `https://viacep.com.br/ws/${cleanCep}/json/`,
+      );
+      const viaCepData = await viaCepRes.json();
+
+      if (viaCepData.erro) return null;
+
+      const address =
+        `${viaCepData.logradouro}, ${viaCepData.bairro}, ${viaCepData.localidade} - ${viaCepData.uf}`;
+
+      // Usa Nominatim para geocodificar o endereço
+      const query = encodeURIComponent(address);
+      const nominatimRes = await fetch(
+        `https://nominatim.openstreetmap.org/search?format=json&q=${query}`,
+      );
+      const nominatimData = await nominatimRes.json();
+
+      if (nominatimData.length > 0) {
+        const { lat, lon } = nominatimData[0];
+        return [parseFloat(lat), parseFloat(lon)];
+      }
+
+      return null;
+    } catch (err) {
+      console.error("Erro ao buscar coordenadas por CEP:", err);
+      return null;
+    }
+  }
+
   const STATE_NAMES = {
     "DF": "Distrito Federal",
     "ES": "Espírito Santo",
@@ -160,7 +201,37 @@ export default function BranchesIsland(props) {
     });
   };
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
+    const normalized = normalizeCep(textInputed);
+
+    // Caso o texto seja um CEP (8 dígitos), tenta buscar coordenadas
+    if (normalized.length === 8 && !isNaN(Number(normalized))) {
+      const coords = await getCoordinatesByCep(normalized);
+      if (coords) {
+        const [lat, lon] = coords;
+
+        const branchesWithDistance = allBranches
+          .filter((branch) =>
+            !isNaN(parseFloat(branch.lat)) &&
+            !isNaN(parseFloat(branch.lon))
+          )
+          .map((branch) => ({
+            ...branch,
+            distance: calculateDistance(
+              lat,
+              lon,
+              parseFloat(branch.lat),
+              parseFloat(branch.lon),
+            ),
+          }))
+          .sort((a, b) => a.distance - b.distance);
+
+        setFinalFilteredBranches(branchesWithDistance);
+        setSearchActive(true);
+        return;
+      }
+    }
+
     if (
       textInputed !== "" || activeState !== null || selectedCity !== null ||
       selectedUnity !== null
