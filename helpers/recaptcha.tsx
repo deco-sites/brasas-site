@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "preact/hooks";
 import { getCookie } from "./getCookie.ts";
 import { setCookie } from "./setCookie.ts";
+import Loading from "../components/ui/Loading.tsx";
 
 export default function Recaptcha({ setToken, setWidgetId, warnRecaptcha }) {
   const recaptchaRef = useRef(null);
@@ -59,9 +60,7 @@ export default function Recaptcha({ setToken, setWidgetId, warnRecaptcha }) {
   return (
     <div className="flex flex-col items-center gap-4 justify-center min-h-[78px]">
       {isLoading
-        ? (
-          <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-blue-300" />
-        )
+        ? <Loading />
         : <div ref={recaptchaRef} className="g-recaptcha" />}
 
       {warnRecaptcha && (
