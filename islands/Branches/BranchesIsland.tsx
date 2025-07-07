@@ -9,6 +9,9 @@ import IconSearch from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/search.ts
 import IconHeartFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/heart-filled.tsx";
 import { getCookie } from "../../helpers/getCookie.ts";
 import { setCookie } from "../../helpers/setCookie.ts";
+import { signal } from "@preact/signals";
+
+export const userLocation = signal<[number, number] | null>(null);
 
 export default function BranchesIsland(props) {
   const STATE_NAMES = {
@@ -158,10 +161,15 @@ export default function BranchesIsland(props) {
   };
 
   const handleSearch = () => {
-    const filtered = filterBranches(allBranches)
-      .sort((a, b) => a.name.localeCompare(b.name)); // Ordena os resultados
-    setFinalFilteredBranches(filtered);
-    setSearchActive(true);
+    if (
+      textInputed !== "" || activeState !== null || selectedCity !== null ||
+      selectedUnity !== null
+    ) {
+      const filtered = filterBranches(allBranches)
+        .sort((a, b) => a.name.localeCompare(b.name)); // Ordena os resultados
+      setFinalFilteredBranches(filtered);
+      setSearchActive(true);
+    }
   };
 
   const handleClear = () => {
@@ -177,96 +185,81 @@ export default function BranchesIsland(props) {
     setSearchActive(false);
   };
 
+  function calculateDistance(
+    lat1: number,
+    lon1: number,
+    lat2: number,
+    lon2: number,
+  ) {
+    const R = 6371;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat / 2) ** 2 +
+      Math.cos(lat1 * Math.PI / 180) *
+        Math.cos(lat2 * Math.PI / 180) *
+        Math.sin(dLon / 2) ** 2;
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+  }
+
+  function handleGeolocationSuccess(
+    position: GeolocationPosition,
+    allBranches: Branch[], // seu tipo real aqui
+    setFinalFilteredBranches: Function,
+    setSearchActive: Function,
+  ) {
+    const userLat = position.coords.latitude;
+    const userLon = position.coords.longitude;
+
+    userLocation.value = [userLat, userLon];
+
+    const branchesWithDistance = allBranches
+      .filter((branch) =>
+        !isNaN(parseFloat(branch.lat)) &&
+        !isNaN(parseFloat(branch.lon))
+      )
+      .map((branch) => ({
+        ...branch,
+        distance: calculateDistance(
+          userLat,
+          userLon,
+          parseFloat(branch.lat),
+          parseFloat(branch.lon),
+        ),
+      }))
+      .sort((a, b) => a.distance - b.distance);
+
+    setFinalFilteredBranches(branchesWithDistance);
+    setSearchActive(true);
+  }
+
   {/*Implementação da Geolocalização*/}
   const checkLocationPermission = async () => {
     try {
-      // Verifica o status da permissão
       const permissionStatus = await navigator.permissions?.query({
         name: "geolocation",
       });
 
-      if (permissionStatus?.state === "granted") {
-        // Permissão já concedida - pode prosseguir com geolocalização
+      const errorCallback = (error: GeolocationPositionError) => {
+        console.error("Erro ao obter localização:", error);
+        setShowAlert(true);
+      };
+
+      if (
+        permissionStatus?.state === "granted" ||
+        permissionStatus?.state === "prompt"
+      ) {
         navigator.geolocation.getCurrentPosition(
-          (position) => {
-            //console.log("Localização:", position.coords);
-            // Lógica para encontrar a unidade mais próxima
-          },
-          (error) => {
-            console.error("Erro ao obter localização:", error);
-            setShowAlert(true);
-          },
-        );
-      } else if (permissionStatus?.state === "prompt") {
-        // O navegador vai pedir permissão
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            //console.log("Localização:", position.coords);
-
-            // Lógica para ordenar as unidades por proximidade
-            const userLat = position.coords.latitude;
-            const userLon = position.coords.longitude;
-
-            // Função para calcular distância entre duas coordenadas (Haversine formula)
-            const calculateDistance = (
-              lat1: number,
-              lon1: number,
-              lat2: number,
-              lon2: number,
-            ) => {
-              const R = 6371; // Raio da Terra em km
-              const dLat = (lat2 - lat1) * Math.PI / 180;
-              const dLon = (lon2 - lon1) * Math.PI / 180;
-              const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-                Math.cos(lat1 * Math.PI / 180) *
-                  Math.cos(lat2 * Math.PI / 180) *
-                  Math.sin(dLon / 2) * Math.sin(dLon / 2);
-              const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-              return R * c; // Distância em km
-            };
-
-            // Criar array com unidades e suas distâncias
-            const branchesWithDistance = allBranches
-              .filter((branch) => branch.lat && branch.lon) // Filtra unidades sem coordenadas
-              .map((branch) => ({
-                ...branch,
-                distance: calculateDistance(
-                  userLat,
-                  userLon,
-                  parseFloat(branch.lat),
-                  parseFloat(branch.lon),
-                ),
-              }));
-
-            // Ordenar por distância (mais próxima primeiro)
-            const sortedBranches = [...branchesWithDistance].sort((a, b) =>
-              a.distance - b.distance
-            );
-
-            // Atualizar estado com as unidades ordenadas
-            setFinalFilteredBranches(sortedBranches);
-
-            // Se quisermos também atualizar os filtros com a unidade mais próxima
-            {
-              /*
-            if (sortedBranches.length > 0) {
-              const closestBranch = sortedBranches[0];
-              setActiveState(closestBranch.state.toLowerCase());
-              setSelectedCity(closestBranch.city.toLowerCase());
-              setSelectedUnity(closestBranch.name.toLowerCase());
-              setTextInputed(closestBranch.name);
-            }*/
-            }
-
-            //Aqui acaba a lógica que ordena as unidades com base na localização
-          },
-          (error) => {
-            console.error("Erro ao obter localização:", error);
-            setShowAlert(true);
-          },
+          (position) =>
+            handleGeolocationSuccess(
+              position,
+              allBranches,
+              setFinalFilteredBranches,
+              setSearchActive,
+            ),
+          errorCallback,
         );
       } else {
-        // Permissão negada
         setShowAlert(true);
       }
     } catch (error) {
@@ -274,6 +267,35 @@ export default function BranchesIsland(props) {
       setShowAlert(true);
     }
   };
+
+  useEffect(() => {
+    const runAutoGeolocation = async () => {
+      try {
+        const permissionStatus = await navigator.permissions?.query({
+          name: "geolocation",
+        });
+        if (permissionStatus?.state === "granted") {
+          navigator.geolocation.getCurrentPosition(
+            (position) =>
+              handleGeolocationSuccess(
+                position,
+                allBranches,
+                setFinalFilteredBranches,
+                setSearchActive,
+              ),
+            (error) => {
+              console.error("Erro ao obter localização automática:", error);
+              setShowAlert(true);
+            },
+          );
+        }
+      } catch (error) {
+        console.error("Erro ao checar permissão automática:", error);
+      }
+    };
+
+    runAutoGeolocation();
+  }, []);
 
   const showFilters = () => {
     setIsShowingFilters(!isShowingFilters);
@@ -387,7 +409,7 @@ export default function BranchesIsland(props) {
           {/*Direita*/}
           {view === "list" && (
             <div className="flex flex-col gap-6 flex-1">
-              {allBranches[0] && ( //Se quiser tirar o card do bol é só adicionar && !searchActive
+              {allBranches[0] && !searchActive && ( //Se quiser tirar o card do bol é só adicionar && !searchActive
                 <BranchCard
                   name={allBranches[0].name}
                   image={allBranches[0].image}

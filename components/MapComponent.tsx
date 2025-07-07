@@ -1,4 +1,5 @@
 import { useEffect } from "preact/hooks";
+import { userLocation } from "../islands/Branches/BranchesIsland.tsx";
 
 export default function MapComponent() {
   useEffect(() => {
@@ -46,7 +47,7 @@ export default function MapComponent() {
         {
           name: "Botafogo",
           position: [-22.952635, -43.18828],
-          address: "R. Voluntários da Pátria, 190 - 3º andar",
+          address: "R. Voluntários da Pátria, 147",
           neighborhood: "Botafogo",
           city: "Rio de Janeiro",
           state: "RJ",
@@ -162,12 +163,12 @@ export default function MapComponent() {
         },
         {
           name: "Niterói - Icaraí",
-          position: [-22.902791, -43.106738],
-          address: "R. Doutor Herotides de Oliveira, 13",
+          position: [-22.9021386, -43.1075613],
+          address: "Rua Lopes Trovão, 287",
           neighborhood: "Icaraí - Niterói",
           city: "Rio de Janeiro",
           state: "RJ",
-          zip_code: "24230-230",
+          zip_code: "02675-031",
         },
         {
           name: "Niterói - Itaipu",
@@ -381,13 +382,13 @@ export default function MapComponent() {
           zip_code: "36026-490",
         },
         {
-          name: "Santo Agostinho",
-          position: [-21.226148, -43.769632],
-          address: "R. Alvarenga Peixoto, 1440",
-          neighborhood: "Santo Agostinho",
+          name: "Savassi",
+          position: [-19.9415828, -43.937658],
+          address: "Rua Major Lopes 34 A",
+          neighborhood: "Savassi",
           city: "Belo Horizonte",
           state: "MG",
-          zip_code: "30180-121",
+          zip_code: "30330-050",
         },
       ];
 
@@ -423,6 +424,17 @@ export default function MapComponent() {
         });
 
         document.getElementById("map")!.dataset.mapInitialized = "true";
+        // Observa o signal de localização do usuário
+        const unsubscribe = userLocation.subscribe((coords) => {
+          if (coords) {
+            map.setView(coords, 11); // Zoom mais próximo
+          }
+        });
+
+        return () => {
+          unsubscribe();
+          map.remove();
+        };
       }
     }
   }, []);

@@ -1542,9 +1542,9 @@
                     "city": "Rio de Janeiro",
                     "state": "RJ",
                     "email": "nt@brasas.com",
-                    "lon": "-43.106738",
-                    "lat": "-22.902791",
-                    "zip_code": "24230-230",
+                    "lon": "-43.1075613",
+                    "lat": "-22.9021386",
+                    "zip_code": "02675-031",
                     "instagram": "https://www.instagram.com/dirniteroi/"
                   },
                   {
@@ -2177,8 +2177,8 @@
                     "city": "Belo Horizonte",
                     "state": "MG",
                     "email": "sa@brasas.com",
-                    "lon": "-43.769632",
-                    "lat": "-21.226148",
+                    "lon": "-43.937658",
+                    "lat": "-19.9415828",
                     "zip_code": "30330-050",
                     "instagram": "https://www.instagram.com/brasasbh/"
                   }
