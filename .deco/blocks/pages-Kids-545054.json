@@ -21,7 +21,8 @@
             "bgImageDesktop": "https://data.decoassets.com/brasas-site/240f318f-fa71-4a7e-b965-9f4a941c3900/Group-6.png",
             "title": "Kids",
             "description": "<p>Learning English is enjoyable and surprising</p>",
-            "noticeText": "<p>This course is available both in person and <em>online</em></p>"
+            "noticeText": "<p>This course is available both in person and <em>online</em></p>",
+            "bgImageMobile": "https://assets.decocache.com/brasas-site/55cab5ec-04a7-42f5-9a86-e9f5b1fcee70/Group-6.png"
           },
           {
             "__resolveType": "site/sections/Breadcrumbs.tsx",
@@ -108,7 +109,8 @@
             "bgImageDesktop": "https://data.decoassets.com/brasas-site/240f318f-fa71-4a7e-b965-9f4a941c3900/Group-6.png",
             "title": "Kids",
             "description": "<p>Aprender inglês é prazeroso e surpreendente</p>",
-            "noticeText": "<p>Curso disponível nas modalidades presencial e <em>online</em></p>"
+            "noticeText": "<p>Curso disponível nas modalidades presencial e <em>online</em></p>",
+            "bgImageMobile": "https://assets.decocache.com/brasas-site/55cab5ec-04a7-42f5-9a86-e9f5b1fcee70/Group-6.png"
           },
           {
             "__resolveType": "site/sections/Breadcrumbs.tsx",
