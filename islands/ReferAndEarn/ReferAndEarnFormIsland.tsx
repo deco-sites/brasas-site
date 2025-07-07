@@ -161,7 +161,7 @@ export default function ReferAndEarnFormIsland(props) {
                     type={showingPassword ? "text" : "password"}
                     placeholder={props.referralCodeInput.placeholder}
                     className="w-full bg-gray-100 outline-none h-full placeholder:text-black-500 focus:outline-none "
-                    value={loadedCode !== null ? loadedCode : name}
+                    value={loadedCode !== null ? loadedCode : referralCode}
                     onChange={(e) => setReferralCode(e.target.value)}
                     required
                   />
