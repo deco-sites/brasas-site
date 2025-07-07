@@ -28,6 +28,7 @@ import * as $Certifications_CertificationsPageBannerIsland from "./islands/Certi
 import * as $Certifications_ToeflITPCertificationIsland from "./islands/Certifications/ToeflITPCertificationIsland.tsx";
 import * as $Certifications_ToefljrCertificationIsland from "./islands/Certifications/ToefljrCertificationIsland.tsx";
 import * as $Certifications_ToeicCertificationIsland from "./islands/Certifications/ToeicCertificationIsland.tsx";
+import * as $Contact_AlreadyStudentModal from "./islands/Contact/AlreadyStudentModal.tsx";
 import * as $Contact_FormSectionIsland from "./islands/Contact/FormSectionIsland.tsx";
 import * as $CookiesCardIsland from "./islands/CookiesCardIsland.tsx";
 import * as $CoursesCardsSectionIsland from "./islands/CoursesCardsSectionIsland.tsx";
@@ -114,6 +115,7 @@ const manifest = {
       $Certifications_ToefljrCertificationIsland,
     "./islands/Certifications/ToeicCertificationIsland.tsx":
       $Certifications_ToeicCertificationIsland,
+    "./islands/Contact/AlreadyStudentModal.tsx": $Contact_AlreadyStudentModal,
     "./islands/Contact/FormSectionIsland.tsx": $Contact_FormSectionIsland,
     "./islands/CookiesCardIsland.tsx": $CookiesCardIsland,
     "./islands/CoursesCardsSectionIsland.tsx": $CoursesCardsSectionIsland,
