@@ -20,7 +20,7 @@ export default function CookiesCardIsland() {
   useEffect(() => {
     const savedPreference = localStorage.getItem("cookiesAccepted");
 
-    if (savedPreference === "true") {
+    if (savedPreference === "true" || savedPreference === "rejected") {
       setIsAccepted(true); // Já aceitou, não mostrar o modal
     } else {
       setIsAccepted(false); // Nunca aceitou ou recusou, então mostrar
@@ -33,7 +33,7 @@ export default function CookiesCardIsland() {
   };
 
   const handleClose = () => {
-    localStorage.setItem("cookiesAccepted", "false");
+    localStorage.setItem("cookiesAccepted", "rejected");
     setIsAccepted(null); // Esconder o modal agora, mas mostrar na próxima vez
   };
 
@@ -70,7 +70,7 @@ export default function CookiesCardIsland() {
           onClick={handleClose}
           className="bg-blue-300 hover:bg-blue-950 transition-all duration-300 py-2 px-8 text-white rounded-lg"
         >
-          {language === "pt-BR" ? "Fechar" : "Close"}
+          {language === "pt-BR" ? "Rejeitar" : "Reject"}
         </button>
       </div>
     </div>
