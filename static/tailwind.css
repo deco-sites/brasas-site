@@ -2698,6 +2698,9 @@ html {
 .max-h-\[13rem\] {
   max-height: 13rem;
 }
+.max-h-\[14\.2rem\] {
+  max-height: 14.2rem;
+}
 .max-h-\[215px\] {
   max-height: 215px;
 }
@@ -4641,6 +4644,10 @@ html {
 
   .lg\:max-h-\[600px\] {
     max-height: 600px;
+  }
+
+  .lg\:max-h-full {
+    max-height: 100%;
   }
 
   .lg\:w-1\/3 {
