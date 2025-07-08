@@ -100,8 +100,8 @@ export default function WorkWithUsFormIsland(props) {
   return (
     <>
       <section className="flex justify-center relative h-[86rem] sm:h-[80rem] md:h-[60rem]">
-        <div className="absolute -top-16">
-          <div className="pb-24 max-w-[88.5rem] px-9 w-full flex flex-col xl:flex-row">
+        <div className="absolute -top-16 max-w-full">
+          <div className="pb-24 max-w-full px-9 w-full flex flex-col xl:flex-row">
             <form
               onSubmit={(e) => handleSendEmail(e)}
               className="bg-white border border-gray-100 rounded-2xl p-8 flex flex-col gap-8 max-w-[45rem]"
