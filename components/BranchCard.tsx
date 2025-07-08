@@ -65,7 +65,7 @@ export default function BranchCard(
         <div className="lg:absolute lg:inset-0">
           <Image
             src={image ? image : "brasas-logo-ballon.png"}
-            className={`w-full h-full
+            className={`w-full h-full max-h-[14.2rem] lg:max-h-full
           ${
               name === "BRASAS Online" || !image
                 ? "object-contain bg-gray-100 p-5"
