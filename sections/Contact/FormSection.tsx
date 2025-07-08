@@ -35,7 +35,7 @@ export const loader = async (
 ) => {
   try {
     const response = await fetch(
-      "https://apitest.brasas.com/users/login/670fe444b7a9bf54c7d0c046",
+      "https://apitest.brasas.com/users/login/670fe444b7a9bf54c7d0c046?exp_secs=600",
       {
         method: "GET",
         headers: {
