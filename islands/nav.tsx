@@ -49,7 +49,11 @@ export default function Nav({ navItems, isOpen }: Props) {
               <a
                 key={index}
                 href={item.link}
-                className="text-xs font-bold uppercase text-white"
+                className={`text-xs font-bold uppercase text-white ${
+                  currentPath === item.link
+                    ? "border-b-2 border-green-100"
+                    : "border-b-2 border-transparent"
+                }`}
               >
                 {item.name}
               </a>
