@@ -7,6 +7,7 @@ import IconPhoneFilled from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/phon
 import { useEffect, useState } from "preact/hooks";
 import { getCookie } from "../helpers/getCookie.ts";
 import { setCookie } from "../helpers/setCookie.ts";
+import { formatPhoneNumber } from "../helpers/formatPhoneNumber.ts";
 
 export default function BranchCard(
   {
@@ -131,7 +132,7 @@ export default function BranchCard(
             <div key={tel} className="flex gap-2">
               <IconPhoneFilled class="w-6 h-6 text-blue-900" />
               <span className="font-normal text-base text-black-500 underline">
-                {tel.number}
+                {formatPhoneNumber(tel.number)}
               </span>
             </div>
           ))}
@@ -144,7 +145,7 @@ export default function BranchCard(
             >
               <IconBrandWhatsapp class="w-6 h-6 text-blue-900" />
               <span className="font-normal text-base text-black-500 underline">
-                {tel.number}
+                {formatPhoneNumber(tel.number)}
               </span>
             </a>
           ))}
