@@ -792,6 +792,14 @@ html {
   --tw-text-opacity: 1;
   color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
 }
+.\!carousel {
+  display: inline-flex !important;
+  overflow-x: scroll !important;
+  scroll-snap-type: x mandatory !important;
+  scroll-behavior: smooth !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
 .carousel {
   display: inline-flex;
   overflow-x: scroll;
@@ -1671,6 +1679,9 @@ html {
 .card.image-full :where(figure) {
   overflow: hidden;
   border-radius: inherit;
+}
+.\!carousel::-webkit-scrollbar {
+  display: none !important;
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -2885,10 +2896,6 @@ html {
 }
 .w-full {
   width: 100%;
-}
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
 }
 .w-min {
   width: -moz-min-content;
@@ -4287,9 +4294,6 @@ html {
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.will-change-transform {
-  will-change: transform;
 }
 /** Remove scrollbar from overflow-auto */
 /*Efeito do input select*/
