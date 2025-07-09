@@ -9,7 +9,7 @@ interface InputProps {
 /**  @titleBy number */
 interface Tel {
   number: string;
-  isWhatsapp: boolean;
+  isWhatsapp?: boolean;
 }
 
 /** @titleBy name */
