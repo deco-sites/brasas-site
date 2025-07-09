@@ -27,7 +27,7 @@ export default function BranchCard(
   },
 ) {
   const whatsappNumbers = tels.filter((tel) => tel.isWhatsapp === true);
-  const telNumbers = tels.filter((tel) => tel.isWhatsapp === false);
+  const telNumbers = tels.filter((tel) => tel.isWhatsapp !== true);
 
   const saveBranchInfos = () => {
     const branchInfos = {
