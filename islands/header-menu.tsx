@@ -1,10 +1,14 @@
-import { useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import IconMenu2 from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/menu-2.tsx";
 import Nav from "site/islands/nav.tsx";
 import ButtonsAndFlags from "site/islands/buttons-and-flags.tsx";
 
 export default function HeaderMenu({ navItems, TestButton, MyBrasasButton }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    console.log("teste", isOpen);
+  }, []);
 
   return (
     <>
@@ -14,7 +18,9 @@ export default function HeaderMenu({ navItems, TestButton, MyBrasasButton }) {
       />
       <div
         className={`absolute z-50 xl:hidden top-14 left-0 w-full bg-blue-900 overflow-hidden transition-all duration-300 ease-in-out -mt-1 ${
-          isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+          isOpen
+            ? "max-h-screen opacity-100 pointer-events-auto"
+            : "max-h-0 opacity-0 pointer-events-none"
         }`}
       >
         <div className="flex flex-col gap-6 items-center justify-center py-6">

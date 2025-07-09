@@ -42,7 +42,7 @@ export default function Nav({ navItems, isOpen }: Props) {
         ? (
           <nav
             className={`flex flex-col items-center justify-start pt-14 h-full gap-4 transition-opacity duration-300 ${
-              isOpen ? "opacity-100" : "opacity-0"
+              isOpen ? "opacity-100" : "opacity-0 hidden"
             }`}
           >
             {navItems.map((item, index) => (
