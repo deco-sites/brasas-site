@@ -3467,6 +3467,10 @@ html {
   --tw-border-opacity: 1;
   border-color: rgb(146 146 146 / var(--tw-border-opacity));
 }
+.border-green-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(197 232 108 / var(--tw-border-opacity));
+}
 .border-orange-300 {
   --tw-border-opacity: 1;
   border-color: rgb(241 90 34 / var(--tw-border-opacity));
@@ -4395,6 +4399,10 @@ html {
 .hover\:border-blue-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(30 34 190 / var(--tw-border-opacity));
+}
+.hover\:border-green-100:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(197 232 108 / var(--tw-border-opacity));
 }
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
