@@ -8,6 +8,8 @@ import { useRef, useState } from "preact/hooks";
 import { invoke } from "../../runtime.ts";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import Recaptcha from "site/helpers/recaptcha.tsx";
+import { phoneMask } from "../../helpers/phoneMask.ts";
+import { nameMask } from "../../helpers/nameMaks.ts";
 
 export default function WorkWithUsFormIsland(props) {
   const fileInputRef = useRef(null);
@@ -120,6 +122,7 @@ export default function WorkWithUsFormIsland(props) {
                   placeholder={props.nameInput.placeholder}
                   value={name}
                   setValue={setName}
+                  mask={nameMask}
                   required
                 />
                 <TextInput
@@ -135,6 +138,8 @@ export default function WorkWithUsFormIsland(props) {
                   placeholder={props.telInput.placeholder}
                   value={phone}
                   setValue={setPhone}
+                  mask={phoneMask}
+                  maxLength={15}
                   required
                   type="tel"
                 />

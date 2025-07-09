@@ -10,6 +10,8 @@ import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 import Recaptcha from "site/helpers/recaptcha.tsx";
 import AlreadyStudentModal from "./AlreadyStudentModal.tsx";
 import Loading from "../../components/ui/Loading.tsx";
+import { nameMask } from "../../helpers/nameMaks.ts";
+import { phoneMask } from "../../helpers/phoneMask.ts";
 
 export default function FormSectionIsland(props) {
   const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
@@ -121,6 +123,7 @@ export default function FormSectionIsland(props) {
                   placeholder={props.nameInput.placeholder}
                   value={name}
                   setValue={setName}
+                  mask={nameMask}
                   required
                 />
                 <TextInput
@@ -137,6 +140,8 @@ export default function FormSectionIsland(props) {
                   value={phone}
                   setValue={setPhone}
                   required
+                  maxLength={15}
+                  mask={phoneMask}
                   type="tel"
                 />
                 <TextArea

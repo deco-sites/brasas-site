@@ -12,6 +12,8 @@ import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 import Recaptcha from "site/helpers/recaptcha.tsx";
 import { getCookie } from "../helpers/getCookie.ts";
 import { setCookie } from "../helpers/setCookie.ts";
+import { nameMask } from "../helpers/nameMaks.ts";
+import { phoneMask } from "../helpers/phoneMask.ts";
 
 export default function HomeForm(props) {
   const [language, setLanguage] = useState("pt-BR");
@@ -128,6 +130,7 @@ export default function HomeForm(props) {
               placeholder={props.nameInput.placeholder}
               value={name}
               setValue={setName}
+              mask={nameMask}
               required
             />
             <TextInput
@@ -137,7 +140,8 @@ export default function HomeForm(props) {
               setValue={setPhone}
               required
               type="tel"
-              maxLength={11}
+              maxLength={15}
+              mask={phoneMask}
             />
             <TextInput
               label={props.emailInput.label}

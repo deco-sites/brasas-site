@@ -8,6 +8,8 @@ import SendingConfirmationModal from "site/components/ui/SendingConfirmationModa
 import { invoke } from "../../runtime.ts";
 import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 import Recaptcha from "site/helpers/recaptcha.tsx";
+import { nameMask } from "../../helpers/nameMaks.ts";
+import { phoneMask } from "../../helpers/phoneMask.ts";
 
 export default function ReferAndEarnFormIsland(props) {
   const [showingPassword, setShowingPassword] = useState(false);
@@ -135,6 +137,7 @@ export default function ReferAndEarnFormIsland(props) {
                 placeholder={props.nameInput.placeholder}
                 value={name}
                 setValue={setName}
+                mask={nameMask}
                 required
               />
               <TextInput
@@ -150,6 +153,8 @@ export default function ReferAndEarnFormIsland(props) {
                 placeholder={props.telInput.placeholder}
                 value={phone}
                 setValue={setPhone}
+                maxLength={15}
+                mask={phoneMask}
                 required
               />
               <div className="flex flex-col gap-2">
