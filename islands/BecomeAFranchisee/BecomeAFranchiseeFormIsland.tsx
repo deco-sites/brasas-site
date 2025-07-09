@@ -9,6 +9,8 @@ import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 import Recaptcha from "site/helpers/recaptcha.tsx";
 import { getCookie } from "../../helpers/getCookie.ts";
 import { setCookie } from "../../helpers/setCookie.ts";
+import { nameMask } from "../../helpers/nameMaks.ts";
+import { phoneMask } from "../../helpers/phoneMask.ts";
 
 export default function BecomeAFranchiseeFormIsland(props) {
   const [language, setLanguage] = useState("pt-BR");
@@ -128,6 +130,7 @@ export default function BecomeAFranchiseeFormIsland(props) {
                   placeholder={props.nameInput.placeholder}
                   value={name}
                   setValue={setName}
+                  mask={nameMask}
                   required
                 />
                 <TextInput
@@ -143,6 +146,8 @@ export default function BecomeAFranchiseeFormIsland(props) {
                   placeholder={props.telInput.placeholder}
                   value={phone}
                   setValue={setPhone}
+                  maxLength={15}
+                  mask={phoneMask}
                   required
                   type="tel"
                 />

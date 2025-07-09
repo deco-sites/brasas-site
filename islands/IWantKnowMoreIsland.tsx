@@ -7,6 +7,8 @@ import InputCheckbox from "site/components/ui/InputCheckbox.tsx";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import { sendToRDStation } from "site/helpers/sendToRDStation.ts";
 import Recaptcha from "site/helpers/recaptcha.tsx";
+import { nameMask } from "../helpers/nameMaks.ts";
+import { phoneMask } from "../helpers/phoneMask.ts";
 
 export default function IWantKnowMoreIsland(props) {
   const [formId, setFormId] = useState("default-form-id");
@@ -132,6 +134,7 @@ export default function IWantKnowMoreIsland(props) {
                   label={props.nameInput.label}
                   placeholder={props.nameInput.placeholder}
                   value={name}
+                  mask={nameMask}
                   setValue={setName}
                   required
                 />
@@ -149,6 +152,8 @@ export default function IWantKnowMoreIsland(props) {
                   value={phone}
                   setValue={setPhone}
                   required
+                  maxLength={15}
+                  mask={phoneMask}
                   type="tel"
                 />
               </div>
