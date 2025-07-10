@@ -485,6 +485,9 @@ html {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
+    .animate-short-spin {
+      animation: short-spin 0.3s linear 1;
+    }
 
   /** Remove default styles from input[type=number] */
   input[type=number]::-webkit-inner-spin-button,

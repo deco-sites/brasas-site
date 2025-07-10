@@ -1,14 +1,10 @@
-import { useEffect, useState } from "preact/hooks";
+import { useState } from "preact/hooks";
 import IconMenu2 from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/menu-2.tsx";
 import Nav from "site/islands/nav.tsx";
 import ButtonsAndFlags from "site/islands/buttons-and-flags.tsx";
 
 export default function HeaderMenu({ navItems, TestButton, MyBrasasButton }) {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    console.log("teste", isOpen);
-  }, []);
 
   return (
     <>
