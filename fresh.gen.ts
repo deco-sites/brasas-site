@@ -62,6 +62,7 @@ import * as $Pre_K_PreKBannerIsland from "./islands/Pre-K/PreKBannerIsland.tsx";
 import * as $Pre_K_PreKCardsIsland from "./islands/Pre-K/PreKCardsIsland.tsx";
 import * as $ReferAndEarn_ReferAndEarnBannerIsland from "./islands/ReferAndEarn/ReferAndEarnBannerIsland.tsx";
 import * as $ReferAndEarn_ReferAndEarnFormIsland from "./islands/ReferAndEarn/ReferAndEarnFormIsland.tsx";
+import * as $SocialMediasFloatIsland from "./islands/SocialMediasFloatIsland.tsx";
 import * as $Terms_TermsOfUseIsland from "./islands/Terms/TermsOfUseIsland.tsx";
 import * as $TextCarouselIsland from "./islands/TextCarouselIsland.tsx";
 import * as $WorkWithUs_WorkWithusFormIsland from "./islands/WorkWithUs/WorkWithusFormIsland.tsx";
@@ -162,6 +163,7 @@ const manifest = {
       $ReferAndEarn_ReferAndEarnBannerIsland,
     "./islands/ReferAndEarn/ReferAndEarnFormIsland.tsx":
       $ReferAndEarn_ReferAndEarnFormIsland,
+    "./islands/SocialMediasFloatIsland.tsx": $SocialMediasFloatIsland,
     "./islands/Terms/TermsOfUseIsland.tsx": $Terms_TermsOfUseIsland,
     "./islands/TextCarouselIsland.tsx": $TextCarouselIsland,
     "./islands/WorkWithUs/WorkWithusFormIsland.tsx":
