@@ -426,7 +426,7 @@
               },
               {
                 "desktop": {
-                  "image": "https://assets.decocache.com/brasas-site/bd33c162-219c-4eff-9524-bc96efa983a0/DESKTOP_INDGAN.png",
+                  "image": "https://assets.decocache.com/brasas-site/65587fce-9253-470e-917f-a3bf7322319a/1920X1080_DESKTOP_IND.png",
                   "width": 1920,
                   "height": 1080
                 },
@@ -484,7 +484,7 @@
               },
               {
                 "desktop": {
-                  "image": "https://assets.decocache.com/brasas-site/6f85118f-cf22-4d5a-8524-8f74edf0ca47/DESKTOP_NIVEL_1.png",
+                  "image": "https://assets.decocache.com/brasas-site/7e7843db-d045-4dc1-93bd-c6da6fafb1ee/1920X1080_DESKTOP_NIVEL.png",
                   "width": 1920,
                   "height": 1080
                 },
@@ -506,7 +506,7 @@
                   "height": 1080
                 },
                 "ultrawide": {
-                  "image": "https://assets.decocache.com/brasas-site/d38bc5c9-24d0-4add-ad46-a8d3af70b504/ULTRAWIDE_NIVELAMENTO.png",
+                  "image": "https://assets.decocache.com/brasas-site/cd7a7000-7313-4fa1-8975-430f5e535fdc/2560x1080_ULTRAWIDE_NIVELAMENTO.png",
                   "width": 2560,
                   "height": 1080
                 }
