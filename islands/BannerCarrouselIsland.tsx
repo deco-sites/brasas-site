@@ -32,9 +32,9 @@ function BannerItem({ image, lcp, id }: {
 
   // Escolhe a imagem com base na largura
   const getResponsiveImage = () => {
-    if (windowWidth >= 1920) return ultrawide;
-    if (windowWidth >= 1440) return desktop;
-    if (windowWidth >= 1024) return laptop;
+    if (windowWidth >= 1921) return ultrawide;
+    if (windowWidth >= 1441) return desktop;
+    if (windowWidth >= 1025) return laptop;
     if (windowWidth >= 768) return tablet;
     return mobile;
   };
