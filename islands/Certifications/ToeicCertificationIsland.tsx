@@ -4,7 +4,6 @@ import CertificationTitle from "site/components/CertificationTitle.tsx";
 import PreparatoryCourseTitle from "site/components/PreparatoryCourseTitle.tsx";
 
 export default function TOEICCertificationIsland(props) {
-
   return (
     <section className="flex flex-col items-center justify-center w-full">
       <div className="hidden xl:flex justify-between w-full max-w-[88.5rem] px-9 pt-10 pb-5">
@@ -57,7 +56,7 @@ export default function TOEICCertificationIsland(props) {
                 >
                 </span>
                 <span
-                  className="text-center"
+                  className="xl:text-center"
                   dangerouslySetInnerHTML={{
                     __html: props.card.sessions,
                   }}

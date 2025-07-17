@@ -46,7 +46,7 @@ export default function ToefljrCertificationIsland(props) {
                 >
                 </span>
                 <span
-                  className="text-center"
+                  className="xl:text-center"
                   dangerouslySetInnerHTML={{
                     __html: props.card.sessions,
                   }}
