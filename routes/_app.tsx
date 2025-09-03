@@ -251,21 +251,6 @@ export default defineApp(async (_req, ctx) => {
               `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1458020004516977&ev=PageView&noscript=1" />`,
           }}
         />
-        {/* CSS do Leaflet */}
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-          crossorigin=""
-        />
-
-        {/* Script do Leaflet */}
-        <script
-          src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-          crossorigin=""
-        >
-        </script>
       </Head>
 
       {/* Rest of Preact tree */}
