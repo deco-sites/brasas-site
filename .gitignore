@@ -4,6 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.env
 
 # Runtime data
 pids
@@ -77,5 +78,3 @@ _fresh/
 # Deco files
 _docker_deps.ts
 .metadata/changeset.json
-
-.env
