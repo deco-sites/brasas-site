@@ -6,13 +6,14 @@ import IconChevronLeft from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/chev
 export default function TestimonialsIsland(props) {
   const totalItems = props.testimonials.length;
 
+  // Criamos apenas os clones necessários para a ilusão de infinito
   const extendedTestimonials = [
+    props.testimonials[totalItems - 1], // último item no início
     ...props.testimonials,
-    ...props.testimonials,
-    ...props.testimonials,
+    props.testimonials[0], // primeiro item no final
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(totalItems);
+  const [currentIndex, setCurrentIndex] = useState(1); // Começa no primeiro item real
   const [isTransitioning, setIsTransitioning] = useState(true);
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchEndX, setTouchEndX] = useState(0);
@@ -29,20 +30,27 @@ export default function TestimonialsIsland(props) {
 
   const goToSlide = (index) => {
     setIsTransitioning(true);
-    setCurrentIndex(index + totalItems);
+    setCurrentIndex(index + 1); // +1 porque começamos no índice 1
   };
 
   useEffect(() => {
-    if (currentIndex === totalItems * 2) {
-      setIsTransitioning(false);
-      setCurrentIndex(totalItems);
-    } else if (currentIndex === totalItems - 1) {
-      setIsTransitioning(false);
-      setCurrentIndex(totalItems * 2 - 1);
+    // Quando chegar no clone do final
+    if (currentIndex === extendedTestimonials.length - 1) {
+      const timer = setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(1); // Volta para o primeiro item real
+      }, 300);
+      return () => clearTimeout(timer);
+    } // Quando chegar no clone do início
+    else if (currentIndex === 0) {
+      const timer = setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(extendedTestimonials.length - 2); // Volta para o último item real
+      }, 300);
+      return () => clearTimeout(timer);
     }
-  }, [currentIndex, totalItems]);
+  }, [currentIndex, extendedTestimonials.length]);
 
-  // Eventos de toque para deslizar
   const handleTouchStart = (e) => {
     setTouchStartX(e.touches[0].clientX);
   };
@@ -53,12 +61,17 @@ export default function TestimonialsIsland(props) {
 
   const handleTouchEnd = () => {
     if (touchStartX - touchEndX > 50) {
-      // Deslizou para a esquerda (próximo slide)
       nextSlide();
     } else if (touchStartX - touchEndX < -50) {
-      // Deslizou para a direita (slide anterior)
       prevSlide();
     }
+  };
+
+  // Calcula o índice real para os dots
+  const getRealIndex = (index: number) => {
+    if (index === 0) return totalItems - 1;
+    if (index === extendedTestimonials.length - 1) return 0;
+    return index - 1;
   };
 
   return (
@@ -75,10 +88,8 @@ export default function TestimonialsIsland(props) {
           {props.title}
         </h2>
       </div>
-
       <div className="flex flex-col">
         <div className="w-full flex items-center justify-center">
-          {/* Contêiner do Carrossel */}
           <div
             className="relative w-full overflow-x-hidden flex justify-center"
             onTouchStart={handleTouchStart}
@@ -86,7 +97,9 @@ export default function TestimonialsIsland(props) {
             onTouchEnd={handleTouchEnd}
           >
             <div
-              className={`flex transition-transform duration-300 ease-in-out mt-16`}
+              className={`flex transition-transform duration-300 ease-in-out mt-16 ${
+                !isTransitioning ? "!transition-none" : ""
+              }`}
               style={{
                 transform: `translateX(calc(-${
                   currentIndex * (100 / 3)
@@ -94,21 +107,16 @@ export default function TestimonialsIsland(props) {
               }}
             >
               {extendedTestimonials.map((testimonial, index) => {
-                // Calcula a posição relativa ao card ativo
                 const position = index - currentIndex;
-
-                // Determina o justify-content baseado na posição
-                let justifyClass = "justify-center"; // padrão (card ativo)
-                if (position === -1) justifyClass = "justify-end"; // card à esquerda
-                if (position === 1) justifyClass = "justify-start"; // card à direita
+                let justifyClass = "justify-center";
+                if (position === -1) justifyClass = "justify-end";
+                if (position === 1) justifyClass = "justify-start";
 
                 return (
                   <div
                     key={index}
                     className={`flex-shrink-0 flex ${justifyClass}`}
-                    style={{
-                      width: "calc(100% / 3)",
-                    }}
+                    style={{ width: "calc(100% / 3)" }}
                   >
                     <TestimonialCard
                       text={testimonial.text}
@@ -121,7 +129,7 @@ export default function TestimonialsIsland(props) {
                 );
               })}
             </div>
-            {/* Botão Esquerdo */}
+
             <button
               className="absolute hidden md:block top-1/4 translate-y-full left-[calc(50%-336px-20px)] z-10 bg-blue-300 text-white rounded-full p-4"
               onClick={prevSlide}
@@ -129,7 +137,6 @@ export default function TestimonialsIsland(props) {
               <IconChevronLeft class="w-6 h-6" />
             </button>
 
-            {/* Botão Direito */}
             <button
               className="absolute hidden md:block top-1/4 translate-y-full right-[calc(50%-336px-20px)] z-10 bg-blue-300 text-white rounded-full p-4"
               onClick={nextSlide}
@@ -144,7 +151,7 @@ export default function TestimonialsIsland(props) {
             <div
               key={index}
               className={`h-4 w-4 rounded-full cursor-pointer ${
-                index + totalItems === currentIndex
+                getRealIndex(currentIndex) === index
                   ? "bg-blue-300"
                   : "bg-blue-300/25"
               }`}
