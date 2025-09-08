@@ -15,7 +15,7 @@ export default function BeAFranchiseeIsland(props) {
             backgroundSize: "auto, auto",
           }}
         >
-          <div className="flex gap-6">
+          <div className="flex flex-col lg:flex-row gap-2 lg:gap-6 p-8">
             <div className="flex items-start">
               <Image src={"/blue-hat.svg"} alt="" className="my-2" />
             </div>
