@@ -10,21 +10,23 @@ export const sendToRDStation = (formData, id) => {
     ...formData,
   };
 
-  // Envia os dados como JSON usando fetch
   fetch("https://www.rdstation.com.br/api/1.3/form-integrations", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(data), // Converte o objeto data para uma string JSON
+    body: JSON.stringify(data),
   })
-    .then((response) => response.json())
+    .then(async (response) => {
+      const contentType = response.headers.get("content-type");
+      if (contentType && contentType.includes("application/json")) {
+        return response.json();
+      } else {
+        return response.text();
+      }
+    })
     .then((result) => {
-      console.log(
-        "Formulário enviado com sucesso para o RD Station:",
-        result,
-      );
-      // Aqui, você pode adicionar uma ação de sucesso, como redirecionamento ou mensagem
+      console.log("Formulário enviado com sucesso para o RD Station:", result);
     })
     .catch((error) =>
       console.error("Erro ao enviar o formulário para o RD Station:", error)

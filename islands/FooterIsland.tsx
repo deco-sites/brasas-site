@@ -79,7 +79,7 @@ export default function FooterIsland(props) {
             </div>
             <div className="flex flex-col lg:flex-row lg:w-full lg:justify-between xl:justify-evenly xl:px-9">
               <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-2 xl:flex-row xl:gap-6 h-[8.76rem] mb-6 lg:hidden">
+                <div className="flex flex-col gap-2 xl:flex-row xl:gap-6 h-[8.76rem] mb-2 md:mb-4 lg:hidden">
                   <a href={props.testButton.url}>
                     <button className="whitespace-nowrap bg-red-300 text-white hover:bg-white hover:text-red-300 border border-red-300 border-opacity-0 hover:border-opacity-100 uppercase py-3 px-4 rounded-lg text-xs font-black-900 leading-6 transition duration-300 w-full">
                       {props.testButton.text}
