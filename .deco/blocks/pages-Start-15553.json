@@ -25,7 +25,7 @@
                   "height": 634
                 },
                 "alt": "Banner",
-                "link": "https://novosite.brasas.com/certificacoes",
+                "link": "https://brasas.com/certificacoes",
                 "tablet": {
                   "image": "https://assets.decocache.com/brasas-site/87856fa1-837d-462c-8c9f-46154de2d217/TABLET_CERT_INTER.png",
                   "width": 1024,
@@ -55,7 +55,7 @@
                   "height": 634
                 },
                 "alt": "Banner",
-                "link": "https://novosite.brasas.com/indique_e_ganhe",
+                "link": "https://brasas.com/indique_e_ganhe",
                 "tablet": {
                   "image": "https://assets.decocache.com/brasas-site/0e4fb25b-b5e4-4b9b-b436-ea60ff0a9bc8/TABLET_INDGAN.png",
                   "width": 1024,
@@ -113,7 +113,7 @@
                   "height": 634
                 },
                 "alt": "Banner",
-                "link": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+                "link": "https://brasasonline.typeform.com/to/rnaSql1n?utm_source=sitebrasas&utm_medium=organico&utm_campaign=site",
                 "tablet": {
                   "image": "https://assets.decocache.com/brasas-site/2e43030e-5db8-466e-be85-95048ad0eb8f/TABLET_NIVELAMENTO.png",
                   "width": 1024,
@@ -137,7 +137,7 @@
             "descriptionInEnglish": "Our placement test helps you find out which module you should start. Take your test now!",
             "CTAtextInPortuguese": "Teste seu inglês",
             "CTAtextInEnglish": "Test your English",
-            "CTALink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br"
+            "CTALink": "https://brasasonline.typeform.com/to/rnaSql1n?utm_source=sitebrasas&utm_medium=organico&utm_campaign=site"
           },
           {
             "__resolveType": "site/sections/Home/DiscoverOurCourses.tsx",
@@ -408,7 +408,7 @@
                   "height": 634
                 },
                 "alt": "Banner",
-                "link": "https://novosite.brasas.com/certificacoes",
+                "link": "https://brasas.com/certificacoes",
                 "tablet": {
                   "image": "https://assets.decocache.com/brasas-site/87856fa1-837d-462c-8c9f-46154de2d217/TABLET_CERT_INTER.png",
                   "width": 1024,
@@ -438,7 +438,7 @@
                   "height": 634
                 },
                 "alt": "Banner",
-                "link": "https://novosite.brasas.com/indique_e_ganhe",
+                "link": "https://brasas.com/indique_e_ganhe",
                 "tablet": {
                   "image": "https://assets.decocache.com/brasas-site/0e4fb25b-b5e4-4b9b-b436-ea60ff0a9bc8/TABLET_INDGAN.png",
                   "width": 1024,
@@ -496,7 +496,7 @@
                   "height": 634
                 },
                 "alt": "Banner",
-                "link": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br",
+                "link": "https://brasasonline.typeform.com/to/rnaSql1n?utm_source=sitebrasas&utm_medium=organico&utm_campaign=site",
                 "tablet": {
                   "image": "https://assets.decocache.com/brasas-site/2e43030e-5db8-466e-be85-95048ad0eb8f/TABLET_NIVELAMENTO.png",
                   "width": 1024,
@@ -520,7 +520,7 @@
             "descriptionInEnglish": "Our placement test helps you find out which module you should start. Take your test now!",
             "CTAtextInPortuguese": "Teste seu inglês",
             "CTAtextInEnglish": "Test your English",
-            "CTALink": "https://brasasonline.typeform.com/teste-de-ingles?utm_source=xxxxx&utm_medium=xxxxx&utm_campaign=xxxxx&typeform-source=brasasonline.com.br"
+            "CTALink": "https://brasasonline.typeform.com/to/rnaSql1n?utm_source=sitebrasas&utm_medium=organico&utm_campaign=site"
           },
           {
             "__resolveType": "site/sections/Home/DiscoverOurCourses.tsx",
