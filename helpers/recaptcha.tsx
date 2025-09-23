@@ -6,7 +6,7 @@ import Loading from "../components/ui/Loading.tsx";
 export default function Recaptcha({ setToken, setWidgetId, warnRecaptcha }) {
   const recaptchaRef = useRef(null);
   const hasRendered = useRef(false);
-  const SITE_KEY = "6LeFE0QrAAAAAE5gmXmBrSaslOMF7Ftnsg0naINk";
+  const SITE_KEY = "6LfS4tIrAAAAAHUK7amd0qQ9SWpGEK38XmgN5ZYD";
   const [isLoading, setIsLoading] = useState(true);
   const [language, setLanguage] = useState("pt-BR");
 
