@@ -311,9 +311,9 @@
                 ],
                 "CopyToArr": [],
                 "nameInPortuguese": "Tecnologia",
-                "value": "TI",
                 "nameInEnglish": "Technology",
-                "name": "Tecnologia"
+                "name": "Tecnologia",
+                "value": "Tecnologia"
               }
             ],
             "formTitle": "Faça parte do time BRASAS",
