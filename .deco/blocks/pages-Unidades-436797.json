@@ -168,14 +168,6 @@
                   {
                     "tels": [
                       {
-                        "number": "2135291648",
-                        "isWhatsapp": false
-                      },
-                      {
-                        "number": "2122892934",
-                        "isWhatsapp": false
-                      },
-                      {
                         "number": "21976180373",
                         "isWhatsapp": true
                       }
@@ -1228,14 +1220,6 @@
                   },
                   {
                     "tels": [
-                      {
-                        "number": "2135291648",
-                        "isWhatsapp": false
-                      },
-                      {
-                        "number": "2122892934",
-                        "isWhatsapp": false
-                      },
                       {
                         "number": "21976180373",
                         "isWhatsapp": true
