@@ -119,7 +119,7 @@ export default function HomeForm(props) {
       <section className="relative flex justify-center">
         <form
           onSubmit={(e) => handleSendEmail(e)}
-          className="absolute z-50 -top-28 bg-white flex flex-col items-center gap-8 border-gray-100 rounded-2xl p-8 xl:min-w-[55rem]"
+          className="absolute z-40 -top-28 bg-white flex flex-col items-center gap-8 border-gray-100 rounded-2xl p-8 xl:min-w-[55rem]"
         >
           <span className="font-bold text-xl">
             {props.formTitle}
