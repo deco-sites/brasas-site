@@ -103,29 +103,29 @@
               },
               {
                 "desktop": {
-                  "image": "https://assets.decocache.com/brasas-site/7e7843db-d045-4dc1-93bd-c6da6fafb1ee/1920X1080_DESKTOP_NIVEL.png",
+                  "image": "https://assets.decocache.com/brasas-site/c2f75aac-d35d-492b-8bd4-d42c0bcbfa4d/ENGLISH_DESKTOP_1920X1080.png",
                   "width": 1920,
                   "height": 1080
                 },
                 "mobile": {
-                  "image": "https://assets.decocache.com/brasas-site/f89608ff-9f3d-4511-b83c-6bf5e278c6ff/BRASAS_Webdoor_Teste-mobile.png",
+                  "image": "https://assets.decocache.com/brasas-site/0a3ead45-c6c3-4f83-a255-b5e65766d151/ENGLISH-MOBILE_385x634-.png",
                   "width": 385,
                   "height": 634
                 },
                 "alt": "Banner",
                 "link": "https://brasasonline.typeform.com/to/rnaSql1n?utm_source=sitebrasas&utm_medium=organico&utm_campaign=site",
                 "tablet": {
-                  "image": "https://assets.decocache.com/brasas-site/2e43030e-5db8-466e-be85-95048ad0eb8f/TABLET_NIVELAMENTO.png",
+                  "image": "https://assets.decocache.com/brasas-site/cac1dd03-d707-43ad-aefc-53d1ccff5491/ENGLISH-TABLET_-1024x768-.png",
                   "width": 1024,
                   "height": 768
                 },
                 "laptop": {
-                  "image": "https://assets.decocache.com/brasas-site/dd497717-b62e-40a8-83de-6a83657e593f/LAPTOP_TESTENIVEL.png",
+                  "image": "https://assets.decocache.com/brasas-site/42847fa5-1606-4b1f-928c-e8a5aabfa95d/ENGLISH_LAPTOP_1440x1080-.png",
                   "width": 1440,
                   "height": 1080
                 },
                 "ultrawide": {
-                  "image": "https://assets.decocache.com/brasas-site/a270ed5f-0d36-4e51-9292-c185c85ba5e7/2560X1080ULTRAWIDE_NIVELAMENTO.png",
+                  "image": "https://assets.decocache.com/brasas-site/1e340fdb-968a-4004-8773-81c0f5166a09/ENGLISH-ULTRAWIDE_2560x1080-.png",
                   "width": 2560,
                   "height": 1080
                 }
