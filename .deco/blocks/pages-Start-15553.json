@@ -45,29 +45,29 @@
               },
               {
                 "desktop": {
-                  "image": "https://assets.decocache.com/brasas-site/527b29df-21d0-4c7e-b001-03deefa5afef/1920X1080_DESKTOP_IND.png",
+                  "image": "https://assets.decocache.com/brasas-site/9d8c44b6-1f7e-44ab-9f63-b90e330e5cce/ENGLISH_INDIQUE_1920x1080-.png",
                   "width": 1920,
                   "height": 1080
                 },
                 "mobile": {
-                  "image": "https://assets.decocache.com/brasas-site/ed508b48-c4df-4c35-9c0c-cfdb0e923009/BRASAS_Webdoor-Mobile_Indique-e-Ganhe.png",
+                  "image": "https://assets.decocache.com/brasas-site/82a1c5bb-5f9c-436b-95a7-f2355f5a2240/ENGLISH_INDIQUE_GANHE_385x634.png",
                   "width": 385,
                   "height": 634
                 },
                 "alt": "Banner",
                 "link": "https://brasas.com/indique_e_ganhe",
                 "tablet": {
-                  "image": "https://assets.decocache.com/brasas-site/0e4fb25b-b5e4-4b9b-b436-ea60ff0a9bc8/TABLET_INDGAN.png",
+                  "image": "https://assets.decocache.com/brasas-site/2ca36a95-6beb-44a2-a84c-b04bed042645/ENGLISH_INDIQUE_-1024x768-.png",
                   "width": 1024,
                   "height": 768
                 },
                 "laptop": {
-                  "image": "https://assets.decocache.com/brasas-site/0432318e-2e77-4242-b94e-58099c54ae63/LAPTOP_IND_GAN.png",
+                  "image": "https://assets.decocache.com/brasas-site/640b5bd9-5088-47f2-bec0-0963338a955b/ENGLISH_INDIQUE_-1440x1080.png",
                   "width": 1440,
                   "height": 1080
                 },
                 "ultrawide": {
-                  "image": "https://assets.decocache.com/brasas-site/4b3c5239-f4c1-46aa-bca0-b15d079fc4d9/2560x1080ULTRAWIDE_INDIQUE.png",
+                  "image": "https://assets.decocache.com/brasas-site/7b398495-5afe-410e-adc5-2227e718dcba/ENGLISH_INDIQUE_2560X1080.png",
                   "width": 2560,
                   "height": 1080
                 }
