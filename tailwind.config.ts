@@ -57,5 +57,17 @@ export default {
         300: "#F15A22",
       },
     },
+    extend: {
+      keyframes: {
+        ripple: {
+          "0%": { transform: "scale(0.8)", opacity: "0.6" },
+          "80%": { transform: "scale(2.5)", opacity: "0" },
+          "100%": { transform: "scale(2.5)", opacity: "0" },
+        },
+      },
+      animation: {
+        ripple: "ripple 2s linear infinite",
+      },
+    },
   },
 };
