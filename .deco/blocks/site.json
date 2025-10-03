@@ -39,7 +39,33 @@
       "__resolveType": "site/sections/CookiesCard.tsx"
     },
     {
-      "__resolveType": "site/sections/WhatsappFloatingButton.tsx"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/WhatsappFloatingButton.tsx",
+            "phoneNumber": "2122017586",
+            "image": "https://assets.decocache.com/brasas-site/3c73531d-6c66-4974-ac69-03422eb95f1b/whatsapp.png",
+            "message": "Can I help you?"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/cookie.ts",
+            "name": "language",
+            "value": "en-US"
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/WhatsappFloatingButton.tsx",
+            "phoneNumber": "2122017586",
+            "image": "https://assets.decocache.com/brasas-site/3c73531d-6c66-4974-ac69-03422eb95f1b/whatsapp.png",
+            "message": "Posso ajudar?"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     }
   ],
   "routes": [
