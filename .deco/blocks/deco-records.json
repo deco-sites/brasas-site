@@ -1,0 +1,9 @@
+{
+  "__resolveType": "site/apps/deco/records.ts",
+  "url": "libsql://brasas-site-decocx.turso.io",
+  "authToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "name": "DATABASE_AUTH_TOKEN",
+    "encrypted": "d9d74ad72c7f9e19c33e657d21c1d9bebb4d4db5b4d1b8ddb9776d21b6422b9aa03e35ec4c11d00f12acf8ba2eec7fcb57c5b16bb330c689a201feaea47e45a2597554a6cb07bc9ada06cda5a0cd98ecc3de649110bb530667168fa2279bc8c4897631649be0a6db53900da4d8f3463f7681ef6e26e0cc6119bc176f265bbe446f5f674215f7b1c420551707256c64256f7a0413dc711e069d59062e38a9c873a11bce8099c3df2c7dd6da1e34726937d9349a3a0c1de390d84c5a625fcb3fc004e5b969fdce89201d0b4ade0416bc570531cde0ca60cc90fbee1670d76929be"
+  }
+}
