@@ -59,11 +59,14 @@ export default function SpecialCoursesIsland(props) {
                   alt="Logo"
                   className="object-contain"
                 />
+                {
+                  /*
                 <Image
                   src="/AdultsPage/toefl-itp.png"
                   alt="Logo"
                   className="object-contain"
-                />
+                />*/
+                }
               </div>
             </div>
           </div>

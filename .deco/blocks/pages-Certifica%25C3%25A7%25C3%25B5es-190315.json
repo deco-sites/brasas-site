@@ -18,7 +18,7 @@
             "subtitleInEnglish": "BRASAS offers courses that prepare you for the TOEIC®, TOEFL® Junior, and TOEFL ITP® international certifications, in addition to administering the tests.",
             "subtitleInPortuguese": "O BRASAS oferece cursos que preparam você para as certificações internacionais TOEIC®, TOEFL® Junior e TOEFL ITP®, além de aplicar os testes.",
             "title": "International Certifications",
-            "subtitle": "BRASAS offers courses that prepare you for the TOEIC®, TOEFL® Junior, and TOEFL ITP® international certifications, in addition to administering the tests.",
+            "subtitle": "BRASAS offers courses that prepare you for the TOEIC® and TOEFL® Junior international certifications, in addition to administering the tests.",
             "noticeText": "<p>This course is available both in person and <em>online</em></p>"
           },
           {
@@ -114,35 +114,45 @@
             ]
           },
           {
-            "__resolveType": "site/sections/Certifications/ToeflITPCertification.tsx",
-            "card": {
-              "logo": "https://assets.decocache.com/brasas-site/6fc3b674-4775-4943-a112-96b87baf72cc/BS_submarcas-brasas_exam-preparation_toefl-itp-07-1.png",
-              "modalityInEnglish": "<p><strong>Modality:</strong> In-person</p>",
-              "sessionsInEnglish": "<p><strong>5 Sessions:</strong> 4 classes + 1 mock test</p><p>2h/session</p>",
-              "modalityInPortuguese": "<p><strong>Modalidade:</strong> Presencial</p>",
-              "sessionsInPortuguese": "<p><strong>5 Sessões:</strong> 4 aulas + 1 simulado</p><p>2h/sessão</p>",
-              "modality": "<p><strong>Format:</strong> in-person only</p>",
-              "sessions": "<p><strong>5 Sessions:</strong> 4 classes + 1 mock test</p><p>2h/session</p>"
-            },
-            "title": "TOEFL® ITP",
-            "items": [
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
               {
-                "icon": "https://assets.decocache.com/brasas-site/60a34041-2e3d-4160-853e-08ea11f2df77/teacher-(1).png",
-                "textInEnglish": "<p><strong>Who is it for:</strong></p><p>Adults, aged 18 and over.</p>",
-                "textInPortuguese": "<p><strong>Para quem é indicado:</strong></p><p>Quem quer fazer graduação ou pós-graduação em outro país.</p>",
-                "text": "<p><strong>Target audience: </strong>Adults 18 and older.</p>"
-              },
-              {
-                "icon": "https://assets.decocache.com/brasas-site/4bcd9c73-703d-462f-85f7-229f28a52408/star-(1).png",
-                "textInEnglish": "<p><strong>Objective:</strong></p><p>To assess the ability of non-native English speakers to use English effectively in an academic environment.</p>",
-                "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa de utilizar o inglês, de forma eficaz, no ambiente acadêmico.</p>",
-                "text": "<p><strong>Objective:</strong></p><p>To assess the ability of non-native English speakers to use English effectively in an academic environment.</p>"
-              },
-              {
-                "icon": "https://assets.decocache.com/brasas-site/1c4f4f35-d207-4350-86be-2bf4875de50c/Vector-(1).png",
-                "textInPortuguese": "<p>Conheça o teste: </p><p>140 questões múltipla escolha</p><p>Tempo: 115 minutos</p><p>&nbsp;</p><p>Contempla 3 habilidades:&nbsp;</p><p>50 questões de Listening Comprehension</p><p>40 questões de Structure</p><p>50 questões de Reading Comprehension</p><p></p>",
-                "textInEnglish": "<p>About the test:</p><p>140 multiple-choice questions</p><p>Time: 115 minutes</p><p>&nbsp;</p><p>Includes 3 language skills:</p><p>50 Listening Comprehension questions</p><p>40 Structure questions</p><p>50 Reading Comprehension questions</p>",
-                "text": "<p>About the test:</p><p>140 multiple-choice questions</p><p>Time: 115 minutes</p><p>&nbsp;</p><p>Includes 3 language skills:</p><p>50 Listening Comprehension questions</p><p>40 Structure questions</p><p>50 Reading Comprehension questions</p>"
+                "value": {
+                  "__resolveType": "site/sections/Certifications/ToeflITPCertification.tsx",
+                  "card": {
+                    "logo": "https://assets.decocache.com/brasas-site/6fc3b674-4775-4943-a112-96b87baf72cc/BS_submarcas-brasas_exam-preparation_toefl-itp-07-1.png",
+                    "modalityInEnglish": "<p><strong>Modality:</strong> In-person</p>",
+                    "sessionsInEnglish": "<p><strong>5 Sessions:</strong> 4 classes + 1 mock test</p><p>2h/session</p>",
+                    "modalityInPortuguese": "<p><strong>Modalidade:</strong> Presencial</p>",
+                    "sessionsInPortuguese": "<p><strong>5 Sessões:</strong> 4 aulas + 1 simulado</p><p>2h/sessão</p>",
+                    "modality": "<p><strong>Format:</strong> in-person only</p>",
+                    "sessions": "<p><strong>5 Sessions:</strong> 4 classes + 1 mock test</p><p>2h/session</p>"
+                  },
+                  "title": "TOEFL® ITP",
+                  "items": [
+                    {
+                      "icon": "https://assets.decocache.com/brasas-site/60a34041-2e3d-4160-853e-08ea11f2df77/teacher-(1).png",
+                      "textInEnglish": "<p><strong>Who is it for:</strong></p><p>Adults, aged 18 and over.</p>",
+                      "textInPortuguese": "<p><strong>Para quem é indicado:</strong></p><p>Quem quer fazer graduação ou pós-graduação em outro país.</p>",
+                      "text": "<p><strong>Target audience: </strong>Adults 18 and older.</p>"
+                    },
+                    {
+                      "icon": "https://assets.decocache.com/brasas-site/4bcd9c73-703d-462f-85f7-229f28a52408/star-(1).png",
+                      "textInEnglish": "<p><strong>Objective:</strong></p><p>To assess the ability of non-native English speakers to use English effectively in an academic environment.</p>",
+                      "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa de utilizar o inglês, de forma eficaz, no ambiente acadêmico.</p>",
+                      "text": "<p><strong>Objective:</strong></p><p>To assess the ability of non-native English speakers to use English effectively in an academic environment.</p>"
+                    },
+                    {
+                      "icon": "https://assets.decocache.com/brasas-site/1c4f4f35-d207-4350-86be-2bf4875de50c/Vector-(1).png",
+                      "textInPortuguese": "<p>Conheça o teste: </p><p>140 questões múltipla escolha</p><p>Tempo: 115 minutos</p><p>&nbsp;</p><p>Contempla 3 habilidades:&nbsp;</p><p>50 questões de Listening Comprehension</p><p>40 questões de Structure</p><p>50 questões de Reading Comprehension</p><p></p>",
+                      "textInEnglish": "<p>About the test:</p><p>140 multiple-choice questions</p><p>Time: 115 minutes</p><p>&nbsp;</p><p>Includes 3 language skills:</p><p>50 Listening Comprehension questions</p><p>40 Structure questions</p><p>50 Reading Comprehension questions</p>",
+                      "text": "<p>About the test:</p><p>140 multiple-choice questions</p><p>Time: 115 minutes</p><p>&nbsp;</p><p>Includes 3 language skills:</p><p>50 Listening Comprehension questions</p><p>40 Structure questions</p><p>50 Reading Comprehension questions</p>"
+                    }
+                  ]
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/never.ts"
+                }
               }
             ]
           },
@@ -229,7 +239,7 @@
             "subtitleInEnglish": "BRASAS offers courses that prepare you for the TOEIC®, TOEFL® Junior, and TOEFL ITP® international certifications, in addition to administering the tests.",
             "subtitleInPortuguese": "O BRASAS oferece cursos que preparam você para as certificações internacionais TOEIC®, TOEFL® Junior e TOEFL ITP®, além de aplicar os testes.",
             "title": "Certificações Internacionais",
-            "subtitle": "O BRASAS oferece cursos que preparam você para as certificações internacionais TOEIC®, TOEFL® Junior e TOEFL ITP®, além de aplicar os testes.",
+            "subtitle": "O BRASAS oferece cursos que preparam você para as certificações internacionais TOEIC® e TOEFL® Junior, além de aplicar os testes.",
             "noticeText": "<p>Curso disponível nas modalidades presencial e <em>online</em></p>"
           },
           {
@@ -298,35 +308,45 @@
             ]
           },
           {
-            "__resolveType": "site/sections/Certifications/ToeflITPCertification.tsx",
-            "card": {
-              "logo": "https://assets.decocache.com/brasas-site/6fc3b674-4775-4943-a112-96b87baf72cc/BS_submarcas-brasas_exam-preparation_toefl-itp-07-1.png",
-              "modalityInEnglish": "<p><strong>Modality:</strong> In-person</p>",
-              "sessionsInEnglish": "<p><strong>5 Sessions:</strong> 4 classes + 1 mock test</p><p>2h/session</p>",
-              "modalityInPortuguese": "<p><strong>Modalidade:</strong> Presencial</p>",
-              "sessionsInPortuguese": "<p><strong>5 Sessões:</strong> 4 aulas + 1 simulado</p><p>2h/sessão</p>",
-              "modality": "<p><strong>Modalidade:</strong> Presencial</p>",
-              "sessions": "<p><strong>5 Sessões:</strong> 4 aulas + 1 simulado</p><p>2h/sessão</p>"
-            },
-            "title": "TOEFL® ITP",
-            "items": [
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
               {
-                "icon": "https://assets.decocache.com/brasas-site/60a34041-2e3d-4160-853e-08ea11f2df77/teacher-(1).png",
-                "textInEnglish": "<p><strong>Who is it for:</strong></p><p>Adults, aged 18 and over.</p>",
-                "textInPortuguese": "<p><strong>Para quem é indicado:</strong></p><p>Quem quer fazer graduação ou pós-graduação em outro país.</p>",
-                "text": "<p><strong>Para quem é indicado:</strong></p><p>Quem quer fazer graduação ou pós-graduação em outro país.</p>"
-              },
-              {
-                "icon": "https://assets.decocache.com/brasas-site/4bcd9c73-703d-462f-85f7-229f28a52408/star-(1).png",
-                "textInEnglish": "<p><strong>Objective:</strong></p><p>To assess the ability of non-native English speakers to use English effectively in an academic environment.</p>",
-                "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa de utilizar o inglês, de forma eficaz, no ambiente acadêmico.</p>",
-                "text": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa de utilizar o inglês, de forma eficaz, no ambiente acadêmico.</p>"
-              },
-              {
-                "icon": "https://assets.decocache.com/brasas-site/1c4f4f35-d207-4350-86be-2bf4875de50c/Vector-(1).png",
-                "textInPortuguese": "<p>Conheça o teste: </p><p>140 questões múltipla escolha</p><p>Tempo: 115 minutos</p><p>&nbsp;</p><p>Contempla 3 habilidades:&nbsp;</p><p>50 questões de Listening Comprehension</p><p>40 questões de Structure</p><p>50 questões de Reading Comprehension</p><p></p>",
-                "textInEnglish": "<p>About the test:</p><p>140 multiple-choice questions</p><p>Time: 115 minutes</p><p>&nbsp;</p><p>Includes 3 language skills:</p><p>50 Listening Comprehension questions</p><p>40 Structure questions</p><p>50 Reading Comprehension questions</p>",
-                "text": "<p>Conheça o teste:</p><p>140 questões múltipla escolha</p><p>Tempo: 115 minutos</p><p>&nbsp;</p><p>Contempla 3 habilidades:&nbsp;</p><p>50 questões de Listening Comprehension</p><p>40 questões de Structure</p><p>50 questões de Reading Comprehension</p>"
+                "value": {
+                  "__resolveType": "site/sections/Certifications/ToeflITPCertification.tsx",
+                  "card": {
+                    "logo": "https://assets.decocache.com/brasas-site/6fc3b674-4775-4943-a112-96b87baf72cc/BS_submarcas-brasas_exam-preparation_toefl-itp-07-1.png",
+                    "modalityInEnglish": "<p><strong>Modality:</strong> In-person</p>",
+                    "sessionsInEnglish": "<p><strong>5 Sessions:</strong> 4 classes + 1 mock test</p><p>2h/session</p>",
+                    "modalityInPortuguese": "<p><strong>Modalidade:</strong> Presencial</p>",
+                    "sessionsInPortuguese": "<p><strong>5 Sessões:</strong> 4 aulas + 1 simulado</p><p>2h/sessão</p>",
+                    "modality": "<p><strong>Modalidade:</strong> Presencial</p>",
+                    "sessions": "<p><strong>5 Sessões:</strong> 4 aulas + 1 simulado</p><p>2h/sessão</p>"
+                  },
+                  "title": "TOEFL® ITP",
+                  "items": [
+                    {
+                      "icon": "https://assets.decocache.com/brasas-site/60a34041-2e3d-4160-853e-08ea11f2df77/teacher-(1).png",
+                      "textInEnglish": "<p><strong>Who is it for:</strong></p><p>Adults, aged 18 and over.</p>",
+                      "textInPortuguese": "<p><strong>Para quem é indicado:</strong></p><p>Quem quer fazer graduação ou pós-graduação em outro país.</p>",
+                      "text": "<p><strong>Para quem é indicado:</strong></p><p>Quem quer fazer graduação ou pós-graduação em outro país.</p>"
+                    },
+                    {
+                      "icon": "https://assets.decocache.com/brasas-site/4bcd9c73-703d-462f-85f7-229f28a52408/star-(1).png",
+                      "textInEnglish": "<p><strong>Objective:</strong></p><p>To assess the ability of non-native English speakers to use English effectively in an academic environment.</p>",
+                      "textInPortuguese": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa de utilizar o inglês, de forma eficaz, no ambiente acadêmico.</p>",
+                      "text": "<p><strong>Objetivo:</strong></p><p>Avaliar a habilidade de falantes não nativos da língua inglesa de utilizar o inglês, de forma eficaz, no ambiente acadêmico.</p>"
+                    },
+                    {
+                      "icon": "https://assets.decocache.com/brasas-site/1c4f4f35-d207-4350-86be-2bf4875de50c/Vector-(1).png",
+                      "textInPortuguese": "<p>Conheça o teste: </p><p>140 questões múltipla escolha</p><p>Tempo: 115 minutos</p><p>&nbsp;</p><p>Contempla 3 habilidades:&nbsp;</p><p>50 questões de Listening Comprehension</p><p>40 questões de Structure</p><p>50 questões de Reading Comprehension</p><p></p>",
+                      "textInEnglish": "<p>About the test:</p><p>140 multiple-choice questions</p><p>Time: 115 minutes</p><p>&nbsp;</p><p>Includes 3 language skills:</p><p>50 Listening Comprehension questions</p><p>40 Structure questions</p><p>50 Reading Comprehension questions</p>",
+                      "text": "<p>Conheça o teste:</p><p>140 questões múltipla escolha</p><p>Tempo: 115 minutos</p><p>&nbsp;</p><p>Contempla 3 habilidades:&nbsp;</p><p>50 questões de Listening Comprehension</p><p>40 questões de Structure</p><p>50 questões de Reading Comprehension</p>"
+                    }
+                  ]
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/never.ts"
+                }
               }
             ]
           },
