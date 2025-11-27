@@ -4,6 +4,7 @@ import { useClickOutsideListener } from "../../helpers/useClickOutsideListener.t
 interface Option {
   name: string;
   value: string;
+  disabled?: boolean;
 }
 
 interface SelectInputProps {
@@ -15,6 +16,7 @@ interface SelectInputProps {
   functionToExecute?: () => void;
   required?: boolean;
   value?: string;
+  disabled?: boolean;
 }
 
 const BG_COLORS = {
@@ -32,6 +34,7 @@ export default function SelectInput(
     required,
     value,
     functionToExecute,
+    disabled,
   }: SelectInputProps,
 ) {
   const handleOptionClick = (option: Option) => {
@@ -77,19 +80,22 @@ export default function SelectInput(
       <div className="relative w-full">
         {/* Select box */}
         <div
-          tabIndex={0}
-          onFocus={() => setIsFocused(true)}
-          onBlur={() => setIsFocused(false)}
+          tabIndex={disabled ? -1 : 0}
+          onFocus={() => !disabled && setIsFocused(true)}
+          onBlur={() => !disabled && setIsFocused(false)}
           className={`flex items-center ${
             BG_COLORS[bgColor]
-          } border outline-none rounded-lg p-3 w-full transition-all duration-300 ${
-            isOpen || isFocused
+          } border outline-none rounded-lg p-3 w-full transition-all duration-300
+    ${disabled ? "opacity-50 cursor-not-allowed" : ""}
+    ${
+            !disabled && (isOpen || isFocused)
               ? "border-blue-30 ring ring-blue-30/25"
               : "border-gray-500 ring-transparent"
           }`}
           ref={avatarRef}
-          onClick={toggleDropdown}
+          onClick={() => !disabled && toggleDropdown()}
           onKeyDown={(e) => {
+            if (disabled) return;
             if (e.key === "Enter" || e.key === " ") {
               e.preventDefault();
               toggleDropdown();
@@ -130,10 +136,19 @@ export default function SelectInput(
             {options.map((option, index) => (
               <div
                 key={index}
-                className={`text-center cursor-pointer py-3 hover:bg-gray-300 ${
-                  value === option.name ? "bg-gray-300" : ""
-                }`}
-                onClick={() => handleOptionClick(option)}
+                className={`text-center py-3 
+  ${
+                  option.disabled
+                    ? "opacity-40 cursor-not-allowed"
+                    : "cursor-pointer hover:bg-gray-300"
+                } 
+  ${
+                  value === option.name && !option.disabled
+                    ? "bg-gray-300"
+                    : ""
+                }
+`}
+                onClick={() => !option.disabled && handleOptionClick(option)}
               >
                 {option.name}
               </div>
@@ -145,6 +160,7 @@ export default function SelectInput(
         <select
           className="sr-only absolute bottom-0 left-1/2"
           required={required}
+          disabled={disabled}
           name={label.toLowerCase().normalize("NFD").replace(
             /[\u0300-\u036f]/g,
             "",

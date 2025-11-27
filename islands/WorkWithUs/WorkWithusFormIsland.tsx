@@ -4,7 +4,7 @@ import InputCheckbox from "site/components/ui/InputCheckbox.tsx";
 import IconSend from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/send.tsx";
 import IconCloudUpload from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/cloud-upload.tsx";
 import SelectInput from "site/components/ui/SelectInput.tsx";
-import { useRef, useState } from "preact/hooks";
+import { useEffect, useRef, useState } from "preact/hooks";
 import { invoke } from "../../runtime.ts";
 import SendingConfirmationModal from "site/components/ui/SendingConfirmationModal.tsx";
 import Recaptcha from "site/helpers/recaptcha.tsx";
@@ -25,6 +25,7 @@ export default function WorkWithUsFormIsland(props) {
   const [phone, setPhone] = useState("");
   const [city, setCity] = useState("");
   const [desiredArea, setDesiredArea] = useState("");
+  const [selectedBranch, setSelectedBranch] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const [additionalComments, setAdditionalComments] = useState("");
   const [acceptedSendData, setAcceptedSendData] = useState(false);
@@ -32,15 +33,127 @@ export default function WorkWithUsFormIsland(props) {
   const [recaptchaToken, setRecaptchaToken] = useState(null);
   const [warnRecaptcha, setWarnRecaptcha] = useState(false);
   const [recaptchaWidgetId, setRecaptchaWidgetId] = useState(null);
+  const [fetchedBranches, setFetchedBranches] = useState([]);
+  const [filteredBranches, setFilteredBranches] = useState([]);
+  const [stateUF, setStateUF] = useState("");
+  const [stateOptions, setStateOptions] = useState([]);
+
+  useEffect(() => {
+    setSelectedBranch(null);
+  }, [stateUF]);
+
+  const normalize = (str) =>
+    str
+      ?.normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+
+  useEffect(() => {
+    let filtered = [...fetchedBranches];
+
+    // 🔹 Filtrar por estado
+    if (stateUF.trim()) {
+      filtered = filtered.filter(
+        (branch) =>
+          (branch.state ?? "").toLowerCase() === stateUF.toLowerCase(),
+      );
+    }
+
+    // 🔹 Filtrar por cidade
+    if (city.trim()) {
+      const normalizedCity = normalize(city);
+
+      filtered = filtered.filter((branch) => {
+        const branchCity = branch.city ?? "";
+        const normalizedBranchCity = normalize(branchCity);
+        return normalizedBranchCity.includes(normalizedCity);
+      });
+    }
+
+    setFilteredBranches(filtered);
+  }, [stateUF, city, fetchedBranches]);
+
+  useEffect(() => {
+    const loginUrl =
+      "https://api.brasas.com/users/login/68e905212fc5fe55464b0a46";
+    const unitsUrl = "https://api.brasas.com/sophia/brasas/units";
+
+    const fetchData = async () => {
+      try {
+        // 1️⃣ LOGIN
+        const loginResponse = await fetch(loginUrl, {
+          method: "GET",
+          headers: {
+            "community_id": "sophia-4375-44",
+          },
+        });
+
+        if (!loginResponse.ok) {
+          throw new Error("Erro ao fazer login");
+        }
+
+        const loginData = await loginResponse.json();
+        const token = loginData.access_token;
+
+        // 2️⃣ BUSCAR UNIDADES COM O TOKEN
+        const unitsResponse = await fetch(unitsUrl, {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        if (!unitsResponse.ok) {
+          throw new Error("Erro ao buscar unidades");
+        }
+
+        const unitsData = await unitsResponse.json();
+        //console.log("unitsData", unitsData);
+
+        //Transformando o objeto
+        const formattedUnits = unitsData.map((unit) => ({
+          ...unit,
+          name: unit.internal_name,
+          value: unit.id,
+        }));
+
+        // 3️⃣ SALVAR NO ESTADO
+        setFetchedBranches(formattedUnits);
+        //setFetchedBranches(unitsData);
+
+        //Salvando os estados retornados da API
+        const uniqueStates = [
+          ...new Set(
+            formattedUnits
+              .map((unit) => unit.state)
+              .filter(Boolean), // remove null/undefined
+          ),
+        ];
+
+        setStateOptions(uniqueStates.map((uf) => ({ name: uf, value: uf })));
+      } catch (error) {
+        console.error("Erro geral:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const sendData = `
   Nome: ${name}
   Email: ${email}
   Telefone: ${phone}
-  Cidade: ${city}
+  Estado: ${stateUF}
   Área Desejada: ${desiredArea}
+  ${
+    (desiredArea === "Administrativo" ||
+        desiredArea === "Comercial" ||
+        desiredArea === "Pedagógico") && selectedBranch
+      ? `Unidade: ${selectedBranch || ""}\n`
+      : ""
+  }
   Comentários Adicionais: ${additionalComments}
-`;
+`; //Cidade: ${city}
 
   const handleFileChange = (e) => {
     e.preventDefault();
@@ -143,13 +256,26 @@ export default function WorkWithUsFormIsland(props) {
                   required
                   type="tel"
                 />
+
+                <SelectInput
+                  label="Estado"
+                  placeholder="Selecione o estado"
+                  options={stateOptions}
+                  bgColor="gray"
+                  value={stateUF}
+                  onChangeFunction={setStateUF}
+                />
+                {
+                  /*
                 <TextInput
                   label={props.cityInput.label}
                   placeholder={props.cityInput.placeholder}
                   value={city}
                   setValue={setCity}
                   required
-                />
+                />*/
+                }
+
                 <SelectInput
                   label={props.desiredAreaInput.label}
                   placeholder={props.desiredAreaInput.placeholder}
@@ -159,6 +285,25 @@ export default function WorkWithUsFormIsland(props) {
                   onChangeFunction={setDesiredArea}
                   required
                 />
+
+                {(desiredArea === "Administrativo" ||
+                  desiredArea === "Comercial" ||
+                  desiredArea === "Pedagógico") && (
+                  <SelectInput
+                    label={props.unitsInput.label}
+                    placeholder={props.unitsInput.placeholder}
+                    options={filteredBranches.length > 0 ? filteredBranches : [{
+                      name: "Nenhuma unidade encontrada para esta cidade",
+                      value: "",
+                      disabled: true,
+                    }]}
+                    disabled={filteredBranches.length === 0}
+                    bgColor="gray"
+                    value={selectedBranch}
+                    onChangeFunction={setSelectedBranch}
+                    required
+                  />
+                )}
 
                 <div className="flex flex-col gap-2">
                   <label className="text-sm font-semibold text-black-500 uppercase leading-6">

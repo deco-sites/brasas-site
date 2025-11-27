@@ -110,7 +110,7 @@
                 "CopyToArr": [],
                 "nameInPortuguese": "Pedagógico",
                 "nameInEnglish": "Pedagogical",
-                "value": "Pedagogical",
+                "value": "Pedagógico",
                 "name": "Pedagogical"
               },
               {
@@ -170,7 +170,11 @@
             },
             "acceptanceSendText": "I agree to send my personal data for analysis in a possible selection process for a vacancy.",
             "acceptanceReceiveText": "I agree to receive communications and personalized offers based on my interests.",
-            "buttonText": "Submit"
+            "buttonText": "Submit",
+            "unitsInput": {
+              "label": "Branches",
+              "placeholder": "Select"
+            }
           },
           {
             "__resolveType": "FooterEnglish"
@@ -348,7 +352,11 @@
             },
             "acceptanceSendText": "Eu concordo em enviar meus dados pessoais para análise em um possível processo seletivo para vaga.",
             "acceptanceReceiveText": "Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses",
-            "buttonText": "Enviar"
+            "buttonText": "Enviar",
+            "unitsInput": {
+              "label": "Unidades",
+              "placeholder": "Selecione"
+            }
           },
           {
             "__resolveType": "Footer"

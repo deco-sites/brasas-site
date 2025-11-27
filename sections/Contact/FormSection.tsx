@@ -35,7 +35,7 @@ export const loader = async (
 ) => {
   try {
     const response = await fetch(
-      "https://apitest.brasas.com/users/login/670fe444b7a9bf54c7d0c046?exp_secs=600",
+      "https://api.brasas.com/users/login/68e905212fc5fe55464b0a46?exp_secs=600",
       {
         method: "GET",
         headers: {
@@ -49,7 +49,7 @@ export const loader = async (
     }
 
     const data = await response.json();
-    console.log("Resposta da API:", data);
+    //console.log("Resposta da API:", data);
 
     return {
       ...props,
