@@ -258,8 +258,8 @@ export default function WorkWithUsFormIsland(props) {
                 />
 
                 <SelectInput
-                  label="Estado"
-                  placeholder="Selecione o estado"
+                  label={props.stateInput.label}
+                  placeholder={props.stateInput.placeholder}
                   options={stateOptions}
                   bgColor="gray"
                   value={stateUF}
@@ -288,7 +288,10 @@ export default function WorkWithUsFormIsland(props) {
 
                 {(desiredArea === "Administrativo" ||
                   desiredArea === "Comercial" ||
-                  desiredArea === "Pedagógico") && (
+                  desiredArea === "Pedagógico" ||
+                  desiredArea === "Administrative" ||
+                  desiredArea === "Commercial" ||
+                  desiredArea === "Pedagogical") && (
                   <SelectInput
                     label={props.unitsInput.label}
                     placeholder={props.unitsInput.placeholder}
