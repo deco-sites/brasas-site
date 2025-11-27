@@ -24,6 +24,7 @@ interface WorkWithUsFormProps {
   telInput: InputProps;
   cityInput: InputProps;
   desiredAreaInput: InputProps;
+  unitsInput: InputProps;
   curriculumInput: InputProps;
   additionalCommentsInput: InputProps;
   acceptanceSendText: string;

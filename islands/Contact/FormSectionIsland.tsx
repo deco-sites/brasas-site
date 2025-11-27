@@ -50,10 +50,10 @@ export default function FormSectionIsland(props) {
     }
 
     try {
-      console.log("Token aki:", props.accessToken);
+      //console.log("Token aki:", props.accessToken);
       // Verificar se o e-mail pertence a um aluno
       const studentResponse = await fetch(
-        `https://apitest.brasas.com/sophia/student/search?email=${
+        `https://api.brasas.com/sophia/student/search?email=${
           encodeURIComponent(email)
         }`,
         {
@@ -65,7 +65,7 @@ export default function FormSectionIsland(props) {
 
       if (studentResponse.status === 200) {
         // Já é aluno
-        console.log("Já é aluno");
+        //console.log("Já é aluno");
         setIsStudent(true);
         setLoading(false);
         return; // Impede envio
