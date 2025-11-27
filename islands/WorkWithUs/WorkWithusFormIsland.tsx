@@ -264,6 +264,7 @@ export default function WorkWithUsFormIsland(props) {
                   bgColor="gray"
                   value={stateUF}
                   onChangeFunction={setStateUF}
+                  required
                 />
                 {
                   /*
