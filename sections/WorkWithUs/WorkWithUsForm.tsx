@@ -23,6 +23,7 @@ interface WorkWithUsFormProps {
   emailInput: InputProps;
   telInput: InputProps;
   cityInput: InputProps;
+  stateInput: InputProps;
   desiredAreaInput: InputProps;
   unitsInput: InputProps;
   curriculumInput: InputProps;

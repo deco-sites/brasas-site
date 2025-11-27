@@ -103,7 +103,7 @@ export default function SelectInput(
           }}
         >
           <span className={value ? "text-gray-700" : "text-gray-500"}>
-            {value || "Selecione"}
+            {value || placeholder || "Selecione"}
           </span>
 
           <svg
@@ -168,7 +168,7 @@ export default function SelectInput(
           value={value || ""}
           onChange={() => {}}
         >
-          <option value="">Selecione</option>
+          <option value="">{placeholder || "Selecione"}</option>
           {options.map((option) => (
             <option key={option.value} value={option.name}>
               {option.name}
